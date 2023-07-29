@@ -218,7 +218,7 @@ def shortest_disjoint_paths(g, ff):
                 result[src, dst] = list(nx.edge_disjoint_paths(subgraph, src, dst, flow_func=ff))
     return result
 
-def save_topo_graph_nx(g, filename=None, plot_aspect=1.0):
+def save_topo_graph_pdf(g, filename=None, plot_aspect=1.0):
     import networkx as nx
     import matplotlib
     matplotlib.use('Agg')
@@ -250,30 +250,38 @@ def save_topo_graph_nx(g, filename=None, plot_aspect=1.0):
     plt.savefig(filename + '.pdf', metadata={'Creator': None, 'Producer': None, 'CreationDate': None})
     plt.close('all')
 
-def save_topo_graph_svg(g, filename=None, plot_aspect=1.0):
-    pos = {}
-
-    for node in g.nodes(data=True):
-        pos[node[0]] = node[1]['pos']
-
+def minmax(pos):
     min0 = min(v[0] for v in pos.values())
     max0 = max(v[0] for v in pos.values())
     min1 = min(v[1] for v in pos.values())
     max1 = max(v[1] for v in pos.values())
+    return max0, max1, min0, min1
+
+def save_topo_graph_svg(g, filename=None, scaling=True):
+    pos = {}
+    for node in g.nodes(data=True):
+        pos[node[0]] = node[1]['pos'][0], node[1]['pos'][1]
+
+    max0, max1, min0, min1 = minmax(pos)
+
+    if scaling:
+        scale = 1000 / max(max0 - min0, max1 - min1)
+        for n in pos:
+            pos[n] = pos[n][0] * scale, (max1 - pos[n][1]) * scale
+        max0, max1, min0, min1 = minmax(pos)
 
     with open(filename + '.svg', 'w') as f:
-        f.write(f'<svg width="{max0 - min0 + 60:.2f}" height="{max1 - min1 + 60:.2f}" viewBox="-20 -20 {max0 - min0 + 60:.2f} {max1 - min1 + 60:.2f}" xmlns="http://www.w3.org/2000/svg">\n')
-        f.write('<style>path {stroke-width: 6; stroke: grey;} circle {fill: grey;} text {font-size: 20; text-anchor:middle; font-family: sans-serif; fill: black;}</style>\n')
+        f.write(f'<svg width="{max0 - min0 + 90:.2f}" height="{max1 - min1 + 90:.2f}" viewBox="{min0 - 45:.2f} {min1 - 45:.2f} {max0 - min0 + 90:.2f} {max1 - min1 + 90:.2f}" xmlns="http://www.w3.org/2000/svg">\n')
+        f.write('<style>path {stroke-width: 6; stroke: grey;} circle {fill: grey;} text {font-size: 16; font-family: sans-serif; fill: black; text-anchor:middle;}</style>\n')
 
         for e in g.edges:
-            x0, y0 = g.nodes[e[0]]['pos']
-            x1, y1 = g.nodes[e[1]]['pos']
+            x0, y0 = pos[e[0]]
+            x1, y1 = pos[e[1]]
             f.write(f'<path d="M{x0:.2f},{y0:.2f},{x1:.2f},{y1:.2f}"/>\n')
 
-        for n, data in g.nodes(data=True):
-            x, y = data['pos']
+        for n, (x, y) in pos.items():
             f.write(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="10"/>\n')
-            f.write(f'<text x="{x:.2f}" y="{y + 7.5:.2f}">{n}</text>\n')
+            f.write(f'<text x="{x:.2f}" y="{y + 5:.2f}">{n}</text>\n')
 
         f.write('</svg>\n')
 

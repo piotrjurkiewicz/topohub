@@ -19,6 +19,7 @@ class RoundingFloat(float):
     __repr__ = staticmethod(lambda x: format(x, '.2f'))
 
 class TopoGenerator:
+    scaling = True
 
     @classmethod
     def generate_topo(cls, *args):
@@ -36,13 +37,13 @@ class TopoGenerator:
         json.dump(nx.node_link_data(g), open(f'{filename}.json', 'w'), indent=kwargs.get('indent', 0))
         ps = None
         if kwargs.get('with_plot'):
-            graph.save_topo_graph_svg(g, filename, plot_aspect=kwargs.get('plot_aspect', 1.0))
+            graph.save_topo_graph_svg(g, filename, cls.scaling)
         if kwargs.get('with_path_stats'):
             ps = graph.path_stats(g)
             graph.path_stats_print(ps, filename)
         if kwargs.get('with_topo_stats'):
             ts = graph.topo_stats(g, ps)
-            graph.topo_stats_print(ts, g.graph['name'], filename)
+            # graph.topo_stats_print(ts, g.graph['name'], filename)
             g.graph['stats'] = ts
         json.encoder.float = RoundingFloat
         json.dump(nx.node_link_data(g), open(f'{filename}.json', 'w'), indent=kwargs.get('indent', 0), default=lambda x: format(x, '.2f'))
@@ -114,6 +115,7 @@ class SNDLibGenerator(TopoGenerator):
         return {'directed': False, 'multigraph': False, 'graph': {'name': name, 'demands': demands}, 'nodes': nodes, 'links': links}
 
 class GabrielGenerator(TopoGenerator):
+    scaling = False
 
     @classmethod
     def generate_topo(cls, nnodes, seed):
