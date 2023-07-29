@@ -295,7 +295,7 @@ def path_stats(g):
     for src, dst in ap:
         # assert len(sp[src, dst]) == len(sp_slow[src, dst])
         avg_ap_hops = sum(len(path) - 1 for path in ap[src, dst]) / float(len(ap[src, dst]))
-        avg_sp_hops = sum(len(path) - 1 for path in sp[src, dst]) / float(len(sp[src, dst]))
+        avg_sp_hops = sum(len(path) - 1 for path in sp[src, dst]) // len(sp[src, dst])
         avg_ap_length = 0
         for path in ap[src, dst]:
             for u, v in zip(path, path[1:]):
@@ -313,9 +313,9 @@ def path_stats(g):
                 try:
                     demand = g.graph['demands'][dst][src]
                 except KeyError:
-                    demand = 0.0
+                    demand = 0
         else:
-            demand = 1.0
+            demand = 1
         stats[src, dst] = (len(ap[src, dst]), len(sp[src, dst]),
                            avg_ap_hops, avg_sp_hops,
                            avg_ap_length, avg_sp_length,
@@ -359,9 +359,11 @@ def calculate_utilization(g):
             for src, dst, dem in gen:
                 dfs(src, dst, dem, util)
                 dfs(dst, src, dem, util)
-            for src, dst in g.edges:
-                g.edges[src, dst].setdefault('util_fw', {})[mode] = util.get((src, dst), 0.0)
-                g.edges[src, dst].setdefault('util_bw', {})[mode] = util.get((dst, src), 0.0)
+            if util:
+                max_util = max(util.values())
+                for src, dst in g.edges:
+                    g.edges[src, dst].setdefault('fwd', {})[mode] = util.get((src, dst), 0.0) / max_util * 100
+                    g.edges[src, dst].setdefault('bwd', {})[mode] = util.get((dst, src), 0.0) / max_util * 100
 
     return g
 
