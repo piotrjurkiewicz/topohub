@@ -16,6 +16,15 @@ def haversine(src, dst):
     a = math.sin(d_lat / 2) ** 2 + math.cos(lat0) * math.cos(lat1) * math.sin(d_lon / 2) ** 2
     return R * 2 * math.asin(math.sqrt(a))
 
+def gini(list_of_values):
+    sorted_list = sorted(list_of_values)
+    height, area = 0, 0
+    for value in sorted_list:
+        height += value
+        area += height - value / 2
+    fair_area = height * len(list_of_values) / 2
+    return (fair_area - area) / fair_area
+
 def all_shortest_paths_all_targets(g, source, weight=None, limit=None):
     import networkx as nx
 
