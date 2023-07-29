@@ -269,7 +269,7 @@ def save_topo_graph_svg(g, filename=None, plot_aspect=1.0):
 
         f.write('</svg>\n')
 
-def path_stats(g, action=None, filename=None):
+def path_stats(g):
     import networkx as nx
     for ff in [
         nx.algorithms.flow.edmonds_karp,
@@ -316,17 +316,16 @@ def path_stats(g, action=None, filename=None):
     for src, dst in stats:
         assert stats[src, dst][0:2] == stats[dst, src][0:2]
         # TODO: avg_ap_hops and avg_sp_hops are not symmetric (due to edmonds_karp not taking salts into account?)
-    if action:
-        table = sorted(stats.values(), reverse=True, key=lambda r: (r[0:2], sorted(r[-2:]), r[-1]))
-        text = 'ap_number,sp_number,avg_ap_hops,avg_sp_hops,avg_ap_length,avg_sp_length,demand,src,dst\n'
-        text += '\n'.join(','.join(str(v) for v in row) for row in table)
-        if action == 'save':
-            if not filename:
-                filename = 'mininet/topo_lib/' + g.graph['name']
-            open(filename + '.csv', 'w').write(text)
-        if action == 'print':
-            print(text)
     return stats
+
+def path_stats_print(stats, filename=None):
+    table = sorted(stats.values(), reverse=True, key=lambda r: (r[0:2], sorted(r[-2:]), r[-1]))
+    text = 'adp_number,sdp_number,avg_adp_hops,avg_sdp_hops,avg_adp_length,avg_sdp_length,demand,src,dst\n'
+    text += '\n'.join(','.join(f'{v:.2f}' if isinstance(v, float) else str(v) for v in row) for row in table)
+    if not filename:
+        print(text)
+    else:
+        open(filename + '.csv', 'w').write(text)
 
 def calculate_utilization(g):
     nhops = {}
@@ -358,8 +357,20 @@ def calculate_utilization(g):
 
     return g
 
-def topo_stats(g, ps=None, action=None, filename=None):
+def topo_stats(g, ps=None):
     import networkx as nx
+
+    min_edge_length = min(e['distance'] for u, v, e in g.edges(data=True))
+    avg_edge_length = sum(e['distance'] for u, v, e in g.edges(data=True)) / float(len(g.edges))
+    max_edge_length = max(e['distance'] for u, v, e in g.edges(data=True))
+
+    if isinstance(g, nx.MultiDiGraph):
+        number_edges = g.size() / 2
+        degree = g.out_degree
+    else:
+        number_edges = g.size()
+        degree = g.degree
+    degrees = [d for (_, d) in degree()]
 
     if ps is None:
         dem_num = 0
@@ -369,24 +380,24 @@ def topo_stats(g, ps=None, action=None, filename=None):
             dem_num = len(g) ** 2 - len(g)
     else:
         adp_sum, sdp_sum = 0, 0
-        avg_ap_hops_sum, avg_sp_hops_sum = 0.0, 0.0
-        avg_ap_length_sum, avg_sp_length_sum = 0.0, 0.0
+        avg_adp_hops_sum, avg_sdp_hops_sum = 0.0, 0.0
+        avg_adp_length_sum, avg_sdp_length_sum = 0.0, 0.0
         dem_num = 0
         dem_sum = 0.0
 
-        for pair, (ap_number, sp_number, avg_ap_hops, avg_sp_hops, avg_ap_length, avg_sp_length, demand, src, dst) in ps.items():
+        for pair, (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst) in ps.items():
             dem_sum += demand
 
-        for pair, (ap_number, sp_number, avg_ap_hops, avg_sp_hops, avg_ap_length, avg_sp_length, demand, src, dst) in ps.items():
+        for pair, (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst) in ps.items():
             if demand > 0 or dem_sum == 0:
                 if dem_sum == 0:
                     demand = 1
-                adp_sum += ap_number * demand
-                sdp_sum += sp_number * demand
-                avg_ap_hops_sum += avg_ap_hops * demand
-                avg_sp_hops_sum += avg_sp_hops * demand
-                avg_ap_length_sum += avg_ap_length * demand
-                avg_sp_length_sum += avg_sp_length * demand
+                adp_sum += adp_number * demand
+                sdp_sum += sdp_number * demand
+                avg_adp_hops_sum += avg_adp_hops * demand
+                avg_sdp_hops_sum += avg_sdp_hops * demand
+                avg_adp_length_sum += avg_adp_length * demand
+                avg_sdp_length_sum += avg_sdp_length * demand
                 dem_num += 1
 
         if dem_sum == 0:
@@ -399,42 +410,32 @@ def topo_stats(g, ps=None, action=None, filename=None):
         avg_ap_length_sum /= float(dem_sum)
         avg_sp_length_sum /= float(dem_sum)
 
-    if isinstance(g, nx.MultiDiGraph):
-        number_edges = g.size() / 2
-        avg_degree = sum(d for n, d in g.out_degree()) / float(len(g))
-    else:
-        number_edges = g.size()
-        avg_degree = sum(d for n, d in g.degree()) / float(len(g))
+    return stats
 
-    min_edge_length = min(e['distance'] for u, v, e in g.edges(data=True))
-    avg_edge_length = sum(e['distance'] for u, v, e in g.edges(data=True)) / float(len(g.edges))
-    max_edge_length = max(e['distance'] for u, v, e in g.edges(data=True))
-
+def topo_stats_print(stats, name, filename=None):
     JUST = 38
-
     text = \
-        'Topology name'.ljust(JUST) + ' & %s' % g.graph['name'].replace('_', '\\_') + '\n\n' + \
-        'Number of nodes'.ljust(JUST) + ' & %s' % len(g) + '\n' + \
-        'Number of edges'.ljust(JUST) + ' & %s' % number_edges + '\n' + \
-        'Number of demands'.ljust(JUST) + ' & %s' % dem_num + '\n' + \
-        'Graph density'.ljust(JUST) + ' & %.2f' % nx.density(g) + '\n' + \
-        'Avg. vertex degree'.ljust(JUST) + ' & %.2f' % avg_degree + '\n' + \
-        'Min. edge length'.ljust(JUST) + ' & %.2f' % min_edge_length + '\n' + \
-        'Avg. edge length'.ljust(JUST) + ' & %.2f' % avg_edge_length + '\n' + \
-        'Max. edge length'.ljust(JUST) + ' & %.2f' % max_edge_length + '\n'
+        'Topology name'.ljust(JUST) + ' & %s' % name.replace('_', '\\_') + '\n\n' + \
+        'Number of nodes'.ljust(JUST) + ' & %s' % stats['nodes'] + '\n' + \
+        'Number of edges'.ljust(JUST) + ' & %s' % stats['edges'] + '\n' + \
+        'Number of demands'.ljust(JUST) + ' & %s' % stats['demands'] + '\n' + \
+        'Min. vertex degree'.ljust(JUST) + ' & %.2f' % stats['min_degree'] + '\n' + \
+        'Avg. vertex degree'.ljust(JUST) + ' & %.2f' % stats['avg_degree'] + '\n' + \
+        'Max. vertex degree'.ljust(JUST) + ' & %.2f' % stats['max_degree'] + '\n' + \
+        'Min. edge length'.ljust(JUST) + ' & %.2f' % stats['min_edge_len'] + '\n' + \
+        'Avg. edge length'.ljust(JUST) + ' & %.2f' % stats['avg_edge_len'] + '\n' + \
+        'Max. edge length'.ljust(JUST) + ' & %.2f' % stats['max_edge_len'] + '\n'
 
-    if ps is not None:
+    if 'avg_sdp_num' in stats:
         text += \
-            'Avg. number of disjoint shortest paths'.ljust(JUST) + ' & %.2f' % sdp_sum + '\n' + \
-            'Avg. hops of disjoint shortest paths'.ljust(JUST) + ' & %.2f' % avg_sp_hops_sum + '\n' + \
-            'Avg. length of disjoint shortest paths'.ljust(JUST) + ' & %.2f' % avg_sp_length_sum + '\n' + \
-            'Avg. number of disjoint paths'.ljust(JUST) + ' & %.2f' % adp_sum + '\n' + \
-            'Avg. hops of disjoint paths'.ljust(JUST) + ' & %.2f' % avg_ap_hops_sum + '\n' + \
-            'Avg. length of disjoint paths'.ljust(JUST) + ' & %.2f' % avg_ap_length_sum + '\n'
+            'Avg. number of disjoint shortest paths'.ljust(JUST) + ' & %.2f' % stats['avg_sdp_num'] + '\n' + \
+            'Avg. hops of disjoint shortest paths'.ljust(JUST) + ' & %.2f' % stats['avg_sdp_hops'] + '\n' + \
+            'Avg. length of disjoint shortest paths'.ljust(JUST) + ' & %.2f' % stats['avg_sdp_len'] + '\n' + \
+            'Avg. number of disjoint paths'.ljust(JUST) + ' & %.2f' % stats['avg_adp_num'] + '\n' + \
+            'Avg. hops of disjoint paths'.ljust(JUST) + ' & %.2f' % stats['avg_adp_hops'] + '\n' + \
+            'Avg. length of disjoint paths'.ljust(JUST) + ' & %.2f' % stats['avg_adp_len'] + '\n'
 
-    if action == 'save':
-        if not filename:
-            filename = 'mininet/topo_lib/' + g.graph['name']
-        open(filename + '.tex', 'w').write(text)
-    if action == 'print':
+    if not filename:
         print(text)
+    else:
+        open(filename + '.tex', 'w').write(text)

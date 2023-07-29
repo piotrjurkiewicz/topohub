@@ -38,9 +38,11 @@ class TopoGenerator:
         if kwargs.get('with_plot'):
             graph.save_topo_graph_svg(g, filename, plot_aspect=kwargs.get('plot_aspect', 1.0))
         if kwargs.get('with_path_stats'):
-            ps = graph.path_stats(g, filename=filename, action='save')
+            ps = graph.path_stats(g)
+            graph.path_stats_print(ps, filename)
         if kwargs.get('with_topo_stats'):
-            graph.topo_stats(g, ps=ps, filename=filename, action='save')
+            ts = graph.topo_stats(g, ps)
+            graph.topo_stats_print(ts, g.graph['name'], filename)
         json.encoder.float = RoundingFloat
         json.dump(nx.node_link_data(g), open(f'{filename}.json', 'w'), indent=kwargs.get('indent', 0), default=lambda x: format(x, '.2f'))
         json.encoder.float = float
