@@ -418,9 +418,13 @@ def topo_stats(g, ps=None):
         dem_num = 0
         dem_sum = 0.0
         diameter_hops = 0
+        max_adp_num = 0
+        max_sdp_num = 0
 
         for pair, (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst) in ps.items():
             diameter_hops = max(diameter_hops, avg_sdp_hops)
+            max_adp_num = max(max_adp_num, adp_number)
+            max_sdp_num = max(max_sdp_num, sdp_number)
             dem_sum += demand
 
         for pair, (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst) in ps.items():
@@ -440,9 +444,11 @@ def topo_stats(g, ps=None):
 
         stats['diameter_hops'] = diameter_hops
         stats['avg_sdp_num'] = sdp_sum / float(dem_sum)
+        stats['max_sdp_num'] = max_sdp_num
         stats['avg_sdp_hops'] = avg_sdp_hops_sum / float(dem_sum)
         stats['avg_sdp_len'] = avg_sdp_length_sum / float(dem_sum)
         stats['avg_adp_num'] = adp_sum / float(dem_sum)
+        stats['max_adp_num'] = max_adp_num
         stats['avg_adp_hops'] = avg_adp_hops_sum / float(dem_sum)
         stats['avg_adp_len'] = avg_adp_length_sum / float(dem_sum)
 
@@ -466,11 +472,13 @@ def topo_stats_print(stats, name, filename=None):
     if 'avg_sdp_num' in stats:
         text += \
             'Avg. number of disjoint shortest paths'.ljust(JUST) + ' & %.2f' % stats['avg_sdp_num'] + '\n' + \
+            'Max. number of disjoint shortest paths'.ljust(JUST) + ' & %.2f' % stats['max_sdp_num'] + '\n' + \
             'Avg. hops of disjoint shortest paths'.ljust(JUST) + ' & %.2f' % stats['avg_sdp_hops'] + '\n' + \
             'Avg. length of disjoint shortest paths'.ljust(JUST) + ' & %.2f' % stats['avg_sdp_len'] + '\n' + \
-            'Avg. number of disjoint paths'.ljust(JUST) + ' & %.2f' % stats['avg_adp_num'] + '\n' + \
-            'Avg. hops of disjoint paths'.ljust(JUST) + ' & %.2f' % stats['avg_adp_hops'] + '\n' + \
-            'Avg. length of disjoint paths'.ljust(JUST) + ' & %.2f' % stats['avg_adp_len'] + '\n'
+            'Avg. number of all disjoint paths'.ljust(JUST) + ' & %.2f' % stats['avg_adp_num'] + '\n' + \
+            'Max. number of all disjoint paths'.ljust(JUST) + ' & %.2f' % stats['max_adp_num'] + '\n' + \
+            'Avg. hops of all disjoint paths'.ljust(JUST) + ' & %.2f' % stats['avg_adp_hops'] + '\n' + \
+            'Avg. length of all disjoint paths'.ljust(JUST) + ' & %.2f' % stats['avg_adp_len'] + '\n'
 
     if not filename:
         print(text)
