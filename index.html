@@ -1,302 +1,256 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Network Topologies Repository</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f2f2f2;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopoHub</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    #container {
-      display: flex;
-      align-items: flex-start;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      border-radius: 8px;
-    }
+        body {
+            font-family: sans-serif;
+            line-height: 1;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f8fa;
+        }
 
-    #topologyDisplay {
-      width: 800px;
-      height: 800px;
-      border: 1px solid #ccc;
-      margin-right: 20px;
-    }
+        header {
+            background-color: #f6f8fa;
+            height: 64px;
+            color: #24292e;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            border-bottom: 1px solid #d0d7de;
+        }
 
-    #controls {
-      display: flex;
-      flex-direction: column;
-    }
+        header h1 {
+            margin: 0;
+        }
 
-    /* Additional style for the topology properties display */
-    #topologyProperties, #topologySelection, #trafficSelection {
-      margin-bottom: 20px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      background-color: #f9f9f9;
-    }
+        h2, h3 {
+            margin-top: 0;
+            font-size: 20px;
+        }
 
-    /* Style for table cells (property name and value) */
-    #topologyProperties td {
-      border-bottom: 1px solid #ccc;
-      padding: 5px;
-    }
+        .container {
+            display: flex;
+            min-height: calc(100vh - 64px); /* Adjust min-height for the header */
+            height: 100%;
+            flex-direction: row;
+        }
 
-    #topologyProperties tr:nth-child(2) {
-      visibility: hidden;
-    }
+        .sidebar-left,
+        .sidebar-right {
+            padding: 24px;
+        }
 
-    #topologyProperties td:nth-child(2) {
-      text-align: right;
-    }
+        .sidebar-left {
+            background-color: #ffffff;
+            border-right: 1px solid #d0d7de;
+            width: 350px;
+        }
 
-    h2 {
-      margin-top: 0;
-      font-size: medium;
-    }
+        .sidebar-right {
+            width: 500px;
+        }
 
-    select, input {
-      margin-bottom: 10px;
-    }
+        .main-content {
+            display: flex;
+            padding: 24px;
+            flex-direction: column;
+            flex-grow: 1;
+        }
 
-    p {
-      margin: 5px 0;
-    }
-  </style>
+        .box {
+            margin-bottom: 16px;
+            padding: 16px;
+            background-color: #ffffff;
+            border: 1px solid #d8dee4;
+            border-radius: 3px;
+        }
+
+        #topoDisplay {
+            flex: 1;
+            margin-bottom: 0;
+        }
+
+        #topoDisplay svg {
+            width: auto;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        /* Adjust the styles for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar-left {
+                border-bottom: 1px solid #d0d7de;
+                border-right: none;
+            }
+
+            .sidebar-left,
+            .sidebar-right {
+                width: auto;
+            }
+
+            .main-content {
+                width: auto;
+                padding-bottom: 0;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div id="container">
-    <div id="topologyDisplay"></div>
-    <div id="controls">
-      <div id="topologySelection">
-        <h2>Select a Topology:</h2>
-        <select id="topologySelect">
-          <option value="">Select a topology</option>
-          <option value="topology1">Topology 1</option>
-          <option value="topology2">Topology 2</option>
-          <!-- Add more topology options as needed -->
-        </select>
-      </div>
+<header>
+    <h1>TopoHub</h1>
+</header>
+<div class="container">
+    <aside class="sidebar-left">
+        <h2>Topologies</h2>
+        <ul>
+            <li><a href="#">Topology 1</a></li>
+            <li><a href="#">Topology 2</a></li>
+            <li><a href="#">Topology 3</a></li>
+        </ul>
+    </aside>
+    <main class="main-content">
+        <h2>Topology graph</h2>
+        <div id="topoDisplay" class="box">
 
-      <!-- Display of topology properties -->
-      <div id="topologyProperties">
-        <table>
-          <tr>
-            <td><strong>Name:</strong></td>
-            <td><span id="topologyName">-</span></td>
-          </tr>
-          <tr>
-            <td><strong>Description:</strong></td>
-            <td><span id="topologyDescription">-</span></td>
-          </tr>
-          <tr>
-            <td><strong>Number of Nodes:</strong></td>
-            <td><span id="numNodes">-</span></td>
-          </tr>
-          <tr>
-            <td><strong>Number of Edges:</strong></td>
-            <td><span id="numEdges">-</span></td>
-          </tr>
-          <tr>
-            <td><strong>Number of Demands:</strong></td>
-            <td><span id="numDemands">-</span></td>
-          </tr>
-          <tr>
-            <td><strong>Graph Density:</strong></td>
-            <td><span id="graphDensity">-</span></td>
-          </tr>
-          <tr>
-            <td><strong>Avg. Vertex Degree:</strong></td>
-            <td><span id="avgVertexDegree">-</span></td>
-          </tr>
-          <tr>
-            <td><strong>Min. Edge Length:</strong></td>
-            <td><span id="minEdgeLength">-</span></td>
-          </tr>
-          <tr>
-            <td><strong>Avg. Edge Length:</strong></td>
-            <td><span id="avgEdgeLength">-</span></td>
-          </tr>
-          <tr>
-            <td><strong>Max. Edge Length:</strong></td>
-            <td><span id="maxEdgeLength">-</span></td>
-          </tr>
-          <tr>
-            <td><strong>Avg. Number of Disjoint Shortest Paths:</strong></td>
-            <td><span id="avgNumDisjointPaths">-</span></td>
-          </tr>
-          <tr>
-            <td><strong>Avg. Hops of Disjoint Shortest Paths:</strong></td>
-            <td><span id="avgHopsDisjointPaths">-</span></td>
-          </tr>
-          <tr>
-            <td><strong>Avg. Length of Disjoint Shortest Paths:</strong></td>
-            <td><span id="avgLengthDisjointPaths">-</span></td>
-          </tr>
-          <tr>
-            <td><strong>Avg. Number of Disjoint Paths:</strong></td>
-            <td><span id="avgNumDisjointPaths2">-</span></td>
-          </tr>
-          <tr>
-            <td><strong>Avg. Hops of Disjoint Paths:</strong></td>
-            <td><span id="avgHopsDisjointPaths2">-</span></td>
-          </tr>
-          <tr>
-            <td><strong>Avg. Length of Disjoint Paths:</strong></td>
-            <td><span id="avgLengthDisjointPaths2">-</span></td>
-          </tr>
-        </table>
-      </div>
+            <svg width="505.59" height="552.68" viewBox="-24.74 -21.13 505.59 552.68"
+                 xmlns="http://www.w3.org/2000/svg">
+                <style>path {
+                    stroke-width: 6;
+                    stroke: grey;
+                }
 
-      <div id="trafficSelection">
-        <h2>Select Traffic Model:</h2>
-        <select id="trafficModelSelect">
-          <option value="custom">Custom</option>
-          <option value="one">One</option>
-          <option value="degree">Degree</option>
-          <option value="pop">Pop</option>
-        </select>
+                circle {
+                    fill: grey;
+                }
 
-        <h2>Link Capacity (integer):</h2>
-        <input type="number" id="linkCapacityInput" value="100" min="1">
-      </div>
-    </div>
-  </div>
+                text {
+                    font-size: 16;
+                    font-family: sans-serif;
+                    fill: black;
+                    text-anchor: middle;
+                }</style>
+                <path d="M188.48,463.39,63.54,437.58"/>
+                <path d="M188.48,463.39,204.14,407.22"/>
+                <path d="M421.72,107.02,416.12,256.16"/>
+                <path d="M421.72,107.02,318.01,49.11"/>
+                <path d="M421.72,107.02,291.39,207.21"/>
+                <path d="M421.72,107.02,314.41,228.62"/>
+                <path d="M435.85,318.23,416.12,256.16"/>
+                <path d="M435.85,318.23,397.23,312.49"/>
+                <path d="M21.20,476.49,51.99,486.55"/>
+                <path d="M21.20,476.49,63.54,437.58"/>
+                <path d="M21.20,476.49,28.80,408.17"/>
+                <path d="M127.84,152.95,179.34,234.70"/>
+                <path d="M127.84,152.95,94.70,80.47"/>
+                <path d="M127.84,152.95,239.00,109.81"/>
+                <path d="M212.04,294.26,62.20,343.34"/>
+                <path d="M212.04,294.26,217.78,247.07"/>
+                <path d="M212.04,294.26,204.14,407.22"/>
+                <path d="M62.20,343.34,179.34,234.70"/>
+                <path d="M62.20,343.34,28.80,408.17"/>
+                <path d="M62.20,343.34,204.14,407.22"/>
+                <path d="M416.12,256.16,397.23,312.49"/>
+                <path d="M416.12,256.16,314.41,228.62"/>
+                <path d="M397.23,312.49,314.41,228.62"/>
+                <path d="M179.34,234.70,217.78,247.07"/>
+                <path d="M179.34,234.70,239.00,109.81"/>
+                <path d="M51.99,486.55,63.54,437.58"/>
+                <path d="M318.01,49.11,230.37,35.18"/>
+                <path d="M318.01,49.11,239.00,109.81"/>
+                <path d="M291.39,207.21,281.54,257.46"/>
+                <path d="M291.39,207.21,252.37,241.37"/>
+                <path d="M291.39,207.21,314.41,228.62"/>
+                <path d="M291.39,207.21,239.00,109.81"/>
+                <path d="M94.70,80.47,20.26,86.04"/>
+                <path d="M94.70,80.47,141.42,23.87"/>
+                <path d="M230.37,35.18,141.42,23.87"/>
+                <path d="M230.37,35.18,239.00,109.81"/>
+                <path d="M281.54,257.46,252.37,241.37"/>
+                <path d="M281.54,257.46,314.41,228.62"/>
+                <path d="M63.54,437.58,28.80,408.17"/>
+                <path d="M217.78,247.07,252.37,241.37"/>
+                <circle cx="188.48" cy="463.39" r="10"/>
+                <text x="188.48" y="468.39">R0</text>
+                <circle cx="421.72" cy="107.02" r="10"/>
+                <text x="421.72" y="112.02">R1</text>
+                <circle cx="435.85" cy="318.23" r="10"/>
+                <text x="435.85" y="323.23">R2</text>
+                <circle cx="21.20" cy="476.49" r="10"/>
+                <text x="21.20" y="481.49">R3</text>
+                <circle cx="127.84" cy="152.95" r="10"/>
+                <text x="127.84" y="157.95">R4</text>
+                <circle cx="212.04" cy="294.26" r="10"/>
+                <text x="212.04" y="299.26">R5</text>
+                <circle cx="62.20" cy="343.34" r="10"/>
+                <text x="62.20" y="348.34">R6</text>
+                <circle cx="416.12" cy="256.16" r="10"/>
+                <text x="416.12" y="261.16">R7</text>
+                <circle cx="397.23" cy="312.49" r="10"/>
+                <text x="397.23" y="317.49">R8</text>
+                <circle cx="179.34" cy="234.70" r="10"/>
+                <text x="179.34" y="239.70">R9</text>
+                <circle cx="51.99" cy="486.55" r="10"/>
+                <text x="51.99" y="491.55">R10</text>
+                <circle cx="318.01" cy="49.11" r="10"/>
+                <text x="318.01" y="54.11">R11</text>
+                <circle cx="291.39" cy="207.21" r="10"/>
+                <text x="291.39" y="212.21">R12</text>
+                <circle cx="94.70" cy="80.47" r="10"/>
+                <text x="94.70" y="85.47">R13</text>
+                <circle cx="230.37" cy="35.18" r="10"/>
+                <text x="230.37" y="40.18">R14</text>
+                <circle cx="281.54" cy="257.46" r="10"/>
+                <text x="281.54" y="262.46">R15</text>
+                <circle cx="63.54" cy="437.58" r="10"/>
+                <text x="63.54" y="442.58">R16</text>
+                <circle cx="20.26" cy="86.04" r="10"/>
+                <text x="20.26" y="91.04">R17</text>
+                <circle cx="217.78" cy="247.07" r="10"/>
+                <text x="217.78" y="252.07">R18</text>
+                <circle cx="252.37" cy="241.37" r="10"/>
+                <text x="252.37" y="246.37">R19</text>
+                <circle cx="28.80" cy="408.17" r="10"/>
+                <text x="28.80" y="413.17">R20</text>
+                <circle cx="141.42" cy="23.87" r="10"/>
+                <text x="141.42" y="28.87">R21</text>
+                <circle cx="204.14" cy="407.22" r="10"/>
+                <text x="204.14" y="412.22">R22</text>
+                <circle cx="314.41" cy="228.62" r="10"/>
+                <text x="314.41" y="233.62">R23</text>
+                <circle cx="239.00" cy="109.81" r="10"/>
+                <text x="239.00" y="114.81">R24</text>
+            </svg>
 
-  <script>
-    // Dummy SVG data for topology display
-    const topologyData = {
-      topology1: `<svg width="600" height="600"><circle cx="300" cy="300" r="100" fill="blue" /></svg>`,
-      topology2: `<svg width="600" height="600"><rect width="200" height="300" fill="red" /></svg>`
-      // Add more SVG data for each topology option
-    };
-
-    // Dummy topology properties data
-    const topologyPropertiesData = {
-      topology1: {
-        name: 'Topology 1',
-        description: 'This is the first topology.',
-        numNodes: 50,
-        numEdges: 88,
-        numDemands: 1324,
-        graphDensity: 0.07,
-        avgVertexDegree: 3.52,
-        minEdgeLength: 25.94,
-        avgEdgeLength: 100.71,
-        maxEdgeLength: 252.30,
-        avgNumDisjointPaths: 1.23,
-        avgHopsDisjointPaths: 2.85,
-        avgLengthDisjointPaths: 117.97,
-        avgNumDisjointPaths2: 3.19,
-        avgHopsDisjointPaths2: 4.67,
-        avgLengthDisjointPaths2: 446.59
-      },
-      topology2: {
-        name: 'Topology 2',
-        description: 'This is the second topology.',
-        numNodes: 100,
-        numEdges: 150,
-        numDemands: 2500,
-        graphDensity: 0.03,
-        avgVertexDegree: 3.00,
-        minEdgeLength: 20.50,
-        avgEdgeLength: 90.25,
-        maxEdgeLength: 200.10,
-        avgNumDisjointPaths: 1.50,
-        avgHopsDisjointPaths: 3.20,
-        avgLengthDisjointPaths: 120.20,
-        avgNumDisjointPaths2: 2.80,
-        avgHopsDisjointPaths2: 4.90,
-        avgLengthDisjointPaths2: 430.75
-      }
-      // Add more topology properties as needed
-    };
-
-    const topologyDisplay = document.getElementById('topologyDisplay');
-    const topologySelect = document.getElementById('topologySelect');
-    const trafficModelSelect = document.getElementById('trafficModelSelect');
-    const linkCapacityInput = document.getElementById('linkCapacityInput');
-    const topologyNameElement = document.getElementById('topologyName');
-    const topologyDescriptionElement = document.getElementById('topologyDescription');
-    const numNodesElement = document.getElementById('numNodes');
-    const numEdgesElement = document.getElementById('numEdges');
-    const numDemandsElement = document.getElementById('numDemands');
-    const graphDensityElement = document.getElementById('graphDensity');
-    const avgVertexDegreeElement = document.getElementById('avgVertexDegree');
-    const minEdgeLengthElement = document.getElementById('minEdgeLength');
-    const avgEdgeLengthElement = document.getElementById('avgEdgeLength');
-    const maxEdgeLengthElement = document.getElementById('maxEdgeLength');
-    const avgNumDisjointPathsElement = document.getElementById('avgNumDisjointPaths');
-    const avgHopsDisjointPathsElement = document.getElementById('avgHopsDisjointPaths');
-    const avgLengthDisjointPathsElement = document.getElementById('avgLengthDisjointPaths');
-    const avgNumDisjointPathsElement2 = document.getElementById('avgNumDisjointPaths2');
-    const avgHopsDisjointPathsElement2 = document.getElementById('avgHopsDisjointPaths2');
-    const avgLengthDisjointPathsElement2 = document.getElementById('avgLengthDisjointPaths2');
-
-    // Function to display selected topology SVG
-    function displayTopology() {
-      const selectedTopology = topologySelect.value;
-      const svg = topologyData[selectedTopology];
-
-      if (svg) {
-        topologyDisplay.innerHTML = svg;
-      } else {
-        topologyDisplay.innerHTML = '<p>No topology selected.</p>';
-      }
-
-      // Display topology properties
-      const topologyProperties = topologyPropertiesData[selectedTopology];
-      if (topologyProperties) {
-        topologyNameElement.textContent = topologyProperties.name;
-        topologyDescriptionElement.textContent = topologyProperties.description;
-        numNodesElement.textContent = topologyProperties.numNodes;
-        numEdgesElement.textContent = topologyProperties.numEdges;
-        numDemandsElement.textContent = topologyProperties.numDemands;
-        graphDensityElement.textContent = topologyProperties.graphDensity;
-        avgVertexDegreeElement.textContent = topologyProperties.avgVertexDegree;
-        minEdgeLengthElement.textContent = topologyProperties.minEdgeLength;
-        avgEdgeLengthElement.textContent = topologyProperties.avgEdgeLength;
-        maxEdgeLengthElement.textContent = topologyProperties.maxEdgeLength;
-        avgNumDisjointPathsElement.textContent = topologyProperties.avgNumDisjointPaths;
-        avgHopsDisjointPathsElement.textContent = topologyProperties.avgHopsDisjointPaths;
-        avgLengthDisjointPathsElement.textContent = topologyProperties.avgLengthDisjointPaths;
-        avgNumDisjointPathsElement2.textContent = topologyProperties.avgNumDisjointPaths2; // Add the other property values as needed
-        avgHopsDisjointPathsElement2.textContent = topologyProperties.avgHopsDisjointPaths2; // Add the other property values as needed
-        avgLengthDisjointPathsElement2.textContent = topologyProperties.avgLengthDisjointPaths2; // Add the other property values as needed
-
-        // Make the table visible
-        document.getElementById('topologyProperties').style.visibility = 'visible';
-      } else {
-        // Hide the table if no topology is selected
-        document.getElementById('topologyProperties').style.visibility = 'hidden';
-      }
-    }
-
-    // Function to handle changes in traffic model and link capacity
-    function updateControls() {
-      const selectedTrafficModel = trafficModelSelect.value;
-      const linkCapacity = parseInt(linkCapacityInput.value, 10);
-
-      // Use the selected traffic model and link capacity as needed
-      console.log('Selected Traffic Model:', selectedTrafficModel);
-      console.log('Link Capacity:', linkCapacity);
-    }
-
-    // Add event listeners to the dropdowns and input
-    topologySelect.addEventListener('change', displayTopology);
-    trafficModelSelect.addEventListener('change', updateControls);
-    linkCapacityInput.addEventListener('input', updateControls);
-
-    // Initial display of topology
-    displayTopology();
-  </script>
+        </div>
+    </main>
+    <aside class="sidebar-right">
+        <h2>Topology properties</h2>
+        <div class="box">
+            <h3>Topology 1</h3>
+            <p>Description: This is the first topology.</p>
+        </div>
+        <h2>ECMP link utilization</h2>
+        <div class="box">
+            <h3>Topology 1</h3>
+            <p>Description: This is the first topology.</p>
+        </div>
+    </aside>
+</div>
 </body>
 </html>
