@@ -43,6 +43,7 @@ class TopoGenerator:
         if kwargs.get('with_topo_stats'):
             ts = graph.topo_stats(g, ps)
             graph.topo_stats_print(ts, g.graph['name'], filename)
+            g.graph['stats'] = ts
         json.encoder.float = RoundingFloat
         json.dump(nx.node_link_data(g), open(f'{filename}.json', 'w'), indent=kwargs.get('indent', 0), default=lambda x: format(x, '.2f'))
         json.encoder.float = float

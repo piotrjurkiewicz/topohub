@@ -1,8 +1,7 @@
 import collections
-import json
-import math
-import heapq
 import itertools
+import math
+import statistics
 import time
 
 def haversine(src, dst):
@@ -381,6 +380,20 @@ def topo_stats(g, ps=None):
         degree = g.degree
     degrees = [d for (_, d) in degree()]
 
+    stats = {
+        'nodes': len(g),
+        'edges': number_edges,
+        'demands': 0,
+        'min_degree': min(degrees),
+        'avg_degree': sum(degrees) / float(len(g)),
+        'std_degree': statistics.pstdev(degrees),
+        'max_degree': max(degrees),
+        'gini': gini(degrees),
+        'min_edge_len': min_edge_length,
+        'avg_edge_len': avg_edge_length,
+        'max_edge_len': max_edge_length,
+    }
+
     if ps is None:
         dem_num = 0
         if 'demands' in g.graph:
@@ -393,8 +406,10 @@ def topo_stats(g, ps=None):
         avg_adp_length_sum, avg_sdp_length_sum = 0.0, 0.0
         dem_num = 0
         dem_sum = 0.0
+        diameter_hops = 0
 
         for pair, (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst) in ps.items():
+            diameter_hops = max(diameter_hops, avg_sdp_hops)
             dem_sum += demand
 
         for pair, (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst) in ps.items():
@@ -412,13 +427,15 @@ def topo_stats(g, ps=None):
         if dem_sum == 0:
             dem_sum = dem_num
 
-        adp_sum /= float(dem_sum)
-        sdp_sum /= float(dem_sum)
-        avg_ap_hops_sum /= float(dem_sum)
-        avg_sp_hops_sum /= float(dem_sum)
-        avg_ap_length_sum /= float(dem_sum)
-        avg_sp_length_sum /= float(dem_sum)
+        stats['diameter_hops'] = diameter_hops
+        stats['avg_sdp_num'] = sdp_sum / float(dem_sum)
+        stats['avg_sdp_hops'] = avg_sdp_hops_sum / float(dem_sum)
+        stats['avg_sdp_len'] = avg_sdp_length_sum / float(dem_sum)
+        stats['avg_adp_num'] = adp_sum / float(dem_sum)
+        stats['avg_adp_hops'] = avg_adp_hops_sum / float(dem_sum)
+        stats['avg_adp_len'] = avg_adp_length_sum / float(dem_sum)
 
+    stats['demands'] = dem_num
     return stats
 
 def topo_stats_print(stats, name, filename=None):
