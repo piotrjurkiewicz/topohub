@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-import os
 import http.client as http
 import json
+import os
 import random
 import sys
 import time
@@ -109,10 +109,83 @@ class SNDLibGenerator(TopoGenerator):
                     demands[node0] = {}
                 demands[node0][node1] = value
 
-        name = ''.join([i if i.isalnum() else '_' for i in name.title()])
+        name = ''.join([c if c.isalnum() else '_' for c in name.title()])
         name = name.lower()
 
         return {'directed': False, 'multigraph': False, 'graph': {'name': name, 'demands': demands}, 'nodes': nodes, 'links': links}
+
+class TopoZooGenerator(TopoGenerator):
+
+    @classmethod
+    def download_topo(cls, name):
+
+        con = http.HTTPConnection("www.topology-zoo.org", timeout=5)
+        con.request('GET', f"/files/{name}.gml")
+        r = con.getresponse()
+        data = r.read()
+        return data
+
+    @classmethod
+    def generate_topo(cls, name):
+
+        mode = None
+        node_id, node, lon, lat, node0, node1 = None, None, None, None, None, None
+        nodes = []
+        links = []
+        pos = {}
+        node_id_to_name = {}
+        demands = {}
+
+        for line in cls.download_topo(name).splitlines():
+
+            line = line.decode()
+
+            if not mode:
+                if line.startswith("  node ["):
+                    mode = 'node'
+                    node_id, node, lon, lat = None, None, None, None
+                elif line.startswith("  edge ["):
+                    mode = 'edge'
+                    node0, node1 = None, None
+                continue
+
+            if mode == 'node':
+                if line.startswith("  ]"):
+                    if lon is not None and lat is not None:
+                        node_id_to_name[node_id] = node
+                        pos[node_id] = (float(lon), float(lat))
+                        nodes.append({'id': node, 'pos': (float(lon), float(lat))})
+                    mode = None
+                elif line.startswith("    id "):
+                    node_id = line.split()[-1]
+                elif line.startswith("    label "):
+                    node = line.split(maxsplit=1)[-1].strip('"')
+                elif line.startswith("    Longitude "):
+                    lon = line.split()[-1]
+                elif line.startswith("    Latitude "):
+                    lat = line.split()[-1]
+
+            if mode == 'edge':
+                if line.startswith("  ]"):
+                    try:
+                        distance = graph.haversine(pos[node0], pos[node1])
+                        links.append({'source': node_id_to_name[node0], 'target': node_id_to_name[node1], 'distance': distance})
+                    except KeyError:
+                        pass
+                    mode = None
+                elif line.startswith("    source "):
+                    node0 = line.split()[-1]
+                elif line.startswith("    target "):
+                    node1 = line.split()[-1]
+
+        name = ''.join([c if c.isalnum() else '_' for c in name.title()])
+        name = name.lower()
+
+        if not nodes or not links:
+            raise ValueError("Empty graph")
+
+        return {'directed': False, 'multigraph': False, 'graph': {'name': name, 'demands': demands}, 'nodes': nodes, 'links': links}
+
 
 class GabrielGenerator(TopoGenerator):
     scaling = False
@@ -236,17 +309,71 @@ class NumpyGabrielGenerator(TopoGenerator):
 
 if __name__ == '__main__':
 
-    try:
-        topo_names = sys.argv[1:]
-    except IndexError:
-        raise ValueError("Correct syntax is: %s topo_name" % sys.argv[0])
+    topo_names = sys.argv[1:]
 
-    # for topo_name in topo_names:
-    #     SNDLibGenerator.save_topo(topo_name, with_plot=True, with_path_stats=True, with_topo_stats=True, plot_aspect=0.625)
+    if topo_names[0] == 'gabriel':
 
-    for n in range(25, 525, 25):
-        ts = time.time()
-        for i in range(10):
-            GabrielGenerator.save_topo(n, (i * MAX_GABRIEL_NODES) + n, filename='mininet/topo_lib/gabriel2/%s/%s' % (n, i), indent=0, with_plot=True, with_topo_stats=True, with_path_stats=True)
-            exit()
-        print(time.time() - ts)
+        for n in range(25, 525, 25):
+            start_time = time.time()
+            for i in range(10):
+                GabrielGenerator.save_topo(n, (i * MAX_GABRIEL_NODES) + n, filename=f'data/gabriel/{n}/{i}', with_plot=True, with_topo_stats=True, with_path_stats=True)
+                break
+            print(time.time() - start_time)
+
+    elif topo_names[0] == 'sdnlib':
+
+        topo_names = ['abilene', 'atlanta', 'brain', 'cost266', 'dfn-bwin', 'dfn-gwin', 'di-yuan', 'france', 'geant',
+                      'germany50', 'giul39', 'india35', 'janos-us', 'janos-us-ca', 'newyork', 'nobel-eu',
+                      'nobel-germany', 'nobel-us', 'norway', 'pdh', 'pioro40', 'polska', 'sun', 'ta1', 'ta2', 'zib54']
+
+        for topo_name in topo_names:
+            SNDLibGenerator.save_topo(topo_name, filename=f'data/sndlib/{topo_name}', with_plot=True, with_path_stats=True, with_topo_stats=True)
+
+    elif topo_names[0] == 'topozoo':
+
+        topo_names = ['Aarnet', 'Abilene', 'Abvt', 'Aconet', 'Agis', 'Airtel', 'Ai3', 'Amres', 'Ans', 'Arn', 'Arnes',
+                      'Arpanet196912', 'Arpanet19706', 'Arpanet19719', 'Arpanet19723', 'Arpanet19728', 'AsnetAm', 'Atmnet',
+                      'AttMpls', 'Azrena', 'Bandcon', 'Basnet', 'Bbnplanet', 'Bellcanada', 'Bellsouth', 'Belnet2003',
+                      'Belnet2004', 'Belnet2005', 'Belnet2006', 'Belnet2007', 'Belnet2008', 'Belnet2009', 'Belnet2010',
+                      'BeyondTheNetwork', 'Bics', 'Biznet', 'Bren', 'BsonetEurope', 'BtAsiaPac', 'BtEurope',
+                      'BtLatinAmerica', 'BtNorthAmerica', 'Canerie', 'Carnet', 'Cernet', 'Cesnet1993', 'Cesnet1997',
+                      'Cesnet1999', 'Cesnet2001', 'Cesnet200304', 'Cesnet200511', 'Cesnet200603', 'Cesnet200706',
+                      'Cesnet201006', 'Chinanet', 'Claranet', 'Cogentco', 'Colt', 'Columbus', 'Compuserve',
+                      'CrlNetworkServices', 'Cudi', 'Cwix', 'Cynet', 'Darkstrand', 'Dataxchange', 'Deltacom',
+                      'DeutscheTelekom', 'Dfn', 'DialtelecomCz', 'Digex', 'Easynet', 'Eenet', 'EliBackbone', 'Epoch',
+                      'Ernet', 'Esnet', 'Eunetworks', 'Evolink', 'Fatman', 'Fccn', 'Forthnet', 'Funet', 'Gambia',
+                      'Garr199901', 'Garr199904', 'Garr199905', 'Garr200109', 'Garr200112', 'Garr200212', 'Garr200404',
+                      'Garr200902', 'Garr200908', 'Garr200909', 'Garr200912', 'Garr201001', 'Garr201003', 'Garr201004',
+                      'Garr201005', 'Garr201007', 'Garr201008', 'Garr201010', 'Garr201012', 'Garr201101', 'Garr201102',
+                      'Garr201103', 'Garr201104', 'Garr201105', 'Garr201107', 'Garr201108', 'Garr201109', 'Garr201110',
+                      'Garr201111', 'Garr201112', 'Garr201201', 'Gblnet', 'Geant2001', 'Geant2009', 'Geant2010',
+                      'Geant2012', 'Getnet', 'Globalcenter', 'Globenet', 'Goodnet', 'Grena', 'Gridnet', 'Grnet', 'GtsCe',
+                      'GtsCzechRepublic', 'GtsHungary', 'GtsPoland', 'GtsRomania', 'GtsSlovakia', 'Harnet', 'Heanet',
+                      'HiberniaCanada', 'HiberniaGlobal', 'HiberniaIreland', 'HiberniaNireland', 'HiberniaUk', 'HiberniaUs',
+                      'Highwinds', 'HostwayInternational', 'HurricaneElectric', 'Ibm', 'Iij', 'Iinet', 'Ilan', 'Integra',
+                      'Intellifiber', 'Internetmci', 'Internode', 'Interoute', 'Intranetwork', 'Ion',
+                      'IowaStatewideFiberMap', 'Iris', 'Istar', 'Itnet', 'Janetbackbone', 'JanetExternal', 'Janetlense',
+                      'Jgn2Plus', 'Karen', 'Kdl', 'KentmanApr2007', 'KentmanAug2005', 'KentmanFeb2008', 'KentmanJan2011',
+                      'KentmanJul2005', 'Kreonet', 'LambdaNet', 'Latnet', 'Layer42', 'Litnet', 'Marnet', 'Marwan',
+                      'Missouri', 'Mren', 'Myren', 'Napnet', 'Navigata', 'Netrail', 'NetworkUsa', 'Nextgen', 'Niif', 'Noel',
+                      'Nordu1989', 'Nordu1997', 'Nordu2005', 'Nordu2010', 'Nsfcnet', 'Nsfnet', 'Ntelos', 'Ntt', 'Oteglobe',
+                      'Oxford', 'Pacificwave', 'Packetexchange', 'Padi', 'Palmetto', 'Peer1', 'Pern', 'PionierL1',
+                      'PionierL3', 'Psinet', 'Quest', 'RedBestel', 'Rediris', 'Renam', 'Renater1999', 'Renater2001',
+                      'Renater2004', 'Renater2006', 'Renater2008', 'Renater2010', 'Restena', 'Reuna', 'Rhnet', 'Rnp',
+                      'Roedunet', 'RoedunetFibre', 'Sago', 'Sanet', 'Sanren', 'Savvis', 'Shentel', 'Sinet', 'Singaren',
+                      'Spiralight', 'Sprint', 'Sunet', 'Surfnet', 'Switch', 'SwitchL3', 'Syringa', 'TataNld', 'Telcove',
+                      'Telecomserbia', 'Tinet', 'TLex', 'Tw', 'Twaren', 'Ulaknet', 'UniC', 'Uninet', 'Uninett2010',
+                      'Uninett2011', 'Uran', 'UsCarrier', 'UsSignal', 'Uunet', 'Vinaren', 'VisionNet', 'VtlWavenet2008',
+                      'VtlWavenet2011', 'WideJpn', 'Xeex', 'Xspedius', 'York', 'Zamren']
+
+        for topo_name in topo_names:
+            print(topo_name)
+            try:
+                TopoZooGenerator.save_topo(topo_name, filename=f'data/topozoo/{topo_name}', with_plot=True, with_path_stats=True, with_topo_stats=True)
+            except nx.exception.NetworkXNoPath:
+                pass
+            except ValueError as exc:
+                if exc.args[0] == 'Empty graph':
+                    pass
+                else:
+                    raise
