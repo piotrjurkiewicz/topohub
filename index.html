@@ -1,10 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <link href="style.css" rel="stylesheet" />
+  <title>Network Topologies Repository</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+
+    #container {
+      display: flex;
+      align-items: flex-start;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    #topologyDisplay {
+      width: 800px;
+      height: 800px;
+      border: 1px solid #ccc;
+      margin-right: 20px;
+    }
+
+    #controls {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Additional style for the topology properties display */
+    #topologyProperties, #topologySelection, #trafficSelection {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+    }
+
+    /* Style for table cells (property name and value) */
+    #topologyProperties td {
+      border-bottom: 1px solid #ccc;
+      padding: 5px;
+    }
+
+    #topologyProperties tr:nth-child(2) {
+      visibility: hidden;
+    }
+
+    #topologyProperties td:nth-child(2) {
+      text-align: right;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: medium;
+    }
+
+    select, input {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  </style>
 </head>
 <body>
+  <div id="container">
+    <div id="topologyDisplay"></div>
+    <div id="controls">
+      <div id="topologySelection">
+        <h2>Select a Topology:</h2>
+        <select id="topologySelect">
+          <option value="">Select a topology</option>
+          <option value="topology1">Topology 1</option>
+          <option value="topology2">Topology 2</option>
+          <!-- Add more topology options as needed -->
+        </select>
+      </div>
+
+      <!-- Display of topology properties -->
+      <div id="topologyProperties">
+        <table>
+          <tr>
+            <td><strong>Name:</strong></td>
+            <td><span id="topologyName">-</span></td>
+          </tr>
+          <tr>
+            <td><strong>Description:</strong></td>
+            <td><span id="topologyDescription">-</span></td>
+          </tr>
+          <tr>
+            <td><strong>Number of Nodes:</strong></td>
+            <td><span id="numNodes">-</span></td>
+          </tr>
+          <tr>
+            <td><strong>Number of Edges:</strong></td>
+            <td><span id="numEdges">-</span></td>
+          </tr>
+          <tr>
+            <td><strong>Number of Demands:</strong></td>
+            <td><span id="numDemands">-</span></td>
+          </tr>
+          <tr>
+            <td><strong>Graph Density:</strong></td>
+            <td><span id="graphDensity">-</span></td>
+          </tr>
+          <tr>
+            <td><strong>Avg. Vertex Degree:</strong></td>
+            <td><span id="avgVertexDegree">-</span></td>
+          </tr>
+          <tr>
+            <td><strong>Min. Edge Length:</strong></td>
+            <td><span id="minEdgeLength">-</span></td>
+          </tr>
+          <tr>
+            <td><strong>Avg. Edge Length:</strong></td>
+            <td><span id="avgEdgeLength">-</span></td>
+          </tr>
+          <tr>
+            <td><strong>Max. Edge Length:</strong></td>
+            <td><span id="maxEdgeLength">-</span></td>
+          </tr>
+          <tr>
+            <td><strong>Avg. Number of Disjoint Shortest Paths:</strong></td>
+            <td><span id="avgNumDisjointPaths">-</span></td>
+          </tr>
+          <tr>
+            <td><strong>Avg. Hops of Disjoint Shortest Paths:</strong></td>
+            <td><span id="avgHopsDisjointPaths">-</span></td>
+          </tr>
+          <tr>
+            <td><strong>Avg. Length of Disjoint Shortest Paths:</strong></td>
+            <td><span id="avgLengthDisjointPaths">-</span></td>
+          </tr>
+          <tr>
+            <td><strong>Avg. Number of Disjoint Paths:</strong></td>
+            <td><span id="avgNumDisjointPaths2">-</span></td>
+          </tr>
+          <tr>
+            <td><strong>Avg. Hops of Disjoint Paths:</strong></td>
+            <td><span id="avgHopsDisjointPaths2">-</span></td>
+          </tr>
+          <tr>
+            <td><strong>Avg. Length of Disjoint Paths:</strong></td>
+            <td><span id="avgLengthDisjointPaths2">-</span></td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="trafficSelection">
+        <h2>Select Traffic Model:</h2>
+        <select id="trafficModelSelect">
+          <option value="custom">Custom</option>
+          <option value="one">One</option>
+          <option value="degree">Degree</option>
+          <option value="pop">Pop</option>
+        </select>
+
+        <h2>Link Capacity (integer):</h2>
+        <input type="number" id="linkCapacityInput" value="100" min="1">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Dummy SVG data for topology display
+    const topologyData = {
+      topology1: `<svg width="600" height="600"><circle cx="300" cy="300" r="100" fill="blue" /></svg>`,
+      topology2: `<svg width="600" height="600"><rect width="200" height="300" fill="red" /></svg>`
+      // Add more SVG data for each topology option
+    };
+
+    // Dummy topology properties data
+    const topologyPropertiesData = {
+      topology1: {
+        name: 'Topology 1',
+        description: 'This is the first topology.',
+        numNodes: 50,
+        numEdges: 88,
+        numDemands: 1324,
+        graphDensity: 0.07,
+        avgVertexDegree: 3.52,
+        minEdgeLength: 25.94,
+        avgEdgeLength: 100.71,
+        maxEdgeLength: 252.30,
+        avgNumDisjointPaths: 1.23,
+        avgHopsDisjointPaths: 2.85,
+        avgLengthDisjointPaths: 117.97,
+        avgNumDisjointPaths2: 3.19,
+        avgHopsDisjointPaths2: 4.67,
+        avgLengthDisjointPaths2: 446.59
+      },
+      topology2: {
+        name: 'Topology 2',
+        description: 'This is the second topology.',
+        numNodes: 100,
+        numEdges: 150,
+        numDemands: 2500,
+        graphDensity: 0.03,
+        avgVertexDegree: 3.00,
+        minEdgeLength: 20.50,
+        avgEdgeLength: 90.25,
+        maxEdgeLength: 200.10,
+        avgNumDisjointPaths: 1.50,
+        avgHopsDisjointPaths: 3.20,
+        avgLengthDisjointPaths: 120.20,
+        avgNumDisjointPaths2: 2.80,
+        avgHopsDisjointPaths2: 4.90,
+        avgLengthDisjointPaths2: 430.75
+      }
+      // Add more topology properties as needed
+    };
+
+    const topologyDisplay = document.getElementById('topologyDisplay');
+    const topologySelect = document.getElementById('topologySelect');
+    const trafficModelSelect = document.getElementById('trafficModelSelect');
+    const linkCapacityInput = document.getElementById('linkCapacityInput');
+    const topologyNameElement = document.getElementById('topologyName');
+    const topologyDescriptionElement = document.getElementById('topologyDescription');
+    const numNodesElement = document.getElementById('numNodes');
+    const numEdgesElement = document.getElementById('numEdges');
+    const numDemandsElement = document.getElementById('numDemands');
+    const graphDensityElement = document.getElementById('graphDensity');
+    const avgVertexDegreeElement = document.getElementById('avgVertexDegree');
+    const minEdgeLengthElement = document.getElementById('minEdgeLength');
+    const avgEdgeLengthElement = document.getElementById('avgEdgeLength');
+    const maxEdgeLengthElement = document.getElementById('maxEdgeLength');
+    const avgNumDisjointPathsElement = document.getElementById('avgNumDisjointPaths');
+    const avgHopsDisjointPathsElement = document.getElementById('avgHopsDisjointPaths');
+    const avgLengthDisjointPathsElement = document.getElementById('avgLengthDisjointPaths');
+    const avgNumDisjointPathsElement2 = document.getElementById('avgNumDisjointPaths2');
+    const avgHopsDisjointPathsElement2 = document.getElementById('avgHopsDisjointPaths2');
+    const avgLengthDisjointPathsElement2 = document.getElementById('avgLengthDisjointPaths2');
+
+    // Function to display selected topology SVG
+    function displayTopology() {
+      const selectedTopology = topologySelect.value;
+      const svg = topologyData[selectedTopology];
+
+      if (svg) {
+        topologyDisplay.innerHTML = svg;
+      } else {
+        topologyDisplay.innerHTML = '<p>No topology selected.</p>';
+      }
+
+      // Display topology properties
+      const topologyProperties = topologyPropertiesData[selectedTopology];
+      if (topologyProperties) {
+        topologyNameElement.textContent = topologyProperties.name;
+        topologyDescriptionElement.textContent = topologyProperties.description;
+        numNodesElement.textContent = topologyProperties.numNodes;
+        numEdgesElement.textContent = topologyProperties.numEdges;
+        numDemandsElement.textContent = topologyProperties.numDemands;
+        graphDensityElement.textContent = topologyProperties.graphDensity;
+        avgVertexDegreeElement.textContent = topologyProperties.avgVertexDegree;
+        minEdgeLengthElement.textContent = topologyProperties.minEdgeLength;
+        avgEdgeLengthElement.textContent = topologyProperties.avgEdgeLength;
+        maxEdgeLengthElement.textContent = topologyProperties.maxEdgeLength;
+        avgNumDisjointPathsElement.textContent = topologyProperties.avgNumDisjointPaths;
+        avgHopsDisjointPathsElement.textContent = topologyProperties.avgHopsDisjointPaths;
+        avgLengthDisjointPathsElement.textContent = topologyProperties.avgLengthDisjointPaths;
+        avgNumDisjointPathsElement2.textContent = topologyProperties.avgNumDisjointPaths2; // Add the other property values as needed
+        avgHopsDisjointPathsElement2.textContent = topologyProperties.avgHopsDisjointPaths2; // Add the other property values as needed
+        avgLengthDisjointPathsElement2.textContent = topologyProperties.avgLengthDisjointPaths2; // Add the other property values as needed
+
+        // Make the table visible
+        document.getElementById('topologyProperties').style.visibility = 'visible';
+      } else {
+        // Hide the table if no topology is selected
+        document.getElementById('topologyProperties').style.visibility = 'hidden';
+      }
+    }
+
+    // Function to handle changes in traffic model and link capacity
+    function updateControls() {
+      const selectedTrafficModel = trafficModelSelect.value;
+      const linkCapacity = parseInt(linkCapacityInput.value, 10);
+
+      // Use the selected traffic model and link capacity as needed
+      console.log('Selected Traffic Model:', selectedTrafficModel);
+      console.log('Link Capacity:', linkCapacity);
+    }
+
+    // Add event listeners to the dropdowns and input
+    topologySelect.addEventListener('change', displayTopology);
+    trafficModelSelect.addEventListener('change', updateControls);
+    linkCapacityInput.addEventListener('input', updateControls);
+
+    // Initial display of topology
+    displayTopology();
+  </script>
 </body>
 </html>
