@@ -402,6 +402,7 @@ def topo_stats(g, ps=None):
         'min_edge_len': min_edge_length,
         'avg_edge_len': avg_edge_length,
         'max_edge_len': max_edge_length,
+        'diameter_len': nx.diameter(g, weight='distance')
     }
 
     if ps is None:
