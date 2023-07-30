@@ -39,6 +39,7 @@
         .container {
             display: flex;
             min-height: calc(100vh - 64px); /* Adjust min-height for the header */
+            max-height: calc(100vh - 64px);
             height: 100%;
             flex-direction: row;
         }
@@ -52,6 +53,8 @@
             background-color: #ffffff;
             border-right: 1px solid #d0d7de;
             width: 350px;
+            display: flex;
+            flex-direction: column;
         }
 
         .sidebar-right {
@@ -77,6 +80,7 @@
         #topoDisplay {
             flex: 1;
             margin-bottom: 0;
+            min-height: 0;
         }
 
         #topoDisplay svg {
@@ -105,10 +109,19 @@
             width: 40%;
         }
 
-        #topologyList {
+        #topologyListWrapper {
             border: 1px solid #d8dee4;
             border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 16px;
+            overflow: hidden;
+        }
+
+        #topologyList {
             padding: 0;
+            overflow-y: scroll;
+            margin: 0;
         }
 
         #topologyList li {
@@ -168,9 +181,11 @@
                 <option value="" selected>Select size</option>
             </select>
         </div>
-        <ul id="topologyList" style="display: none;">
-            <!-- Topology list will be dynamically loaded here -->
-        </ul>
+        <div id="topologyListWrapper" style="display: none;">
+            <ul id="topologyList">
+                <!-- Topology list will be dynamically loaded here -->
+            </ul>
+        </div>
     </aside>
     <main class="main-content">
         <h2>Topology graph</h2>
@@ -314,6 +329,7 @@
         const firstLevelDropdown = document.getElementById("firstLevelDropdown");
         const secondLevelDropdown = document.getElementById("secondLevelDropdown");
         const topologyList = document.getElementById("topologyList");
+        const topologyListWrapper = document.getElementById("topologyListWrapper");
         const topoDisplay = document.getElementById("topoDisplay");
         const topologyProperties = document.getElementById("topologyProperties");
         const ecmpLinkUtilization = document.getElementById("ecmpLinkUtilization");
@@ -328,7 +344,7 @@
                 option.textContent = key;
                 secondLevelDropdown.appendChild(option);
             }
-            topologyList.style.display = 'none';
+            topologyListWrapper.style.display = 'none';
             secondLevelDropdown.disabled = false;
         };
 
@@ -348,7 +364,7 @@
                     fetchAndDisplayTopology(path, topology);
                 });
             });
-            topologyList.style.display = 'block';
+            topologyListWrapper.style.display = 'flex';
         };
 
         firstLevelDropdown.addEventListener("change", () => {
@@ -357,7 +373,7 @@
                 secondLevelDropdown.value = "";
                 secondLevelDropdown.disabled = true;
                 topologyList.innerHTML = '';
-                topologyList.style.display = 'none';
+                topologyListWrapper.style.display = 'none';
                 topoDisplay.innerHTML = "";
                 topologyProperties.innerHTML = "";
                 ecmpLinkUtilization.innerHTML = "";
@@ -377,7 +393,7 @@
             const selectedTopology = secondLevelDropdown.value;
             if (!selectedCategory || !selectedTopology) {
                 topologyList.innerHTML = '';
-                topologyList.style.display = 'none';
+                topologyListWrapper.style.display = 'none';
                 topoDisplay.innerHTML = "";
                 topologyProperties.innerHTML = "";
                 ecmpLinkUtilization.innerHTML = "";
