@@ -125,19 +125,45 @@
         }
 
         #topologyList li {
+            cursor: pointer;
+        }
+
+        #topologyPropertiesList {
+            padding: 0;
+            margin: 0;
+            border: 1px solid #d8dee4;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        #topologyPropertiesList li {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .property {
+            flex: 1;
+            text-align: left;
+        }
+
+        .property_value {
+            flex: 1;
+            text-align: right;
+        }
+
+        li {
             padding: 4px;
             border-bottom: 1px solid #d8dee4;
             list-style-type: none;
         }
 
-        #topologyList li:last-child {
+        li:last-child {
             border-bottom: none;
         }
 
-        #topologyList li:hover {
+        li:hover {
             background-color: #f6f8fa;
         }
-
 
         /* Adjust the styles for smaller screens */
         @media (max-width: 768px) {
@@ -161,6 +187,37 @@
                 padding-bottom: 0;
             }
         }
+
+        svg text {
+            pointer-events: none;
+        }
+
+        svg circle {
+            cursor: pointer;
+        }
+
+        svg circle:hover {
+            fill: aqua;
+            cursor: pointer;
+        }
+
+        svg path {
+            fill: none;
+        }
+
+        svg path.utilization {
+            stroke: black;
+            stroke-width: 1;
+            cursor: pointer;
+        }
+
+        .tooltip {
+            position: absolute;
+            background: white;
+            border: 1px solid black;
+            padding: 4px 6px;
+        }
+
     </style>
 </head>
 <body>
@@ -168,8 +225,9 @@
     <h1>TopoHub</h1>
 </header>
 <div class="container">
+    <div id="tooltip" class="tooltip" style="display: none;"></div>
     <aside class="sidebar-left">
-        <h2>Topologies</h2>
+        <h2>Select a topology</h2>
         <div id="dropdowns">
             <select id="firstLevelDropdown">
                 <option value="" selected>Select a category</option>
@@ -188,7 +246,6 @@
         </div>
     </aside>
     <main class="main-content">
-        <h2>Topology graph</h2>
         <div id="topoDisplay" class="box">
 
             <svg width="505.59" height="552.68" viewBox="-24.74 -21.13 505.59 552.68"
@@ -303,15 +360,23 @@
         </div>
     </main>
     <aside class="sidebar-right">
-        <h2>Topology properties</h2>
-        <div id="topologyProperties" class="box">
-            <h3>Topology 1</h3>
-            <p>Description: This is the first topology.</p>
+        <div id="topologyInfo" class="box">
+            <h2>Topology info</h2>
         </div>
-        <h2>ECMP link utilization</h2>
+        <div id="topologyProperties" class="box">
+            <h2>Topology properties</h2>
+            <ul id="topologyPropertiesList">
+            </ul>
+        </div>
         <div id="ecmpLinkUtilization" class="box">
-            <h3>Topology 1</h3>
+            <h2>ECMP routing link utilization</h2>
             <p>Description: This is the first topology.</p>
+            <select id="trafficModelDropdown">
+                <option value="none" selected>None</option>
+                <!-- Add options for each category in the JSON data -->
+                <option value="unit">Unit</option>
+                <option value="degree">Degree</option>
+            </select>
         </div>
     </aside>
 </div>
@@ -325,6 +390,566 @@
         'sndlib': ['abilene', 'atlanta', 'brain', 'cost266', 'dfn-bwin', 'dfn-gwin', 'di-yuan', 'france', 'geant', 'germany50', 'giul39', 'india35', 'janos-us-ca', 'janos-us', 'newyork', 'nobel-eu', 'nobel-germany', 'nobel-us', 'norway', 'pdh', 'pioro40', 'polska', 'sun', 'ta1', 'ta2', 'zib54']
     };
 
+    const propertiesNames = [['nodes', 'Number of nodes'], ['edges', 'Number of edges'], ['demands', 'Number of demands'],
+        ['min_degree', 'Minimum vertex degree'], ['avg_degree', 'Average vertex degree'], ['std_degree', 'Standard deviation of vertex degree'], ['max_degree', 'Maximum vertex degree'], ['gini', 'Gini coeffcent'],
+        ['min_edge_len', 'Minimum edge length'], ['avg_edge_len', 'Average edge length'], ['max_edge_len', 'Maximum edge length'],
+        ['diameter_len', 'Graph diameter (by edge lenghts)'], ['diameter_hops', 'Graph diameter (by hops)'],
+        ['avg_sdp_num', 'Average number of disjoint shortest paths'], ['max_sdp_num', 'Maximum number of disjoint shortest paths'], ['avg_sdp_hops', 'Average hops of disjoint shortest paths'],
+        ['avg_sdp_len', 'Average length of disjoint shortest paths'], ['avg_adp_num', 'Average number of all disjoint paths'], ['max_adp_num', 'Maximum number of all disjoint paths'],
+        ['avg_adp_hops', 'Average hops of all disjoint paths'], ['avg_adp_len', 'Average length of all disjoint paths']]
+
+    const dummy_properties = {
+        "nodes": 12,
+        "edges": 18,
+        "demands": 132,
+        "min_degree": 2,
+        "avg_degree": 3,
+        "std_degree": 0.71,
+        "max_degree": 5,
+        "gini": 0.1,
+        "min_edge_len": 78.7,
+        "avg_edge_len": 188.13,
+        "max_edge_len": 354.64,
+        "diameter_len": 811.09,
+        "diameter_hops": 4,
+        "avg_sdp_num": 1.27,
+        "max_sdp_num": 3,
+        "avg_sdp_hops": 2.13,
+        "avg_sdp_len": 210.21,
+        "avg_adp_num": 2.67,
+        "max_adp_num": 3,
+        "avg_adp_hops": 3.28,
+        "avg_adp_len": 607.51
+    }
+
+    const dummy_links = [
+        {
+            "distance": 127.58,
+            "ecmp_fwd": {
+                "unit": 8.41,
+                "degree": 6.40
+            },
+            "ecmp_bwd": {
+                "unit": 9.13,
+                "degree": 7.33
+            },
+            "source": "R0",
+            "target": "R16"
+        },
+        {
+            "distance": 58.31,
+            "ecmp_fwd": {
+                "unit": 24.52,
+                "degree": 17.69
+            },
+            "ecmp_bwd": {
+                "unit": 23.80,
+                "degree": 16.75
+            },
+            "source": "R0",
+            "target": "R22"
+        },
+        {
+            "distance": 149.24,
+            "ecmp_fwd": {
+                "unit": 28.37,
+                "degree": 26.53
+            },
+            "ecmp_bwd": {
+                "unit": 21.15,
+                "degree": 20.85
+            },
+            "source": "R1",
+            "target": "R7"
+        },
+        {
+            "distance": 118.78,
+            "ecmp_fwd": {
+                "unit": 24.76,
+                "degree": 25.57
+            },
+            "ecmp_bwd": {
+                "unit": 31.25,
+                "degree": 30.96
+            },
+            "source": "R1",
+            "target": "R11"
+        },
+        {
+            "distance": 164.39,
+            "ecmp_fwd": {
+                "unit": 18.51,
+                "degree": 22.19
+            },
+            "ecmp_bwd": {
+                "unit": 18.99,
+                "degree": 22.26
+            },
+            "source": "R1",
+            "target": "R12"
+        },
+        {
+            "distance": 162.17,
+            "ecmp_fwd": {
+                "unit": 5.05,
+                "degree": 6.71
+            },
+            "ecmp_bwd": {
+                "unit": 5.29,
+                "degree": 6.93
+            },
+            "source": "R1",
+            "target": "R23"
+        },
+        {
+            "distance": 65.13,
+            "ecmp_fwd": {
+                "unit": 13.46,
+                "degree": 8.72
+            },
+            "ecmp_bwd": {
+                "unit": 18.27,
+                "degree": 11.77
+            },
+            "source": "R2",
+            "target": "R7"
+        },
+        {
+            "distance": 39.05,
+            "ecmp_fwd": {
+                "unit": 9.62,
+                "degree": 6.23
+            },
+            "ecmp_bwd": {
+                "unit": 4.81,
+                "degree": 3.19
+            },
+            "source": "R2",
+            "target": "R8"
+        },
+        {
+            "distance": 32.40,
+            "ecmp_fwd": {
+                "unit": 10.04,
+                "degree": 6.58
+            },
+            "ecmp_bwd": {
+                "unit": 10.58,
+                "degree": 6.90
+            },
+            "source": "R3",
+            "target": "R10"
+        },
+        {
+            "distance": 57.50,
+            "ecmp_fwd": {
+                "unit": 2.40,
+                "degree": 2.16
+            },
+            "ecmp_bwd": {
+                "unit": 2.40,
+                "degree": 2.16
+            },
+            "source": "R3",
+            "target": "R16"
+        },
+        {
+            "distance": 68.74,
+            "ecmp_fwd": {
+                "unit": 29.33,
+                "degree": 25.74
+            },
+            "ecmp_bwd": {
+                "unit": 28.79,
+                "degree": 25.41
+            },
+            "source": "R3",
+            "target": "R20"
+        },
+        {
+            "distance": 96.61,
+            "ecmp_fwd": {
+                "unit": 35.10,
+                "degree": 24.78
+            },
+            "ecmp_bwd": {
+                "unit": 35.10,
+                "degree": 24.78
+            },
+            "source": "R4",
+            "target": "R9"
+        },
+        {
+            "distance": 79.70,
+            "ecmp_fwd": {
+                "unit": 44.35,
+                "degree": 29.57
+            },
+            "ecmp_bwd": {
+                "unit": 42.31,
+                "degree": 28.28
+            },
+            "source": "R4",
+            "target": "R13"
+        },
+        {
+            "distance": 119.23,
+            "ecmp_fwd": {
+                "unit": 24.52,
+                "degree": 22.19
+            },
+            "ecmp_bwd": {
+                "unit": 26.56,
+                "degree": 23.48
+            },
+            "source": "R4",
+            "target": "R24"
+        },
+        {
+            "distance": 157.68,
+            "ecmp_fwd": {
+                "unit": 12.50,
+                "degree": 11.86
+            },
+            "ecmp_bwd": {
+                "unit": 14.06,
+                "degree": 13.16
+            },
+            "source": "R5",
+            "target": "R6"
+        },
+        {
+            "distance": 47.54,
+            "ecmp_fwd": {
+                "unit": 32.33,
+                "degree": 30.46
+            },
+            "ecmp_bwd": {
+                "unit": 30.77,
+                "degree": 28.83
+            },
+            "source": "R5",
+            "target": "R18"
+        },
+        {
+            "distance": 113.24,
+            "ecmp_fwd": {
+                "unit": 16.35,
+                "degree": 13.80
+            },
+            "ecmp_bwd": {
+                "unit": 16.35,
+                "degree": 14.14
+            },
+            "source": "R5",
+            "target": "R22"
+        },
+        {
+            "distance": 159.77,
+            "ecmp_fwd": {
+                "unit": 98.44,
+                "degree": 98.37
+            },
+            "ecmp_bwd": {
+                "unit": 100.00,
+                "degree": 100.00
+            },
+            "source": "R6",
+            "target": "R9"
+        },
+        {
+            "distance": 72.92,
+            "ecmp_fwd": {
+                "unit": 72.36,
+                "degree": 71.82
+            },
+            "ecmp_bwd": {
+                "unit": 71.63,
+                "degree": 70.88
+            },
+            "source": "R6",
+            "target": "R20"
+        },
+        {
+            "distance": 155.66,
+            "ecmp_fwd": {
+                "unit": 23.80,
+                "degree": 19.63
+            },
+            "ecmp_bwd": {
+                "unit": 24.52,
+                "degree": 20.23
+            },
+            "source": "R6",
+            "target": "R22"
+        },
+        {
+            "distance": 59.41,
+            "ecmp_fwd": {
+                "unit": 2.40,
+                "degree": 2.52
+            },
+            "ecmp_bwd": {
+                "unit": 2.88,
+                "degree": 2.88
+            },
+            "source": "R7",
+            "target": "R8"
+        },
+        {
+            "distance": 105.37,
+            "ecmp_fwd": {
+                "unit": 14.42,
+                "degree": 16.06
+            },
+            "ecmp_bwd": {
+                "unit": 11.54,
+                "degree": 13.06
+            },
+            "source": "R7",
+            "target": "R23"
+        },
+        {
+            "distance": 117.87,
+            "ecmp_fwd": {
+                "unit": 27.88,
+                "degree": 24.35
+            },
+            "ecmp_bwd": {
+                "unit": 23.56,
+                "degree": 21.66
+            },
+            "source": "R8",
+            "target": "R23"
+        },
+        {
+            "distance": 40.38,
+            "ecmp_fwd": {
+                "unit": 19.53,
+                "degree": 17.94
+            },
+            "ecmp_bwd": {
+                "unit": 20.43,
+                "degree": 18.84
+            },
+            "source": "R9",
+            "target": "R18"
+        },
+        {
+            "distance": 138.40,
+            "ecmp_fwd": {
+                "unit": 75.54,
+                "degree": 86.81
+            },
+            "ecmp_bwd": {
+                "unit": 76.20,
+                "degree": 87.54
+            },
+            "source": "R9",
+            "target": "R24"
+        },
+        {
+            "distance": 50.32,
+            "ecmp_fwd": {
+                "unit": 12.50,
+                "degree": 8.05
+            },
+            "ecmp_bwd": {
+                "unit": 13.04,
+                "degree": 8.38
+            },
+            "source": "R10",
+            "target": "R16"
+        },
+        {
+            "distance": 88.74,
+            "ecmp_fwd": {
+                "unit": 11.90,
+                "degree": 9.71
+            },
+            "ecmp_bwd": {
+                "unit": 13.46,
+                "degree": 10.64
+            },
+            "source": "R11",
+            "target": "R14"
+        },
+        {
+            "distance": 99.64,
+            "ecmp_fwd": {
+                "unit": 23.20,
+                "degree": 24.28
+            },
+            "ecmp_bwd": {
+                "unit": 28.12,
+                "degree": 28.73
+            },
+            "source": "R11",
+            "target": "R24"
+        },
+        {
+            "distance": 51.21,
+            "ecmp_fwd": {
+                "unit": 9.44,
+                "degree": 9.09
+            },
+            "ecmp_bwd": {
+                "unit": 10.58,
+                "degree": 10.21
+            },
+            "source": "R12",
+            "target": "R15"
+        },
+        {
+            "distance": 51.86,
+            "ecmp_fwd": {
+                "unit": 21.27,
+                "degree": 22.98
+            },
+            "ecmp_bwd": {
+                "unit": 20.67,
+                "degree": 22.38
+            },
+            "source": "R12",
+            "target": "R19"
+        },
+        {
+            "distance": 31.44,
+            "ecmp_fwd": {
+                "unit": 36.54,
+                "degree": 44.38
+            },
+            "ecmp_bwd": {
+                "unit": 43.63,
+                "degree": 50.06
+            },
+            "source": "R12",
+            "target": "R23"
+        },
+        {
+            "distance": 110.60,
+            "ecmp_fwd": {
+                "unit": 70.19,
+                "degree": 80.90
+            },
+            "ecmp_bwd": {
+                "unit": 63.04,
+                "degree": 74.78
+            },
+            "source": "R12",
+            "target": "R24"
+        },
+        {
+            "distance": 74.64,
+            "ecmp_fwd": {
+                "unit": 23.08,
+                "degree": 7.57
+            },
+            "ecmp_bwd": {
+                "unit": 23.08,
+                "degree": 7.57
+            },
+            "source": "R13",
+            "target": "R17"
+        },
+        {
+            "distance": 73.39,
+            "ecmp_fwd": {
+                "unit": 13.46,
+                "degree": 7.96
+            },
+            "ecmp_bwd": {
+                "unit": 11.42,
+                "degree": 6.66
+            },
+            "source": "R13",
+            "target": "R21"
+        },
+        {
+            "distance": 89.66,
+            "ecmp_fwd": {
+                "unit": 19.11,
+                "degree": 12.99
+            },
+            "ecmp_bwd": {
+                "unit": 21.15,
+                "degree": 14.28
+            },
+            "source": "R14",
+            "target": "R21"
+        },
+        {
+            "distance": 75.13,
+            "ecmp_fwd": {
+                "unit": 25.00,
+                "degree": 22.33
+            },
+            "ecmp_bwd": {
+                "unit": 24.52,
+                "degree": 21.97
+            },
+            "source": "R14",
+            "target": "R24"
+        },
+        {
+            "distance": 33.32,
+            "ecmp_fwd": {
+                "unit": 15.50,
+                "degree": 14.62
+            },
+            "ecmp_bwd": {
+                "unit": 16.77,
+                "degree": 15.95
+            },
+            "source": "R15",
+            "target": "R19"
+        },
+        {
+            "distance": 43.74,
+            "ecmp_fwd": {
+                "unit": 12.50,
+                "degree": 12.75
+            },
+            "ecmp_bwd": {
+                "unit": 12.38,
+                "degree": 12.53
+            },
+            "source": "R15",
+            "target": "R23"
+        },
+        {
+            "distance": 45.52,
+            "ecmp_fwd": {
+                "unit": 26.92,
+                "degree": 29.33
+            },
+            "ecmp_bwd": {
+                "unit": 28.19,
+                "degree": 30.59
+            },
+            "source": "R16",
+            "target": "R20"
+        },
+        {
+            "distance": 35.05,
+            "ecmp_fwd": {
+                "unit": 36.48,
+                "degree": 36.03
+            },
+            "ecmp_bwd": {
+                "unit": 35.82,
+                "degree": 35.30
+            },
+            "source": "R18",
+            "target": "R19"
+        }
+    ];
+
+    let topology_json = null;
+    let name_to_circle = {};
+    let pos_to_name = {};
+    let pair_to_edge = {};
+
     document.addEventListener("DOMContentLoaded", () => {
         const firstLevelDropdown = document.getElementById("firstLevelDropdown");
         const secondLevelDropdown = document.getElementById("secondLevelDropdown");
@@ -332,7 +957,194 @@
         const topologyListWrapper = document.getElementById("topologyListWrapper");
         const topoDisplay = document.getElementById("topoDisplay");
         const topologyProperties = document.getElementById("topologyProperties");
+        const topologyPropertiesList = document.getElementById("topologyPropertiesList");
         const ecmpLinkUtilization = document.getElementById("ecmpLinkUtilization");
+        const trafficModelDropdown = document.getElementById("trafficModelDropdown");
+
+        function parsePathCoordinates(pathData) {
+            // Assuming the path data is in the format "Mx1,y1,x2,y2"
+            const regex = /M\s*(-?\d*\.?\d+)\s*,\s*(-?\d*\.?\d+)\s*,\s*(-?\d*\.?\d+)\s*,\s*(-?\d*\.?\d+)/;
+            const match = pathData.match(regex);
+            if (match) {
+                const startX = match[1];
+                const startY = match[2];
+                const endX = match[3];
+                const endY = match[4];
+                return {
+                    start: {x: startX, y: startY},
+                    end: {x: endX, y: endY},
+                };
+            }
+            return {start: null, end: null};
+        }
+
+        function parseSVG() {
+            const svg = topoDisplay.getElementsByTagName('svg')[0];
+            const circles = svg.getElementsByTagName('circle');
+            const paths = svg.getElementsByTagName('path');
+            const textElements = svg.getElementsByTagName('text');
+            name_to_circle = {};
+            pos_to_name = {};
+            pair_to_edge = {};
+
+            for (let i = 0; i < circles.length; i++) {
+                const circle = circles[i];
+                const name = textElements[i].textContent.trim();
+                name_to_circle[name] = circle
+                circle.getAttribute('cx')
+                circle.getAttribute('cy')
+                circle.setAttribute('title', name);
+                circle.addEventListener('mousemove', showTooltip);
+                circle.addEventListener('mouseout', hideTooltip);
+                pos_to_name[`${circle.getAttribute('cx')}, ${circle.getAttribute('cy')}`] = name;
+            }
+
+            for (let i = 0; i < paths.length; i++) {
+                const path = paths[i];
+                const pathData = path.getAttribute('d');
+                const {start, end} = parsePathCoordinates(pathData);
+                const start_name = pos_to_name[`${start.x}, ${start.y}`];
+                const end_name = pos_to_name[`${end.x}, ${end.y}`];
+                path.setAttribute('title', `${start_name} <-> ${end_name}`);
+                path.addEventListener('mousemove', showTooltip);
+                path.addEventListener('mouseout', hideTooltip);
+                pair_to_edge[`${start_name}-${end_name}`] = path;
+            }
+        }
+
+        function showTooltip(event) {
+            let element = event.target;
+            let tooltipElement = document.getElementById('tooltip');
+            if (!element.attributes.title) {
+                return;
+            }
+            tooltipElement.innerHTML = element.attributes.title.value;
+            tooltipElement.style.display = 'block';
+            tooltipElement.style.left = event.pageX + 10 + 'px';
+            tooltipElement.style.top = event.pageY + 10 + 'px';
+        }
+
+        function hideTooltip() {
+            var tooltip = document.getElementById('tooltip');
+            tooltip.style.display = 'none';
+        }
+
+        function displayBezierCurves() {
+            const svg = topoDisplay.getElementsByTagName('svg')[0];
+
+            if (svg.querySelector("path.utilization")) {
+                svg.querySelectorAll("path:not(.utilization)").forEach(elm => {
+                    elm.setAttribute('visibility', 'hidden');
+                })
+                svg.querySelectorAll("path.utilization").forEach(elm => {
+                    elm.removeAttribute('visibility');
+                });
+                return;
+            }
+
+            const paths = svg.querySelectorAll("path:not(.utilization)");
+
+            for (let i = 0; i < paths.length; i++) {
+                const path = paths[i];
+                const pathData = path.getAttribute('d');
+                const {start, end} = parsePathCoordinates(pathData);
+                const startX = parseFloat(start.x);
+                const startY = parseFloat(start.y);
+                const endX = parseFloat(end.x);
+                const endY = parseFloat(end.y);
+
+                // Calculate the midpoint between start and end points
+                const midX = (startX + endX) / 2;
+                const midY = (startY + endY) / 2;
+
+                // Calculate the vector from start to end
+                const dx = endX - startX;
+                const dy = endY - startY;
+
+                // Calculate the length of the vector
+                const length = Math.sqrt(dx * dx + dy * dy);
+
+                // Calculate the unit vector
+                const unitX = dx / length;
+                const unitY = dy / length;
+
+                // Calculate the perpendicular vector
+                const perpX = -unitY;
+                const perpY = unitX;
+
+                // Calculate the control points at 5 units distance from the midpoint
+                const controlPoint1X = midX + 5 * perpX;
+                const controlPoint1Y = midY + 5 * perpY;
+                const controlPoint2X = midX - 5 * perpX;
+                const controlPoint2Y = midY - 5 * perpY;
+
+                const bezierPath1 = `M${start.x},${start.y} C${controlPoint1X},${controlPoint1Y},${controlPoint1X},${controlPoint1Y},${end.x},${end.y}`;
+                const bezierPath2 = `M${start.x},${start.y} C${controlPoint2X},${controlPoint2Y},${controlPoint2X},${controlPoint2Y},${end.x},${end.y}`;
+
+                // Create two new path elements with Bezier curves
+                const newPath1 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                const newPath2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+
+                const start_node = pos_to_name[`${start.x}, ${start.y}`]
+                const end_node = pos_to_name[`${end.x}, ${end.y}`]
+
+                newPath1.setAttribute('id', `utilization-${start_node}-${end_node}`);
+                newPath2.setAttribute('id', `utilization-${end_node}-${start_node}`);
+                newPath1.setAttribute('title', `${start_node} -> ${end_node}`);
+                newPath2.setAttribute('title', `${end_node} -> ${start_node}`);
+                newPath1.setAttribute('d', bezierPath1);
+                newPath2.setAttribute('d', bezierPath2);
+                newPath1.setAttribute('class', 'utilization');
+                newPath2.setAttribute('class', 'utilization');
+                newPath1.addEventListener('mousemove', showTooltip);
+                newPath1.addEventListener('mouseout', hideTooltip);
+                newPath2.addEventListener('mousemove', showTooltip);
+                newPath2.addEventListener('mouseout', hideTooltip);
+
+                // Add the new path elements to the SVG
+                svg.prepend(newPath1);
+                svg.prepend(newPath2);
+                path.setAttribute('visibility', 'hidden');
+            }
+        }
+
+        function visualizeTraffic(mode) {
+            let links;
+            if (!topology_json) {
+                links = dummy_links;
+            } else {
+                links = topology_json['links'];
+            }
+
+            const svg = topoDisplay.getElementsByTagName('svg')[0];
+
+            if (mode === 'none') {
+                svg.querySelectorAll("path.utilization").forEach(elm => {
+                    elm.setAttribute('visibility', 'hidden');
+                })
+                svg.querySelectorAll("path:not(.utilization)").forEach(elm => {
+                    elm.removeAttribute('visibility');
+                })
+                return;
+            }
+            displayBezierCurves();
+            for (const link of links) {
+                const fwd = link.ecmp_fwd[mode] / 100;
+                const bwd = link.ecmp_bwd[mode] / 100;
+                const fwd_path = svg.getElementById(`utilization-${link.source}-${link.target}`);
+                fwd_path.style['stroke-width'] = `${fwd * 8}`;
+                fwd_path.setAttribute('title', `${link.source} -> ${link.target} ${fwd * 100}`);
+                const bwd_path = svg.getElementById(`utilization-${link.target}-${link.source}`);
+                bwd_path.style['stroke-width'] = `${bwd * 8}`;
+                bwd_path.setAttribute('title', `${link.target} -> ${link.source} ${bwd * 100}`);
+                console.log(link);
+            }
+        }
+
+        trafficModelDropdown.addEventListener("change", () => {
+            const model = trafficModelDropdown.value;
+            visualizeTraffic(model);
+        });
 
         // Function to populate the second-level dropdown or topology list
         const populateSecondLevel = (oob) => {
@@ -367,6 +1179,17 @@
             topologyListWrapper.style.display = 'flex';
         };
 
+        const populateTopologyProperties = (stats) => {
+            topologyPropertiesList.innerHTML = '';
+            for (const prop of propertiesNames) {
+                if (prop[0] in stats) {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<span class=".property">${prop[1]}</span><span class=".property_value">${stats[prop[0]]}</span>`;
+                    topologyPropertiesList.appendChild(li);
+                }
+            }
+        };
+
         firstLevelDropdown.addEventListener("change", () => {
             const selectedCategory = firstLevelDropdown.value;
             if (!selectedCategory) {
@@ -375,7 +1198,7 @@
                 topologyList.innerHTML = '';
                 topologyListWrapper.style.display = 'none';
                 topoDisplay.innerHTML = "";
-                topologyProperties.innerHTML = "";
+                topologyPropertiesList.innerHTML = "";
                 ecmpLinkUtilization.innerHTML = "";
                 return;
             }
@@ -395,7 +1218,7 @@
                 topologyList.innerHTML = '';
                 topologyListWrapper.style.display = 'none';
                 topoDisplay.innerHTML = "";
-                topologyProperties.innerHTML = "";
+                topologyPropertiesList.innerHTML = "";
                 ecmpLinkUtilization.innerHTML = "";
                 return;
             }
@@ -418,12 +1241,20 @@
                     throw new Error("Failed to fetch JSON file");
                 }
                 const jsonData = await responseJSON.json();
-                topologyProperties.innerHTML = `<pre>${JSON.stringify(jsonData['graph']['stats'], null, 2)}</pre>`;
+                populateTopologyProperties(jsonData['graph']['stats']);
+                trafficModelDropdown.value = 'none';
+                topology_json = jsonData;
             } catch (error) {
                 topoDisplay.innerHTML = "<p>Error loading topology data.</p>";
-                topologyProperties.innerHTML = "";
+                topologyPropertiesList.innerHTML = "";
+                trafficModelDropdown.value = 'none';
+                trafficModelDropdown.disabled = true;
+                populateTopologyProperties(dummy_properties);
+                topology_json = null;
             }
         };
+        parseSVG();
+        populateTopologyProperties(dummy_properties);
     });
 </script>
 </body>
