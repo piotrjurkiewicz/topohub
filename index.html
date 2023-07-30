@@ -56,6 +56,7 @@
 
         .sidebar-right {
             width: 500px;
+            padding-left: 0;
         }
 
         .main-content {
@@ -88,6 +89,43 @@
             display: block;
         }
 
+        #dropdowns {
+            display: flex;
+        }
+
+        #dropdowns select {
+            min-width: 90px;
+        }
+
+        #firstLevelDropdown {
+            width: 60%;
+        }
+
+        #secondLevelDropdown {
+            width: 40%;
+        }
+
+        #topologyList {
+            border: 1px solid #d8dee4;
+            border-radius: 3px;
+            padding: 0;
+        }
+
+        #topologyList li {
+            padding: 4px;
+            border-bottom: 1px solid #d8dee4;
+            list-style-type: none;
+        }
+
+        #topologyList li:last-child {
+            border-bottom: none;
+        }
+
+        #topologyList li:hover {
+            background-color: #f6f8fa;
+        }
+
+
         /* Adjust the styles for smaller screens */
         @media (max-width: 768px) {
             .container {
@@ -102,6 +140,7 @@
             .sidebar-left,
             .sidebar-right {
                 width: auto;
+                padding: 24px;
             }
 
             .main-content {
@@ -118,10 +157,19 @@
 <div class="container">
     <aside class="sidebar-left">
         <h2>Topologies</h2>
-        <ul>
-            <li><a href="#">Topology 1</a></li>
-            <li><a href="#">Topology 2</a></li>
-            <li><a href="#">Topology 3</a></li>
+        <div id="dropdowns">
+            <select id="firstLevelDropdown">
+                <option value="" selected>Select a category</option>
+                <!-- Add options for each category in the JSON data -->
+                <option value="gabriel">Gabriel</option>
+                <option value="sndlib">SNDlib</option>
+            </select>
+            <select id="secondLevelDropdown" disabled>
+                <option value="" selected>Select size</option>
+            </select>
+        </div>
+        <ul id="topologyList" style="display: none;">
+            <!-- Topology list will be dynamically loaded here -->
         </ul>
     </aside>
     <main class="main-content">
@@ -241,16 +289,114 @@
     </main>
     <aside class="sidebar-right">
         <h2>Topology properties</h2>
-        <div class="box">
+        <div id="topologyProperties" class="box">
             <h3>Topology 1</h3>
             <p>Description: This is the first topology.</p>
         </div>
         <h2>ECMP link utilization</h2>
-        <div class="box">
+        <div id="ecmpLinkUtilization" class="box">
             <h3>Topology 1</h3>
             <p>Description: This is the first topology.</p>
         </div>
     </aside>
 </div>
+
+<script>
+    const topologyCatalog = {
+        'gabriel': {'25': ['0', '1', '2'], '50': ['0', '1', '2']},
+        'sndlib': ['a', 'b', 'c']
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const firstLevelDropdown = document.getElementById("firstLevelDropdown");
+        const secondLevelDropdown = document.getElementById("secondLevelDropdown");
+        const topologyList = document.getElementById("topologyList");
+        const topoDisplay = document.getElementById("topoDisplay");
+        const topologyProperties = document.getElementById("topologyProperties");
+        const ecmpLinkUtilization = document.getElementById("ecmpLinkUtilization");
+
+        // Function to populate the second-level dropdown or topology list
+        const populateSecondLevel = (oob) => {
+            secondLevelDropdown.innerHTML = '<option value="" selected>Select size</option>';
+            topologyList.innerHTML = '';
+            for (const key in oob) {
+                const option = document.createElement('option');
+                option.value = key;
+                option.textContent = key;
+                secondLevelDropdown.appendChild(option);
+            }
+            topologyList.style.display = 'none';
+            secondLevelDropdown.disabled = false;
+        };
+
+        const populateTopologyList = (ll) => {
+            topologyList.innerHTML = '';
+            ll.forEach((topology) => {
+                const li = document.createElement('li');
+                li.textContent = topology;
+                topologyList.appendChild(li);
+            });
+            topologyList.style.display = 'block';
+        };
+
+        firstLevelDropdown.addEventListener("change", () => {
+            const selectedCategory = firstLevelDropdown.value;
+            if (!selectedCategory) {
+                secondLevelDropdown.value = "";
+                secondLevelDropdown.disabled = true;
+                topologyList.innerHTML = '';
+                topologyList.style.display = 'none';
+                topoDisplay.innerHTML = "";
+                topologyProperties.innerHTML = "";
+                ecmpLinkUtilization.innerHTML = "";
+                return;
+            }
+            if (Array.isArray(topologyCatalog[selectedCategory])) {
+                secondLevelDropdown.value = "";
+                secondLevelDropdown.disabled = true;
+                populateTopologyList(topologyCatalog[selectedCategory]);
+            } else if (typeof topologyCatalog[selectedCategory] === 'object') {
+                populateSecondLevel(topologyCatalog[selectedCategory]);
+            }
+        });
+
+        secondLevelDropdown.addEventListener("change", () => {
+            const selectedCategory = firstLevelDropdown.value;
+            const selectedTopology = secondLevelDropdown.value;
+            if (!selectedCategory || !selectedTopology) {
+                topologyList.innerHTML = '';
+                topologyList.style.display = 'none';
+                topoDisplay.innerHTML = "";
+                topologyProperties.innerHTML = "";
+                ecmpLinkUtilization.innerHTML = "";
+                return;
+            }
+            populateTopologyList(topologyCatalog[selectedCategory][selectedTopology]);
+        });
+
+        // Function to fetch and display the selected topology
+        const fetchAndDisplayTopology = async (selectedCategory, selectedTopology) => {
+            try {
+                const response = await fetch(`data/${selectedCategory}/${selectedTopology}.svg`);
+                if (!response.ok) {
+                    throw new Error("Failed to fetch SVG file");
+                }
+                const svgContent = await response.text();
+                topoDisplay.innerHTML = svgContent;
+
+                // Fetch and display JSON file
+                const responseJSON = await fetch(`data/${selectedCategory}/${selectedTopology}.json`);
+                if (!responseJSON.ok) {
+                    throw new Error("Failed to fetch JSON file");
+                }
+                const jsonData = await responseJSON.json();
+                topologyProperties.innerHTML = `<pre>${JSON.stringify(jsonData, null, 2)}</pre>`;
+            } catch (error) {
+                topoDisplay.innerHTML = "<p>Error loading topology data.</p>";
+                topologyProperties.innerHTML = "";
+            }
+        };
+    });
+</script>
 </body>
 </html>
