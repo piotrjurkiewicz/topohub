@@ -1199,7 +1199,8 @@
                 topologyListWrapper.style.display = 'none';
                 topoDisplay.innerHTML = "";
                 topologyPropertiesList.innerHTML = "";
-                ecmpLinkUtilization.innerHTML = "";
+                trafficModelDropdown.value = 'none';
+                trafficModelDropdown.disabled = true;
                 return;
             }
             if (Array.isArray(topologyCatalog[selectedCategory])) {
@@ -1219,7 +1220,8 @@
                 topologyListWrapper.style.display = 'none';
                 topoDisplay.innerHTML = "";
                 topologyPropertiesList.innerHTML = "";
-                ecmpLinkUtilization.innerHTML = "";
+                trafficModelDropdown.value = 'none';
+                trafficModelDropdown.disabled = true;
                 return;
             }
             populateTopologyList(topologyCatalog[selectedCategory][selectedTopology]);
@@ -1232,18 +1234,17 @@
                 if (!response.ok) {
                     throw new Error("Failed to fetch SVG file");
                 }
-                const svgContent = await response.text();
-                topoDisplay.innerHTML = svgContent;
+                topoDisplay.innerHTML = await response.text();
 
                 // Fetch and display JSON file
                 const responseJSON = await fetch(`data/${selectedCategory}/${selectedTopology}.json`);
                 if (!responseJSON.ok) {
                     throw new Error("Failed to fetch JSON file");
                 }
-                const jsonData = await responseJSON.json();
-                populateTopologyProperties(jsonData['graph']['stats']);
+                topology_json = await responseJSON.json();
+                parseSVG();
+                populateTopologyProperties(topology_json['graph']['stats']);
                 trafficModelDropdown.value = 'none';
-                topology_json = jsonData;
             } catch (error) {
                 topoDisplay.innerHTML = "<p>Error loading topology data.</p>";
                 topologyPropertiesList.innerHTML = "";
