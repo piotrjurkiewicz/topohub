@@ -335,6 +335,15 @@
                 const li = document.createElement('li');
                 li.textContent = topology;
                 topologyList.appendChild(li);
+                li.addEventListener("click", () => {
+                    const selectedCategory = firstLevelDropdown.value;
+                    const selectedTopology = secondLevelDropdown.value;
+                    let path = selectedCategory;
+                    if (selectedTopology) {
+                        path = `${selectedCategory}/${selectedTopology}`
+                    }
+                    fetchAndDisplayTopology(path, topology);
+                });
             });
             topologyList.style.display = 'block';
         };
