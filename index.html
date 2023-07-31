@@ -36,6 +36,10 @@
             font-size: 20px;
         }
 
+        p {
+            font-size: 14px;
+        }
+
         .container {
             display: flex;
             min-height: calc(100vh - 64px); /* Adjust min-height for the header */
@@ -197,18 +201,21 @@
         }
 
         svg circle:hover {
-            fill: aqua;
-            cursor: pointer;
+            fill: orange;
         }
 
         svg path {
             fill: none;
+            cursor: pointer;
+        }
+
+        svg path:hover {
+            stroke: orange;
         }
 
         svg path.utilization {
             stroke: black;
             stroke-width: 1;
-            cursor: pointer;
         }
 
         .tooltip {
@@ -362,6 +369,7 @@
     <aside class="sidebar-right">
         <div id="topologyInfo" class="box">
             <h2>Topology info</h2>
+
         </div>
         <div id="topologyProperties" class="box">
             <h2>Topology properties</h2>
@@ -369,6 +377,14 @@
             </ul>
         </div>
         <div id="ecmpLinkUtilization" class="box">
+
+            <input id="showNodeNames" type="checkbox" autocomplete="off" checked><label
+                for="showNodeNames">Show labels</label><br/>
+            <input id="showNodeNamesBelow" type="checkbox" autocomplete="off"><label
+                for="showNodeNamesBelow">Show labels below</label><br/>
+            <input id="showNodes" type="checkbox" autocomplete="off" checked><label
+                for="showNodes">Show node circles</label><br/>
+
             <h2>ECMP routing link utilization</h2>
             <p>Description: This is the first topology.</p>
             <select id="trafficModelDropdown">
@@ -377,6 +393,15 @@
                 <option value="unit">Unit</option>
                 <option value="degree">Degree</option>
             </select>
+            <div id="control">
+                <input id="dynamicWidthCheckbox" type="checkbox" autocomplete="off" checked><label
+                    for="dynamicWidthCheckbox">Dynamic edges width</label><br/>
+                <input id="dynamicColorCheckbox" type="checkbox" autocomplete="off" checked><label
+                    for="dynamicColorCheckbox">Dynamic edges color</label><br/>
+                <input id="dynamicOpacityCheckbox" type="checkbox" autocomplete="off"><label
+                    for="dynamicOpacityCheckbox">Dynamic edges opacity</label><br/>
+
+            </div>
         </div>
     </aside>
 </div>
@@ -959,7 +984,13 @@
         const topologyProperties = document.getElementById("topologyProperties");
         const topologyPropertiesList = document.getElementById("topologyPropertiesList");
         const ecmpLinkUtilization = document.getElementById("ecmpLinkUtilization");
+        const showNodeNames = document.getElementById("showNodeNames");
+        const showNodeNamesBelow = document.getElementById("showNodeNamesBelow");
+        const showNodes = document.getElementById("showNodes");
         const trafficModelDropdown = document.getElementById("trafficModelDropdown");
+        const dynamicWidthCheckbox = document.getElementById("dynamicWidthCheckbox");
+        const dynamicColorCheckbox = document.getElementById("dynamicColorCheckbox");
+        const dynamicOpacityCheckbox = document.getElementById("dynamicOpacityCheckbox");
 
         function parsePathCoordinates(pathData) {
             // Assuming the path data is in the format "Mx1,y1,x2,y2"
@@ -1108,7 +1139,40 @@
             }
         }
 
-        function visualizeTraffic(mode) {
+        function hot_rgb(v) {
+            const vmin = 0.0;
+            const vmax = 1.0;
+
+            let c_r = 1.0;
+            let c_g = 1.0;
+            let c_b = 1.0;
+
+            if (v < vmin)
+                v = vmin;
+
+            if (v > vmax)
+                v = vmax;
+
+            let dv = vmax - vmin;
+
+            if (v < (vmin + 0.25 * dv)) {
+                c_r = 0;
+                c_g = 4 * (v - vmin) / dv;
+            } else if (v < (vmin + 0.5 * dv)) {
+                c_r = 0;
+                c_b = 1 + 4 * (vmin + 0.25 * dv - v) / dv;
+            } else if (v < (vmin + 0.75 * dv)) {
+                c_r = 4 * (v - vmin - 0.5 * dv) / dv;
+                c_b = 0;
+            } else {
+                c_g = 1 + 4 * (vmin + 0.75 * dv - v) / dv;
+                c_b = 0;
+            }
+
+            return `rgb(${Math.floor(c_r * 255)}, ${Math.floor(c_g * 255)}, ${Math.floor(c_b * 255)})`;
+        }
+
+        function visualizeTraffic() {
             let links;
             if (!topology_json) {
                 links = dummy_links;
@@ -1118,6 +1182,8 @@
 
             const svg = topoDisplay.getElementsByTagName('svg')[0];
 
+            const mode = trafficModelDropdown.value;
+
             if (mode === 'none') {
                 svg.querySelectorAll("path.utilization").forEach(elm => {
                     elm.setAttribute('visibility', 'hidden');
@@ -1125,26 +1191,74 @@
                 svg.querySelectorAll("path:not(.utilization)").forEach(elm => {
                     elm.removeAttribute('visibility');
                 })
+                svg.querySelectorAll("circle").forEach(elm => {
+                    elm.style['fill'] = null;
+                    elm.style['stroke'] = null;
+                    elm.setAttribute('r', '10');
+                })
+                showNodeNames.checked = true;
+                displayNodes();
                 return;
             }
+
+            showNodeNames.checked = false;
+            displayNodes();
+            svg.querySelectorAll("circle").forEach(elm => {
+                elm.style['fill'] = 'white';
+                elm.style['stroke'] = 'black';
+                elm.setAttribute('r', '6');
+            })
+
             displayBezierCurves();
             for (const link of links) {
                 const fwd = link.ecmp_fwd[mode] / 100;
                 const bwd = link.ecmp_bwd[mode] / 100;
                 const fwd_path = svg.getElementById(`utilization-${link.source}-${link.target}`);
-                fwd_path.style['stroke-width'] = `${fwd * 8}`;
-                fwd_path.setAttribute('title', `${link.source} -> ${link.target} ${fwd * 100}`);
+                fwd_path.style['stroke-width'] = dynamicWidthCheckbox.checked ? `${fwd * 8}` : 3;
+                fwd_path.style['stroke'] = dynamicColorCheckbox.checked ? hot_rgb(fwd) : 'black';
+                fwd_path.style['opacity'] = dynamicOpacityCheckbox.checked ? fwd : 1.0;
+                fwd_path.setAttribute('title', `${link.source} -> ${link.target} ${(fwd * 100).toFixed(2)}%`);
                 const bwd_path = svg.getElementById(`utilization-${link.target}-${link.source}`);
-                bwd_path.style['stroke-width'] = `${bwd * 8}`;
-                bwd_path.setAttribute('title', `${link.target} -> ${link.source} ${bwd * 100}`);
+                bwd_path.style['stroke-width'] = dynamicWidthCheckbox.checked ? `${bwd * 8}` : 3;
+                bwd_path.style['stroke'] = dynamicColorCheckbox.checked ? hot_rgb(bwd) : 'black';
+                bwd_path.style['opacity'] = dynamicOpacityCheckbox.checked ? bwd : 1.0;
+                bwd_path.setAttribute('title', `${link.target} -> ${link.source} ${(bwd * 100).toFixed(2)}%`);
                 console.log(link);
             }
         }
 
-        trafficModelDropdown.addEventListener("change", () => {
-            const model = trafficModelDropdown.value;
-            visualizeTraffic(model);
-        });
+        function displayNodes() {
+            const svg = topoDisplay.getElementsByTagName('svg')[0];
+            svg.querySelectorAll("text").forEach(elm => {
+                if (showNodeNames.checked) {
+                    elm.removeAttribute('visibility');
+                    if (showNodeNamesBelow.checked && (elm.attributes.lowered === undefined || elm.attributes.lowered.value === '0')) {
+                        elm.attributes.y.value = parseFloat(elm.attributes.y.value) + 15;
+                        elm.setAttribute('lowered', '1');
+                    }
+                    if (!showNodeNamesBelow.checked && elm.attributes.lowered?.value === '1') {
+                        elm.attributes.y.value = parseFloat(elm.attributes.y.value) - 15;
+                        elm.setAttribute('lowered', '0');
+                    }
+                } else
+                    elm.setAttribute('visibility', 'hidden');
+            })
+            svg.querySelectorAll("circle").forEach(elm => {
+                if (showNodes.checked) {
+                    elm.removeAttribute('visibility');
+                } else
+                    elm.setAttribute('visibility', 'hidden');
+            })
+        }
+
+        showNodeNames.addEventListener("change", displayNodes);
+        showNodeNamesBelow.addEventListener("change", displayNodes);
+        showNodes.addEventListener("change", displayNodes);
+
+        trafficModelDropdown.addEventListener("change", visualizeTraffic);
+        dynamicWidthCheckbox.addEventListener("change", visualizeTraffic);
+        dynamicColorCheckbox.addEventListener("change", visualizeTraffic);
+        dynamicOpacityCheckbox.addEventListener("change", visualizeTraffic);
 
         // Function to populate the second-level dropdown or topology list
         const populateSecondLevel = (oob) => {
