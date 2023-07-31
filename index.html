@@ -1362,6 +1362,7 @@
                 parseSVG();
                 populateTopologyProperties(topology_json['graph']['stats']);
                 trafficModelDropdown.value = 'none';
+                trafficModelDropdown.disabled = false;
             } catch (error) {
                 topoDisplay.innerHTML = "<p>Error loading topology data.</p>";
                 topologyPropertiesList.innerHTML = "";
