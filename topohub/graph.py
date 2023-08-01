@@ -378,30 +378,30 @@ def calculate_utilization(g):
 def topo_stats(g, ps=None):
     import networkx as nx
 
-    min_edge_length = min(e['distance'] for u, v, e in g.edges(data=True))
-    avg_edge_length = sum(e['distance'] for u, v, e in g.edges(data=True)) / float(len(g.edges))
-    max_edge_length = max(e['distance'] for u, v, e in g.edges(data=True))
+    min_link_length = min(e['distance'] for u, v, e in g.edges(data=True))
+    avg_link_length = sum(e['distance'] for u, v, e in g.edges(data=True)) / float(len(g.edges))
+    max_link_length = max(e['distance'] for u, v, e in g.edges(data=True))
 
     if isinstance(g, nx.MultiDiGraph):
-        number_edges = g.size() / 2
+        number_links = g.size() / 2
         degree = g.out_degree
     else:
-        number_edges = g.size()
+        number_links = g.size()
         degree = g.degree
     degrees = [d for (_, d) in degree()]
 
     stats = {
         'nodes': len(g),
-        'edges': number_edges,
+        'links': number_links,
         'demands': 0,
         'min_degree': min(degrees),
         'avg_degree': sum(degrees) / float(len(g)),
         'std_degree': statistics.pstdev(degrees),
         'max_degree': max(degrees),
         'gini': gini(degrees),
-        'min_edge_len': min_edge_length,
-        'avg_edge_len': avg_edge_length,
-        'max_edge_len': max_edge_length,
+        'min_link_len': min_link_length,
+        'avg_link_len': avg_link_length,
+        'max_link_len': max_link_length,
         'diameter_len': nx.diameter(g, weight='distance')
     }
 
@@ -463,14 +463,14 @@ def topo_stats_print(stats, name, filename=None):
     text = \
         'Topology name'.ljust(JUST) + ' & %s' % name.replace('_', '\\_') + '\n\n' + \
         'Number of nodes'.ljust(JUST) + ' & %s' % stats['nodes'] + '\n' + \
-        'Number of edges'.ljust(JUST) + ' & %s' % stats['edges'] + '\n' + \
+        'Number of links'.ljust(JUST) + ' & %s' % stats['links'] + '\n' + \
         'Number of demands'.ljust(JUST) + ' & %s' % stats['demands'] + '\n' + \
         'Min. vertex degree'.ljust(JUST) + ' & %.2f' % stats['min_degree'] + '\n' + \
         'Avg. vertex degree'.ljust(JUST) + ' & %.2f' % stats['avg_degree'] + '\n' + \
         'Max. vertex degree'.ljust(JUST) + ' & %.2f' % stats['max_degree'] + '\n' + \
-        'Min. edge length'.ljust(JUST) + ' & %.2f' % stats['min_edge_len'] + '\n' + \
-        'Avg. edge length'.ljust(JUST) + ' & %.2f' % stats['avg_edge_len'] + '\n' + \
-        'Max. edge length'.ljust(JUST) + ' & %.2f' % stats['max_edge_len'] + '\n'
+        'Min. link length'.ljust(JUST) + ' & %.2f' % stats['min_link_len'] + '\n' + \
+        'Avg. link length'.ljust(JUST) + ' & %.2f' % stats['avg_link_len'] + '\n' + \
+        'Max. link length'.ljust(JUST) + ' & %.2f' % stats['max_link_len'] + '\n'
 
     if 'avg_sdp_num' in stats:
         text += \

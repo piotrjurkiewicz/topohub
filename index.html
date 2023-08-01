@@ -395,11 +395,11 @@
             </select>
             <div id="control">
                 <input id="dynamicWidthCheckbox" type="checkbox" autocomplete="off" checked><label
-                    for="dynamicWidthCheckbox">Dynamic edges width</label><br/>
+                    for="dynamicWidthCheckbox">Dynamic links width</label><br/>
                 <input id="dynamicColorCheckbox" type="checkbox" autocomplete="off" checked><label
-                    for="dynamicColorCheckbox">Dynamic edges color</label><br/>
+                    for="dynamicColorCheckbox">Dynamic links color</label><br/>
                 <input id="dynamicOpacityCheckbox" type="checkbox" autocomplete="off"><label
-                    for="dynamicOpacityCheckbox">Dynamic edges opacity</label><br/>
+                    for="dynamicOpacityCheckbox">Dynamic links opacity</label><br/>
 
             </div>
         </div>
@@ -418,26 +418,26 @@
         'sndlib': ['abilene', 'atlanta', 'brain', 'cost266', 'dfn-bwin', 'dfn-gwin', 'di-yuan', 'france', 'geant', 'germany50', 'giul39', 'india35', 'janos-us-ca', 'janos-us', 'newyork', 'nobel-eu', 'nobel-germany', 'nobel-us', 'norway', 'pdh', 'pioro40', 'polska', 'sun', 'ta1', 'ta2', 'zib54']
     };
 
-    const propertiesNames = [['nodes', 'Number of nodes'], ['edges', 'Number of edges'], ['demands', 'Number of demands'],
+    const propertiesNames = [['nodes', 'Number of nodes'], ['links', 'Number of links'], ['demands', 'Number of demands'],
         ['min_degree', 'Minimum vertex degree'], ['avg_degree', 'Average vertex degree'], ['std_degree', 'Standard deviation of vertex degree'], ['max_degree', 'Maximum vertex degree'], ['gini', 'Gini coeffcent'],
-        ['min_edge_len', 'Minimum edge length'], ['avg_edge_len', 'Average edge length'], ['max_edge_len', 'Maximum edge length'],
-        ['diameter_len', 'Graph diameter (by edge lenghts)'], ['diameter_hops', 'Graph diameter (by hops)'],
+        ['min_link_len', 'Minimum link length'], ['avg_link_len', 'Average link length'], ['max_link_len', 'Maximum link length'],
+        ['diameter_len', 'Graph diameter (by link lenghts)'], ['diameter_hops', 'Graph diameter (by hops)'],
         ['avg_sdp_num', 'Average number of disjoint shortest paths'], ['max_sdp_num', 'Maximum number of disjoint shortest paths'], ['avg_sdp_hops', 'Average hops of disjoint shortest paths'],
         ['avg_sdp_len', 'Average length of disjoint shortest paths'], ['avg_adp_num', 'Average number of all disjoint paths'], ['max_adp_num', 'Maximum number of all disjoint paths'],
         ['avg_adp_hops', 'Average hops of all disjoint paths'], ['avg_adp_len', 'Average length of all disjoint paths']]
 
     const dummy_properties = {
         "nodes": 12,
-        "edges": 18,
+        "links": 18,
         "demands": 132,
         "min_degree": 2,
         "avg_degree": 3,
         "std_degree": 0.71,
         "max_degree": 5,
         "gini": 0.1,
-        "min_edge_len": 78.7,
-        "avg_edge_len": 188.13,
-        "max_edge_len": 354.64,
+        "min_link_len": 78.7,
+        "avg_link_len": 188.13,
+        "max_link_len": 354.64,
         "diameter_len": 811.09,
         "diameter_hops": 4,
         "avg_sdp_num": 1.27,
@@ -976,7 +976,7 @@
     let topology_json = null;
     let name_to_circle = {};
     let pos_to_name = {};
-    let pair_to_edge = {};
+    let pair_to_link = {};
 
     document.addEventListener("DOMContentLoaded", () => {
         const firstLevelDropdown = document.getElementById("firstLevelDropdown");
@@ -1019,7 +1019,7 @@
             const textElements = svg.getElementsByTagName('text');
             name_to_circle = {};
             pos_to_name = {};
-            pair_to_edge = {};
+            pair_to_link = {};
 
             for (let i = 0; i < circles.length; i++) {
                 const circle = circles[i];
@@ -1042,7 +1042,7 @@
                 path.setAttribute('title', `${start_name} <-> ${end_name}`);
                 path.addEventListener('mousemove', showTooltip);
                 path.addEventListener('mouseout', hideTooltip);
-                pair_to_edge[`${start_name}-${end_name}`] = path;
+                pair_to_link[`${start_name}-${end_name}`] = path;
             }
         }
 
@@ -1368,7 +1368,6 @@
                 topologyPropertiesList.innerHTML = "";
                 trafficModelDropdown.value = 'none';
                 trafficModelDropdown.disabled = true;
-                populateTopologyProperties(dummy_properties);
                 topology_json = null;
             }
         };
