@@ -9,8 +9,7 @@ import time
 
 import networkx as nx
 
-# from . import graph
-import graph
+import topohub.graph
 
 json.encoder.c_make_encoder = None
 MAX_GABRIEL_NODES = 4096
@@ -28,7 +27,7 @@ class TopoGenerator:
     @classmethod
     def save_topo(cls, *args, **kwargs):
         g = nx.node_link_graph(cls.generate_topo(*args))
-        graph.calculate_utilization(g)
+        topohub.graph.calculate_utilization(g)
         if 'filename' in kwargs:
             filename = kwargs['filename']
         else:
@@ -37,12 +36,12 @@ class TopoGenerator:
         json.dump(nx.node_link_data(g), open(f'{filename}.json', 'w'), indent=kwargs.get('indent', 0))
         ps = None
         if kwargs.get('with_plot'):
-            graph.save_topo_graph_svg(g, filename, cls.scaling)
+            topohub.graph.save_topo_graph_svg(g, filename, cls.scaling)
         if kwargs.get('with_path_stats'):
-            ps = graph.path_stats(g)
-            graph.path_stats_print(ps, filename)
+            ps = topohub.graph.path_stats(g)
+            topohub.graph.path_stats_print(ps, filename)
         if kwargs.get('with_topo_stats'):
-            ts = graph.topo_stats(g, ps)
+            ts = topohub.graph.topo_stats(g, ps)
             # graph.topo_stats_print(ts, g.graph['name'], filename)
             g.graph['stats'] = ts
         json.encoder.float = RoundingFloat
@@ -96,7 +95,7 @@ class SNDLibGenerator(TopoGenerator):
                     mode = None
                     continue
                 node0, node1 = line.split()[2:4]
-                distance = graph.haversine(pos[node0], pos[node1])
+                distance = topohub.graph.haversine(pos[node0], pos[node1])
                 links.append({'source': node0, 'target': node1, 'distance': distance})
 
             if mode == 'demands':
@@ -168,7 +167,7 @@ class TopoZooGenerator(TopoGenerator):
             if mode == 'edge':
                 if line.startswith("  ]"):
                     try:
-                        distance = graph.haversine(pos[node0], pos[node1])
+                        distance = topohub.graph.haversine(pos[node0], pos[node1])
                         links.append({'source': node_id_to_name[node0], 'target': node_id_to_name[node1], 'distance': distance})
                     except KeyError:
                         pass
@@ -317,10 +316,9 @@ if __name__ == '__main__':
             start_time = time.time()
             for i in range(10):
                 GabrielGenerator.save_topo(n, (i * MAX_GABRIEL_NODES) + n, filename=f'data/gabriel/{n}/{i}', with_plot=True, with_topo_stats=True, with_path_stats=True)
-                break
             print(time.time() - start_time)
 
-    elif topo_names[0] == 'sdnlib':
+    elif topo_names[0] == 'sndlib':
 
         topo_names = ['abilene', 'atlanta', 'brain', 'cost266', 'dfn-bwin', 'dfn-gwin', 'di-yuan', 'france', 'geant',
                       'germany50', 'giul39', 'india35', 'janos-us', 'janos-us-ca', 'newyork', 'nobel-eu',
