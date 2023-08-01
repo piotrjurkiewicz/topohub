@@ -272,7 +272,7 @@ def save_topo_graph_svg(g, filename=None, scaling=True):
 
     with open(filename + '.svg', 'w') as f:
         f.write(f'<svg width="{max0 - min0 + 90:.2f}" height="{max1 - min1 + 90:.2f}" viewBox="{min0 - 45:.2f} {min1 - 45:.2f} {max0 - min0 + 90:.2f} {max1 - min1 + 90:.2f}" xmlns="http://www.w3.org/2000/svg">\n')
-        f.write('<style>path {stroke-width: 6; stroke: grey;} circle {fill: grey;} text {font-size: 16; font-family: sans-serif; fill: black; text-anchor:middle;}</style>\n')
+        f.write('<style>path {fill: none; stroke: grey; stroke-width: 6;} circle {fill: lightblue; stroke: none;} text {fill: black; stroke: none; font-size: 16; font-family: sans-serif; text-anchor:middle;}</style>\n')
 
         for e in g.edges:
             x0, y0 = pos[e[0]]
