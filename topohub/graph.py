@@ -370,8 +370,8 @@ def calculate_utilization(g):
             if util:
                 max_util = max(util.values())
                 for src, dst in g.edges:
-                    g.edges[src, dst].setdefault('fwd', {})[mode] = util.get((src, dst), 0.0) / max_util * 100
-                    g.edges[src, dst].setdefault('bwd', {})[mode] = util.get((dst, src), 0.0) / max_util * 100
+                    g.edges[src, dst].setdefault('ecmp_fwd', {})[mode] = util.get((src, dst), 0.0) / max_util * 100
+                    g.edges[src, dst].setdefault('ecmp_bwd', {})[mode] = util.get((dst, src), 0.0) / max_util * 100
 
     return g
 
