@@ -456,6 +456,9 @@ def topo_stats(g, ps=None):
     return stats
 
 def topo_stats_print(stats, name, filename=None):
+    # with importlib.resources.open_text("MyPackage", "data.json") as file:
+    #     data = json.load(file)
+
     JUST = 38
     text = \
         'Topology name'.ljust(JUST) + ' & %s' % name.replace('_', '\\_') + '\n\n' + \
