@@ -25,7 +25,7 @@ copyright = f'{time.localtime().tm_year}, Piotr Jurkiewicz'
 author = 'Piotr Jurkiewicz'
 
 # The full version, including alpha/beta/rc tags
-release = flow_models.__version__
+release = topohub.__version__
 
 
 # -- General configuration ---------------------------------------------------
