@@ -307,12 +307,12 @@ def path_stats(g):
         avg_ap_length = 0
         for path in ap[src, dst]:
             for u, v in zip(path, path[1:]):
-                avg_ap_length += g.edges[u, v]['distance']
+                avg_ap_length += g.edges[u, v]['dist']
         avg_ap_length /= float(len(ap[src, dst]))
         avg_sp_length = 0
         for path in sp[src, dst]:
             for u, v in zip(path, path[1:]):
-                avg_sp_length += g.edges[u, v]['distance']
+                avg_sp_length += g.edges[u, v]['dist']
         avg_sp_length /= float(len(ap[src, dst]))
         if 'demands' in g.graph:
             try:
@@ -378,9 +378,9 @@ def calculate_utilization(g):
 def topo_stats(g, ps=None):
     import networkx as nx
 
-    min_link_length = min(e['distance'] for u, v, e in g.edges(data=True))
-    avg_link_length = sum(e['distance'] for u, v, e in g.edges(data=True)) / float(len(g.edges))
-    max_link_length = max(e['distance'] for u, v, e in g.edges(data=True))
+    min_link_length = min(e['dist'] for u, v, e in g.edges(data=True))
+    avg_link_length = sum(e['dist'] for u, v, e in g.edges(data=True)) / float(len(g.edges))
+    max_link_length = max(e['dist'] for u, v, e in g.edges(data=True))
 
     if isinstance(g, nx.MultiDiGraph):
         number_links = g.size() / 2
@@ -402,7 +402,7 @@ def topo_stats(g, ps=None):
         'min_link_len': min_link_length,
         'avg_link_len': avg_link_length,
         'max_link_len': max_link_length,
-        'diameter_len': nx.diameter(g, weight='distance')
+        'diameter_len': nx.diameter(g, weight='dist')
     }
 
     if ps is None:

@@ -95,8 +95,8 @@ class SNDLibGenerator(TopoGenerator):
                     mode = None
                     continue
                 node0, node1 = line.split()[2:4]
-                distance = topohub.graph.haversine(pos[node0], pos[node1])
-                links.append({'source': node0, 'target': node1, 'distance': distance})
+                dist = topohub.graph.haversine(pos[node0], pos[node1])
+                links.append({'source': node0, 'target': node1, 'dist': dist})
 
             if mode == 'demands':
                 if line.startswith(")"):
@@ -167,8 +167,8 @@ class TopoZooGenerator(TopoGenerator):
             if mode == 'edge':
                 if line.startswith("  ]"):
                     try:
-                        distance = topohub.graph.haversine(pos[node0], pos[node1])
-                        links.append({'source': node_id_to_name[node0], 'target': node_id_to_name[node1], 'distance': distance})
+                        dist = topohub.graph.haversine(pos[node0], pos[node1])
+                        links.append({'source': node_id_to_name[node0], 'target': node_id_to_name[node1], 'dist': dist})
                     except KeyError:
                         pass
                     mode = None
@@ -229,8 +229,8 @@ class GabrielGenerator(TopoGenerator):
         for p, (p_name, p_pos) in enumerate(pos.items()):
             for q, (q_name, q_pos) in enumerate(pos.items()):
                 if p < q and neighbors(p_pos, q_pos):
-                    distance = dist2(p_pos, q_pos) ** 0.5
-                    links.append({'source': p_name, 'target': q_name, 'distance': distance})
+                    dist = dist2(p_pos, q_pos) ** 0.5
+                    links.append({'source': p_name, 'target': q_name, 'dist': dist})
 
         # nps = []
         # nss = []
@@ -299,9 +299,9 @@ class NumpyGabrielGenerator(TopoGenerator):
         for p in range(nnodes):
             for q in range(nnodes):
                 if p < q and neighbors(p, q):
-                    distance = (pos[p] - pos[q]) ** 2
-                    distance = (distance[0] + distance[1]) ** 0.5
-                    links.append({'source': nodes[p]['id'], 'target': nodes[q]['id'], 'distance': distance})
+                    dist = (pos[p] - pos[q]) ** 2
+                    dist = (dist[0] + dist[1]) ** 0.5
+                    links.append({'source': nodes[p]['id'], 'target': nodes[q]['id'], 'dist': dist})
 
         return {'directed': False, 'multigraph': False, 'graph': {'name': str(nnodes), 'demands': demands}, 'nodes': nodes, 'links': links}
 
