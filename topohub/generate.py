@@ -33,7 +33,6 @@ class TopoGenerator:
         else:
             filename = f'mininet/topo_lib/{g.name}'
         os.makedirs(filename.rpartition('/')[0], exist_ok=True)
-        json.dump(nx.node_link_data(g), open(f'{filename}.json', 'w'), indent=kwargs.get('indent', 0))
         ps = None
         if kwargs.get('with_plot'):
             topohub.graph.save_topo_graph_svg(g, filename, cls.scaling)
