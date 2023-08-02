@@ -101,7 +101,7 @@
         }
 
         #dropdowns select {
-            min-width: 90px;
+            min-width: fit-content;
         }
 
         #firstLevelDropdown {
@@ -119,6 +119,7 @@
             flex-direction: column;
             margin-top: 16px;
             overflow: hidden;
+            max-height: 800px;
         }
 
         #topologyList {
@@ -197,6 +198,10 @@
                 width: auto;
                 padding-bottom: 0;
             }
+
+            #topologyListWrapper {
+                max-height: 400px;
+            }
         }
 
         svg text {
@@ -248,6 +253,7 @@
                 <!-- Add options for each category in the JSON data -->
                 <option value="gabriel">Gabriel</option>
                 <option value="sndlib">SNDlib</option>
+                <option value="topozoo">Topology Zoo</option>
             </select>
             <select id="secondLevelDropdown" disabled>
                 <option value="" selected>Select size</option>
@@ -432,7 +438,8 @@
             '100': ['0', '1'],
             '125': ['0', '1']
         },
-        'sndlib': ['abilene', 'atlanta', 'brain', 'cost266', 'dfn-bwin', 'dfn-gwin', 'di-yuan', 'france', 'geant', 'germany50', 'giul39', 'india35', 'janos-us-ca', 'janos-us', 'newyork', 'nobel-eu', 'nobel-germany', 'nobel-us', 'norway', 'pdh', 'pioro40', 'polska', 'sun', 'ta1', 'ta2', 'zib54']
+        'sndlib': ['abilene', 'atlanta', 'brain', 'cost266', 'dfn-bwin', 'dfn-gwin', 'di-yuan', 'france', 'geant', 'germany50', 'giul39', 'india35', 'janos-us-ca', 'janos-us', 'newyork', 'nobel-eu', 'nobel-germany', 'nobel-us', 'norway', 'pdh', 'pioro40', 'polska', 'sun', 'ta1', 'ta2', 'zib54'],
+        'topozoo': ['Aarnet', 'Abilene', 'Abvt', 'Aconet', 'Agis', 'Airtel', 'Amres', 'Ans', 'Arn', 'Arnes', 'Arpanet196912', 'Arpanet19706', 'Arpanet19719', 'Arpanet19723', 'Arpanet19728', 'Atmnet', 'AttMpls', 'Basnet', 'Bbnplanet', 'Bellcanada', 'Bellsouth', 'Belnet2003', 'Belnet2004', 'Belnet2005', 'Belnet2006', 'Belnet2007', 'Belnet2008', 'Belnet2009', 'Belnet2010', 'BeyondTheNetwork', 'Bics', 'Biznet', 'BsonetEurope', 'BtAsiaPac', 'BtEurope', 'BtNorthAmerica', 'Canerie', 'Carnet', 'Cernet', 'Cesnet1993', 'Cesnet1999', 'Cesnet2001', 'Cesnet200304', 'Cesnet200511', 'Cesnet200603', 'Cesnet200706', 'Cesnet201006', 'Chinanet', 'Claranet', 'Compuserve', 'CrlNetworkServices', 'Cwix', 'Cynet', 'Darkstrand', 'Dataxchange', 'Dfn', 'Digex', 'Eenet', 'EliBackbone', 'Epoch', 'Ernet', 'Evolink', 'Fccn', 'Forthnet', 'Funet', 'Gambia', 'Garr199901', 'Garr199904', 'Garr199905', 'Garr200109', 'Garr200112', 'Garr200212', 'Garr200404', 'Garr200902', 'Garr200908', 'Garr200909', 'Garr200912', 'Garr201001', 'Garr201003', 'Garr201004', 'Garr201005', 'Garr201007', 'Garr201008', 'Garr201010', 'Garr201012', 'Garr201101', 'Garr201102', 'Garr201103', 'Garr201104', 'Garr201105', 'Garr201107', 'Garr201108', 'Garr201109', 'Garr201110', 'Garr201111', 'Garr201112', 'Garr201201', 'Gblnet', 'Geant2001', 'Geant2009', 'Geant2010', 'Geant2012', 'Getnet', 'Globalcenter', 'Goodnet', 'Grena', 'Gridnet', 'Grnet', 'GtsCzechRepublic', 'GtsHungary', 'GtsPoland', 'GtsRomania', 'GtsSlovakia', 'Heanet', 'HiberniaCanada', 'HiberniaGlobal', 'HiberniaIreland', 'HiberniaNireland', 'HiberniaUk', 'HiberniaUs', 'Highwinds', 'HostwayInternational', 'HurricaneElectric', 'Ibm', 'Iij', 'Iinet', 'Ilan', 'Integra', 'Internetmci', 'Internode', 'Iris', 'Istar', 'Itnet', 'Janetbackbone', 'Janetlense', 'Jgn2Plus', 'Karen', 'KentmanFeb2008', 'KentmanJul2005', 'Kreonet', 'Latnet', 'Layer42', 'Litnet', 'Marnet', 'Marwan', 'Mren', 'Myren', 'Napnet', 'Navigata', 'Netrail', 'NetworkUsa', 'Nextgen', 'Niif', 'Noel', 'Nordu1989', 'Nordu1997', 'Nordu2005', 'Nsfnet', 'Oxford', 'Pacificwave', 'Packetexchange', 'Palmetto', 'Peer1', 'PionierL3', 'Psinet', 'Quest', 'Rediris', 'Renam', 'Renater1999', 'Renater2001', 'Renater2004', 'Renater2006', 'Renater2008', 'Renater2010', 'Restena', 'Rhnet', 'Rnp', 'Roedunet', 'Sago', 'Sanren', 'Savvis', 'Sinet', 'Spiralight', 'Sprint', 'Sunet', 'Surfnet', 'SwitchL3', 'TataNld', 'Telecomserbia', 'Ulaknet', 'UniC', 'Uninett2010', 'Uninett2011', 'Uran', 'Uunet', 'Vinaren', 'VisionNet', 'VtlWavenet2008', 'VtlWavenet2011', 'WideJpn', 'Xeex', 'Xspedius', 'York']
     };
 
     const propertiesNames = [['nodes', 'Number of nodes'], ['links', 'Number of links'], ['demands', 'Number of demands'],
