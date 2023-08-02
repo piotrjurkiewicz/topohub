@@ -402,7 +402,8 @@ def topo_stats(g, ps=None):
         'min_link_len': min_link_length,
         'avg_link_len': avg_link_length,
         'max_link_len': max_link_length,
-        'diameter_len': nx.diameter(g, weight='dist')
+        'diameter_len': nx.diameter(g, weight='dist'),
+        'diameter_hops': nx.diameter(g)
     }
 
     if ps is None:
@@ -417,12 +418,10 @@ def topo_stats(g, ps=None):
         avg_adp_length_sum, avg_sdp_length_sum = 0.0, 0.0
         dem_num = 0
         dem_sum = 0.0
-        diameter_hops = 0
         max_adp_num = 0
         max_sdp_num = 0
 
         for pair, (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst) in ps.items():
-            diameter_hops = max(diameter_hops, avg_sdp_hops)
             max_adp_num = max(max_adp_num, adp_number)
             max_sdp_num = max(max_sdp_num, sdp_number)
             dem_sum += demand
@@ -442,7 +441,6 @@ def topo_stats(g, ps=None):
         if dem_sum == 0:
             dem_sum = dem_num
 
-        stats['diameter_hops'] = diameter_hops
         stats['avg_sdp_num'] = sdp_sum / float(dem_sum)
         stats['max_sdp_num'] = max_sdp_num
         stats['avg_sdp_hops'] = avg_sdp_hops_sum / float(dem_sum)
