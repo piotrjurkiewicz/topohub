@@ -36,15 +36,9 @@
             font-size: 20px;
         }
 
-        p {
-            font-size: 14px;
-        }
-
         .container {
             display: flex;
             min-height: calc(100vh - 64px); /* Adjust min-height for the header */
-            max-height: calc(100vh - 64px);
-            height: 100%;
             flex-direction: row;
         }
 
@@ -64,6 +58,7 @@
         .sidebar-right {
             width: 500px;
             padding-left: 0;
+            font-size: 14px;
         }
 
         .main-content {
@@ -79,6 +74,10 @@
             background-color: #ffffff;
             border: 1px solid #d8dee4;
             border-radius: 3px;
+        }
+
+        .box:last-child {
+            margin-bottom: 0;
         }
 
         #topoDisplay {
@@ -137,22 +136,13 @@
             margin: 0;
             border: 1px solid #d8dee4;
             border-radius: 3px;
-            font-size: 14px;
         }
 
         #topologyPropertiesList li {
             display: flex;
             justify-content: space-between;
-        }
-
-        .property {
-            flex: 1;
-            text-align: left;
-        }
-
-        .property_value {
-            flex: 1;
-            text-align: right;
+            white-space: nowrap;
+            gap: 24px;
         }
 
         li {
@@ -167,6 +157,23 @@
 
         li:hover {
             background-color: #f6f8fa;
+        }
+
+        #trafficModelDiv {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        #trafficModelLabel {
+            min-width: fit-content;
+            white-space: nowrap;
+            line-height: 20px;
+        }
+
+        #trafficModelDropdown {
+            width: 100%;
+            min-width: fit-content;
         }
 
         /* Adjust the styles for smaller screens */
@@ -376,23 +383,33 @@
             <ul id="topologyPropertiesList">
             </ul>
         </div>
-        <div id="ecmpLinkUtilization" class="box">
+
+        <div id="displayControl" class="box">
+            <h2>Display control</h2>
 
             <input id="showNodeNames" type="checkbox" autocomplete="off" checked><label
-                for="showNodeNames">Show labels</label><br/>
+                for="showNodeNames">Show node names</label><br/>
             <input id="showNodeNamesBelow" type="checkbox" autocomplete="off"><label
-                for="showNodeNamesBelow">Show labels below</label><br/>
+                for="showNodeNamesBelow">Show names below nodes</label><br/>
             <input id="showNodes" type="checkbox" autocomplete="off" checked><label
                 for="showNodes">Show node circles</label><br/>
 
+        </div>
+
+        <div id="ecmpLinkUtilization" class="box">
+
             <h2>ECMP routing link utilization</h2>
+            <div id="trafficModelDiv">
+                <label id="trafficModelLabel" for="trafficModelDropdown">Displayed demands model:</label>
+                <select id="trafficModelDropdown">
+                    <option value="none" selected>None</option>
+                    <!-- Add options for each category in the JSON data -->
+                    <option value="org">Original</option>
+                    <option value="uni">Uniform</option>
+                    <option value="deg">Degree</option>
+                </select>
+            </div>
             <p>Description: This is the first topology.</p>
-            <select id="trafficModelDropdown">
-                <option value="none" selected>None</option>
-                <!-- Add options for each category in the JSON data -->
-                <option value="unit">Unit</option>
-                <option value="degree">Degree</option>
-            </select>
             <div id="control">
                 <input id="dynamicWidthCheckbox" type="checkbox" autocomplete="off" checked><label
                     for="dynamicWidthCheckbox">Dynamic links width</label><br/>
@@ -452,521 +469,521 @@
 
     const dummy_links = [
         {
-            "distance": 127.58,
+            "dist": 127.58,
             "ecmp_fwd": {
-                "unit": 8.41,
-                "degree": 6.40
+                "uni": 8.41,
+                "deg": 6.40
             },
             "ecmp_bwd": {
-                "unit": 9.13,
-                "degree": 7.33
+                "uni": 9.13,
+                "deg": 7.33
             },
             "source": "R0",
             "target": "R16"
         },
         {
-            "distance": 58.31,
+            "dist": 58.31,
             "ecmp_fwd": {
-                "unit": 24.52,
-                "degree": 17.69
+                "uni": 24.52,
+                "deg": 17.69
             },
             "ecmp_bwd": {
-                "unit": 23.80,
-                "degree": 16.75
+                "uni": 23.80,
+                "deg": 16.75
             },
             "source": "R0",
             "target": "R22"
         },
         {
-            "distance": 149.24,
+            "dist": 149.24,
             "ecmp_fwd": {
-                "unit": 28.37,
-                "degree": 26.53
+                "uni": 28.37,
+                "deg": 26.53
             },
             "ecmp_bwd": {
-                "unit": 21.15,
-                "degree": 20.85
+                "uni": 21.15,
+                "deg": 20.85
             },
             "source": "R1",
             "target": "R7"
         },
         {
-            "distance": 118.78,
+            "dist": 118.78,
             "ecmp_fwd": {
-                "unit": 24.76,
-                "degree": 25.57
+                "uni": 24.76,
+                "deg": 25.57
             },
             "ecmp_bwd": {
-                "unit": 31.25,
-                "degree": 30.96
+                "uni": 31.25,
+                "deg": 30.96
             },
             "source": "R1",
             "target": "R11"
         },
         {
-            "distance": 164.39,
+            "dist": 164.39,
             "ecmp_fwd": {
-                "unit": 18.51,
-                "degree": 22.19
+                "uni": 18.51,
+                "deg": 22.19
             },
             "ecmp_bwd": {
-                "unit": 18.99,
-                "degree": 22.26
+                "uni": 18.99,
+                "deg": 22.26
             },
             "source": "R1",
             "target": "R12"
         },
         {
-            "distance": 162.17,
+            "dist": 162.17,
             "ecmp_fwd": {
-                "unit": 5.05,
-                "degree": 6.71
+                "uni": 5.05,
+                "deg": 6.71
             },
             "ecmp_bwd": {
-                "unit": 5.29,
-                "degree": 6.93
+                "uni": 5.29,
+                "deg": 6.93
             },
             "source": "R1",
             "target": "R23"
         },
         {
-            "distance": 65.13,
+            "dist": 65.13,
             "ecmp_fwd": {
-                "unit": 13.46,
-                "degree": 8.72
+                "uni": 13.46,
+                "deg": 8.72
             },
             "ecmp_bwd": {
-                "unit": 18.27,
-                "degree": 11.77
+                "uni": 18.27,
+                "deg": 11.77
             },
             "source": "R2",
             "target": "R7"
         },
         {
-            "distance": 39.05,
+            "dist": 39.05,
             "ecmp_fwd": {
-                "unit": 9.62,
-                "degree": 6.23
+                "uni": 9.62,
+                "deg": 6.23
             },
             "ecmp_bwd": {
-                "unit": 4.81,
-                "degree": 3.19
+                "uni": 4.81,
+                "deg": 3.19
             },
             "source": "R2",
             "target": "R8"
         },
         {
-            "distance": 32.40,
+            "dist": 32.40,
             "ecmp_fwd": {
-                "unit": 10.04,
-                "degree": 6.58
+                "uni": 10.04,
+                "deg": 6.58
             },
             "ecmp_bwd": {
-                "unit": 10.58,
-                "degree": 6.90
+                "uni": 10.58,
+                "deg": 6.90
             },
             "source": "R3",
             "target": "R10"
         },
         {
-            "distance": 57.50,
+            "dist": 57.50,
             "ecmp_fwd": {
-                "unit": 2.40,
-                "degree": 2.16
+                "uni": 2.40,
+                "deg": 2.16
             },
             "ecmp_bwd": {
-                "unit": 2.40,
-                "degree": 2.16
+                "uni": 2.40,
+                "deg": 2.16
             },
             "source": "R3",
             "target": "R16"
         },
         {
-            "distance": 68.74,
+            "dist": 68.74,
             "ecmp_fwd": {
-                "unit": 29.33,
-                "degree": 25.74
+                "uni": 29.33,
+                "deg": 25.74
             },
             "ecmp_bwd": {
-                "unit": 28.79,
-                "degree": 25.41
+                "uni": 28.79,
+                "deg": 25.41
             },
             "source": "R3",
             "target": "R20"
         },
         {
-            "distance": 96.61,
+            "dist": 96.61,
             "ecmp_fwd": {
-                "unit": 35.10,
-                "degree": 24.78
+                "uni": 35.10,
+                "deg": 24.78
             },
             "ecmp_bwd": {
-                "unit": 35.10,
-                "degree": 24.78
+                "uni": 35.10,
+                "deg": 24.78
             },
             "source": "R4",
             "target": "R9"
         },
         {
-            "distance": 79.70,
+            "dist": 79.70,
             "ecmp_fwd": {
-                "unit": 44.35,
-                "degree": 29.57
+                "uni": 44.35,
+                "deg": 29.57
             },
             "ecmp_bwd": {
-                "unit": 42.31,
-                "degree": 28.28
+                "uni": 42.31,
+                "deg": 28.28
             },
             "source": "R4",
             "target": "R13"
         },
         {
-            "distance": 119.23,
+            "dist": 119.23,
             "ecmp_fwd": {
-                "unit": 24.52,
-                "degree": 22.19
+                "uni": 24.52,
+                "deg": 22.19
             },
             "ecmp_bwd": {
-                "unit": 26.56,
-                "degree": 23.48
+                "uni": 26.56,
+                "deg": 23.48
             },
             "source": "R4",
             "target": "R24"
         },
         {
-            "distance": 157.68,
+            "dist": 157.68,
             "ecmp_fwd": {
-                "unit": 12.50,
-                "degree": 11.86
+                "uni": 12.50,
+                "deg": 11.86
             },
             "ecmp_bwd": {
-                "unit": 14.06,
-                "degree": 13.16
+                "uni": 14.06,
+                "deg": 13.16
             },
             "source": "R5",
             "target": "R6"
         },
         {
-            "distance": 47.54,
+            "dist": 47.54,
             "ecmp_fwd": {
-                "unit": 32.33,
-                "degree": 30.46
+                "uni": 32.33,
+                "deg": 30.46
             },
             "ecmp_bwd": {
-                "unit": 30.77,
-                "degree": 28.83
+                "uni": 30.77,
+                "deg": 28.83
             },
             "source": "R5",
             "target": "R18"
         },
         {
-            "distance": 113.24,
+            "dist": 113.24,
             "ecmp_fwd": {
-                "unit": 16.35,
-                "degree": 13.80
+                "uni": 16.35,
+                "deg": 13.80
             },
             "ecmp_bwd": {
-                "unit": 16.35,
-                "degree": 14.14
+                "uni": 16.35,
+                "deg": 14.14
             },
             "source": "R5",
             "target": "R22"
         },
         {
-            "distance": 159.77,
+            "dist": 159.77,
             "ecmp_fwd": {
-                "unit": 98.44,
-                "degree": 98.37
+                "uni": 98.44,
+                "deg": 98.37
             },
             "ecmp_bwd": {
-                "unit": 100.00,
-                "degree": 100.00
+                "uni": 100.00,
+                "deg": 100.00
             },
             "source": "R6",
             "target": "R9"
         },
         {
-            "distance": 72.92,
+            "dist": 72.92,
             "ecmp_fwd": {
-                "unit": 72.36,
-                "degree": 71.82
+                "uni": 72.36,
+                "deg": 71.82
             },
             "ecmp_bwd": {
-                "unit": 71.63,
-                "degree": 70.88
+                "uni": 71.63,
+                "deg": 70.88
             },
             "source": "R6",
             "target": "R20"
         },
         {
-            "distance": 155.66,
+            "dist": 155.66,
             "ecmp_fwd": {
-                "unit": 23.80,
-                "degree": 19.63
+                "uni": 23.80,
+                "deg": 19.63
             },
             "ecmp_bwd": {
-                "unit": 24.52,
-                "degree": 20.23
+                "uni": 24.52,
+                "deg": 20.23
             },
             "source": "R6",
             "target": "R22"
         },
         {
-            "distance": 59.41,
+            "dist": 59.41,
             "ecmp_fwd": {
-                "unit": 2.40,
-                "degree": 2.52
+                "uni": 2.40,
+                "deg": 2.52
             },
             "ecmp_bwd": {
-                "unit": 2.88,
-                "degree": 2.88
+                "uni": 2.88,
+                "deg": 2.88
             },
             "source": "R7",
             "target": "R8"
         },
         {
-            "distance": 105.37,
+            "dist": 105.37,
             "ecmp_fwd": {
-                "unit": 14.42,
-                "degree": 16.06
+                "uni": 14.42,
+                "deg": 16.06
             },
             "ecmp_bwd": {
-                "unit": 11.54,
-                "degree": 13.06
+                "uni": 11.54,
+                "deg": 13.06
             },
             "source": "R7",
             "target": "R23"
         },
         {
-            "distance": 117.87,
+            "dist": 117.87,
             "ecmp_fwd": {
-                "unit": 27.88,
-                "degree": 24.35
+                "uni": 27.88,
+                "deg": 24.35
             },
             "ecmp_bwd": {
-                "unit": 23.56,
-                "degree": 21.66
+                "uni": 23.56,
+                "deg": 21.66
             },
             "source": "R8",
             "target": "R23"
         },
         {
-            "distance": 40.38,
+            "dist": 40.38,
             "ecmp_fwd": {
-                "unit": 19.53,
-                "degree": 17.94
+                "uni": 19.53,
+                "deg": 17.94
             },
             "ecmp_bwd": {
-                "unit": 20.43,
-                "degree": 18.84
+                "uni": 20.43,
+                "deg": 18.84
             },
             "source": "R9",
             "target": "R18"
         },
         {
-            "distance": 138.40,
+            "dist": 138.40,
             "ecmp_fwd": {
-                "unit": 75.54,
-                "degree": 86.81
+                "uni": 75.54,
+                "deg": 86.81
             },
             "ecmp_bwd": {
-                "unit": 76.20,
-                "degree": 87.54
+                "uni": 76.20,
+                "deg": 87.54
             },
             "source": "R9",
             "target": "R24"
         },
         {
-            "distance": 50.32,
+            "dist": 50.32,
             "ecmp_fwd": {
-                "unit": 12.50,
-                "degree": 8.05
+                "uni": 12.50,
+                "deg": 8.05
             },
             "ecmp_bwd": {
-                "unit": 13.04,
-                "degree": 8.38
+                "uni": 13.04,
+                "deg": 8.38
             },
             "source": "R10",
             "target": "R16"
         },
         {
-            "distance": 88.74,
+            "dist": 88.74,
             "ecmp_fwd": {
-                "unit": 11.90,
-                "degree": 9.71
+                "uni": 11.90,
+                "deg": 9.71
             },
             "ecmp_bwd": {
-                "unit": 13.46,
-                "degree": 10.64
+                "uni": 13.46,
+                "deg": 10.64
             },
             "source": "R11",
             "target": "R14"
         },
         {
-            "distance": 99.64,
+            "dist": 99.64,
             "ecmp_fwd": {
-                "unit": 23.20,
-                "degree": 24.28
+                "uni": 23.20,
+                "deg": 24.28
             },
             "ecmp_bwd": {
-                "unit": 28.12,
-                "degree": 28.73
+                "uni": 28.12,
+                "deg": 28.73
             },
             "source": "R11",
             "target": "R24"
         },
         {
-            "distance": 51.21,
+            "dist": 51.21,
             "ecmp_fwd": {
-                "unit": 9.44,
-                "degree": 9.09
+                "uni": 9.44,
+                "deg": 9.09
             },
             "ecmp_bwd": {
-                "unit": 10.58,
-                "degree": 10.21
+                "uni": 10.58,
+                "deg": 10.21
             },
             "source": "R12",
             "target": "R15"
         },
         {
-            "distance": 51.86,
+            "dist": 51.86,
             "ecmp_fwd": {
-                "unit": 21.27,
-                "degree": 22.98
+                "uni": 21.27,
+                "deg": 22.98
             },
             "ecmp_bwd": {
-                "unit": 20.67,
-                "degree": 22.38
+                "uni": 20.67,
+                "deg": 22.38
             },
             "source": "R12",
             "target": "R19"
         },
         {
-            "distance": 31.44,
+            "dist": 31.44,
             "ecmp_fwd": {
-                "unit": 36.54,
-                "degree": 44.38
+                "uni": 36.54,
+                "deg": 44.38
             },
             "ecmp_bwd": {
-                "unit": 43.63,
-                "degree": 50.06
+                "uni": 43.63,
+                "deg": 50.06
             },
             "source": "R12",
             "target": "R23"
         },
         {
-            "distance": 110.60,
+            "dist": 110.60,
             "ecmp_fwd": {
-                "unit": 70.19,
-                "degree": 80.90
+                "uni": 70.19,
+                "deg": 80.90
             },
             "ecmp_bwd": {
-                "unit": 63.04,
-                "degree": 74.78
+                "uni": 63.04,
+                "deg": 74.78
             },
             "source": "R12",
             "target": "R24"
         },
         {
-            "distance": 74.64,
+            "dist": 74.64,
             "ecmp_fwd": {
-                "unit": 23.08,
-                "degree": 7.57
+                "uni": 23.08,
+                "deg": 7.57
             },
             "ecmp_bwd": {
-                "unit": 23.08,
-                "degree": 7.57
+                "uni": 23.08,
+                "deg": 7.57
             },
             "source": "R13",
             "target": "R17"
         },
         {
-            "distance": 73.39,
+            "dist": 73.39,
             "ecmp_fwd": {
-                "unit": 13.46,
-                "degree": 7.96
+                "uni": 13.46,
+                "deg": 7.96
             },
             "ecmp_bwd": {
-                "unit": 11.42,
-                "degree": 6.66
+                "uni": 11.42,
+                "deg": 6.66
             },
             "source": "R13",
             "target": "R21"
         },
         {
-            "distance": 89.66,
+            "dist": 89.66,
             "ecmp_fwd": {
-                "unit": 19.11,
-                "degree": 12.99
+                "uni": 19.11,
+                "deg": 12.99
             },
             "ecmp_bwd": {
-                "unit": 21.15,
-                "degree": 14.28
+                "uni": 21.15,
+                "deg": 14.28
             },
             "source": "R14",
             "target": "R21"
         },
         {
-            "distance": 75.13,
+            "dist": 75.13,
             "ecmp_fwd": {
-                "unit": 25.00,
-                "degree": 22.33
+                "uni": 25.00,
+                "deg": 22.33
             },
             "ecmp_bwd": {
-                "unit": 24.52,
-                "degree": 21.97
+                "uni": 24.52,
+                "deg": 21.97
             },
             "source": "R14",
             "target": "R24"
         },
         {
-            "distance": 33.32,
+            "dist": 33.32,
             "ecmp_fwd": {
-                "unit": 15.50,
-                "degree": 14.62
+                "uni": 15.50,
+                "deg": 14.62
             },
             "ecmp_bwd": {
-                "unit": 16.77,
-                "degree": 15.95
+                "uni": 16.77,
+                "deg": 15.95
             },
             "source": "R15",
             "target": "R19"
         },
         {
-            "distance": 43.74,
+            "dist": 43.74,
             "ecmp_fwd": {
-                "unit": 12.50,
-                "degree": 12.75
+                "uni": 12.50,
+                "deg": 12.75
             },
             "ecmp_bwd": {
-                "unit": 12.38,
-                "degree": 12.53
+                "uni": 12.38,
+                "deg": 12.53
             },
             "source": "R15",
             "target": "R23"
         },
         {
-            "distance": 45.52,
+            "dist": 45.52,
             "ecmp_fwd": {
-                "unit": 26.92,
-                "degree": 29.33
+                "uni": 26.92,
+                "deg": 29.33
             },
             "ecmp_bwd": {
-                "unit": 28.19,
-                "degree": 30.59
+                "uni": 28.19,
+                "deg": 30.59
             },
             "source": "R16",
             "target": "R20"
         },
         {
-            "distance": 35.05,
+            "dist": 35.05,
             "ecmp_fwd": {
-                "unit": 36.48,
-                "degree": 36.03
+                "uni": 36.48,
+                "deg": 36.03
             },
             "ecmp_bwd": {
-                "unit": 35.82,
-                "degree": 35.30
+                "uni": 35.82,
+                "deg": 35.30
             },
             "source": "R18",
             "target": "R19"
@@ -1301,7 +1318,7 @@
             for (const prop of propertiesNames) {
                 if (prop[0] in stats) {
                     const li = document.createElement('li');
-                    li.innerHTML = `<span class=".property">${prop[1]}</span><span class=".property_value">${stats[prop[0]]}</span>`;
+                    li.innerHTML = `<span>${prop[1]}</span><span>${stats[prop[0]]}</span>`;
                     topologyPropertiesList.appendChild(li);
                 }
             }
