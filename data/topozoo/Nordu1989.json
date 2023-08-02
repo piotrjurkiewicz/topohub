@@ -1,0 +1,122 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "nordu1989",
+"demands": {},
+"stats": {
+"nodes": 5,
+"links": 4,
+"demands": 20,
+"min_degree": 1,
+"avg_degree": 1.60,
+"std_degree": 0.80,
+"max_degree": 3,
+"gini": 0.25,
+"min_link_len": 395.86,
+"avg_link_len": 908.63,
+"max_link_len": 2104.79,
+"diameter_len": 3238.66,
+"diameter_hops": 3,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.80,
+"avg_sdp_len": 1558.31,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 1.80,
+"avg_adp_len": 1558.31
+}
+},
+"nodes": [
+{
+"pos": [
+10.40,
+63.43
+],
+"id": "Trondheim"
+},
+{
+"pos": [
+18.06,
+59.33
+],
+"id": "Stockholm"
+},
+{
+"pos": [
+24.94,
+60.17
+],
+"id": "Helsinki"
+},
+{
+"pos": [
+12.57,
+55.68
+],
+"id": "Copenhagen"
+},
+{
+"pos": [
+-21.90,
+64.14
+],
+"id": "Reykjavik"
+}
+],
+"links": [
+{
+"dist": 611.33,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 46.67
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 46.67
+},
+"source": "Trondheim",
+"target": "Stockholm"
+},
+{
+"dist": 395.86,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 46.67
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 46.67
+},
+"source": "Stockholm",
+"target": "Helsinki"
+},
+{
+"dist": 522.53,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Stockholm",
+"target": "Copenhagen"
+},
+{
+"dist": 2104.79,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 46.67
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 46.67
+},
+"source": "Copenhagen",
+"target": "Reykjavik"
+}
+]
+}

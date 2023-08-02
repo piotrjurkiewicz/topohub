@@ -1,0 +1,202 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "cesnet1993",
+"demands": {},
+"stats": {
+"nodes": 9,
+"links": 8,
+"demands": 72,
+"min_degree": 1,
+"avg_degree": 1.78,
+"std_degree": 1.62,
+"max_degree": 6,
+"gini": 0.36,
+"min_link_len": 64.45,
+"avg_link_len": 110.63,
+"max_link_len": 186.21,
+"diameter_len": 450.39,
+"diameter_hops": 3,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 2.06,
+"avg_sdp_len": 248.40,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 2.06,
+"avg_adp_len": 248.40
+}
+},
+"nodes": [
+{
+"pos": [
+18.28,
+49.83
+],
+"id": "Ostrava"
+},
+{
+"pos": [
+13.38,
+49.75
+],
+"id": "Plzen"
+},
+{
+"pos": [
+14.42,
+50.09
+],
+"id": "Praha"
+},
+{
+"pos": [
+15.06,
+50.77
+],
+"id": "Liberec"
+},
+{
+"pos": [
+14.47,
+48.97
+],
+"id": "Ceske Budejovice"
+},
+{
+"pos": [
+15.78,
+50.04
+],
+"id": "Pardubice"
+},
+{
+"pos": [
+15.83,
+50.21
+],
+"id": "Hradec Kralove"
+},
+{
+"pos": [
+17.25,
+49.60
+],
+"id": "Olomouc"
+},
+{
+"pos": [
+16.61,
+49.20
+],
+"id": "Brno"
+}
+],
+"links": [
+{
+"dist": 140.26,
+"ecmp_fwd": {
+"uni": 44.44,
+"deg": 27.27
+},
+"ecmp_bwd": {
+"uni": 44.44,
+"deg": 27.27
+},
+"source": "Ostrava",
+"target": "Brno"
+},
+{
+"dist": 83.76,
+"ecmp_fwd": {
+"uni": 44.44,
+"deg": 27.27
+},
+"ecmp_bwd": {
+"uni": 44.44,
+"deg": 27.27
+},
+"source": "Plzen",
+"target": "Praha"
+},
+{
+"dist": 87.93,
+"ecmp_fwd": {
+"uni": 44.44,
+"deg": 27.27
+},
+"ecmp_bwd": {
+"uni": 44.44,
+"deg": 27.27
+},
+"source": "Praha",
+"target": "Liberec"
+},
+{
+"dist": 123.92,
+"ecmp_fwd": {
+"uni": 44.44,
+"deg": 27.27
+},
+"ecmp_bwd": {
+"uni": 44.44,
+"deg": 27.27
+},
+"source": "Praha",
+"target": "Ceske Budejovice"
+},
+{
+"dist": 96.95,
+"ecmp_fwd": {
+"uni": 44.44,
+"deg": 27.27
+},
+"ecmp_bwd": {
+"uni": 44.44,
+"deg": 27.27
+},
+"source": "Praha",
+"target": "Pardubice"
+},
+{
+"dist": 101.54,
+"ecmp_fwd": {
+"uni": 44.44,
+"deg": 27.27
+},
+"ecmp_bwd": {
+"uni": 44.44,
+"deg": 27.27
+},
+"source": "Praha",
+"target": "Hradec Kralove"
+},
+{
+"dist": 186.21,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Praha",
+"target": "Brno"
+},
+{
+"dist": 64.45,
+"ecmp_fwd": {
+"uni": 44.44,
+"deg": 27.27
+},
+"ecmp_bwd": {
+"uni": 44.44,
+"deg": 27.27
+},
+"source": "Olomouc",
+"target": "Brno"
+}
+]
+}

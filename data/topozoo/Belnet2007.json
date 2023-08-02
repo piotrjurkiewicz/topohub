@@ -1,0 +1,494 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "belnet2007",
+"demands": {},
+"stats": {
+"nodes": 21,
+"links": 24,
+"demands": 420,
+"min_degree": 2,
+"avg_degree": 2.29,
+"std_degree": 0.88,
+"max_degree": 5,
+"gini": 0.11,
+"min_link_len": 0.00,
+"avg_link_len": 37.13,
+"max_link_len": 112.50,
+"diameter_len": 332.91,
+"diameter_hops": 7,
+"avg_sdp_num": 1.07,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.41,
+"avg_sdp_len": 72.60,
+"avg_adp_num": 2.01,
+"max_adp_num": 5,
+"avg_adp_hops": 5.39,
+"avg_adp_len": 225.80
+}
+},
+"nodes": [
+{
+"pos": [
+5.28,
+50.53
+],
+"id": "Liege 1 "
+},
+{
+"pos": [
+4.35,
+50.85
+],
+"id": "Brussels Campus"
+},
+{
+"pos": [
+5.82,
+49.68
+],
+"id": "Arlon"
+},
+{
+"pos": [
+5.57,
+50.64
+],
+"id": "Liege 2"
+},
+{
+"pos": [
+4.70,
+50.88
+],
+"id": "Leuven1"
+},
+{
+"pos": [
+4.70,
+50.88
+],
+"id": "Leuven2"
+},
+{
+"pos": [
+4.40,
+50.87
+],
+"id": "Evere"
+},
+{
+"pos": [
+4.41,
+50.92
+],
+"id": "Vilvoorde"
+},
+{
+"pos": [
+5.33,
+50.93
+],
+"id": "Hasselt"
+},
+{
+"pos": [
+5.00,
+51.17
+],
+"id": "Geel"
+},
+{
+"pos": [
+4.61,
+50.67
+],
+"id": "Louvain-la-Neuve"
+},
+{
+"pos": [
+4.83,
+50.47
+],
+"id": "Namur"
+},
+{
+"pos": [
+4.35,
+50.85
+],
+"id": "Brussels Science"
+},
+{
+"pos": [
+3.22,
+51.21
+],
+"id": "Brugge"
+},
+{
+"pos": [
+3.72,
+51.05
+],
+"id": "Gent1"
+},
+{
+"pos": [
+3.72,
+51.05
+],
+"id": "Gent2"
+},
+{
+"pos": [
+4.42,
+51.22
+],
+"id": "Antwerpen1"
+},
+{
+"pos": [
+4.42,
+51.22
+],
+"id": "Antwerpen 2"
+},
+{
+"pos": [
+3.26,
+50.83
+],
+"id": "Korthijk"
+},
+{
+"pos": [
+3.95,
+50.45
+],
+"id": "Mons"
+},
+{
+"pos": [
+4.43,
+50.42
+],
+"id": "Charleroi"
+}
+],
+"links": [
+{
+"dist": 23.93,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 54.13
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 54.13
+},
+"source": "Liege 1 ",
+"target": "Liege 2"
+},
+{
+"dist": 71.99,
+"ecmp_fwd": {
+"uni": 86.67,
+"deg": 71.23
+},
+"ecmp_bwd": {
+"uni": 86.67,
+"deg": 71.23
+},
+"source": "Liege 1 ",
+"target": "Evere"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 15.83,
+"deg": 12.54
+},
+"ecmp_bwd": {
+"uni": 15.83,
+"deg": 12.54
+},
+"source": "Brussels Campus",
+"target": "Brussels Science"
+},
+{
+"dist": 8.59,
+"ecmp_fwd": {
+"uni": 31.67,
+"deg": 25.07
+},
+"ecmp_bwd": {
+"uni": 31.67,
+"deg": 25.07
+},
+"source": "Brussels Campus",
+"target": "Vilvoorde"
+},
+{
+"dist": 107.96,
+"ecmp_fwd": {
+"uni": 46.67,
+"deg": 37.04
+},
+"ecmp_bwd": {
+"uni": 46.67,
+"deg": 37.04
+},
+"source": "Arlon",
+"target": "Liege 2"
+},
+{
+"dist": 112.50,
+"ecmp_fwd": {
+"uni": 26.67,
+"deg": 19.94
+},
+"ecmp_bwd": {
+"uni": 26.67,
+"deg": 19.94
+},
+"source": "Arlon",
+"target": "Namur"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 32.50,
+"deg": 25.64
+},
+"ecmp_bwd": {
+"uni": 32.50,
+"deg": 25.64
+},
+"source": "Leuven1",
+"target": "Leuven2"
+},
+{
+"dist": 21.17,
+"ecmp_fwd": {
+"uni": 57.50,
+"deg": 46.15
+},
+"ecmp_bwd": {
+"uni": 57.50,
+"deg": 46.15
+},
+"source": "Leuven1",
+"target": "Evere"
+},
+{
+"dist": 44.76,
+"ecmp_fwd": {
+"uni": 18.33,
+"deg": 14.25
+},
+"ecmp_bwd": {
+"uni": 18.33,
+"deg": 14.25
+},
+"source": "Leuven2",
+"target": "Hasselt"
+},
+{
+"dist": 38.95,
+"ecmp_fwd": {
+"uni": 78.33,
+"deg": 63.82
+},
+"ecmp_bwd": {
+"uni": 78.33,
+"deg": 63.82
+},
+"source": "Evere",
+"target": "Antwerpen 2"
+},
+{
+"dist": 4.02,
+"ecmp_fwd": {
+"uni": 31.67,
+"deg": 25.07
+},
+"ecmp_bwd": {
+"uni": 31.67,
+"deg": 25.07
+},
+"source": "Evere",
+"target": "Brussels Science"
+},
+{
+"dist": 5.76,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Evere",
+"target": "Vilvoorde"
+},
+{
+"dist": 80.81,
+"ecmp_fwd": {
+"uni": 78.33,
+"deg": 63.82
+},
+"ecmp_bwd": {
+"uni": 78.33,
+"deg": 63.82
+},
+"source": "Vilvoorde",
+"target": "Korthijk"
+},
+{
+"dist": 60.77,
+"ecmp_fwd": {
+"uni": 86.67,
+"deg": 71.23
+},
+"ecmp_bwd": {
+"uni": 86.67,
+"deg": 71.23
+},
+"source": "Vilvoorde",
+"target": "Mons"
+},
+{
+"dist": 49.82,
+"ecmp_fwd": {
+"uni": 57.50,
+"deg": 46.15
+},
+"ecmp_bwd": {
+"uni": 57.50,
+"deg": 46.15
+},
+"source": "Vilvoorde",
+"target": "Geel"
+},
+{
+"dist": 34.88,
+"ecmp_fwd": {
+"uni": 32.50,
+"deg": 25.64
+},
+"ecmp_bwd": {
+"uni": 32.50,
+"deg": 25.64
+},
+"source": "Hasselt",
+"target": "Geel"
+},
+{
+"dist": 26.64,
+"ecmp_fwd": {
+"uni": 26.67,
+"deg": 19.94
+},
+"ecmp_bwd": {
+"uni": 26.67,
+"deg": 19.94
+},
+"source": "Louvain-la-Neuve",
+"target": "Namur"
+},
+{
+"dist": 30.78,
+"ecmp_fwd": {
+"uni": 46.67,
+"deg": 37.04
+},
+"ecmp_bwd": {
+"uni": 46.67,
+"deg": 37.04
+},
+"source": "Louvain-la-Neuve",
+"target": "Charleroi"
+},
+{
+"dist": 42.46,
+"ecmp_fwd": {
+"uni": 56.67,
+"deg": 45.58
+},
+"ecmp_bwd": {
+"uni": 56.67,
+"deg": 45.58
+},
+"source": "Brugge",
+"target": "Korthijk"
+},
+{
+"dist": 38.65,
+"ecmp_fwd": {
+"uni": 35.00,
+"deg": 27.35
+},
+"ecmp_bwd": {
+"uni": 35.00,
+"deg": 27.35
+},
+"source": "Brugge",
+"target": "Gent1"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 22.50,
+"deg": 17.09
+},
+"ecmp_bwd": {
+"uni": 22.50,
+"deg": 17.09
+},
+"source": "Gent1",
+"target": "Gent2"
+},
+{
+"dist": 52.26,
+"ecmp_fwd": {
+"uni": 35.00,
+"deg": 27.35
+},
+"ecmp_bwd": {
+"uni": 35.00,
+"deg": 27.35
+},
+"source": "Gent2",
+"target": "Antwerpen1"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 56.67,
+"deg": 45.58
+},
+"ecmp_bwd": {
+"uni": 56.67,
+"deg": 45.58
+},
+"source": "Antwerpen1",
+"target": "Antwerpen 2"
+},
+{
+"dist": 34.33,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 54.13
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 54.13
+},
+"source": "Mons",
+"target": "Charleroi"
+}
+]
+}

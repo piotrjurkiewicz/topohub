@@ -1,0 +1,155 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "telecomserbia",
+"demands": {},
+"stats": {
+"nodes": 6,
+"links": 6,
+"demands": 30,
+"min_degree": 2,
+"avg_degree": 2.00,
+"std_degree": 0.00,
+"max_degree": 2,
+"gini": 0.00,
+"min_link_len": 54.04,
+"avg_link_len": 142.67,
+"max_link_len": 315.97,
+"diameter_len": 386.10,
+"diameter_hops": 3,
+"avg_sdp_num": 1.20,
+"max_sdp_num": 2,
+"avg_sdp_hops": 1.80,
+"avg_sdp_len": 171.21,
+"avg_adp_num": 2.00,
+"max_adp_num": 2,
+"avg_adp_hops": 3.00,
+"avg_adp_len": 428.02
+}
+},
+"nodes": [
+{
+"pos": [
+19.84,
+45.25
+],
+"id": "Novi Sad"
+},
+{
+"pos": [
+20.47,
+44.80
+],
+"id": "Belgrade"
+},
+{
+"pos": [
+20.92,
+44.02
+],
+"id": "Kragujevac"
+},
+{
+"pos": [
+21.90,
+43.32
+],
+"id": "Nis"
+},
+{
+"pos": [
+21.33,
+43.58
+],
+"id": "Krusevac"
+},
+{
+"pos": [
+19.26,
+42.44
+],
+"id": "Podgorica"
+}
+],
+"links": [
+{
+"dist": 70.13,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Novi Sad",
+"target": "Belgrade"
+},
+{
+"dist": 315.97,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Novi Sad",
+"target": "Podgorica"
+},
+{
+"dist": 94.64,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Belgrade",
+"target": "Kragujevac"
+},
+{
+"dist": 110.56,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Kragujevac",
+"target": "Nis"
+},
+{
+"dist": 54.04,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Nis",
+"target": "Krusevac"
+},
+{
+"dist": 210.70,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Krusevac",
+"target": "Podgorica"
+}
+]
+}

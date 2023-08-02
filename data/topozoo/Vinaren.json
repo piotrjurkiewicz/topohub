@@ -1,0 +1,468 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "vinaren",
+"demands": {},
+"stats": {
+"nodes": 21,
+"links": 22,
+"demands": 420,
+"min_degree": 1,
+"avg_degree": 2.10,
+"std_degree": 1.80,
+"max_degree": 7,
+"gini": 0.39,
+"min_link_len": 55.91,
+"avg_link_len": 1575.76,
+"max_link_len": 5320.87,
+"diameter_len": 13057.66,
+"diameter_hops": 6,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 3.11,
+"avg_sdp_len": 4483.24,
+"avg_adp_num": 1.03,
+"max_adp_num": 2,
+"avg_adp_hops": 3.13,
+"avg_adp_len": 4545.89
+}
+},
+"nodes": [
+{
+"pos": [
+107.60,
+16.47
+],
+"id": "Hue"
+},
+{
+"pos": [
+105.84,
+21.02
+],
+"id": "VN HN"
+},
+{
+"pos": [
+106.67,
+10.75
+],
+"id": "HCM"
+},
+{
+"pos": [
+108.22,
+16.07
+],
+"id": "DN"
+},
+{
+"pos": [
+127.50,
+37.00
+],
+"id": "KR"
+},
+{
+"pos": [
+139.75,
+35.69
+],
+"id": "JP"
+},
+{
+"pos": [
+114.17,
+22.25
+],
+"id": "HK"
+},
+{
+"pos": [
+105.00,
+35.00
+],
+"id": "CN"
+},
+{
+"pos": [
+122.00,
+13.00
+],
+"id": "PH"
+},
+{
+"pos": [
+109.18,
+12.25
+],
+"id": "Nha Trang"
+},
+{
+"pos": [
+105.97,
+10.25
+],
+"id": "Vinh"
+},
+{
+"pos": [
+105.84,
+21.59
+],
+"id": "Thai Nguyen"
+},
+{
+"pos": [
+105.42,
+10.38
+],
+"id": "An Giang"
+},
+{
+"pos": [
+108.44,
+11.95
+],
+"id": "Da Lat"
+},
+{
+"pos": [
+106.68,
+20.86
+],
+"id": "Hai Phong"
+},
+{
+"pos": [
+135.00,
+-25.00
+],
+"id": "AU"
+},
+{
+"pos": [
+105.78,
+10.03
+],
+"id": "CT"
+},
+{
+"pos": [
+100.00,
+15.00
+],
+"id": "TH"
+},
+{
+"pos": [
+112.50,
+2.50
+],
+"id": "MY"
+},
+{
+"pos": [
+120.00,
+-5.00
+],
+"id": "ID"
+},
+{
+"pos": [
+103.80,
+1.37
+],
+"id": "SG"
+}
+],
+"links": [
+{
+"dist": 79.77,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"source": "Hue",
+"target": "DN"
+},
+{
+"dist": 1146.19,
+"ecmp_fwd": {
+"uni": 50.91,
+"deg": 49.69
+},
+"ecmp_bwd": {
+"uni": 50.91,
+"deg": 49.69
+},
+"source": "VN HN",
+"target": "HCM"
+},
+{
+"dist": 605.70,
+"ecmp_fwd": {
+"uni": 38.18,
+"deg": 37.27
+},
+"ecmp_bwd": {
+"uni": 38.18,
+"deg": 37.27
+},
+"source": "VN HN",
+"target": "DN"
+},
+{
+"dist": 871.37,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "VN HN",
+"target": "HK"
+},
+{
+"dist": 1198.48,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"source": "VN HN",
+"target": "Vinh"
+},
+{
+"dist": 63.21,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"source": "VN HN",
+"target": "Thai Nguyen"
+},
+{
+"dist": 89.35,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"source": "VN HN",
+"target": "Hai Phong"
+},
+{
+"dist": 125.27,
+"ecmp_fwd": {
+"uni": 34.55,
+"deg": 25.47
+},
+"ecmp_bwd": {
+"uni": 34.55,
+"deg": 25.47
+},
+"source": "HCM",
+"target": "CT"
+},
+{
+"dist": 614.90,
+"ecmp_fwd": {
+"uni": 10.91,
+"deg": 9.94
+},
+"ecmp_bwd": {
+"uni": 10.91,
+"deg": 9.94
+},
+"source": "HCM",
+"target": "DN"
+},
+{
+"dist": 234.92,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"source": "HCM",
+"target": "Da Lat"
+},
+{
+"dist": 437.14,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"source": "DN",
+"target": "Nha Trang"
+},
+{
+"dist": 4649.74,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"source": "KR",
+"target": "SG"
+},
+{
+"dist": 3087.06,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"source": "JP",
+"target": "PH"
+},
+{
+"dist": 5320.87,
+"ecmp_fwd": {
+"uni": 10.91,
+"deg": 9.94
+},
+"ecmp_bwd": {
+"uni": 10.91,
+"deg": 9.94
+},
+"source": "JP",
+"target": "SG"
+},
+{
+"dist": 2890.17,
+"ecmp_fwd": {
+"uni": 23.64,
+"deg": 23.19
+},
+"ecmp_bwd": {
+"uni": 23.64,
+"deg": 23.19
+},
+"source": "JP",
+"target": "HK"
+},
+{
+"dist": 2579.34,
+"ecmp_fwd": {
+"uni": 70.91,
+"deg": 69.57
+},
+"ecmp_bwd": {
+"uni": 70.91,
+"deg": 69.57
+},
+"source": "HK",
+"target": "SG"
+},
+{
+"dist": 1674.93,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"source": "HK",
+"target": "CN"
+},
+{
+"dist": 55.91,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"source": "An Giang",
+"target": "CT"
+},
+{
+"dist": 4460.16,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"source": "AU",
+"target": "SG"
+},
+{
+"dist": 1572.76,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"source": "TH",
+"target": "SG"
+},
+{
+"dist": 975.28,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"source": "MY",
+"target": "SG"
+},
+{
+"dist": 1934.31,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 8.90
+},
+"source": "ID",
+"target": "SG"
+}
+]
+}

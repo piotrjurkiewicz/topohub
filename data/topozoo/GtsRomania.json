@@ -1,0 +1,454 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "gtsromania",
+"demands": {},
+"stats": {
+"nodes": 19,
+"links": 22,
+"demands": 342,
+"min_degree": 1,
+"avg_degree": 2.32,
+"std_degree": 2.45,
+"max_degree": 11,
+"gini": 0.41,
+"min_link_len": 10.44,
+"avg_link_len": 198.03,
+"max_link_len": 436.64,
+"diameter_len": 972.06,
+"diameter_hops": 5,
+"avg_sdp_num": 1.03,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.40,
+"avg_sdp_len": 435.42,
+"avg_adp_num": 1.23,
+"max_adp_num": 5,
+"avg_adp_hops": 2.55,
+"avg_adp_len": 501.27
+}
+},
+"nodes": [
+{
+"pos": [
+23.80,
+44.32
+],
+"id": "Craiova"
+},
+{
+"pos": [
+26.02,
+44.95
+],
+"id": "Plaiesti"
+},
+{
+"pos": [
+25.61,
+45.65
+],
+"id": "Brasov"
+},
+{
+"pos": [
+25.45,
+44.93
+],
+"id": "Targoviste"
+},
+{
+"pos": [
+28.65,
+44.18
+],
+"id": "Constanta"
+},
+{
+"pos": [
+26.11,
+44.43
+],
+"id": "Bucarest"
+},
+{
+"pos": [
+28.05,
+45.45
+],
+"id": "Galati"
+},
+{
+"pos": [
+27.18,
+45.70
+],
+"id": "Focsani"
+},
+{
+"pos": [
+24.56,
+46.54
+],
+"id": "Targu Mures"
+},
+{
+"pos": [
+21.23,
+45.75
+],
+"id": "Timisoara"
+},
+{
+"pos": [
+24.15,
+45.80
+],
+"id": "Sibiu"
+},
+{
+"pos": [
+27.60,
+47.17
+],
+"id": "Iasi"
+},
+{
+"pos": [
+26.33,
+46.92
+],
+"id": "Piatra Neamt"
+},
+{
+"pos": [
+26.90,
+46.57
+],
+"id": "Bacau"
+},
+{
+"pos": [
+22.90,
+45.88
+],
+"id": "Deva"
+},
+{
+"pos": [
+23.60,
+46.77
+],
+"id": "Cluj"
+},
+{
+"pos": [
+21.93,
+47.07
+],
+"id": "Oradea"
+},
+{
+"pos": [
+21.82,
+47.12
+],
+"id": "Bors"
+},
+{
+"pos": [
+21.32,
+46.18
+],
+"id": "Arad"
+}
+],
+"links": [
+{
+"dist": 257.45,
+"ecmp_fwd": {
+"uni": 55.42,
+"deg": 40.15
+},
+"ecmp_bwd": {
+"uni": 55.42,
+"deg": 40.15
+},
+"source": "Craiova",
+"target": "Timisoara"
+},
+{
+"dist": 183.80,
+"ecmp_fwd": {
+"uni": 84.34,
+"deg": 63.32
+},
+"ecmp_bwd": {
+"uni": 84.34,
+"deg": 63.32
+},
+"source": "Craiova",
+"target": "Bucarest"
+},
+{
+"dist": 58.02,
+"ecmp_fwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"ecmp_bwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"source": "Plaiesti",
+"target": "Bucarest"
+},
+{
+"dist": 198.26,
+"ecmp_fwd": {
+"uni": 18.07,
+"deg": 13.90
+},
+"ecmp_bwd": {
+"uni": 18.07,
+"deg": 13.90
+},
+"source": "Brasov",
+"target": "Cluj"
+},
+{
+"dist": 140.88,
+"ecmp_fwd": {
+"uni": 46.99,
+"deg": 34.75
+},
+"ecmp_bwd": {
+"uni": 46.99,
+"deg": 34.75
+},
+"source": "Brasov",
+"target": "Bucarest"
+},
+{
+"dist": 76.16,
+"ecmp_fwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"ecmp_bwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"source": "Targoviste",
+"target": "Bucarest"
+},
+{
+"dist": 204.34,
+"ecmp_fwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"ecmp_bwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"source": "Constanta",
+"target": "Bucarest"
+},
+{
+"dist": 190.34,
+"ecmp_fwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"ecmp_bwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"source": "Bucarest",
+"target": "Galati"
+},
+{
+"dist": 164.44,
+"ecmp_fwd": {
+"uni": 81.93,
+"deg": 47.49
+},
+"ecmp_bwd": {
+"uni": 81.93,
+"deg": 47.49
+},
+"source": "Bucarest",
+"target": "Focsani"
+},
+{
+"dist": 263.94,
+"ecmp_fwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"ecmp_bwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"source": "Bucarest",
+"target": "Targu Mures"
+},
+{
+"dist": 325.43,
+"ecmp_fwd": {
+"uni": 27.71,
+"deg": 20.08
+},
+"ecmp_bwd": {
+"uni": 27.71,
+"deg": 20.08
+},
+"source": "Bucarest",
+"target": "Iasi"
+},
+{
+"dist": 245.33,
+"ecmp_fwd": {
+"uni": 27.71,
+"deg": 20.08
+},
+"ecmp_bwd": {
+"uni": 27.71,
+"deg": 20.08
+},
+"source": "Bucarest",
+"target": "Bacau"
+},
+{
+"dist": 436.64,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Bucarest",
+"target": "Oradea"
+},
+{
+"dist": 150.26,
+"ecmp_fwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"ecmp_bwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"source": "Focsani",
+"target": "Piatra Neamt"
+},
+{
+"dist": 130.52,
+"ecmp_fwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"ecmp_bwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"source": "Timisoara",
+"target": "Deva"
+},
+{
+"dist": 48.75,
+"ecmp_fwd": {
+"uni": 31.33,
+"deg": 24.71
+},
+"ecmp_bwd": {
+"uni": 31.33,
+"deg": 24.71
+},
+"source": "Timisoara",
+"target": "Arad"
+},
+{
+"dist": 220.72,
+"ecmp_fwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"ecmp_bwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"source": "Sibiu",
+"target": "Oradea"
+},
+{
+"dist": 428.96,
+"ecmp_fwd": {
+"uni": 15.66,
+"deg": 12.36
+},
+"ecmp_bwd": {
+"uni": 15.66,
+"deg": 12.36
+},
+"source": "Iasi",
+"target": "Oradea"
+},
+{
+"dist": 382.04,
+"ecmp_fwd": {
+"uni": 15.66,
+"deg": 12.36
+},
+"ecmp_bwd": {
+"uni": 15.66,
+"deg": 12.36
+},
+"source": "Bacau",
+"target": "Oradea"
+},
+{
+"dist": 130.94,
+"ecmp_fwd": {
+"uni": 34.94,
+"deg": 27.03
+},
+"ecmp_bwd": {
+"uni": 34.94,
+"deg": 27.03
+},
+"source": "Cluj",
+"target": "Oradea"
+},
+{
+"dist": 10.44,
+"ecmp_fwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"ecmp_bwd": {
+"uni": 43.37,
+"deg": 16.60
+},
+"source": "Oradea",
+"target": "Bors"
+},
+{
+"dist": 108.96,
+"ecmp_fwd": {
+"uni": 60.24,
+"deg": 47.88
+},
+"ecmp_bwd": {
+"uni": 60.24,
+"deg": 47.88
+},
+"source": "Oradea",
+"target": "Arad"
+}
+]
+}

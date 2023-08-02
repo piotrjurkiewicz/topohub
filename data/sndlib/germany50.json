@@ -1,0 +1,2462 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "germany50",
+"demands": {
+"Essen": {
+"Duesseldorf": 34.00,
+"Koeln": 9.00,
+"Dortmund": 9.00,
+"Aachen": 2.00,
+"Muenster": 2.00,
+"Koblenz": 2.00,
+"Siegen": 2.00,
+"Wesel": 2.00,
+"Berlin": 2.00,
+"Leipzig": 2.00,
+"Dresden": 2.00,
+"Erfurt": 2.00,
+"Chemnitz": 2.00,
+"Schwerin": 2.00,
+"Magdeburg": 2.00,
+"Hamburg": 2.00,
+"Bremen": 2.00,
+"Kiel": 2.00,
+"Norden": 2.00,
+"Hannover": 2.00,
+"Bielefeld": 2.00,
+"Osnabrueck": 2.00,
+"Frankfurt": 2.00,
+"Darmstadt": 2.00,
+"Mannheim": 2.00,
+"Saarbruecken": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Muenchen": 2.00,
+"Augsburg": 2.00,
+"Nuernberg": 2.00,
+"Wuerzburg": 2.00
+},
+"Duesseldorf": {
+"Koeln": 76.00,
+"Dortmund": 25.00,
+"Aachen": 3.00,
+"Muenster": 6.00,
+"Koblenz": 2.00,
+"Siegen": 2.00,
+"Wesel": 5.00,
+"Berlin": 4.00,
+"Leipzig": 2.00,
+"Dresden": 2.00,
+"Erfurt": 2.00,
+"Schwerin": 2.00,
+"Magdeburg": 2.00,
+"Greifswald": 2.00,
+"Hamburg": 15.00,
+"Bremen": 2.00,
+"Kiel": 2.00,
+"Oldenburg": 2.00,
+"Flensburg": 2.00,
+"Bremerhaven": 2.00,
+"Norden": 2.00,
+"Hannover": 19.00,
+"Bielefeld": 4.00,
+"Braunschweig": 2.00,
+"Osnabrueck": 2.00,
+"Kassel": 2.00,
+"Frankfurt": 33.00,
+"Darmstadt": 2.00,
+"Mannheim": 2.00,
+"Giessen": 2.00,
+"Trier": 2.00,
+"Fulda": 2.00,
+"Saarbruecken": 2.00,
+"Stuttgart": 5.00,
+"Karlsruhe": 2.00,
+"Ulm": 2.00,
+"Freiburg": 2.00,
+"Muenchen": 4.00,
+"Augsburg": 2.00,
+"Nuernberg": 2.00,
+"Wuerzburg": 2.00,
+"Regensburg": 2.00
+},
+"Koeln": {
+"Dortmund": 13.00,
+"Aachen": 10.00,
+"Muenster": 2.00,
+"Koblenz": 5.00,
+"Siegen": 4.00,
+"Wesel": 2.00,
+"Berlin": 11.00,
+"Leipzig": 3.00,
+"Dresden": 2.00,
+"Erfurt": 2.00,
+"Chemnitz": 2.00,
+"Schwerin": 2.00,
+"Magdeburg": 2.00,
+"Hamburg": 5.00,
+"Bremen": 2.00,
+"Kiel": 2.00,
+"Oldenburg": 2.00,
+"Bremerhaven": 2.00,
+"Norden": 2.00,
+"Hannover": 12.00,
+"Bielefeld": 2.00,
+"Braunschweig": 2.00,
+"Osnabrueck": 2.00,
+"Kassel": 2.00,
+"Frankfurt": 28.00,
+"Darmstadt": 2.00,
+"Mannheim": 2.00,
+"Kaiserslautern": 2.00,
+"Giessen": 2.00,
+"Trier": 5.00,
+"Fulda": 2.00,
+"Saarbruecken": 2.00,
+"Stuttgart": 7.00,
+"Karlsruhe": 2.00,
+"Ulm": 2.00,
+"Konstanz": 2.00,
+"Freiburg": 2.00,
+"Muenchen": 3.00,
+"Augsburg": 2.00,
+"Kempten": 2.00,
+"Nuernberg": 3.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 2.00,
+"Regensburg": 2.00
+},
+"Dortmund": {
+"Aachen": 2.00,
+"Muenster": 6.00,
+"Koblenz": 2.00,
+"Siegen": 5.00,
+"Wesel": 2.00,
+"Berlin": 2.00,
+"Leipzig": 5.00,
+"Dresden": 2.00,
+"Erfurt": 2.00,
+"Chemnitz": 2.00,
+"Schwerin": 2.00,
+"Magdeburg": 2.00,
+"Greifswald": 2.00,
+"Hamburg": 3.00,
+"Bremen": 2.00,
+"Kiel": 2.00,
+"Oldenburg": 2.00,
+"Flensburg": 2.00,
+"Bremerhaven": 2.00,
+"Norden": 2.00,
+"Hannover": 15.00,
+"Bielefeld": 8.00,
+"Braunschweig": 2.00,
+"Osnabrueck": 2.00,
+"Kassel": 2.00,
+"Frankfurt": 6.00,
+"Darmstadt": 2.00,
+"Mannheim": 2.00,
+"Giessen": 2.00,
+"Fulda": 2.00,
+"Saarbruecken": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Ulm": 2.00,
+"Freiburg": 2.00,
+"Muenchen": 2.00,
+"Augsburg": 2.00,
+"Nuernberg": 2.00,
+"Wuerzburg": 2.00
+},
+"Aachen": {
+"Muenster": 2.00,
+"Koblenz": 2.00,
+"Wesel": 2.00,
+"Berlin": 2.00,
+"Dresden": 2.00,
+"Erfurt": 2.00,
+"Hamburg": 2.00,
+"Bremerhaven": 2.00,
+"Norden": 2.00,
+"Osnabrueck": 2.00,
+"Frankfurt": 3.00,
+"Kaiserslautern": 2.00,
+"Trier": 2.00,
+"Fulda": 2.00,
+"Saarbruecken": 2.00,
+"Konstanz": 2.00,
+"Freiburg": 3.00,
+"Nuernberg": 2.00
+},
+"Muenster": {
+"Siegen": 2.00,
+"Wesel": 2.00,
+"Berlin": 2.00,
+"Schwerin": 2.00,
+"Hamburg": 2.00,
+"Bremen": 2.00,
+"Bremerhaven": 2.00,
+"Norden": 2.00,
+"Hannover": 2.00,
+"Bielefeld": 5.00,
+"Osnabrueck": 2.00,
+"Kassel": 3.00,
+"Frankfurt": 3.00,
+"Fulda": 2.00,
+"Konstanz": 2.00,
+"Nuernberg": 2.00
+},
+"Koblenz": {
+"Siegen": 2.00,
+"Berlin": 2.00,
+"Dresden": 2.00,
+"Hamburg": 2.00,
+"Bremerhaven": 2.00,
+"Norden": 2.00,
+"Bielefeld": 2.00,
+"Osnabrueck": 2.00,
+"Kassel": 2.00,
+"Frankfurt": 2.00,
+"Darmstadt": 6.00,
+"Mannheim": 2.00,
+"Kaiserslautern": 2.00,
+"Giessen": 2.00,
+"Trier": 2.00,
+"Fulda": 2.00,
+"Saarbruecken": 2.00,
+"Konstanz": 2.00,
+"Wuerzburg": 2.00
+},
+"Siegen": {
+"Berlin": 2.00,
+"Hamburg": 2.00,
+"Bremerhaven": 2.00,
+"Osnabrueck": 2.00,
+"Frankfurt": 2.00,
+"Mannheim": 2.00,
+"Giessen": 2.00,
+"Fulda": 2.00,
+"Saarbruecken": 2.00,
+"Konstanz": 2.00,
+"Nuernberg": 2.00
+},
+"Wesel": {
+"Berlin": 2.00,
+"Hamburg": 2.00,
+"Bremerhaven": 2.00,
+"Norden": 2.00,
+"Bielefeld": 2.00,
+"Osnabrueck": 2.00,
+"Frankfurt": 2.00,
+"Fulda": 2.00,
+"Saarbruecken": 2.00,
+"Konstanz": 2.00
+},
+"Berlin": {
+"Leipzig": 20.00,
+"Dresden": 11.00,
+"Erfurt": 3.00,
+"Chemnitz": 2.00,
+"Schwerin": 3.00,
+"Magdeburg": 7.00,
+"Greifswald": 4.00,
+"Hamburg": 23.00,
+"Bremen": 2.00,
+"Kiel": 2.00,
+"Oldenburg": 2.00,
+"Bremerhaven": 2.00,
+"Hannover": 25.00,
+"Bielefeld": 2.00,
+"Braunschweig": 2.00,
+"Osnabrueck": 2.00,
+"Kassel": 2.00,
+"Frankfurt": 16.00,
+"Darmstadt": 2.00,
+"Mannheim": 2.00,
+"Kaiserslautern": 2.00,
+"Giessen": 2.00,
+"Trier": 2.00,
+"Fulda": 2.00,
+"Saarbruecken": 2.00,
+"Stuttgart": 3.00,
+"Karlsruhe": 2.00,
+"Ulm": 2.00,
+"Konstanz": 2.00,
+"Freiburg": 2.00,
+"Muenchen": 4.00,
+"Augsburg": 2.00,
+"Passau": 2.00,
+"Nuernberg": 3.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 2.00
+},
+"Leipzig": {
+"Dresden": 10.00,
+"Erfurt": 11.00,
+"Chemnitz": 3.00,
+"Schwerin": 2.00,
+"Magdeburg": 6.00,
+"Greifswald": 2.00,
+"Hamburg": 17.00,
+"Hannover": 3.00,
+"Bielefeld": 2.00,
+"Braunschweig": 2.00,
+"Frankfurt": 4.00,
+"Darmstadt": 2.00,
+"Mannheim": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Ulm": 2.00,
+"Muenchen": 3.00,
+"Augsburg": 2.00,
+"Nuernberg": 9.00,
+"Wuerzburg": 2.00
+},
+"Dresden": {
+"Erfurt": 2.00,
+"Chemnitz": 4.00,
+"Schwerin": 2.00,
+"Magdeburg": 2.00,
+"Greifswald": 2.00,
+"Hamburg": 2.00,
+"Bremen": 2.00,
+"Kiel": 2.00,
+"Norden": 2.00,
+"Hannover": 2.00,
+"Bielefeld": 2.00,
+"Braunschweig": 2.00,
+"Kassel": 2.00,
+"Frankfurt": 2.00,
+"Darmstadt": 2.00,
+"Mannheim": 2.00,
+"Trier": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Ulm": 2.00,
+"Konstanz": 2.00,
+"Freiburg": 2.00,
+"Muenchen": 2.00,
+"Augsburg": 2.00,
+"Nuernberg": 2.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 2.00,
+"Regensburg": 2.00
+},
+"Erfurt": {
+"Chemnitz": 2.00,
+"Schwerin": 2.00,
+"Magdeburg": 6.00,
+"Hamburg": 2.00,
+"Bremen": 2.00,
+"Kiel": 2.00,
+"Hannover": 2.00,
+"Bielefeld": 2.00,
+"Braunschweig": 2.00,
+"Kassel": 2.00,
+"Frankfurt": 5.00,
+"Darmstadt": 2.00,
+"Mannheim": 2.00,
+"Giessen": 2.00,
+"Fulda": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Muenchen": 2.00,
+"Augsburg": 2.00,
+"Nuernberg": 2.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 2.00
+},
+"Chemnitz": {
+"Schwerin": 2.00,
+"Magdeburg": 2.00,
+"Hamburg": 2.00,
+"Hannover": 2.00,
+"Bielefeld": 2.00,
+"Braunschweig": 2.00,
+"Frankfurt": 2.00,
+"Mannheim": 2.00,
+"Giessen": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Muenchen": 2.00,
+"Augsburg": 2.00,
+"Nuernberg": 2.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 2.00
+},
+"Schwerin": {
+"Magdeburg": 2.00,
+"Greifswald": 2.00,
+"Hamburg": 8.00,
+"Bremen": 2.00,
+"Kiel": 3.00,
+"Hannover": 2.00,
+"Bielefeld": 2.00,
+"Frankfurt": 2.00,
+"Mannheim": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Muenchen": 2.00,
+"Augsburg": 2.00,
+"Nuernberg": 2.00,
+"Wuerzburg": 2.00
+},
+"Magdeburg": {
+"Greifswald": 2.00,
+"Hamburg": 2.00,
+"Bremen": 2.00,
+"Kiel": 2.00,
+"Hannover": 2.00,
+"Bielefeld": 2.00,
+"Braunschweig": 3.00,
+"Frankfurt": 2.00,
+"Mannheim": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Muenchen": 2.00,
+"Augsburg": 2.00,
+"Nuernberg": 2.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 2.00
+},
+"Greifswald": {
+"Hamburg": 2.00,
+"Bremen": 2.00,
+"Kiel": 2.00,
+"Hannover": 2.00,
+"Bielefeld": 2.00,
+"Frankfurt": 2.00,
+"Karlsruhe": 2.00
+},
+"Hamburg": {
+"Bremen": 13.00,
+"Kiel": 14.00,
+"Oldenburg": 2.00,
+"Flensburg": 3.00,
+"Bremerhaven": 3.00,
+"Norden": 2.00,
+"Hannover": 71.00,
+"Bielefeld": 3.00,
+"Braunschweig": 2.00,
+"Osnabrueck": 2.00,
+"Kassel": 2.00,
+"Frankfurt": 11.00,
+"Darmstadt": 2.00,
+"Mannheim": 2.00,
+"Giessen": 2.00,
+"Fulda": 2.00,
+"Saarbruecken": 2.00,
+"Stuttgart": 3.00,
+"Karlsruhe": 2.00,
+"Ulm": 2.00,
+"Freiburg": 2.00,
+"Muenchen": 6.00,
+"Augsburg": 2.00,
+"Nuernberg": 2.00,
+"Wuerzburg": 2.00,
+"Regensburg": 2.00
+},
+"Bremen": {
+"Kiel": 2.00,
+"Oldenburg": 4.00,
+"Flensburg": 2.00,
+"Bremerhaven": 2.00,
+"Norden": 3.00,
+"Hannover": 11.00,
+"Bielefeld": 2.00,
+"Braunschweig": 2.00,
+"Osnabrueck": 2.00,
+"Kassel": 2.00,
+"Frankfurt": 2.00,
+"Darmstadt": 2.00,
+"Mannheim": 2.00,
+"Giessen": 2.00,
+"Trier": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Muenchen": 2.00,
+"Augsburg": 2.00,
+"Nuernberg": 2.00,
+"Wuerzburg": 2.00
+},
+"Kiel": {
+"Oldenburg": 2.00,
+"Flensburg": 3.00,
+"Bremerhaven": 2.00,
+"Hannover": 2.00,
+"Bielefeld": 2.00,
+"Braunschweig": 2.00,
+"Kassel": 2.00,
+"Frankfurt": 2.00,
+"Darmstadt": 2.00,
+"Mannheim": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Muenchen": 2.00,
+"Augsburg": 2.00,
+"Nuernberg": 2.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 2.00
+},
+"Oldenburg": {
+"Bremerhaven": 2.00,
+"Norden": 2.00,
+"Hannover": 2.00,
+"Bielefeld": 2.00,
+"Osnabrueck": 2.00,
+"Frankfurt": 2.00,
+"Stuttgart": 2.00,
+"Muenchen": 2.00
+},
+"Flensburg": {
+"Bremerhaven": 2.00,
+"Hannover": 2.00,
+"Bielefeld": 2.00,
+"Frankfurt": 5.00
+},
+"Bremerhaven": {
+"Hannover": 2.00,
+"Bielefeld": 2.00,
+"Frankfurt": 2.00
+},
+"Norden": {
+"Hannover": 2.00,
+"Bielefeld": 2.00,
+"Osnabrueck": 2.00,
+"Frankfurt": 2.00,
+"Saarbruecken": 2.00,
+"Konstanz": 2.00,
+"Muenchen": 2.00,
+"Passau": 2.00
+},
+"Hannover": {
+"Bielefeld": 25.00,
+"Braunschweig": 5.00,
+"Osnabrueck": 3.00,
+"Kassel": 6.00,
+"Frankfurt": 49.00,
+"Darmstadt": 2.00,
+"Mannheim": 2.00,
+"Giessen": 2.00,
+"Trier": 2.00,
+"Fulda": 2.00,
+"Saarbruecken": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Ulm": 2.00,
+"Konstanz": 2.00,
+"Freiburg": 2.00,
+"Muenchen": 2.00,
+"Augsburg": 2.00,
+"Nuernberg": 4.00,
+"Wuerzburg": 2.00
+},
+"Bielefeld": {
+"Braunschweig": 2.00,
+"Osnabrueck": 4.00,
+"Kassel": 3.00,
+"Frankfurt": 3.00,
+"Darmstadt": 2.00,
+"Mannheim": 2.00,
+"Giessen": 2.00,
+"Fulda": 2.00,
+"Saarbruecken": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Ulm": 2.00,
+"Muenchen": 2.00,
+"Augsburg": 2.00,
+"Nuernberg": 2.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 2.00
+},
+"Braunschweig": {
+"Kassel": 2.00,
+"Frankfurt": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Muenchen": 2.00
+},
+"Osnabrueck": {
+"Frankfurt": 2.00,
+"Stuttgart": 2.00,
+"Muenchen": 2.00
+},
+"Kassel": {
+"Frankfurt": 2.00,
+"Darmstadt": 2.00,
+"Mannheim": 2.00,
+"Giessen": 2.00,
+"Fulda": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Muenchen": 2.00,
+"Nuernberg": 2.00
+},
+"Frankfurt": {
+"Darmstadt": 25.00,
+"Mannheim": 35.00,
+"Kaiserslautern": 2.00,
+"Giessen": 9.00,
+"Trier": 2.00,
+"Fulda": 2.00,
+"Saarbruecken": 5.00,
+"Stuttgart": 19.00,
+"Karlsruhe": 8.00,
+"Ulm": 5.00,
+"Konstanz": 3.00,
+"Freiburg": 2.00,
+"Muenchen": 3.00,
+"Augsburg": 2.00,
+"Kempten": 2.00,
+"Passau": 2.00,
+"Nuernberg": 23.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 3.00,
+"Regensburg": 2.00
+},
+"Darmstadt": {
+"Mannheim": 4.00,
+"Kaiserslautern": 2.00,
+"Giessen": 2.00,
+"Trier": 3.00,
+"Fulda": 2.00,
+"Saarbruecken": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Ulm": 2.00,
+"Freiburg": 2.00,
+"Muenchen": 2.00,
+"Augsburg": 2.00,
+"Nuernberg": 2.00,
+"Wuerzburg": 2.00
+},
+"Mannheim": {
+"Kaiserslautern": 4.00,
+"Giessen": 2.00,
+"Trier": 2.00,
+"Fulda": 2.00,
+"Saarbruecken": 5.00,
+"Stuttgart": 5.00,
+"Karlsruhe": 4.00,
+"Ulm": 2.00,
+"Konstanz": 2.00,
+"Freiburg": 2.00,
+"Muenchen": 2.00,
+"Augsburg": 2.00,
+"Kempten": 2.00,
+"Nuernberg": 2.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 2.00
+},
+"Kaiserslautern": {
+"Trier": 2.00,
+"Saarbruecken": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 3.00,
+"Muenchen": 2.00
+},
+"Giessen": {
+"Fulda": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Muenchen": 2.00,
+"Nuernberg": 2.00,
+"Wuerzburg": 2.00
+},
+"Trier": {
+"Saarbruecken": 2.00,
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Muenchen": 2.00
+},
+"Fulda": {
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Muenchen": 2.00,
+"Nuernberg": 2.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 2.00
+},
+"Saarbruecken": {
+"Stuttgart": 2.00,
+"Karlsruhe": 2.00,
+"Freiburg": 2.00,
+"Muenchen": 2.00,
+"Augsburg": 2.00,
+"Nuernberg": 2.00
+},
+"Stuttgart": {
+"Karlsruhe": 35.00,
+"Ulm": 11.00,
+"Konstanz": 4.00,
+"Freiburg": 6.00,
+"Muenchen": 30.00,
+"Augsburg": 2.00,
+"Kempten": 2.00,
+"Passau": 2.00,
+"Nuernberg": 35.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 2.00,
+"Regensburg": 2.00
+},
+"Karlsruhe": {
+"Ulm": 2.00,
+"Konstanz": 2.00,
+"Freiburg": 5.00,
+"Muenchen": 4.00,
+"Augsburg": 2.00,
+"Kempten": 2.00,
+"Nuernberg": 2.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 2.00
+},
+"Ulm": {
+"Konstanz": 2.00,
+"Muenchen": 2.00,
+"Augsburg": 2.00,
+"Kempten": 2.00,
+"Nuernberg": 2.00,
+"Wuerzburg": 2.00
+},
+"Konstanz": {
+"Freiburg": 3.00,
+"Muenchen": 5.00,
+"Augsburg": 2.00,
+"Kempten": 2.00,
+"Bayreuth": 2.00
+},
+"Freiburg": {
+"Muenchen": 2.00
+},
+"Muenchen": {
+"Augsburg": 20.00,
+"Kempten": 2.00,
+"Passau": 5.00,
+"Nuernberg": 32.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 3.00,
+"Regensburg": 2.00
+},
+"Augsburg": {
+"Kempten": 2.00,
+"Nuernberg": 2.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 2.00
+},
+"Passau": {
+"Nuernberg": 2.00,
+"Bayreuth": 2.00,
+"Wuerzburg": 2.00,
+"Regensburg": 2.00
+},
+"Nuernberg": {
+"Bayreuth": 5.00,
+"Wuerzburg": 10.00,
+"Regensburg": 9.00
+},
+"Bayreuth": {
+"Wuerzburg": 3.00,
+"Regensburg": 3.00
+}
+},
+"stats": {
+"nodes": 50,
+"links": 88,
+"demands": 1324,
+"min_degree": 2,
+"avg_degree": 3.52,
+"std_degree": 1.04,
+"max_degree": 5,
+"gini": 0.17,
+"min_link_len": 25.94,
+"avg_link_len": 100.71,
+"max_link_len": 252.30,
+"diameter_len": 935.02,
+"diameter_hops": 9,
+"avg_sdp_num": 1.23,
+"max_sdp_num": 3,
+"avg_sdp_hops": 2.85,
+"avg_sdp_len": 120.67,
+"avg_adp_num": 3.19,
+"max_adp_num": 5,
+"avg_adp_hops": 4.67,
+"avg_adp_len": 446.59
+}
+},
+"nodes": [
+{
+"pos": [
+6.04,
+50.76
+],
+"id": "Aachen"
+},
+{
+"pos": [
+10.90,
+48.33
+],
+"id": "Augsburg"
+},
+{
+"pos": [
+11.59,
+49.93
+],
+"id": "Bayreuth"
+},
+{
+"pos": [
+13.39,
+52.52
+],
+"id": "Berlin"
+},
+{
+"pos": [
+8.50,
+52.04
+],
+"id": "Bielefeld"
+},
+{
+"pos": [
+10.55,
+52.28
+],
+"id": "Braunschweig"
+},
+{
+"pos": [
+8.85,
+53.11
+],
+"id": "Bremen"
+},
+{
+"pos": [
+8.58,
+53.54
+],
+"id": "Bremerhaven"
+},
+{
+"pos": [
+12.93,
+50.84
+],
+"id": "Chemnitz"
+},
+{
+"pos": [
+8.65,
+49.89
+],
+"id": "Darmstadt"
+},
+{
+"pos": [
+7.45,
+51.51
+],
+"id": "Dortmund"
+},
+{
+"pos": [
+13.73,
+51.03
+],
+"id": "Dresden"
+},
+{
+"pos": [
+6.77,
+51.25
+],
+"id": "Duesseldorf"
+},
+{
+"pos": [
+11.04,
+50.98
+],
+"id": "Erfurt"
+},
+{
+"pos": [
+7.02,
+51.46
+],
+"id": "Essen"
+},
+{
+"pos": [
+9.45,
+54.77
+],
+"id": "Flensburg"
+},
+{
+"pos": [
+8.71,
+50.12
+],
+"id": "Frankfurt"
+},
+{
+"pos": [
+7.80,
+47.98
+],
+"id": "Freiburg"
+},
+{
+"pos": [
+9.69,
+50.56
+],
+"id": "Fulda"
+},
+{
+"pos": [
+8.67,
+50.57
+],
+"id": "Giessen"
+},
+{
+"pos": [
+13.40,
+54.09
+],
+"id": "Greifswald"
+},
+{
+"pos": [
+9.99,
+53.57
+],
+"id": "Hamburg"
+},
+{
+"pos": [
+9.72,
+52.38
+],
+"id": "Hannover"
+},
+{
+"pos": [
+7.75,
+49.43
+],
+"id": "Kaiserslautern"
+},
+{
+"pos": [
+8.41,
+49.01
+],
+"id": "Karlsruhe"
+},
+{
+"pos": [
+9.51,
+51.32
+],
+"id": "Kassel"
+},
+{
+"pos": [
+10.32,
+47.72
+],
+"id": "Kempten"
+},
+{
+"pos": [
+10.12,
+54.34
+],
+"id": "Kiel"
+},
+{
+"pos": [
+7.52,
+50.40
+],
+"id": "Koblenz"
+},
+{
+"pos": [
+6.87,
+50.94
+],
+"id": "Koeln"
+},
+{
+"pos": [
+9.18,
+47.66
+],
+"id": "Konstanz"
+},
+{
+"pos": [
+12.38,
+51.34
+],
+"id": "Leipzig"
+},
+{
+"pos": [
+11.64,
+52.14
+],
+"id": "Magdeburg"
+},
+{
+"pos": [
+8.49,
+49.49
+],
+"id": "Mannheim"
+},
+{
+"pos": [
+11.57,
+48.15
+],
+"id": "Muenchen"
+},
+{
+"pos": [
+7.60,
+51.97
+],
+"id": "Muenster"
+},
+{
+"pos": [
+7.21,
+53.60
+],
+"id": "Norden"
+},
+{
+"pos": [
+11.03,
+49.57
+],
+"id": "Nuernberg"
+},
+{
+"pos": [
+8.21,
+53.11
+],
+"id": "Oldenburg"
+},
+{
+"pos": [
+8.03,
+52.28
+],
+"id": "Osnabrueck"
+},
+{
+"pos": [
+13.46,
+48.57
+],
+"id": "Passau"
+},
+{
+"pos": [
+12.09,
+49.00
+],
+"id": "Regensburg"
+},
+{
+"pos": [
+7.03,
+49.23
+],
+"id": "Saarbruecken"
+},
+{
+"pos": [
+11.45,
+53.55
+],
+"id": "Schwerin"
+},
+{
+"pos": [
+8.03,
+50.91
+],
+"id": "Siegen"
+},
+{
+"pos": [
+9.10,
+48.74
+],
+"id": "Stuttgart"
+},
+{
+"pos": [
+6.68,
+49.75
+],
+"id": "Trier"
+},
+{
+"pos": [
+9.99,
+48.40
+],
+"id": "Ulm"
+},
+{
+"pos": [
+6.37,
+51.39
+],
+"id": "Wesel"
+},
+{
+"pos": [
+9.97,
+49.78
+],
+"id": "Wuerzburg"
+}
+],
+"links": [
+{
+"dist": 61.63,
+"ecmp_fwd": {
+"org": 16.82,
+"uni": 15.56,
+"deg": 12.68
+},
+"ecmp_bwd": {
+"org": 16.57,
+"uni": 13.25,
+"deg": 10.52
+},
+"source": "Aachen",
+"target": "Koeln"
+},
+{
+"dist": 73.77,
+"ecmp_fwd": {
+"org": 24.45,
+"uni": 51.91,
+"deg": 40.12
+},
+"ecmp_bwd": {
+"org": 25.09,
+"uni": 52.90,
+"deg": 40.93
+},
+"source": "Aachen",
+"target": "Wesel"
+},
+{
+"dist": 121.21,
+"ecmp_fwd": {
+"org": 17.81,
+"uni": 42.51,
+"deg": 31.34
+},
+"ecmp_bwd": {
+"org": 17.42,
+"uni": 43.83,
+"deg": 32.70
+},
+"source": "Aachen",
+"target": "Trier"
+},
+{
+"dist": 67.69,
+"ecmp_fwd": {
+"org": 12.12,
+"uni": 15.38,
+"deg": 9.62
+},
+"ecmp_bwd": {
+"org": 14.20,
+"uni": 15.20,
+"deg": 9.51
+},
+"source": "Augsburg",
+"target": "Ulm"
+},
+{
+"dist": 53.52,
+"ecmp_fwd": {
+"org": 29.86,
+"uni": 24.59,
+"deg": 21.08
+},
+"ecmp_bwd": {
+"org": 29.61,
+"uni": 23.19,
+"deg": 21.45
+},
+"source": "Augsburg",
+"target": "Muenchen"
+},
+{
+"dist": 174.94,
+"ecmp_fwd": {
+"org": 37.88,
+"uni": 48.04,
+"deg": 41.54
+},
+"ecmp_bwd": {
+"org": 36.04,
+"uni": 49.63,
+"deg": 41.27
+},
+"source": "Augsburg",
+"target": "Wuerzburg"
+},
+{
+"dist": 166.43,
+"ecmp_fwd": {
+"org": 23.92,
+"uni": 44.44,
+"deg": 40.08
+},
+"ecmp_bwd": {
+"org": 26.22,
+"uni": 48.04,
+"deg": 42.89
+},
+"source": "Bayreuth",
+"target": "Leipzig"
+},
+{
+"dist": 138.83,
+"ecmp_fwd": {
+"org": 4.49,
+"uni": 8.07,
+"deg": 6.46
+},
+"ecmp_bwd": {
+"org": 4.95,
+"uni": 8.15,
+"deg": 6.68
+},
+"source": "Bayreuth",
+"target": "Chemnitz"
+},
+{
+"dist": 56.77,
+"ecmp_fwd": {
+"org": 37.10,
+"uni": 52.53,
+"deg": 45.53
+},
+"ecmp_bwd": {
+"org": 34.35,
+"uni": 48.85,
+"deg": 42.50
+},
+"source": "Bayreuth",
+"target": "Nuernberg"
+},
+{
+"dist": 148.40,
+"ecmp_fwd": {
+"org": 31.87,
+"uni": 29.58,
+"deg": 27.62
+},
+"ecmp_bwd": {
+"org": 32.54,
+"uni": 29.44,
+"deg": 27.22
+},
+"source": "Berlin",
+"target": "Leipzig"
+},
+{
+"dist": 167.37,
+"ecmp_fwd": {
+"org": 24.98,
+"uni": 22.30,
+"deg": 21.85
+},
+"ecmp_bwd": {
+"org": 25.09,
+"uni": 23.79,
+"deg": 23.20
+},
+"source": "Berlin",
+"target": "Dresden"
+},
+{
+"dist": 173.08,
+"ecmp_fwd": {
+"org": 35.37,
+"uni": 26.70,
+"deg": 26.88
+},
+"ecmp_bwd": {
+"org": 33.11,
+"uni": 25.54,
+"deg": 25.25
+},
+"source": "Berlin",
+"target": "Schwerin"
+},
+{
+"dist": 126.23,
+"ecmp_fwd": {
+"org": 27.21,
+"uni": 13.47,
+"deg": 16.09
+},
+"ecmp_bwd": {
+"org": 28.77,
+"uni": 12.58,
+"deg": 16.33
+},
+"source": "Berlin",
+"target": "Magdeburg"
+},
+{
+"dist": 174.63,
+"ecmp_fwd": {
+"org": 6.44,
+"uni": 17.15,
+"deg": 9.37
+},
+"ecmp_bwd": {
+"org": 6.36,
+"uni": 17.86,
+"deg": 9.79
+},
+"source": "Berlin",
+"target": "Greifswald"
+},
+{
+"dist": 62.11,
+"ecmp_fwd": {
+"org": 13.94,
+"uni": 12.85,
+"deg": 11.48
+},
+"ecmp_bwd": {
+"org": 13.02,
+"uni": 12.74,
+"deg": 11.26
+},
+"source": "Bielefeld",
+"target": "Muenster"
+},
+{
+"dist": 129.83,
+"ecmp_fwd": {
+"org": 61.36,
+"uni": 64.20,
+"deg": 67.44
+},
+"ecmp_bwd": {
+"org": 65.30,
+"uni": 62.67,
+"deg": 65.53
+},
+"source": "Bielefeld",
+"target": "Siegen"
+},
+{
+"dist": 91.34,
+"ecmp_fwd": {
+"org": 56.84,
+"uni": 32.04,
+"deg": 31.24
+},
+"ecmp_bwd": {
+"org": 51.80,
+"uni": 30.38,
+"deg": 29.86
+},
+"source": "Bielefeld",
+"target": "Hannover"
+},
+{
+"dist": 142.40,
+"ecmp_fwd": {
+"org": 28.76,
+"uni": 34.93,
+"deg": 40.28
+},
+"ecmp_bwd": {
+"org": 30.78,
+"uni": 38.24,
+"deg": 43.78
+},
+"source": "Bielefeld",
+"target": "Braunschweig"
+},
+{
+"dist": 75.90,
+"ecmp_fwd": {
+"org": 48.89,
+"uni": 51.72,
+"deg": 59.29
+},
+"ecmp_bwd": {
+"org": 46.84,
+"uni": 54.26,
+"deg": 61.47
+},
+"source": "Braunschweig",
+"target": "Magdeburg"
+},
+{
+"dist": 148.31,
+"ecmp_fwd": {
+"org": 49.96,
+"uni": 44.06,
+"deg": 40.34
+},
+"ecmp_bwd": {
+"org": 49.79,
+"uni": 40.97,
+"deg": 38.32
+},
+"source": "Braunschweig",
+"target": "Hamburg"
+},
+{
+"dist": 57.50,
+"ecmp_fwd": {
+"org": 49.68,
+"uni": 55.23,
+"deg": 55.37
+},
+"ecmp_bwd": {
+"org": 51.13,
+"uni": 53.89,
+"deg": 53.91
+},
+"source": "Braunschweig",
+"target": "Hannover"
+},
+{
+"dist": 128.52,
+"ecmp_fwd": {
+"org": 97.21,
+"uni": 91.07,
+"deg": 92.98
+},
+"ecmp_bwd": {
+"org": 100.00,
+"uni": 96.29,
+"deg": 97.78
+},
+"source": "Braunschweig",
+"target": "Kassel"
+},
+{
+"dist": 42.73,
+"ecmp_fwd": {
+"org": 21.38,
+"uni": 34.69,
+"deg": 25.36
+},
+"ecmp_bwd": {
+"org": 19.70,
+"uni": 34.05,
+"deg": 25.29
+},
+"source": "Bremen",
+"target": "Oldenburg"
+},
+{
+"dist": 51.08,
+"ecmp_fwd": {
+"org": 14.63,
+"uni": 33.56,
+"deg": 17.98
+},
+"ecmp_bwd": {
+"org": 15.05,
+"uni": 34.46,
+"deg": 18.72
+},
+"source": "Bremen",
+"target": "Bremerhaven"
+},
+{
+"dist": 100.12,
+"ecmp_fwd": {
+"org": 39.73,
+"uni": 52.30,
+"deg": 42.99
+},
+"ecmp_bwd": {
+"org": 40.99,
+"uni": 52.04,
+"deg": 42.32
+},
+"source": "Bremen",
+"target": "Hannover"
+},
+{
+"dist": 148.08,
+"ecmp_fwd": {
+"org": 6.15,
+"uni": 16.21,
+"deg": 8.51
+},
+"ecmp_bwd": {
+"org": 6.57,
+"uni": 17.11,
+"deg": 9.24
+},
+"source": "Bremerhaven",
+"target": "Flensburg"
+},
+{
+"dist": 59.93,
+"ecmp_fwd": {
+"org": 5.48,
+"uni": 5.67,
+"deg": 4.73
+},
+"ecmp_bwd": {
+"org": 6.08,
+"uni": 6.37,
+"deg": 5.39
+},
+"source": "Chemnitz",
+"target": "Dresden"
+},
+{
+"dist": 133.46,
+"ecmp_fwd": {
+"org": 13.43,
+"uni": 24.86,
+"deg": 20.40
+},
+"ecmp_bwd": {
+"org": 13.29,
+"uni": 24.23,
+"deg": 19.95
+},
+"source": "Chemnitz",
+"target": "Erfurt"
+},
+{
+"dist": 25.94,
+"ecmp_fwd": {
+"org": 52.90,
+"uni": 30.44,
+"deg": 25.03
+},
+"ecmp_bwd": {
+"org": 55.97,
+"uni": 33.84,
+"deg": 26.70
+},
+"source": "Darmstadt",
+"target": "Frankfurt"
+},
+{
+"dist": 45.96,
+"ecmp_fwd": {
+"org": 31.16,
+"uni": 14.45,
+"deg": 8.66
+},
+"ecmp_bwd": {
+"org": 30.39,
+"uni": 13.16,
+"deg": 8.21
+},
+"source": "Darmstadt",
+"target": "Mannheim"
+},
+{
+"dist": 82.56,
+"ecmp_fwd": {
+"org": 13.64,
+"uni": 12.72,
+"deg": 9.90
+},
+"ecmp_bwd": {
+"org": 11.33,
+"uni": 10.61,
+"deg": 8.67
+},
+"source": "Darmstadt",
+"target": "Kaiserslautern"
+},
+{
+"dist": 30.30,
+"ecmp_fwd": {
+"org": 75.95,
+"uni": 64.90,
+"deg": 55.22
+},
+"ecmp_bwd": {
+"org": 72.97,
+"uni": 64.80,
+"deg": 55.89
+},
+"source": "Dortmund",
+"target": "Essen"
+},
+{
+"dist": 52.20,
+"ecmp_fwd": {
+"org": 23.02,
+"uni": 28.27,
+"deg": 24.18
+},
+"ecmp_bwd": {
+"org": 25.19,
+"uni": 27.36,
+"deg": 23.22
+},
+"source": "Dortmund",
+"target": "Muenster"
+},
+{
+"dist": 78.02,
+"ecmp_fwd": {
+"org": 22.14,
+"uni": 20.03,
+"deg": 20.53
+},
+"ecmp_bwd": {
+"org": 22.02,
+"uni": 21.53,
+"deg": 21.67
+},
+"source": "Dortmund",
+"target": "Siegen"
+},
+{
+"dist": 144.45,
+"ecmp_fwd": {
+"org": 70.42,
+"uni": 88.90,
+"deg": 82.67
+},
+"ecmp_bwd": {
+"org": 71.34,
+"uni": 88.41,
+"deg": 81.82
+},
+"source": "Dortmund",
+"target": "Kassel"
+},
+{
+"dist": 100.23,
+"ecmp_fwd": {
+"org": 7.63,
+"uni": 3.86,
+"deg": 4.53
+},
+"ecmp_bwd": {
+"org": 6.82,
+"uni": 2.66,
+"deg": 3.23
+},
+"source": "Dresden",
+"target": "Leipzig"
+},
+{
+"dist": 188.34,
+"ecmp_fwd": {
+"org": 31.41,
+"uni": 31.25,
+"deg": 32.67
+},
+"ecmp_bwd": {
+"org": 32.93,
+"uni": 34.65,
+"deg": 35.99
+},
+"source": "Dresden",
+"target": "Erfurt"
+},
+{
+"dist": 29.11,
+"ecmp_fwd": {
+"org": 69.79,
+"uni": 22.11,
+"deg": 13.77
+},
+"ecmp_bwd": {
+"org": 73.40,
+"uni": 22.49,
+"deg": 13.57
+},
+"source": "Duesseldorf",
+"target": "Essen"
+},
+{
+"dist": 35.18,
+"ecmp_fwd": {
+"org": 74.12,
+"uni": 16.11,
+"deg": 9.38
+},
+"ecmp_bwd": {
+"org": 70.50,
+"uni": 15.73,
+"deg": 9.58
+},
+"source": "Duesseldorf",
+"target": "Koeln"
+},
+{
+"dist": 101.69,
+"ecmp_fwd": {
+"org": 37.99,
+"uni": 38.41,
+"deg": 43.79
+},
+"ecmp_bwd": {
+"org": 39.89,
+"uni": 40.81,
+"deg": 46.21
+},
+"source": "Erfurt",
+"target": "Leipzig"
+},
+{
+"dist": 113.25,
+"ecmp_fwd": {
+"org": 63.32,
+"uni": 92.01,
+"deg": 94.25
+},
+"ecmp_bwd": {
+"org": 63.65,
+"uni": 92.23,
+"deg": 95.51
+},
+"source": "Erfurt",
+"target": "Kassel"
+},
+{
+"dist": 153.54,
+"ecmp_fwd": {
+"org": 71.64,
+"uni": 99.86,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 70.79,
+"uni": 100.00,
+"deg": 99.19
+},
+"source": "Erfurt",
+"target": "Wuerzburg"
+},
+{
+"dist": 45.75,
+"ecmp_fwd": {
+"org": 25.39,
+"uni": 39.93,
+"deg": 34.39
+},
+"ecmp_bwd": {
+"org": 26.02,
+"uni": 40.21,
+"deg": 34.86
+},
+"source": "Essen",
+"target": "Wesel"
+},
+{
+"dist": 64.46,
+"ecmp_fwd": {
+"org": 9.33,
+"uni": 28.20,
+"deg": 16.14
+},
+"ecmp_bwd": {
+"org": 9.75,
+"uni": 29.10,
+"deg": 16.88
+},
+"source": "Flensburg",
+"target": "Kiel"
+},
+{
+"dist": 90.17,
+"ecmp_fwd": {
+"org": 67.26,
+"uni": 36.84,
+"deg": 37.05
+},
+"ecmp_bwd": {
+"org": 65.12,
+"uni": 37.97,
+"deg": 37.01
+},
+"source": "Frankfurt",
+"target": "Koblenz"
+},
+{
+"dist": 50.13,
+"ecmp_fwd": {
+"org": 36.59,
+"uni": 20.39,
+"deg": 20.71
+},
+"ecmp_bwd": {
+"org": 39.81,
+"uni": 21.41,
+"deg": 19.93
+},
+"source": "Frankfurt",
+"target": "Giessen"
+},
+{
+"dist": 85.06,
+"ecmp_fwd": {
+"org": 75.32,
+"uni": 47.60,
+"deg": 46.10
+},
+"ecmp_bwd": {
+"org": 77.31,
+"uni": 48.85,
+"deg": 48.60
+},
+"source": "Frankfurt",
+"target": "Fulda"
+},
+{
+"dist": 123.07,
+"ecmp_fwd": {
+"org": 18.23,
+"uni": 31.02,
+"deg": 18.26
+},
+"ecmp_bwd": {
+"org": 19.82,
+"uni": 33.10,
+"deg": 19.92
+},
+"source": "Freiburg",
+"target": "Karlsruhe"
+},
+{
+"dist": 109.04,
+"ecmp_fwd": {
+"org": 11.45,
+"uni": 21.31,
+"deg": 13.58
+},
+"ecmp_bwd": {
+"org": 9.86,
+"uni": 19.22,
+"deg": 11.92
+},
+"source": "Freiburg",
+"target": "Konstanz"
+},
+{
+"dist": 85.47,
+"ecmp_fwd": {
+"org": 52.55,
+"uni": 65.71,
+"deg": 63.42
+},
+"ecmp_bwd": {
+"org": 49.81,
+"uni": 62.96,
+"deg": 61.61
+},
+"source": "Fulda",
+"target": "Kassel"
+},
+{
+"dist": 72.07,
+"ecmp_fwd": {
+"org": 7.81,
+"uni": 14.97,
+"deg": 15.54
+},
+"ecmp_bwd": {
+"org": 9.19,
+"uni": 16.19,
+"deg": 17.01
+},
+"source": "Fulda",
+"target": "Giessen"
+},
+{
+"dist": 89.02,
+"ecmp_fwd": {
+"org": 79.39,
+"uni": 91.27,
+"deg": 88.40
+},
+"ecmp_bwd": {
+"org": 82.76,
+"uni": 94.05,
+"deg": 91.24
+},
+"source": "Fulda",
+"target": "Wuerzburg"
+},
+{
+"dist": 58.82,
+"ecmp_fwd": {
+"org": 14.93,
+"uni": 19.12,
+"deg": 20.56
+},
+"ecmp_bwd": {
+"org": 20.81,
+"uni": 23.55,
+"deg": 24.65
+},
+"source": "Giessen",
+"target": "Siegen"
+},
+{
+"dist": 102.10,
+"ecmp_fwd": {
+"org": 29.81,
+"uni": 28.38,
+"deg": 31.54
+},
+"ecmp_bwd": {
+"org": 28.52,
+"uni": 26.19,
+"deg": 28.14
+},
+"source": "Giessen",
+"target": "Kassel"
+},
+{
+"dist": 141.42,
+"ecmp_fwd": {
+"org": 6.36,
+"uni": 12.85,
+"deg": 6.91
+},
+"ecmp_bwd": {
+"org": 6.28,
+"uni": 13.55,
+"deg": 7.33
+},
+"source": "Greifswald",
+"target": "Schwerin"
+},
+{
+"dist": 96.48,
+"ecmp_fwd": {
+"org": 37.65,
+"uni": 28.02,
+"deg": 29.49
+},
+"ecmp_bwd": {
+"org": 36.98,
+"uni": 23.90,
+"deg": 25.76
+},
+"source": "Hamburg",
+"target": "Schwerin"
+},
+{
+"dist": 86.07,
+"ecmp_fwd": {
+"org": 24.95,
+"uni": 30.21,
+"deg": 22.21
+},
+"ecmp_bwd": {
+"org": 23.96,
+"uni": 27.57,
+"deg": 20.45
+},
+"source": "Hamburg",
+"target": "Kiel"
+},
+{
+"dist": 133.59,
+"ecmp_fwd": {
+"org": 59.54,
+"uni": 27.86,
+"deg": 26.84
+},
+"ecmp_bwd": {
+"org": 61.02,
+"uni": 31.51,
+"deg": 30.31
+},
+"source": "Hamburg",
+"target": "Hannover"
+},
+{
+"dist": 115.41,
+"ecmp_fwd": {
+"org": 16.04,
+"uni": 28.33,
+"deg": 26.69
+},
+"ecmp_bwd": {
+"org": 15.19,
+"uni": 28.72,
+"deg": 26.66
+},
+"source": "Hannover",
+"target": "Osnabrueck"
+},
+{
+"dist": 109.14,
+"ecmp_fwd": {
+"org": 38.94,
+"uni": 53.26,
+"deg": 48.07
+},
+"ecmp_bwd": {
+"org": 35.69,
+"uni": 50.80,
+"deg": 47.16
+},
+"source": "Kaiserslautern",
+"target": "Koblenz"
+},
+{
+"dist": 56.73,
+"ecmp_fwd": {
+"org": 7.42,
+"uni": 8.38,
+"deg": 7.57
+},
+"ecmp_bwd": {
+"org": 7.42,
+"uni": 8.04,
+"deg": 7.07
+},
+"source": "Kaiserslautern",
+"target": "Saarbruecken"
+},
+{
+"dist": 66.94,
+"ecmp_fwd": {
+"org": 31.49,
+"uni": 40.98,
+"deg": 37.59
+},
+"ecmp_bwd": {
+"org": 32.44,
+"uni": 41.67,
+"deg": 37.77
+},
+"source": "Kaiserslautern",
+"target": "Karlsruhe"
+},
+{
+"dist": 53.70,
+"ecmp_fwd": {
+"org": 26.23,
+"uni": 21.37,
+"deg": 12.14
+},
+"ecmp_bwd": {
+"org": 27.00,
+"uni": 22.66,
+"deg": 12.59
+},
+"source": "Karlsruhe",
+"target": "Mannheim"
+},
+{
+"dist": 103.39,
+"ecmp_fwd": {
+"org": 17.81,
+"uni": 44.60,
+"deg": 33.43
+},
+"ecmp_bwd": {
+"org": 17.74,
+"uni": 43.24,
+"deg": 32.16
+},
+"source": "Karlsruhe",
+"target": "Saarbruecken"
+},
+{
+"dist": 58.73,
+"ecmp_fwd": {
+"org": 65.58,
+"uni": 70.34,
+"deg": 63.12
+},
+"ecmp_bwd": {
+"org": 67.42,
+"uni": 73.18,
+"deg": 65.78
+},
+"source": "Karlsruhe",
+"target": "Stuttgart"
+},
+{
+"dist": 85.61,
+"ecmp_fwd": {
+"org": 14.84,
+"uni": 23.60,
+"deg": 14.28
+},
+"ecmp_bwd": {
+"org": 16.40,
+"uni": 23.10,
+"deg": 14.50
+},
+"source": "Kempten",
+"target": "Konstanz"
+},
+{
+"dist": 104.71,
+"ecmp_fwd": {
+"org": 13.99,
+"uni": 24.28,
+"deg": 15.65
+},
+"ecmp_bwd": {
+"org": 12.44,
+"uni": 24.79,
+"deg": 15.43
+},
+"source": "Kempten",
+"target": "Muenchen"
+},
+{
+"dist": 123.70,
+"ecmp_fwd": {
+"org": 10.18,
+"uni": 26.32,
+"deg": 17.61
+},
+"ecmp_bwd": {
+"org": 9.61,
+"uni": 24.58,
+"deg": 16.59
+},
+"source": "Kiel",
+"target": "Schwerin"
+},
+{
+"dist": 75.54,
+"ecmp_fwd": {
+"org": 89.21,
+"uni": 40.76,
+"deg": 32.33
+},
+"ecmp_bwd": {
+"org": 93.07,
+"uni": 43.45,
+"deg": 34.29
+},
+"source": "Koblenz",
+"target": "Koeln"
+},
+{
+"dist": 67.16,
+"ecmp_fwd": {
+"org": 67.07,
+"uni": 71.36,
+"deg": 73.29
+},
+"ecmp_bwd": {
+"org": 57.36,
+"uni": 66.96,
+"deg": 69.97
+},
+"source": "Koblenz",
+"target": "Siegen"
+},
+{
+"dist": 93.93,
+"ecmp_fwd": {
+"org": 14.24,
+"uni": 26.25,
+"deg": 24.43
+},
+"ecmp_bwd": {
+"org": 14.70,
+"uni": 26.63,
+"deg": 24.84
+},
+"source": "Koblenz",
+"target": "Trier"
+},
+{
+"dist": 120.27,
+"ecmp_fwd": {
+"org": 22.19,
+"uni": 39.63,
+"deg": 29.25
+},
+"ecmp_bwd": {
+"org": 22.16,
+"uni": 37.05,
+"deg": 27.82
+},
+"source": "Konstanz",
+"target": "Stuttgart"
+},
+{
+"dist": 102.54,
+"ecmp_fwd": {
+"org": 29.58,
+"uni": 39.49,
+"deg": 41.64
+},
+"ecmp_bwd": {
+"org": 33.64,
+"uni": 44.15,
+"deg": 45.17
+},
+"source": "Leipzig",
+"target": "Magdeburg"
+},
+{
+"dist": 157.35,
+"ecmp_fwd": {
+"org": 11.65,
+"uni": 18.08,
+"deg": 18.39
+},
+"ecmp_bwd": {
+"org": 15.23,
+"uni": 24.39,
+"deg": 24.35
+},
+"source": "Magdeburg",
+"target": "Schwerin"
+},
+{
+"dist": 147.28,
+"ecmp_fwd": {
+"org": 6.08,
+"uni": 21.96,
+"deg": 11.85
+},
+"ecmp_bwd": {
+"org": 5.09,
+"uni": 16.92,
+"deg": 9.02
+},
+"source": "Muenchen",
+"target": "Passau"
+},
+{
+"dist": 162.81,
+"ecmp_fwd": {
+"org": 40.85,
+"uni": 34.31,
+"deg": 32.71
+},
+"ecmp_bwd": {
+"org": 40.04,
+"uni": 38.46,
+"deg": 35.68
+},
+"source": "Muenchen",
+"target": "Nuernberg"
+},
+{
+"dist": 101.99,
+"ecmp_fwd": {
+"org": 0.85,
+"uni": 3.76,
+"deg": 2.45
+},
+"ecmp_bwd": {
+"org": 0.85,
+"uni": 3.76,
+"deg": 2.45
+},
+"source": "Muenchen",
+"target": "Regensburg"
+},
+{
+"dist": 45.29,
+"ecmp_fwd": {
+"org": 13.00,
+"uni": 17.25,
+"deg": 14.92
+},
+"ecmp_bwd": {
+"org": 14.26,
+"uni": 16.23,
+"deg": 13.74
+},
+"source": "Muenster",
+"target": "Osnabrueck"
+},
+{
+"dist": 252.30,
+"ecmp_fwd": {
+"org": 11.02,
+"uni": 20.68,
+"deg": 11.13
+},
+"ecmp_bwd": {
+"org": 11.02,
+"uni": 20.84,
+"deg": 11.21
+},
+"source": "Norden",
+"target": "Wesel"
+},
+{
+"dist": 85.89,
+"ecmp_fwd": {
+"org": 6.36,
+"uni": 10.03,
+"deg": 5.57
+},
+"ecmp_bwd": {
+"org": 6.36,
+"uni": 9.87,
+"deg": 5.50
+},
+"source": "Norden",
+"target": "Oldenburg"
+},
+{
+"dist": 79.79,
+"ecmp_fwd": {
+"org": 73.71,
+"uni": 67.75,
+"deg": 62.20
+},
+"ecmp_bwd": {
+"org": 69.15,
+"uni": 63.18,
+"deg": 59.32
+},
+"source": "Nuernberg",
+"target": "Wuerzburg"
+},
+{
+"dist": 99.67,
+"ecmp_fwd": {
+"org": 12.16,
+"uni": 34.43,
+"deg": 26.74
+},
+"ecmp_bwd": {
+"org": 13.14,
+"uni": 39.48,
+"deg": 29.56
+},
+"source": "Nuernberg",
+"target": "Regensburg"
+},
+{
+"dist": 228.67,
+"ecmp_fwd": {
+"org": 23.30,
+"uni": 43.52,
+"deg": 35.85
+},
+"ecmp_bwd": {
+"org": 22.03,
+"uni": 42.10,
+"deg": 34.50
+},
+"source": "Oldenburg",
+"target": "Wesel"
+},
+{
+"dist": 93.11,
+"ecmp_fwd": {
+"org": 15.14,
+"uni": 23.32,
+"deg": 20.97
+},
+"ecmp_bwd": {
+"org": 14.73,
+"uni": 23.94,
+"deg": 22.18
+},
+"source": "Oldenburg",
+"target": "Osnabrueck"
+},
+{
+"dist": 111.21,
+"ecmp_fwd": {
+"org": 3.82,
+"uni": 13.79,
+"deg": 7.68
+},
+"ecmp_bwd": {
+"org": 2.83,
+"uni": 8.74,
+"deg": 4.85
+},
+"source": "Passau",
+"target": "Regensburg"
+},
+{
+"dist": 63.12,
+"ecmp_fwd": {
+"org": 19.61,
+"uni": 44.41,
+"deg": 33.04
+},
+"ecmp_bwd": {
+"org": 19.54,
+"uni": 42.72,
+"deg": 31.27
+},
+"source": "Saarbruecken",
+"target": "Trier"
+},
+{
+"dist": 75.64,
+"ecmp_fwd": {
+"org": 22.16,
+"uni": 22.64,
+"deg": 13.23
+},
+"ecmp_bwd": {
+"org": 20.07,
+"uni": 22.82,
+"deg": 13.34
+},
+"source": "Stuttgart",
+"target": "Ulm"
+},
+{
+"dist": 131.79,
+"ecmp_fwd": {
+"org": 84.88,
+"uni": 93.68,
+"deg": 87.62
+},
+"ecmp_bwd": {
+"org": 88.76,
+"uni": 93.75,
+"deg": 88.74
+},
+"source": "Stuttgart",
+"target": "Wuerzburg"
+}
+]
+}

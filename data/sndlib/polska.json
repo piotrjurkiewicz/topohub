@@ -1,0 +1,478 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "polska",
+"demands": {
+"Gdansk": {
+"Bydgoszcz": 195.00,
+"Kolobrzeg": 158.00,
+"Katowice": 174.00,
+"Krakow": 101.00,
+"Bialystok": 198.00,
+"Lodz": 158.00,
+"Poznan": 182.00,
+"Rzeszow": 154.00,
+"Szczecin": 175.00,
+"Warsaw": 122.00,
+"Wroclaw": 114.00
+},
+"Bydgoszcz": {
+"Kolobrzeg": 179.00,
+"Katowice": 117.00,
+"Krakow": 105.00,
+"Bialystok": 159.00,
+"Lodz": 198.00,
+"Poznan": 189.00,
+"Rzeszow": 166.00,
+"Szczecin": 142.00,
+"Warsaw": 137.00,
+"Wroclaw": 163.00
+},
+"Kolobrzeg": {
+"Katowice": 131.00,
+"Krakow": 159.00,
+"Bialystok": 164.00,
+"Lodz": 128.00,
+"Poznan": 195.00,
+"Rzeszow": 130.00,
+"Szczecin": 105.00,
+"Warsaw": 173.00,
+"Wroclaw": 157.00
+},
+"Katowice": {
+"Krakow": 194.00,
+"Bialystok": 125.00,
+"Lodz": 110.00,
+"Poznan": 132.00,
+"Rzeszow": 159.00,
+"Szczecin": 109.00,
+"Warsaw": 126.00,
+"Wroclaw": 100.00
+},
+"Krakow": {
+"Bialystok": 124.00,
+"Lodz": 106.00,
+"Poznan": 136.00,
+"Rzeszow": 144.00,
+"Szczecin": 168.00,
+"Warsaw": 119.00,
+"Wroclaw": 127.00
+},
+"Bialystok": {
+"Lodz": 105.00,
+"Poznan": 147.00,
+"Rzeszow": 140.00,
+"Szczecin": 198.00,
+"Warsaw": 104.00,
+"Wroclaw": 113.00
+},
+"Lodz": {
+"Poznan": 169.00,
+"Rzeszow": 187.00,
+"Szczecin": 196.00,
+"Warsaw": 193.00,
+"Wroclaw": 151.00
+},
+"Poznan": {
+"Rzeszow": 106.00,
+"Szczecin": 125.00,
+"Warsaw": 194.00,
+"Wroclaw": 194.00
+},
+"Rzeszow": {
+"Szczecin": 123.00,
+"Warsaw": 181.00,
+"Wroclaw": 193.00
+},
+"Szczecin": {
+"Warsaw": 181.00,
+"Wroclaw": 195.00
+},
+"Warsaw": {
+"Wroclaw": 141.00
+}
+},
+"stats": {
+"nodes": 12,
+"links": 18,
+"demands": 132,
+"min_degree": 2,
+"avg_degree": 3.00,
+"std_degree": 0.71,
+"max_degree": 5,
+"gini": 0.10,
+"min_link_len": 78.70,
+"avg_link_len": 188.13,
+"max_link_len": 354.64,
+"diameter_len": 811.09,
+"diameter_hops": 4,
+"avg_sdp_num": 1.27,
+"max_sdp_num": 3,
+"avg_sdp_hops": 2.13,
+"avg_sdp_len": 211.21,
+"avg_adp_num": 2.67,
+"max_adp_num": 3,
+"avg_adp_hops": 3.28,
+"avg_adp_len": 607.51
+}
+},
+"nodes": [
+{
+"pos": [
+18.60,
+54.20
+],
+"id": "Gdansk"
+},
+{
+"pos": [
+17.90,
+53.10
+],
+"id": "Bydgoszcz"
+},
+{
+"pos": [
+16.10,
+54.20
+],
+"id": "Kolobrzeg"
+},
+{
+"pos": [
+18.80,
+50.30
+],
+"id": "Katowice"
+},
+{
+"pos": [
+19.80,
+50.00
+],
+"id": "Krakow"
+},
+{
+"pos": [
+23.10,
+53.10
+],
+"id": "Bialystok"
+},
+{
+"pos": [
+19.40,
+51.70
+],
+"id": "Lodz"
+},
+{
+"pos": [
+16.80,
+52.40
+],
+"id": "Poznan"
+},
+{
+"pos": [
+21.90,
+50.00
+],
+"id": "Rzeszow"
+},
+{
+"pos": [
+14.50,
+53.40
+],
+"id": "Szczecin"
+},
+{
+"pos": [
+21.00,
+52.20
+],
+"id": "Warsaw"
+},
+{
+"pos": [
+16.90,
+51.10
+],
+"id": "Wroclaw"
+}
+],
+"links": [
+{
+"dist": 273.93,
+"ecmp_fwd": {
+"org": 63.26,
+"uni": 66.67,
+"deg": 68.44
+},
+"ecmp_bwd": {
+"org": 63.24,
+"uni": 66.67,
+"deg": 68.65
+},
+"source": "Gdansk",
+"target": "Warsaw"
+},
+{
+"dist": 162.65,
+"ecmp_fwd": {
+"org": 80.09,
+"uni": 76.67,
+"deg": 61.48
+},
+"ecmp_bwd": {
+"org": 80.10,
+"uni": 76.67,
+"deg": 61.27
+},
+"source": "Gdansk",
+"target": "Kolobrzeg"
+},
+{
+"dist": 320.83,
+"ecmp_fwd": {
+"org": 50.20,
+"uni": 48.00,
+"deg": 32.79
+},
+"ecmp_bwd": {
+"org": 50.20,
+"uni": 48.00,
+"deg": 32.79
+},
+"source": "Gdansk",
+"target": "Bialystok"
+},
+{
+"dist": 170.43,
+"ecmp_fwd": {
+"org": 48.32,
+"uni": 45.00,
+"deg": 42.62
+},
+"ecmp_bwd": {
+"org": 48.28,
+"uni": 44.67,
+"deg": 42.01
+},
+"source": "Bydgoszcz",
+"target": "Kolobrzeg"
+},
+{
+"dist": 107.45,
+"ecmp_fwd": {
+"org": 71.16,
+"uni": 68.33,
+"deg": 64.75
+},
+"ecmp_bwd": {
+"org": 69.85,
+"uni": 66.00,
+"deg": 63.11
+},
+"source": "Bydgoszcz",
+"target": "Poznan"
+},
+{
+"dist": 231.88,
+"ecmp_fwd": {
+"org": 98.65,
+"uni": 97.33,
+"deg": 97.75
+},
+"ecmp_bwd": {
+"org": 100.00,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Bydgoszcz",
+"target": "Warsaw"
+},
+{
+"dist": 137.71,
+"ecmp_fwd": {
+"org": 58.97,
+"uni": 57.67,
+"deg": 40.16
+},
+"ecmp_bwd": {
+"org": 58.94,
+"uni": 57.33,
+"deg": 39.34
+},
+"source": "Kolobrzeg",
+"target": "Szczecin"
+},
+{
+"dist": 78.70,
+"ecmp_fwd": {
+"org": 66.33,
+"uni": 67.33,
+"deg": 56.56
+},
+"ecmp_bwd": {
+"org": 65.26,
+"uni": 66.00,
+"deg": 55.94
+},
+"source": "Katowice",
+"target": "Krakow"
+},
+{
+"dist": 161.28,
+"ecmp_fwd": {
+"org": 26.21,
+"uni": 31.33,
+"deg": 30.74
+},
+"ecmp_bwd": {
+"org": 25.95,
+"uni": 30.00,
+"deg": 28.89
+},
+"source": "Katowice",
+"target": "Lodz"
+},
+{
+"dist": 160.72,
+"ecmp_fwd": {
+"org": 47.88,
+"uni": 55.33,
+"deg": 44.26
+},
+"ecmp_bwd": {
+"org": 49.22,
+"uni": 58.00,
+"deg": 46.72
+},
+"source": "Katowice",
+"target": "Wroclaw"
+},
+{
+"dist": 150.13,
+"ecmp_fwd": {
+"org": 51.01,
+"uni": 50.00,
+"deg": 34.22
+},
+"ecmp_bwd": {
+"org": 48.83,
+"uni": 48.00,
+"deg": 33.61
+},
+"source": "Krakow",
+"target": "Rzeszow"
+},
+{
+"dist": 258.64,
+"ecmp_fwd": {
+"org": 65.50,
+"uni": 75.33,
+"deg": 73.57
+},
+"ecmp_bwd": {
+"org": 66.61,
+"uni": 76.00,
+"deg": 73.57
+},
+"source": "Krakow",
+"target": "Warsaw"
+},
+{
+"dist": 354.64,
+"ecmp_fwd": {
+"org": 47.67,
+"uni": 52.00,
+"deg": 34.43
+},
+"ecmp_bwd": {
+"org": 49.85,
+"uni": 54.00,
+"deg": 35.04
+},
+"source": "Bialystok",
+"target": "Rzeszow"
+},
+{
+"dist": 173.49,
+"ecmp_fwd": {
+"org": 55.68,
+"uni": 64.00,
+"deg": 60.66
+},
+"ecmp_bwd": {
+"org": 53.50,
+"uni": 62.00,
+"deg": 60.04
+},
+"source": "Bialystok",
+"target": "Warsaw"
+},
+{
+"dist": 122.98,
+"ecmp_fwd": {
+"org": 82.63,
+"uni": 89.33,
+"deg": 93.44
+},
+"ecmp_bwd": {
+"org": 82.37,
+"uni": 88.00,
+"deg": 91.60
+},
+"source": "Lodz",
+"target": "Warsaw"
+},
+{
+"dist": 185.86,
+"ecmp_fwd": {
+"org": 45.89,
+"uni": 48.00,
+"deg": 46.72
+},
+"ecmp_bwd": {
+"org": 45.89,
+"uni": 48.00,
+"deg": 46.72
+},
+"source": "Lodz",
+"target": "Wroclaw"
+},
+{
+"dist": 190.21,
+"ecmp_fwd": {
+"org": 58.93,
+"uni": 56.33,
+"deg": 39.55
+},
+"ecmp_bwd": {
+"org": 58.96,
+"uni": 56.67,
+"deg": 40.37
+},
+"source": "Poznan",
+"target": "Szczecin"
+},
+{
+"dist": 144.76,
+"ecmp_fwd": {
+"org": 83.17,
+"uni": 82.00,
+"deg": 66.39
+},
+"ecmp_bwd": {
+"org": 81.83,
+"uni": 79.33,
+"deg": 63.93
+},
+"source": "Poznan",
+"target": "Wroclaw"
+}
+]
+}

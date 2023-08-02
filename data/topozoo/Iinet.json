@@ -1,0 +1,254 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "iinet",
+"demands": {},
+"stats": {
+"nodes": 9,
+"links": 12,
+"demands": 72,
+"min_degree": 1,
+"avg_degree": 2.67,
+"std_degree": 1.33,
+"max_degree": 5,
+"gini": 0.28,
+"min_link_len": 247.07,
+"avg_link_len": 1471.67,
+"max_link_len": 3294.27,
+"diameter_len": 4881.83,
+"diameter_hops": 4,
+"avg_sdp_num": 1.19,
+"max_sdp_num": 3,
+"avg_sdp_hops": 1.86,
+"avg_sdp_len": 2553.92,
+"avg_adp_num": 1.78,
+"max_adp_num": 4,
+"avg_adp_hops": 2.24,
+"avg_adp_len": 3820.80
+}
+},
+"nodes": [
+{
+"pos": [
+147.33,
+-42.88
+],
+"id": "Hobart"
+},
+{
+"pos": [
+130.84,
+-12.46
+],
+"id": "Darwin"
+},
+{
+"pos": [
+138.60,
+-34.93
+],
+"id": "Adelaide"
+},
+{
+"pos": [
+115.83,
+-31.93
+],
+"id": "Perth"
+},
+{
+"pos": [
+153.03,
+-27.47
+],
+"id": "Brisbane"
+},
+{
+"pos": [
+151.21,
+-33.87
+],
+"id": "Sydney1"
+},
+{
+"pos": [
+151.21,
+-33.87
+],
+"id": "Sydney2"
+},
+{
+"pos": [
+149.13,
+-35.28
+],
+"id": "Canberra"
+},
+{
+"pos": [
+144.96,
+-37.81
+],
+"id": "Melbourne"
+}
+],
+"links": [
+{
+"dist": 1057.49,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 46.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 46.00
+},
+"source": "Hobart",
+"target": "Sydney2"
+},
+{
+"dist": 2618.96,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 46.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 46.00
+},
+"source": "Darwin",
+"target": "Adelaide"
+},
+{
+"dist": 2134.65,
+"ecmp_fwd": {
+"uni": 56.25,
+"deg": 66.00
+},
+"ecmp_bwd": {
+"uni": 56.25,
+"deg": 66.00
+},
+"source": "Adelaide",
+"target": "Perth"
+},
+{
+"dist": 1162.29,
+"ecmp_fwd": {
+"uni": 87.50,
+"deg": 96.00
+},
+"ecmp_bwd": {
+"uni": 87.50,
+"deg": 96.00
+},
+"source": "Adelaide",
+"target": "Sydney1"
+},
+{
+"dist": 958.29,
+"ecmp_fwd": {
+"uni": 68.75,
+"deg": 72.00
+},
+"ecmp_bwd": {
+"uni": 68.75,
+"deg": 72.00
+},
+"source": "Adelaide",
+"target": "Canberra"
+},
+{
+"dist": 3294.27,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 52.00
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 52.00
+},
+"source": "Perth",
+"target": "Sydney1"
+},
+{
+"dist": 3294.27,
+"ecmp_fwd": {
+"uni": 77.08,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 77.08,
+"deg": 100.00
+},
+"source": "Perth",
+"target": "Sydney2"
+},
+{
+"dist": 732.80,
+"ecmp_fwd": {
+"uni": 58.33,
+"deg": 62.00
+},
+"ecmp_bwd": {
+"uni": 58.33,
+"deg": 62.00
+},
+"source": "Brisbane",
+"target": "Sydney1"
+},
+{
+"dist": 732.80,
+"ecmp_fwd": {
+"uni": 58.33,
+"deg": 58.00
+},
+"ecmp_bwd": {
+"uni": 58.33,
+"deg": 58.00
+},
+"source": "Brisbane",
+"target": "Sydney2"
+},
+{
+"dist": 713.57,
+"ecmp_fwd": {
+"uni": 58.33,
+"deg": 62.00
+},
+"ecmp_bwd": {
+"uni": 58.33,
+"deg": 62.00
+},
+"source": "Sydney1",
+"target": "Melbourne"
+},
+{
+"dist": 247.07,
+"ecmp_fwd": {
+"uni": 81.25,
+"deg": 76.00
+},
+"ecmp_bwd": {
+"uni": 81.25,
+"deg": 76.00
+},
+"source": "Sydney2",
+"target": "Canberra"
+},
+{
+"dist": 713.57,
+"ecmp_fwd": {
+"uni": 58.33,
+"deg": 58.00
+},
+"ecmp_bwd": {
+"uni": 58.33,
+"deg": 58.00
+},
+"source": "Sydney2",
+"target": "Melbourne"
+}
+]
+}

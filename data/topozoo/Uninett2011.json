@@ -1,0 +1,1679 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "uninett2011",
+"demands": {},
+"stats": {
+"nodes": 64,
+"links": 92,
+"demands": 4032,
+"min_degree": 1,
+"avg_degree": 2.88,
+"std_degree": 1.84,
+"max_degree": 11,
+"gini": 0.30,
+"min_link_len": 0.00,
+"avg_link_len": 151.67,
+"max_link_len": 1013.27,
+"diameter_len": 2489.58,
+"diameter_hops": 9,
+"avg_sdp_num": 1.07,
+"max_sdp_num": 2,
+"avg_sdp_hops": 4.13,
+"avg_sdp_len": 593.16,
+"avg_adp_num": 1.88,
+"max_adp_num": 7,
+"avg_adp_hops": 5.17,
+"avg_adp_len": 977.16
+}
+},
+"nodes": [
+{
+"pos": [
+10.75,
+59.91
+],
+"id": "UiO"
+},
+{
+"pos": [
+10.69,
+60.80
+],
+"id": "HiG Gjovik"
+},
+{
+"pos": [
+10.75,
+59.91
+],
+"id": "UiO St Olavsplass 5"
+},
+{
+"pos": [
+9.65,
+59.67
+],
+"id": "HiBU Kongsberg"
+},
+{
+"pos": [
+10.20,
+59.74
+],
+"id": "HiBU Drammen"
+},
+{
+"pos": [
+11.03,
+59.98
+],
+"id": "UNIK Kjeller"
+},
+{
+"pos": [
+10.26,
+60.17
+],
+"id": "HiBu Honefoss"
+},
+{
+"pos": [
+14.14,
+66.31
+],
+"id": "NB Mo i Rana"
+},
+{
+"pos": [
+13.02,
+66.20
+],
+"id": "HiNe Nesna"
+},
+{
+"pos": [
+10.43,
+59.41
+],
+"id": "HVE Borre"
+},
+{
+"pos": [
+10.04,
+59.05
+],
+"id": "HVE Larvik"
+},
+{
+"pos": [
+17.43,
+68.44
+],
+"id": "HiN Narvik"
+},
+{
+"pos": [
+16.54,
+68.80
+],
+"id": "HiH Harstad"
+},
+{
+"pos": [
+25.51,
+69.47
+],
+"id": "UiTo Karasjok"
+},
+{
+"pos": [
+18.96,
+69.65
+],
+"id": "UiTo"
+},
+{
+"pos": [
+6.15,
+62.47
+],
+"id": "HiA Alesund"
+},
+{
+"pos": [
+6.07,
+62.15
+],
+"id": "HVO Volda"
+},
+{
+"pos": [
+5.73,
+58.97
+],
+"id": "UiS Stavanger"
+},
+{
+"pos": [
+5.74,
+58.85
+],
+"id": "VetHS Sandnes"
+},
+{
+"pos": [
+5.27,
+59.41
+],
+"id": "HSH Haugesund"
+},
+{
+"pos": [
+5.48,
+59.75
+],
+"id": "HSH Stord"
+},
+{
+"pos": [
+5.32,
+60.39
+],
+"id": "UiB Hoyteklogibygget"
+},
+{
+"pos": [
+5.32,
+60.39
+],
+"id": "UiB BT"
+},
+{
+"pos": [
+7.10,
+61.23
+],
+"id": "HSF Songdal"
+},
+{
+"pos": [
+5.86,
+61.45
+],
+"id": "HSF Forde"
+},
+{
+"pos": [
+12.63,
+66.02
+],
+"id": "HiNe Sandnesjoen"
+},
+{
+"pos": [
+11.50,
+64.01
+],
+"id": "HiNT Steinkjer"
+},
+{
+"pos": [
+14.41,
+67.28
+],
+"id": "HBO Bodo"
+},
+{
+"pos": [
+23.04,
+69.01
+],
+"id": "SA/SH Kautokeino"
+},
+{
+"pos": [
+30.05,
+69.73
+],
+"id": "HiF Kirkenes"
+},
+{
+"pos": [
+18.06,
+59.33
+],
+"id": "Stockholm"
+},
+{
+"pos": [
+-8.72,
+70.92
+],
+"id": "NyAlesund"
+},
+{
+"pos": [
+10.95,
+63.42
+],
+"id": "Hing Stjordal"
+},
+{
+"pos": [
+10.97,
+63.60
+],
+"id": "HiNT Levanger"
+},
+{
+"pos": [
+11.50,
+64.47
+],
+"id": "HiNT Namsos"
+},
+{
+"pos": [
+14.14,
+66.31
+],
+"id": "HiNe Mo i Rana"
+},
+{
+"pos": [
+6.21,
+61.77
+],
+"id": "HSF Sandane"
+},
+{
+"pos": [
+7.16,
+62.74
+],
+"id": "HSM Molde"
+},
+{
+"pos": [
+-8.72,
+70.92
+],
+"id": "UNIS Svalbard"
+},
+{
+"pos": [
+7.73,
+63.11
+],
+"id": "HSM Kristiansun"
+},
+{
+"pos": [
+23.68,
+70.66
+],
+"id": "HiF Hammerfest"
+},
+{
+"pos": [
+29.75,
+70.07
+],
+"id": "HiF Vadso"
+},
+{
+"pos": [
+8.00,
+58.15
+],
+"id": "UiA Kristiansand"
+},
+{
+"pos": [
+8.59,
+58.34
+],
+"id": "UiA Grimstad"
+},
+{
+"pos": [
+11.39,
+59.12
+],
+"id": "HiO Halden"
+},
+{
+"pos": [
+10.20,
+63.97
+],
+"id": "UMB As"
+},
+{
+"pos": [
+10.93,
+59.22
+],
+"id": "HiO Fredrikstad"
+},
+{
+"pos": [
+11.03,
+59.98
+],
+"id": "HiAK Kjeller"
+},
+{
+"pos": [
+8.00,
+59.73
+],
+"id": "Hit Rauland"
+},
+{
+"pos": [
+9.66,
+59.14
+],
+"id": "HiT Porsgrunn"
+},
+{
+"pos": [
+9.07,
+59.43
+],
+"id": "HiT Bo"
+},
+{
+"pos": [
+9.26,
+59.56
+],
+"id": "HiT Notodden"
+},
+{
+"pos": [
+23.27,
+69.97
+],
+"id": "HiF Alta"
+},
+{
+"pos": [
+11.12,
+64.87
+],
+"id": "HH Evenstad"
+},
+{
+"pos": [
+11.07,
+60.79
+],
+"id": "HH Hamar"
+},
+{
+"pos": [
+10.47,
+61.12
+],
+"id": "HiL Lillehammer"
+},
+{
+"pos": [
+10.40,
+63.43
+],
+"id": "NTNU Hovedbygget"
+},
+{
+"pos": [
+10.40,
+63.43
+],
+"id": "NTNU Realfagbygget"
+},
+{
+"pos": [
+10.40,
+63.43
+],
+"id": "UNINETT Teknobyen"
+},
+{
+"pos": [
+10.78,
+62.28
+],
+"id": "HH Tynset"
+},
+{
+"pos": [
+14.14,
+66.31
+],
+"id": "HBO Mo i Rana"
+},
+{
+"pos": [
+11.36,
+61.13
+],
+"id": "HH Rena"
+},
+{
+"pos": [
+11.56,
+60.88
+],
+"id": "HH Elverum"
+},
+{
+"pos": [
+12.00,
+60.19
+],
+"id": "HH Kongsvinger"
+}
+],
+"links": [
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": "UiO",
+"target": "UiO"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 30.22,
+"deg": 36.43
+},
+"ecmp_bwd": {
+"uni": 33.04,
+"deg": 39.53
+},
+"source": "UiO",
+"target": "UiO St Olavsplass 5"
+},
+{
+"dist": 76.05,
+"ecmp_fwd": {
+"uni": 42.35,
+"deg": 34.90
+},
+"ecmp_bwd": {
+"uni": 42.66,
+"deg": 35.02
+},
+"source": "UiO",
+"target": "HH Kongsvinger"
+},
+{
+"dist": 451.80,
+"ecmp_fwd": {
+"uni": 20.38,
+"deg": 16.64
+},
+"ecmp_bwd": {
+"uni": 21.31,
+"deg": 17.32
+},
+"source": "UiO",
+"target": "UMB As"
+},
+{
+"dist": 108.34,
+"ecmp_fwd": {
+"uni": 49.16,
+"deg": 40.80
+},
+"ecmp_bwd": {
+"uni": 49.80,
+"deg": 41.57
+},
+"source": "UiO",
+"target": "HiT Bo"
+},
+{
+"dist": 304.76,
+"ecmp_fwd": {
+"uni": 36.46,
+"deg": 33.95
+},
+"ecmp_bwd": {
+"uni": 35.62,
+"deg": 33.19
+},
+"source": "UiO",
+"target": "UiB BT"
+},
+{
+"dist": 416.46,
+"ecmp_fwd": {
+"uni": 18.61,
+"deg": 18.04
+},
+"ecmp_bwd": {
+"uni": 18.86,
+"deg": 18.25
+},
+"source": "UiO",
+"target": "Stockholm"
+},
+{
+"dist": 17.82,
+"ecmp_fwd": {
+"uni": 33.52,
+"deg": 23.98
+},
+"ecmp_bwd": {
+"uni": 33.34,
+"deg": 23.88
+},
+"source": "UiO",
+"target": "UNIK Kjeller"
+},
+{
+"dist": 94.82,
+"ecmp_fwd": {
+"uni": 20.38,
+"deg": 16.64
+},
+"ecmp_bwd": {
+"uni": 21.31,
+"deg": 17.32
+},
+"source": "UiO",
+"target": "HiO Halden"
+},
+{
+"dist": 391.70,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 95.14,
+"deg": 95.30
+},
+"source": "UiO",
+"target": "NTNU Realfagbygget"
+},
+{
+"dist": 98.26,
+"ecmp_fwd": {
+"uni": 32.19,
+"deg": 23.15
+},
+"ecmp_bwd": {
+"uni": 32.00,
+"deg": 23.03
+},
+"source": "HiG Gjovik",
+"target": "UiO St Olavsplass 5"
+},
+{
+"dist": 37.55,
+"ecmp_fwd": {
+"uni": 19.58,
+"deg": 14.00
+},
+"ecmp_bwd": {
+"uni": 19.78,
+"deg": 14.13
+},
+"source": "HiG Gjovik",
+"target": "HiL Lillehammer"
+},
+{
+"dist": 35.63,
+"ecmp_fwd": {
+"uni": 50.37,
+"deg": 45.08
+},
+"ecmp_bwd": {
+"uni": 48.17,
+"deg": 43.08
+},
+"source": "UiO St Olavsplass 5",
+"target": "HiBU Drammen"
+},
+{
+"dist": 251.69,
+"ecmp_fwd": {
+"uni": 29.85,
+"deg": 27.05
+},
+"ecmp_bwd": {
+"uni": 31.45,
+"deg": 28.35
+},
+"source": "UiO St Olavsplass 5",
+"target": "UiA Kristiansand"
+},
+{
+"dist": 304.76,
+"ecmp_fwd": {
+"uni": 28.50,
+"deg": 25.93
+},
+"ecmp_bwd": {
+"uni": 27.23,
+"deg": 25.11
+},
+"source": "UiO St Olavsplass 5",
+"target": "UiB Hoyteklogibygget"
+},
+{
+"dist": 391.70,
+"ecmp_fwd": {
+"uni": 57.00,
+"deg": 60.73
+},
+"ecmp_bwd": {
+"uni": 61.49,
+"deg": 65.23
+},
+"source": "UiO St Olavsplass 5",
+"target": "NTNU Hovedbygget"
+},
+{
+"dist": 32.21,
+"ecmp_fwd": {
+"uni": 21.85,
+"deg": 15.35
+},
+"ecmp_bwd": {
+"uni": 21.67,
+"deg": 15.26
+},
+"source": "HiBU Kongsberg",
+"target": "HiBU Drammen"
+},
+{
+"dist": 65.03,
+"ecmp_fwd": {
+"uni": 8.57,
+"deg": 5.78
+},
+"ecmp_bwd": {
+"uni": 8.74,
+"deg": 5.88
+},
+"source": "HiBU Kongsberg",
+"target": "HiBu Honefoss"
+},
+{
+"dist": 39.13,
+"ecmp_fwd": {
+"uni": 27.30,
+"deg": 19.86
+},
+"ecmp_bwd": {
+"uni": 25.45,
+"deg": 18.50
+},
+"source": "HiBU Drammen",
+"target": "HVE Borre"
+},
+{
+"dist": 72.78,
+"ecmp_fwd": {
+"uni": 15.90,
+"deg": 14.03
+},
+"ecmp_bwd": {
+"uni": 15.38,
+"deg": 13.29
+},
+"source": "HiBU Drammen",
+"target": "HiT Bo"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 20.41,
+"deg": 14.50
+},
+"ecmp_bwd": {
+"uni": 20.24,
+"deg": 14.41
+},
+"source": "UNIK Kjeller",
+"target": "HiAK Kjeller"
+},
+{
+"dist": 47.75,
+"ecmp_fwd": {
+"uni": 8.05,
+"deg": 5.60
+},
+"ecmp_bwd": {
+"uni": 8.22,
+"deg": 5.70
+},
+"source": "HiBu Honefoss",
+"target": "HiAK Kjeller"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"ecmp_bwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"source": "NB Mo i Rana",
+"target": "HBO Mo i Rana"
+},
+{
+"dist": 239.15,
+"ecmp_fwd": {
+"uni": 9.41,
+"deg": 6.85
+},
+"ecmp_bwd": {
+"uni": 9.43,
+"deg": 6.91
+},
+"source": "NB Mo i Rana",
+"target": "HiNT Namsos"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"ecmp_bwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"source": "NB Mo i Rana",
+"target": "HiNe Mo i Rana"
+},
+{
+"dist": 51.86,
+"ecmp_fwd": {
+"uni": 8.19,
+"deg": 5.80
+},
+"ecmp_bwd": {
+"uni": 8.24,
+"deg": 5.88
+},
+"source": "NB Mo i Rana",
+"target": "HiNe Nesna"
+},
+{
+"dist": 108.19,
+"ecmp_fwd": {
+"uni": 8.85,
+"deg": 9.59
+},
+"ecmp_bwd": {
+"uni": 8.61,
+"deg": 9.33
+},
+"source": "NB Mo i Rana",
+"target": "HBO Bodo"
+},
+{
+"dist": 366.06,
+"ecmp_fwd": {
+"uni": 49.84,
+"deg": 45.43
+},
+"ecmp_bwd": {
+"uni": 50.01,
+"deg": 45.54
+},
+"source": "NB Mo i Rana",
+"target": "NTNU Realfagbygget"
+},
+{
+"dist": 26.22,
+"ecmp_fwd": {
+"uni": 7.07,
+"deg": 5.03
+},
+"ecmp_bwd": {
+"uni": 7.12,
+"deg": 5.11
+},
+"source": "HiNe Nesna",
+"target": "HiNe Sandnesjoen"
+},
+{
+"dist": 35.58,
+"ecmp_fwd": {
+"uni": 8.38,
+"deg": 6.86
+},
+"ecmp_bwd": {
+"uni": 6.53,
+"deg": 5.50
+},
+"source": "HVE Borre",
+"target": "HiO Fredrikstad"
+},
+{
+"dist": 45.70,
+"ecmp_fwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"ecmp_bwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"source": "HVE Borre",
+"target": "HVE Larvik"
+},
+{
+"dist": 1013.27,
+"ecmp_fwd": {
+"uni": 16.12,
+"deg": 16.77
+},
+"ecmp_bwd": {
+"uni": 15.87,
+"deg": 16.56
+},
+"source": "HiN Narvik",
+"target": "Stockholm"
+},
+{
+"dist": 147.71,
+"ecmp_fwd": {
+"uni": 15.52,
+"deg": 18.99
+},
+"ecmp_bwd": {
+"uni": 20.89,
+"deg": 23.96
+},
+"source": "HiN Narvik",
+"target": "UiTo"
+},
+{
+"dist": 180.66,
+"ecmp_fwd": {
+"uni": 7.68,
+"deg": 10.53
+},
+"ecmp_bwd": {
+"uni": 7.88,
+"deg": 10.71
+},
+"source": "HiN Narvik",
+"target": "HBO Bodo"
+},
+{
+"dist": 640.97,
+"ecmp_fwd": {
+"uni": 45.34,
+"deg": 49.37
+},
+"ecmp_bwd": {
+"uni": 41.07,
+"deg": 45.13
+},
+"source": "HiN Narvik",
+"target": "NTNU Hovedbygget"
+},
+{
+"dist": 53.78,
+"ecmp_fwd": {
+"uni": 24.14,
+"deg": 19.82
+},
+"ecmp_bwd": {
+"uni": 23.11,
+"deg": 19.11
+},
+"source": "HiN Narvik",
+"target": "HiH Harstad"
+},
+{
+"dist": 987.85,
+"ecmp_fwd": {
+"uni": 28.51,
+"deg": 15.13
+},
+"ecmp_bwd": {
+"uni": 28.51,
+"deg": 15.13
+},
+"source": "HiH Harstad",
+"target": "UNIS Svalbard"
+},
+{
+"dist": 134.21,
+"ecmp_fwd": {
+"uni": 15.35,
+"deg": 13.31
+},
+"ecmp_bwd": {
+"uni": 14.45,
+"deg": 12.75
+},
+"source": "HiH Harstad",
+"target": "UiTo"
+},
+{
+"dist": 190.81,
+"ecmp_fwd": {
+"uni": 6.17,
+"deg": 5.46
+},
+"ecmp_bwd": {
+"uni": 6.04,
+"deg": 5.32
+},
+"source": "HiH Harstad",
+"target": "HBO Bodo"
+},
+{
+"dist": 109.95,
+"ecmp_fwd": {
+"uni": 14.37,
+"deg": 10.09
+},
+"ecmp_bwd": {
+"uni": 14.37,
+"deg": 10.09
+},
+"source": "UiTo Karasjok",
+"target": "SA/SH Kautokeino"
+},
+{
+"dist": 178.04,
+"ecmp_fwd": {
+"uni": 1.03,
+"deg": 0.56
+},
+"ecmp_bwd": {
+"uni": 1.03,
+"deg": 0.56
+},
+"source": "UiTo Karasjok",
+"target": "HiF Kirkenes"
+},
+{
+"dist": 211.07,
+"ecmp_fwd": {
+"uni": 40.01,
+"deg": 33.16
+},
+"ecmp_bwd": {
+"uni": 40.01,
+"deg": 33.16
+},
+"source": "UiTo",
+"target": "HiF Hammerfest"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": "UiTo",
+"target": "UiTo"
+},
+{
+"dist": 169.45,
+"ecmp_fwd": {
+"uni": 40.01,
+"deg": 33.16
+},
+"ecmp_bwd": {
+"uni": 40.01,
+"deg": 33.16
+},
+"source": "UiTo",
+"target": "HiF Alta"
+},
+{
+"dist": 787.05,
+"ecmp_fwd": {
+"uni": 74.47,
+"deg": 74.29
+},
+"ecmp_bwd": {
+"uni": 78.93,
+"deg": 78.70
+},
+"source": "UiTo",
+"target": "NTNU Realfagbygget"
+},
+{
+"dist": 36.35,
+"ecmp_fwd": {
+"uni": 21.39,
+"deg": 15.33
+},
+"ecmp_bwd": {
+"uni": 21.62,
+"deg": 15.44
+},
+"source": "HiA Alesund",
+"target": "HVO Volda"
+},
+{
+"dist": 239.43,
+"ecmp_fwd": {
+"uni": 30.70,
+"deg": 28.84
+},
+"ecmp_bwd": {
+"uni": 31.16,
+"deg": 29.22
+},
+"source": "HiA Alesund",
+"target": "NTNU Hovedbygget"
+},
+{
+"dist": 235.45,
+"ecmp_fwd": {
+"uni": 12.65,
+"deg": 11.65
+},
+"ecmp_bwd": {
+"uni": 13.05,
+"deg": 11.96
+},
+"source": "HiA Alesund",
+"target": "UiB Hoyteklogibygget"
+},
+{
+"dist": 59.26,
+"ecmp_fwd": {
+"uni": 13.40,
+"deg": 9.36
+},
+"ecmp_bwd": {
+"uni": 12.30,
+"deg": 8.55
+},
+"source": "HiA Alesund",
+"target": "HSM Molde"
+},
+{
+"dist": 78.19,
+"ecmp_fwd": {
+"uni": 8.28,
+"deg": 5.85
+},
+"ecmp_bwd": {
+"uni": 8.51,
+"deg": 5.96
+},
+"source": "HVO Volda",
+"target": "HSF Forde"
+},
+{
+"dist": 13.08,
+"ecmp_fwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"ecmp_bwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"source": "UiS Stavanger",
+"target": "VetHS Sandnes"
+},
+{
+"dist": 56.02,
+"ecmp_fwd": {
+"uni": 7.24,
+"deg": 4.86
+},
+"ecmp_bwd": {
+"uni": 7.59,
+"deg": 5.13
+},
+"source": "UiS Stavanger",
+"target": "HSH Haugesund"
+},
+{
+"dist": 160.03,
+"ecmp_fwd": {
+"uni": 10.92,
+"deg": 8.86
+},
+"ecmp_bwd": {
+"uni": 9.20,
+"deg": 7.53
+},
+"source": "UiS Stavanger",
+"target": "UiA Kristiansand"
+},
+{
+"dist": 159.93,
+"ecmp_fwd": {
+"uni": 24.26,
+"deg": 20.93
+},
+"ecmp_bwd": {
+"uni": 25.64,
+"deg": 22.00
+},
+"source": "UiS Stavanger",
+"target": "UiB BT"
+},
+{
+"dist": 39.31,
+"ecmp_fwd": {
+"uni": 8.45,
+"deg": 5.94
+},
+"ecmp_bwd": {
+"uni": 8.80,
+"deg": 6.20
+},
+"source": "HSH Haugesund",
+"target": "HSH Stord"
+},
+{
+"dist": 72.06,
+"ecmp_fwd": {
+"uni": 20.93,
+"deg": 14.94
+},
+"ecmp_bwd": {
+"uni": 21.27,
+"deg": 15.20
+},
+"source": "HSH Stord",
+"target": "UiB Hoyteklogibygget"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 18.66,
+"deg": 18.80
+},
+"ecmp_bwd": {
+"uni": 18.12,
+"deg": 18.50
+},
+"source": "UiB Hoyteklogibygget",
+"target": "UiB BT"
+},
+{
+"dist": 133.83,
+"ecmp_fwd": {
+"uni": 33.80,
+"deg": 23.91
+},
+"ecmp_bwd": {
+"uni": 33.57,
+"deg": 23.80
+},
+"source": "UiB Hoyteklogibygget",
+"target": "HSF Songdal"
+},
+{
+"dist": 429.46,
+"ecmp_fwd": {
+"uni": 33.61,
+"deg": 35.87
+},
+"ecmp_bwd": {
+"uni": 33.86,
+"deg": 36.04
+},
+"source": "UiB Hoyteklogibygget",
+"target": "NTNU Hovedbygget"
+},
+{
+"dist": 70.83,
+"ecmp_fwd": {
+"uni": 20.70,
+"deg": 14.43
+},
+"ecmp_bwd": {
+"uni": 20.47,
+"deg": 14.32
+},
+"source": "HSF Songdal",
+"target": "HSF Forde"
+},
+{
+"dist": 40.37,
+"ecmp_fwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"ecmp_bwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"source": "HSF Forde",
+"target": "HSF Sandane"
+},
+{
+"dist": 307.11,
+"ecmp_fwd": {
+"uni": 20.43,
+"deg": 20.43
+},
+"ecmp_bwd": {
+"uni": 20.29,
+"deg": 20.28
+},
+"source": "HiNe Sandnesjoen",
+"target": "NTNU Hovedbygget"
+},
+{
+"dist": 160.30,
+"ecmp_fwd": {
+"uni": 5.83,
+"deg": 6.88
+},
+"ecmp_bwd": {
+"uni": 6.01,
+"deg": 7.11
+},
+"source": "HiNe Sandnesjoen",
+"target": "HBO Bodo"
+},
+{
+"dist": 52.94,
+"ecmp_fwd": {
+"uni": 8.01,
+"deg": 5.58
+},
+"ecmp_bwd": {
+"uni": 7.82,
+"deg": 5.43
+},
+"source": "HiNT Steinkjer",
+"target": "HiNT Levanger"
+},
+{
+"dist": 50.20,
+"ecmp_fwd": {
+"uni": 7.78,
+"deg": 5.67
+},
+"ecmp_bwd": {
+"uni": 7.76,
+"deg": 5.61
+},
+"source": "HiNT Steinkjer",
+"target": "HiNT Namsos"
+},
+{
+"dist": 84.62,
+"ecmp_fwd": {
+"uni": 25.29,
+"deg": 22.46
+},
+"ecmp_bwd": {
+"uni": 25.51,
+"deg": 22.66
+},
+"source": "HiNT Steinkjer",
+"target": "NTNU Hovedbygget"
+},
+{
+"dist": 106.76,
+"ecmp_fwd": {
+"uni": 27.71,
+"deg": 19.67
+},
+"ecmp_bwd": {
+"uni": 27.71,
+"deg": 19.67
+},
+"source": "SA/SH Kautokeino",
+"target": "HiF Alta"
+},
+{
+"dist": 40.26,
+"ecmp_fwd": {
+"uni": 14.37,
+"deg": 10.09
+},
+"ecmp_bwd": {
+"uni": 14.37,
+"deg": 10.09
+},
+"source": "HiF Kirkenes",
+"target": "HiF Vadso"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"ecmp_bwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"source": "NyAlesund",
+"target": "UNIS Svalbard"
+},
+{
+"dist": 20.41,
+"ecmp_fwd": {
+"uni": 7.17,
+"deg": 5.01
+},
+"ecmp_bwd": {
+"uni": 7.36,
+"deg": 5.15
+},
+"source": "Hing Stjordal",
+"target": "HiNT Levanger"
+},
+{
+"dist": 27.66,
+"ecmp_fwd": {
+"uni": 20.70,
+"deg": 14.63
+},
+"ecmp_bwd": {
+"uni": 20.50,
+"deg": 14.48
+},
+"source": "Hing Stjordal",
+"target": "NTNU Realfagbygget"
+},
+{
+"dist": 50.50,
+"ecmp_fwd": {
+"uni": 5.40,
+"deg": 3.67
+},
+"ecmp_bwd": {
+"uni": 4.31,
+"deg": 2.87
+},
+"source": "HSM Molde",
+"target": "HSM Kristiansun"
+},
+{
+"dist": 138.08,
+"ecmp_fwd": {
+"uni": 16.21,
+"deg": 11.51
+},
+"ecmp_bwd": {
+"uni": 15.12,
+"deg": 10.71
+},
+"source": "HSM Kristiansun",
+"target": "UNINETT Teknobyen"
+},
+{
+"dist": 78.76,
+"ecmp_fwd": {
+"uni": 1.03,
+"deg": 0.81
+},
+"ecmp_bwd": {
+"uni": 1.03,
+"deg": 0.81
+},
+"source": "HiF Hammerfest",
+"target": "HiF Alta"
+},
+{
+"dist": 235.86,
+"ecmp_fwd": {
+"uni": 27.71,
+"deg": 19.67
+},
+"ecmp_bwd": {
+"uni": 27.71,
+"deg": 19.67
+},
+"source": "HiF Hammerfest",
+"target": "HiF Vadso"
+},
+{
+"dist": 41.10,
+"ecmp_fwd": {
+"uni": 13.35,
+"deg": 9.48
+},
+"ecmp_bwd": {
+"uni": 13.22,
+"deg": 9.45
+},
+"source": "UiA Kristiansand",
+"target": "UiA Grimstad"
+},
+{
+"dist": 108.07,
+"ecmp_fwd": {
+"uni": 6.02,
+"deg": 4.14
+},
+"ecmp_bwd": {
+"uni": 5.89,
+"deg": 4.10
+},
+"source": "UiA Grimstad",
+"target": "HiT Porsgrunn"
+},
+{
+"dist": 28.08,
+"ecmp_fwd": {
+"uni": 7.89,
+"deg": 7.67
+},
+"ecmp_bwd": {
+"uni": 8.81,
+"deg": 8.35
+},
+"source": "HiO Halden",
+"target": "HiO Fredrikstad"
+},
+{
+"dist": 529.57,
+"ecmp_fwd": {
+"uni": 7.89,
+"deg": 7.67
+},
+"ecmp_bwd": {
+"uni": 8.81,
+"deg": 8.35
+},
+"source": "UMB As",
+"target": "HiO Fredrikstad"
+},
+{
+"dist": 68.71,
+"ecmp_fwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"ecmp_bwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"source": "Hit Rauland",
+"target": "HiT Bo"
+},
+{
+"dist": 46.71,
+"ecmp_fwd": {
+"uni": 15.87,
+"deg": 11.10
+},
+"ecmp_bwd": {
+"uni": 15.74,
+"deg": 11.07
+},
+"source": "HiT Porsgrunn",
+"target": "HiT Bo"
+},
+{
+"dist": 17.72,
+"ecmp_fwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"ecmp_bwd": {
+"uni": 14.49,
+"deg": 5.10
+},
+"source": "HiT Bo",
+"target": "HiT Notodden"
+},
+{
+"dist": 288.63,
+"ecmp_fwd": {
+"uni": 17.59,
+"deg": 12.79
+},
+"ecmp_bwd": {
+"uni": 18.09,
+"deg": 13.04
+},
+"source": "HH Evenstad",
+"target": "HH Tynset"
+},
+{
+"dist": 415.26,
+"ecmp_fwd": {
+"uni": 9.24,
+"deg": 6.43
+},
+"ecmp_bwd": {
+"uni": 8.74,
+"deg": 6.18
+},
+"source": "HH Evenstad",
+"target": "HH Rena"
+},
+{
+"dist": 28.50,
+"ecmp_fwd": {
+"uni": 9.89,
+"deg": 6.60
+},
+"ecmp_bwd": {
+"uni": 10.08,
+"deg": 6.73
+},
+"source": "HH Hamar",
+"target": "HH Elverum"
+},
+{
+"dist": 48.25,
+"ecmp_fwd": {
+"uni": 7.82,
+"deg": 5.32
+},
+"ecmp_bwd": {
+"uni": 7.63,
+"deg": 5.20
+},
+"source": "HH Hamar",
+"target": "HiL Lillehammer"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 31.45,
+"deg": 40.62
+},
+"ecmp_bwd": {
+"uni": 33.68,
+"deg": 42.36
+},
+"source": "NTNU Hovedbygget",
+"target": "NTNU Realfagbygget"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 26.16,
+"deg": 23.90
+},
+"ecmp_bwd": {
+"uni": 24.93,
+"deg": 23.03
+},
+"source": "NTNU Hovedbygget",
+"target": "UNINETT Teknobyen"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 27.76,
+"deg": 24.43
+},
+"ecmp_bwd": {
+"uni": 29.59,
+"deg": 25.86
+},
+"source": "NTNU Realfagbygget",
+"target": "UNINETT Teknobyen"
+},
+{
+"dist": 129.91,
+"ecmp_fwd": {
+"uni": 30.28,
+"deg": 21.96
+},
+"ecmp_bwd": {
+"uni": 29.78,
+"deg": 21.71
+},
+"source": "UNINETT Teknobyen",
+"target": "HH Tynset"
+},
+{
+"dist": 30.09,
+"ecmp_fwd": {
+"uni": 13.20,
+"deg": 8.87
+},
+"ecmp_bwd": {
+"uni": 12.70,
+"deg": 8.62
+},
+"source": "HH Rena",
+"target": "HH Elverum"
+},
+{
+"dist": 80.51,
+"ecmp_fwd": {
+"uni": 30.70,
+"deg": 26.22
+},
+"ecmp_bwd": {
+"uni": 30.39,
+"deg": 26.09
+},
+"source": "HH Elverum",
+"target": "HH Kongsvinger"
+}
+]
+}

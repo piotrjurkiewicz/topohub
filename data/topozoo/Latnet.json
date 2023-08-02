@@ -1,0 +1,1460 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "latnet",
+"demands": {},
+"stats": {
+"nodes": 68,
+"links": 73,
+"demands": 4556,
+"min_degree": 1,
+"avg_degree": 2.15,
+"std_degree": 3.45,
+"max_degree": 29,
+"gini": 0.41,
+"min_link_len": 2.11,
+"avg_link_len": 51.97,
+"max_link_len": 221.66,
+"diameter_len": 494.54,
+"diameter_hops": 12,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.99,
+"avg_sdp_len": 199.96,
+"avg_adp_num": 1.05,
+"max_adp_num": 3,
+"avg_adp_hops": 4.03,
+"avg_adp_len": 204.44
+}
+},
+"nodes": [
+{
+"pos": [
+24.20,
+56.60
+],
+"id": "Iecava"
+},
+{
+"pos": [
+23.77,
+56.56
+],
+"id": "Vircava"
+},
+{
+"pos": [
+27.17,
+55.90
+],
+"id": "Kraslava"
+},
+{
+"pos": [
+24.35,
+56.71
+],
+"id": "Baldone"
+},
+{
+"pos": [
+22.90,
+56.46
+],
+"id": "Auce"
+},
+{
+"pos": [
+22.53,
+56.70
+],
+"id": "Broceni"
+},
+{
+"pos": [
+23.70,
+56.54
+],
+"id": "Platone"
+},
+{
+"pos": [
+23.28,
+56.62
+],
+"id": "Dobele"
+},
+{
+"pos": [
+24.70,
+57.16
+],
+"id": "Krimulda"
+},
+{
+"pos": [
+24.61,
+57.61
+],
+"id": "Vijkene"
+},
+{
+"pos": [
+22.49,
+56.66
+],
+"id": "Saldus"
+},
+{
+"pos": [
+21.14,
+56.59
+],
+"id": "Kapsede"
+},
+{
+"pos": [
+25.56,
+56.35
+],
+"id": "Viesite"
+},
+{
+"pos": [
+25.26,
+56.60
+],
+"id": "Aizkroukle"
+},
+{
+"pos": [
+26.92,
+56.55
+],
+"id": "Vilani"
+},
+{
+"pos": [
+26.75,
+57.18
+],
+"id": "Gulbene"
+},
+{
+"pos": [
+25.33,
+57.90
+],
+"id": "Rujiena"
+},
+{
+"pos": [
+24.36,
+57.75
+],
+"id": "Salagriva"
+},
+{
+"pos": [
+24.88,
+57.77
+],
+"id": "Aloja"
+},
+{
+"pos": [
+25.05,
+57.86
+],
+"id": "Mazsalaca"
+},
+{
+"pos": [
+25.69,
+57.63
+],
+"id": "Strenci"
+},
+{
+"pos": [
+24.85,
+57.60
+],
+"id": "Pociems"
+},
+{
+"pos": [
+24.72,
+57.51
+],
+"id": "Limbazi"
+},
+{
+"pos": [
+24.47,
+57.46
+],
+"id": "Liepupe"
+},
+{
+"pos": [
+25.12,
+56.65
+],
+"id": "Skriveri"
+},
+{
+"pos": [
+25.43,
+57.54
+],
+"id": "Valmiera"
+},
+{
+"pos": [
+27.32,
+56.50
+],
+"id": "Rezekne"
+},
+{
+"pos": [
+24.27,
+57.13
+],
+"id": "Carnikava"
+},
+{
+"pos": [
+24.92,
+56.64
+],
+"id": "Jumprava"
+},
+{
+"pos": [
+24.72,
+56.75
+],
+"id": "Kegums"
+},
+{
+"pos": [
+24.11,
+56.95
+],
+"id": "Riga"
+},
+{
+"pos": [
+26.53,
+55.88
+],
+"id": "Daugapils"
+},
+{
+"pos": [
+21.56,
+57.39
+],
+"id": "Ventspits"
+},
+{
+"pos": [
+21.17,
+56.54
+],
+"id": "Grobina"
+},
+{
+"pos": [
+21.02,
+56.52
+],
+"id": "Liepaja"
+},
+{
+"pos": [
+24.29,
+56.94
+],
+"id": "Ulbroka"
+},
+{
+"pos": [
+23.94,
+56.79
+],
+"id": "Olaine"
+},
+{
+"pos": [
+24.81,
+56.72
+],
+"id": "Lielvarde"
+},
+{
+"pos": [
+24.50,
+56.83
+],
+"id": "Ikskile"
+},
+{
+"pos": [
+24.37,
+56.86
+],
+"id": "Salaspils"
+},
+{
+"pos": [
+24.19,
+56.41
+],
+"id": "Bauska"
+},
+{
+"pos": [
+25.86,
+56.50
+],
+"id": "Jekabpils"
+},
+{
+"pos": [
+23.71,
+56.65
+],
+"id": "Jelgava"
+},
+{
+"pos": [
+23.59,
+56.84
+],
+"id": "Kalnciems"
+},
+{
+"pos": [
+24.23,
+56.83
+],
+"id": "Kekava"
+},
+{
+"pos": [
+23.50,
+56.69
+],
+"id": "Livberze"
+},
+{
+"pos": [
+24.74,
+57.32
+],
+"id": "Ledurga"
+},
+{
+"pos": [
+24.86,
+57.15
+],
+"id": "Sigulda"
+},
+{
+"pos": [
+23.77,
+56.97
+],
+"id": "Jurmala"
+},
+{
+"pos": [
+23.16,
+56.97
+],
+"id": "Tukums"
+},
+{
+"pos": [
+22.58,
+57.25
+],
+"id": "Talsi"
+},
+{
+"pos": [
+21.60,
+56.72
+],
+"id": "Aizpute"
+},
+{
+"pos": [
+24.71,
+57.18
+],
+"id": "Ragona"
+},
+{
+"pos": [
+24.55,
+57.09
+],
+"id": "Vangazi"
+},
+{
+"pos": [
+24.32,
+57.08
+],
+"id": "Adazi"
+},
+{
+"pos": [
+23.79,
+56.69
+],
+"id": "Ozolnieki"
+},
+{
+"pos": [
+23.68,
+56.42
+],
+"id": "Eleja"
+},
+{
+"pos": [
+24.61,
+56.82
+],
+"id": "Ogre"
+},
+{
+"pos": [
+26.72,
+56.29
+],
+"id": "Preili"
+},
+{
+"pos": [
+26.18,
+56.35
+],
+"id": "Livani"
+},
+{
+"pos": [
+27.27,
+57.13
+],
+"id": "Balvi"
+},
+{
+"pos": [
+27.69,
+56.78
+],
+"id": "Karsava"
+},
+{
+"pos": [
+27.72,
+56.78
+],
+"id": "Malnava"
+},
+{
+"pos": [
+27.72,
+56.63
+],
+"id": "Pusmucova"
+},
+{
+"pos": [
+27.67,
+56.57
+],
+"id": "Zvigzdene"
+},
+{
+"pos": [
+27.72,
+56.55
+],
+"id": "Ludza"
+},
+{
+"pos": [
+27.88,
+56.55
+],
+"id": "Cibla"
+},
+{
+"pos": [
+28.12,
+56.39
+],
+"id": "Zilupe"
+}
+],
+"links": [
+{
+"dist": 39.08,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Iecava",
+"target": "Riga"
+},
+{
+"dist": 5.26,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Vircava",
+"target": "Platone"
+},
+{
+"dist": 221.66,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Kraslava",
+"target": "Riga"
+},
+{
+"dist": 30.52,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Baldone",
+"target": "Riga"
+},
+{
+"dist": 29.53,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Auce",
+"target": "Dobele"
+},
+{
+"dist": 4.90,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Broceni",
+"target": "Saldus"
+},
+{
+"dist": 12.58,
+"ecmp_fwd": {
+"uni": 33.62,
+"deg": 29.22
+},
+"ecmp_bwd": {
+"uni": 33.62,
+"deg": 29.22
+},
+"source": "Platone",
+"target": "Jelgava"
+},
+{
+"dist": 13.52,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Platone",
+"target": "Eleja"
+},
+{
+"dist": 26.70,
+"ecmp_fwd": {
+"uni": 22.76,
+"deg": 17.78
+},
+"ecmp_bwd": {
+"uni": 22.76,
+"deg": 17.78
+},
+"source": "Dobele",
+"target": "Jelgava"
+},
+{
+"dist": 9.80,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Krimulda",
+"target": "Sigulda"
+},
+{
+"dist": 12.58,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Vijkene",
+"target": "Limbazi"
+},
+{
+"dist": 103.40,
+"ecmp_fwd": {
+"uni": 22.76,
+"deg": 17.78
+},
+"ecmp_bwd": {
+"uni": 22.76,
+"deg": 17.78
+},
+"source": "Saldus",
+"target": "Riga"
+},
+{
+"dist": 11.06,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Kapsede",
+"target": "Liepaja"
+},
+{
+"dist": 25.09,
+"ecmp_fwd": {
+"uni": 22.76,
+"deg": 17.78
+},
+"ecmp_bwd": {
+"uni": 22.76,
+"deg": 17.78
+},
+"source": "Viesite",
+"target": "Jekabpils"
+},
+{
+"dist": 34.03,
+"ecmp_fwd": {
+"uni": 33.62,
+"deg": 29.22
+},
+"ecmp_bwd": {
+"uni": 33.62,
+"deg": 29.22
+},
+"source": "Viesite",
+"target": "Aizkroukle"
+},
+{
+"dist": 20.91,
+"ecmp_fwd": {
+"uni": 44.14,
+"deg": 40.32
+},
+"ecmp_bwd": {
+"uni": 44.14,
+"deg": 40.32
+},
+"source": "Aizkroukle",
+"target": "Jumprava"
+},
+{
+"dist": 177.36,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Vilani",
+"target": "Riga"
+},
+{
+"dist": 162.13,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Gulbene",
+"target": "Riga"
+},
+{
+"dist": 16.81,
+"ecmp_fwd": {
+"uni": 10.86,
+"deg": 11.19
+},
+"ecmp_bwd": {
+"uni": 10.86,
+"deg": 11.19
+},
+"source": "Rujiena",
+"target": "Mazsalaca"
+},
+{
+"dist": 128.79,
+"ecmp_fwd": {
+"uni": 21.38,
+"deg": 22.13
+},
+"ecmp_bwd": {
+"uni": 21.38,
+"deg": 22.13
+},
+"source": "Rujiena",
+"target": "Riga"
+},
+{
+"dist": 32.88,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Salagriva",
+"target": "Liepupe"
+},
+{
+"dist": 14.80,
+"ecmp_fwd": {
+"uni": 1.38,
+"deg": 1.41
+},
+"ecmp_bwd": {
+"uni": 1.38,
+"deg": 1.41
+},
+"source": "Aloja",
+"target": "Mazsalaca"
+},
+{
+"dist": 19.06,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Aloja",
+"target": "Pociems"
+},
+{
+"dist": 29.88,
+"ecmp_fwd": {
+"uni": 22.76,
+"deg": 23.62
+},
+"ecmp_bwd": {
+"uni": 22.76,
+"deg": 23.62
+},
+"source": "Aloja",
+"target": "Limbazi"
+},
+{
+"dist": 18.03,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Strenci",
+"target": "Valmiera"
+},
+{
+"dist": 73.07,
+"ecmp_fwd": {
+"uni": 49.66,
+"deg": 56.69
+},
+"ecmp_bwd": {
+"uni": 49.66,
+"deg": 56.69
+},
+"source": "Limbazi",
+"target": "Riga"
+},
+{
+"dist": 16.00,
+"ecmp_fwd": {
+"uni": 13.10,
+"deg": 13.72
+},
+"ecmp_bwd": {
+"uni": 13.10,
+"deg": 13.72
+},
+"source": "Limbazi",
+"target": "Liepupe"
+},
+{
+"dist": 42.10,
+"ecmp_fwd": {
+"uni": 13.10,
+"deg": 13.55
+},
+"ecmp_bwd": {
+"uni": 13.10,
+"deg": 13.55
+},
+"source": "Liepupe",
+"target": "Sigulda"
+},
+{
+"dist": 70.29,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Skriveri",
+"target": "Riga"
+},
+{
+"dist": 103.47,
+"ecmp_fwd": {
+"uni": 22.76,
+"deg": 17.78
+},
+"ecmp_bwd": {
+"uni": 22.76,
+"deg": 17.78
+},
+"source": "Valmiera",
+"target": "Riga"
+},
+{
+"dist": 25.16,
+"ecmp_fwd": {
+"uni": 44.14,
+"deg": 40.32
+},
+"ecmp_bwd": {
+"uni": 44.14,
+"deg": 40.32
+},
+"source": "Rezekne",
+"target": "Ludza"
+},
+{
+"dist": 202.11,
+"ecmp_fwd": {
+"uni": 53.02,
+"deg": 54.70
+},
+"ecmp_bwd": {
+"uni": 53.02,
+"deg": 54.70
+},
+"source": "Rezekne",
+"target": "Riga"
+},
+{
+"dist": 83.99,
+"ecmp_fwd": {
+"uni": 1.29,
+"deg": 1.66
+},
+"ecmp_bwd": {
+"uni": 1.29,
+"deg": 1.66
+},
+"source": "Rezekne",
+"target": "Daugapils"
+},
+{
+"dist": 22.81,
+"ecmp_fwd": {
+"uni": 11.38,
+"deg": 11.77
+},
+"ecmp_bwd": {
+"uni": 11.38,
+"deg": 11.77
+},
+"source": "Carnikava",
+"target": "Riga"
+},
+{
+"dist": 6.60,
+"ecmp_fwd": {
+"uni": 0.17,
+"deg": 0.17
+},
+"ecmp_bwd": {
+"uni": 0.17,
+"deg": 0.17
+},
+"source": "Carnikava",
+"target": "Adazi"
+},
+{
+"dist": 11.11,
+"ecmp_fwd": {
+"uni": 54.31,
+"deg": 51.10
+},
+"ecmp_bwd": {
+"uni": 54.31,
+"deg": 51.10
+},
+"source": "Jumprava",
+"target": "Lielvarde"
+},
+{
+"dist": 5.75,
+"ecmp_fwd": {
+"uni": 64.14,
+"deg": 61.54
+},
+"ecmp_bwd": {
+"uni": 64.14,
+"deg": 61.54
+},
+"source": "Kegums",
+"target": "Lielvarde"
+},
+{
+"dist": 16.83,
+"ecmp_fwd": {
+"uni": 73.62,
+"deg": 71.65
+},
+"ecmp_bwd": {
+"uni": 73.62,
+"deg": 71.65
+},
+"source": "Kegums",
+"target": "Ikskile"
+},
+{
+"dist": 190.45,
+"ecmp_fwd": {
+"uni": 10.52,
+"deg": 16.29
+},
+"ecmp_bwd": {
+"uni": 10.52,
+"deg": 16.29
+},
+"source": "Riga",
+"target": "Daugapils"
+},
+{
+"dist": 194.42,
+"ecmp_fwd": {
+"uni": 33.62,
+"deg": 29.22
+},
+"ecmp_bwd": {
+"uni": 33.62,
+"deg": 29.22
+},
+"source": "Riga",
+"target": "Liepaja"
+},
+{
+"dist": 11.17,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Riga",
+"target": "Ulbroka"
+},
+{
+"dist": 20.58,
+"ecmp_fwd": {
+"uni": 15.69,
+"deg": 16.33
+},
+"ecmp_bwd": {
+"uni": 15.69,
+"deg": 16.33
+},
+"source": "Riga",
+"target": "Olaine"
+},
+{
+"dist": 18.43,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Riga",
+"target": "Salaspils"
+},
+{
+"dist": 60.12,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Riga",
+"target": "Bauska"
+},
+{
+"dist": 40.71,
+"ecmp_fwd": {
+"uni": 85.69,
+"deg": 89.43
+},
+"ecmp_bwd": {
+"uni": 85.69,
+"deg": 89.43
+},
+"source": "Riga",
+"target": "Jelgava"
+},
+{
+"dist": 15.27,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Riga",
+"target": "Kekava"
+},
+{
+"dist": 51.30,
+"ecmp_fwd": {
+"uni": 60.52,
+"deg": 62.87
+},
+"ecmp_bwd": {
+"uni": 60.52,
+"deg": 62.87
+},
+"source": "Riga",
+"target": "Sigulda"
+},
+{
+"dist": 20.49,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Riga",
+"target": "Jurmala"
+},
+{
+"dist": 57.70,
+"ecmp_fwd": {
+"uni": 22.76,
+"deg": 17.78
+},
+"ecmp_bwd": {
+"uni": 22.76,
+"deg": 17.78
+},
+"source": "Riga",
+"target": "Tukums"
+},
+{
+"dist": 97.96,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Riga",
+"target": "Talsi"
+},
+{
+"dist": 154.60,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Riga",
+"target": "Aizpute"
+},
+{
+"dist": 19.46,
+"ecmp_fwd": {
+"uni": 11.38,
+"deg": 11.77
+},
+"ecmp_bwd": {
+"uni": 11.38,
+"deg": 11.77
+},
+"source": "Riga",
+"target": "Adazi"
+},
+{
+"dist": 175.86,
+"ecmp_fwd": {
+"uni": 10.95,
+"deg": 11.27
+},
+"ecmp_bwd": {
+"uni": 10.95,
+"deg": 11.27
+},
+"source": "Riga",
+"target": "Preili"
+},
+{
+"dist": 192.31,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Riga",
+"target": "Balvi"
+},
+{
+"dist": 218.52,
+"ecmp_fwd": {
+"uni": 33.62,
+"deg": 29.22
+},
+"ecmp_bwd": {
+"uni": 33.62,
+"deg": 29.22
+},
+"source": "Riga",
+"target": "Karsava"
+},
+{
+"dist": 47.24,
+"ecmp_fwd": {
+"uni": 0.60,
+"deg": 0.66
+},
+"ecmp_bwd": {
+"uni": 0.60,
+"deg": 0.66
+},
+"source": "Daugapils",
+"target": "Preili"
+},
+{
+"dist": 107.01,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Ventspits",
+"target": "Tukums"
+},
+{
+"dist": 9.50,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Grobina",
+"target": "Liepaja"
+},
+{
+"dist": 14.32,
+"ecmp_fwd": {
+"uni": 5.86,
+"deg": 6.05
+},
+"ecmp_bwd": {
+"uni": 5.86,
+"deg": 6.05
+},
+"source": "Olaine",
+"target": "Ozolnieki"
+},
+{
+"dist": 7.20,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Ikskile",
+"target": "Ogre"
+},
+{
+"dist": 8.71,
+"ecmp_fwd": {
+"uni": 91.55,
+"deg": 90.88
+},
+"ecmp_bwd": {
+"uni": 91.55,
+"deg": 90.88
+},
+"source": "Ikskile",
+"target": "Salaspils"
+},
+{
+"dist": 25.35,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Jekabpils",
+"target": "Livani"
+},
+{
+"dist": 22.43,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Jelgava",
+"target": "Kalnciems"
+},
+{
+"dist": 13.69,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Jelgava",
+"target": "Livberze"
+},
+{
+"dist": 6.12,
+"ecmp_fwd": {
+"uni": 7.07,
+"deg": 7.21
+},
+"ecmp_bwd": {
+"uni": 7.07,
+"deg": 7.21
+},
+"source": "Jelgava",
+"target": "Ozolnieki"
+},
+{
+"dist": 20.33,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Ledurga",
+"target": "Sigulda"
+},
+{
+"dist": 10.02,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Sigulda",
+"target": "Ragona"
+},
+{
+"dist": 20.16,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Sigulda",
+"target": "Vangazi"
+},
+{
+"dist": 2.11,
+"ecmp_fwd": {
+"uni": 22.76,
+"deg": 17.78
+},
+"ecmp_bwd": {
+"uni": 22.76,
+"deg": 17.78
+},
+"source": "Karsava",
+"target": "Malnava"
+},
+{
+"dist": 15.80,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Malnava",
+"target": "Pusmucova"
+},
+{
+"dist": 3.58,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Zvigzdene",
+"target": "Ludza"
+},
+{
+"dist": 10.22,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Ludza",
+"target": "Cibla"
+},
+{
+"dist": 30.84,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"ecmp_bwd": {
+"uni": 11.55,
+"deg": 6.01
+},
+"source": "Ludza",
+"target": "Zilupe"
+}
+]
+}

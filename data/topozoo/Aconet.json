@@ -1,0 +1,466 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "aconet",
+"demands": {},
+"stats": {
+"nodes": 17,
+"links": 24,
+"demands": 272,
+"min_degree": 2,
+"avg_degree": 2.82,
+"std_degree": 1.58,
+"max_degree": 7,
+"gini": 0.23,
+"min_link_len": 0.00,
+"avg_link_len": 121.17,
+"max_link_len": 386.84,
+"diameter_len": 765.03,
+"diameter_hops": 4,
+"avg_sdp_num": 1.24,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.22,
+"avg_sdp_len": 223.54,
+"avg_adp_num": 2.05,
+"max_adp_num": 7,
+"avg_adp_hops": 2.87,
+"avg_adp_len": 368.34
+}
+},
+"nodes": [
+{
+"pos": [
+16.52,
+47.85
+],
+"id": "Eisenstadt"
+},
+{
+"pos": [
+15.63,
+48.20
+],
+"id": "St. Polten"
+},
+{
+"pos": [
+15.45,
+47.07
+],
+"id": "Graz2"
+},
+{
+"pos": [
+15.10,
+47.38
+],
+"id": "Leoben"
+},
+{
+"pos": [
+16.37,
+48.21
+],
+"id": "Vienna2"
+},
+{
+"pos": [
+15.61,
+48.41
+],
+"id": "Krems"
+},
+{
+"pos": [
+16.37,
+48.21
+],
+"id": "Vienna1"
+},
+{
+"pos": [
+14.31,
+46.62
+],
+"id": "Klagenfurt2"
+},
+{
+"pos": [
+15.45,
+47.07
+],
+"id": "Graz1"
+},
+{
+"pos": [
+14.29,
+48.31
+],
+"id": "Linz1"
+},
+{
+"pos": [
+14.29,
+48.31
+],
+"id": "Linz2"
+},
+{
+"pos": [
+13.04,
+47.80
+],
+"id": "Salzburg1"
+},
+{
+"pos": [
+13.04,
+47.80
+],
+"id": "Salzburg2"
+},
+{
+"pos": [
+11.39,
+47.26
+],
+"id": "Innsbruck1"
+},
+{
+"pos": [
+11.39,
+47.26
+],
+"id": "Innsbruck2"
+},
+{
+"pos": [
+9.73,
+47.42
+],
+"id": "Dornbirn"
+},
+{
+"pos": [
+14.31,
+46.62
+],
+"id": "Klagenfurt1"
+}
+],
+"links": [
+{
+"dist": 41.30,
+"ecmp_fwd": {
+"uni": 42.86,
+"deg": 59.38
+},
+"ecmp_bwd": {
+"uni": 42.86,
+"deg": 59.38
+},
+"source": "Eisenstadt",
+"target": "Vienna2"
+},
+{
+"dist": 41.30,
+"ecmp_fwd": {
+"uni": 42.86,
+"deg": 59.38
+},
+"ecmp_bwd": {
+"uni": 42.86,
+"deg": 59.38
+},
+"source": "Eisenstadt",
+"target": "Vienna1"
+},
+{
+"dist": 23.31,
+"ecmp_fwd": {
+"uni": 38.10,
+"deg": 35.00
+},
+"ecmp_bwd": {
+"uni": 38.10,
+"deg": 35.00
+},
+"source": "St. Polten",
+"target": "Krems"
+},
+{
+"dist": 54.77,
+"ecmp_fwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"ecmp_bwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"source": "St. Polten",
+"target": "Vienna1"
+},
+{
+"dist": 44.04,
+"ecmp_fwd": {
+"uni": 38.10,
+"deg": 28.75
+},
+"ecmp_bwd": {
+"uni": 38.10,
+"deg": 28.75
+},
+"source": "Graz2",
+"target": "Leoben"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 38.10,
+"deg": 52.50
+},
+"ecmp_bwd": {
+"uni": 38.10,
+"deg": 52.50
+},
+"source": "Graz2",
+"target": "Graz1"
+},
+{
+"dist": 144.58,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Graz2",
+"target": "Vienna1"
+},
+{
+"dist": 44.04,
+"ecmp_fwd": {
+"uni": 38.10,
+"deg": 28.75
+},
+"ecmp_bwd": {
+"uni": 38.10,
+"deg": 28.75
+},
+"source": "Leoben",
+"target": "Graz1"
+},
+{
+"dist": 60.35,
+"ecmp_fwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"ecmp_bwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"source": "Vienna2",
+"target": "Krems"
+},
+{
+"dist": 234.99,
+"ecmp_fwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"ecmp_bwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"source": "Vienna2",
+"target": "Klagenfurt2"
+},
+{
+"dist": 144.58,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Vienna2",
+"target": "Graz1"
+},
+{
+"dist": 154.85,
+"ecmp_fwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"ecmp_bwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"source": "Vienna2",
+"target": "Linz1"
+},
+{
+"dist": 251.80,
+"ecmp_fwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"ecmp_bwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"source": "Vienna2",
+"target": "Salzburg2"
+},
+{
+"dist": 386.84,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Vienna2",
+"target": "Innsbruck1"
+},
+{
+"dist": 154.85,
+"ecmp_fwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"ecmp_bwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"source": "Vienna1",
+"target": "Linz2"
+},
+{
+"dist": 251.80,
+"ecmp_fwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"ecmp_bwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"source": "Vienna1",
+"target": "Salzburg1"
+},
+{
+"dist": 386.84,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Vienna1",
+"target": "Innsbruck2"
+},
+{
+"dist": 234.99,
+"ecmp_fwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"ecmp_bwd": {
+"uni": 71.43,
+"deg": 55.00
+},
+"source": "Vienna1",
+"target": "Klagenfurt1"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 38.10,
+"deg": 35.00
+},
+"ecmp_bwd": {
+"uni": 38.10,
+"deg": 35.00
+},
+"source": "Klagenfurt2",
+"target": "Klagenfurt1"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 38.10,
+"deg": 35.00
+},
+"ecmp_bwd": {
+"uni": 38.10,
+"deg": 35.00
+},
+"source": "Linz1",
+"target": "Linz2"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 38.10,
+"deg": 35.00
+},
+"ecmp_bwd": {
+"uni": 38.10,
+"deg": 35.00
+},
+"source": "Salzburg1",
+"target": "Salzburg2"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 38.10,
+"deg": 52.50
+},
+"ecmp_bwd": {
+"uni": 38.10,
+"deg": 52.50
+},
+"source": "Innsbruck1",
+"target": "Innsbruck2"
+},
+{
+"dist": 126.39,
+"ecmp_fwd": {
+"uni": 38.10,
+"deg": 28.75
+},
+"ecmp_bwd": {
+"uni": 38.10,
+"deg": 28.75
+},
+"source": "Innsbruck1",
+"target": "Dornbirn"
+},
+{
+"dist": 126.39,
+"ecmp_fwd": {
+"uni": 38.10,
+"deg": 28.75
+},
+"ecmp_bwd": {
+"uni": 38.10,
+"deg": 28.75
+},
+"source": "Innsbruck2",
+"target": "Dornbirn"
+}
+]
+}

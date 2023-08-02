@@ -1,0 +1,886 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "cesnet200706",
+"demands": {},
+"stats": {
+"nodes": 38,
+"links": 45,
+"demands": 1406,
+"min_degree": 1,
+"avg_degree": 2.37,
+"std_degree": 2.80,
+"max_degree": 15,
+"gini": 0.46,
+"min_link_len": 9.38,
+"avg_link_len": 67.17,
+"max_link_len": 186.21,
+"diameter_len": 518.84,
+"diameter_hops": 6,
+"avg_sdp_num": 1.02,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.95,
+"avg_sdp_len": 232.40,
+"avg_adp_num": 1.10,
+"max_adp_num": 4,
+"avg_adp_hops": 3.00,
+"avg_adp_len": 243.43
+}
+},
+"nodes": [
+{
+"pos": [
+15.83,
+50.21
+],
+"id": "Hradec Kralove"
+},
+{
+"pos": [
+16.44,
+49.90
+],
+"id": "Ceska Trebova"
+},
+{
+"pos": [
+15.00,
+49.14
+],
+"id": "Jindrichuv Hradec"
+},
+{
+"pos": [
+15.78,
+50.04
+],
+"id": "Pardubice"
+},
+{
+"pos": [
+17.00,
+49.28
+],
+"id": "Vyskov"
+},
+{
+"pos": [
+17.67,
+49.22
+],
+"id": "Zlin"
+},
+{
+"pos": [
+17.25,
+49.60
+],
+"id": "Olomouc"
+},
+{
+"pos": [
+16.61,
+49.20
+],
+"id": "Brno"
+},
+{
+"pos": [
+16.88,
+48.76
+],
+"id": "Breclav,Lednice"
+},
+{
+"pos": [
+18.28,
+49.83
+],
+"id": "Ostrava"
+},
+{
+"pos": [
+14.07,
+49.96
+],
+"id": "Beroun"
+},
+{
+"pos": [
+12.70,
+49.96
+],
+"id": "Marlanske Lazne"
+},
+{
+"pos": [
+13.64,
+50.50
+],
+"id": "Most"
+},
+{
+"pos": [
+15.81,
+50.43
+],
+"id": "Dvur Kralove"
+},
+{
+"pos": [
+17.70,
+50.09
+],
+"id": "Krnov"
+},
+{
+"pos": [
+17.12,
+49.01
+],
+"id": "Kyjov"
+},
+{
+"pos": [
+15.59,
+49.40
+],
+"id": "Jihlava"
+},
+{
+"pos": [
+15.17,
+50.72
+],
+"id": "Jablonec n N"
+},
+{
+"pos": [
+16.31,
+49.87
+],
+"id": "Litomysl"
+},
+{
+"pos": [
+17.46,
+49.07
+],
+"id": "Uherske Hradiste"
+},
+{
+"pos": [
+17.11,
+49.47
+],
+"id": "Prostejov"
+},
+{
+"pos": [
+15.45,
+49.18
+],
+"id": "Telc"
+},
+{
+"pos": [
+14.86,
+49.99
+],
+"id": "Kostelec n C.L"
+},
+{
+"pos": [
+14.77,
+49.00
+],
+"id": "Trebon"
+},
+{
+"pos": [
+17.90,
+49.94
+],
+"id": "Opava"
+},
+{
+"pos": [
+18.49,
+49.84
+],
+"id": "Karvina"
+},
+{
+"pos": [
+15.27,
+49.95
+],
+"id": "Kutna Hora"
+},
+{
+"pos": [
+14.36,
+50.18
+],
+"id": "Rez"
+},
+{
+"pos": [
+14.66,
+49.41
+],
+"id": "Tabor"
+},
+{
+"pos": [
+14.15,
+49.31
+],
+"id": "Pisek"
+},
+{
+"pos": [
+12.37,
+50.08
+],
+"id": "Cheb"
+},
+{
+"pos": [
+13.38,
+49.75
+],
+"id": "Plzen"
+},
+{
+"pos": [
+14.21,
+50.78
+],
+"id": "Decin"
+},
+{
+"pos": [
+14.03,
+50.66
+],
+"id": "Usti nad Labem"
+},
+{
+"pos": [
+14.42,
+50.09
+],
+"id": "Praha"
+},
+{
+"pos": [
+15.06,
+50.77
+],
+"id": "Liberec"
+},
+{
+"pos": [
+15.12,
+50.14
+],
+"id": "Podebrady"
+},
+{
+"pos": [
+14.47,
+48.97
+],
+"id": "Ceske Budejovice"
+}
+],
+"links": [
+{
+"dist": 101.54,
+"ecmp_fwd": {
+"uni": 19.44,
+"deg": 26.87
+},
+"ecmp_bwd": {
+"uni": 19.21,
+"deg": 26.54
+},
+"source": "Hradec Kralove",
+"target": "Praha"
+},
+{
+"dist": 82.89,
+"ecmp_fwd": {
+"uni": 8.88,
+"deg": 10.19
+},
+"ecmp_bwd": {
+"uni": 9.21,
+"deg": 10.68
+},
+"source": "Hradec Kralove",
+"target": "Liberec"
+},
+{
+"dist": 19.16,
+"ecmp_fwd": {
+"uni": 12.58,
+"deg": 12.16
+},
+"ecmp_bwd": {
+"uni": 12.58,
+"deg": 12.16
+},
+"source": "Hradec Kralove",
+"target": "Pardubice"
+},
+{
+"dist": 122.44,
+"ecmp_fwd": {
+"uni": 23.03,
+"deg": 27.86
+},
+"ecmp_bwd": {
+"uni": 22.92,
+"deg": 27.69
+},
+"source": "Hradec Kralove",
+"target": "Olomouc"
+},
+{
+"dist": 24.78,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Hradec Kralove",
+"target": "Dvur Kralove"
+},
+{
+"dist": 146.10,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Ceska Trebova",
+"target": "Praha"
+},
+{
+"dist": 42.90,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Jindrichuv Hradec",
+"target": "Ceske Budejovice"
+},
+{
+"dist": 96.95,
+"ecmp_fwd": {
+"uni": 48.54,
+"deg": 41.74
+},
+"ecmp_bwd": {
+"uni": 48.54,
+"deg": 41.74
+},
+"source": "Pardubice",
+"target": "Praha"
+},
+{
+"dist": 72.93,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Pardubice",
+"target": "Jihlava"
+},
+{
+"dist": 42.92,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Pardubice",
+"target": "Litomysl"
+},
+{
+"dist": 37.78,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Pardubice",
+"target": "Kutna Hora"
+},
+{
+"dist": 29.83,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Vyskov",
+"target": "Brno"
+},
+{
+"dist": 22.22,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Zlin",
+"target": "Uherske Hradiste"
+},
+{
+"dist": 51.74,
+"ecmp_fwd": {
+"uni": 7.19,
+"deg": 6.74
+},
+"ecmp_bwd": {
+"uni": 7.19,
+"deg": 6.74
+},
+"source": "Zlin",
+"target": "Olomouc"
+},
+{
+"dist": 76.97,
+"ecmp_fwd": {
+"uni": 25.17,
+"deg": 21.53
+},
+"ecmp_bwd": {
+"uni": 25.17,
+"deg": 21.53
+},
+"source": "Zlin",
+"target": "Brno"
+},
+{
+"dist": 78.72,
+"ecmp_fwd": {
+"uni": 12.58,
+"deg": 12.16
+},
+"ecmp_bwd": {
+"uni": 12.58,
+"deg": 12.16
+},
+"source": "Olomouc",
+"target": "Ostrava"
+},
+{
+"dist": 64.45,
+"ecmp_fwd": {
+"uni": 9.89,
+"deg": 16.35
+},
+"ecmp_bwd": {
+"uni": 9.78,
+"deg": 16.19
+},
+"source": "Olomouc",
+"target": "Brno"
+},
+{
+"dist": 52.49,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Brno",
+"target": "Breclav,Lednice"
+},
+{
+"dist": 140.26,
+"ecmp_fwd": {
+"uni": 48.54,
+"deg": 41.74
+},
+"ecmp_bwd": {
+"uni": 48.54,
+"deg": 41.74
+},
+"source": "Brno",
+"target": "Ostrava"
+},
+{
+"dist": 157.35,
+"ecmp_fwd": {
+"uni": 23.15,
+"deg": 22.60
+},
+"ecmp_bwd": {
+"uni": 23.37,
+"deg": 22.93
+},
+"source": "Brno",
+"target": "Ceske Budejovice"
+},
+{
+"dist": 42.75,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Brno",
+"target": "Kyjov"
+},
+{
+"dist": 186.21,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 99.66,
+"deg": 99.51
+},
+"source": "Brno",
+"target": "Praha"
+},
+{
+"dist": 83.98,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Brno",
+"target": "Telc"
+},
+{
+"dist": 47.76,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Brno",
+"target": "Prostejov"
+},
+{
+"dist": 29.55,
+"ecmp_fwd": {
+"uni": 32.36,
+"deg": 21.45
+},
+"ecmp_bwd": {
+"uni": 32.36,
+"deg": 21.45
+},
+"source": "Ostrava",
+"target": "Opava"
+},
+{
+"dist": 15.08,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Ostrava",
+"target": "Karvina"
+},
+{
+"dist": 28.49,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Beroun",
+"target": "Praha"
+},
+{
+"dist": 123.64,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Marlanske Lazne",
+"target": "Praha"
+},
+{
+"dist": 33.02,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Most",
+"target": "Usti nad Labem"
+},
+{
+"dist": 22.00,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Krnov",
+"target": "Opava"
+},
+{
+"dist": 9.38,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Jablonec n N",
+"target": "Liberec"
+},
+{
+"dist": 33.02,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Kostelec n C.L",
+"target": "Praha"
+},
+{
+"dist": 21.87,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Trebon",
+"target": "Ceske Budejovice"
+},
+{
+"dist": 10.91,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Rez",
+"target": "Praha"
+},
+{
+"dist": 76.84,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Tabor",
+"target": "Praha"
+},
+{
+"dist": 88.87,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Pisek",
+"target": "Praha"
+},
+{
+"dist": 80.82,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Cheb",
+"target": "Plzen"
+},
+{
+"dist": 83.76,
+"ecmp_fwd": {
+"uni": 23.82,
+"deg": 20.87
+},
+"ecmp_bwd": {
+"uni": 24.04,
+"deg": 21.20
+},
+"source": "Plzen",
+"target": "Praha"
+},
+{
+"dist": 117.06,
+"ecmp_fwd": {
+"uni": 8.54,
+"deg": 7.40
+},
+"ecmp_bwd": {
+"uni": 8.31,
+"deg": 7.07
+},
+"source": "Plzen",
+"target": "Ceske Budejovice"
+},
+{
+"dist": 18.65,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Decin",
+"target": "Usti nad Labem"
+},
+{
+"dist": 69.40,
+"ecmp_fwd": {
+"uni": 42.47,
+"deg": 36.48
+},
+"ecmp_bwd": {
+"uni": 42.81,
+"deg": 36.98
+},
+"source": "Usti nad Labem",
+"target": "Praha"
+},
+{
+"dist": 73.08,
+"ecmp_fwd": {
+"uni": 4.72,
+"deg": 4.93
+},
+"ecmp_bwd": {
+"uni": 4.38,
+"deg": 4.44
+},
+"source": "Usti nad Labem",
+"target": "Liberec"
+},
+{
+"dist": 87.93,
+"ecmp_fwd": {
+"uni": 22.47,
+"deg": 24.24
+},
+"ecmp_bwd": {
+"uni": 22.47,
+"deg": 24.24
+},
+"source": "Praha",
+"target": "Liberec"
+},
+{
+"dist": 50.15,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 7.31
+},
+"source": "Praha",
+"target": "Podebrady"
+},
+{
+"dist": 123.92,
+"ecmp_fwd": {
+"uni": 26.97,
+"deg": 27.61
+},
+"ecmp_bwd": {
+"uni": 26.97,
+"deg": 27.61
+},
+"source": "Praha",
+"target": "Ceske Budejovice"
+}
+]
+}

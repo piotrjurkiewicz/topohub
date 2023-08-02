@@ -1,0 +1,578 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "quest",
+"demands": {},
+"stats": {
+"nodes": 20,
+"links": 31,
+"demands": 380,
+"min_degree": 1,
+"avg_degree": 3.10,
+"std_degree": 1.34,
+"max_degree": 6,
+"gini": 0.24,
+"min_link_len": 0.00,
+"avg_link_len": 2772.07,
+"max_link_len": 8286.84,
+"diameter_len": 15910.95,
+"diameter_hops": 5,
+"avg_sdp_num": 1.17,
+"max_sdp_num": 4,
+"avg_sdp_hops": 2.69,
+"avg_sdp_len": 5015.60,
+"avg_adp_num": 2.30,
+"max_adp_num": 5,
+"avg_adp_hops": 3.73,
+"avg_adp_len": 11028.87
+}
+},
+"nodes": [
+{
+"pos": [
+174.77,
+-36.87
+],
+"id": "Auckland 2"
+},
+{
+"pos": [
+178.00,
+-18.00
+],
+"id": "Fiji"
+},
+{
+"pos": [
+151.21,
+-33.87
+],
+"id": "Sydney 1"
+},
+{
+"pos": [
+174.77,
+-36.87
+],
+"id": "Auckland 1"
+},
+{
+"pos": [
+-121.49,
+38.58
+],
+"id": "Sacramento"
+},
+{
+"pos": [
+-118.24,
+34.05
+],
+"id": "Los Angeles"
+},
+{
+"pos": [
+-157.86,
+21.31
+],
+"id": "Hawaii 1"
+},
+{
+"pos": [
+-157.86,
+21.31
+],
+"id": "Hawaii 2"
+},
+{
+"pos": [
+121.00,
+24.00
+],
+"id": "Taiwan"
+},
+{
+"pos": [
+122.00,
+13.00
+],
+"id": "Philippines 2"
+},
+{
+"pos": [
+144.96,
+-37.81
+],
+"id": "Melbourne"
+},
+{
+"pos": [
+151.21,
+-33.87
+],
+"id": "Sydney 2"
+},
+{
+"pos": [
+127.50,
+37.00
+],
+"id": "Korea"
+},
+{
+"pos": [
+139.75,
+35.69
+],
+"id": "Japan"
+},
+{
+"pos": [
+144.74,
+13.44
+],
+"id": "Guam"
+},
+{
+"pos": [
+122.00,
+13.00
+],
+"id": "Philippines 1"
+},
+{
+"pos": [
+114.17,
+22.25
+],
+"id": "Hong Kong"
+},
+{
+"pos": [
+103.80,
+1.37
+],
+"id": "Singapore/Malaysia"
+},
+{
+"pos": [
+100.00,
+15.00
+],
+"id": "Thailand"
+},
+{
+"pos": [
+115.83,
+-31.93
+],
+"id": "Perth"
+}
+],
+"links": [
+{
+"dist": 2157.08,
+"ecmp_fwd": {
+"uni": 44.95,
+"deg": 28.48
+},
+"ecmp_bwd": {
+"uni": 45.89,
+"deg": 29.48
+},
+"source": "Auckland 2",
+"target": "Sydney 2"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 29.97,
+"deg": 18.80
+},
+"ecmp_bwd": {
+"uni": 29.03,
+"deg": 17.80
+},
+"source": "Auckland 2",
+"target": "Auckland 1"
+},
+{
+"dist": 3192.58,
+"ecmp_fwd": {
+"uni": 29.97,
+"deg": 22.70
+},
+"ecmp_bwd": {
+"uni": 31.63,
+"deg": 24.18
+},
+"source": "Fiji",
+"target": "Sydney 1"
+},
+{
+"dist": 5102.15,
+"ecmp_fwd": {
+"uni": 39.96,
+"deg": 32.77
+},
+"ecmp_bwd": {
+"uni": 38.29,
+"deg": 31.30
+},
+"source": "Fiji",
+"target": "Hawaii 1"
+},
+{
+"dist": 713.57,
+"ecmp_fwd": {
+"uni": 47.45,
+"deg": 30.89
+},
+"ecmp_bwd": {
+"uni": 47.45,
+"deg": 30.89
+},
+"source": "Sydney 1",
+"target": "Melbourne"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 73.36,
+"deg": 52.05
+},
+"ecmp_bwd": {
+"uni": 72.42,
+"deg": 51.04
+},
+"source": "Sydney 1",
+"target": "Sydney 2"
+},
+{
+"dist": 5306.83,
+"ecmp_fwd": {
+"uni": 97.40,
+"deg": 97.52
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Sydney 1",
+"target": "Guam"
+},
+{
+"dist": 7079.37,
+"ecmp_fwd": {
+"uni": 54.94,
+"deg": 39.22
+},
+"ecmp_bwd": {
+"uni": 54.01,
+"deg": 38.21
+},
+"source": "Auckland 1",
+"target": "Hawaii 2"
+},
+{
+"dist": 8286.84,
+"ecmp_fwd": {
+"uni": 36.21,
+"deg": 34.92
+},
+"ecmp_bwd": {
+"uni": 44.33,
+"deg": 40.70
+},
+"source": "Sacramento",
+"target": "Japan"
+},
+{
+"dist": 3959.99,
+"ecmp_fwd": {
+"uni": 27.47,
+"deg": 25.12
+},
+"ecmp_bwd": {
+"uni": 25.29,
+"deg": 23.37
+},
+"source": "Sacramento",
+"target": "Hawaii 1"
+},
+{
+"dist": 581.85,
+"ecmp_fwd": {
+"uni": 34.65,
+"deg": 25.39
+},
+"ecmp_bwd": {
+"uni": 28.72,
+"deg": 21.36
+},
+"source": "Sacramento",
+"target": "Los Angeles"
+},
+{
+"dist": 4121.10,
+"ecmp_fwd": {
+"uni": 26.22,
+"deg": 16.52
+},
+"ecmp_bwd": {
+"uni": 20.29,
+"deg": 12.49
+},
+"source": "Los Angeles",
+"target": "Hawaii 2"
+},
+{
+"dist": 6201.84,
+"ecmp_fwd": {
+"uni": 38.09,
+"deg": 46.34
+},
+"ecmp_bwd": {
+"uni": 39.44,
+"deg": 47.35
+},
+"source": "Hawaii 1",
+"target": "Japan"
+},
+{
+"dist": 6125.00,
+"ecmp_fwd": {
+"uni": 83.04,
+"deg": 89.19
+},
+"ecmp_bwd": {
+"uni": 70.97,
+"deg": 79.92
+},
+"source": "Hawaii 1",
+"target": "Guam"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 79.29,
+"deg": 73.27
+},
+"ecmp_bwd": {
+"uni": 86.16,
+"deg": 78.31
+},
+"source": "Hawaii 1",
+"target": "Hawaii 2"
+},
+{
+"dist": 725.47,
+"ecmp_fwd": {
+"uni": 25.18,
+"deg": 22.57
+},
+"ecmp_bwd": {
+"uni": 21.96,
+"deg": 20.48
+},
+"source": "Taiwan",
+"target": "Hong Kong"
+},
+{
+"dist": 1573.30,
+"ecmp_fwd": {
+"uni": 16.44,
+"deg": 14.10
+},
+"ecmp_bwd": {
+"uni": 17.17,
+"deg": 14.04
+},
+"source": "Taiwan",
+"target": "Korea"
+},
+{
+"dist": 1228.01,
+"ecmp_fwd": {
+"uni": 21.44,
+"deg": 22.30
+},
+"ecmp_bwd": {
+"uni": 23.93,
+"deg": 24.45
+},
+"source": "Taiwan",
+"target": "Philippines 1"
+},
+{
+"dist": 1321.36,
+"ecmp_fwd": {
+"uni": 14.26,
+"deg": 16.99
+},
+"ecmp_bwd": {
+"uni": 13.42,
+"deg": 16.39
+},
+"source": "Philippines 2",
+"target": "Hong Kong"
+},
+{
+"dist": 2461.51,
+"ecmp_fwd": {
+"uni": 33.30,
+"deg": 34.65
+},
+"ecmp_bwd": {
+"uni": 34.34,
+"deg": 35.39
+},
+"source": "Philippines 2",
+"target": "Guam"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 4.58,
+"deg": 4.97
+},
+"ecmp_bwd": {
+"uni": 4.37,
+"deg": 4.84
+},
+"source": "Philippines 2",
+"target": "Philippines 1"
+},
+{
+"dist": 2725.41,
+"ecmp_fwd": {
+"uni": 22.48,
+"deg": 13.16
+},
+"ecmp_bwd": {
+"uni": 22.48,
+"deg": 13.16
+},
+"source": "Melbourne",
+"target": "Perth"
+},
+{
+"dist": 1106.67,
+"ecmp_fwd": {
+"uni": 43.29,
+"deg": 31.70
+},
+"ecmp_bwd": {
+"uni": 44.02,
+"deg": 31.63
+},
+"source": "Korea",
+"target": "Japan"
+},
+{
+"dist": 2890.17,
+"ecmp_fwd": {
+"uni": 41.52,
+"deg": 57.35
+},
+"ecmp_bwd": {
+"uni": 49.32,
+"deg": 62.86
+},
+"source": "Japan",
+"target": "Hong Kong"
+},
+{
+"dist": 2523.58,
+"ecmp_fwd": {
+"uni": 44.95,
+"deg": 54.33
+},
+"ecmp_bwd": {
+"uni": 47.35,
+"deg": 55.54
+},
+"source": "Japan",
+"target": "Guam"
+},
+{
+"dist": 2461.51,
+"ecmp_fwd": {
+"uni": 50.57,
+"deg": 62.53
+},
+"ecmp_bwd": {
+"uni": 47.03,
+"deg": 59.23
+},
+"source": "Guam",
+"target": "Philippines 1"
+},
+{
+"dist": 4700.73,
+"ecmp_fwd": {
+"uni": 76.17,
+"deg": 67.09
+},
+"ecmp_bwd": {
+"uni": 73.67,
+"deg": 65.55
+},
+"source": "Guam",
+"target": "Singapore/Malaysia"
+},
+{
+"dist": 1321.36,
+"ecmp_fwd": {
+"uni": 12.17,
+"deg": 18.87
+},
+"ecmp_bwd": {
+"uni": 10.93,
+"deg": 17.60
+},
+"source": "Philippines 1",
+"target": "Hong Kong"
+},
+{
+"dist": 2579.34,
+"ecmp_fwd": {
+"uni": 40.89,
+"deg": 39.22
+},
+"ecmp_bwd": {
+"uni": 43.39,
+"deg": 40.77
+},
+"source": "Hong Kong",
+"target": "Singapore/Malaysia"
+},
+{
+"dist": 1572.76,
+"ecmp_fwd": {
+"uni": 47.45,
+"deg": 16.39
+},
+"ecmp_bwd": {
+"uni": 47.45,
+"deg": 16.39
+},
+"source": "Singapore/Malaysia",
+"target": "Thailand"
+},
+{
+"dist": 3914.95,
+"ecmp_fwd": {
+"uni": 42.46,
+"deg": 31.43
+},
+"ecmp_bwd": {
+"uni": 42.46,
+"deg": 31.43
+},
+"source": "Singapore/Malaysia",
+"target": "Perth"
+}
+]
+}

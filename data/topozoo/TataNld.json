@@ -1,0 +1,3389 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "tatanld",
+"demands": {},
+"stats": {
+"nodes": 143,
+"links": 181,
+"demands": 20306,
+"min_degree": 1,
+"avg_degree": 2.53,
+"std_degree": 1.02,
+"max_degree": 6,
+"gini": 0.20,
+"min_link_len": 0.00,
+"avg_link_len": 133.14,
+"max_link_len": 478.08,
+"diameter_len": 3418.08,
+"diameter_hops": 28,
+"avg_sdp_num": 1.03,
+"max_sdp_num": 2,
+"avg_sdp_hops": 9.87,
+"avg_sdp_len": 923.44,
+"avg_adp_num": 1.96,
+"max_adp_num": 5,
+"avg_adp_hops": 12.45,
+"avg_adp_len": 1841.12
+}
+},
+"nodes": [
+{
+"pos": [
+83.00,
+25.33
+],
+"id": "Varanasi"
+},
+{
+"pos": [
+73.69,
+24.57
+],
+"id": "Udaipur"
+},
+{
+"pos": [
+81.37,
+26.62
+],
+"id": "Hadiagarh"
+},
+{
+"pos": [
+80.68,
+27.57
+],
+"id": "Sitapur"
+},
+{
+"pos": [
+78.03,
+30.32
+],
+"id": "Dehradun"
+},
+{
+"pos": [
+80.92,
+26.85
+],
+"id": "Lucknow"
+},
+{
+"pos": [
+80.35,
+26.47
+],
+"id": "Kanpur"
+},
+{
+"pos": [
+80.80,
+25.93
+],
+"id": "Fatehpur"
+},
+{
+"pos": [
+82.68,
+25.73
+],
+"id": "Jaunpur"
+},
+{
+"pos": [
+81.85,
+25.45
+],
+"id": "Allahabad"
+},
+{
+"pos": [
+85.12,
+25.60
+],
+"id": "Patna"
+},
+{
+"pos": [
+85.97,
+23.78
+],
+"id": "Bokaro"
+},
+{
+"pos": [
+85.35,
+23.98
+],
+"id": "Hazaribagh"
+},
+{
+"pos": [
+84.98,
+24.70
+],
+"id": "Gaya"
+},
+{
+"pos": [
+88.37,
+22.57
+],
+"id": "Kolkata"
+},
+{
+"pos": [
+80.83,
+24.58
+],
+"id": "Satna"
+},
+{
+"pos": [
+86.45,
+23.80
+],
+"id": "Dhanbad"
+},
+{
+"pos": [
+86.98,
+23.68
+],
+"id": "Asansol"
+},
+{
+"pos": [
+81.30,
+24.53
+],
+"id": "Rewa"
+},
+{
+"pos": [
+78.58,
+25.43
+],
+"id": "Jhansi"
+},
+{
+"pos": [
+76.68,
+15.20
+],
+"id": "Torangallu"
+},
+{
+"pos": [
+76.93,
+15.15
+],
+"id": "Bellary"
+},
+{
+"pos": [
+73.83,
+15.48
+],
+"id": "Goa"
+},
+{
+"pos": [
+75.17,
+15.35
+],
+"id": "Hubli"
+},
+{
+"pos": [
+75.92,
+17.68
+],
+"id": "Solapur"
+},
+{
+"pos": [
+74.50,
+15.87
+],
+"id": "Belgaum"
+},
+{
+"pos": [
+77.37,
+16.20
+],
+"id": "Raichur"
+},
+{
+"pos": [
+76.83,
+17.33
+],
+"id": "Gulbarga"
+},
+{
+"pos": [
+76.40,
+14.23
+],
+"id": "Chitradurg"
+},
+{
+"pos": [
+73.83,
+15.48
+],
+"id": "Panjim"
+},
+{
+"pos": [
+85.33,
+23.35
+],
+"id": "Ranchi"
+},
+{
+"pos": [
+86.18,
+22.80
+],
+"id": "Jamshedpur"
+},
+{
+"pos": [
+76.97,
+11.00
+],
+"id": "Coimbatore"
+},
+{
+"pos": [
+76.22,
+10.52
+],
+"id": "Thirussur"
+},
+{
+"pos": [
+84.88,
+22.20
+],
+"id": "Rourkela"
+},
+{
+"pos": [
+87.33,
+22.33
+],
+"id": "Kharagpur"
+},
+{
+"pos": [
+75.36,
+11.87
+],
+"id": "Cannonore"
+},
+{
+"pos": [
+74.88,
+12.87
+],
+"id": "Mangalore"
+},
+{
+"pos": [
+76.65,
+10.78
+],
+"id": "Palghat"
+},
+{
+"pos": [
+75.77,
+11.25
+],
+"id": "Kozhikode"
+},
+{
+"pos": [
+76.57,
+28.90
+],
+"id": "Rohtak"
+},
+{
+"pos": [
+77.03,
+28.47
+],
+"id": "Gurgaon"
+},
+{
+"pos": [
+74.95,
+30.20
+],
+"id": "Bhatinda"
+},
+{
+"pos": [
+74.90,
+30.58
+],
+"id": "Kot kapura"
+},
+{
+"pos": [
+77.33,
+28.58
+],
+"id": "Noida"
+},
+{
+"pos": [
+77.70,
+28.98
+],
+"id": "Meerut"
+},
+{
+"pos": [
+77.22,
+28.64
+],
+"id": "Delhi"
+},
+{
+"pos": [
+77.02,
+28.98
+],
+"id": "Sonipat"
+},
+{
+"pos": [
+78.78,
+28.83
+],
+"id": "Moradabad"
+},
+{
+"pos": [
+79.42,
+28.35
+],
+"id": "Bareilly"
+},
+{
+"pos": [
+80.28,
+13.09
+],
+"id": "Chennai"
+},
+{
+"pos": [
+79.72,
+12.83
+],
+"id": "Kanchipuram"
+},
+{
+"pos": [
+77.60,
+12.98
+],
+"id": "Bangalore"
+},
+{
+"pos": [
+78.13,
+13.13
+],
+"id": "Kolar"
+},
+{
+"pos": [
+76.10,
+13.00
+],
+"id": "Hassan"
+},
+{
+"pos": [
+76.65,
+12.31
+],
+"id": "Mysore"
+},
+{
+"pos": [
+80.05,
+15.50
+],
+"id": "Ongole"
+},
+{
+"pos": [
+80.62,
+16.52
+],
+"id": "Vijayavada"
+},
+{
+"pos": [
+79.42,
+13.65
+],
+"id": "Tirupati"
+},
+{
+"pos": [
+79.97,
+14.43
+],
+"id": "Nellore"
+},
+{
+"pos": [
+81.63,
+21.23
+],
+"id": "Raipur"
+},
+{
+"pos": [
+79.65,
+21.17
+],
+"id": "Bhandara"
+},
+{
+"pos": [
+79.10,
+21.15
+],
+"id": "Nagpur"
+},
+{
+"pos": [
+78.62,
+20.75
+],
+"id": "Wardha"
+},
+{
+"pos": [
+77.75,
+20.93
+],
+"id": "Amravati"
+},
+{
+"pos": [
+76.18,
+20.53
+],
+"id": "Buldhana"
+},
+{
+"pos": [
+77.00,
+20.73
+],
+"id": "Akola"
+},
+{
+"pos": [
+76.33,
+21.83
+],
+"id": "Khandwa"
+},
+{
+"pos": [
+85.83,
+20.23
+],
+"id": "Bhubaneshwar"
+},
+{
+"pos": [
+85.60,
+20.67
+],
+"id": "Dhenkanal"
+},
+{
+"pos": [
+79.95,
+23.17
+],
+"id": "Jabalpur"
+},
+{
+"pos": [
+79.45,
+23.83
+],
+"id": "Damoh"
+},
+{
+"pos": [
+78.72,
+23.83
+],
+"id": "Sagar"
+},
+{
+"pos": [
+75.77,
+11.25
+],
+"id": "Callicut"
+},
+{
+"pos": [
+77.33,
+19.15
+],
+"id": "Nanded"
+},
+{
+"pos": [
+74.73,
+19.08
+],
+"id": "Ahmednagar"
+},
+{
+"pos": [
+73.86,
+18.52
+],
+"id": "Pune"
+},
+{
+"pos": [
+73.98,
+17.68
+],
+"id": "Satara"
+},
+{
+"pos": [
+83.30,
+17.70
+],
+"id": "Visakhapatnam"
+},
+{
+"pos": [
+79.30,
+19.95
+],
+"id": "Chandrapur"
+},
+{
+"pos": [
+78.47,
+17.38
+],
+"id": "Hyderabad"
+},
+{
+"pos": [
+78.09,
+17.63
+],
+"id": "Sangareddy"
+},
+{
+"pos": [
+76.79,
+30.73
+],
+"id": "Chandigarh"
+},
+{
+"pos": [
+74.22,
+16.70
+],
+"id": "Kolhapur"
+},
+{
+"pos": [
+74.56,
+16.85
+],
+"id": "Sangli"
+},
+{
+"pos": [
+76.78,
+30.38
+],
+"id": "Ambala"
+},
+{
+"pos": [
+75.30,
+22.60
+],
+"id": "Dhar"
+},
+{
+"pos": [
+75.77,
+23.18
+],
+"id": "Ujjain"
+},
+{
+"pos": [
+72.68,
+23.22
+],
+"id": "Gandhinagar"
+},
+{
+"pos": [
+72.95,
+23.60
+],
+"id": "Himmatnagar"
+},
+{
+"pos": [
+72.62,
+23.03
+],
+"id": "Ahmedabad"
+},
+{
+"pos": [
+72.93,
+22.57
+],
+"id": "Anand"
+},
+{
+"pos": [
+77.40,
+23.27
+],
+"id": "Bhopal"
+},
+{
+"pos": [
+75.07,
+23.32
+],
+"id": "Ratlam"
+},
+{
+"pos": [
+75.83,
+22.72
+],
+"id": "Indore"
+},
+{
+"pos": [
+77.82,
+23.53
+],
+"id": "Vidisha"
+},
+{
+"pos": [
+75.33,
+19.88
+],
+"id": "Aurangabad"
+},
+{
+"pos": [
+75.57,
+21.02
+],
+"id": "Jalgaon"
+},
+{
+"pos": [
+73.80,
+19.98
+],
+"id": "Nasik"
+},
+{
+"pos": [
+74.78,
+20.90
+],
+"id": "Dhulia"
+},
+{
+"pos": [
+72.93,
+20.63
+],
+"id": "Valsad"
+},
+{
+"pos": [
+72.85,
+19.01
+],
+"id": "Mumbai"
+},
+{
+"pos": [
+72.97,
+21.70
+],
+"id": "Bharuch"
+},
+{
+"pos": [
+72.83,
+21.17
+],
+"id": "Surat"
+},
+{
+"pos": [
+73.63,
+22.75
+],
+"id": "Godhra"
+},
+{
+"pos": [
+73.20,
+22.30
+],
+"id": "Baroda"
+},
+{
+"pos": [
+76.98,
+29.68
+],
+"id": "Karnal"
+},
+{
+"pos": [
+74.93,
+30.85
+],
+"id": "Talwandi Bahi"
+},
+{
+"pos": [
+76.60,
+8.88
+],
+"id": "Kollam"
+},
+{
+"pos": [
+76.28,
+9.98
+],
+"id": "Ernakulam"
+},
+{
+"pos": [
+76.57,
+9.38
+],
+"id": "Thiruvalla"
+},
+{
+"pos": [
+76.52,
+9.58
+],
+"id": "Kottayem"
+},
+{
+"pos": [
+77.70,
+8.73
+],
+"id": "Tirunelveli"
+},
+{
+"pos": [
+78.12,
+8.48
+],
+"id": "Tiruchendur"
+},
+{
+"pos": [
+77.57,
+8.08
+],
+"id": "Kanyakumari"
+},
+{
+"pos": [
+76.92,
+8.48
+],
+"id": "Trivandrum"
+},
+{
+"pos": [
+76.32,
+9.48
+],
+"id": "Allepey"
+},
+{
+"pos": [
+78.18,
+26.22
+],
+"id": "Gwalior"
+},
+{
+"pos": [
+76.72,
+24.00
+],
+"id": "Rajgarh"
+},
+{
+"pos": [
+74.63,
+26.45
+],
+"id": "Ajmer"
+},
+{
+"pos": [
+78.02,
+27.18
+],
+"id": "Agra"
+},
+{
+"pos": [
+77.68,
+27.50
+],
+"id": "Mathura"
+},
+{
+"pos": [
+77.43,
+28.67
+],
+"id": "Ghaziabad"
+},
+{
+"pos": [
+75.83,
+25.18
+],
+"id": "Kota"
+},
+{
+"pos": [
+74.63,
+25.35
+],
+"id": "Bhilwara"
+},
+{
+"pos": [
+75.78,
+26.17
+],
+"id": "Tonk"
+},
+{
+"pos": [
+75.82,
+26.92
+],
+"id": "Jaipur"
+},
+{
+"pos": [
+77.82,
+9.45
+],
+"id": "Sivakasi"
+},
+{
+"pos": [
+78.70,
+10.80
+],
+"id": "Trichy"
+},
+{
+"pos": [
+77.35,
+11.10
+],
+"id": "Tirupur"
+},
+{
+"pos": [
+77.73,
+11.35
+],
+"id": "Erode"
+},
+{
+"pos": [
+78.17,
+11.65
+],
+"id": "Salem"
+},
+{
+"pos": [
+77.30,
+10.98
+],
+"id": "Palladam"
+},
+{
+"pos": [
+79.70,
+11.40
+],
+"id": "Chidambaram"
+},
+{
+"pos": [
+79.83,
+11.93
+],
+"id": "Pondicherry"
+},
+{
+"pos": [
+75.65,
+32.28
+],
+"id": "Pathankot"
+},
+{
+"pos": [
+75.92,
+31.53
+],
+"id": "Hoshiarpur"
+},
+{
+"pos": [
+74.87,
+31.63
+],
+"id": "Amritsar"
+},
+{
+"pos": [
+75.58,
+31.33
+],
+"id": "Jalandhar"
+},
+{
+"pos": [
+75.85,
+30.90
+],
+"id": "Ludhiana"
+},
+{
+"pos": [
+76.40,
+30.33
+],
+"id": "Patiala"
+},
+{
+"pos": [
+78.83,
+9.38
+],
+"id": "Ramanathapuram"
+},
+{
+"pos": [
+78.12,
+9.93
+],
+"id": "Madural"
+}
+],
+"links": [
+{
+"dist": 54.68,
+"ecmp_fwd": {
+"uni": 9.38,
+"deg": 7.26
+},
+"ecmp_bwd": {
+"uni": 9.12,
+"deg": 7.07
+},
+"source": "Varanasi",
+"target": "Jaunpur"
+},
+{
+"dist": 214.61,
+"ecmp_fwd": {
+"uni": 10.05,
+"deg": 7.78
+},
+"ecmp_bwd": {
+"uni": 10.30,
+"deg": 7.98
+},
+"source": "Varanasi",
+"target": "Patna"
+},
+{
+"dist": 203.05,
+"ecmp_fwd": {
+"uni": 7.59,
+"deg": 6.81
+},
+"ecmp_bwd": {
+"uni": 7.17,
+"deg": 6.28
+},
+"source": "Udaipur",
+"target": "Ahmedabad"
+},
+{
+"dist": 128.52,
+"ecmp_fwd": {
+"uni": 7.87,
+"deg": 6.79
+},
+"ecmp_bwd": {
+"uni": 8.30,
+"deg": 7.32
+},
+"source": "Udaipur",
+"target": "Bhilwara"
+},
+{
+"dist": 125.47,
+"ecmp_fwd": {
+"uni": 13.25,
+"deg": 10.50
+},
+"ecmp_bwd": {
+"uni": 13.19,
+"deg": 10.46
+},
+"source": "Hadiagarh",
+"target": "Sitapur"
+},
+{
+"dist": 51.69,
+"ecmp_fwd": {
+"uni": 15.92,
+"deg": 12.72
+},
+"ecmp_bwd": {
+"uni": 15.98,
+"deg": 12.77
+},
+"source": "Hadiagarh",
+"target": "Lucknow"
+},
+{
+"dist": 151.91,
+"ecmp_fwd": {
+"uni": 11.81,
+"deg": 9.32
+},
+"ecmp_bwd": {
+"uni": 11.74,
+"deg": 9.28
+},
+"source": "Sitapur",
+"target": "Bareilly"
+},
+{
+"dist": 478.08,
+"ecmp_fwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"ecmp_bwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"source": "Dehradun",
+"target": "Lucknow"
+},
+{
+"dist": 215.55,
+"ecmp_fwd": {
+"uni": 11.33,
+"deg": 8.95
+},
+"ecmp_bwd": {
+"uni": 11.58,
+"deg": 9.15
+},
+"source": "Lucknow",
+"target": "Jaunpur"
+},
+{
+"dist": 70.65,
+"ecmp_fwd": {
+"uni": 21.35,
+"deg": 19.13
+},
+"ecmp_bwd": {
+"uni": 21.16,
+"deg": 18.97
+},
+"source": "Lucknow",
+"target": "Kanpur"
+},
+{
+"dist": 74.40,
+"ecmp_fwd": {
+"uni": 25.34,
+"deg": 22.46
+},
+"ecmp_bwd": {
+"uni": 25.15,
+"deg": 22.30
+},
+"source": "Kanpur",
+"target": "Fatehpur"
+},
+{
+"dist": 118.18,
+"ecmp_fwd": {
+"uni": 29.57,
+"deg": 25.95
+},
+"ecmp_bwd": {
+"uni": 29.38,
+"deg": 25.80
+},
+"source": "Fatehpur",
+"target": "Allahabad"
+},
+{
+"dist": 116.06,
+"ecmp_fwd": {
+"uni": 14.80,
+"deg": 13.49
+},
+"ecmp_bwd": {
+"uni": 11.76,
+"deg": 10.52
+},
+"source": "Allahabad",
+"target": "Rewa"
+},
+{
+"dist": 328.10,
+"ecmp_fwd": {
+"uni": 20.30,
+"deg": 18.80
+},
+"ecmp_bwd": {
+"uni": 23.16,
+"deg": 21.62
+},
+"source": "Allahabad",
+"target": "Jhansi"
+},
+{
+"dist": 101.00,
+"ecmp_fwd": {
+"uni": 12.47,
+"deg": 9.87
+},
+"ecmp_bwd": {
+"uni": 12.73,
+"deg": 10.06
+},
+"source": "Patna",
+"target": "Gaya"
+},
+{
+"dist": 49.23,
+"ecmp_fwd": {
+"uni": 5.42,
+"deg": 4.32
+},
+"ecmp_bwd": {
+"uni": 5.42,
+"deg": 4.32
+},
+"source": "Bokaro",
+"target": "Dhanbad"
+},
+{
+"dist": 104.11,
+"ecmp_fwd": {
+"uni": 5.42,
+"deg": 4.32
+},
+"ecmp_bwd": {
+"uni": 5.42,
+"deg": 4.32
+},
+"source": "Bokaro",
+"target": "Asansol"
+},
+{
+"dist": 66.54,
+"ecmp_fwd": {
+"uni": 15.68,
+"deg": 14.51
+},
+"ecmp_bwd": {
+"uni": 15.18,
+"deg": 14.03
+},
+"source": "Bokaro",
+"target": "Hazaribagh"
+},
+{
+"dist": 111.59,
+"ecmp_fwd": {
+"uni": 27.40,
+"deg": 27.63
+},
+"ecmp_bwd": {
+"uni": 27.91,
+"deg": 28.12
+},
+"source": "Bokaro",
+"target": "Jamshedpur"
+},
+{
+"dist": 87.95,
+"ecmp_fwd": {
+"uni": 15.64,
+"deg": 12.57
+},
+"ecmp_bwd": {
+"uni": 15.38,
+"deg": 12.37
+},
+"source": "Hazaribagh",
+"target": "Gaya"
+},
+{
+"dist": 70.46,
+"ecmp_fwd": {
+"uni": 8.04,
+"deg": 6.58
+},
+"ecmp_bwd": {
+"uni": 7.79,
+"deg": 6.29
+},
+"source": "Hazaribagh",
+"target": "Ranchi"
+},
+{
+"dist": 109.73,
+"ecmp_fwd": {
+"uni": 13.57,
+"deg": 11.20
+},
+"ecmp_bwd": {
+"uni": 13.32,
+"deg": 10.91
+},
+"source": "Kolkata",
+"target": "Kharagpur"
+},
+{
+"dist": 322.85,
+"ecmp_fwd": {
+"uni": 9.32,
+"deg": 7.58
+},
+"ecmp_bwd": {
+"uni": 9.57,
+"deg": 7.87
+},
+"source": "Kolkata",
+"target": "Ranchi"
+},
+{
+"dist": 47.54,
+"ecmp_fwd": {
+"uni": 15.20,
+"deg": 13.39
+},
+"ecmp_bwd": {
+"uni": 18.25,
+"deg": 16.36
+},
+"source": "Satna",
+"target": "Rewa"
+},
+{
+"dist": 245.71,
+"ecmp_fwd": {
+"uni": 33.17,
+"deg": 31.40
+},
+"ecmp_bwd": {
+"uni": 27.30,
+"deg": 26.12
+},
+"source": "Satna",
+"target": "Jhansi"
+},
+{
+"dist": 181.35,
+"ecmp_fwd": {
+"uni": 47.06,
+"deg": 44.94
+},
+"ecmp_bwd": {
+"uni": 49.88,
+"deg": 47.26
+},
+"source": "Satna",
+"target": "Jabalpur"
+},
+{
+"dist": 55.83,
+"ecmp_fwd": {
+"uni": 0.04,
+"deg": 0.02
+},
+"ecmp_bwd": {
+"uni": 0.04,
+"deg": 0.02
+},
+"source": "Dhanbad",
+"target": "Asansol"
+},
+{
+"dist": 96.77,
+"ecmp_fwd": {
+"uni": 30.44,
+"deg": 28.91
+},
+"ecmp_bwd": {
+"uni": 27.43,
+"deg": 26.44
+},
+"source": "Jhansi",
+"target": "Gwalior"
+},
+{
+"dist": 133.14,
+"ecmp_fwd": {
+"uni": 23.84,
+"deg": 23.50
+},
+"ecmp_bwd": {
+"uni": 22.78,
+"deg": 22.64
+},
+"source": "Torangallu",
+"target": "Raichur"
+},
+{
+"dist": 266.51,
+"ecmp_fwd": {
+"uni": 40.94,
+"deg": 42.91
+},
+"ecmp_bwd": {
+"uni": 43.63,
+"deg": 45.19
+},
+"source": "Torangallu",
+"target": "Bangalore"
+},
+{
+"dist": 27.41,
+"ecmp_fwd": {
+"uni": 25.71,
+"deg": 27.59
+},
+"ecmp_bwd": {
+"uni": 24.07,
+"deg": 26.16
+},
+"source": "Torangallu",
+"target": "Bellary"
+},
+{
+"dist": 272.70,
+"ecmp_fwd": {
+"uni": 26.41,
+"deg": 28.25
+},
+"ecmp_bwd": {
+"uni": 24.77,
+"deg": 26.82
+},
+"source": "Bellary",
+"target": "Belgaum"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 12.01,
+"deg": 11.20
+},
+"ecmp_bwd": {
+"uni": 12.20,
+"deg": 11.35
+},
+"source": "Goa",
+"target": "Panjim"
+},
+{
+"dist": 312.29,
+"ecmp_fwd": {
+"uni": 22.03,
+"deg": 19.55
+},
+"ecmp_bwd": {
+"uni": 21.66,
+"deg": 19.24
+},
+"source": "Goa",
+"target": "Mangalore"
+},
+{
+"dist": 143.73,
+"ecmp_fwd": {
+"uni": 12.57,
+"deg": 11.58
+},
+"ecmp_bwd": {
+"uni": 12.76,
+"deg": 11.74
+},
+"source": "Goa",
+"target": "Hubli"
+},
+{
+"dist": 91.67,
+"ecmp_fwd": {
+"uni": 21.11,
+"deg": 18.63
+},
+"ecmp_bwd": {
+"uni": 21.29,
+"deg": 18.78
+},
+"source": "Hubli",
+"target": "Belgaum"
+},
+{
+"dist": 280.01,
+"ecmp_fwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"ecmp_bwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"source": "Hubli",
+"target": "Hassan"
+},
+{
+"dist": 252.16,
+"ecmp_fwd": {
+"uni": 55.78,
+"deg": 57.29
+},
+"ecmp_bwd": {
+"uni": 56.33,
+"deg": 57.71
+},
+"source": "Solapur",
+"target": "Belgaum"
+},
+{
+"dist": 104.74,
+"ecmp_fwd": {
+"uni": 13.51,
+"deg": 13.88
+},
+"ecmp_bwd": {
+"uni": 13.52,
+"deg": 13.89
+},
+"source": "Solapur",
+"target": "Gulbarga"
+},
+{
+"dist": 199.62,
+"ecmp_fwd": {
+"uni": 54.45,
+"deg": 56.04
+},
+"ecmp_bwd": {
+"uni": 53.90,
+"deg": 55.61
+},
+"source": "Solapur",
+"target": "Ahmednagar"
+},
+{
+"dist": 97.50,
+"ecmp_fwd": {
+"uni": 10.23,
+"deg": 10.78
+},
+"ecmp_bwd": {
+"uni": 9.50,
+"deg": 10.08
+},
+"source": "Belgaum",
+"target": "Kolhapur"
+},
+{
+"dist": 83.16,
+"ecmp_fwd": {
+"uni": 16.47,
+"deg": 14.87
+},
+"ecmp_bwd": {
+"uni": 16.28,
+"deg": 14.72
+},
+"source": "Belgaum",
+"target": "Panjim"
+},
+{
+"dist": 176.08,
+"ecmp_fwd": {
+"uni": 25.99,
+"deg": 25.24
+},
+"ecmp_bwd": {
+"uni": 24.93,
+"deg": 24.38
+},
+"source": "Raichur",
+"target": "Hyderabad"
+},
+{
+"dist": 174.29,
+"ecmp_fwd": {
+"uni": 13.39,
+"deg": 13.67
+},
+"ecmp_bwd": {
+"uni": 13.40,
+"deg": 13.68
+},
+"source": "Gulbarga",
+"target": "Hyderabad"
+},
+{
+"dist": 223.61,
+"ecmp_fwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"ecmp_bwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"source": "Chitradurg",
+"target": "Mangalore"
+},
+{
+"dist": 149.33,
+"ecmp_fwd": {
+"uni": 31.55,
+"deg": 31.06
+},
+"ecmp_bwd": {
+"uni": 32.06,
+"deg": 31.54
+},
+"source": "Jamshedpur",
+"target": "Rourkela"
+},
+{
+"dist": 195.90,
+"ecmp_fwd": {
+"uni": 25.21,
+"deg": 27.53
+},
+"ecmp_bwd": {
+"uni": 24.09,
+"deg": 26.24
+},
+"source": "Coimbatore",
+"target": "Sivakasi"
+},
+{
+"dist": 190.44,
+"ecmp_fwd": {
+"uni": 3.46,
+"deg": 3.61
+},
+"ecmp_bwd": {
+"uni": 3.46,
+"deg": 3.61
+},
+"source": "Coimbatore",
+"target": "Trichy"
+},
+{
+"dist": 43.30,
+"ecmp_fwd": {
+"uni": 53.51,
+"deg": 55.23
+},
+"ecmp_bwd": {
+"uni": 54.45,
+"deg": 56.37
+},
+"source": "Coimbatore",
+"target": "Tirupur"
+},
+{
+"dist": 183.08,
+"ecmp_fwd": {
+"uni": 28.77,
+"deg": 25.39
+},
+"ecmp_bwd": {
+"uni": 28.97,
+"deg": 25.54
+},
+"source": "Coimbatore",
+"target": "Allepey"
+},
+{
+"dist": 115.46,
+"ecmp_fwd": {
+"uni": 7.65,
+"deg": 6.24
+},
+"ecmp_bwd": {
+"uni": 7.46,
+"deg": 6.09
+},
+"source": "Thirussur",
+"target": "Allepey"
+},
+{
+"dist": 55.89,
+"ecmp_fwd": {
+"uni": 7.17,
+"deg": 5.93
+},
+"ecmp_bwd": {
+"uni": 7.36,
+"deg": 6.08
+},
+"source": "Thirussur",
+"target": "Palghat"
+},
+{
+"dist": 352.61,
+"ecmp_fwd": {
+"uni": 36.01,
+"deg": 34.69
+},
+"ecmp_bwd": {
+"uni": 36.52,
+"deg": 35.17
+},
+"source": "Rourkela",
+"target": "Raipur"
+},
+{
+"dist": 280.57,
+"ecmp_fwd": {
+"uni": 17.72,
+"deg": 14.62
+},
+"ecmp_bwd": {
+"uni": 17.47,
+"deg": 14.34
+},
+"source": "Kharagpur",
+"target": "Bhubaneshwar"
+},
+{
+"dist": 122.50,
+"ecmp_fwd": {
+"uni": 17.49,
+"deg": 14.25
+},
+"ecmp_bwd": {
+"uni": 17.69,
+"deg": 14.40
+},
+"source": "Cannonore",
+"target": "Mangalore"
+},
+{
+"dist": 81.88,
+"ecmp_fwd": {
+"uni": 13.65,
+"deg": 11.17
+},
+"ecmp_bwd": {
+"uni": 13.46,
+"deg": 11.02
+},
+"source": "Cannonore",
+"target": "Kozhikode"
+},
+{
+"dist": 203.88,
+"ecmp_fwd": {
+"uni": 10.73,
+"deg": 9.33
+},
+"ecmp_bwd": {
+"uni": 10.55,
+"deg": 9.17
+},
+"source": "Mangalore",
+"target": "Callicut"
+},
+{
+"dist": 109.52,
+"ecmp_fwd": {
+"uni": 9.50,
+"deg": 7.83
+},
+"ecmp_bwd": {
+"uni": 9.69,
+"deg": 7.99
+},
+"source": "Palghat",
+"target": "Kozhikode"
+},
+{
+"dist": 66.31,
+"ecmp_fwd": {
+"uni": 25.08,
+"deg": 23.09
+},
+"ecmp_bwd": {
+"uni": 25.08,
+"deg": 23.09
+},
+"source": "Rohtak",
+"target": "Gurgaon"
+},
+{
+"dist": 159.50,
+"ecmp_fwd": {
+"uni": 45.44,
+"deg": 40.60
+},
+"ecmp_bwd": {
+"uni": 45.44,
+"deg": 40.60
+},
+"source": "Rohtak",
+"target": "Patiala"
+},
+{
+"dist": 44.77,
+"ecmp_fwd": {
+"uni": 25.16,
+"deg": 23.30
+},
+"ecmp_bwd": {
+"uni": 25.16,
+"deg": 23.30
+},
+"source": "Rohtak",
+"target": "Sonipat"
+},
+{
+"dist": 26.50,
+"ecmp_fwd": {
+"uni": 29.58,
+"deg": 26.74
+},
+"ecmp_bwd": {
+"uni": 29.58,
+"deg": 26.74
+},
+"source": "Gurgaon",
+"target": "Delhi"
+},
+{
+"dist": 72.31,
+"ecmp_fwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"ecmp_bwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"source": "Bhatinda",
+"target": "Talwandi Bahi"
+},
+{
+"dist": 116.80,
+"ecmp_fwd": {
+"uni": 5.50,
+"deg": 4.37
+},
+"ecmp_bwd": {
+"uni": 5.50,
+"deg": 4.37
+},
+"source": "Kot kapura",
+"target": "Amritsar"
+},
+{
+"dist": 29.83,
+"ecmp_fwd": {
+"uni": 10.73,
+"deg": 8.56
+},
+"ecmp_bwd": {
+"uni": 10.73,
+"deg": 8.56
+},
+"source": "Kot kapura",
+"target": "Talwandi Bahi"
+},
+{
+"dist": 12.03,
+"ecmp_fwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"ecmp_bwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"source": "Noida",
+"target": "Delhi"
+},
+{
+"dist": 106.79,
+"ecmp_fwd": {
+"uni": 16.08,
+"deg": 12.98
+},
+"ecmp_bwd": {
+"uni": 16.15,
+"deg": 13.02
+},
+"source": "Meerut",
+"target": "Moradabad"
+},
+{
+"dist": 43.77,
+"ecmp_fwd": {
+"uni": 20.22,
+"deg": 16.40
+},
+"ecmp_bwd": {
+"uni": 20.16,
+"deg": 16.36
+},
+"source": "Meerut",
+"target": "Ghaziabad"
+},
+{
+"dist": 236.12,
+"ecmp_fwd": {
+"uni": 65.30,
+"deg": 62.47
+},
+"ecmp_bwd": {
+"uni": 64.72,
+"deg": 62.17
+},
+"source": "Delhi",
+"target": "Jaipur"
+},
+{
+"dist": 43.64,
+"ecmp_fwd": {
+"uni": 44.35,
+"deg": 40.59
+},
+"ecmp_bwd": {
+"uni": 44.35,
+"deg": 40.59
+},
+"source": "Delhi",
+"target": "Sonipat"
+},
+{
+"dist": 134.11,
+"ecmp_fwd": {
+"uni": 28.20,
+"deg": 26.49
+},
+"ecmp_bwd": {
+"uni": 28.71,
+"deg": 26.74
+},
+"source": "Delhi",
+"target": "Mathura"
+},
+{
+"dist": 20.68,
+"ecmp_fwd": {
+"uni": 24.54,
+"deg": 19.98
+},
+"ecmp_bwd": {
+"uni": 24.60,
+"deg": 20.02
+},
+"source": "Delhi",
+"target": "Ghaziabad"
+},
+{
+"dist": 77.93,
+"ecmp_fwd": {
+"uni": 15.07,
+"deg": 12.12
+},
+"ecmp_bwd": {
+"uni": 15.07,
+"deg": 12.12
+},
+"source": "Sonipat",
+"target": "Karnal"
+},
+{
+"dist": 81.95,
+"ecmp_fwd": {
+"uni": 12.24,
+"deg": 9.77
+},
+"ecmp_bwd": {
+"uni": 12.30,
+"deg": 9.82
+},
+"source": "Moradabad",
+"target": "Bareilly"
+},
+{
+"dist": 112.28,
+"ecmp_fwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"ecmp_bwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"source": "Chennai",
+"target": "Tirupati"
+},
+{
+"dist": 101.23,
+"ecmp_fwd": {
+"uni": 23.28,
+"deg": 23.16
+},
+"ecmp_bwd": {
+"uni": 24.50,
+"deg": 24.53
+},
+"source": "Kanchipuram",
+"target": "Pondicherry"
+},
+{
+"dist": 96.47,
+"ecmp_fwd": {
+"uni": 27.45,
+"deg": 26.87
+},
+"ecmp_bwd": {
+"uni": 26.23,
+"deg": 25.50
+},
+"source": "Kanchipuram",
+"target": "Tirupati"
+},
+{
+"dist": 181.43,
+"ecmp_fwd": {
+"uni": 62.44,
+"deg": 62.79
+},
+"ecmp_bwd": {
+"uni": 61.51,
+"deg": 61.65
+},
+"source": "Bangalore",
+"target": "Erode"
+},
+{
+"dist": 159.71,
+"ecmp_fwd": {
+"uni": 9.17,
+"deg": 8.13
+},
+"ecmp_bwd": {
+"uni": 9.07,
+"deg": 8.05
+},
+"source": "Bangalore",
+"target": "Salem"
+},
+{
+"dist": 60.03,
+"ecmp_fwd": {
+"uni": 43.85,
+"deg": 42.91
+},
+"ecmp_bwd": {
+"uni": 47.40,
+"deg": 46.26
+},
+"source": "Bangalore",
+"target": "Kolar"
+},
+{
+"dist": 127.46,
+"ecmp_fwd": {
+"uni": 15.34,
+"deg": 13.01
+},
+"ecmp_bwd": {
+"uni": 15.51,
+"deg": 13.16
+},
+"source": "Bangalore",
+"target": "Mysore"
+},
+{
+"dist": 150.28,
+"ecmp_fwd": {
+"uni": 44.54,
+"deg": 43.40
+},
+"ecmp_bwd": {
+"uni": 48.09,
+"deg": 46.75
+},
+"source": "Kolar",
+"target": "Tirupati"
+},
+{
+"dist": 151.90,
+"ecmp_fwd": {
+"uni": 10.69,
+"deg": 9.22
+},
+"ecmp_bwd": {
+"uni": 10.86,
+"deg": 9.38
+},
+"source": "Mysore",
+"target": "Callicut"
+},
+{
+"dist": 128.29,
+"ecmp_fwd": {
+"uni": 16.96,
+"deg": 16.52
+},
+"ecmp_bwd": {
+"uni": 16.50,
+"deg": 16.07
+},
+"source": "Ongole",
+"target": "Vijayavada"
+},
+{
+"dist": 118.98,
+"ecmp_fwd": {
+"uni": 79.51,
+"deg": 77.17
+},
+"ecmp_bwd": {
+"uni": 77.18,
+"deg": 75.20
+},
+"source": "Ongole",
+"target": "Nellore"
+},
+{
+"dist": 424.10,
+"ecmp_fwd": {
+"uni": 87.33,
+"deg": 85.58
+},
+"ecmp_bwd": {
+"uni": 90.13,
+"deg": 88.01
+},
+"source": "Ongole",
+"target": "Visakhapatnam"
+},
+{
+"dist": 247.12,
+"ecmp_fwd": {
+"uni": 16.23,
+"deg": 15.99
+},
+"ecmp_bwd": {
+"uni": 15.77,
+"deg": 15.54
+},
+"source": "Vijayavada",
+"target": "Hyderabad"
+},
+{
+"dist": 105.42,
+"ecmp_fwd": {
+"uni": 74.75,
+"deg": 73.22
+},
+"ecmp_bwd": {
+"uni": 77.07,
+"deg": 75.20
+},
+"source": "Tirupati",
+"target": "Nellore"
+},
+{
+"dist": 205.80,
+"ecmp_fwd": {
+"uni": 20.33,
+"deg": 19.32
+},
+"ecmp_bwd": {
+"uni": 21.15,
+"deg": 20.10
+},
+"source": "Raipur",
+"target": "Bhandara"
+},
+{
+"dist": 416.81,
+"ecmp_fwd": {
+"uni": 87.48,
+"deg": 85.99
+},
+"ecmp_bwd": {
+"uni": 84.94,
+"deg": 83.85
+},
+"source": "Raipur",
+"target": "Dhenkanal"
+},
+{
+"dist": 276.22,
+"ecmp_fwd": {
+"uni": 97.78,
+"deg": 98.16
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Raipur",
+"target": "Jabalpur"
+},
+{
+"dist": 57.08,
+"ecmp_fwd": {
+"uni": 19.44,
+"deg": 18.68
+},
+"ecmp_bwd": {
+"uni": 20.27,
+"deg": 19.46
+},
+"source": "Bhandara",
+"target": "Nagpur"
+},
+{
+"dist": 142.20,
+"ecmp_fwd": {
+"uni": 9.17,
+"deg": 8.45
+},
+"ecmp_bwd": {
+"uni": 9.56,
+"deg": 8.78
+},
+"source": "Nagpur",
+"target": "Amravati"
+},
+{
+"dist": 67.08,
+"ecmp_fwd": {
+"uni": 15.02,
+"deg": 13.91
+},
+"ecmp_bwd": {
+"uni": 15.45,
+"deg": 14.36
+},
+"source": "Nagpur",
+"target": "Wardha"
+},
+{
+"dist": 114.00,
+"ecmp_fwd": {
+"uni": 13.94,
+"deg": 13.07
+},
+"ecmp_bwd": {
+"uni": 14.38,
+"deg": 13.53
+},
+"source": "Wardha",
+"target": "Chandrapur"
+},
+{
+"dist": 168.93,
+"ecmp_fwd": {
+"uni": 8.88,
+"deg": 8.30
+},
+"ecmp_bwd": {
+"uni": 9.27,
+"deg": 8.63
+},
+"source": "Amravati",
+"target": "Buldhana"
+},
+{
+"dist": 83.68,
+"ecmp_fwd": {
+"uni": 11.22,
+"deg": 10.25
+},
+"ecmp_bwd": {
+"uni": 11.61,
+"deg": 10.58
+},
+"source": "Buldhana",
+"target": "Jalgaon"
+},
+{
+"dist": 152.26,
+"ecmp_fwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"ecmp_bwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"source": "Akola",
+"target": "Jalgaon"
+},
+{
+"dist": 120.63,
+"ecmp_fwd": {
+"uni": 73.33,
+"deg": 78.01
+},
+"ecmp_bwd": {
+"uni": 76.79,
+"deg": 81.32
+},
+"source": "Khandwa",
+"target": "Jalgaon"
+},
+{
+"dist": 136.35,
+"ecmp_fwd": {
+"uni": 77.06,
+"deg": 81.52
+},
+"ecmp_bwd": {
+"uni": 73.60,
+"deg": 78.20
+},
+"source": "Khandwa",
+"target": "Dhar"
+},
+{
+"dist": 53.99,
+"ecmp_fwd": {
+"uni": 22.26,
+"deg": 18.32
+},
+"ecmp_bwd": {
+"uni": 22.01,
+"deg": 18.04
+},
+"source": "Bhubaneshwar",
+"target": "Dhenkanal"
+},
+{
+"dist": 408.95,
+"ecmp_fwd": {
+"uni": 90.87,
+"deg": 88.55
+},
+"ecmp_bwd": {
+"uni": 88.08,
+"deg": 86.13
+},
+"source": "Dhenkanal",
+"target": "Visakhapatnam"
+},
+{
+"dist": 89.97,
+"ecmp_fwd": {
+"uni": 6.43,
+"deg": 5.99
+},
+"ecmp_bwd": {
+"uni": 6.41,
+"deg": 5.98
+},
+"source": "Jabalpur",
+"target": "Damoh"
+},
+{
+"dist": 424.60,
+"ecmp_fwd": {
+"uni": 66.66,
+"deg": 70.96
+},
+"ecmp_bwd": {
+"uni": 71.72,
+"deg": 75.12
+},
+"source": "Jabalpur",
+"target": "Indore"
+},
+{
+"dist": 74.61,
+"ecmp_fwd": {
+"uni": 3.46,
+"deg": 3.57
+},
+"ecmp_bwd": {
+"uni": 3.44,
+"deg": 3.56
+},
+"source": "Damoh",
+"target": "Sagar"
+},
+{
+"dist": 204.19,
+"ecmp_fwd": {
+"uni": 4.34,
+"deg": 4.32
+},
+"ecmp_bwd": {
+"uni": 4.13,
+"deg": 4.21
+},
+"source": "Sagar",
+"target": "Rajgarh"
+},
+{
+"dist": 97.56,
+"ecmp_fwd": {
+"uni": 1.36,
+"deg": 1.43
+},
+"ecmp_bwd": {
+"uni": 1.55,
+"deg": 1.53
+},
+"source": "Sagar",
+"target": "Vidisha"
+},
+{
+"dist": 224.98,
+"ecmp_fwd": {
+"uni": 20.80,
+"deg": 21.48
+},
+"ecmp_bwd": {
+"uni": 19.72,
+"deg": 20.64
+},
+"source": "Nanded",
+"target": "Aurangabad"
+},
+{
+"dist": 187.11,
+"ecmp_fwd": {
+"uni": 18.17,
+"deg": 19.30
+},
+"ecmp_bwd": {
+"uni": 19.25,
+"deg": 20.15
+},
+"source": "Nanded",
+"target": "Sangareddy"
+},
+{
+"dist": 108.98,
+"ecmp_fwd": {
+"uni": 56.94,
+"deg": 59.78
+},
+"ecmp_bwd": {
+"uni": 55.66,
+"deg": 58.65
+},
+"source": "Ahmednagar",
+"target": "Aurangabad"
+},
+{
+"dist": 139.97,
+"ecmp_fwd": {
+"uni": 5.26,
+"deg": 5.35
+},
+"ecmp_bwd": {
+"uni": 5.96,
+"deg": 6.03
+},
+"source": "Ahmednagar",
+"target": "Nasik"
+},
+{
+"dist": 111.70,
+"ecmp_fwd": {
+"uni": 11.99,
+"deg": 13.24
+},
+"ecmp_bwd": {
+"uni": 12.01,
+"deg": 13.24
+},
+"source": "Ahmednagar",
+"target": "Pune"
+},
+{
+"dist": 119.52,
+"ecmp_fwd": {
+"uni": 4.51,
+"deg": 4.63
+},
+"ecmp_bwd": {
+"uni": 3.81,
+"deg": 3.94
+},
+"source": "Pune",
+"target": "Mumbai"
+},
+{
+"dist": 93.99,
+"ecmp_fwd": {
+"uni": 9.68,
+"deg": 10.28
+},
+"ecmp_bwd": {
+"uni": 10.40,
+"deg": 10.98
+},
+"source": "Pune",
+"target": "Satara"
+},
+{
+"dist": 112.15,
+"ecmp_fwd": {
+"uni": 5.04,
+"deg": 5.83
+},
+"ecmp_bwd": {
+"uni": 5.74,
+"deg": 6.51
+},
+"source": "Satara",
+"target": "Kolhapur"
+},
+{
+"dist": 110.94,
+"ecmp_fwd": {
+"uni": 3.03,
+"deg": 2.45
+},
+"ecmp_bwd": {
+"uni": 3.06,
+"deg": 2.47
+},
+"source": "Satara",
+"target": "Sangli"
+},
+{
+"dist": 299.30,
+"ecmp_fwd": {
+"uni": 13.52,
+"deg": 12.76
+},
+"ecmp_bwd": {
+"uni": 13.96,
+"deg": 13.21
+},
+"source": "Chandrapur",
+"target": "Hyderabad"
+},
+{
+"dist": 49.47,
+"ecmp_fwd": {
+"uni": 19.55,
+"deg": 20.28
+},
+"ecmp_bwd": {
+"uni": 18.47,
+"deg": 19.44
+},
+"source": "Hyderabad",
+"target": "Sangareddy"
+},
+{
+"dist": 91.97,
+"ecmp_fwd": {
+"uni": 1.08,
+"deg": 0.76
+},
+"ecmp_bwd": {
+"uni": 1.08,
+"deg": 0.76
+},
+"source": "Chandigarh",
+"target": "Ludhiana"
+},
+{
+"dist": 39.61,
+"ecmp_fwd": {
+"uni": 5.69,
+"deg": 4.50
+},
+"ecmp_bwd": {
+"uni": 5.69,
+"deg": 4.50
+},
+"source": "Chandigarh",
+"target": "Ambala"
+},
+{
+"dist": 40.80,
+"ecmp_fwd": {
+"uni": 2.43,
+"deg": 1.89
+},
+"ecmp_bwd": {
+"uni": 2.40,
+"deg": 1.87
+},
+"source": "Kolhapur",
+"target": "Sangli"
+},
+{
+"dist": 79.72,
+"ecmp_fwd": {
+"uni": 10.38,
+"deg": 8.31
+},
+"ecmp_bwd": {
+"uni": 10.38,
+"deg": 8.31
+},
+"source": "Ambala",
+"target": "Karnal"
+},
+{
+"dist": 80.60,
+"ecmp_fwd": {
+"uni": 48.99,
+"deg": 50.22
+},
+"ecmp_bwd": {
+"uni": 45.06,
+"deg": 46.47
+},
+"source": "Dhar",
+"target": "Ujjain"
+},
+{
+"dist": 56.29,
+"ecmp_fwd": {
+"uni": 29.06,
+"deg": 32.35
+},
+"ecmp_bwd": {
+"uni": 29.53,
+"deg": 32.79
+},
+"source": "Dhar",
+"target": "Indore"
+},
+{
+"dist": 167.20,
+"ecmp_fwd": {
+"uni": 5.00,
+"deg": 4.71
+},
+"ecmp_bwd": {
+"uni": 4.14,
+"deg": 3.76
+},
+"source": "Ujjain",
+"target": "Bhopal"
+},
+{
+"dist": 73.06,
+"ecmp_fwd": {
+"uni": 75.15,
+"deg": 77.23
+},
+"ecmp_bwd": {
+"uni": 69.05,
+"deg": 70.98
+},
+"source": "Ujjain",
+"target": "Ratlam"
+},
+{
+"dist": 52.21,
+"ecmp_fwd": {
+"uni": 26.78,
+"deg": 28.41
+},
+"ecmp_bwd": {
+"uni": 29.80,
+"deg": 31.85
+},
+"source": "Ujjain",
+"target": "Indore"
+},
+{
+"dist": 50.58,
+"ecmp_fwd": {
+"uni": 2.75,
+"deg": 2.18
+},
+"ecmp_bwd": {
+"uni": 2.75,
+"deg": 2.18
+},
+"source": "Gandhinagar",
+"target": "Himmatnagar"
+},
+{
+"dist": 76.70,
+"ecmp_fwd": {
+"uni": 2.75,
+"deg": 2.18
+},
+"ecmp_bwd": {
+"uni": 2.75,
+"deg": 2.18
+},
+"source": "Gandhinagar",
+"target": "Anand"
+},
+{
+"dist": 71.64,
+"ecmp_fwd": {
+"uni": 8.09,
+"deg": 6.45
+},
+"ecmp_bwd": {
+"uni": 8.09,
+"deg": 6.45
+},
+"source": "Himmatnagar",
+"target": "Ahmedabad"
+},
+{
+"dist": 61.22,
+"ecmp_fwd": {
+"uni": 8.09,
+"deg": 6.45
+},
+"ecmp_bwd": {
+"uni": 8.09,
+"deg": 6.45
+},
+"source": "Ahmedabad",
+"target": "Anand"
+},
+{
+"dist": 252.49,
+"ecmp_fwd": {
+"uni": 20.59,
+"deg": 20.68
+},
+"ecmp_bwd": {
+"uni": 21.65,
+"deg": 21.83
+},
+"source": "Ahmedabad",
+"target": "Ratlam"
+},
+{
+"dist": 108.84,
+"ecmp_fwd": {
+"uni": 14.66,
+"deg": 13.69
+},
+"ecmp_bwd": {
+"uni": 13.17,
+"deg": 12.01
+},
+"source": "Ahmedabad",
+"target": "Godhra"
+},
+{
+"dist": 107.24,
+"ecmp_fwd": {
+"uni": 3.95,
+"deg": 3.79
+},
+"ecmp_bwd": {
+"uni": 3.09,
+"deg": 2.84
+},
+"source": "Bhopal",
+"target": "Rajgarh"
+},
+{
+"dist": 230.38,
+"ecmp_fwd": {
+"uni": 60.26,
+"deg": 60.75
+},
+"ecmp_bwd": {
+"uni": 55.22,
+"deg": 55.65
+},
+"source": "Ratlam",
+"target": "Bhilwara"
+},
+{
+"dist": 222.22,
+"ecmp_fwd": {
+"uni": 5.59,
+"deg": 4.78
+},
+"ecmp_bwd": {
+"uni": 5.40,
+"deg": 4.69
+},
+"source": "Indore",
+"target": "Vidisha"
+},
+{
+"dist": 168.73,
+"ecmp_fwd": {
+"uni": 33.74,
+"deg": 36.80
+},
+"ecmp_bwd": {
+"uni": 42.48,
+"deg": 44.93
+},
+"source": "Indore",
+"target": "Rajgarh"
+},
+{
+"dist": 128.38,
+"ecmp_fwd": {
+"uni": 76.67,
+"deg": 80.55
+},
+"ecmp_bwd": {
+"uni": 74.32,
+"deg": 78.59
+},
+"source": "Aurangabad",
+"target": "Jalgaon"
+},
+{
+"dist": 82.39,
+"ecmp_fwd": {
+"uni": 7.37,
+"deg": 7.43
+},
+"ecmp_bwd": {
+"uni": 7.67,
+"deg": 7.77
+},
+"source": "Jalgaon",
+"target": "Dhulia"
+},
+{
+"dist": 284.14,
+"ecmp_fwd": {
+"uni": 19.01,
+"deg": 18.14
+},
+"ecmp_bwd": {
+"uni": 20.21,
+"deg": 19.48
+},
+"source": "Jalgaon",
+"target": "Surat"
+},
+{
+"dist": 144.56,
+"ecmp_fwd": {
+"uni": 6.18,
+"deg": 6.63
+},
+"ecmp_bwd": {
+"uni": 5.89,
+"deg": 6.29
+},
+"source": "Nasik",
+"target": "Dhulia"
+},
+{
+"dist": 146.89,
+"ecmp_fwd": {
+"uni": 2.64,
+"deg": 2.93
+},
+"ecmp_bwd": {
+"uni": 3.64,
+"deg": 3.95
+},
+"source": "Nasik",
+"target": "Mumbai"
+},
+{
+"dist": 60.22,
+"ecmp_fwd": {
+"uni": 6.75,
+"deg": 6.43
+},
+"ecmp_bwd": {
+"uni": 7.04,
+"deg": 6.77
+},
+"source": "Valsad",
+"target": "Surat"
+},
+{
+"dist": 180.29,
+"ecmp_fwd": {
+"uni": 5.55,
+"deg": 5.63
+},
+"ecmp_bwd": {
+"uni": 5.26,
+"deg": 5.30
+},
+"source": "Valsad",
+"target": "Mumbai"
+},
+{
+"dist": 60.91,
+"ecmp_fwd": {
+"uni": 16.58,
+"deg": 15.38
+},
+"ecmp_bwd": {
+"uni": 15.09,
+"deg": 13.70
+},
+"source": "Bharuch",
+"target": "Surat"
+},
+{
+"dist": 70.94,
+"ecmp_fwd": {
+"uni": 12.48,
+"deg": 11.53
+},
+"ecmp_bwd": {
+"uni": 13.96,
+"deg": 13.21
+},
+"source": "Bharuch",
+"target": "Baroda"
+},
+{
+"dist": 66.99,
+"ecmp_fwd": {
+"uni": 14.00,
+"deg": 13.22
+},
+"ecmp_bwd": {
+"uni": 12.51,
+"deg": 11.54
+},
+"source": "Godhra",
+"target": "Baroda"
+},
+{
+"dist": 87.69,
+"ecmp_fwd": {
+"uni": 21.11,
+"deg": 16.91
+},
+"ecmp_bwd": {
+"uni": 21.11,
+"deg": 16.91
+},
+"source": "Talwandi Bahi",
+"target": "Ludhiana"
+},
+{
+"dist": 56.50,
+"ecmp_fwd": {
+"uni": 1.17,
+"deg": 0.93
+},
+"ecmp_bwd": {
+"uni": 1.17,
+"deg": 0.93
+},
+"source": "Kollam",
+"target": "Trivandrum"
+},
+{
+"dist": 127.19,
+"ecmp_fwd": {
+"uni": 5.90,
+"deg": 4.67
+},
+"ecmp_bwd": {
+"uni": 5.90,
+"deg": 4.67
+},
+"source": "Kollam",
+"target": "Ernakulam"
+},
+{
+"dist": 51.32,
+"ecmp_fwd": {
+"uni": 15.90,
+"deg": 12.63
+},
+"ecmp_bwd": {
+"uni": 15.90,
+"deg": 12.63
+},
+"source": "Ernakulam",
+"target": "Kottayem"
+},
+{
+"dist": 73.61,
+"ecmp_fwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"ecmp_bwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"source": "Ernakulam",
+"target": "Thiruvalla"
+},
+{
+"dist": 24.60,
+"ecmp_fwd": {
+"uni": 20.93,
+"deg": 16.68
+},
+"ecmp_bwd": {
+"uni": 20.93,
+"deg": 16.68
+},
+"source": "Kottayem",
+"target": "Allepey"
+},
+{
+"dist": 141.09,
+"ecmp_fwd": {
+"uni": 0.23,
+"deg": 0.18
+},
+"ecmp_bwd": {
+"uni": 0.23,
+"deg": 0.18
+},
+"source": "Tirunelveli",
+"target": "Madural"
+},
+{
+"dist": 80.74,
+"ecmp_fwd": {
+"uni": 20.47,
+"deg": 22.56
+},
+"ecmp_bwd": {
+"uni": 20.47,
+"deg": 22.56
+},
+"source": "Tirunelveli",
+"target": "Sivakasi"
+},
+{
+"dist": 53.60,
+"ecmp_fwd": {
+"uni": 5.25,
+"deg": 4.20
+},
+"ecmp_bwd": {
+"uni": 5.25,
+"deg": 4.20
+},
+"source": "Tirunelveli",
+"target": "Tiruchendur"
+},
+{
+"dist": 73.77,
+"ecmp_fwd": {
+"uni": 10.46,
+"deg": 10.53
+},
+"ecmp_bwd": {
+"uni": 10.46,
+"deg": 10.53
+},
+"source": "Tirunelveli",
+"target": "Kanyakumari"
+},
+{
+"dist": 75.13,
+"ecmp_fwd": {
+"uni": 0.21,
+"deg": 0.14
+},
+"ecmp_bwd": {
+"uni": 0.21,
+"deg": 0.14
+},
+"source": "Tiruchendur",
+"target": "Kanyakumari"
+},
+{
+"dist": 84.25,
+"ecmp_fwd": {
+"uni": 5.59,
+"deg": 4.55
+},
+"ecmp_bwd": {
+"uni": 5.59,
+"deg": 4.55
+},
+"source": "Kanyakumari",
+"target": "Trivandrum"
+},
+{
+"dist": 287.85,
+"ecmp_fwd": {
+"uni": 25.98,
+"deg": 25.88
+},
+"ecmp_bwd": {
+"uni": 23.49,
+"deg": 23.67
+},
+"source": "Gwalior",
+"target": "Rajgarh"
+},
+{
+"dist": 107.96,
+"ecmp_fwd": {
+"uni": 34.35,
+"deg": 31.42
+},
+"ecmp_bwd": {
+"uni": 33.83,
+"deg": 31.16
+},
+"source": "Gwalior",
+"target": "Agra"
+},
+{
+"dist": 159.07,
+"ecmp_fwd": {
+"uni": 16.03,
+"deg": 16.20
+},
+"ecmp_bwd": {
+"uni": 21.22,
+"deg": 21.07
+},
+"source": "Rajgarh",
+"target": "Kota"
+},
+{
+"dist": 128.55,
+"ecmp_fwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"ecmp_bwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"source": "Ajmer",
+"target": "Jaipur"
+},
+{
+"dist": 48.22,
+"ecmp_fwd": {
+"uni": 31.33,
+"deg": 28.92
+},
+"ecmp_bwd": {
+"uni": 30.82,
+"deg": 28.66
+},
+"source": "Agra",
+"target": "Mathura"
+},
+{
+"dist": 109.49,
+"ecmp_fwd": {
+"uni": 13.27,
+"deg": 13.91
+},
+"ecmp_bwd": {
+"uni": 18.46,
+"deg": 18.78
+},
+"source": "Kota",
+"target": "Tonk"
+},
+{
+"dist": 210.54,
+"ecmp_fwd": {
+"uni": 60.61,
+"deg": 58.61
+},
+"ecmp_bwd": {
+"uni": 55.96,
+"deg": 53.98
+},
+"source": "Bhilwara",
+"target": "Jaipur"
+},
+{
+"dist": 146.70,
+"ecmp_fwd": {
+"uni": 2.18,
+"deg": 2.63
+},
+"ecmp_bwd": {
+"uni": 2.23,
+"deg": 2.68
+},
+"source": "Bhilwara",
+"target": "Tonk"
+},
+{
+"dist": 83.49,
+"ecmp_fwd": {
+"uni": 9.85,
+"deg": 9.73
+},
+"ecmp_bwd": {
+"uni": 15.08,
+"deg": 14.66
+},
+"source": "Tonk",
+"target": "Jaipur"
+},
+{
+"dist": 178.80,
+"ecmp_fwd": {
+"uni": 11.53,
+"deg": 12.27
+},
+"ecmp_bwd": {
+"uni": 10.41,
+"deg": 10.98
+},
+"source": "Sivakasi",
+"target": "Trichy"
+},
+{
+"dist": 63.02,
+"ecmp_fwd": {
+"uni": 5.23,
+"deg": 4.16
+},
+"ecmp_bwd": {
+"uni": 5.23,
+"deg": 4.16
+},
+"source": "Sivakasi",
+"target": "Madural"
+},
+{
+"dist": 111.80,
+"ecmp_fwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"ecmp_bwd": {
+"uni": 5.46,
+"deg": 2.18
+},
+"source": "Sivakasi",
+"target": "Ramanathapuram"
+},
+{
+"dist": 154.09,
+"ecmp_fwd": {
+"uni": 15.72,
+"deg": 16.68
+},
+"ecmp_bwd": {
+"uni": 14.60,
+"deg": 15.38
+},
+"source": "Trichy",
+"target": "Palladam"
+},
+{
+"dist": 50.22,
+"ecmp_fwd": {
+"uni": 57.47,
+"deg": 58.42
+},
+"ecmp_bwd": {
+"uni": 58.41,
+"deg": 59.56
+},
+"source": "Tirupur",
+"target": "Erode"
+},
+{
+"dist": 183.76,
+"ecmp_fwd": {
+"uni": 7.04,
+"deg": 6.42
+},
+"ecmp_bwd": {
+"uni": 6.95,
+"deg": 6.35
+},
+"source": "Salem",
+"target": "Pondicherry"
+},
+{
+"dist": 265.93,
+"ecmp_fwd": {
+"uni": 19.65,
+"deg": 19.84
+},
+"ecmp_bwd": {
+"uni": 18.52,
+"deg": 18.54
+},
+"source": "Palladam",
+"target": "Chidambaram"
+},
+{
+"dist": 60.63,
+"ecmp_fwd": {
+"uni": 23.64,
+"deg": 23.05
+},
+"ecmp_bwd": {
+"uni": 22.52,
+"deg": 21.75
+},
+"source": "Chidambaram",
+"target": "Pondicherry"
+},
+{
+"dist": 87.27,
+"ecmp_fwd": {
+"uni": 5.42,
+"deg": 4.32
+},
+"ecmp_bwd": {
+"uni": 5.42,
+"deg": 4.32
+},
+"source": "Pathankot",
+"target": "Hoshiarpur"
+},
+{
+"dist": 103.49,
+"ecmp_fwd": {
+"uni": 0.27,
+"deg": 0.17
+},
+"ecmp_bwd": {
+"uni": 0.27,
+"deg": 0.17
+},
+"source": "Pathankot",
+"target": "Amritsar"
+},
+{
+"dist": 39.47,
+"ecmp_fwd": {
+"uni": 10.65,
+"deg": 8.51
+},
+"ecmp_bwd": {
+"uni": 10.65,
+"deg": 8.51
+},
+"source": "Hoshiarpur",
+"target": "Jalandhar"
+},
+{
+"dist": 53.90,
+"ecmp_fwd": {
+"uni": 15.88,
+"deg": 12.71
+},
+"ecmp_bwd": {
+"uni": 15.88,
+"deg": 12.71
+},
+"source": "Jalandhar",
+"target": "Ludhiana"
+},
+{
+"dist": 82.71,
+"ecmp_fwd": {
+"uni": 40.75,
+"deg": 36.79
+},
+"ecmp_bwd": {
+"uni": 40.75,
+"deg": 36.79
+},
+"source": "Ludhiana",
+"target": "Patiala"
+}
+]
+}

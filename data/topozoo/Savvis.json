@@ -1,0 +1,428 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "savvis",
+"demands": {},
+"stats": {
+"nodes": 19,
+"links": 20,
+"demands": 342,
+"min_degree": 1,
+"avg_degree": 2.11,
+"std_degree": 0.64,
+"max_degree": 4,
+"gini": 0.13,
+"min_link_len": 129.69,
+"avg_link_len": 559.67,
+"max_link_len": 1422.95,
+"diameter_len": 4828.07,
+"diameter_hops": 8,
+"avg_sdp_num": 1.02,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.84,
+"avg_sdp_len": 1414.90,
+"avg_adp_num": 1.80,
+"max_adp_num": 3,
+"avg_adp_hops": 5.95,
+"avg_adp_len": 3417.68
+}
+},
+"nodes": [
+{
+"pos": [
+-74.01,
+40.71
+],
+"id": "New York"
+},
+{
+"pos": [
+-75.16,
+39.95
+],
+"id": "Philadelphia"
+},
+{
+"pos": [
+-83.05,
+42.33
+],
+"id": "Detroit"
+},
+{
+"pos": [
+-80.00,
+40.44
+],
+"id": "Pittsburgh"
+},
+{
+"pos": [
+-95.36,
+29.76
+],
+"id": "Houston"
+},
+{
+"pos": [
+-97.74,
+30.27
+],
+"id": "Austin"
+},
+{
+"pos": [
+-77.04,
+38.90
+],
+"id": "Washington, DC"
+},
+{
+"pos": [
+-84.39,
+33.75
+],
+"id": "Atlanta"
+},
+{
+"pos": [
+-96.81,
+32.78
+],
+"id": "Dallas"
+},
+{
+"pos": [
+-88.24,
+40.12
+],
+"id": "Champaign"
+},
+{
+"pos": [
+-87.65,
+41.85
+],
+"id": "Chicago"
+},
+{
+"pos": [
+-122.42,
+37.77
+],
+"id": "San Francisco"
+},
+{
+"pos": [
+-118.24,
+34.05
+],
+"id": "Los Angeles"
+},
+{
+"pos": [
+-117.16,
+32.72
+],
+"id": "San Diego"
+},
+{
+"pos": [
+-112.07,
+33.45
+],
+"id": "Phoenix"
+},
+{
+"pos": [
+-111.89,
+40.76
+],
+"id": "Salt Lake City"
+},
+{
+"pos": [
+-104.98,
+39.74
+],
+"id": "Denver"
+},
+{
+"pos": [
+-94.63,
+39.11
+],
+"id": "Kansas City"
+},
+{
+"pos": [
+-90.20,
+38.63
+],
+"id": "St Louis"
+}
+],
+"links": [
+{
+"dist": 129.69,
+"ecmp_fwd": {
+"uni": 33.93,
+"deg": 30.12
+},
+"ecmp_bwd": {
+"uni": 33.93,
+"deg": 30.12
+},
+"source": "New York",
+"target": "Philadelphia"
+},
+{
+"dist": 506.84,
+"ecmp_fwd": {
+"uni": 48.21,
+"deg": 44.02
+},
+"ecmp_bwd": {
+"uni": 48.21,
+"deg": 44.02
+},
+"source": "New York",
+"target": "Pittsburgh"
+},
+{
+"dist": 199.27,
+"ecmp_fwd": {
+"uni": 33.93,
+"deg": 30.12
+},
+"ecmp_bwd": {
+"uni": 33.93,
+"deg": 30.12
+},
+"source": "Philadelphia",
+"target": "Washington, DC"
+},
+{
+"dist": 383.74,
+"ecmp_fwd": {
+"uni": 76.79,
+"deg": 71.81
+},
+"ecmp_bwd": {
+"uni": 76.79,
+"deg": 71.81
+},
+"source": "Detroit",
+"target": "Chicago"
+},
+{
+"dist": 330.12,
+"ecmp_fwd": {
+"uni": 62.50,
+"deg": 57.92
+},
+"ecmp_bwd": {
+"uni": 62.50,
+"deg": 57.92
+},
+"source": "Detroit",
+"target": "Pittsburgh"
+},
+{
+"dist": 235.94,
+"ecmp_fwd": {
+"uni": 76.79,
+"deg": 71.81
+},
+"ecmp_bwd": {
+"uni": 76.79,
+"deg": 71.81
+},
+"source": "Houston",
+"target": "Austin"
+},
+{
+"dist": 1127.88,
+"ecmp_fwd": {
+"uni": 62.50,
+"deg": 57.92
+},
+"ecmp_bwd": {
+"uni": 62.50,
+"deg": 57.92
+},
+"source": "Houston",
+"target": "Atlanta"
+},
+{
+"dist": 293.58,
+"ecmp_fwd": {
+"uni": 91.07,
+"deg": 85.71
+},
+"ecmp_bwd": {
+"uni": 91.07,
+"deg": 85.71
+},
+"source": "Austin",
+"target": "Dallas"
+},
+{
+"dist": 872.17,
+"ecmp_fwd": {
+"uni": 48.21,
+"deg": 44.02
+},
+"ecmp_bwd": {
+"uni": 48.21,
+"deg": 44.02
+},
+"source": "Washington, DC",
+"target": "Atlanta"
+},
+{
+"dist": 881.99,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Dallas",
+"target": "St Louis"
+},
+{
+"dist": 1422.95,
+"ecmp_fwd": {
+"uni": 89.29,
+"deg": 83.40
+},
+"ecmp_bwd": {
+"uni": 89.29,
+"deg": 83.40
+},
+"source": "Dallas",
+"target": "Phoenix"
+},
+{
+"dist": 235.95,
+"ecmp_fwd": {
+"uni": 32.14,
+"deg": 15.06
+},
+"ecmp_bwd": {
+"uni": 32.14,
+"deg": 15.06
+},
+"source": "Champaign",
+"target": "St Louis"
+},
+{
+"dist": 418.62,
+"ecmp_fwd": {
+"uni": 91.07,
+"deg": 85.71
+},
+"ecmp_bwd": {
+"uni": 91.07,
+"deg": 85.71
+},
+"source": "Chicago",
+"target": "St Louis"
+},
+{
+"dist": 559.28,
+"ecmp_fwd": {
+"uni": 37.50,
+"deg": 33.98
+},
+"ecmp_bwd": {
+"uni": 37.50,
+"deg": 33.98
+},
+"source": "San Francisco",
+"target": "Los Angeles"
+},
+{
+"dist": 964.75,
+"ecmp_fwd": {
+"uni": 26.79,
+"deg": 23.94
+},
+"ecmp_bwd": {
+"uni": 26.79,
+"deg": 23.94
+},
+"source": "San Francisco",
+"target": "Salt Lake City"
+},
+{
+"dist": 179.70,
+"ecmp_fwd": {
+"uni": 32.14,
+"deg": 15.06
+},
+"ecmp_bwd": {
+"uni": 32.14,
+"deg": 15.06
+},
+"source": "Los Angeles",
+"target": "San Diego"
+},
+{
+"dist": 574.42,
+"ecmp_fwd": {
+"uni": 73.21,
+"deg": 67.95
+},
+"ecmp_bwd": {
+"uni": 73.21,
+"deg": 67.95
+},
+"source": "Los Angeles",
+"target": "Phoenix"
+},
+{
+"dist": 597.03,
+"ecmp_fwd": {
+"uni": 35.71,
+"deg": 32.43
+},
+"ecmp_bwd": {
+"uni": 35.71,
+"deg": 32.43
+},
+"source": "Salt Lake City",
+"target": "Denver"
+},
+{
+"dist": 892.06,
+"ecmp_fwd": {
+"uni": 51.79,
+"deg": 47.88
+},
+"ecmp_bwd": {
+"uni": 51.79,
+"deg": 47.88
+},
+"source": "Denver",
+"target": "Kansas City"
+},
+{
+"dist": 387.35,
+"ecmp_fwd": {
+"uni": 69.64,
+"deg": 64.86
+},
+"ecmp_bwd": {
+"uni": 69.64,
+"deg": 64.86
+},
+"source": "Kansas City",
+"target": "St Louis"
+}
+]
+}

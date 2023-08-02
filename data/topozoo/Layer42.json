@@ -1,0 +1,168 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "layer42",
+"demands": {},
+"stats": {
+"nodes": 6,
+"links": 7,
+"demands": 30,
+"min_degree": 1,
+"avg_degree": 2.33,
+"std_degree": 1.11,
+"max_degree": 4,
+"gini": 0.26,
+"min_link_len": 328.58,
+"avg_link_len": 1569.79,
+"max_link_len": 3920.00,
+"diameter_len": 5223.92,
+"diameter_hops": 3,
+"avg_sdp_num": 1.07,
+"max_sdp_num": 2,
+"avg_sdp_hops": 1.67,
+"avg_sdp_len": 2617.83,
+"avg_adp_num": 1.47,
+"max_adp_num": 3,
+"avg_adp_hops": 1.84,
+"avg_adp_len": 3195.14
+}
+},
+"nodes": [
+{
+"pos": [
+-122.33,
+47.61
+],
+"id": "Seattle"
+},
+{
+"pos": [
+-122.42,
+37.77
+],
+"id": "San Francisco"
+},
+{
+"pos": [
+-118.24,
+34.05
+],
+"id": "Los Angeles"
+},
+{
+"pos": [
+-87.65,
+41.85
+],
+"id": "Chicago"
+},
+{
+"pos": [
+-74.01,
+40.71
+],
+"id": "New York City"
+},
+{
+"pos": [
+-77.04,
+38.90
+],
+"id": "Washington DC"
+}
+],
+"links": [
+{
+"dist": 1093.52,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 54.17
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 54.17
+},
+"source": "Seattle",
+"target": "San Francisco"
+},
+{
+"dist": 559.28,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 54.17
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 54.17
+},
+"source": "San Francisco",
+"target": "Los Angeles"
+},
+{
+"dist": 2984.23,
+"ecmp_fwd": {
+"uni": 90.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 90.00,
+"deg": 100.00
+},
+"source": "San Francisco",
+"target": "Chicago"
+},
+{
+"dist": 3920.00,
+"ecmp_fwd": {
+"uni": 90.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 90.00,
+"deg": 100.00
+},
+"source": "San Francisco",
+"target": "Washington DC"
+},
+{
+"dist": 1146.16,
+"ecmp_fwd": {
+"uni": 50.00,
+"deg": 50.00
+},
+"ecmp_bwd": {
+"uni": 50.00,
+"deg": 50.00
+},
+"source": "Chicago",
+"target": "New York City"
+},
+{
+"dist": 956.75,
+"ecmp_fwd": {
+"uni": 20.00,
+"deg": 37.50
+},
+"ecmp_bwd": {
+"uni": 20.00,
+"deg": 37.50
+},
+"source": "Chicago",
+"target": "Washington DC"
+},
+{
+"dist": 328.58,
+"ecmp_fwd": {
+"uni": 50.00,
+"deg": 50.00
+},
+"ecmp_bwd": {
+"uni": 50.00,
+"deg": 50.00
+},
+"source": "New York City",
+"target": "Washington DC"
+}
+]
+}

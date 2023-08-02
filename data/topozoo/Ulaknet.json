@@ -1,0 +1,1555 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "ulaknet",
+"demands": {},
+"stats": {
+"nodes": 76,
+"links": 76,
+"demands": 5700,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 6.20,
+"max_degree": 54,
+"gini": 0.49,
+"min_link_len": 33.47,
+"avg_link_len": 380.48,
+"max_link_len": 979.02,
+"diameter_len": 1932.99,
+"diameter_hops": 4,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 2.44,
+"avg_sdp_len": 928.77,
+"avg_adp_num": 1.00,
+"max_adp_num": 2,
+"avg_adp_hops": 2.44,
+"avg_adp_len": 929.19
+}
+},
+"nodes": [
+{
+"pos": [
+29.09,
+37.77
+],
+"id": "Denizli"
+},
+{
+"pos": [
+29.41,
+38.67
+],
+"id": "Usak"
+},
+{
+"pos": [
+27.84,
+37.85
+],
+"id": "Aydin"
+},
+{
+"pos": [
+28.37,
+37.22
+],
+"id": "Mugla"
+},
+{
+"pos": [
+30.29,
+37.72
+],
+"id": "Burdur"
+},
+{
+"pos": [
+30.69,
+36.91
+],
+"id": "Antalya"
+},
+{
+"pos": [
+30.54,
+38.76
+],
+"id": "Afyonkarahisar"
+},
+{
+"pos": [
+30.55,
+37.76
+],
+"id": "Isparta"
+},
+{
+"pos": [
+41.13,
+37.89
+],
+"id": "Batman"
+},
+{
+"pos": [
+41.94,
+37.93
+],
+"id": "Siirt"
+},
+{
+"pos": [
+29.28,
+40.66
+],
+"id": "Yalova"
+},
+{
+"pos": [
+35.83,
+40.65
+],
+"id": "Amasya"
+},
+{
+"pos": [
+36.55,
+40.31
+],
+"id": "Tokat"
+},
+{
+"pos": [
+34.68,
+37.97
+],
+"id": "Nigde"
+},
+{
+"pos": [
+36.16,
+36.21
+],
+"id": "Hatay"
+},
+{
+"pos": [
+38.28,
+37.76
+],
+"id": "Adiyaman"
+},
+{
+"pos": [
+41.28,
+39.91
+],
+"id": "Erzurum"
+},
+{
+"pos": [
+32.34,
+41.64
+],
+"id": "Bartin"
+},
+{
+"pos": [
+32.63,
+41.20
+],
+"id": "Karabuk"
+},
+{
+"pos": [
+34.62,
+36.80
+],
+"id": "Mersin"
+},
+{
+"pos": [
+33.22,
+37.18
+],
+"id": "Karaman"
+},
+{
+"pos": [
+34.03,
+38.37
+],
+"id": "Aksaray"
+},
+{
+"pos": [
+32.48,
+37.87
+],
+"id": "Konya"
+},
+{
+"pos": [
+35.17,
+42.03
+],
+"id": "Sinop"
+},
+{
+"pos": [
+36.33,
+41.29
+],
+"id": "Samsun"
+},
+{
+"pos": [
+35.33,
+37.00
+],
+"id": "Adana"
+},
+{
+"pos": [
+29.98,
+40.14
+],
+"id": "Bilecik"
+},
+{
+"pos": [
+38.39,
+40.92
+],
+"id": "Giresun"
+},
+{
+"pos": [
+43.74,
+37.57
+],
+"id": "Hakkari"
+},
+{
+"pos": [
+39.22,
+38.67
+],
+"id": "Elazig"
+},
+{
+"pos": [
+42.70,
+41.11
+],
+"id": "Ardahan"
+},
+{
+"pos": [
+41.82,
+41.18
+],
+"id": "Artvin"
+},
+{
+"pos": [
+34.95,
+40.55
+],
+"id": "Corum"
+},
+{
+"pos": [
+40.49,
+38.88
+],
+"id": "Bingol"
+},
+{
+"pos": [
+43.38,
+38.49
+],
+"id": "Van"
+},
+{
+"pos": [
+36.25,
+37.07
+],
+"id": "Osmaniye"
+},
+{
+"pos": [
+43.05,
+39.72
+],
+"id": "Agri"
+},
+{
+"pos": [
+37.88,
+40.98
+],
+"id": "Ordu"
+},
+{
+"pos": [
+40.74,
+37.31
+],
+"id": "Mardin"
+},
+{
+"pos": [
+38.32,
+38.35
+],
+"id": "Malatya"
+},
+{
+"pos": [
+42.46,
+37.52
+],
+"id": "Sirnak"
+},
+{
+"pos": [
+40.22,
+37.92
+],
+"id": "Diyarbakir"
+},
+{
+"pos": [
+34.80,
+39.82
+],
+"id": "Yozgat"
+},
+{
+"pos": [
+35.49,
+38.73
+],
+"id": "Kayseri"
+},
+{
+"pos": [
+43.09,
+40.60
+],
+"id": "Kars"
+},
+{
+"pos": [
+34.71,
+38.62
+],
+"id": "Nevsehir"
+},
+{
+"pos": [
+37.38,
+37.06
+],
+"id": "Gaziantep"
+},
+{
+"pos": [
+33.51,
+39.85
+],
+"id": "Kirikkale"
+},
+{
+"pos": [
+37.12,
+36.72
+],
+"id": "Kilis"
+},
+{
+"pos": [
+34.16,
+39.15
+],
+"id": "Kirsehir"
+},
+{
+"pos": [
+33.62,
+40.60
+],
+"id": "Cankiri"
+},
+{
+"pos": [
+33.78,
+41.38
+],
+"id": "Kastamonu"
+},
+{
+"pos": [
+41.51,
+38.75
+],
+"id": "Mus"
+},
+{
+"pos": [
+30.52,
+39.78
+],
+"id": "Eskisehir"
+},
+{
+"pos": [
+29.92,
+40.77
+],
+"id": "Kocaeli"
+},
+{
+"pos": [
+30.40,
+40.78
+],
+"id": "Sakarya"
+},
+{
+"pos": [
+42.11,
+38.40
+],
+"id": "Bitlis"
+},
+{
+"pos": [
+29.06,
+40.19
+],
+"id": "Bursa"
+},
+{
+"pos": [
+31.61,
+40.74
+],
+"id": "Bolu"
+},
+{
+"pos": [
+31.16,
+40.84
+],
+"id": "Duzce"
+},
+{
+"pos": [
+31.79,
+41.45
+],
+"id": "Zonguldak"
+},
+{
+"pos": [
+40.52,
+41.02
+],
+"id": "Rize"
+},
+{
+"pos": [
+39.73,
+41.01
+],
+"id": "Trabzon"
+},
+{
+"pos": [
+44.05,
+39.92
+],
+"id": "Igdir"
+},
+{
+"pos": [
+27.43,
+38.61
+],
+"id": "Manisa"
+},
+{
+"pos": [
+29.98,
+39.42
+],
+"id": "Kutahya"
+},
+{
+"pos": [
+39.49,
+39.75
+],
+"id": "Erzincan"
+},
+{
+"pos": [
+37.02,
+39.75
+],
+"id": "Sivas"
+},
+{
+"pos": [
+28.95,
+41.01
+],
+"id": "Istanbul"
+},
+{
+"pos": [
+27.14,
+38.41
+],
+"id": "iZMiR"
+},
+{
+"pos": [
+32.85,
+39.92
+],
+"id": "Ankara"
+},
+{
+"pos": [
+27.23,
+41.74
+],
+"id": "Kirklareli"
+},
+{
+"pos": [
+27.51,
+40.98
+],
+"id": "Tekirdag"
+},
+{
+"pos": [
+26.56,
+41.68
+],
+"id": "Edirne"
+},
+{
+"pos": [
+26.41,
+40.15
+],
+"id": "Canakkale"
+},
+{
+"pos": [
+27.89,
+39.65
+],
+"id": "Balikesin"
+}
+],
+"links": [
+{
+"dist": 184.81,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Denizli",
+"target": "iZMiR"
+},
+{
+"dist": 199.37,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Usak",
+"target": "iZMiR"
+},
+{
+"dist": 88.04,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Aydin",
+"target": "iZMiR"
+},
+{
+"dist": 171.17,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Mugla",
+"target": "iZMiR"
+},
+{
+"dist": 330.43,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Burdur",
+"target": "Ankara"
+},
+{
+"dist": 383.99,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Antalya",
+"target": "Ankara"
+},
+{
+"dist": 298.48,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Afyonkarahisar",
+"target": "iZMiR"
+},
+{
+"dist": 311.82,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Isparta",
+"target": "Ankara"
+},
+{
+"dist": 750.99,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Batman",
+"target": "Ankara"
+},
+{
+"dist": 816.26,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Siirt",
+"target": "Ankara"
+},
+{
+"dist": 48.49,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Yalova",
+"target": "Istanbul"
+},
+{
+"dist": 265.56,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Amasya",
+"target": "Ankara"
+},
+{
+"dist": 317.74,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Tokat",
+"target": "Ankara"
+},
+{
+"dist": 268.62,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Nigde",
+"target": "Ankara"
+},
+{
+"dist": 504.14,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Hatay",
+"target": "Ankara"
+},
+{
+"dist": 527.23,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Adiyaman",
+"target": "Ankara"
+},
+{
+"dist": 718.28,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Erzurum",
+"target": "Ankara"
+},
+{
+"dist": 195.76,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Bartin",
+"target": "Ankara"
+},
+{
+"dist": 144.20,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Karabuk",
+"target": "Ankara"
+},
+{
+"dist": 380.04,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Mersin",
+"target": "Ankara"
+},
+{
+"dist": 306.23,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Karaman",
+"target": "Ankara"
+},
+{
+"dist": 199.56,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Aksaray",
+"target": "Ankara"
+},
+{
+"dist": 230.75,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Konya",
+"target": "Ankara"
+},
+{
+"dist": 304.91,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Sinop",
+"target": "Ankara"
+},
+{
+"dist": 330.51,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Samsun",
+"target": "Ankara"
+},
+{
+"dist": 389.58,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Adana",
+"target": "Ankara"
+},
+{
+"dist": 130.27,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Bilecik",
+"target": "Istanbul"
+},
+{
+"dist": 481.40,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Giresun",
+"target": "Ankara"
+},
+{
+"dist": 979.02,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Hakkari",
+"target": "Ankara"
+},
+{
+"dist": 565.30,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Elazig",
+"target": "Ankara"
+},
+{
+"dist": 842.69,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Ardahan",
+"target": "Ankara"
+},
+{
+"dist": 770.20,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Artvin",
+"target": "Ankara"
+},
+{
+"dist": 191.47,
+"ecmp_fwd": {
+"uni": 25.96,
+"deg": 19.61
+},
+"ecmp_bwd": {
+"uni": 25.96,
+"deg": 19.61
+},
+"source": "Corum",
+"target": "Ankara"
+},
+{
+"dist": 251.16,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Corum",
+"target": "Ordu"
+},
+{
+"dist": 666.39,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Bingol",
+"target": "Ankara"
+},
+{
+"dist": 920.66,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Van",
+"target": "Ankara"
+},
+{
+"dist": 389.83,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Osmaniye",
+"target": "Kirikkale"
+},
+{
+"dist": 304.38,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Agri",
+"target": "Erzincan"
+},
+{
+"dist": 586.78,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Mardin",
+"target": "Yozgat"
+},
+{
+"dist": 502.46,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Malatya",
+"target": "Ankara"
+},
+{
+"dist": 874.59,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Sirnak",
+"target": "Ankara"
+},
+{
+"dist": 674.93,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Diyarbakir",
+"target": "Ankara"
+},
+{
+"dist": 166.85,
+"ecmp_fwd": {
+"uni": 25.96,
+"deg": 19.61
+},
+"ecmp_bwd": {
+"uni": 25.96,
+"deg": 19.61
+},
+"source": "Yozgat",
+"target": "Ankara"
+},
+{
+"dist": 262.08,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Kayseri",
+"target": "Ankara"
+},
+{
+"dist": 872.01,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Kars",
+"target": "Ankara"
+},
+{
+"dist": 215.25,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Nevsehir",
+"target": "Ankara"
+},
+{
+"dist": 506.47,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Gaziantep",
+"target": "Ankara"
+},
+{
+"dist": 56.27,
+"ecmp_fwd": {
+"uni": 25.96,
+"deg": 19.61
+},
+"ecmp_bwd": {
+"uni": 25.96,
+"deg": 19.61
+},
+"source": "Kirikkale",
+"target": "Ankara"
+},
+{
+"dist": 514.88,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Kilis",
+"target": "Ankara"
+},
+{
+"dist": 141.54,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Kirsehir",
+"target": "Ankara"
+},
+{
+"dist": 99.47,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Cankiri",
+"target": "Ankara"
+},
+{
+"dist": 179.85,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Kastamonu",
+"target": "Ankara"
+},
+{
+"dist": 755.46,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Mus",
+"target": "Ankara"
+},
+{
+"dist": 199.91,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Eskisehir",
+"target": "Ankara"
+},
+{
+"dist": 85.84,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Kocaeli",
+"target": "Istanbul"
+},
+{
+"dist": 124.94,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Sakarya",
+"target": "Istanbul"
+},
+{
+"dist": 815.33,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Bitlis",
+"target": "Ankara"
+},
+{
+"dist": 91.93,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Bursa",
+"target": "Istanbul"
+},
+{
+"dist": 139.42,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Bolu",
+"target": "Ankara"
+},
+{
+"dist": 175.95,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Duzce",
+"target": "Ankara"
+},
+{
+"dist": 192.42,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Zonguldak",
+"target": "Ankara"
+},
+{
+"dist": 660.02,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Rize",
+"target": "Ankara"
+},
+{
+"dist": 593.82,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Trabzon",
+"target": "Ankara"
+},
+{
+"dist": 953.96,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Igdir",
+"target": "Ankara"
+},
+{
+"dist": 33.47,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Manisa",
+"target": "iZMiR"
+},
+{
+"dist": 270.67,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Kutahya",
+"target": "iZMiR"
+},
+{
+"dist": 567.16,
+"ecmp_fwd": {
+"uni": 25.96,
+"deg": 19.61
+},
+"ecmp_bwd": {
+"uni": 25.96,
+"deg": 19.61
+},
+"source": "Erzincan",
+"target": "Ankara"
+},
+{
+"dist": 355.95,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Sivas",
+"target": "Ankara"
+},
+{
+"dist": 352.06,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Istanbul",
+"target": "Ankara"
+},
+{
+"dist": 164.77,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Istanbul",
+"target": "Kirklareli"
+},
+{
+"dist": 121.05,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Istanbul",
+"target": "Tekirdag"
+},
+{
+"dist": 213.05,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Istanbul",
+"target": "Edirne"
+},
+{
+"dist": 235.54,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "Istanbul",
+"target": "Canakkale"
+},
+{
+"dist": 328.18,
+"ecmp_fwd": {
+"uni": 15.79,
+"deg": 15.79
+},
+"ecmp_bwd": {
+"uni": 15.79,
+"deg": 15.79
+},
+"source": "Istanbul",
+"target": "iZMiR"
+},
+{
+"dist": 520.52,
+"ecmp_fwd": {
+"uni": 90.00,
+"deg": 90.00
+},
+"ecmp_bwd": {
+"uni": 90.00,
+"deg": 90.00
+},
+"source": "iZMiR",
+"target": "Ankara"
+},
+{
+"dist": 151.94,
+"ecmp_fwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"ecmp_bwd": {
+"uni": 13.16,
+"deg": 6.62
+},
+"source": "iZMiR",
+"target": "Balikesin"
+}
+]
+}

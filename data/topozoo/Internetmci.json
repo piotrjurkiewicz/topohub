@@ -1,0 +1,597 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "internetmci",
+"demands": {},
+"stats": {
+"nodes": 19,
+"links": 33,
+"demands": 342,
+"min_degree": 1,
+"avg_degree": 3.47,
+"std_degree": 1.70,
+"max_degree": 7,
+"gini": 0.27,
+"min_link_len": 21.77,
+"avg_link_len": 926.97,
+"max_link_len": 3007.12,
+"diameter_len": 5194.43,
+"diameter_hops": 4,
+"avg_sdp_num": 1.19,
+"max_sdp_num": 3,
+"avg_sdp_hops": 2.39,
+"avg_sdp_len": 1468.68,
+"avg_adp_num": 2.46,
+"max_adp_num": 6,
+"avg_adp_hops": 3.22,
+"avg_adp_len": 3251.22
+}
+},
+"nodes": [
+{
+"pos": [
+-95.36,
+29.76
+],
+"id": "Houston"
+},
+{
+"pos": [
+-80.12,
+26.24
+],
+"id": "Pompano Beach"
+},
+{
+"pos": [
+-84.63,
+33.81
+],
+"id": "Austell"
+},
+{
+"pos": [
+-96.81,
+32.78
+],
+"id": "Dallas"
+},
+{
+"pos": [
+-71.97,
+42.14
+],
+"id": "Charlton"
+},
+{
+"pos": [
+-74.01,
+40.71
+],
+"id": "New York"
+},
+{
+"pos": [
+-118.24,
+34.05
+],
+"id": "Los Angeles"
+},
+{
+"pos": [
+-117.37,
+34.11
+],
+"id": "Rialto"
+},
+{
+"pos": [
+-74.24,
+40.80
+],
+"id": "West Orange"
+},
+{
+"pos": [
+-77.04,
+38.90
+],
+"id": "Washington, DC"
+},
+{
+"pos": [
+-79.79,
+36.07
+],
+"id": "Greensboro"
+},
+{
+"pos": [
+-122.33,
+47.61
+],
+"id": "Seattle"
+},
+{
+"pos": [
+-122.42,
+37.77
+],
+"id": "San Francisco"
+},
+{
+"pos": [
+-121.49,
+38.58
+],
+"id": "Sacramento"
+},
+{
+"pos": [
+-104.98,
+39.74
+],
+"id": "Denver"
+},
+{
+"pos": [
+-94.42,
+39.09
+],
+"id": "Independence"
+},
+{
+"pos": [
+-91.97,
+36.99
+],
+"id": "Willow Springs"
+},
+{
+"pos": [
+-88.01,
+41.81
+],
+"id": "Downers Grove"
+},
+{
+"pos": [
+-81.72,
+41.31
+],
+"id": "North Royalton"
+}
+],
+"links": [
+{
+"dist": 1545.67,
+"ecmp_fwd": {
+"uni": 16.42,
+"deg": 9.80
+},
+"ecmp_bwd": {
+"uni": 18.63,
+"deg": 11.45
+},
+"source": "Houston",
+"target": "Pompano Beach"
+},
+{
+"dist": 362.81,
+"ecmp_fwd": {
+"uni": 70.59,
+"deg": 43.23
+},
+"ecmp_bwd": {
+"uni": 68.38,
+"deg": 41.57
+},
+"source": "Houston",
+"target": "Dallas"
+},
+{
+"dist": 947.55,
+"ecmp_fwd": {
+"uni": 62.75,
+"deg": 36.77
+},
+"ecmp_bwd": {
+"uni": 64.95,
+"deg": 38.43
+},
+"source": "Pompano Beach",
+"target": "Austell"
+},
+{
+"dist": 3007.12,
+"ecmp_fwd": {
+"uni": 76.14,
+"deg": 63.66
+},
+"ecmp_bwd": {
+"uni": 77.45,
+"deg": 64.87
+},
+"source": "Austell",
+"target": "Rialto"
+},
+{
+"dist": 507.95,
+"ecmp_fwd": {
+"uni": 35.29,
+"deg": 18.39
+},
+"ecmp_bwd": {
+"uni": 35.29,
+"deg": 18.39
+},
+"source": "Austell",
+"target": "Greensboro"
+},
+{
+"dist": 1136.71,
+"ecmp_fwd": {
+"uni": 32.35,
+"deg": 38.71
+},
+"ecmp_bwd": {
+"uni": 32.60,
+"deg": 39.11
+},
+"source": "Austell",
+"target": "Dallas"
+},
+{
+"dist": 884.18,
+"ecmp_fwd": {
+"uni": 70.59,
+"deg": 83.33
+},
+"ecmp_bwd": {
+"uni": 71.24,
+"deg": 83.37
+},
+"source": "Austell",
+"target": "Washington, DC"
+},
+{
+"dist": 643.17,
+"ecmp_fwd": {
+"uni": 86.93,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 85.62,
+"deg": 98.83
+},
+"source": "Dallas",
+"target": "Willow Springs"
+},
+{
+"dist": 1910.94,
+"ecmp_fwd": {
+"uni": 59.80,
+"deg": 56.34
+},
+"ecmp_bwd": {
+"uni": 59.80,
+"deg": 56.24
+},
+"source": "Dallas",
+"target": "Rialto"
+},
+{
+"dist": 733.84,
+"ecmp_fwd": {
+"uni": 32.03,
+"deg": 28.92
+},
+"ecmp_bwd": {
+"uni": 31.37,
+"deg": 28.95
+},
+"source": "Dallas",
+"target": "Independence"
+},
+{
+"dist": 240.56,
+"ecmp_fwd": {
+"uni": 16.99,
+"deg": 19.57
+},
+"ecmp_bwd": {
+"uni": 16.67,
+"deg": 19.35
+},
+"source": "Charlton",
+"target": "West Orange"
+},
+{
+"dist": 559.67,
+"ecmp_fwd": {
+"uni": 27.78,
+"deg": 26.67
+},
+"ecmp_bwd": {
+"uni": 27.12,
+"deg": 26.24
+},
+"source": "Charlton",
+"target": "Washington, DC"
+},
+{
+"dist": 231.99,
+"ecmp_fwd": {
+"uni": 20.92,
+"deg": 13.28
+},
+"ecmp_bwd": {
+"uni": 23.53,
+"deg": 14.52
+},
+"source": "Charlton",
+"target": "New York"
+},
+{
+"dist": 1802.76,
+"ecmp_fwd": {
+"uni": 41.50,
+"deg": 43.12
+},
+"ecmp_bwd": {
+"uni": 39.87,
+"deg": 42.53
+},
+"source": "Charlton",
+"target": "Willow Springs"
+},
+{
+"dist": 21.77,
+"ecmp_fwd": {
+"uni": 47.06,
+"deg": 26.77
+},
+"ecmp_bwd": {
+"uni": 49.67,
+"deg": 28.01
+},
+"source": "New York",
+"target": "West Orange"
+},
+{
+"dist": 559.28,
+"ecmp_fwd": {
+"uni": 35.29,
+"deg": 20.00
+},
+"ecmp_bwd": {
+"uni": 35.29,
+"deg": 20.00
+},
+"source": "Los Angeles",
+"target": "San Francisco"
+},
+{
+"dist": 80.68,
+"ecmp_fwd": {
+"uni": 35.29,
+"deg": 21.29
+},
+"ecmp_bwd": {
+"uni": 35.29,
+"deg": 21.29
+},
+"source": "Los Angeles",
+"target": "Rialto"
+},
+{
+"dist": 610.74,
+"ecmp_fwd": {
+"uni": 75.82,
+"deg": 65.16
+},
+"ecmp_bwd": {
+"uni": 77.12,
+"deg": 66.26
+},
+"source": "Rialto",
+"target": "San Francisco"
+},
+{
+"dist": 319.17,
+"ecmp_fwd": {
+"uni": 52.61,
+"deg": 56.91
+},
+"ecmp_bwd": {
+"uni": 52.94,
+"deg": 56.94
+},
+"source": "West Orange",
+"target": "Washington, DC"
+},
+{
+"dist": 2598.59,
+"ecmp_fwd": {
+"uni": 84.97,
+"deg": 77.37
+},
+"ecmp_bwd": {
+"uni": 88.24,
+"deg": 79.38
+},
+"source": "West Orange",
+"target": "Denver"
+},
+{
+"dist": 1589.07,
+"ecmp_fwd": {
+"uni": 33.01,
+"deg": 45.70
+},
+"ecmp_bwd": {
+"uni": 33.01,
+"deg": 45.70
+},
+"source": "West Orange",
+"target": "Willow Springs"
+},
+{
+"dist": 630.23,
+"ecmp_fwd": {
+"uni": 62.09,
+"deg": 36.83
+},
+"ecmp_bwd": {
+"uni": 60.78,
+"deg": 35.81
+},
+"source": "West Orange",
+"target": "North Royalton"
+},
+{
+"dist": 1325.32,
+"ecmp_fwd": {
+"uni": 41.83,
+"deg": 52.90
+},
+"ecmp_bwd": {
+"uni": 42.16,
+"deg": 52.54
+},
+"source": "Washington, DC",
+"target": "Willow Springs"
+},
+{
+"dist": 397.08,
+"ecmp_fwd": {
+"uni": 35.29,
+"deg": 22.90
+},
+"ecmp_bwd": {
+"uni": 35.29,
+"deg": 22.90
+},
+"source": "Washington, DC",
+"target": "Greensboro"
+},
+{
+"dist": 1093.52,
+"ecmp_fwd": {
+"uni": 29.41,
+"deg": 15.16
+},
+"ecmp_bwd": {
+"uni": 28.10,
+"deg": 14.41
+},
+"source": "Seattle",
+"target": "San Francisco"
+},
+{
+"dist": 1641.58,
+"ecmp_fwd": {
+"uni": 41.18,
+"deg": 26.13
+},
+"ecmp_bwd": {
+"uni": 42.48,
+"deg": 26.88
+},
+"source": "Seattle",
+"target": "Denver"
+},
+{
+"dist": 120.79,
+"ecmp_fwd": {
+"uni": 70.59,
+"deg": 20.97
+},
+"ecmp_bwd": {
+"uni": 70.59,
+"deg": 20.97
+},
+"source": "San Francisco",
+"target": "Sacramento"
+},
+{
+"dist": 1525.41,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 93.66
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 94.01
+},
+"source": "San Francisco",
+"target": "Denver"
+},
+{
+"dist": 1174.20,
+"ecmp_fwd": {
+"uni": 60.78,
+"deg": 69.27
+},
+"ecmp_bwd": {
+"uni": 62.75,
+"deg": 71.45
+},
+"source": "Denver",
+"target": "Willow Springs"
+},
+{
+"dist": 910.53,
+"ecmp_fwd": {
+"uni": 29.41,
+"deg": 27.02
+},
+"ecmp_bwd": {
+"uni": 32.03,
+"deg": 27.96
+},
+"source": "Denver",
+"target": "Independence"
+},
+{
+"dist": 316.82,
+"ecmp_fwd": {
+"uni": 23.53,
+"deg": 23.23
+},
+"ecmp_bwd": {
+"uni": 25.49,
+"deg": 24.19
+},
+"source": "Independence",
+"target": "Willow Springs"
+},
+{
+"dist": 634.47,
+"ecmp_fwd": {
+"uni": 71.24,
+"deg": 43.17
+},
+"ecmp_bwd": {
+"uni": 72.55,
+"deg": 44.19
+},
+"source": "Willow Springs",
+"target": "Downers Grove"
+},
+{
+"dist": 525.97,
+"ecmp_fwd": {
+"uni": 15.36,
+"deg": 9.30
+},
+"ecmp_bwd": {
+"uni": 16.67,
+"deg": 10.32
+},
+"source": "Downers Grove",
+"target": "North Royalton"
+}
+]
+}

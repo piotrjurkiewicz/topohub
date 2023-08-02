@@ -1,0 +1,684 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "hurricaneelectric",
+"demands": {},
+"stats": {
+"nodes": 24,
+"links": 37,
+"demands": 552,
+"min_degree": 1,
+"avg_degree": 3.08,
+"std_degree": 2.06,
+"max_degree": 8,
+"gini": 0.36,
+"min_link_len": 0.00,
+"avg_link_len": 2892.04,
+"max_link_len": 15922.14,
+"diameter_len": 29114.46,
+"diameter_hops": 6,
+"avg_sdp_num": 1.13,
+"max_sdp_num": 3,
+"avg_sdp_hops": 2.76,
+"avg_sdp_len": 7700.76,
+"avg_adp_num": 1.71,
+"max_adp_num": 6,
+"avg_adp_hops": 3.13,
+"avg_adp_len": 9602.06
+}
+},
+"nodes": [
+{
+"pos": [
+4.89,
+52.37
+],
+"id": "Amsterdam"
+},
+{
+"pos": [
+8.68,
+50.12
+],
+"id": "Frankfurt"
+},
+{
+"pos": [
+-0.13,
+51.51
+],
+"id": "London"
+},
+{
+"pos": [
+2.35,
+48.85
+],
+"id": "Paris"
+},
+{
+"pos": [
+-122.14,
+37.44
+],
+"id": "Palo Alto"
+},
+{
+"pos": [
+-121.99,
+37.55
+],
+"id": "Fremont 1"
+},
+{
+"pos": [
+8.55,
+47.37
+],
+"id": "Zurich"
+},
+{
+"pos": [
+18.06,
+59.33
+],
+"id": "Stockholm"
+},
+{
+"pos": [
+-121.99,
+37.55
+],
+"id": "Fremont 2"
+},
+{
+"pos": [
+-84.08,
+9.93
+],
+"id": "San Jose 2"
+},
+{
+"pos": [
+-74.01,
+40.71
+],
+"id": "New York 3"
+},
+{
+"pos": [
+-74.01,
+40.71
+],
+"id": "New York 2"
+},
+{
+"pos": [
+-74.01,
+40.71
+],
+"id": "New York 1"
+},
+{
+"pos": [
+-84.08,
+9.93
+],
+"id": "San Jose 1"
+},
+{
+"pos": [
+-84.39,
+33.75
+],
+"id": "Atlanta"
+},
+{
+"pos": [
+-80.19,
+25.77
+],
+"id": "Miami"
+},
+{
+"pos": [
+114.16,
+22.29
+],
+"id": "Hong Kong"
+},
+{
+"pos": [
+139.58,
+35.61
+],
+"id": "Tokyo"
+},
+{
+"pos": [
+-122.33,
+47.61
+],
+"id": "Seattle"
+},
+{
+"pos": [
+-118.24,
+34.05
+],
+"id": "Los Angeles"
+},
+{
+"pos": [
+-96.81,
+32.78
+],
+"id": "Dallas"
+},
+{
+"pos": [
+-87.65,
+41.85
+],
+"id": "Chicago"
+},
+{
+"pos": [
+-79.42,
+43.70
+],
+"id": "Toronto"
+},
+{
+"pos": [
+-77.49,
+39.04
+],
+"id": "Ashburn"
+}
+],
+"links": [
+{
+"dist": 364.34,
+"ecmp_fwd": {
+"uni": 63.08,
+"deg": 44.58
+},
+"ecmp_bwd": {
+"uni": 63.08,
+"deg": 44.58
+},
+"source": "Amsterdam",
+"target": "Frankfurt"
+},
+{
+"dist": 357.03,
+"ecmp_fwd": {
+"uni": 10.37,
+"deg": 11.36
+},
+"ecmp_bwd": {
+"uni": 9.63,
+"deg": 9.71
+},
+"source": "Amsterdam",
+"target": "London"
+},
+{
+"dist": 430.63,
+"ecmp_fwd": {
+"uni": 10.23,
+"deg": 13.73
+},
+"ecmp_bwd": {
+"uni": 11.31,
+"deg": 14.17
+},
+"source": "Amsterdam",
+"target": "Paris"
+},
+{
+"dist": 5863.59,
+"ecmp_fwd": {
+"uni": 84.39,
+"deg": 77.77
+},
+"ecmp_bwd": {
+"uni": 84.07,
+"deg": 78.98
+},
+"source": "Amsterdam",
+"target": "New York 1"
+},
+{
+"dist": 478.63,
+"ecmp_fwd": {
+"uni": 42.90,
+"deg": 31.21
+},
+"ecmp_bwd": {
+"uni": 42.90,
+"deg": 31.21
+},
+"source": "Frankfurt",
+"target": "Paris"
+},
+{
+"dist": 306.03,
+"ecmp_fwd": {
+"uni": 38.69,
+"deg": 13.56
+},
+"ecmp_bwd": {
+"uni": 38.69,
+"deg": 13.56
+},
+"source": "Frankfurt",
+"target": "Zurich"
+},
+{
+"dist": 1186.53,
+"ecmp_fwd": {
+"uni": 38.69,
+"deg": 13.56
+},
+"ecmp_bwd": {
+"uni": 38.69,
+"deg": 13.56
+},
+"source": "Frankfurt",
+"target": "Stockholm"
+},
+{
+"dist": 5571.79,
+"ecmp_fwd": {
+"uni": 17.66,
+"deg": 18.39
+},
+"ecmp_bwd": {
+"uni": 17.66,
+"deg": 18.39
+},
+"source": "London",
+"target": "New York 1"
+},
+{
+"dist": 5919.04,
+"ecmp_fwd": {
+"uni": 16.26,
+"deg": 19.72
+},
+"ecmp_bwd": {
+"uni": 15.51,
+"deg": 18.07
+},
+"source": "London",
+"target": "Ashburn"
+},
+{
+"dist": 6187.63,
+"ecmp_fwd": {
+"uni": 65.05,
+"deg": 58.17
+},
+"ecmp_bwd": {
+"uni": 66.12,
+"deg": 58.61
+},
+"source": "Paris",
+"target": "Ashburn"
+},
+{
+"dist": 18.05,
+"ecmp_fwd": {
+"uni": 17.94,
+"deg": 12.32
+},
+"ecmp_bwd": {
+"uni": 17.66,
+"deg": 12.07
+},
+"source": "Palo Alto",
+"target": "Fremont 1"
+},
+{
+"dist": 18.05,
+"ecmp_fwd": {
+"uni": 17.94,
+"deg": 12.32
+},
+"ecmp_bwd": {
+"uni": 17.66,
+"deg": 12.07
+},
+"source": "Palo Alto",
+"target": "Fremont 2"
+},
+{
+"dist": 4881.93,
+"ecmp_fwd": {
+"uni": 14.58,
+"deg": 28.98
+},
+"ecmp_bwd": {
+"uni": 15.33,
+"deg": 29.35
+},
+"source": "Palo Alto",
+"target": "San Jose 2"
+},
+{
+"dist": 4881.93,
+"ecmp_fwd": {
+"uni": 48.79,
+"deg": 34.74
+},
+"ecmp_bwd": {
+"uni": 47.94,
+"deg": 33.99
+},
+"source": "Palo Alto",
+"target": "San Jose 1"
+},
+{
+"dist": 515.69,
+"ecmp_fwd": {
+"uni": 18.93,
+"deg": 23.68
+},
+"ecmp_bwd": {
+"uni": 19.53,
+"deg": 23.59
+},
+"source": "Palo Alto",
+"target": "Los Angeles"
+},
+{
+"dist": 3865.52,
+"ecmp_fwd": {
+"uni": 77.52,
+"deg": 79.01
+},
+"ecmp_bwd": {
+"uni": 77.57,
+"deg": 79.97
+},
+"source": "Palo Alto",
+"target": "Ashburn"
+},
+{
+"dist": 4875.74,
+"ecmp_fwd": {
+"uni": 21.03,
+"deg": 14.67
+},
+"ecmp_bwd": {
+"uni": 20.75,
+"deg": 14.43
+},
+"source": "Fremont 1",
+"target": "San Jose 2"
+},
+{
+"dist": 4875.74,
+"ecmp_fwd": {
+"uni": 21.03,
+"deg": 14.67
+},
+"ecmp_bwd": {
+"uni": 20.75,
+"deg": 14.43
+},
+"source": "Fremont 2",
+"target": "San Jose 2"
+},
+{
+"dist": 3564.49,
+"ecmp_fwd": {
+"uni": 99.81,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 99.88
+},
+"source": "San Jose 2",
+"target": "New York 1"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 57.20,
+"deg": 41.05
+},
+"ecmp_bwd": {
+"uni": 58.04,
+"deg": 41.80
+},
+"source": "San Jose 2",
+"target": "San Jose 1"
+},
+{
+"dist": 5509.90,
+"ecmp_fwd": {
+"uni": 38.69,
+"deg": 13.56
+},
+"ecmp_bwd": {
+"uni": 38.69,
+"deg": 13.56
+},
+"source": "San Jose 2",
+"target": "Seattle"
+},
+{
+"dist": 3567.07,
+"ecmp_fwd": {
+"uni": 22.15,
+"deg": 24.02
+},
+"ecmp_bwd": {
+"uni": 21.31,
+"deg": 23.28
+},
+"source": "San Jose 2",
+"target": "Chicago"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 3.36,
+"deg": 1.49
+},
+"ecmp_bwd": {
+"uni": 3.36,
+"deg": 1.49
+},
+"source": "New York 3",
+"target": "New York 2"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 35.33,
+"deg": 25.26
+},
+"ecmp_bwd": {
+"uni": 35.33,
+"deg": 25.26
+},
+"source": "New York 3",
+"target": "New York 1"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 70.65,
+"deg": 50.53
+},
+"ecmp_bwd": {
+"uni": 70.65,
+"deg": 50.53
+},
+"source": "New York 2",
+"target": "New York 1"
+},
+{
+"dist": 555.66,
+"ecmp_fwd": {
+"uni": 38.69,
+"deg": 13.56
+},
+"ecmp_bwd": {
+"uni": 38.69,
+"deg": 13.56
+},
+"source": "New York 2",
+"target": "Toronto"
+},
+{
+"dist": 3936.85,
+"ecmp_fwd": {
+"uni": 24.77,
+"deg": 30.21
+},
+"ecmp_bwd": {
+"uni": 24.95,
+"deg": 31.30
+},
+"source": "New York 1",
+"target": "Los Angeles"
+},
+{
+"dist": 1146.16,
+"ecmp_fwd": {
+"uni": 21.36,
+"deg": 23.16
+},
+"ecmp_bwd": {
+"uni": 21.31,
+"deg": 23.41
+},
+"source": "New York 1",
+"target": "Chicago"
+},
+{
+"dist": 350.43,
+"ecmp_fwd": {
+"uni": 38.93,
+"deg": 54.34
+},
+"ecmp_bwd": {
+"uni": 38.64,
+"deg": 54.09
+},
+"source": "New York 1",
+"target": "Ashburn"
+},
+{
+"dist": 15922.14,
+"ecmp_fwd": {
+"uni": 38.69,
+"deg": 13.56
+},
+"ecmp_bwd": {
+"uni": 38.69,
+"deg": 13.56
+},
+"source": "San Jose 1",
+"target": "Hong Kong"
+},
+{
+"dist": 13192.32,
+"ecmp_fwd": {
+"uni": 38.69,
+"deg": 13.56
+},
+"ecmp_bwd": {
+"uni": 38.69,
+"deg": 13.56
+},
+"source": "San Jose 1",
+"target": "Tokyo"
+},
+{
+"dist": 1159.21,
+"ecmp_fwd": {
+"uni": 6.73,
+"deg": 5.20
+},
+"ecmp_bwd": {
+"uni": 6.17,
+"deg": 4.71
+},
+"source": "Atlanta",
+"target": "Dallas"
+},
+{
+"dist": 853.00,
+"ecmp_fwd": {
+"uni": 31.96,
+"deg": 21.55
+},
+"ecmp_bwd": {
+"uni": 32.52,
+"deg": 22.04
+},
+"source": "Atlanta",
+"target": "Ashburn"
+},
+{
+"dist": 1497.41,
+"ecmp_fwd": {
+"uni": 38.69,
+"deg": 13.56
+},
+"ecmp_bwd": {
+"uni": 38.69,
+"deg": 13.56
+},
+"source": "Miami",
+"target": "Ashburn"
+},
+{
+"dist": 1991.54,
+"ecmp_fwd": {
+"uni": 11.26,
+"deg": 14.11
+},
+"ecmp_bwd": {
+"uni": 12.06,
+"deg": 15.11
+},
+"source": "Los Angeles",
+"target": "Dallas"
+},
+{
+"dist": 1291.83,
+"ecmp_fwd": {
+"uni": 16.96,
+"deg": 21.19
+},
+"ecmp_bwd": {
+"uni": 17.85,
+"deg": 21.69
+},
+"source": "Dallas",
+"target": "Chicago"
+},
+{
+"dist": 1869.74,
+"ecmp_fwd": {
+"uni": 22.43,
+"deg": 29.13
+},
+"ecmp_bwd": {
+"uni": 21.78,
+"deg": 29.14
+},
+"source": "Dallas",
+"target": "Ashburn"
+}
+]
+}

@@ -1,0 +1,1881 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "vtlwavenet2011",
+"demands": {},
+"stats": {
+"nodes": 91,
+"links": 93,
+"demands": 8190,
+"min_degree": 1,
+"avg_degree": 2.04,
+"std_degree": 0.39,
+"max_degree": 4,
+"gini": 0.06,
+"min_link_len": 0.00,
+"avg_link_len": 53.18,
+"max_link_len": 189.19,
+"diameter_len": 2366.95,
+"diameter_hops": 42,
+"avg_sdp_num": 1.01,
+"max_sdp_num": 2,
+"avg_sdp_hops": 15.53,
+"avg_sdp_len": 782.03,
+"avg_adp_num": 1.25,
+"max_adp_num": 3,
+"avg_adp_hops": 17.21,
+"avg_adp_len": 915.31
+}
+},
+"nodes": [
+{
+"pos": [
+7.15,
+46.75
+],
+"id": "Ependes"
+},
+{
+"pos": [
+7.90,
+47.35
+],
+"id": "Olten"
+},
+{
+"pos": [
+2.73,
+48.18
+],
+"id": "Souppes"
+},
+{
+"pos": [
+2.74,
+47.63
+],
+"id": "Briare"
+},
+{
+"pos": [
+3.16,
+46.99
+],
+"id": "Nevers"
+},
+{
+"pos": [
+3.77,
+46.62
+],
+"id": "Bourbon"
+},
+{
+"pos": [
+4.28,
+46.43
+],
+"id": "Charolles"
+},
+{
+"pos": [
+4.75,
+46.10
+],
+"id": "Belleville"
+},
+{
+"pos": [
+5.42,
+45.85
+],
+"id": "Sault Brenaz"
+},
+{
+"pos": [
+5.77,
+45.80
+],
+"id": "Lavours"
+},
+{
+"pos": [
+4.85,
+45.75
+],
+"id": "Lyon"
+},
+{
+"pos": [
+4.75,
+44.08
+],
+"id": "Montfaucon"
+},
+{
+"pos": [
+4.42,
+51.22
+],
+"id": "Antwerp (NMBS)"
+},
+{
+"pos": [
+1.44,
+43.60
+],
+"id": "Toulouse"
+},
+{
+"pos": [
+4.35,
+50.85
+],
+"id": "Brussels MIDI (NMBS)"
+},
+{
+"pos": [
+5.38,
+43.30
+],
+"id": "Marseille"
+},
+{
+"pos": [
+-0.57,
+44.83
+],
+"id": "Bordeaux"
+},
+{
+"pos": [
+8.31,
+47.05
+],
+"id": "Luzern"
+},
+{
+"pos": [
+9.19,
+45.46
+],
+"id": "Milan"
+},
+{
+"pos": [
+3.37,
+49.00
+],
+"id": "Azy-sur-Marne"
+},
+{
+"pos": [
+2.87,
+48.95
+],
+"id": "Meaux"
+},
+{
+"pos": [
+4.98,
+48.83
+],
+"id": "Revigny"
+},
+{
+"pos": [
+4.18,
+49.05
+],
+"id": "Conde-sur-Marne"
+},
+{
+"pos": [
+3.25,
+50.68
+],
+"id": "Leers-Nord Estampuis"
+},
+{
+"pos": [
+3.45,
+50.57
+],
+"id": "Antoing (NMBS)"
+},
+{
+"pos": [
+2.88,
+49.48
+],
+"id": "Thourotte"
+},
+{
+"pos": [
+2.93,
+50.45
+],
+"id": "Courrieres"
+},
+{
+"pos": [
+3.72,
+51.05
+],
+"id": "Gent"
+},
+{
+"pos": [
+4.42,
+51.22
+],
+"id": "Antwerp"
+},
+{
+"pos": [
+8.65,
+46.88
+],
+"id": "Altdorf"
+},
+{
+"pos": [
+9.00,
+46.19
+],
+"id": "Monte Carasso"
+},
+{
+"pos": [
+7.45,
+46.95
+],
+"id": "Bern"
+},
+{
+"pos": [
+8.55,
+47.37
+],
+"id": "Zurich"
+},
+{
+"pos": [
+7.60,
+47.57
+],
+"id": "Basel"
+},
+{
+"pos": [
+6.20,
+48.68
+],
+"id": "Nancy"
+},
+{
+"pos": [
+7.75,
+48.58
+],
+"id": "Strasbourg"
+},
+{
+"pos": [
+8.46,
+49.49
+],
+"id": "Mannheim"
+},
+{
+"pos": [
+8.68,
+50.12
+],
+"id": "Frankfurt"
+},
+{
+"pos": [
+8.68,
+50.12
+],
+"id": "Internexion"
+},
+{
+"pos": [
+2.35,
+48.85
+],
+"id": "Paris La Defense"
+},
+{
+"pos": [
+6.15,
+46.20
+],
+"id": "Geneva"
+},
+{
+"pos": [
+-0.57,
+51.42
+],
+"id": "Egham"
+},
+{
+"pos": [
+-0.13,
+51.51
+],
+"id": "London Telehouse North"
+},
+{
+"pos": [
+1.75,
+52.48
+],
+"id": "Lowestoft"
+},
+{
+"pos": [
+4.89,
+52.37
+],
+"id": "Amsterdam (Schipluidlaan/Deflandlaan)"
+},
+{
+"pos": [
+2.35,
+48.85
+],
+"id": "Paris (35Rdj)"
+},
+{
+"pos": [
+2.92,
+49.92
+],
+"id": "Biaches"
+},
+{
+"pos": [
+2.30,
+49.90
+],
+"id": "Amiens"
+},
+{
+"pos": [
+-0.18,
+51.11
+],
+"id": "Crawley"
+},
+{
+"pos": [
+4.48,
+51.92
+],
+"id": "Rotterdam"
+},
+{
+"pos": [
+4.35,
+50.85
+],
+"id": "Brussels Tollaan"
+},
+{
+"pos": [
+1.30,
+43.83
+],
+"id": "Grisolles"
+},
+{
+"pos": [
+0.68,
+44.18
+],
+"id": "Bon-Encontre"
+},
+{
+"pos": [
+1.33,
+47.58
+],
+"id": "Blois"
+},
+{
+"pos": [
+7.55,
+47.92
+],
+"id": "Nambsheim"
+},
+{
+"pos": [
+0.33,
+46.58
+],
+"id": "Availles (Poiters)"
+},
+{
+"pos": [
+0.68,
+47.38
+],
+"id": "Veretz (Tours)"
+},
+{
+"pos": [
+0.05,
+45.63
+],
+"id": "Nersac"
+},
+{
+"pos": [
+-0.43,
+46.05
+],
+"id": "Blanzay"
+},
+{
+"pos": [
+0.03,
+44.52
+],
+"id": "Meilhan"
+},
+{
+"pos": [
+-0.10,
+44.88
+],
+"id": "St-Christophe"
+},
+{
+"pos": [
+4.80,
+45.23
+],
+"id": "Andancette"
+},
+{
+"pos": [
+6.78,
+51.22
+],
+"id": "Dusseldorf"
+},
+{
+"pos": [
+5.21,
+43.69
+],
+"id": "Cazan"
+},
+{
+"pos": [
+4.75,
+44.57
+],
+"id": "Montelimar"
+},
+{
+"pos": [
+4.52,
+43.75
+],
+"id": "Pichegu"
+},
+{
+"pos": [
+4.94,
+43.44
+],
+"id": "Fos"
+},
+{
+"pos": [
+3.08,
+43.32
+],
+"id": "Poilhes"
+},
+{
+"pos": [
+3.88,
+43.60
+],
+"id": "Sete (Montpellier)"
+},
+{
+"pos": [
+1.80,
+43.37
+],
+"id": "Avignonet"
+},
+{
+"pos": [
+2.55,
+43.20
+],
+"id": "Marseillette"
+},
+{
+"pos": [
+1.90,
+47.92
+],
+"id": "Artenay (Orleans)"
+},
+{
+"pos": [
+2.57,
+48.43
+],
+"id": "St-Martin"
+},
+{
+"pos": [
+0.58,
+52.08
+],
+"id": "Snow Hill"
+},
+{
+"pos": [
+0.82,
+52.27
+],
+"id": "Pakenham"
+},
+{
+"pos": [
+4.53,
+52.37
+],
+"id": "Zandvoort"
+},
+{
+"pos": [
+4.45,
+51.46
+],
+"id": "Essen"
+},
+{
+"pos": [
+2.48,
+48.60
+],
+"id": "Corbeil"
+},
+{
+"pos": [
+2.23,
+49.11
+],
+"id": "L'Isle Adam"
+},
+{
+"pos": [
+1.49,
+50.18
+],
+"id": "Cayeux-sur-Mer"
+},
+{
+"pos": [
+0.23,
+50.80
+],
+"id": "Polegate"
+},
+{
+"pos": [
+7.00,
+48.70
+],
+"id": "Xouxange"
+},
+{
+"pos": [
+5.70,
+48.70
+],
+"id": "Troussey"
+},
+{
+"pos": [
+6.15,
+51.87
+],
+"id": "Elten"
+},
+{
+"pos": [
+5.43,
+52.01
+],
+"id": "Leersum/Doorn??"
+},
+{
+"pos": [
+6.37,
+51.57
+],
+"id": "Kapella"
+},
+{
+"pos": [
+7.05,
+50.88
+],
+"id": "Porz"
+},
+{
+"pos": [
+7.28,
+50.57
+],
+"id": "Linz"
+},
+{
+"pos": [
+7.60,
+50.55
+],
+"id": "Dernbach"
+},
+{
+"pos": [
+8.30,
+50.13
+],
+"id": "Naurod"
+},
+{
+"pos": [
+7.17,
+48.90
+],
+"id": "Berg"
+}
+],
+"links": [
+{
+"dist": 31.51,
+"ecmp_fwd": {
+"uni": 21.09,
+"deg": 18.67
+},
+"ecmp_bwd": {
+"uni": 21.09,
+"deg": 18.67
+},
+"source": "Ependes",
+"target": "Bern"
+},
+{
+"dist": 98.15,
+"ecmp_fwd": {
+"uni": 16.00,
+"deg": 13.48
+},
+"ecmp_bwd": {
+"uni": 16.00,
+"deg": 13.48
+},
+"source": "Ependes",
+"target": "Geneva"
+},
+{
+"dist": 56.46,
+"ecmp_fwd": {
+"uni": 26.06,
+"deg": 23.73
+},
+"ecmp_bwd": {
+"uni": 26.06,
+"deg": 23.73
+},
+"source": "Olten",
+"target": "Bern"
+},
+{
+"dist": 48.76,
+"ecmp_fwd": {
+"uni": 30.91,
+"deg": 28.68
+},
+"ecmp_bwd": {
+"uni": 30.91,
+"deg": 28.68
+},
+"source": "Olten",
+"target": "Zurich"
+},
+{
+"dist": 61.17,
+"ecmp_fwd": {
+"uni": 26.06,
+"deg": 23.73
+},
+"ecmp_bwd": {
+"uni": 26.06,
+"deg": 23.73
+},
+"source": "Souppes",
+"target": "Briare"
+},
+{
+"dist": 49.89,
+"ecmp_fwd": {
+"uni": 30.91,
+"deg": 28.68
+},
+"ecmp_bwd": {
+"uni": 30.91,
+"deg": 28.68
+},
+"source": "Souppes",
+"target": "Corbeil"
+},
+{
+"dist": 78.16,
+"ecmp_fwd": {
+"uni": 21.09,
+"deg": 18.67
+},
+"ecmp_bwd": {
+"uni": 21.09,
+"deg": 18.67
+},
+"source": "Briare",
+"target": "Nevers"
+},
+{
+"dist": 61.89,
+"ecmp_fwd": {
+"uni": 16.00,
+"deg": 13.48
+},
+"ecmp_bwd": {
+"uni": 16.00,
+"deg": 13.48
+},
+"source": "Nevers",
+"target": "Bourbon"
+},
+{
+"dist": 44.57,
+"ecmp_fwd": {
+"uni": 10.79,
+"deg": 8.18
+},
+"ecmp_bwd": {
+"uni": 10.79,
+"deg": 8.18
+},
+"source": "Bourbon",
+"target": "Charolles"
+},
+{
+"dist": 51.60,
+"ecmp_fwd": {
+"uni": 5.45,
+"deg": 2.76
+},
+"ecmp_bwd": {
+"uni": 5.45,
+"deg": 2.76
+},
+"source": "Charolles",
+"target": "Belleville"
+},
+{
+"dist": 27.69,
+"ecmp_fwd": {
+"uni": 5.45,
+"deg": 2.76
+},
+"ecmp_bwd": {
+"uni": 5.45,
+"deg": 2.76
+},
+"source": "Sault Brenaz",
+"target": "Lavours"
+},
+{
+"dist": 53.47,
+"ecmp_fwd": {
+"uni": 10.79,
+"deg": 8.18
+},
+"ecmp_bwd": {
+"uni": 10.79,
+"deg": 8.18
+},
+"source": "Lavours",
+"target": "Geneva"
+},
+{
+"dist": 57.60,
+"ecmp_fwd": {
+"uni": 5.45,
+"deg": 2.76
+},
+"ecmp_bwd": {
+"uni": 5.45,
+"deg": 2.76
+},
+"source": "Lyon",
+"target": "Andancette"
+},
+{
+"dist": 56.99,
+"ecmp_fwd": {
+"uni": 21.09,
+"deg": 18.67
+},
+"ecmp_bwd": {
+"uni": 21.09,
+"deg": 18.67
+},
+"source": "Montfaucon",
+"target": "Cazan"
+},
+{
+"dist": 53.76,
+"ecmp_fwd": {
+"uni": 16.00,
+"deg": 13.48
+},
+"ecmp_bwd": {
+"uni": 16.00,
+"deg": 13.48
+},
+"source": "Montfaucon",
+"target": "Montelimar"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 28.88,
+"deg": 31.30
+},
+"ecmp_bwd": {
+"uni": 28.88,
+"deg": 31.30
+},
+"source": "Antwerp (NMBS)",
+"target": "Antwerp"
+},
+{
+"dist": 27.49,
+"ecmp_fwd": {
+"uni": 27.79,
+"deg": 30.17
+},
+"ecmp_bwd": {
+"uni": 27.79,
+"deg": 30.17
+},
+"source": "Antwerp (NMBS)",
+"target": "Essen"
+},
+{
+"dist": 27.67,
+"ecmp_fwd": {
+"uni": 61.45,
+"deg": 59.96
+},
+"ecmp_bwd": {
+"uni": 61.45,
+"deg": 59.96
+},
+"source": "Toulouse",
+"target": "Grisolles"
+},
+{
+"dist": 39.05,
+"ecmp_fwd": {
+"uni": 57.45,
+"deg": 55.85
+},
+"ecmp_bwd": {
+"uni": 57.45,
+"deg": 55.85
+},
+"source": "Toulouse",
+"target": "Avignonet"
+},
+{
+"dist": 70.74,
+"ecmp_fwd": {
+"uni": 5.27,
+"deg": 5.30
+},
+"ecmp_bwd": {
+"uni": 5.27,
+"deg": 5.30
+},
+"source": "Brussels MIDI (NMBS)",
+"target": "Antoing (NMBS)"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 2.48,
+"deg": 2.56
+},
+"ecmp_bwd": {
+"uni": 2.48,
+"deg": 2.56
+},
+"source": "Brussels MIDI (NMBS)",
+"target": "Brussels Tollaan"
+},
+{
+"dist": 46.01,
+"ecmp_fwd": {
+"uni": 26.06,
+"deg": 23.73
+},
+"ecmp_bwd": {
+"uni": 26.06,
+"deg": 23.73
+},
+"source": "Marseille",
+"target": "Cazan"
+},
+{
+"dist": 38.61,
+"ecmp_fwd": {
+"uni": 30.91,
+"deg": 28.68
+},
+"ecmp_bwd": {
+"uni": 30.91,
+"deg": 28.68
+},
+"source": "Marseille",
+"target": "Fos"
+},
+{
+"dist": 59.10,
+"ecmp_fwd": {
+"uni": 72.73,
+"deg": 71.58
+},
+"ecmp_bwd": {
+"uni": 72.73,
+"deg": 71.58
+},
+"source": "Bordeaux",
+"target": "Meilhan"
+},
+{
+"dist": 37.21,
+"ecmp_fwd": {
+"uni": 76.24,
+"deg": 75.21
+},
+"ecmp_bwd": {
+"uni": 76.24,
+"deg": 75.21
+},
+"source": "Bordeaux",
+"target": "St-Christophe"
+},
+{
+"dist": 39.70,
+"ecmp_fwd": {
+"uni": 21.09,
+"deg": 18.67
+},
+"ecmp_bwd": {
+"uni": 21.09,
+"deg": 18.67
+},
+"source": "Luzern",
+"target": "Zurich"
+},
+{
+"dist": 32.03,
+"ecmp_fwd": {
+"uni": 16.00,
+"deg": 13.48
+},
+"ecmp_bwd": {
+"uni": 16.00,
+"deg": 13.48
+},
+"source": "Luzern",
+"target": "Altdorf"
+},
+{
+"dist": 81.68,
+"ecmp_fwd": {
+"uni": 5.45,
+"deg": 2.76
+},
+"ecmp_bwd": {
+"uni": 5.45,
+"deg": 2.76
+},
+"source": "Milan",
+"target": "Monte Carasso"
+},
+{
+"dist": 37.04,
+"ecmp_fwd": {
+"uni": 83.48,
+"deg": 84.17
+},
+"ecmp_bwd": {
+"uni": 83.48,
+"deg": 84.17
+},
+"source": "Azy-sur-Marne",
+"target": "Meaux"
+},
+{
+"dist": 59.71,
+"ecmp_fwd": {
+"uni": 81.61,
+"deg": 82.20
+},
+"ecmp_bwd": {
+"uni": 81.61,
+"deg": 82.20
+},
+"source": "Azy-sur-Marne",
+"target": "Conde-sur-Marne"
+},
+{
+"dist": 39.36,
+"ecmp_fwd": {
+"uni": 85.36,
+"deg": 86.13
+},
+"ecmp_bwd": {
+"uni": 85.36,
+"deg": 86.13
+},
+"source": "Meaux",
+"target": "Paris (35Rdj)"
+},
+{
+"dist": 54.59,
+"ecmp_fwd": {
+"uni": 77.89,
+"deg": 78.34
+},
+"ecmp_bwd": {
+"uni": 77.89,
+"deg": 78.34
+},
+"source": "Revigny",
+"target": "Troussey"
+},
+{
+"dist": 63.22,
+"ecmp_fwd": {
+"uni": 79.73,
+"deg": 80.23
+},
+"ecmp_bwd": {
+"uni": 79.73,
+"deg": 80.23
+},
+"source": "Revigny",
+"target": "Conde-sur-Marne"
+},
+{
+"dist": 19.06,
+"ecmp_fwd": {
+"uni": 8.30,
+"deg": 8.28
+},
+"ecmp_bwd": {
+"uni": 8.30,
+"deg": 8.28
+},
+"source": "Leers-Nord Estampuis",
+"target": "Antoing (NMBS)"
+},
+{
+"dist": 34.26,
+"ecmp_fwd": {
+"uni": 45.42,
+"deg": 50.48
+},
+"ecmp_bwd": {
+"uni": 45.42,
+"deg": 50.48
+},
+"source": "Leers-Nord Estampuis",
+"target": "Courrieres"
+},
+{
+"dist": 52.31,
+"ecmp_fwd": {
+"uni": 34.33,
+"deg": 38.08
+},
+"ecmp_bwd": {
+"uni": 34.33,
+"deg": 38.08
+},
+"source": "Leers-Nord Estampuis",
+"target": "Gent"
+},
+{
+"dist": 62.69,
+"ecmp_fwd": {
+"uni": 79.36,
+"deg": 84.40
+},
+"ecmp_bwd": {
+"uni": 79.36,
+"deg": 84.40
+},
+"source": "Thourotte",
+"target": "L'Isle Adam"
+},
+{
+"dist": 49.09,
+"ecmp_fwd": {
+"uni": 77.36,
+"deg": 82.56
+},
+"ecmp_bwd": {
+"uni": 77.36,
+"deg": 82.56
+},
+"source": "Thourotte",
+"target": "Biaches"
+},
+{
+"dist": 59.33,
+"ecmp_fwd": {
+"uni": 48.45,
+"deg": 53.40
+},
+"ecmp_bwd": {
+"uni": 48.45,
+"deg": 53.40
+},
+"source": "Courrieres",
+"target": "Biaches"
+},
+{
+"dist": 49.54,
+"ecmp_fwd": {
+"uni": 31.42,
+"deg": 35.22
+},
+"ecmp_bwd": {
+"uni": 31.42,
+"deg": 35.22
+},
+"source": "Gent",
+"target": "Brussels Tollaan"
+},
+{
+"dist": 41.01,
+"ecmp_fwd": {
+"uni": 30.88,
+"deg": 33.32
+},
+"ecmp_bwd": {
+"uni": 30.88,
+"deg": 33.32
+},
+"source": "Antwerp",
+"target": "Brussels Tollaan"
+},
+{
+"dist": 81.98,
+"ecmp_fwd": {
+"uni": 10.79,
+"deg": 8.18
+},
+"ecmp_bwd": {
+"uni": 10.79,
+"deg": 8.18
+},
+"source": "Altdorf",
+"target": "Monte Carasso"
+},
+{
+"dist": 74.81,
+"ecmp_fwd": {
+"uni": 53.33,
+"deg": 51.62
+},
+"ecmp_bwd": {
+"uni": 53.33,
+"deg": 51.62
+},
+"source": "Zurich",
+"target": "Basel"
+},
+{
+"dist": 39.11,
+"ecmp_fwd": {
+"uni": 57.45,
+"deg": 55.85
+},
+"ecmp_bwd": {
+"uni": 57.45,
+"deg": 55.85
+},
+"source": "Basel",
+"target": "Nambsheim"
+},
+{
+"dist": 58.77,
+"ecmp_fwd": {
+"uni": 74.62,
+"deg": 75.00
+},
+"ecmp_bwd": {
+"uni": 74.62,
+"deg": 75.00
+},
+"source": "Nancy",
+"target": "Xouxange"
+},
+{
+"dist": 36.76,
+"ecmp_fwd": {
+"uni": 76.20,
+"deg": 76.61
+},
+"ecmp_bwd": {
+"uni": 76.20,
+"deg": 76.61
+},
+"source": "Nancy",
+"target": "Troussey"
+},
+{
+"dist": 56.63,
+"ecmp_fwd": {
+"uni": 73.17,
+"deg": 73.51
+},
+"ecmp_bwd": {
+"uni": 73.17,
+"deg": 73.51
+},
+"source": "Strasbourg",
+"target": "Xouxange"
+},
+{
+"dist": 55.42,
+"ecmp_fwd": {
+"uni": 43.47,
+"deg": 43.48
+},
+"ecmp_bwd": {
+"uni": 43.47,
+"deg": 43.48
+},
+"source": "Strasbourg",
+"target": "Berg"
+},
+{
+"dist": 75.62,
+"ecmp_fwd": {
+"uni": 61.45,
+"deg": 59.96
+},
+"ecmp_bwd": {
+"uni": 61.45,
+"deg": 59.96
+},
+"source": "Strasbourg",
+"target": "Nambsheim"
+},
+{
+"dist": 114.82,
+"ecmp_fwd": {
+"uni": 40.68,
+"deg": 40.71
+},
+"ecmp_bwd": {
+"uni": 40.68,
+"deg": 40.71
+},
+"source": "Mannheim",
+"target": "Berg"
+},
+{
+"dist": 71.63,
+"ecmp_fwd": {
+"uni": 38.14,
+"deg": 38.21
+},
+"ecmp_bwd": {
+"uni": 38.14,
+"deg": 38.21
+},
+"source": "Mannheim",
+"target": "Internexion"
+},
+{
+"dist": 27.40,
+"ecmp_fwd": {
+"uni": 33.65,
+"deg": 33.89
+},
+"ecmp_bwd": {
+"uni": 33.65,
+"deg": 33.89
+},
+"source": "Frankfurt",
+"target": "Naurod"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 35.83,
+"deg": 35.97
+},
+"ecmp_bwd": {
+"uni": 35.83,
+"deg": 35.97
+},
+"source": "Frankfurt",
+"target": "Internexion"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 83.36,
+"deg": 88.10
+},
+"ecmp_bwd": {
+"uni": 83.36,
+"deg": 88.10
+},
+"source": "Paris La Defense",
+"target": "Paris (35Rdj)"
+},
+{
+"dist": 29.60,
+"ecmp_fwd": {
+"uni": 81.36,
+"deg": 86.25
+},
+"ecmp_bwd": {
+"uni": 81.36,
+"deg": 86.25
+},
+"source": "Paris La Defense",
+"target": "L'Isle Adam"
+},
+{
+"dist": 43.05,
+"ecmp_fwd": {
+"uni": 20.56,
+"deg": 20.63
+},
+"ecmp_bwd": {
+"uni": 20.56,
+"deg": 20.63
+},
+"source": "Egham",
+"target": "Crawley"
+},
+{
+"dist": 32.22,
+"ecmp_fwd": {
+"uni": 17.65,
+"deg": 17.71
+},
+"ecmp_bwd": {
+"uni": 17.65,
+"deg": 17.71
+},
+"source": "Egham",
+"target": "London Telehouse North"
+},
+{
+"dist": 79.93,
+"ecmp_fwd": {
+"uni": 15.65,
+"deg": 15.72
+},
+"ecmp_bwd": {
+"uni": 15.65,
+"deg": 15.72
+},
+"source": "London Telehouse North",
+"target": "Snow Hill"
+},
+{
+"dist": 67.37,
+"ecmp_fwd": {
+"uni": 13.95,
+"deg": 14.08
+},
+"ecmp_bwd": {
+"uni": 13.95,
+"deg": 14.08
+},
+"source": "Lowestoft",
+"target": "Pakenham"
+},
+{
+"dist": 189.19,
+"ecmp_fwd": {
+"uni": 13.35,
+"deg": 13.54
+},
+"ecmp_bwd": {
+"uni": 13.35,
+"deg": 13.54
+},
+"source": "Lowestoft",
+"target": "Zandvoort"
+},
+{
+"dist": 57.51,
+"ecmp_fwd": {
+"uni": 25.97,
+"deg": 28.26
+},
+"ecmp_bwd": {
+"uni": 25.97,
+"deg": 28.26
+},
+"source": "Amsterdam (Schipluidlaan/Deflandlaan)",
+"target": "Rotterdam"
+},
+{
+"dist": 24.15,
+"ecmp_fwd": {
+"uni": 15.24,
+"deg": 15.49
+},
+"ecmp_bwd": {
+"uni": 15.24,
+"deg": 15.49
+},
+"source": "Amsterdam (Schipluidlaan/Deflandlaan)",
+"target": "Zandvoort"
+},
+{
+"dist": 54.50,
+"ecmp_fwd": {
+"uni": 31.18,
+"deg": 32.38
+},
+"ecmp_bwd": {
+"uni": 31.18,
+"deg": 32.38
+},
+"source": "Amsterdam (Schipluidlaan/Deflandlaan)",
+"target": "Leersum/Doorn??"
+},
+{
+"dist": 49.39,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Paris (35Rdj)",
+"target": "St-Martin"
+},
+{
+"dist": 29.86,
+"ecmp_fwd": {
+"uni": 35.64,
+"deg": 33.50
+},
+"ecmp_bwd": {
+"uni": 35.64,
+"deg": 33.50
+},
+"source": "Paris (35Rdj)",
+"target": "Corbeil"
+},
+{
+"dist": 44.21,
+"ecmp_fwd": {
+"uni": 33.85,
+"deg": 33.96
+},
+"ecmp_bwd": {
+"uni": 33.85,
+"deg": 33.96
+},
+"source": "Biaches",
+"target": "Amiens"
+},
+{
+"dist": 65.56,
+"ecmp_fwd": {
+"uni": 30.02,
+"deg": 30.11
+},
+"ecmp_bwd": {
+"uni": 30.02,
+"deg": 30.11
+},
+"source": "Amiens",
+"target": "Cayeux-sur-Mer"
+},
+{
+"dist": 45.43,
+"ecmp_fwd": {
+"uni": 23.59,
+"deg": 23.67
+},
+"ecmp_bwd": {
+"uni": 23.59,
+"deg": 23.67
+},
+"source": "Crawley",
+"target": "Polegate"
+},
+{
+"dist": 51.17,
+"ecmp_fwd": {
+"uni": 26.82,
+"deg": 29.15
+},
+"ecmp_bwd": {
+"uni": 26.82,
+"deg": 29.15
+},
+"source": "Rotterdam",
+"target": "Essen"
+},
+{
+"dist": 62.92,
+"ecmp_fwd": {
+"uni": 65.33,
+"deg": 63.95
+},
+"ecmp_bwd": {
+"uni": 65.33,
+"deg": 63.95
+},
+"source": "Grisolles",
+"target": "Bon-Encontre"
+},
+{
+"dist": 63.62,
+"ecmp_fwd": {
+"uni": 69.09,
+"deg": 67.82
+},
+"ecmp_bwd": {
+"uni": 69.09,
+"deg": 67.82
+},
+"source": "Bon-Encontre",
+"target": "Meilhan"
+},
+{
+"dist": 56.31,
+"ecmp_fwd": {
+"uni": 94.79,
+"deg": 94.52
+},
+"ecmp_bwd": {
+"uni": 94.79,
+"deg": 94.52
+},
+"source": "Blois",
+"target": "Artenay (Orleans)"
+},
+{
+"dist": 53.68,
+"ecmp_fwd": {
+"uni": 92.00,
+"deg": 91.60
+},
+"ecmp_bwd": {
+"uni": 92.00,
+"deg": 91.60
+},
+"source": "Blois",
+"target": "Veretz (Tours)"
+},
+{
+"dist": 92.86,
+"ecmp_fwd": {
+"uni": 89.09,
+"deg": 88.56
+},
+"ecmp_bwd": {
+"uni": 89.09,
+"deg": 88.56
+},
+"source": "Availles (Poiters)",
+"target": "Veretz (Tours)"
+},
+{
+"dist": 83.59,
+"ecmp_fwd": {
+"uni": 86.06,
+"deg": 85.40
+},
+"ecmp_bwd": {
+"uni": 86.06,
+"deg": 85.40
+},
+"source": "Availles (Poiters)",
+"target": "Blanzay"
+},
+{
+"dist": 59.58,
+"ecmp_fwd": {
+"uni": 82.91,
+"deg": 82.12
+},
+"ecmp_bwd": {
+"uni": 82.91,
+"deg": 82.12
+},
+"source": "Nersac",
+"target": "Blanzay"
+},
+{
+"dist": 84.24,
+"ecmp_fwd": {
+"uni": 79.64,
+"deg": 78.73
+},
+"ecmp_bwd": {
+"uni": 79.64,
+"deg": 78.73
+},
+"source": "Nersac",
+"target": "St-Christophe"
+},
+{
+"dist": 74.25,
+"ecmp_fwd": {
+"uni": 10.79,
+"deg": 8.18
+},
+"ecmp_bwd": {
+"uni": 10.79,
+"deg": 8.18
+},
+"source": "Andancette",
+"target": "Montelimar"
+},
+{
+"dist": 47.75,
+"ecmp_fwd": {
+"uni": 25.55,
+"deg": 26.49
+},
+"ecmp_bwd": {
+"uni": 25.55,
+"deg": 26.49
+},
+"source": "Dusseldorf",
+"target": "Kapella"
+},
+{
+"dist": 42.23,
+"ecmp_fwd": {
+"uni": 25.61,
+"deg": 26.43
+},
+"ecmp_bwd": {
+"uni": 25.61,
+"deg": 26.43
+},
+"source": "Dusseldorf",
+"target": "Porz"
+},
+{
+"dist": 48.93,
+"ecmp_fwd": {
+"uni": 35.64,
+"deg": 33.50
+},
+"ecmp_bwd": {
+"uni": 35.64,
+"deg": 33.50
+},
+"source": "Pichegu",
+"target": "Fos"
+},
+{
+"dist": 53.61,
+"ecmp_fwd": {
+"uni": 40.24,
+"deg": 38.21
+},
+"ecmp_bwd": {
+"uni": 40.24,
+"deg": 38.21
+},
+"source": "Pichegu",
+"target": "Sete (Montpellier)"
+},
+{
+"dist": 71.87,
+"ecmp_fwd": {
+"uni": 44.73,
+"deg": 42.80
+},
+"ecmp_bwd": {
+"uni": 44.73,
+"deg": 42.80
+},
+"source": "Poilhes",
+"target": "Sete (Montpellier)"
+},
+{
+"dist": 45.11,
+"ecmp_fwd": {
+"uni": 49.09,
+"deg": 47.27
+},
+"ecmp_bwd": {
+"uni": 49.09,
+"deg": 47.27
+},
+"source": "Poilhes",
+"target": "Marseillette"
+},
+{
+"dist": 63.49,
+"ecmp_fwd": {
+"uni": 53.33,
+"deg": 51.62
+},
+"ecmp_bwd": {
+"uni": 53.33,
+"deg": 51.62
+},
+"source": "Avignonet",
+"target": "Marseillette"
+},
+{
+"dist": 75.81,
+"ecmp_fwd": {
+"uni": 97.45,
+"deg": 97.32
+},
+"ecmp_bwd": {
+"uni": 97.45,
+"deg": 97.32
+},
+"source": "Artenay (Orleans)",
+"target": "St-Martin"
+},
+{
+"dist": 26.87,
+"ecmp_fwd": {
+"uni": 14.68,
+"deg": 14.76
+},
+"ecmp_bwd": {
+"uni": 14.68,
+"deg": 14.76
+},
+"source": "Snow Hill",
+"target": "Pakenham"
+},
+{
+"dist": 112.62,
+"ecmp_fwd": {
+"uni": 26.74,
+"deg": 26.83
+},
+"ecmp_bwd": {
+"uni": 26.74,
+"deg": 26.83
+},
+"source": "Cayeux-sur-Mer",
+"target": "Polegate"
+},
+{
+"dist": 52.08,
+"ecmp_fwd": {
+"uni": 29.30,
+"deg": 30.42
+},
+"ecmp_bwd": {
+"uni": 29.30,
+"deg": 30.42
+},
+"source": "Elten",
+"target": "Leersum/Doorn??"
+},
+{
+"dist": 36.56,
+"ecmp_fwd": {
+"uni": 27.42,
+"deg": 28.45
+},
+"ecmp_bwd": {
+"uni": 27.42,
+"deg": 28.45
+},
+"source": "Elten",
+"target": "Kapella"
+},
+{
+"dist": 38.86,
+"ecmp_fwd": {
+"uni": 27.61,
+"deg": 28.27
+},
+"ecmp_bwd": {
+"uni": 27.61,
+"deg": 28.27
+},
+"source": "Porz",
+"target": "Linz"
+},
+{
+"dist": 22.45,
+"ecmp_fwd": {
+"uni": 29.61,
+"deg": 30.12
+},
+"ecmp_bwd": {
+"uni": 29.61,
+"deg": 30.12
+},
+"source": "Linz",
+"target": "Dernbach"
+},
+{
+"dist": 67.95,
+"ecmp_fwd": {
+"uni": 31.61,
+"deg": 31.97
+},
+"ecmp_bwd": {
+"uni": 31.61,
+"deg": 31.97
+},
+"source": "Dernbach",
+"target": "Naurod"
+}
+]
+}

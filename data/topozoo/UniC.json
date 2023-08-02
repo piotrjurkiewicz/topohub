@@ -1,0 +1,361 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "unic",
+"demands": {},
+"stats": {
+"nodes": 15,
+"links": 17,
+"demands": 210,
+"min_degree": 2,
+"avg_degree": 2.27,
+"std_degree": 0.57,
+"max_degree": 4,
+"gini": 0.10,
+"min_link_len": 16.72,
+"avg_link_len": 48.45,
+"max_link_len": 75.54,
+"diameter_len": 390.24,
+"diameter_hops": 8,
+"avg_sdp_num": 1.03,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.46,
+"avg_sdp_len": 146.50,
+"avg_adp_num": 1.49,
+"max_adp_num": 2,
+"avg_adp_hops": 4.17,
+"avg_adp_len": 206.76
+}
+},
+"nodes": [
+{
+"pos": [
+10.39,
+55.40
+],
+"id": "Odense"
+},
+{
+"pos": [
+10.79,
+55.31
+],
+"id": "Nyborg"
+},
+{
+"pos": [
+9.54,
+55.71
+],
+"id": "Vejle"
+},
+{
+"pos": [
+9.47,
+55.49
+],
+"id": "Kolding"
+},
+{
+"pos": [
+11.72,
+55.72
+],
+"id": "Holbaek"
+},
+{
+"pos": [
+12.50,
+55.77
+],
+"id": "Lyngby"
+},
+{
+"pos": [
+11.35,
+55.40
+],
+"id": "Slagelse"
+},
+{
+"pos": [
+11.55,
+55.31
+],
+"id": "Naestved"
+},
+{
+"pos": [
+12.60,
+55.63
+],
+"id": "Orestad"
+},
+{
+"pos": [
+8.97,
+56.14
+],
+"id": "Herning"
+},
+{
+"pos": [
+9.92,
+57.05
+],
+"id": "Aalborg"
+},
+{
+"pos": [
+9.34,
+56.77
+],
+"id": "Farso"
+},
+{
+"pos": [
+9.79,
+56.64
+],
+"id": "Hobro"
+},
+{
+"pos": [
+9.55,
+56.17
+],
+"id": "Silkeborg"
+},
+{
+"pos": [
+10.21,
+56.16
+],
+"id": "Arthus"
+}
+],
+"links": [
+{
+"dist": 27.01,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Odense",
+"target": "Nyborg"
+},
+{
+"dist": 63.97,
+"ecmp_fwd": {
+"uni": 90.74,
+"deg": 93.77
+},
+"ecmp_bwd": {
+"uni": 90.74,
+"deg": 93.77
+},
+"source": "Odense",
+"target": "Vejle"
+},
+{
+"dist": 58.75,
+"ecmp_fwd": {
+"uni": 12.96,
+"deg": 11.72
+},
+"ecmp_bwd": {
+"uni": 12.96,
+"deg": 11.72
+},
+"source": "Odense",
+"target": "Kolding"
+},
+{
+"dist": 37.10,
+"ecmp_fwd": {
+"uni": 50.00,
+"deg": 46.89
+},
+"ecmp_bwd": {
+"uni": 50.00,
+"deg": 46.89
+},
+"source": "Nyborg",
+"target": "Slagelse"
+},
+{
+"dist": 47.99,
+"ecmp_fwd": {
+"uni": 50.00,
+"deg": 46.89
+},
+"ecmp_bwd": {
+"uni": 50.00,
+"deg": 46.89
+},
+"source": "Nyborg",
+"target": "Naestved"
+},
+{
+"dist": 59.28,
+"ecmp_fwd": {
+"uni": 55.56,
+"deg": 52.75
+},
+"ecmp_bwd": {
+"uni": 55.56,
+"deg": 52.75
+},
+"source": "Vejle",
+"target": "Herning"
+},
+{
+"dist": 24.67,
+"ecmp_fwd": {
+"uni": 12.96,
+"deg": 11.72
+},
+"ecmp_bwd": {
+"uni": 12.96,
+"deg": 11.72
+},
+"source": "Vejle",
+"target": "Kolding"
+},
+{
+"dist": 65.16,
+"ecmp_fwd": {
+"uni": 55.56,
+"deg": 52.75
+},
+"ecmp_bwd": {
+"uni": 55.56,
+"deg": 52.75
+},
+"source": "Vejle",
+"target": "Arthus"
+},
+{
+"dist": 49.64,
+"ecmp_fwd": {
+"uni": 16.67,
+"deg": 14.65
+},
+"ecmp_bwd": {
+"uni": 16.67,
+"deg": 14.65
+},
+"source": "Holbaek",
+"target": "Lyngby"
+},
+{
+"dist": 41.69,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 30.77
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 30.77
+},
+"source": "Holbaek",
+"target": "Slagelse"
+},
+{
+"dist": 16.72,
+"ecmp_fwd": {
+"uni": 16.67,
+"deg": 14.65
+},
+"ecmp_bwd": {
+"uni": 16.67,
+"deg": 14.65
+},
+"source": "Lyngby",
+"target": "Orestad"
+},
+{
+"dist": 75.54,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 30.77
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 30.77
+},
+"source": "Naestved",
+"target": "Orestad"
+},
+{
+"dist": 35.55,
+"ecmp_fwd": {
+"uni": 40.74,
+"deg": 38.10
+},
+"ecmp_bwd": {
+"uni": 40.74,
+"deg": 38.10
+},
+"source": "Herning",
+"target": "Silkeborg"
+},
+{
+"dist": 46.64,
+"ecmp_fwd": {
+"uni": 11.11,
+"deg": 8.79
+},
+"ecmp_bwd": {
+"uni": 11.11,
+"deg": 8.79
+},
+"source": "Aalborg",
+"target": "Farso"
+},
+{
+"dist": 45.71,
+"ecmp_fwd": {
+"uni": 25.93,
+"deg": 23.44
+},
+"ecmp_bwd": {
+"uni": 25.93,
+"deg": 23.44
+},
+"source": "Aalborg",
+"target": "Hobro"
+},
+{
+"dist": 68.26,
+"ecmp_fwd": {
+"uni": 25.93,
+"deg": 23.44
+},
+"ecmp_bwd": {
+"uni": 25.93,
+"deg": 23.44
+},
+"source": "Farso",
+"target": "Silkeborg"
+},
+{
+"dist": 59.96,
+"ecmp_fwd": {
+"uni": 40.74,
+"deg": 38.10
+},
+"ecmp_bwd": {
+"uni": 40.74,
+"deg": 38.10
+},
+"source": "Hobro",
+"target": "Arthus"
+}
+]
+}

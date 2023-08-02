@@ -1,0 +1,242 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "itnet",
+"demands": {},
+"stats": {
+"nodes": 11,
+"links": 10,
+"demands": 110,
+"min_degree": 1,
+"avg_degree": 1.82,
+"std_degree": 2.59,
+"max_degree": 10,
+"gini": 0.41,
+"min_link_len": 68.12,
+"avg_link_len": 156.35,
+"max_link_len": 255.78,
+"diameter_len": 474.67,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.82,
+"avg_sdp_len": 284.26,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 1.82,
+"avg_adp_len": 284.26
+}
+},
+"nodes": [
+{
+"pos": [
+-8.62,
+52.66
+],
+"id": "Limerick"
+},
+{
+"pos": [
+-8.50,
+51.90
+],
+"id": "Cork"
+},
+{
+"pos": [
+-9.70,
+52.27
+],
+"id": "Tralee"
+},
+{
+"pos": [
+-9.05,
+53.27
+],
+"id": "Galway"
+},
+{
+"pos": [
+-8.47,
+54.27
+],
+"id": "Sligo"
+},
+{
+"pos": [
+-7.73,
+54.95
+],
+"id": "Letterkenny"
+},
+{
+"pos": [
+-7.94,
+53.42
+],
+"id": "Athlone"
+},
+{
+"pos": [
+-6.42,
+54.00
+],
+"id": "Dundalk"
+},
+{
+"pos": [
+-6.38,
+53.39
+],
+"id": "Blanchardstown, Dun Laoghaire, Tallaght"
+},
+{
+"pos": [
+-6.74,
+52.80
+],
+"id": "Carlow"
+},
+{
+"pos": [
+-7.11,
+52.26
+],
+"id": "Waterford"
+}
+],
+"links": [
+{
+"dist": 170.51,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Limerick",
+"target": "Blanchardstown, Dun Laoghaire, Tallaght"
+},
+{
+"dist": 218.89,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Cork",
+"target": "Blanchardstown, Dun Laoghaire, Tallaght"
+},
+{
+"dist": 255.78,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Tralee",
+"target": "Blanchardstown, Dun Laoghaire, Tallaght"
+},
+{
+"dist": 178.03,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Galway",
+"target": "Blanchardstown, Dun Laoghaire, Tallaght"
+},
+{
+"dist": 168.84,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Sligo",
+"target": "Blanchardstown, Dun Laoghaire, Tallaght"
+},
+{
+"dist": 194.92,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Letterkenny",
+"target": "Blanchardstown, Dun Laoghaire, Tallaght"
+},
+{
+"dist": 103.62,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Athlone",
+"target": "Blanchardstown, Dun Laoghaire, Tallaght"
+},
+{
+"dist": 68.12,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Dundalk",
+"target": "Blanchardstown, Dun Laoghaire, Tallaght"
+},
+{
+"dist": 69.69,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Blanchardstown, Dun Laoghaire, Tallaght",
+"target": "Carlow"
+},
+{
+"dist": 135.05,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Blanchardstown, Dun Laoghaire, Tallaght",
+"target": "Waterford"
+}
+]
+}

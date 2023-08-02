@@ -1,0 +1,887 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "roedunet",
+"demands": {},
+"stats": {
+"nodes": 40,
+"links": 44,
+"demands": 1560,
+"min_degree": 1,
+"avg_degree": 2.20,
+"std_degree": 2.91,
+"max_degree": 15,
+"gini": 0.47,
+"min_link_len": 21.05,
+"avg_link_len": 127.84,
+"max_link_len": 410.09,
+"diameter_len": 829.61,
+"diameter_hops": 4,
+"avg_sdp_num": 1.01,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.83,
+"avg_sdp_len": 436.00,
+"avg_adp_num": 1.04,
+"max_adp_num": 3,
+"avg_adp_hops": 2.85,
+"avg_adp_len": 471.23
+}
+},
+"nodes": [
+{
+"pos": [
+23.80,
+44.32
+],
+"id": "Dolj"
+},
+{
+"pos": [
+24.37,
+44.43
+],
+"id": "Olt"
+},
+{
+"pos": [
+23.28,
+45.05
+],
+"id": "Gorj"
+},
+{
+"pos": [
+24.37,
+45.10
+],
+"id": "Valcea"
+},
+{
+"pos": [
+26.11,
+44.43
+],
+"id": "Bucaresti"
+},
+{
+"pos": [
+26.63,
+44.72
+],
+"id": "Ialomita"
+},
+{
+"pos": [
+25.33,
+43.98
+],
+"id": "Teleorman"
+},
+{
+"pos": [
+25.97,
+43.88
+],
+"id": "Giurgiu"
+},
+{
+"pos": [
+27.33,
+44.20
+],
+"id": "Calarasi"
+},
+{
+"pos": [
+28.65,
+44.18
+],
+"id": "Constanta"
+},
+{
+"pos": [
+26.18,
+45.85
+],
+"id": "Covasna"
+},
+{
+"pos": [
+24.15,
+45.80
+],
+"id": "Sibiu"
+},
+{
+"pos": [
+23.58,
+46.07
+],
+"id": "Alba"
+},
+{
+"pos": [
+24.87,
+44.85
+],
+"id": "Arges"
+},
+{
+"pos": [
+25.45,
+44.93
+],
+"id": "Dambovita"
+},
+{
+"pos": [
+26.02,
+44.95
+],
+"id": "Prahova"
+},
+{
+"pos": [
+26.83,
+45.15
+],
+"id": "Buzau"
+},
+{
+"pos": [
+27.18,
+45.70
+],
+"id": "Vrancea"
+},
+{
+"pos": [
+26.90,
+46.57
+],
+"id": "Bacau"
+},
+{
+"pos": [
+25.30,
+46.30
+],
+"id": "Harghita"
+},
+{
+"pos": [
+24.56,
+46.54
+],
+"id": "Mures"
+},
+{
+"pos": [
+24.50,
+47.13
+],
+"id": "Bistrita-Nasaud"
+},
+{
+"pos": [
+27.73,
+46.63
+],
+"id": "Vaslui"
+},
+{
+"pos": [
+28.05,
+45.45
+],
+"id": "Galati"
+},
+{
+"pos": [
+28.80,
+45.17
+],
+"id": "Tulcea"
+},
+{
+"pos": [
+27.98,
+45.27
+],
+"id": "Braila"
+},
+{
+"pos": [
+26.33,
+46.92
+],
+"id": "Neamt"
+},
+{
+"pos": [
+26.25,
+47.63
+],
+"id": "Suceava"
+},
+{
+"pos": [
+26.67,
+47.75
+],
+"id": "Botosani"
+},
+{
+"pos": [
+27.60,
+47.17
+],
+"id": "Iasi"
+},
+{
+"pos": [
+21.89,
+45.30
+],
+"id": "Caras-Severin"
+},
+{
+"pos": [
+22.66,
+44.63
+],
+"id": "Mehedinti"
+},
+{
+"pos": [
+22.88,
+47.80
+],
+"id": "Satu Mare"
+},
+{
+"pos": [
+23.57,
+47.66
+],
+"id": "Maramures"
+},
+{
+"pos": [
+23.60,
+46.77
+],
+"id": "Cluj"
+},
+{
+"pos": [
+23.05,
+47.20
+],
+"id": "Salaj"
+},
+{
+"pos": [
+21.93,
+47.07
+],
+"id": "Bihor"
+},
+{
+"pos": [
+21.32,
+46.18
+],
+"id": "Arad"
+},
+{
+"pos": [
+21.23,
+45.75
+],
+"id": "Timis"
+},
+{
+"pos": [
+22.90,
+45.75
+],
+"id": "Hunedora"
+}
+],
+"links": [
+{
+"dist": 46.88,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Dolj",
+"target": "Olt"
+},
+{
+"dist": 91.23,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Dolj",
+"target": "Gorj"
+},
+{
+"dist": 97.97,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Dolj",
+"target": "Valcea"
+},
+{
+"dist": 183.80,
+"ecmp_fwd": {
+"uni": 97.83,
+"deg": 90.37
+},
+"ecmp_bwd": {
+"uni": 97.83,
+"deg": 90.37
+},
+"source": "Dolj",
+"target": "Bucaresti"
+},
+{
+"dist": 97.32,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Dolj",
+"target": "Mehedinti"
+},
+{
+"dist": 257.45,
+"ecmp_fwd": {
+"uni": 28.99,
+"deg": 26.14
+},
+"ecmp_bwd": {
+"uni": 28.99,
+"deg": 26.14
+},
+"source": "Dolj",
+"target": "Timis"
+},
+{
+"dist": 324.71,
+"ecmp_fwd": {
+"uni": 84.78,
+"deg": 84.47
+},
+"ecmp_bwd": {
+"uni": 84.78,
+"deg": 84.47
+},
+"source": "Bucaresti",
+"target": "Cluj"
+},
+{
+"dist": 52.39,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Bucaresti",
+"target": "Ialomita"
+},
+{
+"dist": 79.31,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Bucaresti",
+"target": "Teleorman"
+},
+{
+"dist": 62.06,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Bucaresti",
+"target": "Giurgiu"
+},
+{
+"dist": 101.01,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Bucaresti",
+"target": "Calarasi"
+},
+{
+"dist": 204.34,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Bucaresti",
+"target": "Constanta"
+},
+{
+"dist": 108.55,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Bucaresti",
+"target": "Arges"
+},
+{
+"dist": 76.16,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Bucaresti",
+"target": "Dambovita"
+},
+{
+"dist": 58.02,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Bucaresti",
+"target": "Prahova"
+},
+{
+"dist": 98.32,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Bucaresti",
+"target": "Buzau"
+},
+{
+"dist": 410.09,
+"ecmp_fwd": {
+"uni": 79.71,
+"deg": 81.33
+},
+"ecmp_bwd": {
+"uni": 79.71,
+"deg": 81.33
+},
+"source": "Bucaresti",
+"target": "Timis"
+},
+{
+"dist": 263.94,
+"ecmp_fwd": {
+"uni": 56.52,
+"deg": 58.48
+},
+"ecmp_bwd": {
+"uni": 56.52,
+"deg": 58.48
+},
+"source": "Bucaresti",
+"target": "Mures"
+},
+{
+"dist": 190.34,
+"ecmp_fwd": {
+"uni": 81.16,
+"deg": 74.68
+},
+"ecmp_bwd": {
+"uni": 81.16,
+"deg": 74.68
+},
+"source": "Bucaresti",
+"target": "Galati"
+},
+{
+"dist": 325.43,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Bucaresti",
+"target": "Iasi"
+},
+{
+"dist": 146.97,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Covasna",
+"target": "Mures"
+},
+{
+"dist": 88.34,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Sibiu",
+"target": "Mures"
+},
+{
+"dist": 77.87,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Alba",
+"target": "Cluj"
+},
+{
+"dist": 72.98,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Vrancea",
+"target": "Galati"
+},
+{
+"dist": 85.36,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Bacau",
+"target": "Iasi"
+},
+{
+"dist": 63.00,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Harghita",
+"target": "Mures"
+},
+{
+"dist": 77.23,
+"ecmp_fwd": {
+"uni": 37.68,
+"deg": 37.49
+},
+"ecmp_bwd": {
+"uni": 37.68,
+"deg": 37.49
+},
+"source": "Mures",
+"target": "Cluj"
+},
+{
+"dist": 241.59,
+"ecmp_fwd": {
+"uni": 36.23,
+"deg": 35.47
+},
+"ecmp_bwd": {
+"uni": 36.23,
+"deg": 35.47
+},
+"source": "Mures",
+"target": "Iasi"
+},
+{
+"dist": 79.58,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Bistrita-Nasaud",
+"target": "Cluj"
+},
+{
+"dist": 60.18,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Vaslui",
+"target": "Iasi"
+},
+{
+"dist": 66.60,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Galati",
+"target": "Tulcea"
+},
+{
+"dist": 21.05,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Galati",
+"target": "Braila"
+},
+{
+"dist": 194.04,
+"ecmp_fwd": {
+"uni": 23.19,
+"deg": 20.91
+},
+"ecmp_bwd": {
+"uni": 23.19,
+"deg": 20.91
+},
+"source": "Galati",
+"target": "Iasi"
+},
+{
+"dist": 99.95,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Neamt",
+"target": "Iasi"
+},
+{
+"dist": 114.12,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Suceava",
+"target": "Iasi"
+},
+{
+"dist": 95.58,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Botosani",
+"target": "Iasi"
+},
+{
+"dist": 71.77,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Caras-Severin",
+"target": "Timis"
+},
+{
+"dist": 127.02,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Satu Mare",
+"target": "Cluj"
+},
+{
+"dist": 99.09,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Maramures",
+"target": "Cluj"
+},
+{
+"dist": 63.75,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Cluj",
+"target": "Salaj"
+},
+{
+"dist": 214.69,
+"ecmp_fwd": {
+"uni": 39.86,
+"deg": 38.46
+},
+"ecmp_bwd": {
+"uni": 39.86,
+"deg": 38.46
+},
+"source": "Cluj",
+"target": "Timis"
+},
+{
+"dist": 156.20,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Bihor",
+"target": "Timis"
+},
+{
+"dist": 48.75,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Arad",
+"target": "Timis"
+},
+{
+"dist": 129.83,
+"ecmp_fwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 28.26,
+"deg": 12.99
+},
+"source": "Timis",
+"target": "Hunedora"
+}
+]
+}

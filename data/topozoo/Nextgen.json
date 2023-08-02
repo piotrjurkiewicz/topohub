@@ -1,0 +1,355 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "nextgen",
+"demands": {},
+"stats": {
+"nodes": 16,
+"links": 16,
+"demands": 240,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 0.50,
+"max_degree": 3,
+"gini": 0.11,
+"min_link_len": 64.53,
+"avg_link_len": 479.53,
+"max_link_len": 2134.65,
+"diameter_len": 5121.84,
+"diameter_hops": 13,
+"avg_sdp_num": 1.02,
+"max_sdp_num": 2,
+"avg_sdp_hops": 5.08,
+"avg_sdp_len": 1795.51,
+"avg_adp_num": 1.05,
+"max_adp_num": 2,
+"avg_adp_hops": 5.11,
+"avg_adp_len": 1852.03
+}
+},
+"nodes": [
+{
+"pos": [
+148.62,
+-32.25
+],
+"id": "Dubbo"
+},
+{
+"pos": [
+149.85,
+-29.47
+],
+"id": "Moree"
+},
+{
+"pos": [
+148.18,
+-33.13
+],
+"id": "Parkes"
+},
+{
+"pos": [
+146.92,
+-36.08
+],
+"id": "Albury"
+},
+{
+"pos": [
+151.78,
+-32.93
+],
+"id": "Newcastle"
+},
+{
+"pos": [
+153.13,
+-30.30
+],
+"id": "Coff's Harbour"
+},
+{
+"pos": [
+144.36,
+-38.15
+],
+"id": "Geelong"
+},
+{
+"pos": [
+145.40,
+-36.38
+],
+"id": "Shepparton"
+},
+{
+"pos": [
+115.83,
+-31.93
+],
+"id": "Perth"
+},
+{
+"pos": [
+138.60,
+-34.93
+],
+"id": "Adelaide"
+},
+{
+"pos": [
+144.96,
+-37.81
+],
+"id": "Melbourne"
+},
+{
+"pos": [
+151.21,
+-33.87
+],
+"id": "Sydney"
+},
+{
+"pos": [
+149.13,
+-35.28
+],
+"id": "Canberra"
+},
+{
+"pos": [
+153.03,
+-27.47
+],
+"id": "Brisbane"
+},
+{
+"pos": [
+121.47,
+-30.75
+],
+"id": "Kalgoorlie"
+},
+{
+"pos": [
+137.77,
+-32.50
+],
+"id": "Port Augusta"
+}
+],
+"links": [
+{
+"dist": 331.21,
+"ecmp_fwd": {
+"uni": 43.75,
+"deg": 34.12
+},
+"ecmp_bwd": {
+"uni": 43.75,
+"deg": 34.12
+},
+"source": "Dubbo",
+"target": "Moree"
+},
+{
+"dist": 106.29,
+"ecmp_fwd": {
+"uni": 23.44,
+"deg": 12.16
+},
+"ecmp_bwd": {
+"uni": 23.44,
+"deg": 12.16
+},
+"source": "Dubbo",
+"target": "Parkes"
+},
+{
+"dist": 382.05,
+"ecmp_fwd": {
+"uni": 60.94,
+"deg": 52.94
+},
+"ecmp_bwd": {
+"uni": 60.94,
+"deg": 52.94
+},
+"source": "Moree",
+"target": "Brisbane"
+},
+{
+"dist": 259.22,
+"ecmp_fwd": {
+"uni": 98.44,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 98.44,
+"deg": 100.00
+},
+"source": "Albury",
+"target": "Melbourne"
+},
+{
+"dist": 218.69,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Albury",
+"target": "Canberra"
+},
+{
+"dist": 117.22,
+"ecmp_fwd": {
+"uni": 93.75,
+"deg": 90.59
+},
+"ecmp_bwd": {
+"uni": 93.75,
+"deg": 90.59
+},
+"source": "Newcastle",
+"target": "Sydney"
+},
+{
+"dist": 319.21,
+"ecmp_fwd": {
+"uni": 85.94,
+"deg": 81.18
+},
+"ecmp_bwd": {
+"uni": 85.94,
+"deg": 81.18
+},
+"source": "Newcastle",
+"target": "Coff's Harbour"
+},
+{
+"dist": 315.17,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 68.63
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 68.63
+},
+"source": "Coff's Harbour",
+"target": "Brisbane"
+},
+{
+"dist": 626.52,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 81.18
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 81.18
+},
+"source": "Geelong",
+"target": "Adelaide"
+},
+{
+"dist": 64.53,
+"ecmp_fwd": {
+"uni": 85.94,
+"deg": 90.59
+},
+"ecmp_bwd": {
+"uni": 85.94,
+"deg": 90.59
+},
+"source": "Geelong",
+"target": "Melbourne"
+},
+{
+"dist": 163.78,
+"ecmp_fwd": {
+"uni": 23.44,
+"deg": 12.16
+},
+"ecmp_bwd": {
+"uni": 23.44,
+"deg": 12.16
+},
+"source": "Shepparton",
+"target": "Melbourne"
+},
+{
+"dist": 2134.65,
+"ecmp_fwd": {
+"uni": 31.25,
+"deg": 31.37
+},
+"ecmp_bwd": {
+"uni": 31.25,
+"deg": 31.37
+},
+"source": "Perth",
+"target": "Adelaide"
+},
+{
+"dist": 551.02,
+"ecmp_fwd": {
+"uni": 12.50,
+"deg": 12.55
+},
+"ecmp_bwd": {
+"uni": 12.50,
+"deg": 12.55
+},
+"source": "Perth",
+"target": "Kalgoorlie"
+},
+{
+"dist": 281.41,
+"ecmp_fwd": {
+"uni": 31.25,
+"deg": 31.37
+},
+"ecmp_bwd": {
+"uni": 31.25,
+"deg": 31.37
+},
+"source": "Adelaide",
+"target": "Port Augusta"
+},
+{
+"dist": 247.07,
+"ecmp_fwd": {
+"uni": 98.44,
+"deg": 96.86
+},
+"ecmp_bwd": {
+"uni": 98.44,
+"deg": 96.86
+},
+"source": "Sydney",
+"target": "Canberra"
+},
+{
+"dist": 1554.42,
+"ecmp_fwd": {
+"uni": 12.50,
+"deg": 12.55
+},
+"ecmp_bwd": {
+"uni": 12.50,
+"deg": 12.55
+},
+"source": "Kalgoorlie",
+"target": "Port Augusta"
+}
+]
+}

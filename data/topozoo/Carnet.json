@@ -1,0 +1,842 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "carnet",
+"demands": {},
+"stats": {
+"nodes": 41,
+"links": 40,
+"demands": 1640,
+"min_degree": 1,
+"avg_degree": 1.95,
+"std_degree": 2.74,
+"max_degree": 15,
+"gini": 0.44,
+"min_link_len": 6.71,
+"avg_link_len": 64.75,
+"max_link_len": 259.02,
+"diameter_len": 719.12,
+"diameter_hops": 6,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 3.05,
+"avg_sdp_len": 314.88,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 3.05,
+"avg_adp_len": 314.88
+}
+},
+"nodes": [
+{
+"pos": [
+17.25,
+45.15
+],
+"id": "Stara Gradnifska"
+},
+{
+"pos": [
+16.78,
+45.48
+],
+"id": "Kutina"
+},
+{
+"pos": [
+18.02,
+45.16
+],
+"id": "Slavonski"
+},
+{
+"pos": [
+17.69,
+45.34
+],
+"id": "Pozega"
+},
+{
+"pos": [
+16.08,
+45.71
+],
+"id": "Gorica"
+},
+{
+"pos": [
+15.55,
+45.49
+],
+"id": "Karlovac"
+},
+{
+"pos": [
+16.38,
+45.47
+],
+"id": "Sisak"
+},
+{
+"pos": [
+16.29,
+45.44
+],
+"id": "Petrinja"
+},
+{
+"pos": [
+15.65,
+45.67
+],
+"id": "Jastrebarsko"
+},
+{
+"pos": [
+16.44,
+43.17
+],
+"id": "Hvar"
+},
+{
+"pos": [
+18.09,
+42.65
+],
+"id": "Dubrovnik"
+},
+{
+"pos": [
+13.64,
+45.08
+],
+"id": "Rovinj"
+},
+{
+"pos": [
+13.72,
+45.28
+],
+"id": "Visnjan"
+},
+{
+"pos": [
+14.31,
+45.34
+],
+"id": "Opatija"
+},
+{
+"pos": [
+13.59,
+45.23
+],
+"id": "Porec"
+},
+{
+"pos": [
+13.66,
+45.41
+],
+"id": "Buje"
+},
+{
+"pos": [
+15.24,
+44.12
+],
+"id": "Zadar"
+},
+{
+"pos": [
+15.38,
+44.11
+],
+"id": "Zenumik D"
+},
+{
+"pos": [
+16.20,
+44.04
+],
+"id": "Knin"
+},
+{
+"pos": [
+16.25,
+43.51
+],
+"id": "Trogic"
+},
+{
+"pos": [
+16.73,
+43.35
+],
+"id": "Pucisca"
+},
+{
+"pos": [
+16.50,
+43.55
+],
+"id": "Solin"
+},
+{
+"pos": [
+15.91,
+43.73
+],
+"id": "Sibenik"
+},
+{
+"pos": [
+13.85,
+44.87
+],
+"id": "Pula"
+},
+{
+"pos": [
+14.47,
+44.53
+],
+"id": "M. Losinj"
+},
+{
+"pos": [
+14.41,
+45.34
+],
+"id": "Rijeka"
+},
+{
+"pos": [
+16.44,
+43.51
+],
+"id": "Split"
+},
+{
+"pos": [
+16.43,
+46.38
+],
+"id": "Cakovec"
+},
+{
+"pos": [
+15.37,
+44.55
+],
+"id": "Gospic"
+},
+{
+"pos": [
+15.24,
+44.87
+],
+"id": "Otocac"
+},
+{
+"pos": [
+18.80,
+45.29
+],
+"id": "Vinkovci"
+},
+{
+"pos": [
+19.00,
+45.34
+],
+"id": "Vukovar"
+},
+{
+"pos": [
+18.41,
+45.31
+],
+"id": "Dakovo"
+},
+{
+"pos": [
+15.98,
+45.81
+],
+"id": "Zagreb"
+},
+{
+"pos": [
+15.81,
+45.86
+],
+"id": "Zabresic"
+},
+{
+"pos": [
+15.72,
+45.80
+],
+"id": "Samobor"
+},
+{
+"pos": [
+16.34,
+46.30
+],
+"id": "Varazdin"
+},
+{
+"pos": [
+16.54,
+46.02
+],
+"id": "Krizevci"
+},
+{
+"pos": [
+16.85,
+45.90
+],
+"id": "Bjelovar"
+},
+{
+"pos": [
+17.38,
+45.83
+],
+"id": "Virovitica"
+},
+{
+"pos": [
+18.69,
+45.55
+],
+"id": "Osijek"
+}
+],
+"links": [
+{
+"dist": 123.58,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Stara Gradnifska",
+"target": "Zagreb"
+},
+{
+"dist": 73.03,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Kutina",
+"target": "Zagreb"
+},
+{
+"dist": 68.56,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Slavonski",
+"target": "Osijek"
+},
+{
+"dist": 82.13,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Pozega",
+"target": "Osijek"
+},
+{
+"dist": 13.63,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Gorica",
+"target": "Zagreb"
+},
+{
+"dist": 49.43,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Karlovac",
+"target": "Zagreb"
+},
+{
+"dist": 49.70,
+"ecmp_fwd": {
+"uni": 25.16,
+"deg": 19.93
+},
+"ecmp_bwd": {
+"uni": 25.16,
+"deg": 19.93
+},
+"source": "Sisak",
+"target": "Zagreb"
+},
+{
+"dist": 7.59,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Sisak",
+"target": "Petrinja"
+},
+{
+"dist": 30.29,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Jastrebarsko",
+"target": "Zagreb"
+},
+{
+"dist": 37.42,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Hvar",
+"target": "Split"
+},
+{
+"dist": 164.93,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Dubrovnik",
+"target": "Split"
+},
+{
+"dist": 28.68,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Rovinj",
+"target": "Pula"
+},
+{
+"dist": 54.35,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Visnjan",
+"target": "Rijeka"
+},
+{
+"dist": 7.90,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Opatija",
+"target": "Rijeka"
+},
+{
+"dist": 65.12,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Porec",
+"target": "Rijeka"
+},
+{
+"dist": 58.85,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Buje",
+"target": "Rijeka"
+},
+{
+"dist": 11.14,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Zadar",
+"target": "Zenumik D"
+},
+{
+"dist": 117.66,
+"ecmp_fwd": {
+"uni": 25.16,
+"deg": 19.93
+},
+"ecmp_bwd": {
+"uni": 25.16,
+"deg": 19.93
+},
+"source": "Zadar",
+"target": "Split"
+},
+{
+"dist": 62.53,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Knin",
+"target": "Split"
+},
+{
+"dist": 15.13,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Trogic",
+"target": "Split"
+},
+{
+"dist": 29.80,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Pucisca",
+"target": "Split"
+},
+{
+"dist": 6.71,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Solin",
+"target": "Split"
+},
+{
+"dist": 49.33,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Sibenik",
+"target": "Split"
+},
+{
+"dist": 68.76,
+"ecmp_fwd": {
+"uni": 25.16,
+"deg": 19.93
+},
+"ecmp_bwd": {
+"uni": 25.16,
+"deg": 19.93
+},
+"source": "Pula",
+"target": "Rijeka"
+},
+{
+"dist": 90.49,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "M. Losinj",
+"target": "Rijeka"
+},
+{
+"dist": 132.91,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Rijeka",
+"target": "Zagreb"
+},
+{
+"dist": 116.77,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Rijeka",
+"target": "Gospic"
+},
+{
+"dist": 83.69,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Rijeka",
+"target": "Otocac"
+},
+{
+"dist": 259.02,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Split",
+"target": "Zagreb"
+},
+{
+"dist": 11.56,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Cakovec",
+"target": "Varazdin"
+},
+{
+"dist": 16.43,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Vinkovci",
+"target": "Vukovar"
+},
+{
+"dist": 33.22,
+"ecmp_fwd": {
+"uni": 25.16,
+"deg": 19.93
+},
+"ecmp_bwd": {
+"uni": 25.16,
+"deg": 19.93
+},
+"source": "Vukovar",
+"target": "Osijek"
+},
+{
+"dist": 34.90,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Dakovo",
+"target": "Osijek"
+},
+{
+"dist": 108.99,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Zagreb",
+"target": "Virovitica"
+},
+{
+"dist": 213.05,
+"ecmp_fwd": {
+"uni": 67.74,
+"deg": 65.49
+},
+"ecmp_bwd": {
+"uni": 67.74,
+"deg": 65.49
+},
+"source": "Zagreb",
+"target": "Osijek"
+},
+{
+"dist": 49.40,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Zagreb",
+"target": "Krizevci"
+},
+{
+"dist": 68.11,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Zagreb",
+"target": "Bjelovar"
+},
+{
+"dist": 61.17,
+"ecmp_fwd": {
+"uni": 25.16,
+"deg": 19.93
+},
+"ecmp_bwd": {
+"uni": 25.16,
+"deg": 19.93
+},
+"source": "Zagreb",
+"target": "Varazdin"
+},
+{
+"dist": 20.19,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Zagreb",
+"target": "Samobor"
+},
+{
+"dist": 13.99,
+"ecmp_fwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"ecmp_bwd": {
+"uni": 12.90,
+"deg": 6.82
+},
+"source": "Zagreb",
+"target": "Zabresic"
+}
+]
+}

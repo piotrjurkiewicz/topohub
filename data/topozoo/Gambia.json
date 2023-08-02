@@ -1,0 +1,275 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "gambia",
+"demands": {},
+"stats": {
+"nodes": 12,
+"links": 12,
+"demands": 132,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 1.35,
+"max_degree": 6,
+"gini": 0.31,
+"min_link_len": 3.77,
+"avg_link_len": 40.94,
+"max_link_len": 143.06,
+"diameter_len": 344.49,
+"diameter_hops": 5,
+"avg_sdp_num": 1.05,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.61,
+"avg_sdp_len": 120.88,
+"avg_adp_num": 1.23,
+"max_adp_num": 2,
+"avg_adp_hops": 2.88,
+"avg_adp_len": 138.30
+}
+},
+"nodes": [
+{
+"pos": [
+-16.09,
+13.49
+],
+"id": "Kerewan"
+},
+{
+"pos": [
+-16.58,
+13.45
+],
+"id": "Banjul"
+},
+{
+"pos": [
+-14.22,
+13.32
+],
+"id": "Basse"
+},
+{
+"pos": [
+-14.65,
+13.43
+],
+"id": "Bansang"
+},
+{
+"pos": [
+-16.66,
+13.40
+],
+"id": "Abuko"
+},
+{
+"pos": [
+-16.68,
+13.44
+],
+"id": "Serekunda"
+},
+{
+"pos": [
+-16.71,
+13.46
+],
+"id": "Kotu"
+},
+{
+"pos": [
+-16.68,
+13.48
+],
+"id": "Bakau"
+},
+{
+"pos": [
+-16.65,
+13.27
+],
+"id": "Brikama"
+},
+{
+"pos": [
+-16.69,
+13.36
+],
+"id": "Yundum"
+},
+{
+"pos": [
+-15.53,
+13.43
+],
+"id": "Soma"
+},
+{
+"pos": [
+-15.60,
+13.57
+],
+"id": "Farafenni"
+}
+],
+"links": [
+{
+"dist": 52.83,
+"ecmp_fwd": {
+"uni": 45.10,
+"deg": 45.10
+},
+"ecmp_bwd": {
+"uni": 45.10,
+"deg": 45.10
+},
+"source": "Kerewan",
+"target": "Banjul"
+},
+{
+"dist": 53.80,
+"ecmp_fwd": {
+"uni": 37.25,
+"deg": 37.25
+},
+"ecmp_bwd": {
+"uni": 37.25,
+"deg": 37.25
+},
+"source": "Kerewan",
+"target": "Farafenni"
+},
+{
+"dist": 10.94,
+"ecmp_fwd": {
+"uni": 60.78,
+"deg": 60.78
+},
+"ecmp_bwd": {
+"uni": 60.78,
+"deg": 60.78
+},
+"source": "Banjul",
+"target": "Serekunda"
+},
+{
+"dist": 143.06,
+"ecmp_fwd": {
+"uni": 78.43,
+"deg": 61.76
+},
+"ecmp_bwd": {
+"uni": 78.43,
+"deg": 61.76
+},
+"source": "Basse",
+"target": "Soma"
+},
+{
+"dist": 48.65,
+"ecmp_fwd": {
+"uni": 43.14,
+"deg": 22.55
+},
+"ecmp_bwd": {
+"uni": 43.14,
+"deg": 22.55
+},
+"source": "Basse",
+"target": "Bansang"
+},
+{
+"dist": 4.50,
+"ecmp_fwd": {
+"uni": 43.14,
+"deg": 22.55
+},
+"ecmp_bwd": {
+"uni": 43.14,
+"deg": 22.55
+},
+"source": "Abuko",
+"target": "Serekunda"
+},
+{
+"dist": 3.77,
+"ecmp_fwd": {
+"uni": 43.14,
+"deg": 22.55
+},
+"ecmp_bwd": {
+"uni": 43.14,
+"deg": 22.55
+},
+"source": "Serekunda",
+"target": "Kotu"
+},
+{
+"dist": 4.44,
+"ecmp_fwd": {
+"uni": 43.14,
+"deg": 22.55
+},
+"ecmp_bwd": {
+"uni": 43.14,
+"deg": 22.55
+},
+"source": "Serekunda",
+"target": "Bakau"
+},
+{
+"dist": 19.31,
+"ecmp_fwd": {
+"uni": 43.14,
+"deg": 22.55
+},
+"ecmp_bwd": {
+"uni": 43.14,
+"deg": 22.55
+},
+"source": "Serekunda",
+"target": "Brikama"
+},
+{
+"dist": 8.48,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Serekunda",
+"target": "Yundum"
+},
+{
+"dist": 124.98,
+"ecmp_fwd": {
+"uni": 92.16,
+"deg": 92.16
+},
+"ecmp_bwd": {
+"uni": 92.16,
+"deg": 92.16
+},
+"source": "Yundum",
+"target": "Soma"
+},
+{
+"dist": 16.49,
+"ecmp_fwd": {
+"uni": 45.10,
+"deg": 45.10
+},
+"ecmp_bwd": {
+"uni": 45.10,
+"deg": 45.10
+},
+"source": "Soma",
+"target": "Farafenni"
+}
+]
+}

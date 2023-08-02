@@ -1,0 +1,282 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "kreonet",
+"demands": {},
+"stats": {
+"nodes": 13,
+"links": 12,
+"demands": 156,
+"min_degree": 1,
+"avg_degree": 1.85,
+"std_degree": 2.14,
+"max_degree": 9,
+"gini": 0.40,
+"min_link_len": 25.19,
+"avg_link_len": 115.83,
+"max_link_len": 199.47,
+"diameter_len": 523.49,
+"diameter_hops": 4,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 2.21,
+"avg_sdp_len": 264.73,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 2.21,
+"avg_adp_len": 264.73
+}
+},
+"nodes": [
+{
+"pos": [
+127.15,
+35.82
+],
+"id": "Jeonju"
+},
+{
+"pos": [
+126.52,
+33.51
+],
+"id": "Jeju"
+},
+{
+"pos": [
+126.92,
+35.15
+],
+"id": "Kwangju"
+},
+{
+"pos": [
+129.04,
+35.10
+],
+"id": "Busan"
+},
+{
+"pos": [
+128.68,
+35.23
+],
+"id": "Changwon"
+},
+{
+"pos": [
+126.98,
+37.57
+],
+"id": "Seoul"
+},
+{
+"pos": [
+126.73,
+37.45
+],
+"id": "Incheon"
+},
+{
+"pos": [
+127.01,
+37.29
+],
+"id": "Suwon"
+},
+{
+"pos": [
+127.15,
+36.81
+],
+"id": "Cheonan"
+},
+{
+"pos": [
+127.49,
+35.55
+],
+"id": "Ochang"
+},
+{
+"pos": [
+127.42,
+36.32
+],
+"id": "Daejeon"
+},
+{
+"pos": [
+129.37,
+36.03
+],
+"id": "Pohang"
+},
+{
+"pos": [
+128.59,
+35.87
+],
+"id": "Daegu"
+}
+],
+"links": [
+{
+"dist": 60.65,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"source": "Jeonju",
+"target": "Daejeon"
+},
+{
+"dist": 186.50,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"source": "Jeju",
+"target": "Kwangju"
+},
+{
+"dist": 137.52,
+"ecmp_fwd": {
+"uni": 73.33,
+"deg": 66.32
+},
+"ecmp_bwd": {
+"uni": 73.33,
+"deg": 66.32
+},
+"source": "Kwangju",
+"target": "Daejeon"
+},
+{
+"dist": 199.47,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"source": "Busan",
+"target": "Daejeon"
+},
+{
+"dist": 166.57,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"source": "Changwon",
+"target": "Daejeon"
+},
+{
+"dist": 144.14,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Seoul",
+"target": "Daejeon"
+},
+{
+"dist": 25.19,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"source": "Seoul",
+"target": "Incheon"
+},
+{
+"dist": 30.95,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"source": "Seoul",
+"target": "Suwon"
+},
+{
+"dist": 59.01,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"source": "Cheonan",
+"target": "Daejeon"
+},
+{
+"dist": 85.71,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"source": "Ochang",
+"target": "Daejeon"
+},
+{
+"dist": 177.58,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"source": "Daejeon",
+"target": "Pohang"
+},
+{
+"dist": 116.62,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 24.21
+},
+"source": "Daejeon",
+"target": "Daegu"
+}
+]
+}

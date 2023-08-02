@@ -1,0 +1,142 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "basnet",
+"demands": {},
+"stats": {
+"nodes": 6,
+"links": 5,
+"demands": 30,
+"min_degree": 1,
+"avg_degree": 1.67,
+"std_degree": 1.49,
+"max_degree": 5,
+"gini": 0.33,
+"min_link_len": 181.56,
+"avg_link_len": 251.71,
+"max_link_len": 327.96,
+"diameter_len": 607.73,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.67,
+"avg_sdp_len": 419.52,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 1.67,
+"avg_adp_len": 419.52
+}
+},
+"nodes": [
+{
+"pos": [
+23.83,
+53.68
+],
+"id": "Grodno"
+},
+{
+"pos": [
+27.57,
+53.90
+],
+"id": "Minsk"
+},
+{
+"pos": [
+30.20,
+55.19
+],
+"id": "Vitebsk"
+},
+{
+"pos": [
+30.34,
+53.91
+],
+"id": "Mogilev"
+},
+{
+"pos": [
+30.98,
+52.44
+],
+"id": "Gomel"
+},
+{
+"pos": [
+23.69,
+52.10
+],
+"id": "Brest"
+}
+],
+"links": [
+{
+"dist": 246.74,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Grodno",
+"target": "Minsk"
+},
+{
+"dist": 222.55,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Minsk",
+"target": "Vitebsk"
+},
+{
+"dist": 181.56,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Minsk",
+"target": "Mogilev"
+},
+{
+"dist": 279.77,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Minsk",
+"target": "Gomel"
+},
+{
+"dist": 327.96,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Minsk",
+"target": "Brest"
+}
+]
+}

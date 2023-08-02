@@ -1,0 +1,815 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "litnet",
+"demands": {},
+"stats": {
+"nodes": 39,
+"links": 39,
+"demands": 1482,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 2.72,
+"max_degree": 12,
+"gini": 0.45,
+"min_link_len": 18.74,
+"avg_link_len": 77.32,
+"max_link_len": 198.20,
+"diameter_len": 547.84,
+"diameter_hops": 4,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 2.95,
+"avg_sdp_len": 277.06,
+"avg_adp_num": 1.01,
+"max_adp_num": 2,
+"avg_adp_hops": 2.97,
+"avg_adp_len": 280.03
+}
+},
+"nodes": [
+{
+"pos": [
+26.25,
+55.73
+],
+"id": "Zarasai"
+},
+{
+"pos": [
+24.35,
+55.73
+],
+"id": "Panevezys"
+},
+{
+"pos": [
+25.58,
+55.97
+],
+"id": "Rokiskis"
+},
+{
+"pos": [
+24.97,
+55.83
+],
+"id": "Kupiskis"
+},
+{
+"pos": [
+22.93,
+55.63
+],
+"id": "Kelme"
+},
+{
+"pos": [
+23.53,
+55.82
+],
+"id": "Radviliskis"
+},
+{
+"pos": [
+21.84,
+55.91
+],
+"id": "Plunge"
+},
+{
+"pos": [
+22.29,
+55.25
+],
+"id": "Taurage"
+},
+{
+"pos": [
+21.70,
+55.36
+],
+"id": "Zemaiciu Naumiestis"
+},
+{
+"pos": [
+23.95,
+54.63
+],
+"id": "Prienai"
+},
+{
+"pos": [
+24.93,
+54.63
+],
+"id": "Trakar"
+},
+{
+"pos": [
+26.17,
+55.35
+],
+"id": "Ignalina"
+},
+{
+"pos": [
+24.75,
+55.25
+],
+"id": "Ukmerge"
+},
+{
+"pos": [
+24.95,
+55.05
+],
+"id": "Sirvintos"
+},
+{
+"pos": [
+22.77,
+55.08
+],
+"id": "Jurbarkas"
+},
+{
+"pos": [
+23.04,
+54.95
+],
+"id": "Sakiai"
+},
+{
+"pos": [
+23.03,
+54.65
+],
+"id": "Vilkaviskis"
+},
+{
+"pos": [
+23.35,
+54.57
+],
+"id": "Marijampole"
+},
+{
+"pos": [
+24.05,
+54.40
+],
+"id": "Alytus"
+},
+{
+"pos": [
+23.97,
+54.02
+],
+"id": "Druskininkai"
+},
+{
+"pos": [
+25.38,
+54.30
+],
+"id": "Salcininkai"
+},
+{
+"pos": [
+25.42,
+55.23
+],
+"id": "Moletai"
+},
+{
+"pos": [
+26.42,
+55.60
+],
+"id": "Visaginas"
+},
+{
+"pos": [
+24.40,
+56.06
+],
+"id": "Pasvalys"
+},
+{
+"pos": [
+23.90,
+54.90
+],
+"id": "Kaunas"
+},
+{
+"pos": [
+23.97,
+55.29
+],
+"id": "Kedainiai"
+},
+{
+"pos": [
+23.12,
+55.37
+],
+"id": "Raseiniai"
+},
+{
+"pos": [
+25.60,
+55.50
+],
+"id": "Utena"
+},
+{
+"pos": [
+25.10,
+55.53
+],
+"id": "Anyksciai"
+},
+{
+"pos": [
+24.28,
+55.08
+],
+"id": "Jonava"
+},
+{
+"pos": [
+25.28,
+54.69
+],
+"id": "Vilnius"
+},
+{
+"pos": [
+21.12,
+55.72
+],
+"id": "Klaipeda"
+},
+{
+"pos": [
+22.25,
+55.98
+],
+"id": "Telsiai"
+},
+{
+"pos": [
+22.33,
+56.32
+],
+"id": "Mazeikiai"
+},
+{
+"pos": [
+23.62,
+56.24
+],
+"id": "Joniskis"
+},
+{
+"pos": [
+24.75,
+56.20
+],
+"id": "Birzai"
+},
+{
+"pos": [
+23.32,
+55.93
+],
+"id": "Siauliai"
+},
+{
+"pos": [
+21.07,
+55.92
+],
+"id": "Palanga"
+},
+{
+"pos": [
+21.25,
+55.88
+],
+"id": "Kretinga"
+}
+],
+"links": [
+{
+"dist": 118.98,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Zarasai",
+"target": "Panevezys"
+},
+{
+"dist": 130.27,
+"ecmp_fwd": {
+"uni": 82.69,
+"deg": 82.69
+},
+"ecmp_bwd": {
+"uni": 82.69,
+"deg": 82.69
+},
+"source": "Panevezys",
+"target": "Vilnius"
+},
+{
+"dist": 57.57,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Panevezys",
+"target": "Birzai"
+},
+{
+"dist": 68.27,
+"ecmp_fwd": {
+"uni": 68.27,
+"deg": 68.27
+},
+"ecmp_bwd": {
+"uni": 68.27,
+"deg": 68.27
+},
+"source": "Panevezys",
+"target": "Siauliai"
+},
+{
+"dist": 130.49,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Panevezys",
+"target": "Visaginas"
+},
+{
+"dist": 52.61,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Panevezys",
+"target": "Anyksciai"
+},
+{
+"dist": 141.20,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Rokiskis",
+"target": "Siauliai"
+},
+{
+"dist": 103.53,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Kupiskis",
+"target": "Siauliai"
+},
+{
+"dist": 41.01,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Kelme",
+"target": "Siauliai"
+},
+{
+"dist": 18.74,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Radviliskis",
+"target": "Siauliai"
+},
+{
+"dist": 91.80,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Plunge",
+"target": "Siauliai"
+},
+{
+"dist": 90.18,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Taurage",
+"target": "Klaipeda"
+},
+{
+"dist": 54.22,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Zemaiciu Naumiestis",
+"target": "Klaipeda"
+},
+{
+"dist": 29.83,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Prienai",
+"target": "Kaunas"
+},
+{
+"dist": 23.14,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Trakar",
+"target": "Vilnius"
+},
+{
+"dist": 92.74,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Ignalina",
+"target": "Vilnius"
+},
+{
+"dist": 70.96,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Ukmerge",
+"target": "Vilnius"
+},
+{
+"dist": 45.35,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Sirvintos",
+"target": "Vilnius"
+},
+{
+"dist": 74.99,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Jurbarkas",
+"target": "Kaunas"
+},
+{
+"dist": 55.57,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Sakiai",
+"target": "Kaunas"
+},
+{
+"dist": 62.15,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Vilkaviskis",
+"target": "Kaunas"
+},
+{
+"dist": 51.21,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Marijampole",
+"target": "Kaunas"
+},
+{
+"dist": 56.44,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Alytus",
+"target": "Kaunas"
+},
+{
+"dist": 113.31,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Druskininkai",
+"target": "Vilnius"
+},
+{
+"dist": 116.56,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Salcininkai",
+"target": "Kaunas"
+},
+{
+"dist": 61.15,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Moletai",
+"target": "Vilnius"
+},
+{
+"dist": 162.16,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Pasvalys",
+"target": "Vilnius"
+},
+{
+"dist": 91.53,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Kaunas",
+"target": "Vilnius"
+},
+{
+"dist": 198.20,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Kaunas",
+"target": "Klaipeda"
+},
+{
+"dist": 43.45,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Kaunas",
+"target": "Kedainiai"
+},
+{
+"dist": 72.27,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Kaunas",
+"target": "Raseiniai"
+},
+{
+"dist": 31.84,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Kaunas",
+"target": "Jonava"
+},
+{
+"dist": 92.46,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Utena",
+"target": "Vilnius"
+},
+{
+"dist": 76.41,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Klaipeda",
+"target": "Telsiai"
+},
+{
+"dist": 139.48,
+"ecmp_fwd": {
+"uni": 79.81,
+"deg": 79.81
+},
+"ecmp_bwd": {
+"uni": 79.81,
+"deg": 79.81
+},
+"source": "Klaipeda",
+"target": "Siauliai"
+},
+{
+"dist": 19.51,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Klaipeda",
+"target": "Kretinga"
+},
+{
+"dist": 22.48,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Klaipeda",
+"target": "Palanga"
+},
+{
+"dist": 74.39,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Mazeikiai",
+"target": "Siauliai"
+},
+{
+"dist": 38.85,
+"ecmp_fwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"ecmp_bwd": {
+"uni": 18.27,
+"deg": 9.25
+},
+"source": "Joniskis",
+"target": "Siauliai"
+}
+]
+}

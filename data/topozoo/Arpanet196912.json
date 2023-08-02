@@ -1,0 +1,115 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "arpanet196912",
+"demands": {},
+"stats": {
+"nodes": 4,
+"links": 4,
+"demands": 12,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 0.71,
+"max_degree": 3,
+"gini": 0.19,
+"min_link_len": 139.89,
+"avg_link_len": 506.06,
+"max_link_len": 960.57,
+"diameter_len": 1479.63,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.33,
+"avg_sdp_len": 722.89,
+"avg_adp_num": 1.50,
+"max_adp_num": 2,
+"avg_adp_hops": 1.58,
+"avg_adp_len": 900.17
+}
+},
+"nodes": [
+{
+"pos": [
+-122.18,
+37.45
+],
+"id": "SRI"
+},
+{
+"pos": [
+-119.70,
+34.42
+],
+"id": "USCB"
+},
+{
+"pos": [
+-118.24,
+34.05
+],
+"id": "UCLA"
+},
+{
+"pos": [
+-111.89,
+40.76
+],
+"id": "UTAH"
+}
+],
+"links": [
+{
+"dist": 404.74,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 100.00
+},
+"source": "SRI",
+"target": "USCB"
+},
+{
+"dist": 519.06,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 100.00
+},
+"source": "SRI",
+"target": "UCLA"
+},
+{
+"dist": 960.57,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 87.50
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 87.50
+},
+"source": "SRI",
+"target": "UTAH"
+},
+{
+"dist": 139.89,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 50.00
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 50.00
+},
+"source": "USCB",
+"target": "UCLA"
+}
+]
+}

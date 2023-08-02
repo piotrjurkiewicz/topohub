@@ -1,0 +1,102 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "cynet",
+"demands": {},
+"stats": {
+"nodes": 4,
+"links": 3,
+"demands": 12,
+"min_degree": 1,
+"avg_degree": 1.50,
+"std_degree": 0.50,
+"max_degree": 2,
+"gini": 0.17,
+"min_link_len": 0.00,
+"avg_link_len": 41.92,
+"max_link_len": 63.19,
+"diameter_len": 125.76,
+"diameter_hops": 3,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.67,
+"avg_sdp_len": 73.31,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 1.67,
+"avg_adp_len": 73.31
+}
+},
+"nodes": [
+{
+"pos": [
+33.64,
+34.94
+],
+"id": "Intercollege"
+},
+{
+"pos": [
+33.03,
+34.67
+],
+"id": "Limassol PoP"
+},
+{
+"pos": [
+33.37,
+35.17
+],
+"id": "Border Router"
+},
+{
+"pos": [
+33.37,
+35.17
+],
+"id": "Nicosia PoP"
+}
+],
+"links": [
+{
+"dist": 63.19,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 55.56
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 55.56
+},
+"source": "Intercollege",
+"target": "Limassol PoP"
+},
+{
+"dist": 62.57,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Limassol PoP",
+"target": "Border Router"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 55.56
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 55.56
+},
+"source": "Border Router",
+"target": "Nicosia PoP"
+}
+]
+}

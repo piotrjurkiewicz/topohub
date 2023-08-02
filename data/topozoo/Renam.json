@@ -1,0 +1,82 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "renam",
+"demands": {},
+"stats": {
+"nodes": 3,
+"links": 2,
+"demands": 6,
+"min_degree": 1,
+"avg_degree": 1.33,
+"std_degree": 0.47,
+"max_degree": 2,
+"gini": 0.17,
+"min_link_len": 109.38,
+"avg_link_len": 120.83,
+"max_link_len": 132.28,
+"diameter_len": 241.65,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.33,
+"avg_sdp_len": 161.10,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 1.33,
+"avg_adp_len": 161.10
+}
+},
+"nodes": [
+{
+"pos": [
+28.86,
+47.01
+],
+"id": "Chisinau"
+},
+{
+"pos": [
+27.93,
+47.76
+],
+"id": "Balti"
+},
+{
+"pos": [
+28.19,
+45.91
+],
+"id": "       Cahul"
+}
+],
+"links": [
+{
+"dist": 109.38,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Chisinau",
+"target": "Balti"
+},
+{
+"dist": 132.28,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Chisinau",
+"target": "       Cahul"
+}
+]
+}

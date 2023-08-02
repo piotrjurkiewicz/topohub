@@ -1,0 +1,480 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "aarnet",
+"demands": {},
+"stats": {
+"nodes": 19,
+"links": 24,
+"demands": 342,
+"min_degree": 1,
+"avg_degree": 2.53,
+"std_degree": 0.99,
+"max_degree": 4,
+"gini": 0.21,
+"min_link_len": 0.00,
+"avg_link_len": 695.01,
+"max_link_len": 2618.96,
+"diameter_len": 6119.42,
+"diameter_hops": 9,
+"avg_sdp_num": 1.16,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.50,
+"avg_sdp_len": 1806.20,
+"avg_adp_num": 1.64,
+"max_adp_num": 4,
+"avg_adp_hops": 4.02,
+"avg_adp_len": 2394.34
+}
+},
+"nodes": [
+{
+"pos": [
+151.21,
+-33.87
+],
+"id": "Sydney1"
+},
+{
+"pos": [
+153.03,
+-27.47
+],
+"id": "Brisbane2"
+},
+{
+"pos": [
+149.13,
+-35.28
+],
+"id": "Canberra1"
+},
+{
+"pos": [
+151.21,
+-33.87
+],
+"id": "Sydney2"
+},
+{
+"pos": [
+146.80,
+-19.25
+],
+"id": "Townsville"
+},
+{
+"pos": [
+145.77,
+-16.92
+],
+"id": "Cairns"
+},
+{
+"pos": [
+153.03,
+-27.47
+],
+"id": "Brisbane1"
+},
+{
+"pos": [
+150.50,
+-23.38
+],
+"id": "Rockhampton"
+},
+{
+"pos": [
+151.65,
+-30.52
+],
+"id": "Armidale"
+},
+{
+"pos": [
+147.33,
+-42.88
+],
+"id": "Hobart"
+},
+{
+"pos": [
+149.13,
+-35.28
+],
+"id": "Canberra2"
+},
+{
+"pos": [
+115.83,
+-31.93
+],
+"id": "Perth1"
+},
+{
+"pos": [
+115.83,
+-31.93
+],
+"id": "Perth2"
+},
+{
+"pos": [
+138.60,
+-34.93
+],
+"id": "Adelaide1"
+},
+{
+"pos": [
+138.60,
+-34.93
+],
+"id": "Adelaide2"
+},
+{
+"pos": [
+144.96,
+-37.81
+],
+"id": "Melbourne1"
+},
+{
+"pos": [
+144.96,
+-37.81
+],
+"id": "Melbourne2"
+},
+{
+"pos": [
+133.88,
+-23.70
+],
+"id": "Alice Springs"
+},
+{
+"pos": [
+130.84,
+-12.46
+],
+"id": "Darwin"
+}
+],
+"links": [
+{
+"dist": 247.07,
+"ecmp_fwd": {
+"uni": 31.29,
+"deg": 25.90
+},
+"ecmp_bwd": {
+"uni": 30.94,
+"deg": 26.01
+},
+"source": "Sydney1",
+"target": "Canberra2"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 47.84,
+"deg": 46.85
+},
+"ecmp_bwd": {
+"uni": 50.72,
+"deg": 49.66
+},
+"source": "Sydney1",
+"target": "Sydney2"
+},
+{
+"dist": 732.80,
+"ecmp_fwd": {
+"uni": 53.60,
+"deg": 45.05
+},
+"ecmp_bwd": {
+"uni": 51.08,
+"deg": 42.12
+},
+"source": "Sydney1",
+"target": "Brisbane1"
+},
+{
+"dist": 732.80,
+"ecmp_fwd": {
+"uni": 49.64,
+"deg": 43.47
+},
+"ecmp_bwd": {
+"uni": 47.12,
+"deg": 40.54
+},
+"source": "Brisbane2",
+"target": "Sydney2"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 36.69,
+"deg": 29.95
+},
+"ecmp_bwd": {
+"uni": 39.21,
+"deg": 32.88
+},
+"source": "Brisbane2",
+"target": "Brisbane1"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 29.50,
+"deg": 26.24
+},
+"ecmp_bwd": {
+"uni": 29.86,
+"deg": 26.13
+},
+"source": "Canberra1",
+"target": "Canberra2"
+},
+{
+"dist": 466.50,
+"ecmp_fwd": {
+"uni": 33.81,
+"deg": 31.76
+},
+"ecmp_bwd": {
+"uni": 33.45,
+"deg": 31.87
+},
+"source": "Canberra1",
+"target": "Melbourne1"
+},
+{
+"dist": 375.06,
+"ecmp_fwd": {
+"uni": 25.90,
+"deg": 10.59
+},
+"ecmp_bwd": {
+"uni": 25.90,
+"deg": 10.59
+},
+"source": "Sydney2",
+"target": "Armidale"
+},
+{
+"dist": 713.57,
+"ecmp_fwd": {
+"uni": 99.64,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 99.89
+},
+"source": "Sydney2",
+"target": "Melbourne2"
+},
+{
+"dist": 281.58,
+"ecmp_fwd": {
+"uni": 25.90,
+"deg": 10.59
+},
+"ecmp_bwd": {
+"uni": 25.90,
+"deg": 10.59
+},
+"source": "Townsville",
+"target": "Cairns"
+},
+{
+"dist": 598.53,
+"ecmp_fwd": {
+"uni": 48.92,
+"deg": 30.41
+},
+"ecmp_bwd": {
+"uni": 48.92,
+"deg": 30.41
+},
+"source": "Townsville",
+"target": "Rockhampton"
+},
+{
+"dist": 520.43,
+"ecmp_fwd": {
+"uni": 69.06,
+"deg": 48.42
+},
+"ecmp_bwd": {
+"uni": 69.06,
+"deg": 48.42
+},
+"source": "Brisbane1",
+"target": "Rockhampton"
+},
+{
+"dist": 597.97,
+"ecmp_fwd": {
+"uni": 17.27,
+"deg": 13.51
+},
+"ecmp_bwd": {
+"uni": 17.27,
+"deg": 13.51
+},
+"source": "Hobart",
+"target": "Melbourne2"
+},
+{
+"dist": 597.97,
+"ecmp_fwd": {
+"uni": 8.63,
+"deg": 7.21
+},
+"ecmp_bwd": {
+"uni": 8.63,
+"deg": 7.21
+},
+"source": "Hobart",
+"target": "Melbourne1"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 11.33,
+"deg": 9.12
+},
+"ecmp_bwd": {
+"uni": 8.81,
+"deg": 7.26
+},
+"source": "Perth1",
+"target": "Perth2"
+},
+{
+"dist": 2134.65,
+"ecmp_fwd": {
+"uni": 20.14,
+"deg": 16.67
+},
+"ecmp_bwd": {
+"uni": 22.66,
+"deg": 18.52
+},
+"source": "Perth1",
+"target": "Adelaide1"
+},
+{
+"dist": 2134.65,
+"ecmp_fwd": {
+"uni": 28.78,
+"deg": 22.97
+},
+"ecmp_bwd": {
+"uni": 26.26,
+"deg": 21.11
+},
+"source": "Perth2",
+"target": "Adelaide2"
+},
+{
+"dist": 2618.96,
+"ecmp_fwd": {
+"uni": 22.66,
+"deg": 18.52
+},
+"ecmp_bwd": {
+"uni": 20.14,
+"deg": 16.67
+},
+"source": "Adelaide1",
+"target": "Darwin"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 21.58,
+"deg": 27.25
+},
+"ecmp_bwd": {
+"uni": 20.14,
+"deg": 25.56
+},
+"source": "Adelaide1",
+"target": "Adelaide2"
+},
+{
+"dist": 653.54,
+"ecmp_fwd": {
+"uni": 38.85,
+"deg": 41.89
+},
+"ecmp_bwd": {
+"uni": 45.32,
+"deg": 47.30
+},
+"source": "Adelaide1",
+"target": "Melbourne1"
+},
+{
+"dist": 653.54,
+"ecmp_fwd": {
+"uni": 73.38,
+"deg": 73.42
+},
+"ecmp_bwd": {
+"uni": 66.91,
+"deg": 68.02
+},
+"source": "Adelaide2",
+"target": "Melbourne2"
+},
+{
+"dist": 1330.04,
+"ecmp_fwd": {
+"uni": 26.26,
+"deg": 21.11
+},
+"ecmp_bwd": {
+"uni": 28.78,
+"deg": 22.97
+},
+"source": "Adelaide2",
+"target": "Alice Springs"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 28.42,
+"deg": 36.60
+},
+"ecmp_bwd": {
+"uni": 34.53,
+"deg": 42.12
+},
+"source": "Melbourne1",
+"target": "Melbourne2"
+},
+{
+"dist": 1290.59,
+"ecmp_fwd": {
+"uni": 8.81,
+"deg": 7.26
+},
+"ecmp_bwd": {
+"uni": 11.33,
+"deg": 9.12
+},
+"source": "Alice Springs",
+"target": "Darwin"
+}
+]
+}

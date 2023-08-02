@@ -1,0 +1,220 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "dataxchange",
+"demands": {},
+"stats": {
+"nodes": 6,
+"links": 11,
+"demands": 30,
+"min_degree": 1,
+"avg_degree": 3.67,
+"std_degree": 1.25,
+"max_degree": 5,
+"gini": 0.15,
+"min_link_len": 12.97,
+"avg_link_len": 2117.79,
+"max_link_len": 3920.00,
+"diameter_len": 3932.96,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.27,
+"avg_sdp_len": 1021.84,
+"avg_adp_num": 3.00,
+"max_adp_num": 4,
+"avg_adp_hops": 1.77,
+"avg_adp_len": 3350.11
+}
+},
+"nodes": [
+{
+"pos": [
+-122.42,
+37.77
+],
+"id": "San Francisco"
+},
+{
+"pos": [
+-118.24,
+34.05
+],
+"id": "Los Angeles"
+},
+{
+"pos": [
+-87.65,
+41.85
+],
+"id": "Chicago"
+},
+{
+"pos": [
+-77.18,
+38.93
+],
+"id": "McLean"
+},
+{
+"pos": [
+-77.04,
+38.90
+],
+"id": "Washington, DC"
+},
+{
+"pos": [
+-84.39,
+33.75
+],
+"id": "Atlanta"
+}
+],
+"links": [
+{
+"dist": 559.28,
+"ecmp_fwd": {
+"uni": 20.00,
+"deg": 66.67
+},
+"ecmp_bwd": {
+"uni": 20.00,
+"deg": 66.67
+},
+"source": "San Francisco",
+"target": "Los Angeles"
+},
+{
+"dist": 2984.23,
+"ecmp_fwd": {
+"uni": 20.00,
+"deg": 66.67
+},
+"ecmp_bwd": {
+"uni": 20.00,
+"deg": 66.67
+},
+"source": "San Francisco",
+"target": "Chicago"
+},
+{
+"dist": 3920.00,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 100.00
+},
+"source": "San Francisco",
+"target": "Washington, DC"
+},
+{
+"dist": 3437.87,
+"ecmp_fwd": {
+"uni": 20.00,
+"deg": 66.67
+},
+"ecmp_bwd": {
+"uni": 20.00,
+"deg": 66.67
+},
+"source": "San Francisco",
+"target": "Atlanta"
+},
+{
+"dist": 2802.67,
+"ecmp_fwd": {
+"uni": 20.00,
+"deg": 66.67
+},
+"ecmp_bwd": {
+"uni": 20.00,
+"deg": 66.67
+},
+"source": "Los Angeles",
+"target": "Chicago"
+},
+{
+"dist": 3693.20,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 100.00
+},
+"source": "Los Angeles",
+"target": "Washington, DC"
+},
+{
+"dist": 3111.21,
+"ecmp_fwd": {
+"uni": 20.00,
+"deg": 66.67
+},
+"ecmp_bwd": {
+"uni": 20.00,
+"deg": 66.67
+},
+"source": "Los Angeles",
+"target": "Atlanta"
+},
+{
+"dist": 956.75,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 100.00
+},
+"source": "Chicago",
+"target": "Washington, DC"
+},
+{
+"dist": 945.35,
+"ecmp_fwd": {
+"uni": 20.00,
+"deg": 66.67
+},
+"ecmp_bwd": {
+"uni": 20.00,
+"deg": 66.67
+},
+"source": "Chicago",
+"target": "Atlanta"
+},
+{
+"dist": 12.97,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 87.50
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 87.50
+},
+"source": "McLean",
+"target": "Washington, DC"
+},
+{
+"dist": 872.17,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 100.00
+},
+"source": "Washington, DC",
+"target": "Atlanta"
+}
+]
+}

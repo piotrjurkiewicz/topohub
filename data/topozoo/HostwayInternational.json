@@ -1,0 +1,420 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "hostwayinternational",
+"demands": {},
+"stats": {
+"nodes": 16,
+"links": 21,
+"demands": 240,
+"min_degree": 1,
+"avg_degree": 2.62,
+"std_degree": 0.86,
+"max_degree": 4,
+"gini": 0.18,
+"min_link_len": 132.78,
+"avg_link_len": 3285.85,
+"max_link_len": 15993.41,
+"diameter_len": 20901.91,
+"diameter_hops": 8,
+"avg_sdp_num": 1.08,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.28,
+"avg_sdp_len": 9155.16,
+"avg_adp_num": 1.63,
+"max_adp_num": 3,
+"avg_adp_hops": 4.06,
+"avg_adp_len": 15352.58
+}
+},
+"nodes": [
+{
+"pos": [
+-122.33,
+47.61
+],
+"id": "Seattle"
+},
+{
+"pos": [
+-82.46,
+27.95
+],
+"id": "Tampa"
+},
+{
+"pos": [
+-87.65,
+41.85
+],
+"id": "Chicago"
+},
+{
+"pos": [
+-123.12,
+49.25
+],
+"id": "Vancouver"
+},
+{
+"pos": [
+-80.19,
+25.77
+],
+"id": "Miami"
+},
+{
+"pos": [
+-97.74,
+30.27
+],
+"id": "Austin"
+},
+{
+"pos": [
+-74.01,
+40.71
+],
+"id": "New York"
+},
+{
+"pos": [
+-84.39,
+33.75
+],
+"id": "Atlanta"
+},
+{
+"pos": [
+26.11,
+44.43
+],
+"id": "Bucharest"
+},
+{
+"pos": [
+126.98,
+37.57
+],
+"id": "Seoul"
+},
+{
+"pos": [
+151.21,
+-33.87
+],
+"id": "Sydney"
+},
+{
+"pos": [
+9.73,
+52.37
+],
+"id": "Hannover"
+},
+{
+"pos": [
+4.89,
+52.37
+],
+"id": "Amsterdam"
+},
+{
+"pos": [
+4.42,
+51.22
+],
+"id": "Antwerp"
+},
+{
+"pos": [
+8.68,
+50.12
+],
+"id": "Frankfurt"
+},
+{
+"pos": [
+-0.13,
+51.51
+],
+"id": "London"
+}
+],
+"links": [
+{
+"dist": 2789.45,
+"ecmp_fwd": {
+"uni": 54.17,
+"deg": 48.48
+},
+"ecmp_bwd": {
+"uni": 54.17,
+"deg": 48.48
+},
+"source": "Seattle",
+"target": "Chicago"
+},
+{
+"dist": 191.80,
+"ecmp_fwd": {
+"uni": 31.25,
+"deg": 13.80
+},
+"ecmp_bwd": {
+"uni": 31.25,
+"deg": 13.80
+},
+"source": "Seattle",
+"target": "Vancouver"
+},
+{
+"dist": 2848.59,
+"ecmp_fwd": {
+"uni": 4.17,
+"deg": 2.69
+},
+"ecmp_bwd": {
+"uni": 4.17,
+"deg": 2.69
+},
+"source": "Seattle",
+"target": "Austin"
+},
+{
+"dist": 330.03,
+"ecmp_fwd": {
+"uni": 15.62,
+"deg": 13.80
+},
+"ecmp_bwd": {
+"uni": 15.62,
+"deg": 13.80
+},
+"source": "Tampa",
+"target": "Miami"
+},
+{
+"dist": 671.02,
+"ecmp_fwd": {
+"uni": 15.62,
+"deg": 13.13
+},
+"ecmp_bwd": {
+"uni": 15.62,
+"deg": 13.13
+},
+"source": "Tampa",
+"target": "Atlanta"
+},
+{
+"dist": 1573.33,
+"ecmp_fwd": {
+"uni": 27.08,
+"deg": 24.24
+},
+"ecmp_bwd": {
+"uni": 27.08,
+"deg": 24.24
+},
+"source": "Chicago",
+"target": "Austin"
+},
+{
+"dist": 945.35,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Chicago",
+"target": "Atlanta"
+},
+{
+"dist": 15030.81,
+"ecmp_fwd": {
+"uni": 37.50,
+"deg": 42.09
+},
+"ecmp_bwd": {
+"uni": 34.03,
+"deg": 37.71
+},
+"source": "Miami",
+"target": "Sydney"
+},
+{
+"dist": 1757.33,
+"ecmp_fwd": {
+"uni": 15.62,
+"deg": 21.89
+},
+"ecmp_bwd": {
+"uni": 15.62,
+"deg": 21.89
+},
+"source": "Miami",
+"target": "New York"
+},
+{
+"dist": 974.80,
+"ecmp_fwd": {
+"uni": 27.78,
+"deg": 35.02
+},
+"ecmp_bwd": {
+"uni": 31.25,
+"deg": 39.39
+},
+"source": "Miami",
+"target": "Atlanta"
+},
+{
+"dist": 15993.41,
+"ecmp_fwd": {
+"uni": 35.59,
+"deg": 39.81
+},
+"ecmp_bwd": {
+"uni": 34.72,
+"deg": 38.38
+},
+"source": "New York",
+"target": "Sydney"
+},
+{
+"dist": 1200.75,
+"ecmp_fwd": {
+"uni": 81.60,
+"deg": 87.54
+},
+"ecmp_bwd": {
+"uni": 78.12,
+"deg": 83.16
+},
+"source": "New York",
+"target": "Atlanta"
+},
+{
+"dist": 5571.79,
+"ecmp_fwd": {
+"uni": 80.73,
+"deg": 85.10
+},
+"ecmp_bwd": {
+"uni": 85.07,
+"deg": 90.91
+},
+"source": "New York",
+"target": "London"
+},
+{
+"dist": 7934.01,
+"ecmp_fwd": {
+"uni": 42.01,
+"deg": 42.42
+},
+"ecmp_bwd": {
+"uni": 46.35,
+"deg": 48.23
+},
+"source": "Bucharest",
+"target": "Seoul"
+},
+{
+"dist": 1454.28,
+"ecmp_fwd": {
+"uni": 33.85,
+"deg": 36.11
+},
+"ecmp_bwd": {
+"uni": 29.51,
+"deg": 30.30
+},
+"source": "Bucharest",
+"target": "Frankfurt"
+},
+{
+"dist": 8331.64,
+"ecmp_fwd": {
+"uni": 54.17,
+"deg": 54.88
+},
+"ecmp_bwd": {
+"uni": 58.51,
+"deg": 60.69
+},
+"source": "Seoul",
+"target": "Sydney"
+},
+{
+"dist": 328.85,
+"ecmp_fwd": {
+"uni": 31.25,
+"deg": 30.64
+},
+"ecmp_bwd": {
+"uni": 29.08,
+"deg": 27.74
+},
+"source": "Hannover",
+"target": "Amsterdam"
+},
+{
+"dist": 261.12,
+"ecmp_fwd": {
+"uni": 14.50,
+"deg": 13.59
+},
+"ecmp_bwd": {
+"uni": 16.67,
+"deg": 16.50
+},
+"source": "Hannover",
+"target": "Frankfurt"
+},
+{
+"dist": 132.78,
+"ecmp_fwd": {
+"uni": 29.08,
+"deg": 27.74
+},
+"ecmp_bwd": {
+"uni": 31.25,
+"deg": 30.64
+},
+"source": "Amsterdam",
+"target": "Antwerp"
+},
+{
+"dist": 357.03,
+"ecmp_fwd": {
+"uni": 72.57,
+"deg": 78.79
+},
+"ecmp_bwd": {
+"uni": 68.23,
+"deg": 72.98
+},
+"source": "Amsterdam",
+"target": "London"
+},
+{
+"dist": 324.66,
+"ecmp_fwd": {
+"uni": 14.50,
+"deg": 13.59
+},
+"ecmp_bwd": {
+"uni": 16.67,
+"deg": 16.50
+},
+"source": "Antwerp",
+"target": "Frankfurt"
+}
+]
+}

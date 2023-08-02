@@ -1,0 +1,95 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "pacificwave",
+"demands": {},
+"stats": {
+"nodes": 3,
+"links": 3,
+"demands": 6,
+"min_degree": 2,
+"avg_degree": 2.00,
+"std_degree": 0.00,
+"max_degree": 2,
+"gini": 0.00,
+"min_link_len": 503.30,
+"avg_link_len": 1062.65,
+"max_link_len": 1545.74,
+"diameter_len": 1545.74,
+"diameter_hops": 1,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.00,
+"avg_sdp_len": 531.33,
+"avg_adp_num": 2.00,
+"max_adp_num": 2,
+"avg_adp_hops": 1.50,
+"avg_adp_len": 1593.98
+}
+},
+"nodes": [
+{
+"pos": [
+-122.04,
+37.37
+],
+"id": "Pacific Wave Sunnyvale"
+},
+{
+"pos": [
+-122.33,
+47.61
+],
+"id": "Pacific Wave Seattle"
+},
+{
+"pos": [
+-118.24,
+34.05
+],
+"id": "Pacific Wave Los Angeles"
+}
+],
+"links": [
+{
+"dist": 1138.92,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Pacific Wave Sunnyvale",
+"target": "Pacific Wave Seattle"
+},
+{
+"dist": 503.30,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Pacific Wave Sunnyvale",
+"target": "Pacific Wave Los Angeles"
+},
+{
+"dist": 1545.74,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Pacific Wave Seattle",
+"target": "Pacific Wave Los Angeles"
+}
+]
+}

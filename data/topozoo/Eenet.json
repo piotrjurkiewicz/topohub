@@ -1,0 +1,275 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "eenet",
+"demands": {},
+"stats": {
+"nodes": 12,
+"links": 12,
+"demands": 132,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 1.73,
+"max_degree": 7,
+"gini": 0.38,
+"min_link_len": 11.17,
+"avg_link_len": 92.53,
+"max_link_len": 194.64,
+"diameter_len": 430.04,
+"diameter_hops": 5,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 2.50,
+"avg_sdp_len": 208.48,
+"avg_adp_num": 1.05,
+"max_adp_num": 2,
+"avg_adp_hops": 2.52,
+"avg_adp_len": 212.47
+}
+},
+"nodes": [
+{
+"pos": [
+24.50,
+58.39
+],
+"id": "Parnu"
+},
+{
+"pos": [
+23.54,
+58.94
+],
+"id": "Haapsald"
+},
+{
+"pos": [
+22.50,
+58.25
+],
+"id": "Kuressaare"
+},
+{
+"pos": [
+26.36,
+59.35
+],
+"id": "Rakvere"
+},
+{
+"pos": [
+28.19,
+59.38
+],
+"id": "Narva"
+},
+{
+"pos": [
+24.75,
+59.44
+],
+"id": "Tallinn"
+},
+{
+"pos": [
+25.56,
+58.89
+],
+"id": "Paide"
+},
+{
+"pos": [
+25.43,
+58.81
+],
+"id": "Turi"
+},
+{
+"pos": [
+25.59,
+58.36
+],
+"id": "Viljandi"
+},
+{
+"pos": [
+26.39,
+58.75
+],
+"id": "Jogeva"
+},
+{
+"pos": [
+26.73,
+58.38
+],
+"id": "Tartu"
+},
+{
+"pos": [
+27.02,
+57.83
+],
+"id": "Voru"
+}
+],
+"links": [
+{
+"dist": 117.83,
+"ecmp_fwd": {
+"uni": 36.67,
+"deg": 19.17
+},
+"ecmp_bwd": {
+"uni": 36.67,
+"deg": 19.17
+},
+"source": "Parnu",
+"target": "Tallinn"
+},
+{
+"dist": 88.24,
+"ecmp_fwd": {
+"uni": 36.67,
+"deg": 19.17
+},
+"ecmp_bwd": {
+"uni": 36.67,
+"deg": 19.17
+},
+"source": "Haapsald",
+"target": "Tallinn"
+},
+{
+"dist": 185.04,
+"ecmp_fwd": {
+"uni": 36.67,
+"deg": 19.17
+},
+"ecmp_bwd": {
+"uni": 36.67,
+"deg": 19.17
+},
+"source": "Kuressaare",
+"target": "Tallinn"
+},
+{
+"dist": 91.30,
+"ecmp_fwd": {
+"uni": 36.67,
+"deg": 19.17
+},
+"ecmp_bwd": {
+"uni": 36.67,
+"deg": 19.17
+},
+"source": "Rakvere",
+"target": "Tallinn"
+},
+{
+"dist": 194.64,
+"ecmp_fwd": {
+"uni": 36.67,
+"deg": 19.17
+},
+"ecmp_bwd": {
+"uni": 36.67,
+"deg": 19.17
+},
+"source": "Narva",
+"target": "Tallinn"
+},
+{
+"dist": 76.56,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Tallinn",
+"target": "Paide"
+},
+{
+"dist": 128.66,
+"ecmp_fwd": {
+"uni": 20.00,
+"deg": 20.00
+},
+"ecmp_bwd": {
+"uni": 20.00,
+"deg": 20.00
+},
+"source": "Tallinn",
+"target": "Viljandi"
+},
+{
+"dist": 11.17,
+"ecmp_fwd": {
+"uni": 36.67,
+"deg": 19.17
+},
+"ecmp_bwd": {
+"uni": 36.67,
+"deg": 19.17
+},
+"source": "Paide",
+"target": "Turi"
+},
+{
+"dist": 58.05,
+"ecmp_fwd": {
+"uni": 16.67,
+"deg": 16.67
+},
+"ecmp_bwd": {
+"uni": 16.67,
+"deg": 16.67
+},
+"source": "Paide",
+"target": "Viljandi"
+},
+{
+"dist": 50.60,
+"ecmp_fwd": {
+"uni": 90.00,
+"deg": 79.17
+},
+"ecmp_bwd": {
+"uni": 90.00,
+"deg": 79.17
+},
+"source": "Paide",
+"target": "Jogeva"
+},
+{
+"dist": 45.02,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 52.50
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 52.50
+},
+"source": "Jogeva",
+"target": "Tartu"
+},
+{
+"dist": 63.22,
+"ecmp_fwd": {
+"uni": 36.67,
+"deg": 19.17
+},
+"ecmp_bwd": {
+"uni": 36.67,
+"deg": 19.17
+},
+"source": "Tartu",
+"target": "Voru"
+}
+]
+}

@@ -1,0 +1,242 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "jgn2plus",
+"demands": {},
+"stats": {
+"nodes": 11,
+"links": 10,
+"demands": 110,
+"min_degree": 1,
+"avg_degree": 1.82,
+"std_degree": 0.94,
+"max_degree": 4,
+"gini": 0.26,
+"min_link_len": 127.43,
+"avg_link_len": 400.31,
+"max_link_len": 1012.60,
+"diameter_len": 2679.32,
+"diameter_hops": 7,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 3.09,
+"avg_sdp_len": 1008.00,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 3.09,
+"avg_adp_len": 1008.00
+}
+},
+"nodes": [
+{
+"pos": [
+133.00,
+34.50
+],
+"id": "Chugoku"
+},
+{
+"pos": [
+135.50,
+35.00
+],
+"id": "Kinki"
+},
+{
+"pos": [
+131.00,
+33.00
+],
+"id": "Kyushu"
+},
+{
+"pos": [
+133.50,
+33.75
+],
+"id": "Shikoku"
+},
+{
+"pos": [
+145.13,
+43.66
+],
+"id": "Shinetsu"
+},
+{
+"pos": [
+136.90,
+35.03
+],
+"id": "Tokai"
+},
+{
+"pos": [
+137.50,
+37.00
+],
+"id": "Hokuriku"
+},
+{
+"pos": [
+127.80,
+26.34
+],
+"id": "Okinawa"
+},
+{
+"pos": [
+141.35,
+43.06
+],
+"id": "Hokkaido"
+},
+{
+"pos": [
+140.87,
+38.27
+],
+"id": "Tohoku"
+},
+{
+"pos": [
+139.58,
+35.61
+],
+"id": "Tokyo"
+}
+],
+"links": [
+{
+"dist": 235.14,
+"ecmp_fwd": {
+"uni": 80.00,
+"deg": 75.76
+},
+"ecmp_bwd": {
+"uni": 80.00,
+"deg": 75.76
+},
+"source": "Chugoku",
+"target": "Kinki"
+},
+{
+"dist": 249.08,
+"ecmp_fwd": {
+"uni": 60.00,
+"deg": 51.52
+},
+"ecmp_bwd": {
+"uni": 60.00,
+"deg": 51.52
+},
+"source": "Chugoku",
+"target": "Kyushu"
+},
+{
+"dist": 230.30,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 19.19
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 19.19
+},
+"source": "Kinki",
+"target": "Shikoku"
+},
+{
+"dist": 127.43,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Kinki",
+"target": "Tokai"
+},
+{
+"dist": 802.97,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 19.19
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 19.19
+},
+"source": "Kyushu",
+"target": "Okinawa"
+},
+{
+"dist": 1012.60,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 19.19
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 19.19
+},
+"source": "Shinetsu",
+"target": "Tokyo"
+},
+{
+"dist": 252.10,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Tokai",
+"target": "Tokyo"
+},
+{
+"dist": 241.93,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 19.19
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 19.19
+},
+"source": "Hokuriku",
+"target": "Tokyo"
+},
+{
+"dist": 534.86,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 19.19
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 19.19
+},
+"source": "Hokkaido",
+"target": "Tohoku"
+},
+{
+"dist": 316.70,
+"ecmp_fwd": {
+"uni": 60.00,
+"deg": 51.52
+},
+"ecmp_bwd": {
+"uni": 60.00,
+"deg": 51.52
+},
+"source": "Tohoku",
+"target": "Tokyo"
+}
+]
+}

@@ -1,0 +1,521 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "fccn",
+"demands": {},
+"stats": {
+"nodes": 23,
+"links": 25,
+"demands": 506,
+"min_degree": 1,
+"avg_degree": 2.17,
+"std_degree": 2.60,
+"max_degree": 11,
+"gini": 0.45,
+"min_link_len": 30.18,
+"avg_link_len": 199.52,
+"max_link_len": 1446.81,
+"diameter_len": 2420.89,
+"diameter_hops": 5,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.77,
+"avg_sdp_len": 513.32,
+"avg_adp_num": 1.06,
+"max_adp_num": 3,
+"avg_adp_hops": 2.81,
+"avg_adp_len": 521.21
+}
+},
+"nodes": [
+{
+"pos": [
+-7.43,
+39.29
+],
+"id": "Portalegre"
+},
+{
+"pos": [
+-7.90,
+38.57
+],
+"id": "Evora"
+},
+{
+"pos": [
+-7.27,
+40.53
+],
+"id": "Guarda"
+},
+{
+"pos": [
+-7.50,
+39.82
+],
+"id": "Castelo Branco"
+},
+{
+"pos": [
+-8.42,
+39.60
+],
+"id": "Tomar"
+},
+{
+"pos": [
+-8.81,
+39.74
+],
+"id": "Leiria"
+},
+{
+"pos": [
+-9.13,
+38.72
+],
+"id": "Lisboa"
+},
+{
+"pos": [
+-8.68,
+39.23
+],
+"id": "Samtarem"
+},
+{
+"pos": [
+-8.89,
+38.52
+],
+"id": "Setubal"
+},
+{
+"pos": [
+-25.67,
+37.73
+],
+"id": "Ponta Delgada"
+},
+{
+"pos": [
+-7.87,
+38.02
+],
+"id": "Beja"
+},
+{
+"pos": [
+-7.93,
+37.02
+],
+"id": "Faro"
+},
+{
+"pos": [
+-16.90,
+32.63
+],
+"id": "Funchal"
+},
+{
+"pos": [
+-7.92,
+40.65
+],
+"id": "Viseu"
+},
+{
+"pos": [
+-7.50,
+40.28
+],
+"id": "Covilha"
+},
+{
+"pos": [
+-8.42,
+41.85
+],
+"id": "Viana de Castelo"
+},
+{
+"pos": [
+-8.62,
+41.53
+],
+"id": "Barcelos"
+},
+{
+"pos": [
+-8.43,
+41.55
+],
+"id": "Braga"
+},
+{
+"pos": [
+-7.75,
+41.30
+],
+"id": "Villa Real"
+},
+{
+"pos": [
+-6.75,
+41.82
+],
+"id": "Bragancia"
+},
+{
+"pos": [
+-8.62,
+41.15
+],
+"id": "Porto"
+},
+{
+"pos": [
+-8.65,
+40.63
+],
+"id": "Aveiro"
+},
+{
+"pos": [
+-8.42,
+40.20
+],
+"id": "Coimbra"
+}
+],
+"links": [
+{
+"dist": 160.51,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Portalegre",
+"target": "Lisboa"
+},
+{
+"dist": 108.44,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Evora",
+"target": "Lisboa"
+},
+{
+"dist": 132.69,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Guarda",
+"target": "Porto"
+},
+{
+"dist": 186.41,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Castelo Branco",
+"target": "Lisboa"
+},
+{
+"dist": 116.07,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Tomar",
+"target": "Lisboa"
+},
+{
+"dist": 60.70,
+"ecmp_fwd": {
+"uni": 9.38,
+"deg": 9.07
+},
+"ecmp_bwd": {
+"uni": 9.38,
+"deg": 9.07
+},
+"source": "Leiria",
+"target": "Coimbra"
+},
+{
+"dist": 117.63,
+"ecmp_fwd": {
+"uni": 10.27,
+"deg": 9.07
+},
+"ecmp_bwd": {
+"uni": 10.27,
+"deg": 9.07
+},
+"source": "Leiria",
+"target": "Lisboa"
+},
+{
+"dist": 69.40,
+"ecmp_fwd": {
+"uni": 10.27,
+"deg": 9.07
+},
+"ecmp_bwd": {
+"uni": 10.27,
+"deg": 9.07
+},
+"source": "Lisboa",
+"target": "Samtarem"
+},
+{
+"dist": 30.18,
+"ecmp_fwd": {
+"uni": 53.57,
+"deg": 42.53
+},
+"ecmp_bwd": {
+"uni": 53.57,
+"deg": 42.53
+},
+"source": "Lisboa",
+"target": "Setubal"
+},
+{
+"dist": 1446.81,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Lisboa",
+"target": "Ponta Delgada"
+},
+{
+"dist": 974.08,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Lisboa",
+"target": "Funchal"
+},
+{
+"dist": 238.92,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Lisboa",
+"target": "Viseu"
+},
+{
+"dist": 176.09,
+"ecmp_fwd": {
+"uni": 98.21,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 98.21,
+"deg": 100.00
+},
+"source": "Lisboa",
+"target": "Coimbra"
+},
+{
+"dist": 109.91,
+"ecmp_fwd": {
+"uni": 9.38,
+"deg": 9.07
+},
+"ecmp_bwd": {
+"uni": 9.38,
+"deg": 9.07
+},
+"source": "Samtarem",
+"target": "Coimbra"
+},
+{
+"dist": 105.58,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Setubal",
+"target": "Beja"
+},
+{
+"dist": 187.54,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Setubal",
+"target": "Faro"
+},
+{
+"dist": 134.74,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Covilha",
+"target": "Porto"
+},
+{
+"dist": 79.22,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Viana de Castelo",
+"target": "Porto"
+},
+{
+"dist": 42.64,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Barcelos",
+"target": "Porto"
+},
+{
+"dist": 47.05,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Braga",
+"target": "Porto"
+},
+{
+"dist": 74.40,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Villa Real",
+"target": "Porto"
+},
+{
+"dist": 172.31,
+"ecmp_fwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"ecmp_bwd": {
+"uni": 19.64,
+"deg": 9.26
+},
+"source": "Bragancia",
+"target": "Porto"
+},
+{
+"dist": 57.54,
+"ecmp_fwd": {
+"uni": 7.14,
+"deg": 6.05
+},
+"ecmp_bwd": {
+"uni": 7.14,
+"deg": 6.05
+},
+"source": "Porto",
+"target": "Aveiro"
+},
+{
+"dist": 107.00,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 96.79
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 96.79
+},
+"source": "Porto",
+"target": "Coimbra"
+},
+{
+"dist": 52.09,
+"ecmp_fwd": {
+"uni": 12.50,
+"deg": 12.10
+},
+"ecmp_bwd": {
+"uni": 12.50,
+"deg": 12.10
+},
+"source": "Aveiro",
+"target": "Coimbra"
+}
+]
+}

@@ -1,0 +1,696 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "nobel_germany",
+"demands": {
+"Berlin": {
+"Bremen": 4.00,
+"Dortmund": 4.00,
+"Duesseldorf": 4.00,
+"Essen": 4.00,
+"Frankfurt": 12.00,
+"Hamburg": 8.00,
+"Hannover": 8.00,
+"Karlsruhe": 2.00,
+"Koeln": 4.00,
+"Leipzig": 14.00,
+"Mannheim": 2.00,
+"Muenchen": 4.00,
+"Nuernberg": 4.00,
+"Stuttgart": 6.00,
+"Ulm": 4.00
+},
+"Bremen": {
+"Dortmund": 2.00,
+"Duesseldorf": 2.00,
+"Essen": 2.00,
+"Frankfurt": 6.00,
+"Hamburg": 6.00,
+"Hannover": 6.00,
+"Karlsruhe": 2.00,
+"Koeln": 2.00,
+"Leipzig": 4.00,
+"Mannheim": 2.00,
+"Muenchen": 2.00,
+"Nuernberg": 2.00,
+"Stuttgart": 2.00,
+"Ulm": 2.00
+},
+"Dortmund": {
+"Duesseldorf": 8.00,
+"Essen": 8.00,
+"Frankfurt": 10.00,
+"Hamburg": 4.00,
+"Hannover": 6.00,
+"Karlsruhe": 2.00,
+"Koeln": 6.00,
+"Leipzig": 6.00,
+"Mannheim": 2.00,
+"Muenchen": 4.00,
+"Nuernberg": 2.00,
+"Stuttgart": 4.00,
+"Ulm": 2.00
+},
+"Duesseldorf": {
+"Essen": 10.00,
+"Frankfurt": 12.00,
+"Hamburg": 4.00,
+"Hannover": 6.00,
+"Karlsruhe": 2.00,
+"Koeln": 12.00,
+"Leipzig": 6.00,
+"Mannheim": 2.00,
+"Muenchen": 4.00,
+"Nuernberg": 4.00,
+"Stuttgart": 4.00,
+"Ulm": 2.00
+},
+"Essen": {
+"Frankfurt": 8.00,
+"Hamburg": 4.00,
+"Hannover": 4.00,
+"Karlsruhe": 2.00,
+"Koeln": 6.00,
+"Leipzig": 4.00,
+"Mannheim": 2.00,
+"Muenchen": 2.00,
+"Nuernberg": 2.00,
+"Stuttgart": 4.00,
+"Ulm": 2.00
+},
+"Frankfurt": {
+"Hamburg": 12.00,
+"Hannover": 14.00,
+"Karlsruhe": 4.00,
+"Koeln": 12.00,
+"Leipzig": 18.00,
+"Mannheim": 10.00,
+"Muenchen": 10.00,
+"Norden": 50.00,
+"Nuernberg": 10.00,
+"Stuttgart": 14.00,
+"Ulm": 8.00
+},
+"Hamburg": {
+"Hannover": 10.00,
+"Karlsruhe": 2.00,
+"Koeln": 4.00,
+"Leipzig": 8.00,
+"Mannheim": 2.00,
+"Muenchen": 4.00,
+"Nuernberg": 4.00,
+"Stuttgart": 4.00,
+"Ulm": 4.00
+},
+"Hannover": {
+"Karlsruhe": 2.00,
+"Koeln": 6.00,
+"Leipzig": 10.00,
+"Mannheim": 4.00,
+"Muenchen": 4.00,
+"Nuernberg": 4.00,
+"Stuttgart": 6.00,
+"Ulm": 4.00
+},
+"Karlsruhe": {
+"Koeln": 2.00,
+"Leipzig": 2.00,
+"Mannheim": 2.00,
+"Muenchen": 2.00,
+"Nuernberg": 2.00,
+"Stuttgart": 4.00,
+"Ulm": 2.00
+},
+"Koeln": {
+"Leipzig": 6.00,
+"Mannheim": 2.00,
+"Muenchen": 4.00,
+"Nuernberg": 4.00,
+"Stuttgart": 4.00,
+"Ulm": 4.00
+},
+"Leipzig": {
+"Mannheim": 4.00,
+"Muenchen": 8.00,
+"Nuernberg": 6.00,
+"Stuttgart": 8.00,
+"Ulm": 6.00
+},
+"Mannheim": {
+"Muenchen": 2.00,
+"Nuernberg": 2.00,
+"Stuttgart": 4.00,
+"Ulm": 2.00
+},
+"Muenchen": {
+"Nuernberg": 6.00,
+"Stuttgart": 6.00,
+"Ulm": 6.00
+},
+"Nuernberg": {
+"Stuttgart": 6.00,
+"Ulm": 4.00
+},
+"Stuttgart": {
+"Ulm": 8.00
+}
+},
+"stats": {
+"nodes": 17,
+"links": 26,
+"demands": 242,
+"min_degree": 2,
+"avg_degree": 3.06,
+"std_degree": 1.16,
+"max_degree": 6,
+"gini": 0.20,
+"min_link_len": 28.85,
+"avg_link_len": 143.37,
+"max_link_len": 293.85,
+"diameter_len": 790.47,
+"diameter_hops": 6,
+"avg_sdp_num": 1.26,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.23,
+"avg_sdp_len": 195.33,
+"avg_adp_num": 2.52,
+"max_adp_num": 4,
+"avg_adp_hops": 3.34,
+"avg_adp_len": 494.24
+}
+},
+"nodes": [
+{
+"pos": [
+9.80,
+52.39
+],
+"id": "Hannover"
+},
+{
+"pos": [
+8.66,
+50.14
+],
+"id": "Frankfurt"
+},
+{
+"pos": [
+10.08,
+53.55
+],
+"id": "Hamburg"
+},
+{
+"pos": [
+7.21,
+53.60
+],
+"id": "Norden"
+},
+{
+"pos": [
+8.80,
+53.08
+],
+"id": "Bremen"
+},
+{
+"pos": [
+13.48,
+52.52
+],
+"id": "Berlin"
+},
+{
+"pos": [
+11.55,
+48.15
+],
+"id": "Muenchen"
+},
+{
+"pos": [
+9.99,
+48.40
+],
+"id": "Ulm"
+},
+{
+"pos": [
+11.08,
+49.45
+],
+"id": "Nuernberg"
+},
+{
+"pos": [
+9.12,
+48.73
+],
+"id": "Stuttgart"
+},
+{
+"pos": [
+8.41,
+49.01
+],
+"id": "Karlsruhe"
+},
+{
+"pos": [
+8.49,
+49.49
+],
+"id": "Mannheim"
+},
+{
+"pos": [
+7.00,
+51.44
+],
+"id": "Essen"
+},
+{
+"pos": [
+7.48,
+51.51
+],
+"id": "Dortmund"
+},
+{
+"pos": [
+6.78,
+51.22
+],
+"id": "Duesseldorf"
+},
+{
+"pos": [
+7.01,
+50.92
+],
+"id": "Koeln"
+},
+{
+"pos": [
+12.38,
+51.34
+],
+"id": "Leipzig"
+}
+],
+"links": [
+{
+"dist": 249.82,
+"ecmp_fwd": {
+"org": 23.57,
+"uni": 24.15,
+"deg": 25.46
+},
+"ecmp_bwd": {
+"org": 22.10,
+"uni": 22.03,
+"deg": 23.80
+},
+"source": "Hannover",
+"target": "Berlin"
+},
+{
+"dist": 102.10,
+"ecmp_fwd": {
+"org": 34.81,
+"uni": 52.12,
+"deg": 51.01
+},
+"ecmp_bwd": {
+"org": 43.46,
+"uni": 55.08,
+"deg": 52.58
+},
+"source": "Hannover",
+"target": "Bremen"
+},
+{
+"dist": 186.74,
+"ecmp_fwd": {
+"org": 68.51,
+"uni": 83.05,
+"deg": 86.99
+},
+"ecmp_bwd": {
+"org": 64.64,
+"uni": 74.15,
+"deg": 80.63
+},
+"source": "Hannover",
+"target": "Dortmund"
+},
+{
+"dist": 262.53,
+"ecmp_fwd": {
+"org": 100.00,
+"uni": 88.14,
+"deg": 98.62
+},
+"ecmp_bwd": {
+"org": 94.66,
+"uni": 89.41,
+"deg": 100.00
+},
+"source": "Hannover",
+"target": "Frankfurt"
+},
+{
+"dist": 130.38,
+"ecmp_fwd": {
+"org": 42.73,
+"uni": 38.98,
+"deg": 40.13
+},
+"ecmp_bwd": {
+"org": 39.78,
+"uni": 35.59,
+"deg": 37.08
+},
+"source": "Hannover",
+"target": "Hamburg"
+},
+{
+"dist": 212.21,
+"ecmp_fwd": {
+"org": 36.28,
+"uni": 45.76,
+"deg": 56.73
+},
+"ecmp_bwd": {
+"org": 41.25,
+"uni": 55.93,
+"deg": 64.85
+},
+"source": "Hannover",
+"target": "Leipzig"
+},
+{
+"dist": 145.38,
+"ecmp_fwd": {
+"org": 99.08,
+"uni": 93.22,
+"deg": 79.52
+},
+"ecmp_bwd": {
+"org": 94.29,
+"uni": 100.00,
+"deg": 84.87
+},
+"source": "Frankfurt",
+"target": "Koeln"
+},
+{
+"dist": 293.85,
+"ecmp_fwd": {
+"org": 32.41,
+"uni": 20.76,
+"deg": 24.72
+},
+"ecmp_bwd": {
+"org": 34.25,
+"uni": 22.88,
+"deg": 26.38
+},
+"source": "Frankfurt",
+"target": "Leipzig"
+},
+{
+"dist": 73.32,
+"ecmp_fwd": {
+"org": 41.62,
+"uni": 78.81,
+"deg": 57.01
+},
+"ecmp_bwd": {
+"org": 41.25,
+"uni": 77.97,
+"deg": 56.46
+},
+"source": "Frankfurt",
+"target": "Mannheim"
+},
+{
+"dist": 189.94,
+"ecmp_fwd": {
+"org": 81.58,
+"uni": 94.92,
+"deg": 90.68
+},
+"ecmp_bwd": {
+"org": 79.56,
+"uni": 88.14,
+"deg": 85.61
+},
+"source": "Frankfurt",
+"target": "Nuernberg"
+},
+{
+"dist": 254.60,
+"ecmp_fwd": {
+"org": 16.21,
+"uni": 14.41,
+"deg": 13.84
+},
+"ecmp_bwd": {
+"org": 13.26,
+"uni": 11.86,
+"deg": 11.35
+},
+"source": "Hamburg",
+"target": "Berlin"
+},
+{
+"dist": 99.83,
+"ecmp_fwd": {
+"org": 5.89,
+"uni": 10.17,
+"deg": 8.30
+},
+"ecmp_bwd": {
+"org": 5.89,
+"uni": 9.32,
+"deg": 7.75
+},
+"source": "Hamburg",
+"target": "Bremen"
+},
+{
+"dist": 120.39,
+"ecmp_fwd": {
+"org": 20.81,
+"uni": 29.24,
+"deg": 21.59
+},
+"ecmp_bwd": {
+"org": 12.15,
+"uni": 27.12,
+"deg": 20.57
+},
+"source": "Norden",
+"target": "Bremen"
+},
+{
+"dist": 233.18,
+"ecmp_fwd": {
+"org": 21.36,
+"uni": 37.29,
+"deg": 26.38
+},
+"ecmp_bwd": {
+"org": 30.02,
+"uni": 39.41,
+"deg": 27.40
+},
+"source": "Norden",
+"target": "Dortmund"
+},
+{
+"dist": 151.38,
+"ecmp_fwd": {
+"org": 41.25,
+"uni": 33.90,
+"deg": 32.66
+},
+"ecmp_bwd": {
+"org": 36.83,
+"uni": 29.24,
+"deg": 28.51
+},
+"source": "Berlin",
+"target": "Leipzig"
+},
+{
+"dist": 148.64,
+"ecmp_fwd": {
+"org": 58.20,
+"uni": 67.80,
+"deg": 48.71
+},
+"ecmp_bwd": {
+"org": 58.20,
+"uni": 67.80,
+"deg": 48.71
+},
+"source": "Muenchen",
+"target": "Nuernberg"
+},
+{
+"dist": 118.78,
+"ecmp_fwd": {
+"org": 22.84,
+"uni": 27.12,
+"deg": 18.45
+},
+"ecmp_bwd": {
+"org": 22.84,
+"uni": 27.12,
+"deg": 18.45
+},
+"source": "Muenchen",
+"target": "Ulm"
+},
+{
+"dist": 73.81,
+"ecmp_fwd": {
+"org": 27.26,
+"uni": 33.90,
+"deg": 22.14
+},
+"ecmp_bwd": {
+"org": 27.26,
+"uni": 33.90,
+"deg": 22.14
+},
+"source": "Ulm",
+"target": "Stuttgart"
+},
+{
+"dist": 229.53,
+"ecmp_fwd": {
+"org": 58.93,
+"uni": 71.19,
+"deg": 71.59
+},
+"ecmp_bwd": {
+"org": 56.54,
+"uni": 63.56,
+"deg": 65.96
+},
+"source": "Nuernberg",
+"target": "Leipzig"
+},
+{
+"dist": 163.68,
+"ecmp_fwd": {
+"org": 66.67,
+"uni": 70.34,
+"deg": 67.34
+},
+"ecmp_bwd": {
+"org": 67.03,
+"uni": 71.19,
+"deg": 67.90
+},
+"source": "Nuernberg",
+"target": "Stuttgart"
+},
+{
+"dist": 60.56,
+"ecmp_fwd": {
+"org": 12.89,
+"uni": 22.88,
+"deg": 13.84
+},
+"ecmp_bwd": {
+"org": 13.26,
+"uni": 23.73,
+"deg": 14.39
+},
+"source": "Stuttgart",
+"target": "Karlsruhe"
+},
+{
+"dist": 53.70,
+"ecmp_fwd": {
+"org": 20.63,
+"uni": 44.07,
+"deg": 29.89
+},
+"ecmp_bwd": {
+"org": 20.99,
+"uni": 44.92,
+"deg": 30.44
+},
+"source": "Karlsruhe",
+"target": "Mannheim"
+},
+{
+"dist": 34.15,
+"ecmp_fwd": {
+"org": 38.31,
+"uni": 47.46,
+"deg": 34.69
+},
+"ecmp_bwd": {
+"org": 40.15,
+"uni": 51.69,
+"deg": 36.62
+},
+"source": "Essen",
+"target": "Dortmund"
+},
+{
+"dist": 28.85,
+"ecmp_fwd": {
+"org": 23.39,
+"uni": 23.73,
+"deg": 14.94
+},
+"ecmp_bwd": {
+"org": 21.55,
+"uni": 19.49,
+"deg": 13.01
+},
+"source": "Essen",
+"target": "Duesseldorf"
+},
+{
+"dist": 73.34,
+"ecmp_fwd": {
+"org": 40.70,
+"uni": 45.76,
+"deg": 43.17
+},
+"ecmp_bwd": {
+"org": 47.33,
+"uni": 43.22,
+"deg": 39.76
+},
+"source": "Dortmund",
+"target": "Koeln"
+},
+{
+"dist": 37.04,
+"ecmp_fwd": {
+"org": 54.51,
+"uni": 54.24,
+"deg": 36.16
+},
+"ecmp_bwd": {
+"org": 52.67,
+"uni": 50.00,
+"deg": 34.23
+},
+"source": "Duesseldorf",
+"target": "Koeln"
+}
+]
+}

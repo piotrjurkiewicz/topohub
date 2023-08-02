@@ -1,0 +1,554 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "funet",
+"demands": {},
+"stats": {
+"nodes": 24,
+"links": 27,
+"demands": 552,
+"min_degree": 1,
+"avg_degree": 2.25,
+"std_degree": 0.66,
+"max_degree": 4,
+"gini": 0.14,
+"min_link_len": 16.16,
+"avg_link_len": 105.32,
+"max_link_len": 250.52,
+"diameter_len": 973.88,
+"diameter_hops": 9,
+"avg_sdp_num": 1.03,
+"max_sdp_num": 2,
+"avg_sdp_hops": 4.28,
+"avg_sdp_len": 287.22,
+"avg_adp_num": 1.86,
+"max_adp_num": 3,
+"avg_adp_hops": 6.55,
+"avg_adp_len": 693.11
+}
+},
+"nodes": [
+{
+"pos": [
+26.70,
+60.87
+],
+"id": "Kouvola"
+},
+{
+"pos": [
+25.66,
+60.98
+],
+"id": "Lahti"
+},
+{
+"pos": [
+27.27,
+61.69
+],
+"id": "Mikkeli"
+},
+{
+"pos": [
+25.73,
+62.23
+],
+"id": "Jyvaskyla"
+},
+{
+"pos": [
+22.83,
+62.80
+],
+"id": "Seinajoki"
+},
+{
+"pos": [
+21.78,
+61.48
+],
+"id": "Pori"
+},
+{
+"pos": [
+23.79,
+61.50
+],
+"id": "Tampere"
+},
+{
+"pos": [
+24.46,
+61.00
+],
+"id": "Hameenlinna"
+},
+{
+"pos": [
+21.51,
+61.13
+],
+"id": "Rauma"
+},
+{
+"pos": [
+22.27,
+60.45
+],
+"id": "Turku"
+},
+{
+"pos": [
+26.92,
+60.47
+],
+"id": "Kotka"
+},
+{
+"pos": [
+24.94,
+60.17
+],
+"id": "Helsinki"
+},
+{
+"pos": [
+24.65,
+60.21
+],
+"id": "Espoo"
+},
+{
+"pos": [
+23.13,
+60.38
+],
+"id": "Salo"
+},
+{
+"pos": [
+29.77,
+62.60
+],
+"id": "Joensuu"
+},
+{
+"pos": [
+28.19,
+61.06
+],
+"id": "Lappeenranta"
+},
+{
+"pos": [
+25.47,
+65.01
+],
+"id": "Oulu"
+},
+{
+"pos": [
+25.35,
+65.18
+],
+"id": "Haukipudas"
+},
+{
+"pos": [
+25.72,
+66.50
+],
+"id": "Rovaniemi"
+},
+{
+"pos": [
+26.60,
+67.42
+],
+"id": "Sodankyla"
+},
+{
+"pos": [
+28.22,
+64.50
+],
+"id": "Ristijavi"
+},
+{
+"pos": [
+23.13,
+63.84
+],
+"id": "Kokkola"
+},
+{
+"pos": [
+21.62,
+63.10
+],
+"id": "Vaasa"
+},
+{
+"pos": [
+27.68,
+62.89
+],
+"id": "Koupio"
+}
+],
+"links": [
+{
+"dist": 57.59,
+"ecmp_fwd": {
+"uni": 56.84,
+"deg": 54.78
+},
+"ecmp_bwd": {
+"uni": 56.84,
+"deg": 54.78
+},
+"source": "Kouvola",
+"target": "Lahti"
+},
+{
+"dist": 46.03,
+"ecmp_fwd": {
+"uni": 24.21,
+"deg": 10.56
+},
+"ecmp_bwd": {
+"uni": 24.21,
+"deg": 10.56
+},
+"source": "Kouvola",
+"target": "Kotka"
+},
+{
+"dist": 96.40,
+"ecmp_fwd": {
+"uni": 57.89,
+"deg": 60.16
+},
+"ecmp_bwd": {
+"uni": 57.89,
+"deg": 60.16
+},
+"source": "Kouvola",
+"target": "Mikkeli"
+},
+{
+"dist": 83.16,
+"ecmp_fwd": {
+"uni": 21.05,
+"deg": 17.93
+},
+"ecmp_bwd": {
+"uni": 21.05,
+"deg": 17.93
+},
+"source": "Kouvola",
+"target": "Lappeenranta"
+},
+{
+"dist": 98.76,
+"ecmp_fwd": {
+"uni": 50.53,
+"deg": 48.41
+},
+"ecmp_bwd": {
+"uni": 50.53,
+"deg": 48.41
+},
+"source": "Lahti",
+"target": "Helsinki"
+},
+{
+"dist": 135.52,
+"ecmp_fwd": {
+"uni": 86.32,
+"deg": 89.44
+},
+"ecmp_bwd": {
+"uni": 86.32,
+"deg": 89.44
+},
+"source": "Mikkeli",
+"target": "Koupio"
+},
+{
+"dist": 100.72,
+"ecmp_fwd": {
+"uni": 49.47,
+"deg": 47.01
+},
+"ecmp_bwd": {
+"uni": 49.47,
+"deg": 47.01
+},
+"source": "Mikkeli",
+"target": "Jyvaskyla"
+},
+{
+"dist": 130.71,
+"ecmp_fwd": {
+"uni": 41.05,
+"deg": 39.04
+},
+"ecmp_bwd": {
+"uni": 41.05,
+"deg": 39.04
+},
+"source": "Jyvaskyla",
+"target": "Tampere"
+},
+{
+"dist": 69.84,
+"ecmp_fwd": {
+"uni": 50.53,
+"deg": 45.02
+},
+"ecmp_bwd": {
+"uni": 50.53,
+"deg": 45.02
+},
+"source": "Seinajoki",
+"target": "Vaasa"
+},
+{
+"dist": 156.28,
+"ecmp_fwd": {
+"uni": 45.26,
+"deg": 39.44
+},
+"ecmp_bwd": {
+"uni": 45.26,
+"deg": 39.44
+},
+"source": "Seinajoki",
+"target": "Pori"
+},
+{
+"dist": 42.19,
+"ecmp_fwd": {
+"uni": 45.26,
+"deg": 38.65
+},
+"ecmp_bwd": {
+"uni": 45.26,
+"deg": 38.65
+},
+"source": "Pori",
+"target": "Rauma"
+},
+{
+"dist": 66.67,
+"ecmp_fwd": {
+"uni": 34.74,
+"deg": 32.67
+},
+"ecmp_bwd": {
+"uni": 34.74,
+"deg": 32.67
+},
+"source": "Tampere",
+"target": "Hameenlinna"
+},
+{
+"dist": 88.55,
+"ecmp_fwd": {
+"uni": 32.63,
+"deg": 29.88
+},
+"ecmp_bwd": {
+"uni": 32.63,
+"deg": 29.88
+},
+"source": "Hameenlinna",
+"target": "Espoo"
+},
+{
+"dist": 85.67,
+"ecmp_fwd": {
+"uni": 47.37,
+"deg": 40.24
+},
+"ecmp_bwd": {
+"uni": 47.37,
+"deg": 40.24
+},
+"source": "Rauma",
+"target": "Turku"
+},
+{
+"dist": 48.08,
+"ecmp_fwd": {
+"uni": 50.53,
+"deg": 43.43
+},
+"ecmp_bwd": {
+"uni": 50.53,
+"deg": 43.43
+},
+"source": "Turku",
+"target": "Salo"
+},
+{
+"dist": 16.16,
+"ecmp_fwd": {
+"uni": 46.32,
+"deg": 43.63
+},
+"ecmp_bwd": {
+"uni": 46.32,
+"deg": 43.63
+},
+"source": "Helsinki",
+"target": "Espoo"
+},
+{
+"dist": 86.03,
+"ecmp_fwd": {
+"uni": 57.89,
+"deg": 50.60
+},
+"ecmp_bwd": {
+"uni": 57.89,
+"deg": 50.60
+},
+"source": "Espoo",
+"target": "Salo"
+},
+{
+"dist": 190.39,
+"ecmp_fwd": {
+"uni": 18.95,
+"deg": 16.33
+},
+"ecmp_bwd": {
+"uni": 18.95,
+"deg": 16.33
+},
+"source": "Joensuu",
+"target": "Lappeenranta"
+},
+{
+"dist": 111.29,
+"ecmp_fwd": {
+"uni": 25.26,
+"deg": 21.91
+},
+"ecmp_bwd": {
+"uni": 25.26,
+"deg": 21.91
+},
+"source": "Joensuu",
+"target": "Koupio"
+},
+{
+"dist": 19.05,
+"ecmp_fwd": {
+"uni": 22.63,
+"deg": 18.92
+},
+"ecmp_bwd": {
+"uni": 22.63,
+"deg": 18.92
+},
+"source": "Oulu",
+"target": "Haukipudas"
+},
+{
+"dist": 142.27,
+"ecmp_fwd": {
+"uni": 67.89,
+"deg": 68.13
+},
+"ecmp_bwd": {
+"uni": 67.89,
+"deg": 68.13
+},
+"source": "Oulu",
+"target": "Ristijavi"
+},
+{
+"dist": 172.15,
+"ecmp_fwd": {
+"uni": 67.37,
+"deg": 60.96
+},
+"ecmp_bwd": {
+"uni": 67.37,
+"deg": 60.96
+},
+"source": "Oulu",
+"target": "Kokkola"
+},
+{
+"dist": 148.13,
+"ecmp_fwd": {
+"uni": 16.32,
+"deg": 13.75
+},
+"ecmp_bwd": {
+"uni": 16.32,
+"deg": 13.75
+},
+"source": "Haukipudas",
+"target": "Rovaniemi"
+},
+{
+"dist": 108.97,
+"ecmp_fwd": {
+"uni": 24.21,
+"deg": 10.56
+},
+"ecmp_bwd": {
+"uni": 24.21,
+"deg": 10.56
+},
+"source": "Rovaniemi",
+"target": "Sodankyla"
+},
+{
+"dist": 250.52,
+"ecmp_fwd": {
+"uni": 43.68,
+"deg": 38.45
+},
+"ecmp_bwd": {
+"uni": 43.68,
+"deg": 38.45
+},
+"source": "Rovaniemi",
+"target": "Ristijavi"
+},
+{
+"dist": 180.78,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Ristijavi",
+"target": "Koupio"
+},
+{
+"dist": 111.73,
+"ecmp_fwd": {
+"uni": 57.89,
+"deg": 52.19
+},
+"ecmp_bwd": {
+"uni": 57.89,
+"deg": 52.19
+},
+"source": "Kokkola",
+"target": "Vaasa"
+}
+]
+}

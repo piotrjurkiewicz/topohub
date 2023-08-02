@@ -1,0 +1,348 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "spiralight",
+"demands": {},
+"stats": {
+"nodes": 15,
+"links": 16,
+"demands": 210,
+"min_degree": 2,
+"avg_degree": 2.13,
+"std_degree": 0.50,
+"max_degree": 4,
+"gini": 0.06,
+"min_link_len": 26.60,
+"avg_link_len": 88.22,
+"max_link_len": 285.93,
+"diameter_len": 569.69,
+"diameter_hops": 8,
+"avg_sdp_num": 1.09,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.41,
+"avg_sdp_len": 169.46,
+"avg_adp_num": 2.00,
+"max_adp_num": 2,
+"avg_adp_hops": 6.00,
+"avg_adp_len": 550.34
+}
+},
+"nodes": [
+{
+"pos": [
+-87.91,
+43.04
+],
+"id": "Milwaukee"
+},
+{
+"pos": [
+-89.09,
+42.27
+],
+"id": "Rockford"
+},
+{
+"pos": [
+-89.02,
+42.68
+],
+"id": "Janesville"
+},
+{
+"pos": [
+-88.23,
+43.01
+],
+"id": "Waukesha"
+},
+{
+"pos": [
+-87.82,
+42.59
+],
+"id": "Chicago"
+},
+{
+"pos": [
+-89.40,
+43.07
+],
+"id": "Madison"
+},
+{
+"pos": [
+-90.27,
+43.92
+],
+"id": "Camp Douglas"
+},
+{
+"pos": [
+-93.26,
+44.98
+],
+"id": "Minneaopolis"
+},
+{
+"pos": [
+-91.50,
+44.81
+],
+"id": "Eau Claire"
+},
+{
+"pos": [
+-89.63,
+44.96
+],
+"id": "Wausau"
+},
+{
+"pos": [
+-88.02,
+44.52
+],
+"id": "Green Bay"
+},
+{
+"pos": [
+-88.42,
+44.26
+],
+"id": "Appleton"
+},
+{
+"pos": [
+-88.54,
+44.02
+],
+"id": "Oshkosh"
+},
+{
+"pos": [
+-88.44,
+43.77
+],
+"id": "Fon Du Lac"
+},
+{
+"pos": [
+-88.84,
+43.46
+],
+"id": "Beaver Dam"
+}
+],
+"links": [
+{
+"dist": 26.60,
+"ecmp_fwd": {
+"uni": 51.43,
+"deg": 49.37
+},
+"ecmp_bwd": {
+"uni": 51.43,
+"deg": 49.37
+},
+"source": "Milwaukee",
+"target": "Waukesha"
+},
+{
+"dist": 50.80,
+"ecmp_fwd": {
+"uni": 25.71,
+"deg": 24.05
+},
+"ecmp_bwd": {
+"uni": 25.71,
+"deg": 24.05
+},
+"source": "Milwaukee",
+"target": "Chicago"
+},
+{
+"dist": 46.20,
+"ecmp_fwd": {
+"uni": 51.43,
+"deg": 49.37
+},
+"ecmp_bwd": {
+"uni": 51.43,
+"deg": 49.37
+},
+"source": "Rockford",
+"target": "Janesville"
+},
+{
+"dist": 109.93,
+"ecmp_fwd": {
+"uni": 25.71,
+"deg": 24.05
+},
+"ecmp_bwd": {
+"uni": 25.71,
+"deg": 24.05
+},
+"source": "Rockford",
+"target": "Chicago"
+},
+{
+"dist": 53.44,
+"ecmp_fwd": {
+"uni": 77.14,
+"deg": 74.68
+},
+"ecmp_bwd": {
+"uni": 77.14,
+"deg": 74.68
+},
+"source": "Janesville",
+"target": "Madison"
+},
+{
+"dist": 95.33,
+"ecmp_fwd": {
+"uni": 77.14,
+"deg": 74.68
+},
+"ecmp_bwd": {
+"uni": 77.14,
+"deg": 74.68
+},
+"source": "Waukesha",
+"target": "Madison"
+},
+{
+"dist": 117.71,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Madison",
+"target": "Camp Douglas"
+},
+{
+"dist": 62.59,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Madison",
+"target": "Beaver Dam"
+},
+{
+"dist": 138.89,
+"ecmp_fwd": {
+"uni": 85.71,
+"deg": 84.81
+},
+"ecmp_bwd": {
+"uni": 85.71,
+"deg": 84.81
+},
+"source": "Camp Douglas",
+"target": "Eau Claire"
+},
+{
+"dist": 140.35,
+"ecmp_fwd": {
+"uni": 71.43,
+"deg": 69.62
+},
+"ecmp_bwd": {
+"uni": 71.43,
+"deg": 69.62
+},
+"source": "Minneaopolis",
+"target": "Eau Claire"
+},
+{
+"dist": 285.93,
+"ecmp_fwd": {
+"uni": 57.14,
+"deg": 54.43
+},
+"ecmp_bwd": {
+"uni": 57.14,
+"deg": 54.43
+},
+"source": "Minneaopolis",
+"target": "Wausau"
+},
+{
+"dist": 136.31,
+"ecmp_fwd": {
+"uni": 42.86,
+"deg": 39.24
+},
+"ecmp_bwd": {
+"uni": 42.86,
+"deg": 39.24
+},
+"source": "Wausau",
+"target": "Green Bay"
+},
+{
+"dist": 42.51,
+"ecmp_fwd": {
+"uni": 42.86,
+"deg": 39.24
+},
+"ecmp_bwd": {
+"uni": 42.86,
+"deg": 39.24
+},
+"source": "Green Bay",
+"target": "Appleton"
+},
+{
+"dist": 28.27,
+"ecmp_fwd": {
+"uni": 57.14,
+"deg": 54.43
+},
+"ecmp_bwd": {
+"uni": 57.14,
+"deg": 54.43
+},
+"source": "Appleton",
+"target": "Oshkosh"
+},
+{
+"dist": 28.99,
+"ecmp_fwd": {
+"uni": 71.43,
+"deg": 69.62
+},
+"ecmp_bwd": {
+"uni": 71.43,
+"deg": 69.62
+},
+"source": "Oshkosh",
+"target": "Fon Du Lac"
+},
+{
+"dist": 47.69,
+"ecmp_fwd": {
+"uni": 85.71,
+"deg": 84.81
+},
+"ecmp_bwd": {
+"uni": 85.71,
+"deg": 84.81
+},
+"source": "Fon Du Lac",
+"target": "Beaver Dam"
+}
+]
+}

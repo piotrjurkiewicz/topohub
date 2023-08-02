@@ -1,0 +1,1222 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "forthnet",
+"demands": {},
+"stats": {
+"nodes": 60,
+"links": 59,
+"demands": 3540,
+"min_degree": 1,
+"avg_degree": 1.97,
+"std_degree": 2.92,
+"max_degree": 19,
+"gini": 0.44,
+"min_link_len": 20.27,
+"avg_link_len": 121.69,
+"max_link_len": 434.25,
+"diameter_len": 985.59,
+"diameter_hops": 7,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 3.32,
+"avg_sdp_len": 542.47,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 3.32,
+"avg_adp_len": 542.47
+}
+},
+"nodes": [
+{
+"pos": [
+25.40,
+41.12
+],
+"id": "Komotini"
+},
+{
+"pos": [
+25.87,
+40.85
+],
+"id": "Alexandroypoli"
+},
+{
+"pos": [
+24.88,
+41.14
+],
+"id": "Xanthi"
+},
+{
+"pos": [
+24.40,
+40.94
+],
+"id": "Kavala"
+},
+{
+"pos": [
+26.14,
+38.37
+],
+"id": "Chios"
+},
+{
+"pos": [
+26.22,
+39.31
+],
+"id": "Lesbos"
+},
+{
+"pos": [
+23.72,
+37.98
+],
+"id": "Athens"
+},
+{
+"pos": [
+20.90,
+37.79
+],
+"id": "Zakynthos"
+},
+{
+"pos": [
+20.78,
+40.16
+],
+"id": "Pyrgos"
+},
+{
+"pos": [
+26.98,
+37.76
+],
+"id": "Samos"
+},
+{
+"pos": [
+28.22,
+36.44
+],
+"id": "Rhodes"
+},
+{
+"pos": [
+21.41,
+38.62
+],
+"id": "Agrinio"
+},
+{
+"pos": [
+21.43,
+38.37
+],
+"id": "Mesologgi"
+},
+{
+"pos": [
+20.75,
+38.95
+],
+"id": "Prevezza"
+},
+{
+"pos": [
+20.99,
+39.16
+],
+"id": "Arta"
+},
+{
+"pos": [
+22.43,
+38.90
+],
+"id": "Lamia"
+},
+{
+"pos": [
+23.63,
+38.32
+],
+"id": "Inofita"
+},
+{
+"pos": [
+24.47,
+35.36
+],
+"id": "Rethymnon"
+},
+{
+"pos": [
+24.87,
+35.05
+],
+"id": "Moires"
+},
+{
+"pos": [
+25.71,
+35.19
+],
+"id": "Ag. Nikolaos"
+},
+{
+"pos": [
+25.74,
+35.01
+],
+"id": "Ierapetra"
+},
+{
+"pos": [
+26.10,
+35.20
+],
+"id": "Siteia"
+},
+{
+"pos": [
+22.96,
+37.94
+],
+"id": "Corinth"
+},
+{
+"pos": [
+22.17,
+39.47
+],
+"id": "Itea"
+},
+{
+"pos": [
+22.29,
+41.00
+],
+"id": "Livadia"
+},
+{
+"pos": [
+21.27,
+40.52
+],
+"id": "Kastoria"
+},
+{
+"pos": [
+22.42,
+39.64
+],
+"id": "Larissa"
+},
+{
+"pos": [
+20.70,
+38.83
+],
+"id": "Lefkada"
+},
+{
+"pos": [
+21.80,
+39.92
+],
+"id": "Grevena"
+},
+{
+"pos": [
+20.27,
+39.50
+],
+"id": "Igoumenitsa"
+},
+{
+"pos": [
+20.49,
+38.18
+],
+"id": "Argostoli"
+},
+{
+"pos": [
+21.73,
+38.24
+],
+"id": "Patra"
+},
+{
+"pos": [
+23.49,
+39.16
+],
+"id": "Sklathos"
+},
+{
+"pos": [
+23.60,
+38.46
+],
+"id": "Chalkida"
+},
+{
+"pos": [
+21.92,
+39.37
+],
+"id": "Karditsa"
+},
+{
+"pos": [
+22.95,
+39.37
+],
+"id": "Volos"
+},
+{
+"pos": [
+21.78,
+38.92
+],
+"id": "Karpenisi"
+},
+{
+"pos": [
+21.77,
+39.56
+],
+"id": "Trikana"
+},
+{
+"pos": [
+19.92,
+39.62
+],
+"id": "Corfu"
+},
+{
+"pos": [
+20.85,
+39.67
+],
+"id": "Ioaninna"
+},
+{
+"pos": [
+25.37,
+35.31
+],
+"id": "Hersonlssos"
+},
+{
+"pos": [
+25.14,
+35.33
+],
+"id": "Heraklion"
+},
+{
+"pos": [
+22.73,
+37.63
+],
+"id": "Argos"
+},
+{
+"pos": [
+24.93,
+37.45
+],
+"id": "Syros"
+},
+{
+"pos": [
+25.33,
+37.45
+],
+"id": "Mykonos"
+},
+{
+"pos": [
+25.43,
+36.39
+],
+"id": "Santorini"
+},
+{
+"pos": [
+24.02,
+35.51
+],
+"id": "Chania"
+},
+{
+"pos": [
+22.43,
+37.07
+],
+"id": "Sparta"
+},
+{
+"pos": [
+22.11,
+37.04
+],
+"id": "Kalamata"
+},
+{
+"pos": [
+22.38,
+37.51
+],
+"id": "Tripoli"
+},
+{
+"pos": [
+23.44,
+40.37
+],
+"id": "Polygyros"
+},
+{
+"pos": [
+24.14,
+41.15
+],
+"id": "Drama"
+},
+{
+"pos": [
+23.55,
+41.09
+],
+"id": "Serres"
+},
+{
+"pos": [
+22.94,
+40.64
+],
+"id": "Thessaloniki"
+},
+{
+"pos": [
+22.87,
+40.99
+],
+"id": "Kilkis"
+},
+{
+"pos": [
+22.05,
+40.80
+],
+"id": "Edessa"
+},
+{
+"pos": [
+21.41,
+40.78
+],
+"id": "Florina"
+},
+{
+"pos": [
+22.20,
+40.52
+],
+"id": "Verola"
+},
+{
+"pos": [
+21.79,
+40.30
+],
+"id": "Kozani"
+},
+{
+"pos": [
+22.50,
+40.27
+],
+"id": "Katerina"
+}
+],
+"links": [
+{
+"dist": 213.10,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Komotini",
+"target": "Thessaloniki"
+},
+{
+"dist": 248.02,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Alexandroypoli",
+"target": "Thessaloniki"
+},
+{
+"dist": 46.22,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Xanthi",
+"target": "Kavala"
+},
+{
+"dist": 32.48,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Kavala",
+"target": "Drama"
+},
+{
+"dist": 127.22,
+"ecmp_fwd": {
+"uni": 26.55,
+"deg": 23.00
+},
+"ecmp_bwd": {
+"uni": 26.55,
+"deg": 23.00
+},
+"source": "Kavala",
+"target": "Thessaloniki"
+},
+{
+"dist": 215.93,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Chios",
+"target": "Athens"
+},
+{
+"dist": 263.13,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Lesbos",
+"target": "Athens"
+},
+{
+"dist": 175.92,
+"ecmp_fwd": {
+"uni": 57.61,
+"deg": 55.56
+},
+"ecmp_bwd": {
+"uni": 57.61,
+"deg": 55.56
+},
+"source": "Athens",
+"target": "Patra"
+},
+{
+"dist": 54.81,
+"ecmp_fwd": {
+"uni": 18.01,
+"deg": 14.04
+},
+"ecmp_bwd": {
+"uni": 18.01,
+"deg": 14.04
+},
+"source": "Athens",
+"target": "Chalkida"
+},
+{
+"dist": 311.27,
+"ecmp_fwd": {
+"uni": 57.61,
+"deg": 55.56
+},
+"ecmp_bwd": {
+"uni": 57.61,
+"deg": 55.56
+},
+"source": "Athens",
+"target": "Ioaninna"
+},
+{
+"dist": 287.36,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Athens",
+"target": "Samos"
+},
+{
+"dist": 434.25,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Athens",
+"target": "Rhodes"
+},
+{
+"dist": 122.21,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Athens",
+"target": "Syros"
+},
+{
+"dist": 153.82,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Athens",
+"target": "Mykonos"
+},
+{
+"dist": 233.35,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Athens",
+"target": "Santorini"
+},
+{
+"dist": 151.57,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Athens",
+"target": "Lamia"
+},
+{
+"dist": 38.20,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Athens",
+"target": "Inofita"
+},
+{
+"dist": 128.69,
+"ecmp_fwd": {
+"uni": 34.78,
+"deg": 31.62
+},
+"ecmp_bwd": {
+"uni": 34.78,
+"deg": 31.62
+},
+"source": "Athens",
+"target": "Tripoli"
+},
+{
+"dist": 321.23,
+"ecmp_fwd": {
+"uni": 64.60,
+"deg": 62.88
+},
+"ecmp_bwd": {
+"uni": 64.60,
+"deg": 62.88
+},
+"source": "Athens",
+"target": "Heraklion"
+},
+{
+"dist": 303.32,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Athens",
+"target": "Thessaloniki"
+},
+{
+"dist": 213.17,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Athens",
+"target": "Itea"
+},
+{
+"dist": 357.85,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Athens",
+"target": "Livadia"
+},
+{
+"dist": 215.90,
+"ecmp_fwd": {
+"uni": 42.70,
+"deg": 39.93
+},
+"ecmp_bwd": {
+"uni": 42.70,
+"deg": 39.93
+},
+"source": "Athens",
+"target": "Larissa"
+},
+{
+"dist": 66.69,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Athens",
+"target": "Corinth"
+},
+{
+"dist": 89.14,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Zakynthos",
+"target": "Patra"
+},
+{
+"dist": 228.13,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Pyrgos",
+"target": "Patra"
+},
+{
+"dist": 50.67,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Agrinio",
+"target": "Patra"
+},
+{
+"dist": 30.06,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Mesologgi",
+"target": "Patra"
+},
+{
+"dist": 80.28,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Prevezza",
+"target": "Ioaninna"
+},
+{
+"dist": 57.56,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Arta",
+"target": "Ioaninna"
+},
+{
+"dist": 61.11,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Rethymnon",
+"target": "Heraklion"
+},
+{
+"dist": 39.85,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Moires",
+"target": "Heraklion"
+},
+{
+"dist": 33.73,
+"ecmp_fwd": {
+"uni": 26.55,
+"deg": 23.00
+},
+"ecmp_bwd": {
+"uni": 26.55,
+"deg": 23.00
+},
+"source": "Ag. Nikolaos",
+"target": "Hersonlssos"
+},
+{
+"dist": 20.27,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Ag. Nikolaos",
+"target": "Ierapetra"
+},
+{
+"dist": 35.03,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Ag. Nikolaos",
+"target": "Siteia"
+},
+{
+"dist": 100.86,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Kastoria",
+"target": "Ioaninna"
+},
+{
+"dist": 52.38,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Larissa",
+"target": "Karditsa"
+},
+{
+"dist": 54.22,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Larissa",
+"target": "Volos"
+},
+{
+"dist": 97.11,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Larissa",
+"target": "Karpenisi"
+},
+{
+"dist": 56.68,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Larissa",
+"target": "Trikana"
+},
+{
+"dist": 110.79,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Lefkada",
+"target": "Patra"
+},
+{
+"dist": 86.16,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Grevena",
+"target": "Ioaninna"
+},
+{
+"dist": 53.37,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Igoumenitsa",
+"target": "Ioaninna"
+},
+{
+"dist": 109.07,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Argostoli",
+"target": "Patra"
+},
+{
+"dist": 78.28,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Sklathos",
+"target": "Chalkida"
+},
+{
+"dist": 79.92,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Corfu",
+"target": "Ioaninna"
+},
+{
+"dist": 20.77,
+"ecmp_fwd": {
+"uni": 34.78,
+"deg": 31.62
+},
+"ecmp_bwd": {
+"uni": 34.78,
+"deg": 31.62
+},
+"source": "Hersonlssos",
+"target": "Heraklion"
+},
+{
+"dist": 104.27,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Heraklion",
+"target": "Chania"
+},
+{
+"dist": 34.13,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Argos",
+"target": "Tripoli"
+},
+{
+"dist": 48.65,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Sparta",
+"target": "Tripoli"
+},
+{
+"dist": 57.31,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Kalamata",
+"target": "Tripoli"
+},
+{
+"dist": 51.21,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Polygyros",
+"target": "Thessaloniki"
+},
+{
+"dist": 71.06,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Serres",
+"target": "Thessaloniki"
+},
+{
+"dist": 39.59,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Thessaloniki",
+"target": "Kilkis"
+},
+{
+"dist": 77.66,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Thessaloniki",
+"target": "Edessa"
+},
+{
+"dist": 130.29,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Thessaloniki",
+"target": "Florina"
+},
+{
+"dist": 63.87,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Thessaloniki",
+"target": "Verola"
+},
+{
+"dist": 104.95,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Thessaloniki",
+"target": "Kozani"
+},
+{
+"dist": 55.44,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 9.16,
+"deg": 4.76
+},
+"source": "Thessaloniki",
+"target": "Katerina"
+}
+]
+}

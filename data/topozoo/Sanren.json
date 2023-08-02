@@ -1,0 +1,175 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "sanren",
+"demands": {},
+"stats": {
+"nodes": 7,
+"links": 7,
+"demands": 42,
+"min_degree": 2,
+"avg_degree": 2.00,
+"std_degree": 0.00,
+"max_degree": 2,
+"gini": 0.00,
+"min_link_len": 52.88,
+"avg_link_len": 461.53,
+"max_link_len": 909.24,
+"diameter_len": 1570.43,
+"diameter_hops": 3,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 2.00,
+"avg_sdp_len": 461.53,
+"avg_adp_num": 2.00,
+"max_adp_num": 2,
+"avg_adp_hops": 3.50,
+"avg_adp_len": 1615.35
+}
+},
+"nodes": [
+{
+"pos": [
+28.04,
+-26.20
+],
+"id": "Johannesburg"
+},
+{
+"pos": [
+28.19,
+-25.74
+],
+"id": "Pretoria"
+},
+{
+"pos": [
+31.02,
+-29.85
+],
+"id": "Durban"
+},
+{
+"pos": [
+26.20,
+-29.13
+],
+"id": "Bloemfontein"
+},
+{
+"pos": [
+27.91,
+-33.02
+],
+"id": "East London"
+},
+{
+"pos": [
+25.58,
+-33.97
+],
+"id": "Port Elizabeth"
+},
+{
+"pos": [
+18.42,
+-33.92
+],
+"id": "Cape Town"
+}
+],
+"links": [
+{
+"dist": 52.88,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Johannesburg",
+"target": "Pretoria"
+},
+{
+"dist": 373.17,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Johannesburg",
+"target": "Bloemfontein"
+},
+{
+"dist": 534.69,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Pretoria",
+"target": "Durban"
+},
+{
+"dist": 459.06,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Durban",
+"target": "East London"
+},
+{
+"dist": 909.24,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Bloemfontein",
+"target": "Cape Town"
+},
+{
+"dist": 240.49,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "East London",
+"target": "Port Elizabeth"
+},
+{
+"dist": 661.19,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Port Elizabeth",
+"target": "Cape Town"
+}
+]
+}

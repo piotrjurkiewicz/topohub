@@ -1,0 +1,587 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "sunet",
+"demands": {},
+"stats": {
+"nodes": 25,
+"links": 29,
+"demands": 600,
+"min_degree": 1,
+"avg_degree": 2.32,
+"std_degree": 0.73,
+"max_degree": 4,
+"gini": 0.16,
+"min_link_len": 16.42,
+"avg_link_len": 168.80,
+"max_link_len": 836.05,
+"diameter_len": 1818.78,
+"diameter_hops": 12,
+"avg_sdp_num": 1.05,
+"max_sdp_num": 2,
+"avg_sdp_hops": 4.46,
+"avg_sdp_len": 553.04,
+"avg_adp_num": 1.67,
+"max_adp_num": 3,
+"avg_adp_hops": 5.70,
+"avg_adp_len": 1047.60
+}
+},
+"nodes": [
+{
+"pos": [
+11.97,
+57.71
+],
+"id": "Goteborg"
+},
+{
+"pos": [
+13.85,
+58.39
+],
+"id": "Skovde"
+},
+{
+"pos": [
+15.21,
+59.27
+],
+"id": "Orebro"
+},
+{
+"pos": [
+13.50,
+59.38
+],
+"id": "Karlstad"
+},
+{
+"pos": [
+12.86,
+56.67
+],
+"id": "Halmstad"
+},
+{
+"pos": [
+15.62,
+58.42
+],
+"id": "Linkoping"
+},
+{
+"pos": [
+12.94,
+57.72
+],
+"id": "Boras"
+},
+{
+"pos": [
+12.29,
+58.28
+],
+"id": "Trollhattan"
+},
+{
+"pos": [
+14.16,
+57.78
+],
+"id": "Jonkoping"
+},
+{
+"pos": [
+14.82,
+56.87
+],
+"id": "Vaxjo"
+},
+{
+"pos": [
+13.19,
+55.71
+],
+"id": "Lund"
+},
+{
+"pos": [
+14.15,
+56.03
+],
+"id": "Kristianstad"
+},
+{
+"pos": [
+15.28,
+56.21
+],
+"id": "Ronneby"
+},
+{
+"pos": [
+16.36,
+56.66
+],
+"id": "Kalmar"
+},
+{
+"pos": [
+18.30,
+57.64
+],
+"id": "Visby"
+},
+{
+"pos": [
+13.00,
+55.61
+],
+"id": "Malmo"
+},
+{
+"pos": [
+18.06,
+59.33
+],
+"id": "Stockholm"
+},
+{
+"pos": [
+23.17,
+65.85
+],
+"id": "Vasten"
+},
+{
+"pos": [
+20.23,
+67.86
+],
+"id": "Kiruna"
+},
+{
+"pos": [
+22.15,
+65.58
+],
+"id": "Lulea"
+},
+{
+"pos": [
+20.26,
+63.83
+],
+"id": "Umea"
+},
+{
+"pos": [
+17.31,
+62.39
+],
+"id": "Sundsvall"
+},
+{
+"pos": [
+17.14,
+60.67
+],
+"id": "Gavle"
+},
+{
+"pos": [
+15.44,
+60.49
+],
+"id": "Borlange"
+},
+{
+"pos": [
+17.65,
+59.86
+],
+"id": "Uppsala"
+}
+],
+"links": [
+{
+"dist": 126.77,
+"ecmp_fwd": {
+"uni": 58.24,
+"deg": 68.14
+},
+"ecmp_bwd": {
+"uni": 58.24,
+"deg": 68.14
+},
+"source": "Goteborg",
+"target": "Halmstad"
+},
+{
+"dist": 57.85,
+"ecmp_fwd": {
+"uni": 28.85,
+"deg": 33.41
+},
+"ecmp_bwd": {
+"uni": 22.25,
+"deg": 25.17
+},
+"source": "Goteborg",
+"target": "Boras"
+},
+{
+"dist": 66.87,
+"ecmp_fwd": {
+"uni": 37.91,
+"deg": 46.68
+},
+"ecmp_bwd": {
+"uni": 44.51,
+"deg": 54.92
+},
+"source": "Goteborg",
+"target": "Trollhattan"
+},
+{
+"dist": 125.64,
+"ecmp_fwd": {
+"uni": 55.49,
+"deg": 66.43
+},
+"ecmp_bwd": {
+"uni": 48.90,
+"deg": 58.19
+},
+"source": "Skovde",
+"target": "Orebro"
+},
+{
+"dist": 91.61,
+"ecmp_fwd": {
+"uni": 26.92,
+"deg": 29.37
+},
+"ecmp_bwd": {
+"uni": 33.52,
+"deg": 37.61
+},
+"source": "Skovde",
+"target": "Boras"
+},
+{
+"dist": 91.65,
+"ecmp_fwd": {
+"uni": 20.33,
+"deg": 27.27
+},
+"ecmp_bwd": {
+"uni": 20.33,
+"deg": 27.27
+},
+"source": "Skovde",
+"target": "Trollhattan"
+},
+{
+"dist": 135.38,
+"ecmp_fwd": {
+"uni": 60.44,
+"deg": 63.94
+},
+"ecmp_bwd": {
+"uni": 60.44,
+"deg": 63.94
+},
+"source": "Orebro",
+"target": "Borlange"
+},
+{
+"dist": 97.33,
+"ecmp_fwd": {
+"uni": 35.44,
+"deg": 39.60
+},
+"ecmp_bwd": {
+"uni": 28.85,
+"deg": 31.36
+},
+"source": "Orebro",
+"target": "Karlstad"
+},
+{
+"dist": 836.05,
+"ecmp_fwd": {
+"uni": 43.96,
+"deg": 53.98
+},
+"ecmp_bwd": {
+"uni": 43.96,
+"deg": 53.98
+},
+"source": "Orebro",
+"target": "Vasten"
+},
+{
+"dist": 140.50,
+"ecmp_fwd": {
+"uni": 31.32,
+"deg": 36.73
+},
+"ecmp_bwd": {
+"uni": 24.73,
+"deg": 28.48
+},
+"source": "Karlstad",
+"target": "Trollhattan"
+},
+{
+"dist": 109.73,
+"ecmp_fwd": {
+"uni": 56.04,
+"deg": 65.49
+},
+"ecmp_bwd": {
+"uni": 56.04,
+"deg": 65.49
+},
+"source": "Halmstad",
+"target": "Lund"
+},
+{
+"dist": 173.74,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Linkoping",
+"target": "Stockholm"
+},
+{
+"dist": 111.18,
+"ecmp_fwd": {
+"uni": 93.41,
+"deg": 93.81
+},
+"ecmp_bwd": {
+"uni": 93.41,
+"deg": 93.81
+},
+"source": "Linkoping",
+"target": "Jonkoping"
+},
+{
+"dist": 109.20,
+"ecmp_fwd": {
+"uni": 89.01,
+"deg": 90.27
+},
+"ecmp_bwd": {
+"uni": 89.01,
+"deg": 90.27
+},
+"source": "Jonkoping",
+"target": "Vaxjo"
+},
+{
+"dist": 163.44,
+"ecmp_fwd": {
+"uni": 61.54,
+"deg": 66.59
+},
+"ecmp_bwd": {
+"uni": 61.54,
+"deg": 66.59
+},
+"source": "Vaxjo",
+"target": "Lund"
+},
+{
+"dist": 96.90,
+"ecmp_fwd": {
+"uni": 49.45,
+"deg": 46.46
+},
+"ecmp_bwd": {
+"uni": 49.45,
+"deg": 46.46
+},
+"source": "Vaxjo",
+"target": "Kalmar"
+},
+{
+"dist": 16.42,
+"ecmp_fwd": {
+"uni": 43.96,
+"deg": 42.92
+},
+"ecmp_bwd": {
+"uni": 43.96,
+"deg": 42.92
+},
+"source": "Lund",
+"target": "Malmo"
+},
+{
+"dist": 72.45,
+"ecmp_fwd": {
+"uni": 14.29,
+"deg": 12.83
+},
+"ecmp_bwd": {
+"uni": 14.29,
+"deg": 12.83
+},
+"source": "Kristianstad",
+"target": "Ronneby"
+},
+{
+"dist": 86.13,
+"ecmp_fwd": {
+"uni": 23.08,
+"deg": 22.57
+},
+"ecmp_bwd": {
+"uni": 23.08,
+"deg": 22.57
+},
+"source": "Kristianstad",
+"target": "Malmo"
+},
+{
+"dist": 83.54,
+"ecmp_fwd": {
+"uni": 28.57,
+"deg": 26.11
+},
+"ecmp_bwd": {
+"uni": 28.57,
+"deg": 26.11
+},
+"source": "Ronneby",
+"target": "Kalmar"
+},
+{
+"dist": 188.64,
+"ecmp_fwd": {
+"uni": 26.37,
+"deg": 12.61
+},
+"ecmp_bwd": {
+"uni": 26.37,
+"deg": 12.61
+},
+"source": "Visby",
+"target": "Stockholm"
+},
+{
+"dist": 769.93,
+"ecmp_fwd": {
+"uni": 47.25,
+"deg": 55.75
+},
+"ecmp_bwd": {
+"uni": 47.25,
+"deg": 55.75
+},
+"source": "Stockholm",
+"target": "Vasten"
+},
+{
+"dist": 63.08,
+"ecmp_fwd": {
+"uni": 78.02,
+"deg": 72.35
+},
+"ecmp_bwd": {
+"uni": 78.02,
+"deg": 72.35
+},
+"source": "Stockholm",
+"target": "Uppsala"
+},
+{
+"dist": 266.48,
+"ecmp_fwd": {
+"uni": 26.37,
+"deg": 12.61
+},
+"ecmp_bwd": {
+"uni": 26.37,
+"deg": 12.61
+},
+"source": "Kiruna",
+"target": "Lulea"
+},
+{
+"dist": 215.02,
+"ecmp_fwd": {
+"uni": 50.55,
+"deg": 36.50
+},
+"ecmp_bwd": {
+"uni": 50.55,
+"deg": 36.50
+},
+"source": "Lulea",
+"target": "Umea"
+},
+{
+"dist": 218.19,
+"ecmp_fwd": {
+"uni": 72.53,
+"deg": 58.63
+},
+"ecmp_bwd": {
+"uni": 72.53,
+"deg": 58.63
+},
+"source": "Umea",
+"target": "Sundsvall"
+},
+{
+"dist": 191.15,
+"ecmp_fwd": {
+"uni": 92.31,
+"deg": 78.98
+},
+"ecmp_bwd": {
+"uni": 92.31,
+"deg": 78.98
+},
+"source": "Sundsvall",
+"target": "Gavle"
+},
+{
+"dist": 95.46,
+"ecmp_fwd": {
+"uni": 54.95,
+"deg": 56.86
+},
+"ecmp_bwd": {
+"uni": 54.95,
+"deg": 56.86
+},
+"source": "Gavle",
+"target": "Borlange"
+},
+{
+"dist": 94.92,
+"ecmp_fwd": {
+"uni": 71.43,
+"deg": 65.71
+},
+"ecmp_bwd": {
+"uni": 71.43,
+"deg": 65.71
+},
+"source": "Gavle",
+"target": "Uppsala"
+}
+]
+}

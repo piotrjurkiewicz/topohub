@@ -1,0 +1,502 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "renater1999",
+"demands": {},
+"stats": {
+"nodes": 24,
+"links": 23,
+"demands": 552,
+"min_degree": 1,
+"avg_degree": 1.92,
+"std_degree": 1.85,
+"max_degree": 10,
+"gini": 0.35,
+"min_link_len": 71.76,
+"avg_link_len": 193.34,
+"max_link_len": 587.97,
+"diameter_len": 1829.55,
+"diameter_hops": 7,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 3.18,
+"avg_sdp_len": 711.97,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 3.18,
+"avg_adp_len": 711.97
+}
+},
+"nodes": [
+{
+"pos": [
+-0.57,
+44.83
+],
+"id": "Bordeaux"
+},
+{
+"pos": [
+1.44,
+43.60
+],
+"id": "Toulouse"
+},
+{
+"pos": [
+1.90,
+47.92
+],
+"id": "Orleans"
+},
+{
+"pos": [
+1.26,
+45.83
+],
+"id": "Limoges"
+},
+{
+"pos": [
+5.02,
+47.32
+],
+"id": "Dijon"
+},
+{
+"pos": [
+6.03,
+47.25
+],
+"id": "Besancon"
+},
+{
+"pos": [
+3.88,
+43.60
+],
+"id": "Montpellier"
+},
+{
+"pos": [
+3.08,
+45.78
+],
+"id": "Clermont-Ferrand"
+},
+{
+"pos": [
+5.72,
+45.17
+],
+"id": "Grenoble"
+},
+{
+"pos": [
+7.27,
+43.70
+],
+"id": "Nice/Sophia"
+},
+{
+"pos": [
+4.85,
+45.75
+],
+"id": "Lyon"
+},
+{
+"pos": [
+2.35,
+48.85
+],
+"id": "Paris"
+},
+{
+"pos": [
+9.15,
+42.30
+],
+"id": "Corte"
+},
+{
+"pos": [
+5.40,
+43.30
+],
+"id": "Marseille"
+},
+{
+"pos": [
+-1.55,
+47.22
+],
+"id": "Nantes"
+},
+{
+"pos": [
+0.33,
+46.58
+],
+"id": "Poiters"
+},
+{
+"pos": [
+7.75,
+48.58
+],
+"id": "Strasbourg"
+},
+{
+"pos": [
+6.20,
+48.68
+],
+"id": "Nancy"
+},
+{
+"pos": [
+4.03,
+49.25
+],
+"id": "Reims"
+},
+{
+"pos": [
+2.83,
+49.42
+],
+"id": "Compiegne"
+},
+{
+"pos": [
+3.07,
+50.63
+],
+"id": "Lille"
+},
+{
+"pos": [
+1.10,
+49.44
+],
+"id": "Rouen"
+},
+{
+"pos": [
+-0.36,
+49.19
+],
+"id": "Caen"
+},
+{
+"pos": [
+-1.68,
+48.08
+],
+"id": "Rennes"
+}
+],
+"links": [
+{
+"dist": 206.81,
+"ecmp_fwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"ecmp_bwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"source": "Bordeaux",
+"target": "Poiters"
+},
+{
+"dist": 587.97,
+"ecmp_fwd": {
+"uni": 40.74,
+"deg": 33.51
+},
+"ecmp_bwd": {
+"uni": 40.74,
+"deg": 33.51
+},
+"source": "Toulouse",
+"target": "Paris"
+},
+{
+"dist": 196.49,
+"ecmp_fwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"ecmp_bwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"source": "Toulouse",
+"target": "Montpellier"
+},
+{
+"dist": 109.34,
+"ecmp_fwd": {
+"uni": 74.07,
+"deg": 70.91
+},
+"ecmp_bwd": {
+"uni": 74.07,
+"deg": 70.91
+},
+"source": "Orleans",
+"target": "Paris"
+},
+{
+"dist": 189.69,
+"ecmp_fwd": {
+"uni": 58.33,
+"deg": 53.25
+},
+"ecmp_bwd": {
+"uni": 58.33,
+"deg": 53.25
+},
+"source": "Orleans",
+"target": "Poiters"
+},
+{
+"dist": 109.80,
+"ecmp_fwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"ecmp_bwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"source": "Limoges",
+"target": "Poiters"
+},
+{
+"dist": 261.72,
+"ecmp_fwd": {
+"uni": 40.74,
+"deg": 33.51
+},
+"ecmp_bwd": {
+"uni": 40.74,
+"deg": 33.51
+},
+"source": "Dijon",
+"target": "Paris"
+},
+{
+"dist": 77.07,
+"ecmp_fwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"ecmp_bwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"source": "Dijon",
+"target": "Besancon"
+},
+{
+"dist": 137.12,
+"ecmp_fwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"ecmp_bwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"source": "Clermont-Ferrand",
+"target": "Lyon"
+},
+{
+"dist": 93.71,
+"ecmp_fwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"ecmp_bwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"source": "Grenoble",
+"target": "Lyon"
+},
+{
+"dist": 218.71,
+"ecmp_fwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"ecmp_bwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"source": "Nice/Sophia",
+"target": "Corte"
+},
+{
+"dist": 157.08,
+"ecmp_fwd": {
+"uni": 40.74,
+"deg": 33.51
+},
+"ecmp_bwd": {
+"uni": 40.74,
+"deg": 33.51
+},
+"source": "Nice/Sophia",
+"target": "Marseille"
+},
+{
+"dist": 393.32,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Lyon",
+"target": "Paris"
+},
+{
+"dist": 275.97,
+"ecmp_fwd": {
+"uni": 58.33,
+"deg": 53.25
+},
+"ecmp_bwd": {
+"uni": 58.33,
+"deg": 53.25
+},
+"source": "Lyon",
+"target": "Marseille"
+},
+{
+"dist": 282.93,
+"ecmp_fwd": {
+"uni": 40.74,
+"deg": 33.51
+},
+"ecmp_bwd": {
+"uni": 40.74,
+"deg": 33.51
+},
+"source": "Paris",
+"target": "Nancy"
+},
+{
+"dist": 130.47,
+"ecmp_fwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"ecmp_bwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"source": "Paris",
+"target": "Reims"
+},
+{
+"dist": 71.76,
+"ecmp_fwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"ecmp_bwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"source": "Paris",
+"target": "Compiegne"
+},
+{
+"dist": 204.58,
+"ecmp_fwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"ecmp_bwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"source": "Paris",
+"target": "Lille"
+},
+{
+"dist": 112.10,
+"ecmp_fwd": {
+"uni": 40.74,
+"deg": 33.51
+},
+"ecmp_bwd": {
+"uni": 40.74,
+"deg": 33.51
+},
+"source": "Paris",
+"target": "Rouen"
+},
+{
+"dist": 309.40,
+"ecmp_fwd": {
+"uni": 40.74,
+"deg": 33.51
+},
+"ecmp_bwd": {
+"uni": 40.74,
+"deg": 33.51
+},
+"source": "Paris",
+"target": "Rennes"
+},
+{
+"dist": 96.82,
+"ecmp_fwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"ecmp_bwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"source": "Nantes",
+"target": "Rennes"
+},
+{
+"dist": 114.48,
+"ecmp_fwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"ecmp_bwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"source": "Strasbourg",
+"target": "Nancy"
+},
+{
+"dist": 109.55,
+"ecmp_fwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"ecmp_bwd": {
+"uni": 21.30,
+"deg": 11.69
+},
+"source": "Rouen",
+"target": "Caen"
+}
+]
+}

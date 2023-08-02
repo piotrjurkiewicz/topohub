@@ -1,0 +1,295 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "hiberniauk",
+"demands": {},
+"stats": {
+"nodes": 13,
+"links": 13,
+"demands": 156,
+"min_degree": 2,
+"avg_degree": 2.00,
+"std_degree": 0.00,
+"max_degree": 2,
+"gini": 0.00,
+"min_link_len": 26.45,
+"avg_link_len": 70.04,
+"max_link_len": 121.96,
+"diameter_len": 453.44,
+"diameter_hops": 6,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 3.50,
+"avg_sdp_len": 122.57,
+"avg_adp_num": 2.00,
+"max_adp_num": 2,
+"avg_adp_hops": 6.50,
+"avg_adp_len": 455.25
+}
+},
+"nodes": [
+{
+"pos": [
+-0.13,
+51.51
+],
+"id": "London"
+},
+{
+"pos": [
+-3.01,
+53.65
+],
+"id": "Southport"
+},
+{
+"pos": [
+-2.24,
+53.48
+],
+"id": "Manchester"
+},
+{
+"pos": [
+-0.25,
+52.57
+],
+"id": "Peterborough"
+},
+{
+"pos": [
+0.12,
+52.20
+],
+"id": "Cambridge"
+},
+{
+"pos": [
+-1.47,
+53.38
+],
+"id": "Sheffield"
+},
+{
+"pos": [
+-1.13,
+52.63
+],
+"id": "Leicester"
+},
+{
+"pos": [
+-2.21,
+53.93
+],
+"id": "Bracewell"
+},
+{
+"pos": [
+-1.55,
+53.80
+],
+"id": "Leeds"
+},
+{
+"pos": [
+-1.92,
+52.47
+],
+"id": "Birmingham"
+},
+{
+"pos": [
+-2.98,
+53.41
+],
+"id": "Liverpool"
+},
+{
+"pos": [
+-0.97,
+51.46
+],
+"id": "Reading"
+},
+{
+"pos": [
+-2.58,
+51.45
+],
+"id": "Bristol"
+}
+],
+"links": [
+{
+"dist": 58.85,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "London",
+"target": "Reading"
+},
+{
+"dist": 78.69,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "London",
+"target": "Cambridge"
+},
+{
+"dist": 61.18,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Southport",
+"target": "Bracewell"
+},
+{
+"dist": 26.45,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Southport",
+"target": "Liverpool"
+},
+{
+"dist": 114.84,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Manchester",
+"target": "Birmingham"
+},
+{
+"dist": 49.68,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Manchester",
+"target": "Liverpool"
+},
+{
+"dist": 60.19,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Peterborough",
+"target": "Leicester"
+},
+{
+"dist": 48.36,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Peterborough",
+"target": "Cambridge"
+},
+{
+"dist": 86.30,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Sheffield",
+"target": "Leicester"
+},
+{
+"dist": 46.31,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Sheffield",
+"target": "Leeds"
+},
+{
+"dist": 45.95,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Bracewell",
+"target": "Leeds"
+},
+{
+"dist": 121.96,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Birmingham",
+"target": "Bristol"
+},
+{
+"dist": 111.74,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Reading",
+"target": "Bristol"
+}
+]
+}

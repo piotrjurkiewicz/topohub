@@ -1,0 +1,262 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "nordu1997",
+"demands": {},
+"stats": {
+"nodes": 12,
+"links": 11,
+"demands": 132,
+"min_degree": 1,
+"avg_degree": 1.83,
+"std_degree": 2.03,
+"max_degree": 8,
+"gini": 0.39,
+"min_link_len": 82.11,
+"avg_link_len": 669.74,
+"max_link_len": 2132.55,
+"diameter_len": 3255.15,
+"diameter_hops": 3,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 2.15,
+"avg_sdp_len": 1353.80,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 2.15,
+"avg_adp_len": 1353.80
+}
+},
+"nodes": [
+{
+"pos": [
+24.02,
+49.84
+],
+"id": "Lviv"
+},
+{
+"pos": [
+10.75,
+59.91
+],
+"id": "Oslo"
+},
+{
+"pos": [
+23.90,
+54.90
+],
+"id": "Kaunas"
+},
+{
+"pos": [
+21.01,
+52.23
+],
+"id": "Warsaw"
+},
+{
+"pos": [
+24.75,
+59.44
+],
+"id": "Tallinn"
+},
+{
+"pos": [
+24.11,
+56.95
+],
+"id": "Riga"
+},
+{
+"pos": [
+18.06,
+59.33
+],
+"id": "Stockholm"
+},
+{
+"pos": [
+24.94,
+60.17
+],
+"id": "Helsinki"
+},
+{
+"pos": [
+12.57,
+55.68
+],
+"id": "Copenhagen"
+},
+{
+"pos": [
+-21.90,
+64.14
+],
+"id": "Reykjavik"
+},
+{
+"pos": [
+34.35,
+61.78
+],
+"id": "Petrozavodsk"
+},
+{
+"pos": [
+30.26,
+59.89
+],
+"id": "St Petersburg"
+}
+],
+"links": [
+{
+"dist": 1122.60,
+"ecmp_fwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"ecmp_bwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"source": "Lviv",
+"target": "Stockholm"
+},
+{
+"dist": 416.46,
+"ecmp_fwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"ecmp_bwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"source": "Oslo",
+"target": "Stockholm"
+},
+{
+"dist": 605.52,
+"ecmp_fwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"ecmp_bwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"source": "Kaunas",
+"target": "Stockholm"
+},
+{
+"dist": 811.03,
+"ecmp_fwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"ecmp_bwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"source": "Warsaw",
+"target": "Stockholm"
+},
+{
+"dist": 82.11,
+"ecmp_fwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"ecmp_bwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"source": "Tallinn",
+"target": "Helsinki"
+},
+{
+"dist": 442.74,
+"ecmp_fwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"ecmp_bwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"source": "Riga",
+"target": "Stockholm"
+},
+{
+"dist": 395.86,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Stockholm",
+"target": "Helsinki"
+},
+{
+"dist": 522.53,
+"ecmp_fwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"ecmp_bwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"source": "Stockholm",
+"target": "Copenhagen"
+},
+{
+"dist": 2132.55,
+"ecmp_fwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"ecmp_bwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"source": "Stockholm",
+"target": "Reykjavik"
+},
+{
+"dist": 538.13,
+"ecmp_fwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"ecmp_bwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"source": "Helsinki",
+"target": "Petrozavodsk"
+},
+{
+"dist": 297.55,
+"ecmp_fwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"ecmp_bwd": {
+"uni": 34.38,
+"deg": 20.00
+},
+"source": "Helsinki",
+"target": "St Petersburg"
+}
+]
+}

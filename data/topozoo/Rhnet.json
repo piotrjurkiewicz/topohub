@@ -1,0 +1,308 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "rhnet",
+"demands": {},
+"stats": {
+"nodes": 13,
+"links": 14,
+"demands": 156,
+"min_degree": 1,
+"avg_degree": 2.15,
+"std_degree": 0.53,
+"max_degree": 3,
+"gini": 0.12,
+"min_link_len": 0.00,
+"avg_link_len": 66.83,
+"max_link_len": 310.86,
+"diameter_len": 512.89,
+"diameter_hops": 7,
+"avg_sdp_num": 1.05,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.29,
+"avg_sdp_len": 201.92,
+"avg_adp_num": 1.40,
+"max_adp_num": 2,
+"avg_adp_hops": 3.93,
+"avg_adp_len": 295.01
+}
+},
+"nodes": [
+{
+"pos": [
+-18.09,
+65.68
+],
+"id": "Solborg-Akureyri"
+},
+{
+"pos": [
+-21.90,
+64.14
+],
+"id": "Fjarski"
+},
+{
+"pos": [
+-18.09,
+65.68
+],
+"id": "FSA-Akureyri"
+},
+{
+"pos": [
+-18.09,
+65.68
+],
+"id": "DST-Akureyri"
+},
+{
+"pos": [
+-18.91,
+66.15
+],
+"id": "Hvanneyri"
+},
+{
+"pos": [
+-21.90,
+64.14
+],
+"id": "Grensas"
+},
+{
+"pos": [
+-21.90,
+64.14
+],
+"id": "Skulagata"
+},
+{
+"pos": [
+-21.90,
+64.14
+],
+"id": "Taeknigarour"
+},
+{
+"pos": [
+-21.90,
+64.14
+],
+"id": "Sturlugata"
+},
+{
+"pos": [
+-21.90,
+64.14
+],
+"id": "Hringbraut"
+},
+{
+"pos": [
+-21.90,
+64.14
+],
+"id": "Bustaoavegur"
+},
+{
+"pos": [
+-20.29,
+63.42
+],
+"id": "Ofanleiti"
+},
+{
+"pos": [
+-18.91,
+66.15
+],
+"id": "Keldhaholt"
+}
+],
+"links": [
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 2.78,
+"deg": 2.34
+},
+"ecmp_bwd": {
+"uni": 2.78,
+"deg": 2.34
+},
+"source": "Solborg-Akureyri",
+"target": "FSA-Akureyri"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 30.56,
+"deg": 28.07
+},
+"ecmp_bwd": {
+"uni": 30.56,
+"deg": 28.07
+},
+"source": "Solborg-Akureyri",
+"target": "DST-Akureyri"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Fjarski",
+"target": "Taeknigarour"
+},
+{
+"dist": 248.72,
+"ecmp_fwd": {
+"uni": 83.33,
+"deg": 85.96
+},
+"ecmp_bwd": {
+"uni": 83.33,
+"deg": 85.96
+},
+"source": "Fjarski",
+"target": "DST-Akureyri"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 30.56,
+"deg": 28.07
+},
+"ecmp_bwd": {
+"uni": 30.56,
+"deg": 28.07
+},
+"source": "FSA-Akureyri",
+"target": "DST-Akureyri"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 15.79
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 15.79
+},
+"source": "Hvanneyri",
+"target": "Keldhaholt"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 68.06,
+"deg": 65.50
+},
+"ecmp_bwd": {
+"uni": 68.06,
+"deg": 65.50
+},
+"source": "Grensas",
+"target": "Skulagata"
+},
+{
+"dist": 264.17,
+"ecmp_fwd": {
+"uni": 59.72,
+"deg": 56.14
+},
+"ecmp_bwd": {
+"uni": 59.72,
+"deg": 56.14
+},
+"source": "Grensas",
+"target": "Keldhaholt"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 76.39,
+"deg": 74.85
+},
+"ecmp_bwd": {
+"uni": 76.39,
+"deg": 74.85
+},
+"source": "Skulagata",
+"target": "Taeknigarour"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 62.50,
+"deg": 60.82
+},
+"ecmp_bwd": {
+"uni": 62.50,
+"deg": 60.82
+},
+"source": "Taeknigarour",
+"target": "Sturlugata"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 51.39,
+"deg": 49.12
+},
+"ecmp_bwd": {
+"uni": 51.39,
+"deg": 49.12
+},
+"source": "Sturlugata",
+"target": "Hringbraut"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 43.06,
+"deg": 39.77
+},
+"ecmp_bwd": {
+"uni": 43.06,
+"deg": 39.77
+},
+"source": "Hringbraut",
+"target": "Bustaoavegur"
+},
+{
+"dist": 111.93,
+"ecmp_fwd": {
+"uni": 34.72,
+"deg": 30.41
+},
+"ecmp_bwd": {
+"uni": 34.72,
+"deg": 30.41
+},
+"source": "Bustaoavegur",
+"target": "Ofanleiti"
+},
+{
+"dist": 310.86,
+"ecmp_fwd": {
+"uni": 37.50,
+"deg": 32.75
+},
+"ecmp_bwd": {
+"uni": 37.50,
+"deg": 32.75
+},
+"source": "Ofanleiti",
+"target": "Keldhaholt"
+}
+]
+}

@@ -1,0 +1,188 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "getnet",
+"demands": {},
+"stats": {
+"nodes": 7,
+"links": 8,
+"demands": 42,
+"min_degree": 1,
+"avg_degree": 2.29,
+"std_degree": 1.03,
+"max_degree": 4,
+"gini": 0.25,
+"min_link_len": 57.22,
+"avg_link_len": 1671.76,
+"max_link_len": 3894.02,
+"diameter_len": 5070.86,
+"diameter_hops": 3,
+"avg_sdp_num": 1.10,
+"max_sdp_num": 2,
+"avg_sdp_hops": 1.81,
+"avg_sdp_len": 2406.16,
+"avg_adp_num": 1.52,
+"max_adp_num": 3,
+"avg_adp_hops": 2.10,
+"avg_adp_len": 3491.66
+}
+},
+"nodes": [
+{
+"pos": [
+-122.33,
+47.61
+],
+"id": "Seattle"
+},
+{
+"pos": [
+-121.96,
+37.35
+],
+"id": "Santa Clara"
+},
+{
+"pos": [
+-112.07,
+33.45
+],
+"id": "Phoenix"
+},
+{
+"pos": [
+-110.93,
+32.22
+],
+"id": "Tucson"
+},
+{
+"pos": [
+-77.04,
+38.90
+],
+"id": "Washington, DC"
+},
+{
+"pos": [
+-76.61,
+39.29
+],
+"id": "Baltimore"
+},
+{
+"pos": [
+-80.00,
+40.44
+],
+"id": "Pittsburgh"
+}
+],
+"links": [
+{
+"dist": 1140.72,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 53.57
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 53.57
+},
+"source": "Seattle",
+"target": "Santa Clara"
+},
+{
+"dist": 994.90,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Santa Clara",
+"target": "Phoenix"
+},
+{
+"dist": 3894.02,
+"ecmp_fwd": {
+"uni": 58.33,
+"deg": 82.14
+},
+"ecmp_bwd": {
+"uni": 58.33,
+"deg": 82.14
+},
+"source": "Santa Clara",
+"target": "Washington, DC"
+},
+{
+"dist": 3614.24,
+"ecmp_fwd": {
+"uni": 91.67,
+"deg": 92.86
+},
+"ecmp_bwd": {
+"uni": 91.67,
+"deg": 92.86
+},
+"source": "Santa Clara",
+"target": "Pittsburgh"
+},
+{
+"dist": 173.54,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 53.57
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 53.57
+},
+"source": "Phoenix",
+"target": "Tucson"
+},
+{
+"dist": 3183.54,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 71.43
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 71.43
+},
+"source": "Phoenix",
+"target": "Washington, DC"
+},
+{
+"dist": 57.22,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 78.57
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 78.57
+},
+"source": "Washington, DC",
+"target": "Baltimore"
+},
+{
+"dist": 315.91,
+"ecmp_fwd": {
+"uni": 41.67,
+"deg": 42.86
+},
+"ecmp_bwd": {
+"uni": 41.67,
+"deg": 42.86
+},
+"source": "Baltimore",
+"target": "Pittsburgh"
+}
+]
+}

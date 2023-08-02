@@ -1,0 +1,282 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "grena",
+"demands": {},
+"stats": {
+"nodes": 13,
+"links": 12,
+"demands": 156,
+"min_degree": 1,
+"avg_degree": 1.85,
+"std_degree": 0.77,
+"max_degree": 3,
+"gini": 0.22,
+"min_link_len": 0.00,
+"avg_link_len": 37.97,
+"max_link_len": 79.52,
+"diameter_len": 391.28,
+"diameter_hops": 8,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 3.69,
+"avg_sdp_len": 161.92,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 3.69,
+"avg_adp_len": 161.92
+}
+},
+"nodes": [
+{
+"pos": [
+42.34,
+42.15
+],
+"id": "Cisco 3640 Samtredia"
+},
+{
+"pos": [
+41.64,
+41.64
+],
+"id": "Cisco 2621 Batumi"
+},
+{
+"pos": [
+42.70,
+42.25
+],
+"id": "Cisco 2511 Kutaisi"
+},
+{
+"pos": [
+42.70,
+42.25
+],
+"id": "Cisco 3640 Kutaisi C04"
+},
+{
+"pos": [
+41.67,
+42.15
+],
+"id": "Cisco 3640 Poti"
+},
+{
+"pos": [
+41.87,
+42.51
+],
+"id": "Cisco 3640 Zugididi"
+},
+{
+"pos": [
+43.60,
+41.99
+],
+"id": "Cisco 3640 Khashuri"
+},
+{
+"pos": [
+44.83,
+41.69
+],
+"id": "Tbilisi GRENA Network"
+},
+{
+"pos": [
+44.99,
+41.55
+],
+"id": "Rustavi CO14"
+},
+{
+"pos": [
+45.47,
+41.92
+],
+"id": "Cisco 3640 Telavi"
+},
+{
+"pos": [
+44.99,
+41.55
+],
+"id": "Rustavi CO15"
+},
+{
+"pos": [
+44.12,
+41.98
+],
+"id": "Cisco 3640 Gori"
+},
+{
+"pos": [
+42.70,
+42.25
+],
+"id": "Cisco 3640 Kutaisi C07"
+}
+],
+"links": [
+{
+"dist": 54.70,
+"ecmp_fwd": {
+"uni": 71.43,
+"deg": 66.43
+},
+"ecmp_bwd": {
+"uni": 71.43,
+"deg": 66.43
+},
+"source": "Cisco 3640 Samtredia",
+"target": "Cisco 3640 Poti"
+},
+{
+"dist": 31.88,
+"ecmp_fwd": {
+"uni": 85.71,
+"deg": 83.22
+},
+"ecmp_bwd": {
+"uni": 85.71,
+"deg": 83.22
+},
+"source": "Cisco 3640 Samtredia",
+"target": "Cisco 3640 Kutaisi C07"
+},
+{
+"dist": 56.20,
+"ecmp_fwd": {
+"uni": 28.57,
+"deg": 16.08
+},
+"ecmp_bwd": {
+"uni": 28.57,
+"deg": 16.08
+},
+"source": "Cisco 2621 Batumi",
+"target": "Cisco 3640 Poti"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 28.57,
+"deg": 16.08
+},
+"ecmp_bwd": {
+"uni": 28.57,
+"deg": 16.08
+},
+"source": "Cisco 2511 Kutaisi",
+"target": "Cisco 3640 Kutaisi C04"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 52.38,
+"deg": 44.06
+},
+"ecmp_bwd": {
+"uni": 52.38,
+"deg": 44.06
+},
+"source": "Cisco 3640 Kutaisi C04",
+"target": "Cisco 3640 Kutaisi C07"
+},
+{
+"dist": 43.53,
+"ecmp_fwd": {
+"uni": 28.57,
+"deg": 16.08
+},
+"ecmp_bwd": {
+"uni": 28.57,
+"deg": 16.08
+},
+"source": "Cisco 3640 Poti",
+"target": "Cisco 3640 Zugididi"
+},
+{
+"dist": 42.66,
+"ecmp_fwd": {
+"uni": 95.24,
+"deg": 94.41
+},
+"ecmp_bwd": {
+"uni": 95.24,
+"deg": 94.41
+},
+"source": "Cisco 3640 Khashuri",
+"target": "Cisco 3640 Gori"
+},
+{
+"dist": 79.52,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Cisco 3640 Khashuri",
+"target": "Cisco 3640 Kutaisi C07"
+},
+{
+"dist": 58.66,
+"ecmp_fwd": {
+"uni": 28.57,
+"deg": 16.08
+},
+"ecmp_bwd": {
+"uni": 28.57,
+"deg": 16.08
+},
+"source": "Tbilisi GRENA Network",
+"target": "Cisco 3640 Telavi"
+},
+{
+"dist": 20.85,
+"ecmp_fwd": {
+"uni": 52.38,
+"deg": 44.06
+},
+"ecmp_bwd": {
+"uni": 52.38,
+"deg": 44.06
+},
+"source": "Tbilisi GRENA Network",
+"target": "Rustavi CO15"
+},
+{
+"dist": 67.68,
+"ecmp_fwd": {
+"uni": 85.71,
+"deg": 83.22
+},
+"ecmp_bwd": {
+"uni": 85.71,
+"deg": 83.22
+},
+"source": "Tbilisi GRENA Network",
+"target": "Cisco 3640 Gori"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 28.57,
+"deg": 16.08
+},
+"ecmp_bwd": {
+"uni": 28.57,
+"deg": 16.08
+},
+"source": "Rustavi CO14",
+"target": "Rustavi CO15"
+}
+]
+}

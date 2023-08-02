@@ -1,0 +1,560 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "arpanet19723",
+"demands": {},
+"stats": {
+"nodes": 23,
+"links": 28,
+"demands": 506,
+"min_degree": 1,
+"avg_degree": 2.43,
+"std_degree": 0.82,
+"max_degree": 5,
+"gini": 0.16,
+"min_link_len": 0.00,
+"avg_link_len": 525.14,
+"max_link_len": 2391.73,
+"diameter_len": 6173.99,
+"diameter_hops": 10,
+"avg_sdp_num": 1.11,
+"max_sdp_num": 2,
+"avg_sdp_hops": 4.46,
+"avg_sdp_len": 1858.21,
+"avg_adp_num": 1.92,
+"max_adp_num": 3,
+"avg_adp_hops": 6.38,
+"avg_adp_len": 3951.12
+}
+},
+"nodes": [
+{
+"pos": [
+-89.64,
+39.80
+],
+"id": "ILLINOIS"
+},
+{
+"pos": [
+-70.93,
+41.64
+],
+"id": "MITRE"
+},
+{
+"pos": [
+-79.94,
+40.44
+],
+"id": "CARNEGIE"
+},
+{
+"pos": [
+-81.60,
+41.50
+],
+"id": "CASE"
+},
+{
+"pos": [
+-77.04,
+38.90
+],
+"id": "ETAC"
+},
+{
+"pos": [
+-89.85,
+38.54
+],
+"id": "AFGWC"
+},
+{
+"pos": [
+-71.11,
+42.38
+],
+"id": "BBN"
+},
+{
+"pos": [
+-77.20,
+39.14
+],
+"id": "NBS"
+},
+{
+"pos": [
+-97.39,
+35.41
+],
+"id": "Tinker"
+},
+{
+"pos": [
+-122.08,
+37.39
+],
+"id": "AMES"
+},
+{
+"pos": [
+-75.46,
+43.21
+],
+"id": "RADC"
+},
+{
+"pos": [
+-121.37,
+38.69
+],
+"id": "McClellan"
+},
+{
+"pos": [
+-118.49,
+34.02
+],
+"id": "RAND"
+},
+{
+"pos": [
+-118.49,
+34.02
+],
+"id": "SDC"
+},
+{
+"pos": [
+-71.12,
+42.38
+],
+"id": "HARVARD"
+},
+{
+"pos": [
+-122.18,
+37.45
+],
+"id": "SRI"
+},
+{
+"pos": [
+-119.70,
+34.42
+],
+"id": "UCSB"
+},
+{
+"pos": [
+-118.24,
+34.05
+],
+"id": "UCLA"
+},
+{
+"pos": [
+-122.14,
+37.44
+],
+"id": "Stanford"
+},
+{
+"pos": [
+-118.24,
+34.05
+],
+"id": "USC"
+},
+{
+"pos": [
+-111.89,
+40.76
+],
+"id": "UTAH"
+},
+{
+"pos": [
+-71.22,
+42.45
+],
+"id": "Lincoln"
+},
+{
+"pos": [
+-71.09,
+42.36
+],
+"id": "MIT"
+}
+],
+"links": [
+{
+"dist": 1577.90,
+"ecmp_fwd": {
+"uni": 92.67,
+"deg": 98.15
+},
+"ecmp_bwd": {
+"uni": 92.00,
+"deg": 100.00
+},
+"source": "ILLINOIS",
+"target": "MIT"
+},
+{
+"dist": 1885.69,
+"ecmp_fwd": {
+"uni": 90.67,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 91.33,
+"deg": 98.15
+},
+"source": "ILLINOIS",
+"target": "UTAH"
+},
+{
+"dist": 767.00,
+"ecmp_fwd": {
+"uni": 27.33,
+"deg": 22.41
+},
+"ecmp_bwd": {
+"uni": 27.33,
+"deg": 22.04
+},
+"source": "MITRE",
+"target": "CARNEGIE"
+},
+{
+"dist": 600.76,
+"ecmp_fwd": {
+"uni": 36.00,
+"deg": 31.53
+},
+"ecmp_bwd": {
+"uni": 36.00,
+"deg": 31.90
+},
+"source": "MITRE",
+"target": "ETAC"
+},
+{
+"dist": 182.44,
+"ecmp_fwd": {
+"uni": 38.67,
+"deg": 33.50
+},
+"ecmp_bwd": {
+"uni": 38.67,
+"deg": 33.13
+},
+"source": "CARNEGIE",
+"target": "CASE"
+},
+{
+"dist": 539.17,
+"ecmp_fwd": {
+"uni": 70.67,
+"deg": 67.00
+},
+"ecmp_bwd": {
+"uni": 70.67,
+"deg": 66.63
+},
+"source": "CASE",
+"target": "RADC"
+},
+{
+"dist": 775.88,
+"ecmp_fwd": {
+"uni": 29.33,
+"deg": 13.55
+},
+"ecmp_bwd": {
+"uni": 29.33,
+"deg": 13.55
+},
+"source": "CASE",
+"target": "AFGWC"
+},
+{
+"dist": 31.08,
+"ecmp_fwd": {
+"uni": 50.67,
+"deg": 47.29
+},
+"ecmp_bwd": {
+"uni": 50.67,
+"deg": 47.66
+},
+"source": "ETAC",
+"target": "NBS"
+},
+{
+"dist": 2.07,
+"ecmp_fwd": {
+"uni": 62.33,
+"deg": 72.66
+},
+"ecmp_bwd": {
+"uni": 63.00,
+"deg": 71.18
+},
+"source": "BBN",
+"target": "MIT"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": "BBN",
+"target": "BBN"
+},
+{
+"dist": 2391.73,
+"ecmp_fwd": {
+"uni": 85.33,
+"deg": 93.10
+},
+"ecmp_bwd": {
+"uni": 84.67,
+"deg": 94.95
+},
+"source": "BBN",
+"target": "Tinker"
+},
+{
+"dist": 0.96,
+"ecmp_fwd": {
+"uni": 81.33,
+"deg": 80.17
+},
+"ecmp_bwd": {
+"uni": 81.33,
+"deg": 79.80
+},
+"source": "BBN",
+"target": "HARVARD"
+},
+{
+"dist": 626.05,
+"ecmp_fwd": {
+"uni": 65.33,
+"deg": 63.05
+},
+"ecmp_bwd": {
+"uni": 65.33,
+"deg": 63.42
+},
+"source": "NBS",
+"target": "HARVARD"
+},
+{
+"dist": 1908.95,
+"ecmp_fwd": {
+"uni": 84.00,
+"deg": 93.10
+},
+"ecmp_bwd": {
+"uni": 83.33,
+"deg": 94.95
+},
+"source": "Tinker",
+"target": "USC"
+},
+{
+"dist": 11.50,
+"ecmp_fwd": {
+"uni": 30.11,
+"deg": 43.84
+},
+"ecmp_bwd": {
+"uni": 29.78,
+"deg": 45.57
+},
+"source": "AMES",
+"target": "SRI"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": "AMES",
+"target": "AMES"
+},
+{
+"dist": 8.12,
+"ecmp_fwd": {
+"uni": 17.28,
+"deg": 24.38
+},
+"ecmp_bwd": {
+"uni": 17.61,
+"deg": 22.66
+},
+"source": "AMES",
+"target": "Stanford"
+},
+{
+"dist": 355.45,
+"ecmp_fwd": {
+"uni": 85.33,
+"deg": 82.76
+},
+"ecmp_bwd": {
+"uni": 85.33,
+"deg": 82.39
+},
+"source": "RADC",
+"target": "Lincoln"
+},
+{
+"dist": 154.29,
+"ecmp_fwd": {
+"uni": 68.67,
+"deg": 84.98
+},
+"ecmp_bwd": {
+"uni": 69.33,
+"deg": 83.25
+},
+"source": "McClellan",
+"target": "SRI"
+},
+{
+"dist": 842.80,
+"ecmp_fwd": {
+"uni": 83.78,
+"deg": 95.32
+},
+"ecmp_bwd": {
+"uni": 83.11,
+"deg": 97.04
+},
+"source": "McClellan",
+"target": "UTAH"
+},
+{
+"dist": 23.10,
+"ecmp_fwd": {
+"uni": 29.11,
+"deg": 27.09
+},
+"ecmp_bwd": {
+"uni": 28.78,
+"deg": 27.09
+},
+"source": "RAND",
+"target": "UCLA"
+},
+{
+"dist": 503.52,
+"ecmp_fwd": {
+"uni": 29.11,
+"deg": 32.27
+},
+"ecmp_bwd": {
+"uni": 28.78,
+"deg": 33.99
+},
+"source": "RAND",
+"target": "Stanford"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 74.38
+},
+"ecmp_bwd": {
+"uni": 67.33,
+"deg": 72.66
+},
+"source": "RAND",
+"target": "SDC"
+},
+{
+"dist": 23.10,
+"ecmp_fwd": {
+"uni": 81.11,
+"deg": 86.45
+},
+"ecmp_bwd": {
+"uni": 81.78,
+"deg": 84.73
+},
+"source": "SDC",
+"target": "USC"
+},
+{
+"dist": 404.74,
+"ecmp_fwd": {
+"uni": 29.78,
+"deg": 28.08
+},
+"ecmp_bwd": {
+"uni": 30.11,
+"deg": 28.08
+},
+"source": "SRI",
+"target": "UCSB"
+},
+{
+"dist": 139.89,
+"ecmp_fwd": {
+"uni": 17.28,
+"deg": 16.50
+},
+"ecmp_bwd": {
+"uni": 17.61,
+"deg": 16.50
+},
+"source": "UCSB",
+"target": "UCLA"
+},
+{
+"dist": 933.10,
+"ecmp_fwd": {
+"uni": 51.11,
+"deg": 58.62
+},
+"ecmp_bwd": {
+"uni": 51.11,
+"deg": 58.74
+},
+"source": "USC",
+"target": "UTAH"
+},
+{
+"dist": 14.64,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 98.52
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 98.15
+},
+"source": "Lincoln",
+"target": "MIT"
+}
+]
+}

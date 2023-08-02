@@ -1,0 +1,1001 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "sinet",
+"demands": {},
+"stats": {
+"nodes": 47,
+"links": 49,
+"demands": 2162,
+"min_degree": 1,
+"avg_degree": 2.09,
+"std_degree": 2.00,
+"max_degree": 8,
+"gini": 0.41,
+"min_link_len": 0.00,
+"avg_link_len": 163.01,
+"max_link_len": 1055.00,
+"diameter_len": 2477.05,
+"diameter_hops": 7,
+"avg_sdp_num": 1.01,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.82,
+"avg_sdp_len": 753.09,
+"avg_adp_num": 1.06,
+"max_adp_num": 3,
+"avg_adp_hops": 3.89,
+"avg_adp_len": 756.87
+}
+},
+"nodes": [
+{
+"pos": [
+130.42,
+33.61
+],
+"id": "Fukuoka DC"
+},
+{
+"pos": [
+131.61,
+33.24
+],
+"id": "Oita U"
+},
+{
+"pos": [
+131.00,
+33.00
+],
+"id": "Kyushu U"
+},
+{
+"pos": [
+132.46,
+34.40
+],
+"id": "Hiroshima U"
+},
+{
+"pos": [
+132.46,
+34.40
+],
+"id": "Hiroshima DC"
+},
+{
+"pos": [
+132.77,
+33.84
+],
+"id": "Ehime U"
+},
+{
+"pos": [
+131.47,
+34.19
+],
+"id": "Yamaguchi U"
+},
+{
+"pos": [
+132.77,
+33.84
+],
+"id": "Matsuyama DC"
+},
+{
+"pos": [
+134.04,
+34.34
+],
+"id": "Kagawa U"
+},
+{
+"pos": [
+140.12,
+35.60
+],
+"id": "Chiba U"
+},
+{
+"pos": [
+133.57,
+35.17
+],
+"id": "Shinshu U"
+},
+{
+"pos": [
+136.63,
+36.59
+],
+"id": "Kanazawa U"
+},
+{
+"pos": [
+135.78,
+34.81
+],
+"id": "Doshisha U"
+},
+{
+"pos": [
+136.91,
+35.18
+],
+"id": "Nagoya DC"
+},
+{
+"pos": [
+138.38,
+34.98
+],
+"id": "Shizuoka U"
+},
+{
+"pos": [
+136.91,
+35.18
+],
+"id": "Nagoya U"
+},
+{
+"pos": [
+136.63,
+36.59
+],
+"id": "Kanazawa DC"
+},
+{
+"pos": [
+137.21,
+36.70
+],
+"id": "Toyama U"
+},
+{
+"pos": [
+138.57,
+35.66
+],
+"id": "Yamanashi U"
+},
+{
+"pos": [
+134.56,
+34.07
+],
+"id": "U Tokushima"
+},
+{
+"pos": [
+139.58,
+35.61
+],
+"id": "Tokyo DC3"
+},
+{
+"pos": [
+139.58,
+35.61
+],
+"id": "Tokyo DC1"
+},
+{
+"pos": [
+139.58,
+35.61
+],
+"id": "Tokyo DC2"
+},
+{
+"pos": [
+139.42,
+35.63
+],
+"id": "Keio U"
+},
+{
+"pos": [
+139.02,
+37.90
+],
+"id": "Niigata U"
+},
+{
+"pos": [
+136.22,
+36.06
+],
+"id": "Fukui U"
+},
+{
+"pos": [
+140.10,
+36.20
+],
+"id": "Tsukuba DC"
+},
+{
+"pos": [
+140.10,
+36.20
+],
+"id": "U Tsukuba"
+},
+{
+"pos": [
+139.06,
+36.39
+],
+"id": "Gunma U"
+},
+{
+"pos": [
+139.58,
+35.61
+],
+"id": "U Tokyo"
+},
+{
+"pos": [
+135.75,
+35.02
+],
+"id": "Kyoto DC"
+},
+{
+"pos": [
+135.75,
+35.02
+],
+"id": "Kyoto U"
+},
+{
+"pos": [
+139.55,
+38.30
+],
+"id": "Waseda U"
+},
+{
+"pos": [
+136.51,
+34.27
+],
+"id": "Kansai U"
+},
+{
+"pos": [
+135.50,
+34.69
+],
+"id": "Osaka U"
+},
+{
+"pos": [
+135.18,
+34.69
+],
+"id": "Kobe U"
+},
+{
+"pos": [
+134.23,
+35.50
+],
+"id": "Tottori U"
+},
+{
+"pos": [
+133.94,
+34.66
+],
+"id": "Okayama U"
+},
+{
+"pos": [
+135.50,
+34.69
+],
+"id": "Osaka DC"
+},
+{
+"pos": [
+139.66,
+35.91
+],
+"id": "Saitama U"
+},
+{
+"pos": [
+129.87,
+32.74
+],
+"id": "Nagasaki U"
+},
+{
+"pos": [
+141.35,
+43.06
+],
+"id": "Sapporo DC"
+},
+{
+"pos": [
+141.35,
+43.06
+],
+"id": "Hokkaido U"
+},
+{
+"pos": [
+140.47,
+40.59
+],
+"id": "Hirosaki U"
+},
+{
+"pos": [
+140.87,
+38.27
+],
+"id": "Sendai DC"
+},
+{
+"pos": [
+131.37,
+32.77
+],
+"id": "Tohoku U"
+},
+{
+"pos": [
+130.56,
+31.56
+],
+"id": "Kagoshima U"
+}
+],
+"links": [
+{
+"dist": 108.42,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Fukuoka DC",
+"target": "Nagasaki U"
+},
+{
+"dist": 118.21,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Fukuoka DC",
+"target": "Oita U"
+},
+{
+"dist": 86.46,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Fukuoka DC",
+"target": "Kyushu U"
+},
+{
+"dist": 207.72,
+"ecmp_fwd": {
+"uni": 40.96,
+"deg": 39.05
+},
+"ecmp_bwd": {
+"uni": 40.96,
+"deg": 39.05
+},
+"source": "Fukuoka DC",
+"target": "Hiroshima DC"
+},
+{
+"dist": 227.97,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Fukuoka DC",
+"target": "Kagoshima U"
+},
+{
+"dist": 218.72,
+"ecmp_fwd": {
+"uni": 29.66,
+"deg": 28.64
+},
+"ecmp_bwd": {
+"uni": 29.66,
+"deg": 28.64
+},
+"source": "Fukuoka DC",
+"target": "Matsuyama DC"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Hiroshima U",
+"target": "Hiroshima DC"
+},
+{
+"dist": 93.76,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Hiroshima DC",
+"target": "Yamaguchi U"
+},
+{
+"dist": 309.12,
+"ecmp_fwd": {
+"uni": 74.86,
+"deg": 72.89
+},
+"ecmp_bwd": {
+"uni": 74.86,
+"deg": 72.89
+},
+"source": "Hiroshima DC",
+"target": "Kyoto DC"
+},
+{
+"dist": 203.04,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Hiroshima DC",
+"target": "Tottori U"
+},
+{
+"dist": 138.40,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Hiroshima DC",
+"target": "Okayama U"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Ehime U",
+"target": "Matsuyama DC"
+},
+{
+"dist": 167.40,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Matsuyama DC",
+"target": "U Tokushima"
+},
+{
+"dist": 130.21,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Matsuyama DC",
+"target": "Kagawa U"
+},
+{
+"dist": 268.88,
+"ecmp_fwd": {
+"uni": 55.65,
+"deg": 54.67
+},
+"ecmp_bwd": {
+"uni": 55.65,
+"deg": 54.67
+},
+"source": "Matsuyama DC",
+"target": "Osaka DC"
+},
+{
+"dist": 49.03,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Chiba U",
+"target": "Tokyo DC2"
+},
+{
+"dist": 547.56,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Shinshu U",
+"target": "Tokyo DC2"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Kanazawa U",
+"target": "Kanazawa DC"
+},
+{
+"dist": 24.07,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Doshisha U",
+"target": "Kyoto DC"
+},
+{
+"dist": 247.26,
+"ecmp_fwd": {
+"uni": 56.64,
+"deg": 56.92
+},
+"ecmp_bwd": {
+"uni": 55.93,
+"deg": 56.20
+},
+"source": "Nagoya DC",
+"target": "Tokyo DC1"
+},
+{
+"dist": 136.32,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Nagoya DC",
+"target": "Shizuoka U"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Nagoya DC",
+"target": "Nagoya U"
+},
+{
+"dist": 139.05,
+"ecmp_fwd": {
+"uni": 59.75,
+"deg": 60.10
+},
+"ecmp_bwd": {
+"uni": 60.45,
+"deg": 60.82
+},
+"source": "Nagoya DC",
+"target": "Osaka DC"
+},
+{
+"dist": 824.56,
+"ecmp_fwd": {
+"uni": 45.20,
+"deg": 43.74
+},
+"ecmp_bwd": {
+"uni": 45.90,
+"deg": 44.45
+},
+"source": "Kanazawa DC",
+"target": "Sapporo DC"
+},
+{
+"dist": 287.08,
+"ecmp_fwd": {
+"uni": 66.81,
+"deg": 66.42
+},
+"ecmp_bwd": {
+"uni": 66.81,
+"deg": 66.42
+},
+"source": "Kanazawa DC",
+"target": "Tokyo DC2"
+},
+{
+"dist": 257.35,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Kanazawa DC",
+"target": "Niigata U"
+},
+{
+"dist": 69.13,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Kanazawa DC",
+"target": "Fukui U"
+},
+{
+"dist": 191.85,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 99.29,
+"deg": 99.28
+},
+"source": "Kanazawa DC",
+"target": "Kyoto DC"
+},
+{
+"dist": 53.47,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Kanazawa DC",
+"target": "Toyama U"
+},
+{
+"dist": 91.73,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Yamanashi U",
+"target": "Tokyo DC2"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Tokyo DC3",
+"target": "Tokyo DC2"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 45.06,
+"deg": 45.46
+},
+"ecmp_bwd": {
+"uni": 45.06,
+"deg": 45.46
+},
+"source": "Tokyo DC1",
+"target": "Tokyo DC2"
+},
+{
+"dist": 14.25,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Tokyo DC1",
+"target": "Keio U"
+},
+{
+"dist": 80.12,
+"ecmp_fwd": {
+"uni": 33.90,
+"deg": 32.80
+},
+"ecmp_bwd": {
+"uni": 33.19,
+"deg": 32.09
+},
+"source": "Tokyo DC1",
+"target": "Tsukuba DC"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Tokyo DC1",
+"target": "U Tokyo"
+},
+{
+"dist": 298.67,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Tokyo DC1",
+"target": "Waseda U"
+},
+{
+"dist": 98.22,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Tokyo DC2",
+"target": "Gunma U"
+},
+{
+"dist": 33.31,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Tokyo DC2",
+"target": "Saitama U"
+},
+{
+"dist": 240.05,
+"ecmp_fwd": {
+"uni": 20.34,
+"deg": 19.72
+},
+"ecmp_bwd": {
+"uni": 19.63,
+"deg": 19.00
+},
+"source": "Tsukuba DC",
+"target": "Sendai DC"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Tsukuba DC",
+"target": "U Tsukuba"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Kyoto DC",
+"target": "Kyoto U"
+},
+{
+"dist": 43.05,
+"ecmp_fwd": {
+"uni": 55.65,
+"deg": 57.63
+},
+"ecmp_bwd": {
+"uni": 54.94,
+"deg": 56.92
+},
+"source": "Kyoto DC",
+"target": "Osaka DC"
+},
+{
+"dist": 103.27,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Kansai U",
+"target": "Osaka DC"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Osaka U",
+"target": "Osaka DC"
+},
+{
+"dist": 29.19,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Kobe U",
+"target": "Osaka DC"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Sapporo DC",
+"target": "Hokkaido U"
+},
+{
+"dist": 534.86,
+"ecmp_fwd": {
+"uni": 28.95,
+"deg": 27.99
+},
+"ecmp_bwd": {
+"uni": 29.66,
+"deg": 28.70
+},
+"source": "Sapporo DC",
+"target": "Sendai DC"
+},
+{
+"dist": 260.78,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Hirosaki U",
+"target": "Sendai DC"
+},
+{
+"dist": 1055.00,
+"ecmp_fwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 12.99,
+"deg": 6.31
+},
+"source": "Sendai DC",
+"target": "Tohoku U"
+}
+]
+}

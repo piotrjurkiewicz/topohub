@@ -1,0 +1,214 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "netrail",
+"demands": {},
+"stats": {
+"nodes": 7,
+"links": 10,
+"demands": 42,
+"min_degree": 2,
+"avg_degree": 2.86,
+"std_degree": 1.12,
+"max_degree": 5,
+"gini": 0.20,
+"min_link_len": 57.22,
+"avg_link_len": 1340.95,
+"max_link_len": 3907.12,
+"diameter_len": 4391.26,
+"diameter_hops": 2,
+"avg_sdp_num": 1.14,
+"max_sdp_num": 2,
+"avg_sdp_hops": 1.52,
+"avg_sdp_len": 1150.77,
+"avg_adp_num": 2.19,
+"max_adp_num": 4,
+"avg_adp_hops": 2.13,
+"avg_adp_len": 2637.35
+}
+},
+"nodes": [
+{
+"pos": [
+-122.14,
+37.44
+],
+"id": "Palo Alto"
+},
+{
+"pos": [
+-87.65,
+41.85
+],
+"id": "Chicago"
+},
+{
+"pos": [
+-74.01,
+40.71
+],
+"id": "New York"
+},
+{
+"pos": [
+-76.61,
+39.29
+],
+"id": "Baltimore"
+},
+{
+"pos": [
+-77.04,
+38.90
+],
+"id": "Washington, DC"
+},
+{
+"pos": [
+-80.19,
+25.77
+],
+"id": "Miami"
+},
+{
+"pos": [
+-84.39,
+33.75
+],
+"id": "Atlanta"
+}
+],
+"links": [
+{
+"dist": 3907.12,
+"ecmp_fwd": {
+"uni": 87.50,
+"deg": 56.41
+},
+"ecmp_bwd": {
+"uni": 87.50,
+"deg": 56.41
+},
+"source": "Palo Alto",
+"target": "Washington, DC"
+},
+{
+"dist": 3416.45,
+"ecmp_fwd": {
+"uni": 62.50,
+"deg": 35.90
+},
+"ecmp_bwd": {
+"uni": 62.50,
+"deg": 35.90
+},
+"source": "Palo Alto",
+"target": "Atlanta"
+},
+{
+"dist": 1146.16,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 53.85
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 53.85
+},
+"source": "Chicago",
+"target": "New York"
+},
+{
+"dist": 945.35,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 69.23
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 69.23
+},
+"source": "Chicago",
+"target": "Atlanta"
+},
+{
+"dist": 272.72,
+"ecmp_fwd": {
+"uni": 50.00,
+"deg": 25.64
+},
+"ecmp_bwd": {
+"uni": 50.00,
+"deg": 25.64
+},
+"source": "New York",
+"target": "Baltimore"
+},
+{
+"dist": 328.58,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 97.44
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 97.44
+},
+"source": "New York",
+"target": "Washington, DC"
+},
+{
+"dist": 57.22,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 66.67
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 66.67
+},
+"source": "Baltimore",
+"target": "Washington, DC"
+},
+{
+"dist": 1488.95,
+"ecmp_fwd": {
+"uni": 87.50,
+"deg": 56.41
+},
+"ecmp_bwd": {
+"uni": 87.50,
+"deg": 56.41
+},
+"source": "Washington, DC",
+"target": "Miami"
+},
+{
+"dist": 872.17,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 100.00
+},
+"source": "Washington, DC",
+"target": "Atlanta"
+},
+{
+"dist": 974.80,
+"ecmp_fwd": {
+"uni": 62.50,
+"deg": 35.90
+},
+"ecmp_bwd": {
+"uni": 62.50,
+"deg": 35.90
+},
+"source": "Miami",
+"target": "Atlanta"
+}
+]
+}

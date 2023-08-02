@@ -1,0 +1,442 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "amres",
+"demands": {},
+"stats": {
+"nodes": 21,
+"links": 20,
+"demands": 420,
+"min_degree": 1,
+"avg_degree": 1.90,
+"std_degree": 1.15,
+"max_degree": 5,
+"gini": 0.30,
+"min_link_len": 15.69,
+"avg_link_len": 53.98,
+"max_link_len": 95.28,
+"diameter_len": 503.71,
+"diameter_hops": 10,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 4.45,
+"avg_sdp_len": 236.90,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 4.45,
+"avg_adp_len": 236.90
+}
+},
+"nodes": [
+{
+"pos": [
+22.10,
+44.08
+],
+"id": "Bor"
+},
+{
+"pos": [
+20.51,
+43.14
+],
+"id": "Novi Pazar"
+},
+{
+"pos": [
+21.33,
+43.58
+],
+"id": "Krustevac"
+},
+{
+"pos": [
+21.90,
+42.55
+],
+"id": "Vranje"
+},
+{
+"pos": [
+21.90,
+43.32
+],
+"id": "Nis"
+},
+{
+"pos": [
+22.59,
+43.15
+],
+"id": "Pirot"
+},
+{
+"pos": [
+21.95,
+43.00
+],
+"id": "Leskovac"
+},
+{
+"pos": [
+20.92,
+44.02
+],
+"id": "Kragujevac"
+},
+{
+"pos": [
+19.84,
+45.25
+],
+"id": "Novi Sad"
+},
+{
+"pos": [
+20.47,
+44.80
+],
+"id": "Beograd"
+},
+{
+"pos": [
+20.64,
+44.87
+],
+"id": "Pancevo"
+},
+{
+"pos": [
+20.69,
+43.73
+],
+"id": "Kraljevo"
+},
+{
+"pos": [
+20.62,
+43.29
+],
+"id": "Raska"
+},
+{
+"pos": [
+19.67,
+46.10
+],
+"id": "Subotica"
+},
+{
+"pos": [
+19.11,
+45.77
+],
+"id": "Sombor"
+},
+{
+"pos": [
+20.38,
+45.38
+],
+"id": "Zrenjanin"
+},
+{
+"pos": [
+19.69,
+44.75
+],
+"id": "Sabac"
+},
+{
+"pos": [
+19.90,
+44.28
+],
+"id": "Valjevo"
+},
+{
+"pos": [
+19.85,
+43.86
+],
+"id": "Uzice"
+},
+{
+"pos": [
+20.35,
+43.89
+],
+"id": "Cacak"
+},
+{
+"pos": [
+21.05,
+44.34
+],
+"id": "Velika Plana"
+}
+],
+"links": [
+{
+"dist": 85.23,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"source": "Bor",
+"target": "Nis"
+},
+{
+"dist": 18.71,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"source": "Novi Pazar",
+"target": "Raska"
+},
+{
+"dist": 54.04,
+"ecmp_fwd": {
+"uni": 72.73,
+"deg": 69.92
+},
+"ecmp_bwd": {
+"uni": 72.73,
+"deg": 69.92
+},
+"source": "Krustevac",
+"target": "Nis"
+},
+{
+"dist": 54.34,
+"ecmp_fwd": {
+"uni": 81.82,
+"deg": 79.95
+},
+"ecmp_bwd": {
+"uni": 81.82,
+"deg": 79.95
+},
+"source": "Krustevac",
+"target": "Kraljevo"
+},
+{
+"dist": 49.82,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"source": "Vranje",
+"target": "Leskovac"
+},
+{
+"dist": 58.53,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"source": "Nis",
+"target": "Pirot"
+},
+{
+"dist": 36.50,
+"ecmp_fwd": {
+"uni": 34.55,
+"deg": 27.82
+},
+"ecmp_bwd": {
+"uni": 34.55,
+"deg": 27.82
+},
+"source": "Nis",
+"target": "Leskovac"
+},
+{
+"dist": 37.17,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Kragujevac",
+"target": "Velika Plana"
+},
+{
+"dist": 37.13,
+"ecmp_fwd": {
+"uni": 98.18,
+"deg": 97.99
+},
+"ecmp_bwd": {
+"uni": 98.18,
+"deg": 97.99
+},
+"source": "Kragujevac",
+"target": "Kraljevo"
+},
+{
+"dist": 95.28,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"source": "Novi Sad",
+"target": "Subotica"
+},
+{
+"dist": 81.04,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"source": "Novi Sad",
+"target": "Sombor"
+},
+{
+"dist": 45.08,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"source": "Novi Sad",
+"target": "Zrenjanin"
+},
+{
+"dist": 70.13,
+"ecmp_fwd": {
+"uni": 61.82,
+"deg": 57.89
+},
+"ecmp_bwd": {
+"uni": 61.82,
+"deg": 57.89
+},
+"source": "Novi Sad",
+"target": "Beograd"
+},
+{
+"dist": 15.69,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"source": "Beograd",
+"target": "Pancevo"
+},
+{
+"dist": 61.53,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"source": "Beograd",
+"target": "Sabac"
+},
+{
+"dist": 74.03,
+"ecmp_fwd": {
+"uni": 49.09,
+"deg": 43.86
+},
+"ecmp_bwd": {
+"uni": 49.09,
+"deg": 43.86
+},
+"source": "Beograd",
+"target": "Valjevo"
+},
+{
+"dist": 69.31,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Beograd",
+"target": "Velika Plana"
+},
+{
+"dist": 49.15,
+"ecmp_fwd": {
+"uni": 34.55,
+"deg": 27.82
+},
+"ecmp_bwd": {
+"uni": 34.55,
+"deg": 27.82
+},
+"source": "Kraljevo",
+"target": "Raska"
+},
+{
+"dist": 46.50,
+"ecmp_fwd": {
+"uni": 34.55,
+"deg": 27.82
+},
+"ecmp_bwd": {
+"uni": 34.55,
+"deg": 27.82
+},
+"source": "Valjevo",
+"target": "Uzice"
+},
+{
+"dist": 40.33,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 9.77
+},
+"source": "Uzice",
+"target": "Cacak"
+}
+]
+}

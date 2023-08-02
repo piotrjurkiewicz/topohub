@@ -1,0 +1,1217 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "iris",
+"demands": {},
+"stats": {
+"nodes": 50,
+"links": 64,
+"demands": 2450,
+"min_degree": 1,
+"avg_degree": 2.56,
+"std_degree": 1.06,
+"max_degree": 6,
+"gini": 0.21,
+"min_link_len": 12.50,
+"avg_link_len": 53.42,
+"max_link_len": 161.78,
+"diameter_len": 664.97,
+"diameter_hops": 10,
+"avg_sdp_num": 1.05,
+"max_sdp_num": 2,
+"avg_sdp_hops": 4.55,
+"avg_sdp_len": 215.51,
+"avg_adp_num": 1.73,
+"max_adp_num": 5,
+"avg_adp_hops": 5.63,
+"avg_adp_len": 346.14
+}
+},
+"nodes": [
+{
+"pos": [
+-85.66,
+36.36
+],
+"id": "Gainesboro"
+},
+{
+"pos": [
+-84.60,
+36.10
+],
+"id": "Wartburg"
+},
+{
+"pos": [
+-86.19,
+36.75
+],
+"id": "Scottsville"
+},
+{
+"pos": [
+-86.03,
+36.52
+],
+"id": "Lafayette"
+},
+{
+"pos": [
+-82.83,
+36.16
+],
+"id": "Greenville"
+},
+{
+"pos": [
+-82.35,
+36.31
+],
+"id": "Johnson City"
+},
+{
+"pos": [
+-83.92,
+35.96
+],
+"id": "Knoxville"
+},
+{
+"pos": [
+-83.29,
+36.21
+],
+"id": "Morristown"
+},
+{
+"pos": [
+-82.58,
+36.64
+],
+"id": "Scott County"
+},
+{
+"pos": [
+-85.03,
+35.95
+],
+"id": "Crossville"
+},
+{
+"pos": [
+-90.05,
+35.15
+],
+"id": "Memphis"
+},
+{
+"pos": [
+-85.85,
+34.49
+],
+"id": "Rainsville"
+},
+{
+"pos": [
+-86.03,
+34.67
+],
+"id": "Scottsboro"
+},
+{
+"pos": [
+-86.69,
+35.63
+],
+"id": "Chapel Hill"
+},
+{
+"pos": [
+-85.31,
+35.05
+],
+"id": "Chattanooga"
+},
+{
+"pos": [
+-85.39,
+35.37
+],
+"id": "Dunlap"
+},
+{
+"pos": [
+-85.47,
+35.75
+],
+"id": "Spencer"
+},
+{
+"pos": [
+-85.77,
+35.68
+],
+"id": "McMinnville"
+},
+{
+"pos": [
+-85.11,
+34.92
+],
+"id": "Ringgold"
+},
+{
+"pos": [
+-85.29,
+34.87
+],
+"id": "Chickamauga"
+},
+{
+"pos": [
+-88.94,
+35.98
+],
+"id": "Trenton"
+},
+{
+"pos": [
+-89.26,
+35.59
+],
+"id": "Brownsville"
+},
+{
+"pos": [
+-89.90,
+35.34
+],
+"id": "Millington"
+},
+{
+"pos": [
+-86.59,
+34.73
+],
+"id": "Huntsville"
+},
+{
+"pos": [
+-86.39,
+34.54
+],
+"id": "New Hope"
+},
+{
+"pos": [
+-87.03,
+35.20
+],
+"id": "Pulaski"
+},
+{
+"pos": [
+-86.85,
+34.99
+],
+"id": "Ardmore"
+},
+{
+"pos": [
+-87.76,
+35.32
+],
+"id": "Waynesboro"
+},
+{
+"pos": [
+-87.44,
+35.08
+],
+"id": "Loretto"
+},
+{
+"pos": [
+-88.81,
+35.61
+],
+"id": "Jackson"
+},
+{
+"pos": [
+-88.64,
+35.44
+],
+"id": "Henderson"
+},
+{
+"pos": [
+-87.04,
+35.62
+],
+"id": "Columbia"
+},
+{
+"pos": [
+-88.34,
+35.85
+],
+"id": "Yuma"
+},
+{
+"pos": [
+-86.78,
+36.17
+],
+"id": "Nashville"
+},
+{
+"pos": [
+-86.52,
+35.98
+],
+"id": "Smyrna"
+},
+{
+"pos": [
+-86.52,
+36.20
+],
+"id": "Mt Juliet"
+},
+{
+"pos": [
+-85.81,
+35.96
+],
+"id": "Smithville"
+},
+{
+"pos": [
+-88.24,
+36.04
+],
+"id": "Bruceton"
+},
+{
+"pos": [
+-88.10,
+36.06
+],
+"id": "Camden"
+},
+{
+"pos": [
+-87.97,
+36.02
+],
+"id": "New Johnsonville"
+},
+{
+"pos": [
+-86.44,
+36.99
+],
+"id": "Bowling Green"
+},
+{
+"pos": [
+-85.91,
+37.00
+],
+"id": "Glasgow"
+},
+{
+"pos": [
+-88.60,
+37.08
+],
+"id": "Paducah"
+},
+{
+"pos": [
+-88.64,
+36.74
+],
+"id": "Mayfield"
+},
+{
+"pos": [
+-89.06,
+36.42
+],
+"id": "Union City"
+},
+{
+"pos": [
+-88.85,
+36.34
+],
+"id": "Martin"
+},
+{
+"pos": [
+-88.52,
+36.13
+],
+"id": "McKenzie"
+},
+{
+"pos": [
+-88.33,
+36.30
+],
+"id": "Paris"
+},
+{
+"pos": [
+-88.31,
+36.61
+],
+"id": "Murray"
+},
+{
+"pos": [
+-86.58,
+36.72
+],
+"id": "Franklin"
+}
+],
+"links": [
+{
+"dist": 99.26,
+"ecmp_fwd": {
+"uni": 39.49,
+"deg": 36.46
+},
+"ecmp_bwd": {
+"uni": 39.69,
+"deg": 36.74
+},
+"source": "Gainesboro",
+"target": "Wartburg"
+},
+{
+"dist": 37.69,
+"ecmp_fwd": {
+"uni": 56.44,
+"deg": 48.75
+},
+"ecmp_bwd": {
+"uni": 56.44,
+"deg": 48.75
+},
+"source": "Gainesboro",
+"target": "Lafayette"
+},
+{
+"dist": 46.09,
+"ecmp_fwd": {
+"uni": 12.60,
+"deg": 11.26
+},
+"ecmp_bwd": {
+"uni": 12.79,
+"deg": 11.44
+},
+"source": "Gainesboro",
+"target": "Smithville"
+},
+{
+"dist": 103.13,
+"ecmp_fwd": {
+"uni": 82.34,
+"deg": 80.76
+},
+"ecmp_bwd": {
+"uni": 81.75,
+"deg": 80.12
+},
+"source": "Gainesboro",
+"target": "Nashville"
+},
+{
+"dist": 72.57,
+"ecmp_fwd": {
+"uni": 15.77,
+"deg": 12.09
+},
+"ecmp_bwd": {
+"uni": 15.93,
+"deg": 12.23
+},
+"source": "Gainesboro",
+"target": "Crossville"
+},
+{
+"dist": 79.01,
+"ecmp_fwd": {
+"uni": 13.76,
+"deg": 10.49
+},
+"ecmp_bwd": {
+"uni": 13.80,
+"deg": 10.53
+},
+"source": "Gainesboro",
+"target": "Mt Juliet"
+},
+{
+"dist": 62.92,
+"ecmp_fwd": {
+"uni": 35.72,
+"deg": 33.56
+},
+"ecmp_bwd": {
+"uni": 35.93,
+"deg": 33.84
+},
+"source": "Wartburg",
+"target": "Knoxville"
+},
+{
+"dist": 34.66,
+"ecmp_fwd": {
+"uni": 12.04,
+"deg": 9.39
+},
+"ecmp_bwd": {
+"uni": 12.04,
+"deg": 9.39
+},
+"source": "Scottsville",
+"target": "Bowling Green"
+},
+{
+"dist": 36.63,
+"ecmp_fwd": {
+"uni": 12.29,
+"deg": 4.81
+},
+"ecmp_bwd": {
+"uni": 12.29,
+"deg": 4.81
+},
+"source": "Scottsville",
+"target": "Glasgow"
+},
+{
+"dist": 29.70,
+"ecmp_fwd": {
+"uni": 46.15,
+"deg": 40.57
+},
+"ecmp_bwd": {
+"uni": 46.15,
+"deg": 40.57
+},
+"source": "Scottsville",
+"target": "Lafayette"
+},
+{
+"dist": 34.64,
+"ecmp_fwd": {
+"uni": 12.04,
+"deg": 9.39
+},
+"ecmp_bwd": {
+"uni": 12.04,
+"deg": 9.39
+},
+"source": "Scottsville",
+"target": "Franklin"
+},
+{
+"dist": 45.98,
+"ecmp_fwd": {
+"uni": 6.52,
+"deg": 5.00
+},
+"ecmp_bwd": {
+"uni": 6.52,
+"deg": 5.00
+},
+"source": "Greenville",
+"target": "Johnson City"
+},
+{
+"dist": 42.03,
+"ecmp_fwd": {
+"uni": 6.27,
+"deg": 4.85
+},
+"ecmp_bwd": {
+"uni": 6.27,
+"deg": 4.85
+},
+"source": "Greenville",
+"target": "Morristown"
+},
+{
+"dist": 41.43,
+"ecmp_fwd": {
+"uni": 12.29,
+"deg": 4.81
+},
+"ecmp_bwd": {
+"uni": 12.29,
+"deg": 4.81
+},
+"source": "Johnson City",
+"target": "Scott County"
+},
+{
+"dist": 146.15,
+"ecmp_fwd": {
+"uni": 29.10,
+"deg": 22.88
+},
+"ecmp_bwd": {
+"uni": 29.10,
+"deg": 22.88
+},
+"source": "Johnson City",
+"target": "Knoxville"
+},
+{
+"dist": 161.78,
+"ecmp_fwd": {
+"uni": 35.93,
+"deg": 34.32
+},
+"ecmp_bwd": {
+"uni": 36.14,
+"deg": 34.60
+},
+"source": "Knoxville",
+"target": "Chattanooga"
+},
+{
+"dist": 62.92,
+"ecmp_fwd": {
+"uni": 17.56,
+"deg": 13.79
+},
+"ecmp_bwd": {
+"uni": 17.56,
+"deg": 13.79
+},
+"source": "Knoxville",
+"target": "Morristown"
+},
+{
+"dist": 73.24,
+"ecmp_fwd": {
+"uni": 6.43,
+"deg": 5.01
+},
+"ecmp_bwd": {
+"uni": 6.58,
+"deg": 5.15
+},
+"source": "Crossville",
+"target": "McMinnville"
+},
+{
+"dist": 123.36,
+"ecmp_fwd": {
+"uni": 35.37,
+"deg": 23.30
+},
+"ecmp_bwd": {
+"uni": 35.37,
+"deg": 23.30
+},
+"source": "Memphis",
+"target": "Jackson"
+},
+{
+"dist": 25.41,
+"ecmp_fwd": {
+"uni": 24.08,
+"deg": 14.20
+},
+"ecmp_bwd": {
+"uni": 24.08,
+"deg": 14.20
+},
+"source": "Memphis",
+"target": "Millington"
+},
+{
+"dist": 26.15,
+"ecmp_fwd": {
+"uni": 11.02,
+"deg": 9.07
+},
+"ecmp_bwd": {
+"uni": 10.93,
+"deg": 9.04
+},
+"source": "Rainsville",
+"target": "Scottsboro"
+},
+{
+"dist": 52.20,
+"ecmp_fwd": {
+"uni": 16.83,
+"deg": 13.36
+},
+"ecmp_bwd": {
+"uni": 16.91,
+"deg": 13.39
+},
+"source": "Rainsville",
+"target": "Trenton"
+},
+{
+"dist": 36.25,
+"ecmp_fwd": {
+"uni": 13.52,
+"deg": 11.50
+},
+"ecmp_bwd": {
+"uni": 13.44,
+"deg": 11.46
+},
+"source": "Scottsboro",
+"target": "New Hope"
+},
+{
+"dist": 111.63,
+"ecmp_fwd": {
+"uni": 16.92,
+"deg": 18.94
+},
+"ecmp_bwd": {
+"uni": 16.18,
+"deg": 18.09
+},
+"source": "Chapel Hill",
+"target": "Spencer"
+},
+{
+"dist": 60.56,
+"ecmp_fwd": {
+"uni": 31.28,
+"deg": 35.28
+},
+"ecmp_bwd": {
+"uni": 31.87,
+"deg": 35.96
+},
+"source": "Chapel Hill",
+"target": "Nashville"
+},
+{
+"dist": 42.66,
+"ecmp_fwd": {
+"uni": 10.32,
+"deg": 8.30
+},
+"ecmp_bwd": {
+"uni": 10.28,
+"deg": 8.26
+},
+"source": "Chapel Hill",
+"target": "Smyrna"
+},
+{
+"dist": 71.92,
+"ecmp_fwd": {
+"uni": 19.47,
+"deg": 20.74
+},
+"ecmp_bwd": {
+"uni": 19.66,
+"deg": 20.96
+},
+"source": "Chapel Hill",
+"target": "Ardmore"
+},
+{
+"dist": 23.29,
+"ecmp_fwd": {
+"uni": 27.73,
+"deg": 25.93
+},
+"ecmp_bwd": {
+"uni": 27.38,
+"deg": 25.59
+},
+"source": "Chattanooga",
+"target": "Ringgold"
+},
+{
+"dist": 121.62,
+"ecmp_fwd": {
+"uni": 26.60,
+"deg": 28.07
+},
+"ecmp_bwd": {
+"uni": 26.76,
+"deg": 28.16
+},
+"source": "Chattanooga",
+"target": "Huntsville"
+},
+{
+"dist": 36.98,
+"ecmp_fwd": {
+"uni": 13.67,
+"deg": 13.42
+},
+"ecmp_bwd": {
+"uni": 14.07,
+"deg": 13.96
+},
+"source": "Chattanooga",
+"target": "Dunlap"
+},
+{
+"dist": 42.37,
+"ecmp_fwd": {
+"uni": 13.61,
+"deg": 13.69
+},
+"ecmp_bwd": {
+"uni": 14.01,
+"deg": 14.22
+},
+"source": "Dunlap",
+"target": "Spencer"
+},
+{
+"dist": 28.30,
+"ecmp_fwd": {
+"uni": 8.31,
+"deg": 6.70
+},
+"ecmp_bwd": {
+"uni": 8.15,
+"deg": 6.55
+},
+"source": "Spencer",
+"target": "McMinnville"
+},
+{
+"dist": 39.30,
+"ecmp_fwd": {
+"uni": 6.71,
+"deg": 7.07
+},
+"ecmp_bwd": {
+"uni": 6.52,
+"deg": 6.89
+},
+"source": "Spencer",
+"target": "Smithville"
+},
+{
+"dist": 17.30,
+"ecmp_fwd": {
+"uni": 25.22,
+"deg": 23.51
+},
+"ecmp_bwd": {
+"uni": 24.87,
+"deg": 23.16
+},
+"source": "Ringgold",
+"target": "Chickamauga"
+},
+{
+"dist": 19.92,
+"ecmp_fwd": {
+"uni": 26.08,
+"deg": 23.92
+},
+"ecmp_bwd": {
+"uni": 25.73,
+"deg": 23.58
+},
+"source": "Chickamauga",
+"target": "Trenton"
+},
+{
+"dist": 42.31,
+"ecmp_fwd": {
+"uni": 37.92,
+"deg": 36.14
+},
+"ecmp_bwd": {
+"uni": 38.07,
+"deg": 36.31
+},
+"source": "Trenton",
+"target": "Jackson"
+},
+{
+"dist": 50.42,
+"ecmp_fwd": {
+"uni": 27.57,
+"deg": 24.68
+},
+"ecmp_bwd": {
+"uni": 27.15,
+"deg": 24.20
+},
+"source": "Trenton",
+"target": "Union City"
+},
+{
+"dist": 64.01,
+"ecmp_fwd": {
+"uni": 12.29,
+"deg": 4.81
+},
+"ecmp_bwd": {
+"uni": 12.29,
+"deg": 4.81
+},
+"source": "Brownsville",
+"target": "Millington"
+},
+{
+"dist": 27.75,
+"ecmp_fwd": {
+"uni": 19.71,
+"deg": 16.76
+},
+"ecmp_bwd": {
+"uni": 19.80,
+"deg": 16.80
+},
+"source": "Huntsville",
+"target": "New Hope"
+},
+{
+"dist": 37.58,
+"ecmp_fwd": {
+"uni": 11.09,
+"deg": 12.40
+},
+"ecmp_bwd": {
+"uni": 11.21,
+"deg": 12.55
+},
+"source": "Huntsville",
+"target": "Ardmore"
+},
+{
+"dist": 86.93,
+"ecmp_fwd": {
+"uni": 17.93,
+"deg": 17.77
+},
+"ecmp_bwd": {
+"uni": 17.56,
+"deg": 17.39
+},
+"source": "Huntsville",
+"target": "Loretto"
+},
+{
+"dist": 106.54,
+"ecmp_fwd": {
+"uni": 21.56,
+"deg": 26.03
+},
+"ecmp_bwd": {
+"uni": 21.89,
+"deg": 26.33
+},
+"source": "Huntsville",
+"target": "Columbia"
+},
+{
+"dist": 28.55,
+"ecmp_fwd": {
+"uni": 9.53,
+"deg": 8.01
+},
+"ecmp_bwd": {
+"uni": 9.22,
+"deg": 7.64
+},
+"source": "Pulaski",
+"target": "Ardmore"
+},
+{
+"dist": 39.59,
+"ecmp_fwd": {
+"uni": 5.83,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 6.15,
+"deg": 5.13
+},
+"source": "Pulaski",
+"target": "Loretto"
+},
+{
+"dist": 39.77,
+"ecmp_fwd": {
+"uni": 14.86,
+"deg": 13.37
+},
+"ecmp_bwd": {
+"uni": 14.92,
+"deg": 13.39
+},
+"source": "Waynesboro",
+"target": "Loretto"
+},
+{
+"dist": 80.84,
+"ecmp_fwd": {
+"uni": 14.55,
+"deg": 12.78
+},
+"ecmp_bwd": {
+"uni": 14.49,
+"deg": 12.77
+},
+"source": "Waynesboro",
+"target": "Henderson"
+},
+{
+"dist": 50.29,
+"ecmp_fwd": {
+"uni": 56.54,
+"deg": 53.60
+},
+"ecmp_bwd": {
+"uni": 56.64,
+"deg": 53.75
+},
+"source": "Jackson",
+"target": "Yuma"
+},
+{
+"dist": 24.98,
+"ecmp_fwd": {
+"uni": 20.00,
+"deg": 16.86
+},
+"ecmp_bwd": {
+"uni": 20.07,
+"deg": 16.88
+},
+"source": "Jackson",
+"target": "Henderson"
+},
+{
+"dist": 65.30,
+"ecmp_fwd": {
+"uni": 25.07,
+"deg": 28.91
+},
+"ecmp_bwd": {
+"uni": 25.40,
+"deg": 29.20
+},
+"source": "Columbia",
+"target": "Nashville"
+},
+{
+"dist": 144.08,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 99.68,
+"deg": 99.67
+},
+"source": "Yuma",
+"target": "Nashville"
+},
+{
+"dist": 22.76,
+"ecmp_fwd": {
+"uni": 30.98,
+"deg": 24.55
+},
+"ecmp_bwd": {
+"uni": 30.98,
+"deg": 24.55
+},
+"source": "Yuma",
+"target": "Bruceton"
+},
+{
+"dist": 35.68,
+"ecmp_fwd": {
+"uni": 43.54,
+"deg": 43.61
+},
+"ecmp_bwd": {
+"uni": 43.96,
+"deg": 44.09
+},
+"source": "Yuma",
+"target": "McKenzie"
+},
+{
+"dist": 24.16,
+"ecmp_fwd": {
+"uni": 5.30,
+"deg": 4.20
+},
+"ecmp_bwd": {
+"uni": 5.27,
+"deg": 4.17
+},
+"source": "Smyrna",
+"target": "Mt Juliet"
+},
+{
+"dist": 13.39,
+"ecmp_fwd": {
+"uni": 21.45,
+"deg": 16.82
+},
+"ecmp_bwd": {
+"uni": 21.45,
+"deg": 16.82
+},
+"source": "Bruceton",
+"target": "Camden"
+},
+{
+"dist": 12.50,
+"ecmp_fwd": {
+"uni": 12.29,
+"deg": 4.81
+},
+"ecmp_bwd": {
+"uni": 12.29,
+"deg": 4.81
+},
+"source": "Camden",
+"target": "New Johnsonville"
+},
+{
+"dist": 33.96,
+"ecmp_fwd": {
+"uni": 4.39,
+"deg": 3.18
+},
+"ecmp_bwd": {
+"uni": 4.39,
+"deg": 3.18
+},
+"source": "Camden",
+"target": "Paris"
+},
+{
+"dist": 32.10,
+"ecmp_fwd": {
+"uni": 0.25,
+"deg": 0.15
+},
+"ecmp_bwd": {
+"uni": 0.25,
+"deg": 0.15
+},
+"source": "Bowling Green",
+"target": "Franklin"
+},
+{
+"dist": 58.42,
+"ecmp_fwd": {
+"uni": 9.16,
+"deg": 7.23
+},
+"ecmp_bwd": {
+"uni": 9.11,
+"deg": 7.17
+},
+"source": "Paducah",
+"target": "Murray"
+},
+{
+"dist": 38.14,
+"ecmp_fwd": {
+"uni": 8.90,
+"deg": 6.55
+},
+"ecmp_bwd": {
+"uni": 8.95,
+"deg": 6.62
+},
+"source": "Paducah",
+"target": "Mayfield"
+},
+{
+"dist": 51.54,
+"ecmp_fwd": {
+"uni": 18.44,
+"deg": 14.28
+},
+"ecmp_bwd": {
+"uni": 18.48,
+"deg": 14.34
+},
+"source": "Mayfield",
+"target": "Union City"
+},
+{
+"dist": 20.57,
+"ecmp_fwd": {
+"uni": 11.29,
+"deg": 10.59
+},
+"ecmp_bwd": {
+"uni": 10.91,
+"deg": 10.17
+},
+"source": "Union City",
+"target": "Martin"
+},
+{
+"dist": 37.89,
+"ecmp_fwd": {
+"uni": 15.36,
+"deg": 14.13
+},
+"ecmp_bwd": {
+"uni": 14.99,
+"deg": 13.71
+},
+"source": "Martin",
+"target": "McKenzie"
+},
+{
+"dist": 25.53,
+"ecmp_fwd": {
+"uni": 26.30,
+"deg": 25.47
+},
+"ecmp_bwd": {
+"uni": 26.34,
+"deg": 25.53
+},
+"source": "McKenzie",
+"target": "Paris"
+},
+{
+"dist": 34.31,
+"ecmp_fwd": {
+"uni": 16.89,
+"deg": 13.38
+},
+"ecmp_bwd": {
+"uni": 16.93,
+"deg": 13.45
+},
+"source": "Paris",
+"target": "Murray"
+}
+]
+}

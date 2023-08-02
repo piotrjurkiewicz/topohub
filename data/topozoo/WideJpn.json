@@ -1,0 +1,454 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "widejpn",
+"demands": {},
+"stats": {
+"nodes": 19,
+"links": 22,
+"demands": 342,
+"min_degree": 1,
+"avg_degree": 2.32,
+"std_degree": 1.42,
+"max_degree": 6,
+"gini": 0.32,
+"min_link_len": 0.00,
+"avg_link_len": 947.71,
+"max_link_len": 8812.77,
+"diameter_len": 13981.54,
+"diameter_hops": 5,
+"avg_sdp_num": 1.01,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.96,
+"avg_sdp_len": 2989.25,
+"avg_adp_num": 1.34,
+"max_adp_num": 3,
+"avg_adp_hops": 3.40,
+"avg_adp_len": 3295.41
+}
+},
+"nodes": [
+{
+"pos": [
+139.77,
+35.68
+],
+"id": "KDDI Otemachi"
+},
+{
+"pos": [
+139.77,
+35.72
+],
+"id": "Nezu"
+},
+{
+"pos": [
+129.95,
+32.77
+],
+"id": "Yagami"
+},
+{
+"pos": [
+139.67,
+35.55
+],
+"id": "ShinKawasaki"
+},
+{
+"pos": [
+139.32,
+35.66
+],
+"id": "Hachioji"
+},
+{
+"pos": [
+100.52,
+13.75
+],
+"id": "Bangkok"
+},
+{
+"pos": [
+139.77,
+35.68
+],
+"id": "NTT Otemachi"
+},
+{
+"pos": [
+140.10,
+36.20
+],
+"id": "Tsukuba"
+},
+{
+"pos": [
+135.48,
+34.68
+],
+"id": "Dojima"
+},
+{
+"pos": [
+-118.24,
+34.05
+],
+"id": "Los Angeles"
+},
+{
+"pos": [
+139.47,
+35.34
+],
+"id": "Fujisawa"
+},
+{
+"pos": [
+135.80,
+34.69
+],
+"id": "Nara"
+},
+{
+"pos": [
+130.42,
+33.61
+],
+"id": "Fukuoka"
+},
+{
+"pos": [
+132.46,
+34.40
+],
+"id": "Hiroshima"
+},
+{
+"pos": [
+133.77,
+34.58
+],
+"id": "Kurashiki"
+},
+{
+"pos": [
+129.80,
+33.78
+],
+"id": "Sakyo"
+},
+{
+"pos": [
+136.45,
+36.40
+],
+"id": "Komatsu"
+},
+{
+"pos": [
+140.87,
+38.27
+],
+"id": "Sendai"
+},
+{
+"pos": [
+-122.42,
+37.77
+],
+"id": "San Francisco"
+}
+],
+"links": [
+{
+"dist": 3.78,
+"ecmp_fwd": {
+"uni": 69.23,
+"deg": 55.56
+},
+"ecmp_bwd": {
+"uni": 69.23,
+"deg": 55.56
+},
+"source": "KDDI Otemachi",
+"target": "Nezu"
+},
+{
+"dist": 40.13,
+"ecmp_fwd": {
+"uni": 27.69,
+"deg": 11.94
+},
+"ecmp_bwd": {
+"uni": 27.69,
+"deg": 11.94
+},
+"source": "KDDI Otemachi",
+"target": "Hachioji"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 91.11
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 91.11
+},
+"source": "KDDI Otemachi",
+"target": "NTT Otemachi"
+},
+{
+"dist": 8812.77,
+"ecmp_fwd": {
+"uni": 52.31,
+"deg": 34.17
+},
+"ecmp_bwd": {
+"uni": 52.31,
+"deg": 34.17
+},
+"source": "KDDI Otemachi",
+"target": "Los Angeles"
+},
+{
+"dist": 959.80,
+"ecmp_fwd": {
+"uni": 44.62,
+"deg": 33.33
+},
+"ecmp_bwd": {
+"uni": 44.62,
+"deg": 33.33
+},
+"source": "Nezu",
+"target": "Yagami"
+},
+{
+"dist": 300.33,
+"ecmp_fwd": {
+"uni": 27.69,
+"deg": 11.94
+},
+"ecmp_bwd": {
+"uni": 27.69,
+"deg": 11.94
+},
+"source": "Nezu",
+"target": "Sendai"
+},
+{
+"dist": 946.34,
+"ecmp_fwd": {
+"uni": 27.69,
+"deg": 11.94
+},
+"ecmp_bwd": {
+"uni": 27.69,
+"deg": 11.94
+},
+"source": "Yagami",
+"target": "ShinKawasaki"
+},
+{
+"dist": 922.40,
+"ecmp_fwd": {
+"uni": 35.38,
+"deg": 33.33
+},
+"ecmp_bwd": {
+"uni": 35.38,
+"deg": 33.33
+},
+"source": "Yagami",
+"target": "Fujisawa"
+},
+{
+"dist": 4609.50,
+"ecmp_fwd": {
+"uni": 27.69,
+"deg": 11.94
+},
+"ecmp_bwd": {
+"uni": 27.69,
+"deg": 11.94
+},
+"source": "Bangkok",
+"target": "NTT Otemachi"
+},
+{
+"dist": 64.83,
+"ecmp_fwd": {
+"uni": 27.69,
+"deg": 11.94
+},
+"ecmp_bwd": {
+"uni": 27.69,
+"deg": 11.94
+},
+"source": "NTT Otemachi",
+"target": "Tsukuba"
+},
+{
+"dist": 404.92,
+"ecmp_fwd": {
+"uni": 93.85,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 93.85,
+"deg": 100.00
+},
+"source": "NTT Otemachi",
+"target": "Dojima"
+},
+{
+"dist": 308.73,
+"ecmp_fwd": {
+"uni": 27.69,
+"deg": 11.94
+},
+"ecmp_bwd": {
+"uni": 27.69,
+"deg": 11.94
+},
+"source": "NTT Otemachi",
+"target": "Komatsu"
+},
+{
+"dist": 29.41,
+"ecmp_fwd": {
+"uni": 43.08,
+"deg": 50.28
+},
+"ecmp_bwd": {
+"uni": 43.08,
+"deg": 50.28
+},
+"source": "Dojima",
+"target": "Nara"
+},
+{
+"dist": 481.35,
+"ecmp_fwd": {
+"uni": 24.62,
+"deg": 30.83
+},
+"ecmp_bwd": {
+"uni": 24.62,
+"deg": 30.83
+},
+"source": "Dojima",
+"target": "Fukuoka"
+},
+{
+"dist": 278.88,
+"ecmp_fwd": {
+"uni": 25.38,
+"deg": 21.11
+},
+"ecmp_bwd": {
+"uni": 25.38,
+"deg": 21.11
+},
+"source": "Dojima",
+"target": "Hiroshima"
+},
+{
+"dist": 157.50,
+"ecmp_fwd": {
+"uni": 25.38,
+"deg": 21.11
+},
+"ecmp_bwd": {
+"uni": 25.38,
+"deg": 21.11
+},
+"source": "Dojima",
+"target": "Kurashiki"
+},
+{
+"dist": 532.04,
+"ecmp_fwd": {
+"uni": 20.00,
+"deg": 17.22
+},
+"ecmp_bwd": {
+"uni": 20.00,
+"deg": 17.22
+},
+"source": "Dojima",
+"target": "Sakyo"
+},
+{
+"dist": 559.28,
+"ecmp_fwd": {
+"uni": 27.69,
+"deg": 11.94
+},
+"ecmp_bwd": {
+"uni": 27.69,
+"deg": 11.94
+},
+"source": "Los Angeles",
+"target": "San Francisco"
+},
+{
+"dist": 341.76,
+"ecmp_fwd": {
+"uni": 38.46,
+"deg": 38.89
+},
+"ecmp_bwd": {
+"uni": 38.46,
+"deg": 38.89
+},
+"source": "Fujisawa",
+"target": "Nara"
+},
+{
+"dist": 561.12,
+"ecmp_fwd": {
+"uni": 7.69,
+"deg": 6.11
+},
+"ecmp_bwd": {
+"uni": 7.69,
+"deg": 6.11
+},
+"source": "Nara",
+"target": "Sakyo"
+},
+{
+"dist": 207.72,
+"ecmp_fwd": {
+"uni": 2.31,
+"deg": 2.22
+},
+"ecmp_bwd": {
+"uni": 2.31,
+"deg": 2.22
+},
+"source": "Fukuoka",
+"target": "Hiroshima"
+},
+{
+"dist": 326.99,
+"ecmp_fwd": {
+"uni": 2.31,
+"deg": 2.22
+},
+"ecmp_bwd": {
+"uni": 2.31,
+"deg": 2.22
+},
+"source": "Fukuoka",
+"target": "Kurashiki"
+}
+]
+}

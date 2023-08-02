@@ -1,0 +1,381 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "ernet",
+"demands": {},
+"stats": {
+"nodes": 16,
+"links": 18,
+"demands": 240,
+"min_degree": 1,
+"avg_degree": 2.25,
+"std_degree": 1.56,
+"max_degree": 6,
+"gini": 0.36,
+"min_link_len": 119.52,
+"avg_link_len": 645.72,
+"max_link_len": 1742.19,
+"diameter_len": 3507.42,
+"diameter_hops": 4,
+"avg_sdp_num": 1.05,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.60,
+"avg_sdp_len": 1910.33,
+"avg_adp_num": 1.20,
+"max_adp_num": 3,
+"avg_adp_hops": 2.72,
+"avg_adp_len": 2017.06
+}
+},
+"nodes": [
+{
+"pos": [
+73.86,
+18.52
+],
+"id": "Pune"
+},
+{
+"pos": [
+75.83,
+22.72
+],
+"id": "Indore"
+},
+{
+"pos": [
+76.92,
+8.48
+],
+"id": "Trivandrum"
+},
+{
+"pos": [
+72.85,
+19.01
+],
+"id": "Mumbai"
+},
+{
+"pos": [
+72.62,
+23.03
+],
+"id": "Ahmedabad"
+},
+{
+"pos": [
+75.82,
+26.92
+],
+"id": "Jaipur"
+},
+{
+"pos": [
+80.28,
+13.09
+],
+"id": "Chennai"
+},
+{
+"pos": [
+77.60,
+12.98
+],
+"id": "Bengaluru"
+},
+{
+"pos": [
+77.22,
+28.64
+],
+"id": "Delhi"
+},
+{
+"pos": [
+91.75,
+26.19
+],
+"id": "Guwahati"
+},
+{
+"pos": [
+75.68,
+29.45
+],
+"id": "Gorakhpur"
+},
+{
+"pos": [
+80.35,
+26.47
+],
+"id": "Kanpur"
+},
+{
+"pos": [
+81.85,
+25.45
+],
+"id": "Allahabad"
+},
+{
+"pos": [
+88.37,
+22.57
+],
+"id": "Kalkota"
+},
+{
+"pos": [
+85.83,
+20.23
+],
+"id": "Bhubaneswar"
+},
+{
+"pos": [
+78.47,
+17.38
+],
+"id": "Hyderabad"
+}
+],
+"links": [
+{
+"dist": 119.52,
+"ecmp_fwd": {
+"uni": 25.64,
+"deg": 26.06
+},
+"ecmp_bwd": {
+"uni": 25.00,
+"deg": 26.06
+},
+"source": "Pune",
+"target": "Mumbai"
+},
+{
+"dist": 735.51,
+"ecmp_fwd": {
+"uni": 32.05,
+"deg": 35.69
+},
+"ecmp_bwd": {
+"uni": 32.69,
+"deg": 35.69
+},
+"source": "Pune",
+"target": "Bengaluru"
+},
+{
+"dist": 515.66,
+"ecmp_fwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"ecmp_bwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"source": "Indore",
+"target": "Mumbai"
+},
+{
+"dist": 505.33,
+"ecmp_fwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"ecmp_bwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"source": "Trivandrum",
+"target": "Bengaluru"
+},
+{
+"dist": 1158.77,
+"ecmp_fwd": {
+"uni": 67.95,
+"deg": 66.29
+},
+"ecmp_bwd": {
+"uni": 67.31,
+"deg": 66.29
+},
+"source": "Mumbai",
+"target": "Delhi"
+},
+{
+"dist": 775.10,
+"ecmp_fwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"ecmp_bwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"source": "Ahmedabad",
+"target": "Delhi"
+},
+{
+"dist": 236.12,
+"ecmp_fwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"ecmp_bwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"source": "Jaipur",
+"target": "Delhi"
+},
+{
+"dist": 290.15,
+"ecmp_fwd": {
+"uni": 28.21,
+"deg": 28.33
+},
+"ecmp_bwd": {
+"uni": 28.21,
+"deg": 28.33
+},
+"source": "Chennai",
+"target": "Bengaluru"
+},
+{
+"dist": 514.66,
+"ecmp_fwd": {
+"uni": 10.26,
+"deg": 10.20
+},
+"ecmp_bwd": {
+"uni": 10.26,
+"deg": 10.20
+},
+"source": "Chennai",
+"target": "Hyderabad"
+},
+{
+"dist": 1742.19,
+"ecmp_fwd": {
+"uni": 80.13,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 80.13,
+"deg": 100.00
+},
+"source": "Bengaluru",
+"target": "Delhi"
+},
+{
+"dist": 498.14,
+"ecmp_fwd": {
+"uni": 28.85,
+"deg": 41.64
+},
+"ecmp_bwd": {
+"uni": 29.49,
+"deg": 41.64
+},
+"source": "Bengaluru",
+"target": "Hyderabad"
+},
+{
+"dist": 391.38,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 87.82
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 87.82
+},
+"source": "Delhi",
+"target": "Kanpur"
+},
+{
+"dist": 1304.71,
+"ecmp_fwd": {
+"uni": 83.97,
+"deg": 85.84
+},
+"ecmp_bwd": {
+"uni": 83.33,
+"deg": 85.84
+},
+"source": "Delhi",
+"target": "Kalkota"
+},
+{
+"dist": 528.27,
+"ecmp_fwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"ecmp_bwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"source": "Guwahati",
+"target": "Kalkota"
+},
+{
+"dist": 565.86,
+"ecmp_fwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"ecmp_bwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"source": "Gorakhpur",
+"target": "Kanpur"
+},
+{
+"dist": 187.85,
+"ecmp_fwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"ecmp_bwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"source": "Kanpur",
+"target": "Allahabad"
+},
+{
+"dist": 369.47,
+"ecmp_fwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"ecmp_bwd": {
+"uni": 38.46,
+"deg": 19.83
+},
+"source": "Kalkota",
+"target": "Bhubaneswar"
+},
+{
+"dist": 1184.27,
+"ecmp_fwd": {
+"uni": 35.90,
+"deg": 43.34
+},
+"ecmp_bwd": {
+"uni": 35.26,
+"deg": 43.34
+},
+"source": "Kalkota",
+"target": "Hyderabad"
+}
+]
+}

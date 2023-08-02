@@ -1,0 +1,182 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "gblnet",
+"demands": {},
+"stats": {
+"nodes": 8,
+"links": 7,
+"demands": 56,
+"min_degree": 1,
+"avg_degree": 1.75,
+"std_degree": 1.30,
+"max_degree": 5,
+"gini": 0.32,
+"min_link_len": 347.68,
+"avg_link_len": 563.84,
+"max_link_len": 1125.77,
+"diameter_len": 2877.83,
+"diameter_hops": 4,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 2.21,
+"avg_sdp_len": 1431.26,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 2.21,
+"avg_adp_len": 1431.26
+}
+},
+"nodes": [
+{
+"pos": [
+-0.14,
+53.08
+],
+"id": "New York"
+},
+{
+"pos": [
+-0.13,
+51.51
+],
+"id": "London"
+},
+{
+"pos": [
+18.06,
+59.33
+],
+"id": "Stockholm"
+},
+{
+"pos": [
+30.26,
+59.89
+],
+"id": "St Petersburg"
+},
+{
+"pos": [
+37.62,
+55.75
+],
+"id": "Moscow"
+},
+{
+"pos": [
+4.89,
+52.37
+],
+"id": "Amsterdam"
+},
+{
+"pos": [
+8.68,
+50.12
+],
+"id": "Frankfurt"
+},
+{
+"pos": [
+2.35,
+48.85
+],
+"id": "Paris"
+}
+],
+"links": [
+{
+"dist": 347.68,
+"ecmp_fwd": {
+"uni": 46.67,
+"deg": 28.89
+},
+"ecmp_bwd": {
+"uni": 46.67,
+"deg": 28.89
+},
+"source": "New York",
+"target": "Amsterdam"
+},
+{
+"dist": 357.03,
+"ecmp_fwd": {
+"uni": 46.67,
+"deg": 28.89
+},
+"ecmp_bwd": {
+"uni": 46.67,
+"deg": 28.89
+},
+"source": "London",
+"target": "Amsterdam"
+},
+{
+"dist": 688.20,
+"ecmp_fwd": {
+"uni": 80.00,
+"deg": 73.33
+},
+"ecmp_bwd": {
+"uni": 80.00,
+"deg": 73.33
+},
+"source": "Stockholm",
+"target": "St Petersburg"
+},
+{
+"dist": 1125.77,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Stockholm",
+"target": "Amsterdam"
+},
+{
+"dist": 633.23,
+"ecmp_fwd": {
+"uni": 46.67,
+"deg": 28.89
+},
+"ecmp_bwd": {
+"uni": 46.67,
+"deg": 28.89
+},
+"source": "St Petersburg",
+"target": "Moscow"
+},
+{
+"dist": 364.34,
+"ecmp_fwd": {
+"uni": 46.67,
+"deg": 28.89
+},
+"ecmp_bwd": {
+"uni": 46.67,
+"deg": 28.89
+},
+"source": "Amsterdam",
+"target": "Frankfurt"
+},
+{
+"dist": 430.63,
+"ecmp_fwd": {
+"uni": 46.67,
+"deg": 28.89
+},
+"ecmp_bwd": {
+"uni": 46.67,
+"deg": 28.89
+},
+"source": "Amsterdam",
+"target": "Paris"
+}
+]
+}

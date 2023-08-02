@@ -1,0 +1,242 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "cesnet1999",
+"demands": {},
+"stats": {
+"nodes": 11,
+"links": 10,
+"demands": 110,
+"min_degree": 1,
+"avg_degree": 1.82,
+"std_degree": 1.85,
+"max_degree": 7,
+"gini": 0.38,
+"min_link_len": 64.45,
+"avg_link_len": 103.14,
+"max_link_len": 186.21,
+"diameter_len": 450.39,
+"diameter_hops": 3,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 2.15,
+"avg_sdp_len": 248.47,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 2.15,
+"avg_adp_len": 248.47
+}
+},
+"nodes": [
+{
+"pos": [
+17.67,
+49.22
+],
+"id": "Zlin"
+},
+{
+"pos": [
+18.28,
+49.83
+],
+"id": "Ostrava"
+},
+{
+"pos": [
+17.25,
+49.60
+],
+"id": "Olomouc"
+},
+{
+"pos": [
+16.61,
+49.20
+],
+"id": "Brno"
+},
+{
+"pos": [
+13.38,
+49.75
+],
+"id": "Plzen"
+},
+{
+"pos": [
+14.03,
+50.66
+],
+"id": "Usti nad Labem"
+},
+{
+"pos": [
+14.42,
+50.09
+],
+"id": "Praha"
+},
+{
+"pos": [
+15.06,
+50.77
+],
+"id": "Liberec"
+},
+{
+"pos": [
+14.47,
+48.97
+],
+"id": "Ceske Budejovice"
+},
+{
+"pos": [
+15.78,
+50.04
+],
+"id": "Pardubice"
+},
+{
+"pos": [
+15.83,
+50.21
+],
+"id": "Hradec Kralove"
+}
+],
+"links": [
+{
+"dist": 76.97,
+"ecmp_fwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"ecmp_bwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"source": "Zlin",
+"target": "Brno"
+},
+{
+"dist": 140.26,
+"ecmp_fwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"ecmp_bwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"source": "Ostrava",
+"target": "Brno"
+},
+{
+"dist": 64.45,
+"ecmp_fwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"ecmp_bwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"source": "Olomouc",
+"target": "Brno"
+},
+{
+"dist": 186.21,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Brno",
+"target": "Praha"
+},
+{
+"dist": 83.76,
+"ecmp_fwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"ecmp_bwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"source": "Plzen",
+"target": "Praha"
+},
+{
+"dist": 69.40,
+"ecmp_fwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"ecmp_bwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"source": "Usti nad Labem",
+"target": "Praha"
+},
+{
+"dist": 87.93,
+"ecmp_fwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"ecmp_bwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"source": "Praha",
+"target": "Liberec"
+},
+{
+"dist": 123.92,
+"ecmp_fwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"ecmp_bwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"source": "Praha",
+"target": "Ceske Budejovice"
+},
+{
+"dist": 96.95,
+"ecmp_fwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"ecmp_bwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"source": "Praha",
+"target": "Pardubice"
+},
+{
+"dist": 101.54,
+"ecmp_fwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"ecmp_bwd": {
+"uni": 35.71,
+"deg": 20.88
+},
+"source": "Praha",
+"target": "Hradec Kralove"
+}
+]
+}

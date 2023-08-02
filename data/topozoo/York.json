@@ -1,0 +1,508 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "york",
+"demands": {},
+"stats": {
+"nodes": 23,
+"links": 24,
+"demands": 506,
+"min_degree": 1,
+"avg_degree": 2.09,
+"std_degree": 0.65,
+"max_degree": 4,
+"gini": 0.14,
+"min_link_len": 14.04,
+"avg_link_len": 63.71,
+"max_link_len": 147.66,
+"diameter_len": 732.39,
+"diameter_hops": 10,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 2,
+"avg_sdp_hops": 5.22,
+"avg_sdp_len": 213.59,
+"avg_adp_num": 1.75,
+"max_adp_num": 3,
+"avg_adp_hops": 8.54,
+"avg_adp_len": 557.36
+}
+},
+"nodes": [
+{
+"pos": [
+-1.13,
+52.63
+],
+"id": "Leicester"
+},
+{
+"pos": [
+-0.88,
+52.25
+],
+"id": "Northampton"
+},
+{
+"pos": [
+-1.47,
+53.38
+],
+"id": "Sheffield"
+},
+{
+"pos": [
+-1.15,
+52.95
+],
+"id": "Nottingham"
+},
+{
+"pos": [
+-0.10,
+51.38
+],
+"id": "Croydon"
+},
+{
+"pos": [
+-0.58,
+51.50
+],
+"id": "Slough"
+},
+{
+"pos": [
+-0.76,
+52.04
+],
+"id": "Milton Keynes"
+},
+{
+"pos": [
+-0.13,
+51.51
+],
+"id": "London"
+},
+{
+"pos": [
+-0.97,
+51.46
+],
+"id": "Reading"
+},
+{
+"pos": [
+-1.34,
+52.06
+],
+"id": "Banbury"
+},
+{
+"pos": [
+-0.14,
+50.83
+],
+"id": "Brighton"
+},
+{
+"pos": [
+-2.58,
+51.45
+],
+"id": "Bristol"
+},
+{
+"pos": [
+-1.92,
+52.47
+],
+"id": "Birmingham"
+},
+{
+"pos": [
+-2.72,
+53.77
+],
+"id": "Preston"
+},
+{
+"pos": [
+-2.24,
+53.48
+],
+"id": "Manchester"
+},
+{
+"pos": [
+-4.26,
+55.87
+],
+"id": "Glasgow"
+},
+{
+"pos": [
+-3.20,
+55.95
+],
+"id": "Edinburgh"
+},
+{
+"pos": [
+-1.61,
+54.97
+],
+"id": "Newcastle"
+},
+{
+"pos": [
+-1.16,
+54.57
+],
+"id": "Middlesborough"
+},
+{
+"pos": [
+-1.53,
+53.98
+],
+"id": "Harrogate"
+},
+{
+"pos": [
+-1.08,
+53.97
+],
+"id": "York"
+},
+{
+"pos": [
+-1.55,
+53.80
+],
+"id": "Leeds"
+},
+{
+"pos": [
+-2.94,
+54.90
+],
+"id": "Carlisle"
+}
+],
+"links": [
+{
+"dist": 45.88,
+"ecmp_fwd": {
+"uni": 92.16,
+"deg": 97.53
+},
+"ecmp_bwd": {
+"uni": 92.16,
+"deg": 97.53
+},
+"source": "Leicester",
+"target": "Northampton"
+},
+{
+"dist": 35.64,
+"ecmp_fwd": {
+"uni": 89.54,
+"deg": 96.30
+},
+"ecmp_bwd": {
+"uni": 89.54,
+"deg": 96.30
+},
+"source": "Leicester",
+"target": "Nottingham"
+},
+{
+"dist": 24.75,
+"ecmp_fwd": {
+"uni": 94.77,
+"deg": 98.77
+},
+"ecmp_bwd": {
+"uni": 94.77,
+"deg": 98.77
+},
+"source": "Northampton",
+"target": "Milton Keynes"
+},
+{
+"dist": 52.18,
+"ecmp_fwd": {
+"uni": 86.93,
+"deg": 95.06
+},
+"ecmp_bwd": {
+"uni": 86.93,
+"deg": 95.06
+},
+"source": "Sheffield",
+"target": "Nottingham"
+},
+{
+"dist": 46.31,
+"ecmp_fwd": {
+"uni": 84.31,
+"deg": 93.83
+},
+"ecmp_bwd": {
+"uni": 84.31,
+"deg": 93.83
+},
+"source": "Sheffield",
+"target": "Leeds"
+},
+{
+"dist": 14.04,
+"ecmp_fwd": {
+"uni": 28.76,
+"deg": 14.51
+},
+"ecmp_bwd": {
+"uni": 28.76,
+"deg": 14.51
+},
+"source": "Croydon",
+"target": "London"
+},
+{
+"dist": 27.30,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 98.77
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 98.77
+},
+"source": "Slough",
+"target": "Reading"
+},
+{
+"dist": 31.69,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Slough",
+"target": "London"
+},
+{
+"dist": 73.47,
+"ecmp_fwd": {
+"uni": 97.39,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 97.39,
+"deg": 100.00
+},
+"source": "Milton Keynes",
+"target": "London"
+},
+{
+"dist": 71.82,
+"ecmp_fwd": {
+"uni": 92.16,
+"deg": 87.65
+},
+"ecmp_bwd": {
+"uni": 92.16,
+"deg": 87.65
+},
+"source": "Reading",
+"target": "Banbury"
+},
+{
+"dist": 90.80,
+"ecmp_fwd": {
+"uni": 28.76,
+"deg": 14.51
+},
+"ecmp_bwd": {
+"uni": 28.76,
+"deg": 14.51
+},
+"source": "Reading",
+"target": "Brighton"
+},
+{
+"dist": 111.74,
+"ecmp_fwd": {
+"uni": 28.76,
+"deg": 14.51
+},
+"ecmp_bwd": {
+"uni": 28.76,
+"deg": 14.51
+},
+"source": "Reading",
+"target": "Bristol"
+},
+{
+"dist": 59.86,
+"ecmp_fwd": {
+"uni": 88.24,
+"deg": 83.95
+},
+"ecmp_bwd": {
+"uni": 88.24,
+"deg": 83.95
+},
+"source": "Banbury",
+"target": "Birmingham"
+},
+{
+"dist": 114.84,
+"ecmp_fwd": {
+"uni": 85.62,
+"deg": 82.72
+},
+"ecmp_bwd": {
+"uni": 85.62,
+"deg": 82.72
+},
+"source": "Birmingham",
+"target": "Manchester"
+},
+{
+"dist": 44.83,
+"ecmp_fwd": {
+"uni": 83.01,
+"deg": 81.48
+},
+"ecmp_bwd": {
+"uni": 83.01,
+"deg": 81.48
+},
+"source": "Preston",
+"target": "Manchester"
+},
+{
+"dist": 126.33,
+"ecmp_fwd": {
+"uni": 80.39,
+"deg": 80.25
+},
+"ecmp_bwd": {
+"uni": 80.39,
+"deg": 80.25
+},
+"source": "Preston",
+"target": "Carlisle"
+},
+{
+"dist": 66.61,
+"ecmp_fwd": {
+"uni": 75.16,
+"deg": 77.78
+},
+"ecmp_bwd": {
+"uni": 75.16,
+"deg": 77.78
+},
+"source": "Glasgow",
+"target": "Edinburgh"
+},
+{
+"dist": 136.35,
+"ecmp_fwd": {
+"uni": 77.78,
+"deg": 79.01
+},
+"ecmp_bwd": {
+"uni": 77.78,
+"deg": 79.01
+},
+"source": "Glasgow",
+"target": "Carlisle"
+},
+{
+"dist": 147.66,
+"ecmp_fwd": {
+"uni": 72.55,
+"deg": 76.54
+},
+"ecmp_bwd": {
+"uni": 72.55,
+"deg": 76.54
+},
+"source": "Edinburgh",
+"target": "Newcastle"
+},
+{
+"dist": 53.12,
+"ecmp_fwd": {
+"uni": 72.55,
+"deg": 77.78
+},
+"ecmp_bwd": {
+"uni": 72.55,
+"deg": 77.78
+},
+"source": "Newcastle",
+"target": "Middlesborough"
+},
+{
+"dist": 67.61,
+"ecmp_fwd": {
+"uni": 72.55,
+"deg": 79.01
+},
+"ecmp_bwd": {
+"uni": 72.55,
+"deg": 79.01
+},
+"source": "Middlesborough",
+"target": "York"
+},
+{
+"dist": 29.50,
+"ecmp_fwd": {
+"uni": 12.42,
+"deg": 12.35
+},
+"ecmp_bwd": {
+"uni": 12.42,
+"deg": 12.35
+},
+"source": "Harrogate",
+"target": "York"
+},
+{
+"dist": 20.80,
+"ecmp_fwd": {
+"uni": 16.34,
+"deg": 16.05
+},
+"ecmp_bwd": {
+"uni": 16.34,
+"deg": 16.05
+},
+"source": "Harrogate",
+"target": "Leeds"
+},
+{
+"dist": 35.86,
+"ecmp_fwd": {
+"uni": 65.36,
+"deg": 75.00
+},
+"ecmp_bwd": {
+"uni": 65.36,
+"deg": 75.00
+},
+"source": "York",
+"target": "Leeds"
+}
+]
+}

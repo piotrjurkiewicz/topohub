@@ -1,0 +1,891 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "dfn_bwin",
+"demands": {
+"Frankfurt": {
+"Koeln": 55916.00,
+"Muenchen": 19869.00,
+"Nuernberg": 19601.00,
+"Berlin": 18493.00,
+"Karlsruhe": 34354.00,
+"Hannover": 29648.00,
+"Hamburg": 24021.00,
+"Stuttgart": 22258.00,
+"Leipzig": 21108.00
+},
+"Muenchen": {
+"Frankfurt": 15109.00,
+"Koeln": 3489.00,
+"Nuernberg": 3210.00,
+"Karlsruhe": 1938.00,
+"Hannover": 1888.00,
+"Stuttgart": 1786.00,
+"Leipzig": 1444.00,
+"Berlin": 1248.00,
+"Hamburg": 877.00
+},
+"Hannover": {
+"Frankfurt": 14325.00,
+"Koeln": 3777.00,
+"Karlsruhe": 1657.00,
+"Muenchen": 1441.00,
+"Leipzig": 1160.00,
+"Stuttgart": 1099.00,
+"Hamburg": 1038.00,
+"Berlin": 978.00,
+"Nuernberg": 660.00
+},
+"Leipzig": {
+"Frankfurt": 14242.00,
+"Berlin": 3114.00,
+"Koeln": 1801.00,
+"Karlsruhe": 1107.00,
+"Hannover": 931.00,
+"Muenchen": 752.00,
+"Stuttgart": 701.00,
+"Nuernberg": 638.00,
+"Hamburg": 494.00
+},
+"Hamburg": {
+"Frankfurt": 12719.00,
+"Koeln": 2555.00,
+"Hannover": 2338.00,
+"Karlsruhe": 937.00,
+"Muenchen": 581.00,
+"Berlin": 484.00,
+"Leipzig": 304.00,
+"Stuttgart": 289.00,
+"Nuernberg": 126.00
+},
+"Berlin": {
+"Frankfurt": 12468.00,
+"Koeln": 2792.00,
+"Hannover": 1820.00,
+"Leipzig": 1719.00,
+"Karlsruhe": 1312.00,
+"Muenchen": 1229.00,
+"Hamburg": 1201.00,
+"Stuttgart": 801.00,
+"Nuernberg": 698.00
+},
+"Nuernberg": {
+"Frankfurt": 9969.00,
+"Muenchen": 9583.00,
+"Leipzig": 8862.00,
+"Karlsruhe": 1955.00,
+"Koeln": 1310.00,
+"Hannover": 699.00,
+"Stuttgart": 488.00,
+"Berlin": 431.00,
+"Hamburg": 144.00
+},
+"Stuttgart": {
+"Karlsruhe": 7224.00,
+"Muenchen": 5551.00,
+"Koeln": 3669.00,
+"Leipzig": 1990.00,
+"Hannover": 1849.00,
+"Berlin": 1067.00,
+"Hamburg": 833.00,
+"Nuernberg": 799.00,
+"Frankfurt": 20073.00
+},
+"Karlsruhe": {
+"Koeln": 4777.00,
+"Hamburg": 2941.00,
+"Stuttgart": 2802.00,
+"Frankfurt": 28809.00,
+"Hannover": 1913.00,
+"Muenchen": 1844.00,
+"Leipzig": 1745.00,
+"Nuernberg": 1736.00,
+"Berlin": 1718.00
+},
+"Koeln": {
+"Hamburg": 4504.00,
+"Karlsruhe": 4333.00,
+"Hannover": 3998.00,
+"Muenchen": 3246.00,
+"Leipzig": 3000.00,
+"Stuttgart": 2836.00,
+"Berlin": 2624.00,
+"Nuernberg": 2157.00,
+"Frankfurt": 26364.00
+}
+},
+"stats": {
+"nodes": 10,
+"links": 45,
+"demands": 90,
+"min_degree": 9,
+"avg_degree": 9.00,
+"std_degree": 0.00,
+"max_degree": 9,
+"gini": 0.00,
+"min_link_len": 87.63,
+"avg_link_len": 319.70,
+"max_link_len": 592.36,
+"diameter_len": 592.36,
+"diameter_hops": 1,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.00,
+"avg_sdp_len": 27.55,
+"avg_adp_num": 9.00,
+"max_adp_num": 9,
+"avg_adp_hops": 1.89,
+"avg_adp_len": 571.26
+}
+},
+"nodes": [
+{
+"pos": [
+8.40,
+50.07
+],
+"id": "Frankfurt"
+},
+{
+"pos": [
+6.57,
+50.57
+],
+"id": "Koeln"
+},
+{
+"pos": [
+10.02,
+53.34
+],
+"id": "Hamburg"
+},
+{
+"pos": [
+9.44,
+52.23
+],
+"id": "Hannover"
+},
+{
+"pos": [
+8.24,
+49.01
+],
+"id": "Karlsruhe"
+},
+{
+"pos": [
+9.11,
+48.47
+],
+"id": "Stuttgart"
+},
+{
+"pos": [
+11.34,
+48.08
+],
+"id": "Muenchen"
+},
+{
+"pos": [
+11.05,
+49.27
+],
+"id": "Nuernberg"
+},
+{
+"pos": [
+13.18,
+52.32
+],
+"id": "Berlin"
+},
+{
+"pos": [
+12.22,
+51.21
+],
+"id": "Leipzig"
+}
+],
+"links": [
+{
+"dist": 250.96,
+"ecmp_fwd": {
+"org": 53.44,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 53.44,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Frankfurt",
+"target": "Hannover"
+},
+{
+"dist": 210.48,
+"ecmp_fwd": {
+"org": 35.94,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 35.94,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Frankfurt",
+"target": "Nuernberg"
+},
+{
+"dist": 297.75,
+"ecmp_fwd": {
+"org": 42.96,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 42.96,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Frankfurt",
+"target": "Leipzig"
+},
+{
+"dist": 380.44,
+"ecmp_fwd": {
+"org": 44.65,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 44.65,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Frankfurt",
+"target": "Hamburg"
+},
+{
+"dist": 185.27,
+"ecmp_fwd": {
+"org": 51.45,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 51.45,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Frankfurt",
+"target": "Stuttgart"
+},
+{
+"dist": 307.98,
+"ecmp_fwd": {
+"org": 42.51,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 42.51,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Frankfurt",
+"target": "Muenchen"
+},
+{
+"dist": 141.36,
+"ecmp_fwd": {
+"org": 100.00,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 100.00,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Frankfurt",
+"target": "Koeln"
+},
+{
+"dist": 416.55,
+"ecmp_fwd": {
+"org": 37.63,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 37.63,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Frankfurt",
+"target": "Berlin"
+},
+{
+"dist": 118.46,
+"ecmp_fwd": {
+"org": 76.77,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 76.77,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Frankfurt",
+"target": "Karlsruhe"
+},
+{
+"dist": 402.65,
+"ecmp_fwd": {
+"org": 5.83,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 5.83,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Koeln",
+"target": "Leipzig"
+},
+{
+"dist": 271.54,
+"ecmp_fwd": {
+"org": 9.45,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 9.45,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Koeln",
+"target": "Hannover"
+},
+{
+"dist": 296.94,
+"ecmp_fwd": {
+"org": 7.91,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 7.91,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Koeln",
+"target": "Stuttgart"
+},
+{
+"dist": 351.83,
+"ecmp_fwd": {
+"org": 4.21,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 4.21,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Koeln",
+"target": "Nuernberg"
+},
+{
+"dist": 388.30,
+"ecmp_fwd": {
+"org": 8.58,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 8.58,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Koeln",
+"target": "Hamburg"
+},
+{
+"dist": 442.88,
+"ecmp_fwd": {
+"org": 8.19,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 8.19,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Koeln",
+"target": "Muenchen"
+},
+{
+"dist": 210.91,
+"ecmp_fwd": {
+"org": 11.07,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 11.07,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Koeln",
+"target": "Karlsruhe"
+},
+{
+"dist": 497.62,
+"ecmp_fwd": {
+"org": 6.58,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 6.58,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Koeln",
+"target": "Berlin"
+},
+{
+"dist": 497.31,
+"ecmp_fwd": {
+"org": 4.71,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 4.71,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Hamburg",
+"target": "Karlsruhe"
+},
+{
+"dist": 240.73,
+"ecmp_fwd": {
+"org": 2.05,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 2.05,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Hamburg",
+"target": "Berlin"
+},
+{
+"dist": 458.31,
+"ecmp_fwd": {
+"org": 0.33,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 0.33,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Hamburg",
+"target": "Nuernberg"
+},
+{
+"dist": 545.41,
+"ecmp_fwd": {
+"org": 1.36,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 1.36,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Hamburg",
+"target": "Stuttgart"
+},
+{
+"dist": 592.36,
+"ecmp_fwd": {
+"org": 1.77,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 1.77,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Hamburg",
+"target": "Muenchen"
+},
+{
+"dist": 280.23,
+"ecmp_fwd": {
+"org": 0.97,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 0.97,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Hamburg",
+"target": "Leipzig"
+},
+{
+"dist": 129.48,
+"ecmp_fwd": {
+"org": 4.10,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 4.10,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Hamburg",
+"target": "Hannover"
+},
+{
+"dist": 368.01,
+"ecmp_fwd": {
+"org": 4.34,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 4.34,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Hannover",
+"target": "Karlsruhe"
+},
+{
+"dist": 222.61,
+"ecmp_fwd": {
+"org": 2.54,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 2.54,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Hannover",
+"target": "Leipzig"
+},
+{
+"dist": 254.70,
+"ecmp_fwd": {
+"org": 3.40,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 3.40,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Hannover",
+"target": "Berlin"
+},
+{
+"dist": 348.16,
+"ecmp_fwd": {
+"org": 1.65,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 1.65,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Hannover",
+"target": "Nuernberg"
+},
+{
+"dist": 480.99,
+"ecmp_fwd": {
+"org": 4.05,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 4.05,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Hannover",
+"target": "Muenchen"
+},
+{
+"dist": 418.87,
+"ecmp_fwd": {
+"org": 3.58,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 3.58,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Hannover",
+"target": "Stuttgart"
+},
+{
+"dist": 87.63,
+"ecmp_fwd": {
+"org": 12.19,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 12.19,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Karlsruhe",
+"target": "Stuttgart"
+},
+{
+"dist": 250.59,
+"ecmp_fwd": {
+"org": 4.60,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 4.60,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Karlsruhe",
+"target": "Muenchen"
+},
+{
+"dist": 506.56,
+"ecmp_fwd": {
+"org": 3.68,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 3.68,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Karlsruhe",
+"target": "Berlin"
+},
+{
+"dist": 374.70,
+"ecmp_fwd": {
+"org": 3.47,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 3.47,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Karlsruhe",
+"target": "Leipzig"
+},
+{
+"dist": 206.49,
+"ecmp_fwd": {
+"org": 4.49,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 4.49,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Karlsruhe",
+"target": "Nuernberg"
+},
+{
+"dist": 167.51,
+"ecmp_fwd": {
+"org": 1.56,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 1.56,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Stuttgart",
+"target": "Nuernberg"
+},
+{
+"dist": 377.61,
+"ecmp_fwd": {
+"org": 3.27,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 3.27,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Stuttgart",
+"target": "Leipzig"
+},
+{
+"dist": 516.20,
+"ecmp_fwd": {
+"org": 2.27,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 2.27,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Stuttgart",
+"target": "Berlin"
+},
+{
+"dist": 170.68,
+"ecmp_fwd": {
+"org": 8.92,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 8.92,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Stuttgart",
+"target": "Muenchen"
+},
+{
+"dist": 353.85,
+"ecmp_fwd": {
+"org": 2.67,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 2.67,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Muenchen",
+"target": "Leipzig"
+},
+{
+"dist": 489.41,
+"ecmp_fwd": {
+"org": 3.01,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 3.01,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Muenchen",
+"target": "Berlin"
+},
+{
+"dist": 134.06,
+"ecmp_fwd": {
+"org": 15.55,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 15.55,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Muenchen",
+"target": "Nuernberg"
+},
+{
+"dist": 231.27,
+"ecmp_fwd": {
+"org": 11.55,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 11.55,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Nuernberg",
+"target": "Leipzig"
+},
+{
+"dist": 370.78,
+"ecmp_fwd": {
+"org": 1.37,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 1.37,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Nuernberg",
+"target": "Berlin"
+},
+{
+"dist": 140.03,
+"ecmp_fwd": {
+"org": 5.87,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 5.87,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Berlin",
+"target": "Leipzig"
+}
+]
+}

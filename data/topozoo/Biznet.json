@@ -1,0 +1,647 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "biznet",
+"demands": {},
+"stats": {
+"nodes": 28,
+"links": 32,
+"demands": 756,
+"min_degree": 1,
+"avg_degree": 2.29,
+"std_degree": 0.59,
+"max_degree": 4,
+"gini": 0.12,
+"min_link_len": 30.00,
+"avg_link_len": 104.94,
+"max_link_len": 1044.76,
+"diameter_len": 2069.81,
+"diameter_hops": 15,
+"avg_sdp_num": 1.01,
+"max_sdp_num": 2,
+"avg_sdp_hops": 5.39,
+"avg_sdp_len": 317.37,
+"avg_adp_num": 1.87,
+"max_adp_num": 3,
+"avg_adp_hops": 7.54,
+"avg_adp_len": 633.82
+}
+},
+"nodes": [
+{
+"pos": [
+109.01,
+-7.73
+],
+"id": "Cilacap"
+},
+{
+"pos": [
+109.23,
+-7.42
+],
+"id": "Purwokerto"
+},
+{
+"pos": [
+106.93,
+-6.92
+],
+"id": "Sukabumi"
+},
+{
+"pos": [
+108.20,
+-7.33
+],
+"id": "Tasikmalaya"
+},
+{
+"pos": [
+109.68,
+-6.89
+],
+"id": "Pekalongan"
+},
+{
+"pos": [
+110.42,
+-6.99
+],
+"id": "Semarang"
+},
+{
+"pos": [
+110.22,
+-7.47
+],
+"id": "Magelang"
+},
+{
+"pos": [
+110.36,
+-7.78
+],
+"id": "Yogyakarta"
+},
+{
+"pos": [
+110.84,
+-6.80
+],
+"id": "Kudus"
+},
+{
+"pos": [
+110.83,
+-7.56
+],
+"id": "Surakarta"
+},
+{
+"pos": [
+123.77,
+-9.60
+],
+"id": "Nusa Dua"
+},
+{
+"pos": [
+112.75,
+-7.25
+],
+"id": "Surabaya"
+},
+{
+"pos": [
+112.02,
+-7.82
+],
+"id": "Kediri"
+},
+{
+"pos": [
+111.52,
+-7.63
+],
+"id": "Madium"
+},
+{
+"pos": [
+112.05,
+-6.90
+],
+"id": "Tuban"
+},
+{
+"pos": [
+114.36,
+-8.22
+],
+"id": "Banyunwangi"
+},
+{
+"pos": [
+113.70,
+-8.17
+],
+"id": "Jember"
+},
+{
+"pos": [
+113.22,
+-7.75
+],
+"id": "Probolinggo"
+},
+{
+"pos": [
+112.63,
+-7.98
+],
+"id": "Malang"
+},
+{
+"pos": [
+105.85,
+-6.77
+],
+"id": "Cibaliung"
+},
+{
+"pos": [
+109.14,
+-6.87
+],
+"id": "Tegal"
+},
+{
+"pos": [
+108.56,
+-6.71
+],
+"id": "Cirebon"
+},
+{
+"pos": [
+107.62,
+-6.90
+],
+"id": "Bandung"
+},
+{
+"pos": [
+107.31,
+-6.30
+],
+"id": "Karawang"
+},
+{
+"pos": [
+106.85,
+-6.21
+],
+"id": "Jakarta"
+},
+{
+"pos": [
+106.79,
+-6.59
+],
+"id": "Bogor"
+},
+{
+"pos": [
+106.15,
+-6.11
+],
+"id": "Serang"
+},
+{
+"pos": [
+105.88,
+-6.07
+],
+"id": "Anyer"
+}
+],
+"links": [
+{
+"dist": 42.03,
+"ecmp_fwd": {
+"uni": 37.32,
+"deg": 32.30
+},
+"ecmp_bwd": {
+"uni": 37.32,
+"deg": 32.30
+},
+"source": "Cilacap",
+"target": "Purwokerto"
+},
+{
+"dist": 99.39,
+"ecmp_fwd": {
+"uni": 35.21,
+"deg": 30.74
+},
+"ecmp_bwd": {
+"uni": 35.21,
+"deg": 30.74
+},
+"source": "Cilacap",
+"target": "Tasikmalaya"
+},
+{
+"dist": 108.59,
+"ecmp_fwd": {
+"uni": 39.44,
+"deg": 33.85
+},
+"ecmp_bwd": {
+"uni": 39.44,
+"deg": 33.85
+},
+"source": "Purwokerto",
+"target": "Magelang"
+},
+{
+"dist": 39.07,
+"ecmp_fwd": {
+"uni": 40.49,
+"deg": 40.47
+},
+"ecmp_bwd": {
+"uni": 40.49,
+"deg": 40.47
+},
+"source": "Sukabumi",
+"target": "Bogor"
+},
+{
+"dist": 76.42,
+"ecmp_fwd": {
+"uni": 52.46,
+"deg": 50.32
+},
+"ecmp_bwd": {
+"uni": 52.46,
+"deg": 50.32
+},
+"source": "Sukabumi",
+"target": "Bandung"
+},
+{
+"dist": 79.99,
+"ecmp_fwd": {
+"uni": 37.32,
+"deg": 33.07
+},
+"ecmp_bwd": {
+"uni": 37.32,
+"deg": 33.07
+},
+"source": "Tasikmalaya",
+"target": "Bandung"
+},
+{
+"dist": 59.13,
+"ecmp_fwd": {
+"uni": 97.89,
+"deg": 98.44
+},
+"ecmp_bwd": {
+"uni": 97.89,
+"deg": 98.44
+},
+"source": "Pekalongan",
+"target": "Tegal"
+},
+{
+"dist": 83.08,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Pekalongan",
+"target": "Semarang"
+},
+{
+"dist": 50.91,
+"ecmp_fwd": {
+"uni": 56.34,
+"deg": 53.05
+},
+"ecmp_bwd": {
+"uni": 56.34,
+"deg": 53.05
+},
+"source": "Semarang",
+"target": "Kudus"
+},
+{
+"dist": 77.33,
+"ecmp_fwd": {
+"uni": 61.27,
+"deg": 61.35
+},
+"ecmp_bwd": {
+"uni": 61.27,
+"deg": 61.35
+},
+"source": "Semarang",
+"target": "Surakarta"
+},
+{
+"dist": 38.14,
+"ecmp_fwd": {
+"uni": 41.55,
+"deg": 35.41
+},
+"ecmp_bwd": {
+"uni": 41.55,
+"deg": 35.41
+},
+"source": "Magelang",
+"target": "Yogyakarta"
+},
+{
+"dist": 57.70,
+"ecmp_fwd": {
+"uni": 43.66,
+"deg": 36.96
+},
+"ecmp_bwd": {
+"uni": 43.66,
+"deg": 36.96
+},
+"source": "Yogyakarta",
+"target": "Surakarta"
+},
+{
+"dist": 133.99,
+"ecmp_fwd": {
+"uni": 48.59,
+"deg": 46.30
+},
+"ecmp_bwd": {
+"uni": 48.59,
+"deg": 46.30
+},
+"source": "Kudus",
+"target": "Tuban"
+},
+{
+"dist": 76.76,
+"ecmp_fwd": {
+"uni": 71.83,
+"deg": 67.83
+},
+"ecmp_bwd": {
+"uni": 71.83,
+"deg": 67.83
+},
+"source": "Surakarta",
+"target": "Madium"
+},
+{
+"dist": 1044.76,
+"ecmp_fwd": {
+"uni": 19.01,
+"deg": 8.17
+},
+"ecmp_bwd": {
+"uni": 19.01,
+"deg": 8.17
+},
+"source": "Nusa Dua",
+"target": "Banyunwangi"
+},
+{
+"dist": 76.07,
+"ecmp_fwd": {
+"uni": 35.21,
+"deg": 30.74
+},
+"ecmp_bwd": {
+"uni": 35.21,
+"deg": 30.74
+},
+"source": "Surabaya",
+"target": "Probolinggo"
+},
+{
+"dist": 102.65,
+"ecmp_fwd": {
+"uni": 14.79,
+"deg": 14.92
+},
+"ecmp_bwd": {
+"uni": 14.79,
+"deg": 14.92
+},
+"source": "Surabaya",
+"target": "Kediri"
+},
+{
+"dist": 86.56,
+"ecmp_fwd": {
+"uni": 40.85,
+"deg": 39.56
+},
+"ecmp_bwd": {
+"uni": 40.85,
+"deg": 39.56
+},
+"source": "Surabaya",
+"target": "Tuban"
+},
+{
+"dist": 70.00,
+"ecmp_fwd": {
+"uni": 45.77,
+"deg": 39.30
+},
+"ecmp_bwd": {
+"uni": 45.77,
+"deg": 39.30
+},
+"source": "Kediri",
+"target": "Malang"
+},
+{
+"dist": 58.15,
+"ecmp_fwd": {
+"uni": 64.08,
+"deg": 61.09
+},
+"ecmp_bwd": {
+"uni": 64.08,
+"deg": 61.09
+},
+"source": "Kediri",
+"target": "Madium"
+},
+{
+"dist": 73.08,
+"ecmp_fwd": {
+"uni": 36.62,
+"deg": 23.74
+},
+"ecmp_bwd": {
+"uni": 36.62,
+"deg": 23.74
+},
+"source": "Banyunwangi",
+"target": "Jember"
+},
+{
+"dist": 70.56,
+"ecmp_fwd": {
+"uni": 21.83,
+"deg": 18.81
+},
+"ecmp_bwd": {
+"uni": 21.83,
+"deg": 18.81
+},
+"source": "Jember",
+"target": "Probolinggo"
+},
+{
+"dist": 119.94,
+"ecmp_fwd": {
+"uni": 32.39,
+"deg": 27.37
+},
+"ecmp_bwd": {
+"uni": 32.39,
+"deg": 27.37
+},
+"source": "Jember",
+"target": "Malang"
+},
+{
+"dist": 105.50,
+"ecmp_fwd": {
+"uni": 26.41,
+"deg": 22.57
+},
+"ecmp_bwd": {
+"uni": 26.41,
+"deg": 22.57
+},
+"source": "Cibaliung",
+"target": "Bogor"
+},
+{
+"dist": 77.95,
+"ecmp_fwd": {
+"uni": 10.21,
+"deg": 8.56
+},
+"ecmp_bwd": {
+"uni": 10.21,
+"deg": 8.56
+},
+"source": "Cibaliung",
+"target": "Anyer"
+},
+{
+"dist": 66.92,
+"ecmp_fwd": {
+"uni": 95.77,
+"deg": 96.89
+},
+"ecmp_bwd": {
+"uni": 95.77,
+"deg": 96.89
+},
+"source": "Tegal",
+"target": "Cirebon"
+},
+{
+"dist": 105.94,
+"ecmp_fwd": {
+"uni": 93.66,
+"deg": 95.33
+},
+"ecmp_bwd": {
+"uni": 93.66,
+"deg": 95.33
+},
+"source": "Cirebon",
+"target": "Bandung"
+},
+{
+"dist": 75.22,
+"ecmp_fwd": {
+"uni": 52.46,
+"deg": 50.32
+},
+"ecmp_bwd": {
+"uni": 52.46,
+"deg": 50.32
+},
+"source": "Bandung",
+"target": "Karawang"
+},
+{
+"dist": 51.85,
+"ecmp_fwd": {
+"uni": 40.49,
+"deg": 40.47
+},
+"ecmp_bwd": {
+"uni": 40.49,
+"deg": 40.47
+},
+"source": "Karawang",
+"target": "Jakarta"
+},
+{
+"dist": 42.70,
+"ecmp_fwd": {
+"uni": 4.93,
+"deg": 5.32
+},
+"ecmp_bwd": {
+"uni": 4.93,
+"deg": 5.32
+},
+"source": "Jakarta",
+"target": "Bogor"
+},
+{
+"dist": 77.64,
+"ecmp_fwd": {
+"uni": 26.41,
+"deg": 22.57
+},
+"ecmp_bwd": {
+"uni": 26.41,
+"deg": 22.57
+},
+"source": "Jakarta",
+"target": "Serang"
+},
+{
+"dist": 30.00,
+"ecmp_fwd": {
+"uni": 10.21,
+"deg": 8.56
+},
+"ecmp_bwd": {
+"uni": 10.21,
+"deg": 8.56
+},
+"source": "Serang",
+"target": "Anyer"
+}
+]
+}

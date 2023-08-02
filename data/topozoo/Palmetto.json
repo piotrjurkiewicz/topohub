@@ -1,0 +1,1182 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "palmetto",
+"demands": {},
+"stats": {
+"nodes": 45,
+"links": 64,
+"demands": 1980,
+"min_degree": 1,
+"avg_degree": 2.84,
+"std_degree": 1.03,
+"max_degree": 5,
+"gini": 0.20,
+"min_link_len": 19.32,
+"avg_link_len": 67.06,
+"max_link_len": 177.28,
+"diameter_len": 618.06,
+"diameter_hops": 12,
+"avg_sdp_num": 1.06,
+"max_sdp_num": 3,
+"avg_sdp_hops": 4.77,
+"avg_sdp_len": 225.86,
+"avg_adp_num": 1.93,
+"max_adp_num": 5,
+"avg_adp_hops": 6.02,
+"avg_adp_len": 414.04
+}
+},
+"nodes": [
+{
+"pos": [
+-81.03,
+34.92
+],
+"id": "Rock Hill"
+},
+{
+"pos": [
+-80.84,
+35.23
+],
+"id": "Charlotte"
+},
+{
+"pos": [
+-80.35,
+34.41
+],
+"id": "Bethune"
+},
+{
+"pos": [
+-80.77,
+34.72
+],
+"id": "Lancaster"
+},
+{
+"pos": [
+-80.62,
+36.06
+],
+"id": "Courtney"
+},
+{
+"pos": [
+-80.25,
+35.82
+],
+"id": "Lexington"
+},
+{
+"pos": [
+-80.58,
+35.41
+],
+"id": "Concord"
+},
+{
+"pos": [
+-80.46,
+35.64
+],
+"id": "Salisbury"
+},
+{
+"pos": [
+-80.01,
+35.96
+],
+"id": "High Point"
+},
+{
+"pos": [
+-79.81,
+35.71
+],
+"id": "Asheboro"
+},
+{
+"pos": [
+-80.86,
+33.49
+],
+"id": "Orangeburg"
+},
+{
+"pos": [
+-81.72,
+33.56
+],
+"id": "Aiken"
+},
+{
+"pos": [
+-81.21,
+34.70
+],
+"id": "Chester"
+},
+{
+"pos": [
+-81.03,
+34.00
+],
+"id": "Columbia"
+},
+{
+"pos": [
+-80.34,
+33.92
+],
+"id": "Sumter"
+},
+{
+"pos": [
+-79.29,
+33.38
+],
+"id": "Georgetown"
+},
+{
+"pos": [
+-80.01,
+33.20
+],
+"id": "Moncks Corner"
+},
+{
+"pos": [
+-79.93,
+32.78
+],
+"id": "Charleston"
+},
+{
+"pos": [
+-80.58,
+33.19
+],
+"id": "St George"
+},
+{
+"pos": [
+-80.67,
+32.91
+],
+"id": "Walterboro"
+},
+{
+"pos": [
+-80.85,
+32.69
+],
+"id": "Yemassee"
+},
+{
+"pos": [
+-81.97,
+33.50
+],
+"id": "Augusta"
+},
+{
+"pos": [
+-80.75,
+32.22
+],
+"id": "Hilton Head"
+},
+{
+"pos": [
+-80.67,
+32.43
+],
+"id": "Beaufort"
+},
+{
+"pos": [
+-81.10,
+32.08
+],
+"id": "Savannah"
+},
+{
+"pos": [
+-82.16,
+34.20
+],
+"id": "Greenwood"
+},
+{
+"pos": [
+-82.39,
+34.33
+],
+"id": "Due West"
+},
+{
+"pos": [
+-81.93,
+34.95
+],
+"id": "Spartanburg"
+},
+{
+"pos": [
+-82.55,
+35.60
+],
+"id": "Asheville"
+},
+{
+"pos": [
+-81.67,
+36.22
+],
+"id": "Boone"
+},
+{
+"pos": [
+-81.34,
+35.73
+],
+"id": "Hickory"
+},
+{
+"pos": [
+-82.65,
+34.50
+],
+"id": "Anderson"
+},
+{
+"pos": [
+-82.84,
+34.68
+],
+"id": "Clemson"
+},
+{
+"pos": [
+-83.33,
+34.58
+],
+"id": "Toccoa"
+},
+{
+"pos": [
+-82.39,
+34.85
+],
+"id": "Greenville"
+},
+{
+"pos": [
+-78.89,
+33.69
+],
+"id": "Myrtle Beach"
+},
+{
+"pos": [
+-79.76,
+34.20
+],
+"id": "Florence"
+},
+{
+"pos": [
+-81.53,
+36.35
+],
+"id": "Baldwin"
+},
+{
+"pos": [
+-81.12,
+36.51
+],
+"id": "Sparta"
+},
+{
+"pos": [
+-80.61,
+36.50
+],
+"id": "Level Cross"
+},
+{
+"pos": [
+-79.79,
+36.07
+],
+"id": "Greensboro"
+},
+{
+"pos": [
+-78.64,
+35.77
+],
+"id": "Raleigh"
+},
+{
+"pos": [
+-77.80,
+35.92
+],
+"id": "Rocky Mount"
+},
+{
+"pos": [
+-78.88,
+35.05
+],
+"id": "Fayetteville"
+},
+{
+"pos": [
+-77.94,
+34.23
+],
+"id": "Wilmington"
+}
+],
+"links": [
+{
+"dist": 37.47,
+"ecmp_fwd": {
+"uni": 91.94,
+"deg": 93.97
+},
+"ecmp_bwd": {
+"uni": 91.85,
+"deg": 93.84
+},
+"source": "Rock Hill",
+"target": "Charlotte"
+},
+{
+"dist": 32.49,
+"ecmp_fwd": {
+"uni": 30.90,
+"deg": 32.17
+},
+"ecmp_bwd": {
+"uni": 31.40,
+"deg": 32.71
+},
+"source": "Rock Hill",
+"target": "Lancaster"
+},
+{
+"dist": 29.95,
+"ecmp_fwd": {
+"uni": 72.86,
+"deg": 73.53
+},
+"ecmp_bwd": {
+"uni": 72.45,
+"deg": 73.11
+},
+"source": "Rock Hill",
+"target": "Chester"
+},
+{
+"dist": 103.80,
+"ecmp_fwd": {
+"uni": 48.38,
+"deg": 49.72
+},
+"ecmp_bwd": {
+"uni": 48.51,
+"deg": 50.13
+},
+"source": "Charlotte",
+"target": "Spartanburg"
+},
+{
+"dist": 31.32,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 99.79,
+"deg": 99.46
+},
+"source": "Charlotte",
+"target": "Concord"
+},
+{
+"dist": 51.48,
+"ecmp_fwd": {
+"uni": 28.18,
+"deg": 30.77
+},
+"ecmp_bwd": {
+"uni": 27.69,
+"deg": 30.22
+},
+"source": "Bethune",
+"target": "Lancaster"
+},
+{
+"dist": 59.13,
+"ecmp_fwd": {
+"uni": 17.72,
+"deg": 20.54
+},
+"ecmp_bwd": {
+"uni": 17.03,
+"deg": 19.95
+},
+"source": "Bethune",
+"target": "Florence"
+},
+{
+"dist": 55.00,
+"ecmp_fwd": {
+"uni": 13.75,
+"deg": 15.20
+},
+"ecmp_bwd": {
+"uni": 14.93,
+"deg": 16.33
+},
+"source": "Bethune",
+"target": "Sumter"
+},
+{
+"dist": 42.23,
+"ecmp_fwd": {
+"uni": 75.60,
+"deg": 65.76
+},
+"ecmp_bwd": {
+"uni": 75.60,
+"deg": 65.76
+},
+"source": "Courtney",
+"target": "Lexington"
+},
+{
+"dist": 87.90,
+"ecmp_fwd": {
+"uni": 39.12,
+"deg": 30.86
+},
+"ecmp_bwd": {
+"uni": 39.12,
+"deg": 30.86
+},
+"source": "Courtney",
+"target": "Baldwin"
+},
+{
+"dist": 48.86,
+"ecmp_fwd": {
+"uni": 23.62,
+"deg": 18.60
+},
+"ecmp_bwd": {
+"uni": 23.62,
+"deg": 18.60
+},
+"source": "Courtney",
+"target": "Level Cross"
+},
+{
+"dist": 26.72,
+"ecmp_fwd": {
+"uni": 40.82,
+"deg": 43.19
+},
+"ecmp_bwd": {
+"uni": 40.61,
+"deg": 42.65
+},
+"source": "Lexington",
+"target": "High Point"
+},
+{
+"dist": 41.74,
+"ecmp_fwd": {
+"uni": 10.77,
+"deg": 8.12
+},
+"ecmp_bwd": {
+"uni": 10.77,
+"deg": 8.12
+},
+"source": "Lexington",
+"target": "Asheboro"
+},
+{
+"dist": 54.80,
+"ecmp_fwd": {
+"uni": 82.59,
+"deg": 82.55
+},
+"ecmp_bwd": {
+"uni": 82.78,
+"deg": 83.06
+},
+"source": "Lexington",
+"target": "Concord"
+},
+{
+"dist": 27.55,
+"ecmp_fwd": {
+"uni": 5.46,
+"deg": 4.06
+},
+"ecmp_bwd": {
+"uni": 5.48,
+"deg": 4.09
+},
+"source": "Lexington",
+"target": "Salisbury"
+},
+{
+"dist": 28.20,
+"ecmp_fwd": {
+"uni": 11.17,
+"deg": 8.81
+},
+"ecmp_bwd": {
+"uni": 11.15,
+"deg": 8.79
+},
+"source": "Concord",
+"target": "Salisbury"
+},
+{
+"dist": 23.19,
+"ecmp_fwd": {
+"uni": 45.17,
+"deg": 47.02
+},
+"ecmp_bwd": {
+"uni": 44.96,
+"deg": 46.48
+},
+"source": "High Point",
+"target": "Greensboro"
+},
+{
+"dist": 32.53,
+"ecmp_fwd": {
+"uni": 5.86,
+"deg": 4.75
+},
+"ecmp_bwd": {
+"uni": 5.86,
+"deg": 4.75
+},
+"source": "High Point",
+"target": "Asheboro"
+},
+{
+"dist": 42.83,
+"ecmp_fwd": {
+"uni": 18.05,
+"deg": 17.42
+},
+"ecmp_bwd": {
+"uni": 18.49,
+"deg": 17.87
+},
+"source": "Orangeburg",
+"target": "St George"
+},
+{
+"dist": 58.98,
+"ecmp_fwd": {
+"uni": 28.60,
+"deg": 25.79
+},
+"ecmp_bwd": {
+"uni": 28.16,
+"deg": 25.34
+},
+"source": "Orangeburg",
+"target": "Columbia"
+},
+{
+"dist": 23.68,
+"ecmp_fwd": {
+"uni": 5.48,
+"deg": 4.45
+},
+"ecmp_bwd": {
+"uni": 5.39,
+"deg": 4.36
+},
+"source": "Aiken",
+"target": "Augusta"
+},
+{
+"dist": 80.03,
+"ecmp_fwd": {
+"uni": 11.15,
+"deg": 8.43
+},
+"ecmp_bwd": {
+"uni": 11.24,
+"deg": 8.52
+},
+"source": "Aiken",
+"target": "Columbia"
+},
+{
+"dist": 115.22,
+"ecmp_fwd": {
+"uni": 27.21,
+"deg": 23.57
+},
+"ecmp_bwd": {
+"uni": 26.33,
+"deg": 22.47
+},
+"source": "Chester",
+"target": "Due West"
+},
+{
+"dist": 80.03,
+"ecmp_fwd": {
+"uni": 69.45,
+"deg": 71.95
+},
+"ecmp_bwd": {
+"uni": 69.93,
+"deg": 72.64
+},
+"source": "Chester",
+"target": "Columbia"
+},
+{
+"dist": 102.38,
+"ecmp_fwd": {
+"uni": 47.72,
+"deg": 62.03
+},
+"ecmp_bwd": {
+"uni": 48.16,
+"deg": 62.80
+},
+"source": "Columbia",
+"target": "Augusta"
+},
+{
+"dist": 64.58,
+"ecmp_fwd": {
+"uni": 46.78,
+"deg": 58.34
+},
+"ecmp_bwd": {
+"uni": 46.46,
+"deg": 57.89
+},
+"source": "Columbia",
+"target": "Sumter"
+},
+{
+"dist": 86.13,
+"ecmp_fwd": {
+"uni": 15.45,
+"deg": 14.89
+},
+"ecmp_bwd": {
+"uni": 15.56,
+"deg": 14.80
+},
+"source": "Sumter",
+"target": "Moncks Corner"
+},
+{
+"dist": 61.49,
+"ecmp_fwd": {
+"uni": 29.67,
+"deg": 37.53
+},
+"ecmp_bwd": {
+"uni": 30.43,
+"deg": 38.38
+},
+"source": "Sumter",
+"target": "Florence"
+},
+{
+"dist": 114.25,
+"ecmp_fwd": {
+"uni": 12.19,
+"deg": 10.63
+},
+"ecmp_bwd": {
+"uni": 12.19,
+"deg": 10.55
+},
+"source": "Sumter",
+"target": "Georgetown"
+},
+{
+"dist": 51.34,
+"ecmp_fwd": {
+"uni": 7.56,
+"deg": 6.95
+},
+"ecmp_bwd": {
+"uni": 7.56,
+"deg": 6.87
+},
+"source": "Georgetown",
+"target": "Myrtle Beach"
+},
+{
+"dist": 47.28,
+"ecmp_fwd": {
+"uni": 8.27,
+"deg": 9.57
+},
+"ecmp_bwd": {
+"uni": 8.38,
+"deg": 9.49
+},
+"source": "Moncks Corner",
+"target": "Charleston"
+},
+{
+"dist": 134.10,
+"ecmp_fwd": {
+"uni": 32.85,
+"deg": 39.30
+},
+"ecmp_bwd": {
+"uni": 33.07,
+"deg": 39.21
+},
+"source": "Charleston",
+"target": "Savannah"
+},
+{
+"dist": 75.45,
+"ecmp_fwd": {
+"uni": 13.86,
+"deg": 14.62
+},
+"ecmp_bwd": {
+"uni": 13.61,
+"deg": 14.27
+},
+"source": "Charleston",
+"target": "St George"
+},
+{
+"dist": 140.49,
+"ecmp_fwd": {
+"uni": 36.66,
+"deg": 41.44
+},
+"ecmp_bwd": {
+"uni": 36.81,
+"deg": 41.80
+},
+"source": "Charleston",
+"target": "Myrtle Beach"
+},
+{
+"dist": 32.37,
+"ecmp_fwd": {
+"uni": 13.61,
+"deg": 10.58
+},
+"ecmp_bwd": {
+"uni": 13.80,
+"deg": 10.68
+},
+"source": "St George",
+"target": "Walterboro"
+},
+{
+"dist": 29.45,
+"ecmp_fwd": {
+"uni": 6.52,
+"deg": 5.21
+},
+"ecmp_bwd": {
+"uni": 6.71,
+"deg": 5.31
+},
+"source": "Walterboro",
+"target": "Yemassee"
+},
+{
+"dist": 71.42,
+"ecmp_fwd": {
+"uni": 33.07,
+"deg": 32.14
+},
+"ecmp_bwd": {
+"uni": 33.17,
+"deg": 32.19
+},
+"source": "Yemassee",
+"target": "Savannah"
+},
+{
+"dist": 53.50,
+"ecmp_fwd": {
+"uni": 1.42,
+"deg": 0.92
+},
+"ecmp_bwd": {
+"uni": 1.51,
+"deg": 0.97
+},
+"source": "Yemassee",
+"target": "Hilton Head"
+},
+{
+"dist": 33.39,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 6.49
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 6.49
+},
+"source": "Yemassee",
+"target": "Beaufort"
+},
+{
+"dist": 177.28,
+"ecmp_fwd": {
+"uni": 53.86,
+"deg": 59.98
+},
+"ecmp_bwd": {
+"uni": 53.45,
+"deg": 59.97
+},
+"source": "Augusta",
+"target": "Savannah"
+},
+{
+"dist": 128.07,
+"ecmp_fwd": {
+"uni": 48.19,
+"deg": 59.21
+},
+"ecmp_bwd": {
+"uni": 48.95,
+"deg": 59.90
+},
+"source": "Augusta",
+"target": "Anderson"
+},
+{
+"dist": 35.88,
+"ecmp_fwd": {
+"uni": 15.12,
+"deg": 11.91
+},
+"ecmp_bwd": {
+"uni": 15.21,
+"deg": 11.96
+},
+"source": "Hilton Head",
+"target": "Savannah"
+},
+{
+"dist": 25.84,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 6.49
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 6.49
+},
+"source": "Greenwood",
+"target": "Due West"
+},
+{
+"dist": 30.60,
+"ecmp_fwd": {
+"uni": 15.69,
+"deg": 15.43
+},
+"ecmp_bwd": {
+"uni": 14.80,
+"deg": 14.32
+},
+"source": "Due West",
+"target": "Anderson"
+},
+{
+"dist": 43.50,
+"ecmp_fwd": {
+"uni": 29.25,
+"deg": 33.47
+},
+"ecmp_bwd": {
+"uni": 29.42,
+"deg": 33.78
+},
+"source": "Spartanburg",
+"target": "Greenville"
+},
+{
+"dist": 102.32,
+"ecmp_fwd": {
+"uni": 17.62,
+"deg": 13.44
+},
+"ecmp_bwd": {
+"uni": 17.58,
+"deg": 13.54
+},
+"source": "Spartanburg",
+"target": "Hickory"
+},
+{
+"dist": 84.49,
+"ecmp_fwd": {
+"uni": 14.93,
+"deg": 11.80
+},
+"ecmp_bwd": {
+"uni": 14.88,
+"deg": 11.91
+},
+"source": "Asheville",
+"target": "Greenville"
+},
+{
+"dist": 110.58,
+"ecmp_fwd": {
+"uni": 6.61,
+"deg": 5.06
+},
+"ecmp_bwd": {
+"uni": 6.66,
+"deg": 4.96
+},
+"source": "Asheville",
+"target": "Hickory"
+},
+{
+"dist": 19.32,
+"ecmp_fwd": {
+"uni": 16.63,
+"deg": 6.49
+},
+"ecmp_bwd": {
+"uni": 16.63,
+"deg": 6.49
+},
+"source": "Boone",
+"target": "Baldwin"
+},
+{
+"dist": 26.36,
+"ecmp_fwd": {
+"uni": 22.46,
+"deg": 26.81
+},
+"ecmp_bwd": {
+"uni": 22.40,
+"deg": 26.61
+},
+"source": "Anderson",
+"target": "Clemson"
+},
+{
+"dist": 63.05,
+"ecmp_fwd": {
+"uni": 22.46,
+"deg": 26.81
+},
+"ecmp_bwd": {
+"uni": 22.40,
+"deg": 26.61
+},
+"source": "Anderson",
+"target": "Toccoa"
+},
+{
+"dist": 46.82,
+"ecmp_fwd": {
+"uni": 0.38,
+"deg": 0.46
+},
+"ecmp_bwd": {
+"uni": 0.38,
+"deg": 0.46
+},
+"source": "Clemson",
+"target": "Toccoa"
+},
+{
+"dist": 44.67,
+"ecmp_fwd": {
+"uni": 19.06,
+"deg": 21.75
+},
+"ecmp_bwd": {
+"uni": 18.99,
+"deg": 21.55
+},
+"source": "Clemson",
+"target": "Greenville"
+},
+{
+"dist": 91.09,
+"ecmp_fwd": {
+"uni": 19.06,
+"deg": 21.75
+},
+"ecmp_bwd": {
+"uni": 18.99,
+"deg": 21.55
+},
+"source": "Toccoa",
+"target": "Greenville"
+},
+{
+"dist": 98.51,
+"ecmp_fwd": {
+"uni": 22.54,
+"deg": 27.93
+},
+"ecmp_bwd": {
+"uni": 22.87,
+"deg": 28.41
+},
+"source": "Myrtle Beach",
+"target": "Florence"
+},
+{
+"dist": 105.43,
+"ecmp_fwd": {
+"uni": 21.73,
+"deg": 21.41
+},
+"ecmp_bwd": {
+"uni": 21.55,
+"deg": 21.21
+},
+"source": "Myrtle Beach",
+"target": "Wilmington"
+},
+{
+"dist": 125.06,
+"ecmp_fwd": {
+"uni": 48.36,
+"deg": 55.95
+},
+"ecmp_bwd": {
+"uni": 48.76,
+"deg": 56.69
+},
+"source": "Florence",
+"target": "Fayetteville"
+},
+{
+"dist": 40.83,
+"ecmp_fwd": {
+"uni": 8.88,
+"deg": 6.75
+},
+"ecmp_bwd": {
+"uni": 8.88,
+"deg": 6.75
+},
+"source": "Baldwin",
+"target": "Sparta"
+},
+{
+"dist": 45.93,
+"ecmp_fwd": {
+"uni": 8.50,
+"deg": 6.54
+},
+"ecmp_bwd": {
+"uni": 8.50,
+"deg": 6.54
+},
+"source": "Sparta",
+"target": "Level Cross"
+},
+{
+"dist": 109.13,
+"ecmp_fwd": {
+"uni": 47.06,
+"deg": 49.17
+},
+"ecmp_bwd": {
+"uni": 46.85,
+"deg": 48.63
+},
+"source": "Greensboro",
+"target": "Raleigh"
+},
+{
+"dist": 77.78,
+"ecmp_fwd": {
+"uni": 5.29,
+"deg": 3.71
+},
+"ecmp_bwd": {
+"uni": 5.48,
+"deg": 3.88
+},
+"source": "Raleigh",
+"target": "Rocky Mount"
+},
+{
+"dist": 82.92,
+"ecmp_fwd": {
+"uni": 46.30,
+"deg": 51.74
+},
+"ecmp_bwd": {
+"uni": 45.90,
+"deg": 51.03
+},
+"source": "Raleigh",
+"target": "Fayetteville"
+},
+{
+"dist": 137.85,
+"ecmp_fwd": {
+"uni": 11.15,
+"deg": 8.99
+},
+"ecmp_bwd": {
+"uni": 11.34,
+"deg": 9.16
+},
+"source": "Rocky Mount",
+"target": "Fayetteville"
+},
+{
+"dist": 125.54,
+"ecmp_fwd": {
+"uni": 19.70,
+"deg": 19.32
+},
+"ecmp_bwd": {
+"uni": 19.89,
+"deg": 19.52
+},
+"source": "Fayetteville",
+"target": "Wilmington"
+}
+]
+}

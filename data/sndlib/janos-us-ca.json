@@ -1,0 +1,2784 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "janos_us_ca",
+"demands": {
+"Vancouver": {
+"LosAngeles": 1770.00,
+"SanFrancisco": 973.00,
+"LasVegas": 170.00,
+"SaltLakeCity": 136.00,
+"ElPaso": 55.00,
+"Dallas": 384.00,
+"Houston": 321.00,
+"OklahomaCity": 83.00,
+"Minneapolis": 268.00,
+"KansasCity": 146.00,
+"Denver": 256.00,
+"Chicago": 666.00,
+"Indianapolis": 117.00,
+"Detroit": 349.00,
+"StLouis": 192.00,
+"Nashville": 85.00,
+"Cleveland": 177.00,
+"NewYork": 1189.00,
+"Montreal": 197.00,
+"Charlotte": 80.00,
+"NewOrleans": 78.00,
+"Boston": 304.00,
+"Atlanta": 274.00,
+"Miami": 263.00,
+"WashingtonDC": 437.00,
+"Philadelphia": 329.00,
+"Toronto": 289.00,
+"Pittsburgh": 145.00,
+"Cincinnati": 129.00,
+"Tampa": 131.00,
+"Memphis": 80.00,
+"Winnipeg": 65.00,
+"Calgary": 241.00,
+"Seattle": 3428.00,
+"Portland": 863.00,
+"Sacrameto": 281.00,
+"Phoenix": 326.00,
+"SanDiego": 281.00
+},
+"LosAngeles": {
+"Vancouver": 1770.00,
+"SanFrancisco": 19465.00,
+"LasVegas": 6106.00,
+"SaltLakeCity": 1546.00,
+"ElPaso": 906.00,
+"Dallas": 4348.00,
+"Houston": 3637.00,
+"OklahomaCity": 868.00,
+"Minneapolis": 2160.00,
+"KansasCity": 1390.00,
+"Denver": 2784.00,
+"Chicago": 5753.00,
+"Indianapolis": 1045.00,
+"Detroit": 2960.00,
+"StLouis": 1789.00,
+"Nashville": 801.00,
+"Cleveland": 1522.00,
+"NewYork": 10114.00,
+"Montreal": 1607.00,
+"Charlotte": 737.00,
+"NewOrleans": 817.00,
+"Boston": 2542.00,
+"Atlanta": 2611.00,
+"Miami": 2554.00,
+"WashingtonDC": 3813.00,
+"Philadelphia": 2827.00,
+"Toronto": 2400.00,
+"Pittsburgh": 1254.00,
+"Cincinnati": 1155.00,
+"Tampa": 1287.00,
+"Memphis": 790.00,
+"Winnipeg": 447.00,
+"Calgary": 774.00,
+"Seattle": 3556.00,
+"Portland": 2265.00,
+"Sacrameto": 4865.00,
+"Phoenix": 8690.00,
+"SanDiego": 30034.00
+},
+"SanFrancisco": {
+"Vancouver": 973.00,
+"LosAngeles": 19465.00,
+"LasVegas": 1418.00,
+"SaltLakeCity": 643.00,
+"ElPaso": 282.00,
+"Dallas": 1595.00,
+"Houston": 1337.00,
+"OklahomaCity": 328.00,
+"Minneapolis": 888.00,
+"KansasCity": 543.00,
+"Denver": 1056.00,
+"Chicago": 2323.00,
+"Indianapolis": 418.00,
+"Detroit": 1205.00,
+"StLouis": 705.00,
+"Nashville": 315.00,
+"Cleveland": 618.00,
+"NewYork": 4137.00,
+"Montreal": 665.00,
+"Charlotte": 294.00,
+"NewOrleans": 311.00,
+"Boston": 1046.00,
+"Atlanta": 1027.00,
+"Miami": 1005.00,
+"WashingtonDC": 1546.00,
+"Philadelphia": 1152.00,
+"Toronto": 985.00,
+"Pittsburgh": 509.00,
+"Cincinnati": 462.00,
+"Tampa": 504.00,
+"Memphis": 306.00,
+"Winnipeg": 191.00,
+"Calgary": 377.00,
+"Seattle": 2046.00,
+"Portland": 1417.00,
+"Sacrameto": 11724.00,
+"Phoenix": 2085.00,
+"SanDiego": 2509.00
+},
+"LasVegas": {
+"Vancouver": 170.00,
+"LosAngeles": 6106.00,
+"SanFrancisco": 1418.00,
+"SaltLakeCity": 221.00,
+"ElPaso": 97.00,
+"Dallas": 442.00,
+"Houston": 358.00,
+"OklahomaCity": 89.00,
+"Minneapolis": 220.00,
+"KansasCity": 144.00,
+"Denver": 334.00,
+"Chicago": 573.00,
+"Indianapolis": 103.00,
+"Detroit": 289.00,
+"StLouis": 179.00,
+"Nashville": 78.00,
+"Cleveland": 148.00,
+"NewYork": 965.00,
+"Montreal": 153.00,
+"Charlotte": 71.00,
+"NewOrleans": 79.00,
+"Boston": 241.00,
+"Atlanta": 252.00,
+"Miami": 240.00,
+"WashingtonDC": 365.00,
+"Philadelphia": 270.00,
+"Toronto": 232.00,
+"Pittsburgh": 121.00,
+"Cincinnati": 113.00,
+"Tampa": 122.00,
+"Memphis": 78.00,
+"Winnipeg": 45.00,
+"Calgary": 78.00,
+"Seattle": 346.00,
+"Portland": 219.00,
+"Sacrameto": 407.00,
+"Phoenix": 1144.00,
+"SanDiego": 967.00
+},
+"SaltLakeCity": {
+"Vancouver": 136.00,
+"LosAngeles": 1546.00,
+"SanFrancisco": 643.00,
+"LasVegas": 221.00,
+"ElPaso": 54.00,
+"Dallas": 307.00,
+"Houston": 239.00,
+"OklahomaCity": 67.00,
+"Minneapolis": 182.00,
+"KansasCity": 113.00,
+"Denver": 353.00,
+"Chicago": 439.00,
+"Indianapolis": 76.00,
+"Detroit": 216.00,
+"StLouis": 136.00,
+"Nashville": 56.00,
+"Cleveland": 109.00,
+"NewYork": 691.00,
+"Montreal": 111.00,
+"Charlotte": 50.00,
+"NewOrleans": 53.00,
+"Boston": 172.00,
+"Atlanta": 178.00,
+"Miami": 162.00,
+"WashingtonDC": 262.00,
+"Philadelphia": 193.00,
+"Toronto": 171.00,
+"Pittsburgh": 88.00,
+"Cincinnati": 83.00,
+"Tampa": 83.00,
+"Memphis": 56.00,
+"Winnipeg": 39.00,
+"Calgary": 71.00,
+"Seattle": 280.00,
+"Portland": 171.00,
+"Sacrameto": 195.00,
+"Phoenix": 367.00,
+"SanDiego": 251.00
+},
+"ElPaso": {
+"Vancouver": 55.00,
+"LosAngeles": 906.00,
+"SanFrancisco": 282.00,
+"LasVegas": 97.00,
+"SaltLakeCity": 54.00,
+"Dallas": 364.00,
+"Houston": 281.00,
+"OklahomaCity": 62.00,
+"Minneapolis": 111.00,
+"KansasCity": 86.00,
+"Denver": 169.00,
+"Chicago": 309.00,
+"Indianapolis": 57.00,
+"Detroit": 152.00,
+"StLouis": 105.00,
+"Nashville": 46.00,
+"Cleveland": 78.00,
+"NewYork": 498.00,
+"Montreal": 76.00,
+"Charlotte": 39.00,
+"NewOrleans": 52.00,
+"Boston": 122.00,
+"Atlanta": 148.00,
+"Miami": 136.00,
+"WashingtonDC": 193.00,
+"Philadelphia": 140.00,
+"Toronto": 119.00,
+"Pittsburgh": 64.00,
+"Cincinnati": 62.00,
+"Tampa": 71.00,
+"Memphis": 49.00,
+"Winnipeg": 20.00,
+"Calgary": 28.00,
+"Seattle": 107.00,
+"Portland": 63.00,
+"Sacrameto": 77.00,
+"Phoenix": 379.00,
+"SanDiego": 173.00
+},
+"Dallas": {
+"Vancouver": 384.00,
+"LosAngeles": 4348.00,
+"SanFrancisco": 1595.00,
+"LasVegas": 442.00,
+"SaltLakeCity": 307.00,
+"ElPaso": 364.00,
+"Houston": 7026.00,
+"OklahomaCity": 1432.00,
+"Minneapolis": 1128.00,
+"KansasCity": 1197.00,
+"Denver": 1141.00,
+"Chicago": 3569.00,
+"Indianapolis": 705.00,
+"Detroit": 1658.00,
+"StLouis": 1481.00,
+"Nashville": 642.00,
+"Cleveland": 856.00,
+"NewYork": 5035.00,
+"Montreal": 745.00,
+"Charlotte": 464.00,
+"NewOrleans": 849.00,
+"Boston": 1195.00,
+"Atlanta": 1934.00,
+"Miami": 1470.00,
+"WashingtonDC": 2059.00,
+"Philadelphia": 1450.00,
+"Toronto": 1228.00,
+"Pittsburgh": 700.00,
+"Cincinnati": 753.00,
+"Tampa": 823.00,
+"Memphis": 855.00,
+"Winnipeg": 179.00,
+"Calgary": 204.00,
+"Seattle": 721.00,
+"Portland": 414.00,
+"Sacrameto": 438.00,
+"Phoenix": 1206.00,
+"SanDiego": 776.00
+},
+"Houston": {
+"Vancouver": 321.00,
+"LosAngeles": 3637.00,
+"SanFrancisco": 1337.00,
+"LasVegas": 358.00,
+"SaltLakeCity": 239.00,
+"ElPaso": 281.00,
+"Dallas": 7026.00,
+"OklahomaCity": 692.00,
+"Minneapolis": 864.00,
+"KansasCity": 784.00,
+"Denver": 801.00,
+"Chicago": 2835.00,
+"Indianapolis": 578.00,
+"Detroit": 1392.00,
+"StLouis": 1106.00,
+"Nashville": 553.00,
+"Cleveland": 730.00,
+"NewYork": 4484.00,
+"Montreal": 650.00,
+"Charlotte": 426.00,
+"NewOrleans": 1109.00,
+"Boston": 1063.00,
+"Atlanta": 1830.00,
+"Miami": 1510.00,
+"WashingtonDC": 1839.00,
+"Philadelphia": 1291.00,
+"Toronto": 1053.00,
+"Pittsburgh": 609.00,
+"Cincinnati": 636.00,
+"Tampa": 859.00,
+"Memphis": 695.00,
+"Winnipeg": 142.00,
+"Calgary": 168.00,
+"Seattle": 600.00,
+"Portland": 344.00,
+"Sacrameto": 365.00,
+"Phoenix": 971.00,
+"SanDiego": 650.00
+},
+"OklahomaCity": {
+"Vancouver": 83.00,
+"LosAngeles": 868.00,
+"SanFrancisco": 328.00,
+"LasVegas": 89.00,
+"SaltLakeCity": 67.00,
+"ElPaso": 62.00,
+"Dallas": 1432.00,
+"Houston": 692.00,
+"Minneapolis": 310.00,
+"KansasCity": 524.00,
+"Denver": 276.00,
+"Chicago": 976.00,
+"Indianapolis": 185.00,
+"Detroit": 409.00,
+"StLouis": 473.00,
+"Nashville": 157.00,
+"Cleveland": 207.00,
+"NewYork": 1130.00,
+"Montreal": 169.00,
+"Charlotte": 103.00,
+"NewOrleans": 142.00,
+"Boston": 266.00,
+"Atlanta": 421.00,
+"Miami": 287.00,
+"WashingtonDC": 466.00,
+"Philadelphia": 327.00,
+"Toronto": 290.00,
+"Pittsburgh": 165.00,
+"Cincinnati": 188.00,
+"Tampa": 160.00,
+"Memphis": 218.00,
+"Winnipeg": 44.00,
+"Calgary": 45.00,
+"Seattle": 155.00,
+"Portland": 88.00,
+"Sacrameto": 90.00,
+"Phoenix": 233.00,
+"SanDiego": 153.00
+},
+"Minneapolis": {
+"Vancouver": 268.00,
+"LosAngeles": 2160.00,
+"SanFrancisco": 888.00,
+"LasVegas": 220.00,
+"SaltLakeCity": 182.00,
+"ElPaso": 111.00,
+"Dallas": 1128.00,
+"Houston": 864.00,
+"OklahomaCity": 310.00,
+"KansasCity": 809.00,
+"Denver": 636.00,
+"Chicago": 4743.00,
+"Indianapolis": 589.00,
+"Detroit": 1705.00,
+"StLouis": 1024.00,
+"Nashville": 333.00,
+"Cleveland": 777.00,
+"NewYork": 3773.00,
+"Montreal": 642.00,
+"Charlotte": 268.00,
+"NewOrleans": 224.00,
+"Boston": 913.00,
+"Atlanta": 909.00,
+"Miami": 668.00,
+"WashingtonDC": 1475.00,
+"Philadelphia": 1076.00,
+"Toronto": 1176.00,
+"Pittsburgh": 566.00,
+"Cincinnati": 578.00,
+"Tampa": 354.00,
+"Memphis": 302.00,
+"Winnipeg": 308.00,
+"Calgary": 166.00,
+"Seattle": 492.00,
+"Portland": 272.00,
+"Sacrameto": 247.00,
+"Phoenix": 514.00,
+"SanDiego": 369.00
+},
+"KansasCity": {
+"Vancouver": 146.00,
+"LosAngeles": 1390.00,
+"SanFrancisco": 543.00,
+"LasVegas": 144.00,
+"SaltLakeCity": 113.00,
+"ElPaso": 86.00,
+"Dallas": 1197.00,
+"Houston": 784.00,
+"OklahomaCity": 524.00,
+"Minneapolis": 809.00,
+"Denver": 470.00,
+"Chicago": 2391.00,
+"Indianapolis": 398.00,
+"Detroit": 851.00,
+"StLouis": 1216.00,
+"Nashville": 277.00,
+"Cleveland": 415.00,
+"NewYork": 2081.00,
+"Montreal": 320.00,
+"Charlotte": 180.00,
+"NewOrleans": 190.00,
+"Boston": 490.00,
+"Atlanta": 690.00,
+"Miami": 457.00,
+"WashingtonDC": 858.00,
+"Philadelphia": 603.00,
+"Toronto": 575.00,
+"Pittsburgh": 318.00,
+"Cincinnati": 377.00,
+"Tampa": 252.00,
+"Memphis": 319.00,
+"Winnipeg": 93.00,
+"Calgary": 83.00,
+"Seattle": 272.00,
+"Portland": 153.00,
+"Sacrameto": 150.00,
+"Phoenix": 357.00,
+"SanDiego": 242.00
+},
+"Denver": {
+"Vancouver": 256.00,
+"LosAngeles": 2784.00,
+"SanFrancisco": 1056.00,
+"LasVegas": 334.00,
+"SaltLakeCity": 353.00,
+"ElPaso": 169.00,
+"Dallas": 1141.00,
+"Houston": 801.00,
+"OklahomaCity": 276.00,
+"Minneapolis": 636.00,
+"KansasCity": 470.00,
+"Chicago": 1473.00,
+"Indianapolis": 253.00,
+"Detroit": 677.00,
+"StLouis": 486.00,
+"Nashville": 187.00,
+"Cleveland": 339.00,
+"NewYork": 2023.00,
+"Montreal": 323.00,
+"Charlotte": 154.00,
+"NewOrleans": 173.00,
+"Boston": 497.00,
+"Atlanta": 562.00,
+"Miami": 474.00,
+"WashingtonDC": 784.00,
+"Philadelphia": 572.00,
+"Toronto": 517.00,
+"Pittsburgh": 270.00,
+"Cincinnati": 268.00,
+"Tampa": 248.00,
+"Memphis": 195.00,
+"Winnipeg": 116.00,
+"Calgary": 147.00,
+"Seattle": 497.00,
+"Portland": 288.00,
+"Sacrameto": 301.00,
+"Phoenix": 802.00,
+"SanDiego": 482.00
+},
+"Chicago": {
+"Vancouver": 666.00,
+"LosAngeles": 5753.00,
+"SanFrancisco": 2323.00,
+"LasVegas": 573.00,
+"SaltLakeCity": 439.00,
+"ElPaso": 309.00,
+"Dallas": 3569.00,
+"Houston": 2835.00,
+"OklahomaCity": 976.00,
+"Minneapolis": 4743.00,
+"KansasCity": 2391.00,
+"Denver": 1473.00,
+"Indianapolis": 5321.00,
+"Detroit": 11246.00,
+"StLouis": 5560.00,
+"Nashville": 1677.00,
+"Cleveland": 4536.00,
+"NewYork": 15065.00,
+"Montreal": 2353.00,
+"Charlotte": 1200.00,
+"NewOrleans": 810.00,
+"Boston": 3402.00,
+"Atlanta": 3944.00,
+"Miami": 2385.00,
+"WashingtonDC": 6474.00,
+"Philadelphia": 4463.00,
+"Toronto": 5335.00,
+"Pittsburgh": 2889.00,
+"Cincinnati": 4008.00,
+"Tampa": 1307.00,
+"Memphis": 1279.00,
+"Winnipeg": 491.00,
+"Calgary": 384.00,
+"Seattle": 1222.00,
+"Portland": 681.00,
+"Sacrameto": 642.00,
+"Phoenix": 1372.00,
+"SanDiego": 992.00
+},
+"Indianapolis": {
+"Vancouver": 117.00,
+"LosAngeles": 1045.00,
+"SanFrancisco": 418.00,
+"LasVegas": 103.00,
+"SaltLakeCity": 76.00,
+"ElPaso": 57.00,
+"Dallas": 705.00,
+"Houston": 578.00,
+"OklahomaCity": 185.00,
+"Minneapolis": 589.00,
+"KansasCity": 398.00,
+"Denver": 253.00,
+"Chicago": 5321.00,
+"Detroit": 2069.00,
+"StLouis": 1193.00,
+"Nashville": 542.00,
+"Cleveland": 1012.00,
+"NewYork": 3117.00,
+"Montreal": 437.00,
+"Charlotte": 316.00,
+"NewOrleans": 178.00,
+"Boston": 670.00,
+"Atlanta": 1042.00,
+"Miami": 513.00,
+"WashingtonDC": 1480.00,
+"Philadelphia": 953.00,
+"Toronto": 987.00,
+"Pittsburgh": 686.00,
+"Cincinnati": 2355.00,
+"Tampa": 290.00,
+"Memphis": 312.00,
+"Winnipeg": 74.00,
+"Calgary": 65.00,
+"Seattle": 214.00,
+"Portland": 120.00,
+"Sacrameto": 115.00,
+"Phoenix": 250.00,
+"SanDiego": 181.00
+},
+"Detroit": {
+"Vancouver": 349.00,
+"LosAngeles": 2960.00,
+"SanFrancisco": 1205.00,
+"LasVegas": 289.00,
+"SaltLakeCity": 216.00,
+"ElPaso": 152.00,
+"Dallas": 1658.00,
+"Houston": 1392.00,
+"OklahomaCity": 409.00,
+"Minneapolis": 1705.00,
+"KansasCity": 851.00,
+"Denver": 677.00,
+"Chicago": 11246.00,
+"Indianapolis": 2069.00,
+"StLouis": 1724.00,
+"Nashville": 819.00,
+"Cleveland": 11098.00,
+"NewYork": 12620.00,
+"Montreal": 1927.00,
+"Charlotte": 799.00,
+"NewOrleans": 415.00,
+"Boston": 2667.00,
+"Atlanta": 2229.00,
+"Miami": 1398.00,
+"WashingtonDC": 5618.00,
+"Philadelphia": 3856.00,
+"Toronto": 7075.00,
+"Pittsburgh": 3524.00,
+"Cincinnati": 2549.00,
+"Tampa": 754.00,
+"Memphis": 569.00,
+"Winnipeg": 235.00,
+"Calgary": 197.00,
+"Seattle": 636.00,
+"Portland": 354.00,
+"Sacrameto": 331.00,
+"Phoenix": 689.00,
+"SanDiego": 509.00
+},
+"StLouis": {
+"Vancouver": 192.00,
+"LosAngeles": 1789.00,
+"SanFrancisco": 705.00,
+"LasVegas": 179.00,
+"SaltLakeCity": 136.00,
+"ElPaso": 105.00,
+"Dallas": 1481.00,
+"Houston": 1106.00,
+"OklahomaCity": 473.00,
+"Minneapolis": 1024.00,
+"KansasCity": 1216.00,
+"Denver": 486.00,
+"Chicago": 5560.00,
+"Indianapolis": 1193.00,
+"Detroit": 1724.00,
+"Nashville": 748.00,
+"Cleveland": 843.00,
+"NewYork": 3677.00,
+"Montreal": 540.00,
+"Charlotte": 362.00,
+"NewOrleans": 315.00,
+"Boston": 833.00,
+"Atlanta": 1423.00,
+"Miami": 761.00,
+"WashingtonDC": 1610.00,
+"Philadelphia": 1088.00,
+"Toronto": 1048.00,
+"Pittsburgh": 631.00,
+"Cincinnati": 960.00,
+"Tampa": 433.00,
+"Memphis": 737.00,
+"Winnipeg": 121.00,
+"Calgary": 108.00,
+"Seattle": 355.00,
+"Portland": 200.00,
+"Sacrameto": 194.00,
+"Phoenix": 443.00,
+"SanDiego": 311.00
+},
+"Nashville": {
+"Vancouver": 85.00,
+"LosAngeles": 801.00,
+"SanFrancisco": 315.00,
+"LasVegas": 78.00,
+"SaltLakeCity": 56.00,
+"ElPaso": 46.00,
+"Dallas": 642.00,
+"Houston": 553.00,
+"OklahomaCity": 157.00,
+"Minneapolis": 333.00,
+"KansasCity": 277.00,
+"Denver": 187.00,
+"Chicago": 1677.00,
+"Indianapolis": 542.00,
+"Detroit": 819.00,
+"StLouis": 748.00,
+"Cleveland": 447.00,
+"NewYork": 2075.00,
+"Montreal": 274.00,
+"Charlotte": 313.00,
+"NewOrleans": 199.00,
+"Boston": 448.00,
+"Atlanta": 1665.00,
+"Miami": 480.00,
+"WashingtonDC": 1000.00,
+"Philadelphia": 632.00,
+"Toronto": 526.00,
+"Pittsburgh": 371.00,
+"Cincinnati": 636.00,
+"Tampa": 294.00,
+"Memphis": 472.00,
+"Winnipeg": 47.00,
+"Calgary": 46.00,
+"Seattle": 156.00,
+"Portland": 88.00,
+"Sacrameto": 86.00,
+"Phoenix": 194.00,
+"SanDiego": 139.00
+},
+"Cleveland": {
+"Vancouver": 177.00,
+"LosAngeles": 1522.00,
+"SanFrancisco": 618.00,
+"LasVegas": 148.00,
+"SaltLakeCity": 109.00,
+"ElPaso": 78.00,
+"Dallas": 856.00,
+"Houston": 730.00,
+"OklahomaCity": 207.00,
+"Minneapolis": 777.00,
+"KansasCity": 415.00,
+"Denver": 339.00,
+"Chicago": 4536.00,
+"Indianapolis": 1012.00,
+"Detroit": 11098.00,
+"StLouis": 843.00,
+"Nashville": 447.00,
+"NewYork": 7887.00,
+"Montreal": 1066.00,
+"Charlotte": 491.00,
+"NewOrleans": 223.00,
+"Boston": 1555.00,
+"Atlanta": 1267.00,
+"Miami": 776.00,
+"WashingtonDC": 3893.00,
+"Philadelphia": 2521.00,
+"Toronto": 4012.00,
+"Pittsburgh": 3729.00,
+"Cincinnati": 1462.00,
+"Tampa": 420.00,
+"Memphis": 298.00,
+"Winnipeg": 112.00,
+"Calgary": 99.00,
+"Seattle": 324.00,
+"Portland": 180.00,
+"Sacrameto": 170.00,
+"Phoenix": 353.00,
+"SanDiego": 262.00
+},
+"NewYork": {
+"Vancouver": 1189.00,
+"LosAngeles": 10114.00,
+"SanFrancisco": 4137.00,
+"LasVegas": 965.00,
+"SaltLakeCity": 691.00,
+"ElPaso": 498.00,
+"Dallas": 5035.00,
+"Houston": 4484.00,
+"OklahomaCity": 1130.00,
+"Minneapolis": 3773.00,
+"KansasCity": 2081.00,
+"Denver": 2023.00,
+"Chicago": 15065.00,
+"Indianapolis": 3117.00,
+"Detroit": 12620.00,
+"StLouis": 3677.00,
+"Nashville": 2075.00,
+"Cleveland": 7887.00,
+"Montreal": 11852.00,
+"Charlotte": 3005.00,
+"NewOrleans": 1376.00,
+"Boston": 37252.00,
+"Atlanta": 7231.00,
+"Miami": 5851.00,
+"WashingtonDC": 43810.00,
+"Philadelphia": 104079.00,
+"Toronto": 15155.00,
+"Pittsburgh": 8625.00,
+"Cincinnati": 4077.00,
+"Tampa": 2985.00,
+"Memphis": 1534.00,
+"Winnipeg": 649.00,
+"Calgary": 646.00,
+"Seattle": 2157.00,
+"Portland": 1202.00,
+"Sacrameto": 1132.00,
+"Phoenix": 2289.00,
+"SanDiego": 1741.00
+},
+"Montreal": {
+"Vancouver": 197.00,
+"LosAngeles": 1607.00,
+"SanFrancisco": 665.00,
+"LasVegas": 153.00,
+"SaltLakeCity": 111.00,
+"ElPaso": 76.00,
+"Dallas": 745.00,
+"Houston": 650.00,
+"OklahomaCity": 169.00,
+"Minneapolis": 642.00,
+"KansasCity": 320.00,
+"Denver": 323.00,
+"Chicago": 2353.00,
+"Indianapolis": 437.00,
+"Detroit": 1927.00,
+"StLouis": 540.00,
+"Nashville": 274.00,
+"Cleveland": 1066.00,
+"NewYork": 11852.00,
+"Charlotte": 327.00,
+"NewOrleans": 190.00,
+"Boston": 4212.00,
+"Atlanta": 899.00,
+"Miami": 752.00,
+"WashingtonDC": 2880.00,
+"Philadelphia": 2795.00,
+"Toronto": 2783.00,
+"Pittsburgh": 931.00,
+"Cincinnati": 534.00,
+"Tampa": 381.00,
+"Memphis": 214.00,
+"Winnipeg": 115.00,
+"Calgary": 109.00,
+"Seattle": 357.00,
+"Portland": 197.00,
+"Sacrameto": 182.00,
+"Phoenix": 360.00,
+"SanDiego": 275.00
+},
+"Charlotte": {
+"Vancouver": 80.00,
+"LosAngeles": 737.00,
+"SanFrancisco": 294.00,
+"LasVegas": 71.00,
+"SaltLakeCity": 50.00,
+"ElPaso": 39.00,
+"Dallas": 464.00,
+"Houston": 426.00,
+"OklahomaCity": 103.00,
+"Minneapolis": 268.00,
+"KansasCity": 180.00,
+"Denver": 154.00,
+"Chicago": 1200.00,
+"Indianapolis": 316.00,
+"Detroit": 799.00,
+"StLouis": 362.00,
+"Nashville": 313.00,
+"Cleveland": 491.00,
+"NewYork": 3005.00,
+"Montreal": 327.00,
+"NewOrleans": 154.00,
+"Boston": 591.00,
+"Atlanta": 1623.00,
+"Miami": 611.00,
+"WashingtonDC": 1783.00,
+"Philadelphia": 970.00,
+"Toronto": 599.00,
+"Pittsburgh": 502.00,
+"Cincinnati": 463.00,
+"Tampa": 368.00,
+"Memphis": 181.00,
+"Winnipeg": 42.00,
+"Calgary": 43.00,
+"Seattle": 147.00,
+"Portland": 82.00,
+"Sacrameto": 80.00,
+"Phoenix": 173.00,
+"SanDiego": 128.00
+},
+"NewOrleans": {
+"Vancouver": 78.00,
+"LosAngeles": 817.00,
+"SanFrancisco": 311.00,
+"LasVegas": 79.00,
+"SaltLakeCity": 53.00,
+"ElPaso": 52.00,
+"Dallas": 849.00,
+"Houston": 1109.00,
+"OklahomaCity": 142.00,
+"Minneapolis": 224.00,
+"KansasCity": 190.00,
+"Denver": 173.00,
+"Chicago": 810.00,
+"Indianapolis": 178.00,
+"Detroit": 415.00,
+"StLouis": 315.00,
+"Nashville": 199.00,
+"Cleveland": 223.00,
+"NewYork": 1376.00,
+"Montreal": 190.00,
+"Charlotte": 154.00,
+"Boston": 317.00,
+"Atlanta": 780.00,
+"Miami": 565.00,
+"WashingtonDC": 587.00,
+"Philadelphia": 401.00,
+"Toronto": 312.00,
+"Pittsburgh": 190.00,
+"Cincinnati": 203.00,
+"Tampa": 369.00,
+"Memphis": 238.00,
+"Winnipeg": 36.00,
+"Calgary": 41.00,
+"Seattle": 145.00,
+"Portland": 82.00,
+"Sacrameto": 84.00,
+"Phoenix": 204.00,
+"SanDiego": 144.00
+},
+"Boston": {
+"Vancouver": 304.00,
+"LosAngeles": 2542.00,
+"SanFrancisco": 1046.00,
+"LasVegas": 241.00,
+"SaltLakeCity": 172.00,
+"ElPaso": 122.00,
+"Dallas": 1195.00,
+"Houston": 1063.00,
+"OklahomaCity": 266.00,
+"Minneapolis": 913.00,
+"KansasCity": 490.00,
+"Denver": 497.00,
+"Chicago": 3402.00,
+"Indianapolis": 670.00,
+"Detroit": 2667.00,
+"StLouis": 833.00,
+"Nashville": 448.00,
+"Cleveland": 1555.00,
+"NewYork": 37252.00,
+"Montreal": 4212.00,
+"Charlotte": 591.00,
+"NewOrleans": 317.00,
+"Atlanta": 1547.00,
+"Miami": 1351.00,
+"WashingtonDC": 5837.00,
+"Philadelphia": 6739.00,
+"Toronto": 3241.00,
+"Pittsburgh": 1503.00,
+"Cincinnati": 842.00,
+"Tampa": 676.00,
+"Memphis": 346.00,
+"Winnipeg": 164.00,
+"Calgary": 165.00,
+"Seattle": 550.00,
+"Portland": 306.00,
+"Sacrameto": 286.00,
+"Phoenix": 569.00,
+"SanDiego": 436.00
+},
+"Atlanta": {
+"Vancouver": 274.00,
+"LosAngeles": 2611.00,
+"SanFrancisco": 1027.00,
+"LasVegas": 252.00,
+"SaltLakeCity": 178.00,
+"ElPaso": 148.00,
+"Dallas": 1934.00,
+"Houston": 1830.00,
+"OklahomaCity": 421.00,
+"Minneapolis": 909.00,
+"KansasCity": 690.00,
+"Denver": 562.00,
+"Chicago": 3944.00,
+"Indianapolis": 1042.00,
+"Detroit": 2229.00,
+"StLouis": 1423.00,
+"Nashville": 1665.00,
+"Cleveland": 1267.00,
+"NewYork": 7231.00,
+"Montreal": 899.00,
+"Charlotte": 1623.00,
+"NewOrleans": 780.00,
+"Boston": 1547.00,
+"Miami": 2210.00,
+"WashingtonDC": 3553.00,
+"Philadelphia": 2210.00,
+"Toronto": 1601.00,
+"Pittsburgh": 1145.00,
+"Cincinnati": 1350.00,
+"Tampa": 1522.00,
+"Memphis": 929.00,
+"Winnipeg": 141.00,
+"Calgary": 147.00,
+"Seattle": 504.00,
+"Portland": 284.00,
+"Sacrameto": 281.00,
+"Phoenix": 626.00,
+"SanDiego": 455.00
+},
+"Miami": {
+"Vancouver": 263.00,
+"LosAngeles": 2554.00,
+"SanFrancisco": 1005.00,
+"LasVegas": 240.00,
+"SaltLakeCity": 162.00,
+"ElPaso": 136.00,
+"Dallas": 1470.00,
+"Houston": 1510.00,
+"OklahomaCity": 287.00,
+"Minneapolis": 668.00,
+"KansasCity": 457.00,
+"Denver": 474.00,
+"Chicago": 2385.00,
+"Indianapolis": 513.00,
+"Detroit": 1398.00,
+"StLouis": 761.00,
+"Nashville": 480.00,
+"Cleveland": 776.00,
+"NewYork": 5851.00,
+"Montreal": 752.00,
+"Charlotte": 611.00,
+"NewOrleans": 565.00,
+"Boston": 1351.00,
+"Atlanta": 2210.00,
+"WashingtonDC": 2441.00,
+"Philadelphia": 1693.00,
+"Toronto": 1145.00,
+"Pittsburgh": 702.00,
+"Cincinnati": 624.00,
+"Tampa": 3672.00,
+"Memphis": 410.00,
+"Winnipeg": 117.00,
+"Calgary": 136.00,
+"Seattle": 483.00,
+"Portland": 274.00,
+"Sacrameto": 273.00,
+"Phoenix": 593.00,
+"SanDiego": 445.00
+},
+"WashingtonDC": {
+"Vancouver": 437.00,
+"LosAngeles": 3813.00,
+"SanFrancisco": 1546.00,
+"LasVegas": 365.00,
+"SaltLakeCity": 262.00,
+"ElPaso": 193.00,
+"Dallas": 2059.00,
+"Houston": 1839.00,
+"OklahomaCity": 466.00,
+"Minneapolis": 1475.00,
+"KansasCity": 858.00,
+"Denver": 784.00,
+"Chicago": 6474.00,
+"Indianapolis": 1480.00,
+"Detroit": 5618.00,
+"StLouis": 1610.00,
+"Nashville": 1000.00,
+"Cleveland": 3893.00,
+"NewYork": 43810.00,
+"Montreal": 2880.00,
+"Charlotte": 1783.00,
+"NewOrleans": 587.00,
+"Boston": 5837.00,
+"Atlanta": 3553.00,
+"Miami": 2441.00,
+"Philadelphia": 21613.00,
+"Toronto": 5451.00,
+"Pittsburgh": 5580.00,
+"Cincinnati": 2105.00,
+"Tampa": 1295.00,
+"Memphis": 682.00,
+"Winnipeg": 241.00,
+"Calgary": 238.00,
+"Seattle": 796.00,
+"Portland": 445.00,
+"Sacrameto": 423.00,
+"Phoenix": 875.00,
+"SanDiego": 658.00
+},
+"Philadelphia": {
+"Vancouver": 329.00,
+"LosAngeles": 2827.00,
+"SanFrancisco": 1152.00,
+"LasVegas": 270.00,
+"SaltLakeCity": 193.00,
+"ElPaso": 140.00,
+"Dallas": 1450.00,
+"Houston": 1291.00,
+"OklahomaCity": 327.00,
+"Minneapolis": 1076.00,
+"KansasCity": 603.00,
+"Denver": 572.00,
+"Chicago": 4463.00,
+"Indianapolis": 953.00,
+"Detroit": 3856.00,
+"StLouis": 1088.00,
+"Nashville": 632.00,
+"Cleveland": 2521.00,
+"NewYork": 104079.00,
+"Montreal": 2795.00,
+"Charlotte": 970.00,
+"NewOrleans": 401.00,
+"Boston": 6739.00,
+"Atlanta": 2210.00,
+"Miami": 1693.00,
+"WashingtonDC": 21613.00,
+"Toronto": 4415.00,
+"Pittsburgh": 3047.00,
+"Cincinnati": 1281.00,
+"Tampa": 875.00,
+"Memphis": 455.00,
+"Winnipeg": 181.00,
+"Calgary": 179.00,
+"Seattle": 598.00,
+"Portland": 334.00,
+"Sacrameto": 315.00,
+"Phoenix": 643.00,
+"SanDiego": 487.00
+},
+"Toronto": {
+"Vancouver": 289.00,
+"LosAngeles": 2400.00,
+"SanFrancisco": 985.00,
+"LasVegas": 232.00,
+"SaltLakeCity": 171.00,
+"ElPaso": 119.00,
+"Dallas": 1228.00,
+"Houston": 1053.00,
+"OklahomaCity": 290.00,
+"Minneapolis": 1176.00,
+"KansasCity": 575.00,
+"Denver": 517.00,
+"Chicago": 5335.00,
+"Indianapolis": 987.00,
+"Detroit": 7075.00,
+"StLouis": 1048.00,
+"Nashville": 526.00,
+"Cleveland": 4012.00,
+"NewYork": 15155.00,
+"Montreal": 2783.00,
+"Charlotte": 599.00,
+"NewOrleans": 312.00,
+"Boston": 3241.00,
+"Atlanta": 1601.00,
+"Miami": 1145.00,
+"WashingtonDC": 5451.00,
+"Philadelphia": 4415.00,
+"Pittsburgh": 2775.00,
+"Cincinnati": 1244.00,
+"Tampa": 601.00,
+"Memphis": 385.00,
+"Winnipeg": 186.00,
+"Calgary": 162.00,
+"Seattle": 524.00,
+"Portland": 291.00,
+"Sacrameto": 270.00,
+"Phoenix": 548.00,
+"SanDiego": 412.00
+},
+"Pittsburgh": {
+"Vancouver": 145.00,
+"LosAngeles": 1254.00,
+"SanFrancisco": 509.00,
+"LasVegas": 121.00,
+"SaltLakeCity": 88.00,
+"ElPaso": 64.00,
+"Dallas": 700.00,
+"Houston": 609.00,
+"OklahomaCity": 165.00,
+"Minneapolis": 566.00,
+"KansasCity": 318.00,
+"Denver": 270.00,
+"Chicago": 2889.00,
+"Indianapolis": 686.00,
+"Detroit": 3524.00,
+"StLouis": 631.00,
+"Nashville": 371.00,
+"Cleveland": 3729.00,
+"NewYork": 8625.00,
+"Montreal": 931.00,
+"Charlotte": 502.00,
+"NewOrleans": 190.00,
+"Boston": 1503.00,
+"Atlanta": 1145.00,
+"Miami": 702.00,
+"WashingtonDC": 5580.00,
+"Philadelphia": 3047.00,
+"Toronto": 2775.00,
+"Cincinnati": 1056.00,
+"Tampa": 380.00,
+"Memphis": 243.00,
+"Winnipeg": 86.00,
+"Calgary": 80.00,
+"Seattle": 264.00,
+"Portland": 147.00,
+"Sacrameto": 139.00,
+"Phoenix": 290.00,
+"SanDiego": 216.00
+},
+"Cincinnati": {
+"Vancouver": 129.00,
+"LosAngeles": 1155.00,
+"SanFrancisco": 462.00,
+"LasVegas": 113.00,
+"SaltLakeCity": 83.00,
+"ElPaso": 62.00,
+"Dallas": 753.00,
+"Houston": 636.00,
+"OklahomaCity": 188.00,
+"Minneapolis": 578.00,
+"KansasCity": 377.00,
+"Denver": 268.00,
+"Chicago": 4008.00,
+"Indianapolis": 2355.00,
+"Detroit": 2549.00,
+"StLouis": 960.00,
+"Nashville": 636.00,
+"Cleveland": 1462.00,
+"NewYork": 4077.00,
+"Montreal": 534.00,
+"Charlotte": 463.00,
+"NewOrleans": 203.00,
+"Boston": 842.00,
+"Atlanta": 1350.00,
+"Miami": 624.00,
+"WashingtonDC": 2105.00,
+"Philadelphia": 1281.00,
+"Toronto": 1244.00,
+"Pittsburgh": 1056.00,
+"Tampa": 355.00,
+"Memphis": 326.00,
+"Winnipeg": 79.00,
+"Calgary": 72.00,
+"Seattle": 237.00,
+"Portland": 132.00,
+"Sacrameto": 127.00,
+"Phoenix": 274.00,
+"SanDiego": 200.00
+},
+"Tampa": {
+"Vancouver": 131.00,
+"LosAngeles": 1287.00,
+"SanFrancisco": 504.00,
+"LasVegas": 122.00,
+"SaltLakeCity": 83.00,
+"ElPaso": 71.00,
+"Dallas": 823.00,
+"Houston": 859.00,
+"OklahomaCity": 160.00,
+"Minneapolis": 354.00,
+"KansasCity": 252.00,
+"Denver": 248.00,
+"Chicago": 1307.00,
+"Indianapolis": 290.00,
+"Detroit": 754.00,
+"StLouis": 433.00,
+"Nashville": 294.00,
+"Cleveland": 420.00,
+"NewYork": 2985.00,
+"Montreal": 381.00,
+"Charlotte": 368.00,
+"NewOrleans": 369.00,
+"Boston": 676.00,
+"Atlanta": 1522.00,
+"Miami": 3672.00,
+"WashingtonDC": 1295.00,
+"Philadelphia": 875.00,
+"Toronto": 601.00,
+"Pittsburgh": 380.00,
+"Cincinnati": 355.00,
+"Memphis": 249.00,
+"Winnipeg": 60.00,
+"Calgary": 68.00,
+"Seattle": 242.00,
+"Portland": 137.00,
+"Sacrameto": 137.00,
+"Phoenix": 303.00,
+"SanDiego": 225.00
+},
+"Memphis": {
+"Vancouver": 80.00,
+"LosAngeles": 790.00,
+"SanFrancisco": 306.00,
+"LasVegas": 78.00,
+"SaltLakeCity": 56.00,
+"ElPaso": 49.00,
+"Dallas": 855.00,
+"Houston": 695.00,
+"OklahomaCity": 218.00,
+"Minneapolis": 302.00,
+"KansasCity": 319.00,
+"Denver": 195.00,
+"Chicago": 1279.00,
+"Indianapolis": 312.00,
+"Detroit": 569.00,
+"StLouis": 737.00,
+"Nashville": 472.00,
+"Cleveland": 298.00,
+"NewYork": 1534.00,
+"Montreal": 214.00,
+"Charlotte": 181.00,
+"NewOrleans": 238.00,
+"Boston": 346.00,
+"Atlanta": 929.00,
+"Miami": 410.00,
+"WashingtonDC": 682.00,
+"Philadelphia": 455.00,
+"Toronto": 385.00,
+"Pittsburgh": 243.00,
+"Cincinnati": 326.00,
+"Tampa": 249.00,
+"Winnipeg": 43.00,
+"Calgary": 43.00,
+"Seattle": 148.00,
+"Portland": 84.00,
+"Sacrameto": 84.00,
+"Phoenix": 198.00,
+"SanDiego": 138.00
+},
+"Winnipeg": {
+"Vancouver": 65.00,
+"LosAngeles": 447.00,
+"SanFrancisco": 191.00,
+"LasVegas": 45.00,
+"SaltLakeCity": 39.00,
+"ElPaso": 20.00,
+"Dallas": 179.00,
+"Houston": 142.00,
+"OklahomaCity": 44.00,
+"Minneapolis": 308.00,
+"KansasCity": 93.00,
+"Denver": 116.00,
+"Chicago": 491.00,
+"Indianapolis": 74.00,
+"Detroit": 235.00,
+"StLouis": 121.00,
+"Nashville": 47.00,
+"Cleveland": 112.00,
+"NewYork": 649.00,
+"Montreal": 115.00,
+"Charlotte": 42.00,
+"NewOrleans": 36.00,
+"Boston": 164.00,
+"Atlanta": 141.00,
+"Miami": 117.00,
+"WashingtonDC": 241.00,
+"Philadelphia": 181.00,
+"Toronto": 186.00,
+"Pittsburgh": 86.00,
+"Cincinnati": 79.00,
+"Tampa": 60.00,
+"Memphis": 43.00,
+"Calgary": 46.00,
+"Seattle": 119.00,
+"Portland": 64.00,
+"Sacrameto": 53.00,
+"Phoenix": 101.00,
+"SanDiego": 75.00
+},
+"Calgary": {
+"Vancouver": 241.00,
+"LosAngeles": 774.00,
+"SanFrancisco": 377.00,
+"LasVegas": 78.00,
+"SaltLakeCity": 71.00,
+"ElPaso": 28.00,
+"Dallas": 204.00,
+"Houston": 168.00,
+"OklahomaCity": 45.00,
+"Minneapolis": 166.00,
+"KansasCity": 83.00,
+"Denver": 147.00,
+"Chicago": 384.00,
+"Indianapolis": 65.00,
+"Detroit": 197.00,
+"StLouis": 108.00,
+"Nashville": 46.00,
+"Cleveland": 99.00,
+"NewYork": 646.00,
+"Montreal": 109.00,
+"Charlotte": 43.00,
+"NewOrleans": 41.00,
+"Boston": 165.00,
+"Atlanta": 147.00,
+"Miami": 136.00,
+"WashingtonDC": 238.00,
+"Philadelphia": 179.00,
+"Toronto": 162.00,
+"Pittsburgh": 80.00,
+"Cincinnati": 72.00,
+"Tampa": 68.00,
+"Memphis": 43.00,
+"Winnipeg": 46.00,
+"Seattle": 407.00,
+"Portland": 187.00,
+"Sacrameto": 109.00,
+"Phoenix": 156.00,
+"SanDiego": 126.00
+},
+"Seattle": {
+"Vancouver": 3428.00,
+"LosAngeles": 3556.00,
+"SanFrancisco": 2046.00,
+"LasVegas": 346.00,
+"SaltLakeCity": 280.00,
+"ElPaso": 107.00,
+"Dallas": 721.00,
+"Houston": 600.00,
+"OklahomaCity": 155.00,
+"Minneapolis": 492.00,
+"KansasCity": 272.00,
+"Denver": 497.00,
+"Chicago": 1222.00,
+"Indianapolis": 214.00,
+"Detroit": 636.00,
+"StLouis": 355.00,
+"Nashville": 156.00,
+"Cleveland": 324.00,
+"NewYork": 2157.00,
+"Montreal": 357.00,
+"Charlotte": 147.00,
+"NewOrleans": 145.00,
+"Boston": 550.00,
+"Atlanta": 504.00,
+"Miami": 483.00,
+"WashingtonDC": 796.00,
+"Philadelphia": 598.00,
+"Toronto": 524.00,
+"Pittsburgh": 264.00,
+"Cincinnati": 237.00,
+"Tampa": 242.00,
+"Memphis": 148.00,
+"Winnipeg": 119.00,
+"Calgary": 407.00,
+"Portland": 3297.00,
+"Sacrameto": 603.00,
+"Phoenix": 642.00,
+"SanDiego": 560.00
+},
+"Portland": {
+"Vancouver": 863.00,
+"LosAngeles": 2265.00,
+"SanFrancisco": 1417.00,
+"LasVegas": 219.00,
+"SaltLakeCity": 171.00,
+"ElPaso": 63.00,
+"Dallas": 414.00,
+"Houston": 344.00,
+"OklahomaCity": 88.00,
+"Minneapolis": 272.00,
+"KansasCity": 153.00,
+"Denver": 288.00,
+"Chicago": 681.00,
+"Indianapolis": 120.00,
+"Detroit": 354.00,
+"StLouis": 200.00,
+"Nashville": 88.00,
+"Cleveland": 180.00,
+"NewYork": 1202.00,
+"Montreal": 197.00,
+"Charlotte": 82.00,
+"NewOrleans": 82.00,
+"Boston": 306.00,
+"Atlanta": 284.00,
+"Miami": 274.00,
+"WashingtonDC": 445.00,
+"Philadelphia": 334.00,
+"Toronto": 291.00,
+"Pittsburgh": 147.00,
+"Cincinnati": 132.00,
+"Tampa": 137.00,
+"Memphis": 84.00,
+"Winnipeg": 64.00,
+"Calgary": 187.00,
+"Seattle": 3297.00,
+"Sacrameto": 428.00,
+"Phoenix": 392.00,
+"SanDiego": 351.00
+},
+"Sacrameto": {
+"Vancouver": 281.00,
+"LosAngeles": 4865.00,
+"SanFrancisco": 11724.00,
+"LasVegas": 407.00,
+"SaltLakeCity": 195.00,
+"ElPaso": 77.00,
+"Dallas": 438.00,
+"Houston": 365.00,
+"OklahomaCity": 90.00,
+"Minneapolis": 247.00,
+"KansasCity": 150.00,
+"Denver": 301.00,
+"Chicago": 642.00,
+"Indianapolis": 115.00,
+"Detroit": 331.00,
+"StLouis": 194.00,
+"Nashville": 86.00,
+"Cleveland": 170.00,
+"NewYork": 1132.00,
+"Montreal": 182.00,
+"Charlotte": 80.00,
+"NewOrleans": 84.00,
+"Boston": 286.00,
+"Atlanta": 281.00,
+"Miami": 273.00,
+"WashingtonDC": 423.00,
+"Philadelphia": 315.00,
+"Toronto": 270.00,
+"Pittsburgh": 139.00,
+"Cincinnati": 127.00,
+"Tampa": 137.00,
+"Memphis": 84.00,
+"Winnipeg": 53.00,
+"Calgary": 109.00,
+"Seattle": 603.00,
+"Portland": 428.00,
+"Phoenix": 572.00,
+"SanDiego": 643.00
+},
+"Phoenix": {
+"Vancouver": 326.00,
+"LosAngeles": 8690.00,
+"SanFrancisco": 2085.00,
+"LasVegas": 1144.00,
+"SaltLakeCity": 367.00,
+"ElPaso": 379.00,
+"Dallas": 1206.00,
+"Houston": 971.00,
+"OklahomaCity": 233.00,
+"Minneapolis": 514.00,
+"KansasCity": 357.00,
+"Denver": 802.00,
+"Chicago": 1372.00,
+"Indianapolis": 250.00,
+"Detroit": 689.00,
+"StLouis": 443.00,
+"Nashville": 194.00,
+"Cleveland": 353.00,
+"NewYork": 2289.00,
+"Montreal": 360.00,
+"Charlotte": 173.00,
+"NewOrleans": 204.00,
+"Boston": 569.00,
+"Atlanta": 626.00,
+"Miami": 593.00,
+"WashingtonDC": 875.00,
+"Philadelphia": 643.00,
+"Toronto": 548.00,
+"Pittsburgh": 290.00,
+"Cincinnati": 274.00,
+"Tampa": 303.00,
+"Memphis": 198.00,
+"Winnipeg": 101.00,
+"Calgary": 156.00,
+"Seattle": 642.00,
+"Portland": 392.00,
+"Sacrameto": 572.00,
+"SanDiego": 1846.00
+},
+"SanDiego": {
+"Vancouver": 281.00,
+"LosAngeles": 30034.00,
+"SanFrancisco": 2509.00,
+"LasVegas": 967.00,
+"SaltLakeCity": 251.00,
+"ElPaso": 173.00,
+"Dallas": 776.00,
+"Houston": 650.00,
+"OklahomaCity": 153.00,
+"Minneapolis": 369.00,
+"KansasCity": 242.00,
+"Denver": 482.00,
+"Chicago": 992.00,
+"Indianapolis": 181.00,
+"Detroit": 509.00,
+"StLouis": 311.00,
+"Nashville": 139.00,
+"Cleveland": 262.00,
+"NewYork": 1741.00,
+"Montreal": 275.00,
+"Charlotte": 128.00,
+"NewOrleans": 144.00,
+"Boston": 436.00,
+"Atlanta": 455.00,
+"Miami": 445.00,
+"WashingtonDC": 658.00,
+"Philadelphia": 487.00,
+"Toronto": 412.00,
+"Pittsburgh": 216.00,
+"Cincinnati": 200.00,
+"Tampa": 225.00,
+"Memphis": 138.00,
+"Winnipeg": 75.00,
+"Calgary": 126.00,
+"Seattle": 560.00,
+"Portland": 351.00,
+"Sacrameto": 643.00,
+"Phoenix": 1846.00
+}
+},
+"stats": {
+"nodes": 39,
+"links": 61,
+"demands": 1482,
+"min_degree": 2,
+"avg_degree": 3.13,
+"std_degree": 0.88,
+"max_degree": 5,
+"gini": 0.15,
+"min_link_len": 131.97,
+"avg_link_len": 522.34,
+"max_link_len": 1202.29,
+"diameter_len": 5019.24,
+"diameter_hops": 10,
+"avg_sdp_num": 1.13,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.88,
+"avg_sdp_len": 641.16,
+"avg_adp_num": 2.57,
+"max_adp_num": 4,
+"avg_adp_hops": 4.46,
+"avg_adp_len": 2095.44
+}
+},
+"nodes": [
+{
+"pos": [
+-123.10,
+49.22
+],
+"id": "Vancouver"
+},
+{
+"pos": [
+-118.40,
+33.93
+],
+"id": "LosAngeles"
+},
+{
+"pos": [
+-122.38,
+37.62
+],
+"id": "SanFrancisco"
+},
+{
+"pos": [
+-115.17,
+36.08
+],
+"id": "LasVegas"
+},
+{
+"pos": [
+-111.97,
+40.78
+],
+"id": "SaltLakeCity"
+},
+{
+"pos": [
+-106.40,
+31.80
+],
+"id": "ElPaso"
+},
+{
+"pos": [
+-96.85,
+32.85
+],
+"id": "Dallas"
+},
+{
+"pos": [
+-95.35,
+29.97
+],
+"id": "Houston"
+},
+{
+"pos": [
+-95.90,
+36.20
+],
+"id": "OklahomaCity"
+},
+{
+"pos": [
+-93.38,
+45.07
+],
+"id": "Minneapolis"
+},
+{
+"pos": [
+-94.72,
+39.32
+],
+"id": "KansasCity"
+},
+{
+"pos": [
+-104.87,
+39.75
+],
+"id": "Denver"
+},
+{
+"pos": [
+-87.90,
+41.98
+],
+"id": "Chicago"
+},
+{
+"pos": [
+-86.27,
+39.65
+],
+"id": "Indianapolis"
+},
+{
+"pos": [
+-83.02,
+42.42
+],
+"id": "Detroit"
+},
+{
+"pos": [
+-90.37,
+38.75
+],
+"id": "StLouis"
+},
+{
+"pos": [
+-86.68,
+36.12
+],
+"id": "Nashville"
+},
+{
+"pos": [
+-81.68,
+41.52
+],
+"id": "Cleveland"
+},
+{
+"pos": [
+-73.78,
+40.65
+],
+"id": "NewYork"
+},
+{
+"pos": [
+-73.60,
+45.50
+],
+"id": "Montreal"
+},
+{
+"pos": [
+-80.93,
+35.22
+],
+"id": "Charlotte"
+},
+{
+"pos": [
+-90.02,
+29.83
+],
+"id": "NewOrleans"
+},
+{
+"pos": [
+-71.03,
+42.37
+],
+"id": "Boston"
+},
+{
+"pos": [
+-84.42,
+33.65
+],
+"id": "Atlanta"
+},
+{
+"pos": [
+-80.28,
+25.82
+],
+"id": "Miami"
+},
+{
+"pos": [
+-77.04,
+38.85
+],
+"id": "WashingtonDC"
+},
+{
+"pos": [
+-75.13,
+40.00
+],
+"id": "Philadelphia"
+},
+{
+"pos": [
+-79.41,
+43.70
+],
+"id": "Toronto"
+},
+{
+"pos": [
+-79.97,
+40.44
+],
+"id": "Pittsburgh"
+},
+{
+"pos": [
+-84.50,
+39.14
+],
+"id": "Cincinnati"
+},
+{
+"pos": [
+-82.48,
+27.96
+],
+"id": "Tampa"
+},
+{
+"pos": [
+-90.00,
+35.11
+],
+"id": "Memphis"
+},
+{
+"pos": [
+-97.16,
+49.88
+],
+"id": "Winnipeg"
+},
+{
+"pos": [
+-114.08,
+51.08
+],
+"id": "Calgary"
+},
+{
+"pos": [
+-122.30,
+47.45
+],
+"id": "Seattle"
+},
+{
+"pos": [
+-122.65,
+45.53
+],
+"id": "Portland"
+},
+{
+"pos": [
+-121.46,
+38.56
+],
+"id": "Sacrameto"
+},
+{
+"pos": [
+-112.02,
+33.43
+],
+"id": "Phoenix"
+},
+{
+"pos": [
+-117.13,
+32.81
+],
+"id": "SanDiego"
+}
+],
+"links": [
+{
+"dist": 674.82,
+"ecmp_fwd": {
+"org": 7.23,
+"uni": 28.43,
+"deg": 16.89
+},
+"ecmp_bwd": {
+"org": 7.26,
+"uni": 28.58,
+"deg": 16.95
+},
+"source": "Vancouver",
+"target": "Calgary"
+},
+{
+"dist": 205.56,
+"ecmp_fwd": {
+"org": 5.95,
+"uni": 10.09,
+"deg": 5.40
+},
+"ecmp_bwd": {
+"org": 5.92,
+"uni": 9.94,
+"deg": 5.34
+},
+"source": "Vancouver",
+"target": "Seattle"
+},
+{
+"dist": 545.26,
+"ecmp_fwd": {
+"org": 15.30,
+"uni": 6.38,
+"deg": 4.54
+},
+"ecmp_bwd": {
+"org": 15.36,
+"uni": 6.83,
+"deg": 4.85
+},
+"source": "LosAngeles",
+"target": "SanFrancisco"
+},
+{
+"dist": 379.14,
+"ecmp_fwd": {
+"org": 30.43,
+"uni": 19.16,
+"deg": 16.98
+},
+"ecmp_bwd": {
+"org": 31.47,
+"uni": 19.45,
+"deg": 17.36
+},
+"source": "LosAngeles",
+"target": "LasVegas"
+},
+{
+"dist": 171.56,
+"ecmp_fwd": {
+"org": 23.35,
+"uni": 10.41,
+"deg": 7.68
+},
+"ecmp_bwd": {
+"org": 22.24,
+"uni": 9.67,
+"deg": 7.00
+},
+"source": "LosAngeles",
+"target": "SanDiego"
+},
+{
+"dist": 880.09,
+"ecmp_fwd": {
+"org": 10.81,
+"uni": 13.71,
+"deg": 11.06
+},
+"ecmp_bwd": {
+"org": 10.89,
+"uni": 13.99,
+"deg": 11.24
+},
+"source": "SanFrancisco",
+"target": "Portland"
+},
+{
+"dist": 131.97,
+"ecmp_fwd": {
+"org": 12.57,
+"uni": 10.95,
+"deg": 9.90
+},
+"ecmp_bwd": {
+"org": 12.55,
+"uni": 11.12,
+"deg": 10.02
+},
+"source": "SanFrancisco",
+"target": "Sacrameto"
+},
+{
+"dist": 592.36,
+"ecmp_fwd": {
+"org": 23.50,
+"uni": 35.46,
+"deg": 34.59
+},
+"ecmp_bwd": {
+"org": 24.30,
+"uni": 35.31,
+"deg": 34.50
+},
+"source": "LasVegas",
+"target": "SaltLakeCity"
+},
+{
+"dist": 620.80,
+"ecmp_fwd": {
+"org": 2.53,
+"uni": 4.17,
+"deg": 3.72
+},
+"ecmp_bwd": {
+"org": 2.99,
+"uni": 5.40,
+"deg": 4.90
+},
+"source": "LasVegas",
+"target": "Sacrameto"
+},
+{
+"dist": 411.94,
+"ecmp_fwd": {
+"org": 11.04,
+"uni": 22.91,
+"deg": 21.65
+},
+"ecmp_bwd": {
+"org": 10.82,
+"uni": 22.12,
+"deg": 20.94
+},
+"source": "LasVegas",
+"target": "Phoenix"
+},
+{
+"dist": 613.21,
+"ecmp_fwd": {
+"org": 30.37,
+"uni": 90.18,
+"deg": 90.30
+},
+"ecmp_bwd": {
+"org": 37.68,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "SaltLakeCity",
+"target": "Denver"
+},
+{
+"dist": 1157.07,
+"ecmp_fwd": {
+"org": 15.24,
+"uni": 44.25,
+"deg": 37.90
+},
+"ecmp_bwd": {
+"org": 9.21,
+"uni": 35.80,
+"deg": 29.55
+},
+"source": "SaltLakeCity",
+"target": "Calgary"
+},
+{
+"dist": 1013.66,
+"ecmp_fwd": {
+"org": 12.26,
+"uni": 40.58,
+"deg": 34.29
+},
+"ecmp_bwd": {
+"org": 12.22,
+"uni": 40.45,
+"deg": 34.16
+},
+"source": "SaltLakeCity",
+"target": "Portland"
+},
+{
+"dist": 848.66,
+"ecmp_fwd": {
+"org": 8.77,
+"uni": 26.67,
+"deg": 24.32
+},
+"ecmp_bwd": {
+"org": 8.32,
+"uni": 25.27,
+"deg": 23.01
+},
+"source": "SaltLakeCity",
+"target": "Sacrameto"
+},
+{
+"dist": 904.84,
+"ecmp_fwd": {
+"org": 11.70,
+"uni": 37.14,
+"deg": 32.43
+},
+"ecmp_bwd": {
+"org": 11.32,
+"uni": 37.91,
+"deg": 32.79
+},
+"source": "ElPaso",
+"target": "Dallas"
+},
+{
+"dist": 1073.72,
+"ecmp_fwd": {
+"org": 12.08,
+"uni": 25.37,
+"deg": 22.02
+},
+"ecmp_bwd": {
+"org": 11.15,
+"uni": 23.08,
+"deg": 20.25
+},
+"source": "ElPaso",
+"target": "Houston"
+},
+{
+"dist": 556.77,
+"ecmp_fwd": {
+"org": 21.74,
+"uni": 48.61,
+"deg": 41.47
+},
+"ecmp_bwd": {
+"org": 23.07,
+"uni": 50.13,
+"deg": 42.87
+},
+"source": "ElPaso",
+"target": "Phoenix"
+},
+{
+"dist": 350.54,
+"ecmp_fwd": {
+"org": 10.26,
+"uni": 20.35,
+"deg": 19.01
+},
+"ecmp_bwd": {
+"org": 9.75,
+"uni": 18.65,
+"deg": 17.12
+},
+"source": "Dallas",
+"target": "Houston"
+},
+{
+"dist": 382.64,
+"ecmp_fwd": {
+"org": 3.80,
+"uni": 15.06,
+"deg": 10.55
+},
+"ecmp_bwd": {
+"org": 3.72,
+"uni": 15.13,
+"deg": 10.61
+},
+"source": "Dallas",
+"target": "OklahomaCity"
+},
+{
+"dist": 1050.67,
+"ecmp_fwd": {
+"org": 15.84,
+"uni": 60.83,
+"deg": 60.18
+},
+"ecmp_bwd": {
+"org": 14.68,
+"uni": 58.58,
+"deg": 58.19
+},
+"source": "Dallas",
+"target": "Denver"
+},
+{
+"dist": 679.76,
+"ecmp_fwd": {
+"org": 29.33,
+"uni": 77.91,
+"deg": 77.74
+},
+"ecmp_bwd": {
+"org": 30.70,
+"uni": 82.56,
+"deg": 81.92
+},
+"source": "Dallas",
+"target": "Memphis"
+},
+{
+"dist": 514.12,
+"ecmp_fwd": {
+"org": 20.58,
+"uni": 41.27,
+"deg": 37.13
+},
+"ecmp_bwd": {
+"org": 19.13,
+"uni": 37.27,
+"deg": 33.47
+},
+"source": "Houston",
+"target": "NewOrleans"
+},
+{
+"dist": 362.20,
+"ecmp_fwd": {
+"org": 3.80,
+"uni": 14.37,
+"deg": 9.87
+},
+"ecmp_bwd": {
+"org": 3.72,
+"uni": 14.44,
+"deg": 9.93
+},
+"source": "OklahomaCity",
+"target": "KansasCity"
+},
+{
+"dist": 648.99,
+"ecmp_fwd": {
+"org": 11.30,
+"uni": 24.42,
+"deg": 21.49
+},
+"ecmp_bwd": {
+"org": 12.66,
+"uni": 26.81,
+"deg": 23.97
+},
+"source": "Minneapolis",
+"target": "KansasCity"
+},
+{
+"dist": 559.64,
+"ecmp_fwd": {
+"org": 35.86,
+"uni": 73.04,
+"deg": 59.67
+},
+"ecmp_bwd": {
+"org": 28.51,
+"uni": 62.36,
+"deg": 48.89
+},
+"source": "Minneapolis",
+"target": "Chicago"
+},
+{
+"dist": 605.60,
+"ecmp_fwd": {
+"org": 13.63,
+"uni": 49.48,
+"deg": 35.28
+},
+"ecmp_bwd": {
+"org": 19.63,
+"uni": 57.78,
+"deg": 43.58
+},
+"source": "Minneapolis",
+"target": "Winnipeg"
+},
+{
+"dist": 871.53,
+"ecmp_fwd": {
+"org": 27.31,
+"uni": 54.83,
+"deg": 55.36
+},
+"ecmp_bwd": {
+"org": 21.16,
+"uni": 47.27,
+"deg": 47.65
+},
+"source": "KansasCity",
+"target": "Denver"
+},
+{
+"dist": 381.09,
+"ecmp_fwd": {
+"org": 16.05,
+"uni": 40.10,
+"deg": 40.93
+},
+"ecmp_bwd": {
+"org": 23.48,
+"uni": 50.13,
+"deg": 51.18
+},
+"source": "KansasCity",
+"target": "StLouis"
+},
+{
+"dist": 293.22,
+"ecmp_fwd": {
+"org": 15.19,
+"uni": 23.08,
+"deg": 21.72
+},
+"ecmp_bwd": {
+"org": 15.30,
+"uni": 22.77,
+"deg": 21.46
+},
+"source": "Chicago",
+"target": "Indianapolis"
+},
+{
+"dist": 405.01,
+"ecmp_fwd": {
+"org": 66.93,
+"uni": 88.85,
+"deg": 75.33
+},
+"ecmp_bwd": {
+"org": 67.91,
+"uni": 89.21,
+"deg": 75.39
+},
+"source": "Chicago",
+"target": "Detroit"
+},
+{
+"dist": 415.75,
+"ecmp_fwd": {
+"org": 34.40,
+"uni": 49.32,
+"deg": 47.72
+},
+"ecmp_bwd": {
+"org": 25.96,
+"uni": 38.58,
+"deg": 37.14
+},
+"source": "Chicago",
+"target": "StLouis"
+},
+{
+"dist": 367.26,
+"ecmp_fwd": {
+"org": 11.58,
+"uni": 29.17,
+"deg": 29.73
+},
+"ecmp_bwd": {
+"org": 11.06,
+"uni": 26.66,
+"deg": 27.29
+},
+"source": "Indianapolis",
+"target": "StLouis"
+},
+{
+"dist": 394.27,
+"ecmp_fwd": {
+"org": 16.38,
+"uni": 31.31,
+"deg": 33.38
+},
+"ecmp_bwd": {
+"org": 17.63,
+"uni": 33.32,
+"deg": 35.41
+},
+"source": "Indianapolis",
+"target": "Nashville"
+},
+{
+"dist": 162.37,
+"ecmp_fwd": {
+"org": 17.82,
+"uni": 31.86,
+"deg": 27.07
+},
+"ecmp_bwd": {
+"org": 17.21,
+"uni": 32.05,
+"deg": 27.22
+},
+"source": "Indianapolis",
+"target": "Cincinnati"
+},
+{
+"dist": 149.33,
+"ecmp_fwd": {
+"org": 39.03,
+"uni": 34.06,
+"deg": 29.57
+},
+"ecmp_bwd": {
+"org": 35.63,
+"uni": 28.84,
+"deg": 25.23
+},
+"source": "Detroit",
+"target": "Cleveland"
+},
+{
+"dist": 326.05,
+"ecmp_fwd": {
+"org": 38.81,
+"uni": 46.85,
+"deg": 36.58
+},
+"ecmp_bwd": {
+"org": 43.18,
+"uni": 52.43,
+"deg": 40.97
+},
+"source": "Detroit",
+"target": "Toronto"
+},
+{
+"dist": 406.20,
+"ecmp_fwd": {
+"org": 22.55,
+"uni": 44.55,
+"deg": 45.60
+},
+"ecmp_bwd": {
+"org": 21.03,
+"uni": 41.35,
+"deg": 42.82
+},
+"source": "StLouis",
+"target": "Memphis"
+},
+{
+"dist": 529.03,
+"ecmp_fwd": {
+"org": 19.35,
+"uni": 43.63,
+"deg": 41.59
+},
+"ecmp_bwd": {
+"org": 19.35,
+"uni": 44.38,
+"deg": 42.22
+},
+"source": "Nashville",
+"target": "Charlotte"
+},
+{
+"dist": 343.48,
+"ecmp_fwd": {
+"org": 8.48,
+"uni": 13.35,
+"deg": 15.04
+},
+"ecmp_bwd": {
+"org": 9.21,
+"uni": 15.16,
+"deg": 16.80
+},
+"source": "Nashville",
+"target": "Atlanta"
+},
+{
+"dist": 320.51,
+"ecmp_fwd": {
+"org": 17.59,
+"uni": 51.03,
+"deg": 51.76
+},
+"ecmp_bwd": {
+"org": 18.10,
+"uni": 50.48,
+"deg": 51.39
+},
+"source": "Nashville",
+"target": "Memphis"
+},
+{
+"dist": 669.09,
+"ecmp_fwd": {
+"org": 40.42,
+"uni": 25.60,
+"deg": 21.61
+},
+"ecmp_bwd": {
+"org": 36.42,
+"uni": 20.94,
+"deg": 17.81
+},
+"source": "Cleveland",
+"target": "NewYork"
+},
+{
+"dist": 187.20,
+"ecmp_fwd": {
+"org": 20.72,
+"uni": 18.79,
+"deg": 13.59
+},
+"ecmp_bwd": {
+"org": 20.72,
+"uni": 18.42,
+"deg": 13.22
+},
+"source": "Cleveland",
+"target": "Pittsburgh"
+},
+{
+"dist": 356.68,
+"ecmp_fwd": {
+"org": 16.32,
+"uni": 19.82,
+"deg": 19.10
+},
+"ecmp_bwd": {
+"org": 16.93,
+"uni": 19.63,
+"deg": 18.94
+},
+"source": "Cleveland",
+"target": "Cincinnati"
+},
+{
+"dist": 298.40,
+"ecmp_fwd": {
+"org": 37.00,
+"uni": 22.18,
+"deg": 13.43
+},
+"ecmp_bwd": {
+"org": 35.19,
+"uni": 18.65,
+"deg": 11.20
+},
+"source": "NewYork",
+"target": "Boston"
+},
+{
+"dist": 135.39,
+"ecmp_fwd": {
+"org": 99.63,
+"uni": 24.61,
+"deg": 19.17
+},
+"ecmp_bwd": {
+"org": 100.00,
+"uni": 25.53,
+"deg": 19.76
+},
+"source": "NewYork",
+"target": "Philadelphia"
+},
+{
+"dist": 574.63,
+"ecmp_fwd": {
+"org": 37.99,
+"uni": 18.80,
+"deg": 16.13
+},
+"ecmp_bwd": {
+"org": 35.42,
+"uni": 16.76,
+"deg": 13.96
+},
+"source": "NewYork",
+"target": "Toronto"
+},
+{
+"dist": 404.39,
+"ecmp_fwd": {
+"org": 8.83,
+"uni": 6.40,
+"deg": 3.58
+},
+"ecmp_bwd": {
+"org": 10.63,
+"uni": 9.94,
+"deg": 5.80
+},
+"source": "Montreal",
+"target": "Boston"
+},
+{
+"dist": 501.64,
+"ecmp_fwd": {
+"org": 16.12,
+"uni": 26.60,
+"deg": 16.19
+},
+"ecmp_bwd": {
+"org": 14.32,
+"uni": 23.06,
+"deg": 13.97
+},
+"source": "Montreal",
+"target": "Toronto"
+},
+{
+"dist": 364.65,
+"ecmp_fwd": {
+"org": 17.03,
+"uni": 18.75,
+"deg": 17.53
+},
+"ecmp_bwd": {
+"org": 17.30,
+"uni": 19.18,
+"deg": 17.52
+},
+"source": "Charlotte",
+"target": "Atlanta"
+},
+{
+"dist": 531.21,
+"ecmp_fwd": {
+"org": 44.88,
+"uni": 56.59,
+"deg": 46.49
+},
+"ecmp_bwd": {
+"org": 44.51,
+"uni": 56.04,
+"deg": 46.27
+},
+"source": "Charlotte",
+"target": "WashingtonDC"
+},
+{
+"dist": 820.71,
+"ecmp_fwd": {
+"org": 10.91,
+"uni": 14.78,
+"deg": 11.10
+},
+"ecmp_bwd": {
+"org": 11.00,
+"uni": 15.64,
+"deg": 11.96
+},
+"source": "Charlotte",
+"target": "Tampa"
+},
+{
+"dist": 678.85,
+"ecmp_fwd": {
+"org": 16.37,
+"uni": 30.72,
+"deg": 30.33
+},
+"ecmp_bwd": {
+"org": 15.28,
+"uni": 27.56,
+"deg": 27.61
+},
+"source": "NewOrleans",
+"target": "Atlanta"
+},
+{
+"dist": 1056.26,
+"ecmp_fwd": {
+"org": 9.76,
+"uni": 21.25,
+"deg": 14.35
+},
+"ecmp_bwd": {
+"org": 9.75,
+"uni": 21.30,
+"deg": 14.45
+},
+"source": "NewOrleans",
+"target": "Miami"
+},
+{
+"dist": 587.28,
+"ecmp_fwd": {
+"org": 9.70,
+"uni": 25.53,
+"deg": 25.06
+},
+"ecmp_bwd": {
+"org": 9.35,
+"uni": 24.63,
+"deg": 24.02
+},
+"source": "NewOrleans",
+"target": "Memphis"
+},
+{
+"dist": 659.41,
+"ecmp_fwd": {
+"org": 3.29,
+"uni": 9.22,
+"deg": 8.51
+},
+"ecmp_bwd": {
+"org": 3.23,
+"uni": 8.30,
+"deg": 7.55
+},
+"source": "Atlanta",
+"target": "Tampa"
+},
+{
+"dist": 322.91,
+"ecmp_fwd": {
+"org": 9.74,
+"uni": 11.31,
+"deg": 8.08
+},
+"ecmp_bwd": {
+"org": 9.72,
+"uni": 11.36,
+"deg": 8.18
+},
+"source": "Miami",
+"target": "Tampa"
+},
+{
+"dist": 208.06,
+"ecmp_fwd": {
+"org": 61.29,
+"uni": 31.49,
+"deg": 24.06
+},
+"ecmp_bwd": {
+"org": 60.92,
+"uni": 30.57,
+"deg": 23.47
+},
+"source": "WashingtonDC",
+"target": "Philadelphia"
+},
+{
+"dist": 306.97,
+"ecmp_fwd": {
+"org": 14.89,
+"uni": 16.85,
+"deg": 12.75
+},
+"ecmp_bwd": {
+"org": 14.89,
+"uni": 17.22,
+"deg": 13.12
+},
+"source": "WashingtonDC",
+"target": "Pittsburgh"
+},
+{
+"dist": 1202.29,
+"ecmp_fwd": {
+"org": 12.56,
+"uni": 41.92,
+"deg": 30.45
+},
+"ecmp_bwd": {
+"org": 18.55,
+"uni": 50.21,
+"deg": 38.74
+},
+"source": "Winnipeg",
+"target": "Calgary"
+},
+{
+"dist": 215.23,
+"ecmp_fwd": {
+"org": 8.61,
+"uni": 16.81,
+"deg": 10.51
+},
+"ecmp_bwd": {
+"org": 8.58,
+"uni": 16.66,
+"deg": 10.45
+},
+"source": "Seattle",
+"target": "Portland"
+},
+{
+"dist": 480.94,
+"ecmp_fwd": {
+"org": 13.03,
+"uni": 22.70,
+"deg": 15.19
+},
+"ecmp_bwd": {
+"org": 14.14,
+"uni": 23.44,
+"deg": 15.88
+},
+"source": "Phoenix",
+"target": "SanDiego"
+}
+]
+}

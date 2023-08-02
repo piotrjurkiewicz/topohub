@@ -1,0 +1,950 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "dfn_gwin",
+"demands": {
+"Frankfurt": {
+"Essen": 109.00,
+"Hannover": 67.00,
+"Erlangen": 65.00,
+"Muenchen": 59.00,
+"Stuttgart": 58.00,
+"Leipzig": 98.00,
+"IP": 23.00,
+"Berlin": 93.00,
+"Koeln": 92.00,
+"Hamburg": 92.00
+},
+"IP": {
+"Berlin": 85.00,
+"Leipzig": 82.00,
+"Hamburg": 79.00,
+"Koeln": 69.00,
+"Hannover": 56.00,
+"Erlangen": 48.00,
+"Muenchen": 44.00,
+"Frankfurt": 38.00,
+"Essen": 98.00,
+"Stuttgart": 33.00
+},
+"Koeln": {
+"Stuttgart": 5.00,
+"Frankfurt": 100.00,
+"IP": 63.00,
+"Leipzig": 49.00,
+"Essen": 36.00,
+"Hannover": 30.00,
+"Hamburg": 18.00,
+"Muenchen": 12.00,
+"Berlin": 12.00,
+"Erlangen": 7.00
+},
+"Essen": {
+"Stuttgart": 5.00,
+"Erlangen": 5.00,
+"Frankfurt": 79.00,
+"IP": 56.00,
+"Leipzig": 48.00,
+"Koeln": 48.00,
+"Muenchen": 38.00,
+"Hannover": 22.00,
+"Hamburg": 14.00,
+"Berlin": 10.00
+},
+"Erlangen": {
+"Leipzig": 5.00,
+"Koeln": 5.00,
+"Essen": 5.00,
+"Hannover": 4.00,
+"Hamburg": 4.00,
+"Frankfurt": 29.00,
+"IP": 23.00,
+"Stuttgart": 19.00,
+"Muenchen": 12.00,
+"Berlin": 8.00
+},
+"Stuttgart": {
+"Koeln": 4.00,
+"Hamburg": 4.00,
+"Erlangen": 4.00,
+"Frankfurt": 35.00,
+"IP": 29.00,
+"Berlin": 8.00,
+"Muenchen": 6.00,
+"Leipzig": 6.00,
+"Hannover": 6.00,
+"Essen": 5.00
+},
+"Muenchen": {
+"Frankfurt": 82.00,
+"IP": 54.00,
+"Stuttgart": 40.00,
+"Erlangen": 32.00,
+"Berlin": 24.00,
+"Essen": 22.00,
+"Hannover": 16.00,
+"Leipzig": 15.00,
+"Hamburg": 12.00,
+"Koeln": 11.00
+},
+"Hamburg": {
+"Stuttgart": 77.00,
+"Frankfurt": 73.00,
+"IP": 61.00,
+"Erlangen": 21.00,
+"Essen": 14.00,
+"Berlin": 12.00,
+"Koeln": 11.00,
+"Muenchen": 10.00,
+"Leipzig": 10.00,
+"Hannover": 10.00
+},
+"Leipzig": {
+"IP": 65.00,
+"Frankfurt": 99.00,
+"Hannover": 45.00,
+"Berlin": 32.00,
+"Essen": 28.00,
+"Muenchen": 20.00,
+"Hamburg": 20.00,
+"Koeln": 18.00,
+"Erlangen": 16.00,
+"Stuttgart": 14.00
+},
+"Berlin": {
+"Leipzig": 63.00,
+"IP": 62.00,
+"Koeln": 50.00,
+"Muenchen": 26.00,
+"Hannover": 26.00,
+"Frankfurt": 93.00,
+"Hamburg": 12.00,
+"Essen": 11.00,
+"Erlangen": 8.00,
+"Stuttgart": 7.00
+},
+"Hannover": {
+"Frankfurt": 55.00,
+"IP": 33.00,
+"Essen": 19.00,
+"Leipzig": 13.00,
+"Erlangen": 13.00,
+"Berlin": 13.00,
+"Muenchen": 10.00,
+"Koeln": 10.00,
+"Hamburg": 10.00,
+"Stuttgart": 7.00
+}
+},
+"stats": {
+"nodes": 11,
+"links": 47,
+"demands": 110,
+"min_degree": 2,
+"avg_degree": 8.55,
+"std_degree": 2.10,
+"max_degree": 10,
+"gini": 0.09,
+"min_link_len": 78.34,
+"avg_link_len": 315.70,
+"max_link_len": 600.87,
+"diameter_len": 694.27,
+"diameter_hops": 2,
+"avg_sdp_num": 1.25,
+"max_sdp_num": 2,
+"avg_sdp_hops": 1.25,
+"avg_sdp_len": 173.15,
+"avg_adp_num": 6.99,
+"max_adp_num": 10,
+"avg_adp_hops": 1.90,
+"avg_adp_len": 573.26
+}
+},
+"nodes": [
+{
+"pos": [
+12.38,
+51.34
+],
+"id": "Leipzig"
+},
+{
+"pos": [
+9.99,
+53.56
+],
+"id": "Hamburg"
+},
+{
+"pos": [
+9.72,
+52.38
+],
+"id": "Hannover"
+},
+{
+"pos": [
+9.10,
+48.74
+],
+"id": "Stuttgart"
+},
+{
+"pos": [
+11.67,
+48.27
+],
+"id": "Muenchen"
+},
+{
+"pos": [
+7.19,
+50.77
+],
+"id": "Koeln"
+},
+{
+"pos": [
+11.03,
+49.57
+],
+"id": "Erlangen"
+},
+{
+"pos": [
+13.29,
+52.46
+],
+"id": "Berlin"
+},
+{
+"pos": [
+7.01,
+51.47
+],
+"id": "Essen"
+},
+{
+"pos": [
+8.73,
+50.12
+],
+"id": "Frankfurt"
+},
+{
+"pos": [
+7.21,
+53.60
+],
+"id": "IP"
+}
+],
+"links": [
+{
+"dist": 139.24,
+"ecmp_fwd": {
+"org": 16.83,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 16.83,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Leipzig",
+"target": "Berlin"
+},
+{
+"dist": 368.12,
+"ecmp_fwd": {
+"org": 11.87,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 11.87,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Leipzig",
+"target": "Koeln"
+},
+{
+"dist": 345.58,
+"ecmp_fwd": {
+"org": 6.20,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 6.20,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Leipzig",
+"target": "Muenchen"
+},
+{
+"dist": 372.92,
+"ecmp_fwd": {
+"org": 13.46,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 13.46,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Leipzig",
+"target": "Essen"
+},
+{
+"dist": 218.42,
+"ecmp_fwd": {
+"org": 3.72,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 3.72,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Leipzig",
+"target": "Erlangen"
+},
+{
+"dist": 371.95,
+"ecmp_fwd": {
+"org": 3.54,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 3.54,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Leipzig",
+"target": "Stuttgart"
+},
+{
+"dist": 216.05,
+"ecmp_fwd": {
+"org": 23.29,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 23.29,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Leipzig",
+"target": "Hannover"
+},
+{
+"dist": 295.73,
+"ecmp_fwd": {
+"org": 5.31,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 5.31,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Leipzig",
+"target": "Hamburg"
+},
+{
+"dist": 290.72,
+"ecmp_fwd": {
+"org": 47.92,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 47.92,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Leipzig",
+"target": "Frankfurt"
+},
+{
+"dist": 308.14,
+"ecmp_fwd": {
+"org": 4.96,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 4.96,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Hamburg",
+"target": "Essen"
+},
+{
+"dist": 253.17,
+"ecmp_fwd": {
+"org": 4.25,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 4.25,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Hamburg",
+"target": "Berlin"
+},
+{
+"dist": 449.40,
+"ecmp_fwd": {
+"org": 4.43,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 4.43,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Hamburg",
+"target": "Erlangen"
+},
+{
+"dist": 539.70,
+"ecmp_fwd": {
+"org": 14.35,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 14.35,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Hamburg",
+"target": "Stuttgart"
+},
+{
+"dist": 600.87,
+"ecmp_fwd": {
+"org": 3.90,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 3.90,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Hamburg",
+"target": "Muenchen"
+},
+{
+"dist": 392.84,
+"ecmp_fwd": {
+"org": 41.63,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 41.63,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Hamburg",
+"target": "Frankfurt"
+},
+{
+"dist": 364.23,
+"ecmp_fwd": {
+"org": 5.14,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 5.14,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Hamburg",
+"target": "Koeln"
+},
+{
+"dist": 132.72,
+"ecmp_fwd": {
+"org": 15.94,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 15.94,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Hamburg",
+"target": "Hannover"
+},
+{
+"dist": 261.04,
+"ecmp_fwd": {
+"org": 21.61,
+"uni": 20.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 21.61,
+"uni": 20.00,
+"deg": 100.00
+},
+"source": "Hannover",
+"target": "Frankfurt"
+},
+{
+"dist": 212.15,
+"ecmp_fwd": {
+"org": 20.90,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 20.90,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Hannover",
+"target": "Essen"
+},
+{
+"dist": 250.24,
+"ecmp_fwd": {
+"org": 18.78,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 18.78,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Hannover",
+"target": "Koeln"
+},
+{
+"dist": 216.22,
+"ecmp_fwd": {
+"org": 100.00,
+"uni": 100.00,
+"deg": 92.00
+},
+"ecmp_bwd": {
+"org": 100.00,
+"uni": 100.00,
+"deg": 92.00
+},
+"source": "Hannover",
+"target": "IP"
+},
+{
+"dist": 242.30,
+"ecmp_fwd": {
+"org": 19.93,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 19.93,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Hannover",
+"target": "Berlin"
+},
+{
+"dist": 325.14,
+"ecmp_fwd": {
+"org": 9.30,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 9.30,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Hannover",
+"target": "Erlangen"
+},
+{
+"dist": 478.05,
+"ecmp_fwd": {
+"org": 13.29,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 13.29,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Hannover",
+"target": "Muenchen"
+},
+{
+"dist": 407.00,
+"ecmp_fwd": {
+"org": 7.79,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 7.79,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Hannover",
+"target": "Stuttgart"
+},
+{
+"dist": 337.67,
+"ecmp_fwd": {
+"org": 1.77,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 1.77,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Stuttgart",
+"target": "Essen"
+},
+{
+"dist": 168.13,
+"ecmp_fwd": {
+"org": 4.07,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 4.07,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Stuttgart",
+"target": "Erlangen"
+},
+{
+"dist": 264.03,
+"ecmp_fwd": {
+"org": 1.59,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 1.59,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Stuttgart",
+"target": "Koeln"
+},
+{
+"dist": 155.21,
+"ecmp_fwd": {
+"org": 21.97,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 21.97,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Stuttgart",
+"target": "Frankfurt"
+},
+{
+"dist": 508.21,
+"ecmp_fwd": {
+"org": 2.66,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 2.66,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Stuttgart",
+"target": "Berlin"
+},
+{
+"dist": 197.12,
+"ecmp_fwd": {
+"org": 8.15,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 8.15,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Stuttgart",
+"target": "Muenchen"
+},
+{
+"dist": 488.34,
+"ecmp_fwd": {
+"org": 10.63,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 10.63,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Muenchen",
+"target": "Essen"
+},
+{
+"dist": 480.09,
+"ecmp_fwd": {
+"org": 8.86,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 8.86,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Muenchen",
+"target": "Berlin"
+},
+{
+"dist": 153.01,
+"ecmp_fwd": {
+"org": 7.79,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 7.79,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Muenchen",
+"target": "Erlangen"
+},
+{
+"dist": 296.98,
+"ecmp_fwd": {
+"org": 33.66,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 33.66,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Muenchen",
+"target": "Frankfurt"
+},
+{
+"dist": 427.04,
+"ecmp_fwd": {
+"org": 4.07,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 4.07,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Muenchen",
+"target": "Koeln"
+},
+{
+"dist": 303.98,
+"ecmp_fwd": {
+"org": 2.13,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 2.13,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Koeln",
+"target": "Erlangen"
+},
+{
+"dist": 131.04,
+"ecmp_fwd": {
+"org": 45.70,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 45.70,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Koeln",
+"target": "Frankfurt"
+},
+{
+"dist": 78.34,
+"ecmp_fwd": {
+"org": 14.88,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 14.88,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Koeln",
+"target": "Essen"
+},
+{
+"dist": 461.08,
+"ecmp_fwd": {
+"org": 10.98,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 10.98,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Koeln",
+"target": "Berlin"
+},
+{
+"dist": 175.55,
+"ecmp_fwd": {
+"org": 22.94,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 22.94,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Erlangen",
+"target": "Frankfurt"
+},
+{
+"dist": 353.63,
+"ecmp_fwd": {
+"org": 1.77,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 1.77,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Erlangen",
+"target": "Essen"
+},
+{
+"dist": 357.66,
+"ecmp_fwd": {
+"org": 2.83,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 2.83,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Erlangen",
+"target": "Berlin"
+},
+{
+"dist": 444.49,
+"ecmp_fwd": {
+"org": 3.72,
+"uni": 20.00,
+"deg": 81.00
+},
+"ecmp_bwd": {
+"org": 3.72,
+"uni": 20.00,
+"deg": 81.00
+},
+"source": "Berlin",
+"target": "Essen"
+},
+{
+"dist": 410.42,
+"ecmp_fwd": {
+"org": 45.97,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 45.97,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Berlin",
+"target": "Frankfurt"
+},
+{
+"dist": 192.82,
+"ecmp_fwd": {
+"org": 46.94,
+"uni": 30.00,
+"deg": 99.00
+},
+"ecmp_bwd": {
+"org": 46.94,
+"uni": 30.00,
+"deg": 99.00
+},
+"source": "Essen",
+"target": "Frankfurt"
+},
+{
+"dist": 401.15,
+"ecmp_fwd": {
+"org": 95.04,
+"uni": 100.00,
+"deg": 92.00
+},
+"ecmp_bwd": {
+"org": 95.04,
+"uni": 100.00,
+"deg": 92.00
+},
+"source": "Frankfurt",
+"target": "IP"
+}
+]
+}

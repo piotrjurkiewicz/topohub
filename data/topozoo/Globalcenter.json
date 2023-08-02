@@ -1,0 +1,566 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "globalcenter",
+"demands": {},
+"stats": {
+"nodes": 9,
+"links": 36,
+"demands": 72,
+"min_degree": 8,
+"avg_degree": 8.00,
+"std_degree": 0.00,
+"max_degree": 8,
+"gini": 0.00,
+"min_link_len": 323.83,
+"avg_link_len": 2088.52,
+"max_link_len": 4067.36,
+"diameter_len": 4067.36,
+"diameter_hops": 1,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.00,
+"avg_sdp_len": 261.06,
+"avg_adp_num": 8.00,
+"max_adp_num": 8,
+"avg_adp_hops": 1.88,
+"avg_adp_len": 3915.97
+}
+},
+"nodes": [
+{
+"pos": [
+-93.26,
+44.98
+],
+"id": "Minneapolis"
+},
+{
+"pos": [
+-122.33,
+47.61
+],
+"id": "Seattle"
+},
+{
+"pos": [
+-121.89,
+37.34
+],
+"id": "San Jose"
+},
+{
+"pos": [
+-112.07,
+33.45
+],
+"id": "Phoenix"
+},
+{
+"pos": [
+-96.81,
+32.78
+],
+"id": "Dallas"
+},
+{
+"pos": [
+-84.39,
+33.75
+],
+"id": "Atlanta"
+},
+{
+"pos": [
+-77.27,
+38.90
+],
+"id": "Vienna"
+},
+{
+"pos": [
+-74.42,
+40.82
+],
+"id": "Whippany"
+},
+{
+"pos": [
+-87.65,
+41.85
+],
+"id": "Chicago"
+}
+],
+"links": [
+{
+"dist": 2239.65,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Minneapolis",
+"target": "Seattle"
+},
+{
+"dist": 2527.87,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Minneapolis",
+"target": "San Jose"
+},
+{
+"dist": 2058.30,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Minneapolis",
+"target": "Phoenix"
+},
+{
+"dist": 1390.48,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Minneapolis",
+"target": "Dallas"
+},
+{
+"dist": 1461.81,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Minneapolis",
+"target": "Atlanta"
+},
+{
+"dist": 1482.70,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Minneapolis",
+"target": "Vienna"
+},
+{
+"dist": 1599.34,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Minneapolis",
+"target": "Whippany"
+},
+{
+"dist": 571.53,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Minneapolis",
+"target": "Chicago"
+},
+{
+"dist": 1142.50,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Seattle",
+"target": "San Jose"
+},
+{
+"dist": 1794.09,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Seattle",
+"target": "Phoenix"
+},
+{
+"dist": 2702.95,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Seattle",
+"target": "Dallas"
+},
+{
+"dist": 3506.67,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Seattle",
+"target": "Atlanta"
+},
+{
+"dist": 3720.53,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Seattle",
+"target": "Vienna"
+},
+{
+"dist": 3830.19,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Seattle",
+"target": "Whippany"
+},
+{
+"dist": 2789.45,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Seattle",
+"target": "Chicago"
+},
+{
+"dist": 989.35,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "San Jose",
+"target": "Phoenix"
+},
+{
+"dist": 2332.25,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "San Jose",
+"target": "Dallas"
+},
+{
+"dist": 3395.54,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "San Jose",
+"target": "Atlanta"
+},
+{
+"dist": 3869.85,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "San Jose",
+"target": "Vienna"
+},
+{
+"dist": 4067.36,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "San Jose",
+"target": "Whippany"
+},
+{
+"dist": 2957.50,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "San Jose",
+"target": "Chicago"
+},
+{
+"dist": 1422.95,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Phoenix",
+"target": "Dallas"
+},
+{
+"dist": 2557.40,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Phoenix",
+"target": "Atlanta"
+},
+{
+"dist": 3163.73,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Phoenix",
+"target": "Vienna"
+},
+{
+"dist": 3410.36,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Phoenix",
+"target": "Whippany"
+},
+{
+"dist": 2334.55,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Phoenix",
+"target": "Chicago"
+},
+{
+"dist": 1159.21,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Dallas",
+"target": "Atlanta"
+},
+{
+"dist": 1884.01,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Dallas",
+"target": "Vienna"
+},
+{
+"dist": 2177.17,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Dallas",
+"target": "Whippany"
+},
+{
+"dist": 1291.83,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Dallas",
+"target": "Chicago"
+},
+{
+"dist": 857.26,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Atlanta",
+"target": "Vienna"
+},
+{
+"dist": 1180.87,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Atlanta",
+"target": "Whippany"
+},
+{
+"dist": 945.35,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Atlanta",
+"target": "Chicago"
+},
+{
+"dist": 323.83,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Vienna",
+"target": "Whippany"
+},
+{
+"dist": 938.32,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Vienna",
+"target": "Chicago"
+},
+{
+"dist": 1109.87,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Whippany",
+"target": "Chicago"
+}
+]
+}

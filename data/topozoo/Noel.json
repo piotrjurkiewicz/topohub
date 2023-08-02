@@ -1,0 +1,493 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "noel",
+"demands": {},
+"stats": {
+"nodes": 19,
+"links": 25,
+"demands": 342,
+"min_degree": 1,
+"avg_degree": 2.63,
+"std_degree": 1.27,
+"max_degree": 6,
+"gini": 0.24,
+"min_link_len": 4.23,
+"avg_link_len": 104.93,
+"max_link_len": 284.54,
+"diameter_len": 747.67,
+"diameter_hops": 6,
+"avg_sdp_num": 1.09,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.92,
+"avg_sdp_len": 256.77,
+"avg_adp_num": 1.79,
+"max_adp_num": 3,
+"avg_adp_hops": 3.73,
+"avg_adp_len": 437.48
+}
+},
+"nodes": [
+{
+"pos": [
+-117.43,
+47.66
+],
+"id": "Spokane"
+},
+{
+"pos": [
+-116.78,
+47.68
+],
+"id": "Coeur d'Alene"
+},
+{
+"pos": [
+-120.31,
+47.42
+],
+"id": "Wenatchee"
+},
+{
+"pos": [
+-119.18,
+46.83
+],
+"id": "Othello"
+},
+{
+"pos": [
+-118.34,
+46.06
+],
+"id": "Walla Walla"
+},
+{
+"pos": [
+-119.10,
+46.24
+],
+"id": "Pasco"
+},
+{
+"pos": [
+-117.18,
+46.73
+],
+"id": "Pullman"
+},
+{
+"pos": [
+-117.02,
+46.42
+],
+"id": "Lewiston"
+},
+{
+"pos": [
+-119.14,
+46.21
+],
+"id": "Kennewick"
+},
+{
+"pos": [
+-120.51,
+46.60
+],
+"id": "Yakima"
+},
+{
+"pos": [
+-120.55,
+47.00
+],
+"id": "Ellensburg"
+},
+{
+"pos": [
+-123.12,
+49.25
+],
+"id": "Vancouver"
+},
+{
+"pos": [
+-122.49,
+48.76
+],
+"id": "Bellingham"
+},
+{
+"pos": [
+-122.33,
+48.42
+],
+"id": "Mt Vernon"
+},
+{
+"pos": [
+-122.20,
+47.98
+],
+"id": "Everett"
+},
+{
+"pos": [
+-122.34,
+47.61
+],
+"id": "Westin - Seattle"
+},
+{
+"pos": [
+-122.44,
+47.25
+],
+"id": "Tacoma"
+},
+{
+"pos": [
+-122.90,
+47.04
+],
+"id": "Olympia"
+},
+{
+"pos": [
+-122.68,
+45.52
+],
+"id": "Portland"
+}
+],
+"links": [
+{
+"dist": 48.40,
+"ecmp_fwd": {
+"uni": 39.13,
+"deg": 17.83
+},
+"ecmp_bwd": {
+"uni": 39.13,
+"deg": 17.83
+},
+"source": "Spokane",
+"target": "Coeur d'Alene"
+},
+{
+"dist": 218.13,
+"ecmp_fwd": {
+"uni": 89.13,
+"deg": 77.89
+},
+"ecmp_bwd": {
+"uni": 89.13,
+"deg": 77.89
+},
+"source": "Spokane",
+"target": "Wenatchee"
+},
+{
+"dist": 161.32,
+"ecmp_fwd": {
+"uni": 45.65,
+"deg": 48.77
+},
+"ecmp_bwd": {
+"uni": 45.65,
+"deg": 48.77
+},
+"source": "Spokane",
+"target": "Othello"
+},
+{
+"dist": 104.83,
+"ecmp_fwd": {
+"uni": 73.91,
+"deg": 51.32
+},
+"ecmp_bwd": {
+"uni": 73.91,
+"deg": 51.32
+},
+"source": "Spokane",
+"target": "Pullman"
+},
+{
+"dist": 50.77,
+"ecmp_fwd": {
+"uni": 23.10,
+"deg": 22.57
+},
+"ecmp_bwd": {
+"uni": 23.10,
+"deg": 21.93
+},
+"source": "Wenatchee",
+"target": "Ellensburg"
+},
+{
+"dist": 153.74,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 99.36
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Wenatchee",
+"target": "Westin - Seattle"
+},
+{
+"dist": 104.48,
+"ecmp_fwd": {
+"uni": 63.04,
+"deg": 67.70
+},
+"ecmp_bwd": {
+"uni": 63.04,
+"deg": 67.70
+},
+"source": "Othello",
+"target": "Yakima"
+},
+{
+"dist": 63.35,
+"ecmp_fwd": {
+"uni": 21.74,
+"deg": 19.65
+},
+"ecmp_bwd": {
+"uni": 25.54,
+"deg": 23.02
+},
+"source": "Walla Walla",
+"target": "Kennewick"
+},
+{
+"dist": 61.53,
+"ecmp_fwd": {
+"uni": 17.39,
+"deg": 15.29
+},
+"ecmp_bwd": {
+"uni": 13.59,
+"deg": 11.92
+},
+"source": "Walla Walla",
+"target": "Pasco"
+},
+{
+"dist": 4.23,
+"ecmp_fwd": {
+"uni": 6.52,
+"deg": 9.83
+},
+"ecmp_bwd": {
+"uni": 6.52,
+"deg": 9.83
+},
+"source": "Pasco",
+"target": "Kennewick"
+},
+{
+"dist": 115.05,
+"ecmp_fwd": {
+"uni": 45.65,
+"deg": 52.41
+},
+"ecmp_bwd": {
+"uni": 41.85,
+"deg": 49.04
+},
+"source": "Pasco",
+"target": "Yakima"
+},
+{
+"dist": 37.13,
+"ecmp_fwd": {
+"uni": 39.13,
+"deg": 17.83
+},
+"ecmp_bwd": {
+"uni": 39.13,
+"deg": 17.83
+},
+"source": "Pullman",
+"target": "Lewiston"
+},
+{
+"dist": 113.61,
+"ecmp_fwd": {
+"uni": 39.13,
+"deg": 54.78
+},
+"ecmp_bwd": {
+"uni": 39.67,
+"deg": 55.96
+},
+"source": "Kennewick",
+"target": "Yakima"
+},
+{
+"dist": 284.54,
+"ecmp_fwd": {
+"uni": 29.89,
+"deg": 40.95
+},
+"ecmp_bwd": {
+"uni": 33.15,
+"deg": 43.13
+},
+"source": "Kennewick",
+"target": "Portland"
+},
+{
+"dist": 43.99,
+"ecmp_fwd": {
+"uni": 23.91,
+"deg": 26.30
+},
+"ecmp_bwd": {
+"uni": 23.91,
+"deg": 26.93
+},
+"source": "Yakima",
+"target": "Ellensburg"
+},
+{
+"dist": 178.52,
+"ecmp_fwd": {
+"uni": 70.92,
+"deg": 98.00
+},
+"ecmp_bwd": {
+"uni": 67.66,
+"deg": 95.18
+},
+"source": "Yakima",
+"target": "Westin - Seattle"
+},
+{
+"dist": 71.36,
+"ecmp_fwd": {
+"uni": 36.96,
+"deg": 33.48
+},
+"ecmp_bwd": {
+"uni": 36.96,
+"deg": 33.48
+},
+"source": "Vancouver",
+"target": "Bellingham"
+},
+{
+"dist": 190.97,
+"ecmp_fwd": {
+"uni": 67.39,
+"deg": 62.60
+},
+"ecmp_bwd": {
+"uni": 67.39,
+"deg": 62.60
+},
+"source": "Vancouver",
+"target": "Westin - Seattle"
+},
+{
+"dist": 39.30,
+"ecmp_fwd": {
+"uni": 6.52,
+"deg": 4.37
+},
+"ecmp_bwd": {
+"uni": 6.52,
+"deg": 4.37
+},
+"source": "Bellingham",
+"target": "Mt Vernon"
+},
+{
+"dist": 50.15,
+"ecmp_fwd": {
+"uni": 36.96,
+"deg": 33.48
+},
+"ecmp_bwd": {
+"uni": 36.96,
+"deg": 33.48
+},
+"source": "Mt Vernon",
+"target": "Everett"
+},
+{
+"dist": 41.96,
+"ecmp_fwd": {
+"uni": 67.39,
+"deg": 62.60
+},
+"ecmp_bwd": {
+"uni": 67.39,
+"deg": 62.60
+},
+"source": "Everett",
+"target": "Westin - Seattle"
+},
+{
+"dist": 40.84,
+"ecmp_fwd": {
+"uni": 47.83,
+"deg": 42.40
+},
+"ecmp_bwd": {
+"uni": 47.83,
+"deg": 42.58
+},
+"source": "Westin - Seattle",
+"target": "Tacoma"
+},
+{
+"dist": 233.84,
+"ecmp_fwd": {
+"uni": 52.45,
+"deg": 62.78
+},
+"ecmp_bwd": {
+"uni": 49.18,
+"deg": 60.42
+},
+"source": "Westin - Seattle",
+"target": "Portland"
+},
+{
+"dist": 42.00,
+"ecmp_fwd": {
+"uni": 18.21,
+"deg": 15.65
+},
+"ecmp_bwd": {
+"uni": 18.21,
+"deg": 15.83
+},
+"source": "Tacoma",
+"target": "Olympia"
+},
+{
+"dist": 169.32,
+"ecmp_fwd": {
+"uni": 26.09,
+"deg": 24.39
+},
+"ecmp_bwd": {
+"uni": 26.09,
+"deg": 24.57
+},
+"source": "Olympia",
+"target": "Portland"
+}
+]
+}

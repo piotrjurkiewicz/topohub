@@ -1,0 +1,790 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "janetbackbone",
+"demands": {},
+"stats": {
+"nodes": 28,
+"links": 43,
+"demands": 756,
+"min_degree": 1,
+"avg_degree": 3.07,
+"std_degree": 2.25,
+"max_degree": 10,
+"gini": 0.31,
+"min_link_len": 0.00,
+"avg_link_len": 126.82,
+"max_link_len": 295.44,
+"diameter_len": 915.49,
+"diameter_hops": 5,
+"avg_sdp_num": 1.16,
+"max_sdp_num": 3,
+"avg_sdp_hops": 2.68,
+"avg_sdp_len": 256.57,
+"avg_adp_num": 2.05,
+"max_adp_num": 7,
+"avg_adp_hops": 3.50,
+"avg_adp_len": 500.56
+}
+},
+"nodes": [
+{
+"pos": [
+-0.93,
+51.46
+],
+"id": "TVN"
+},
+{
+"pos": [
+-2.36,
+51.38
+],
+"id": "SWERN"
+},
+{
+"pos": [
+-1.97,
+52.50
+],
+"id": "MidMAN"
+},
+{
+"pos": [
+-3.18,
+51.48
+],
+"id": "WREN"
+},
+{
+"pos": [
+-0.13,
+51.51
+],
+"id": "LMN"
+},
+{
+"pos": [
+0.12,
+52.20
+],
+"id": "EastNet"
+},
+{
+"pos": [
+-1.40,
+50.90
+],
+"id": "LeNSE"
+},
+{
+"pos": [
+0.55,
+51.39
+],
+"id": "Kentish MAN"
+},
+{
+"pos": [
+-1.33,
+52.83
+],
+"id": "EMMAN"
+},
+{
+"pos": [
+-3.20,
+55.95
+],
+"id": "Sco-locate"
+},
+{
+"pos": [
+-0.97,
+51.46
+],
+"id": "Reading"
+},
+{
+"pos": [
+-1.55,
+53.80
+],
+"id": "Leeds"
+},
+{
+"pos": [
+-2.58,
+53.39
+],
+"id": "Warrington"
+},
+{
+"pos": [
+-4.26,
+55.87
+],
+"id": "Glasgow"
+},
+{
+"pos": [
+-0.13,
+51.51
+],
+"id": "Telehouse"
+},
+{
+"pos": [
+-0.13,
+51.51
+],
+"id": "Telecity"
+},
+{
+"pos": [
+-0.13,
+51.51
+],
+"id": "London"
+},
+{
+"pos": [
+-2.58,
+51.45
+],
+"id": "Bristol"
+},
+{
+"pos": [
+-2.83,
+54.58
+],
+"id": "C&NLMAN"
+},
+{
+"pos": [
+-6.50,
+54.50
+],
+"id": "NIRAN"
+},
+{
+"pos": [
+-4.71,
+57.12
+],
+"id": "UHIMI"
+},
+{
+"pos": [
+-2.10,
+57.14
+],
+"id": "AbMAN"
+},
+{
+"pos": [
+-2.80,
+56.34
+],
+"id": "FaTMAN"
+},
+{
+"pos": [
+-3.20,
+55.95
+],
+"id": "EaStMAN"
+},
+{
+"pos": [
+-4.26,
+55.87
+],
+"id": "Clydenet"
+},
+{
+"pos": [
+-1.61,
+54.97
+],
+"id": "NorMAN"
+},
+{
+"pos": [
+-0.40,
+54.28
+],
+"id": "YHMAN"
+},
+{
+"pos": [
+-2.24,
+53.48
+],
+"id": "NNW"
+}
+],
+"links": [
+{
+"dist": 2.85,
+"ecmp_fwd": {
+"uni": 28.40,
+"deg": 17.88
+},
+"ecmp_bwd": {
+"uni": 28.01,
+"deg": 17.28
+},
+"source": "TVN",
+"target": "Reading"
+},
+{
+"dist": 56.01,
+"ecmp_fwd": {
+"uni": 14.99,
+"deg": 9.85
+},
+"ecmp_bwd": {
+"uni": 15.38,
+"deg": 10.45
+},
+"source": "TVN",
+"target": "LMN"
+},
+{
+"dist": 17.50,
+"ecmp_fwd": {
+"uni": 26.63,
+"deg": 16.72
+},
+"ecmp_bwd": {
+"uni": 26.33,
+"deg": 16.25
+},
+"source": "SWERN",
+"target": "Bristol"
+},
+{
+"dist": 58.05,
+"ecmp_fwd": {
+"uni": 10.06,
+"deg": 6.15
+},
+"ecmp_bwd": {
+"uni": 10.36,
+"deg": 6.62
+},
+"source": "SWERN",
+"target": "WREN"
+},
+{
+"dist": 146.88,
+"ecmp_fwd": {
+"uni": 17.75,
+"deg": 10.45
+},
+"ecmp_bwd": {
+"uni": 17.46,
+"deg": 10.33
+},
+"source": "MidMAN",
+"target": "Leeds"
+},
+{
+"dist": 107.45,
+"ecmp_fwd": {
+"uni": 14.20,
+"deg": 9.05
+},
+"ecmp_bwd": {
+"uni": 14.50,
+"deg": 9.17
+},
+"source": "MidMAN",
+"target": "Warrington"
+},
+{
+"dist": 153.07,
+"ecmp_fwd": {
+"uni": 34.91,
+"deg": 21.36
+},
+"ecmp_bwd": {
+"uni": 35.21,
+"deg": 21.82
+},
+"source": "WREN",
+"target": "Reading"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 33.14,
+"deg": 20.20
+},
+"ecmp_bwd": {
+"uni": 33.53,
+"deg": 20.80
+},
+"source": "LMN",
+"target": "London"
+},
+{
+"dist": 78.69,
+"ecmp_fwd": {
+"uni": 12.43,
+"deg": 7.20
+},
+"ecmp_bwd": {
+"uni": 13.02,
+"deg": 7.58
+},
+"source": "EastNet",
+"target": "London"
+},
+{
+"dist": 209.62,
+"ecmp_fwd": {
+"uni": 19.53,
+"deg": 12.30
+},
+"ecmp_bwd": {
+"uni": 18.93,
+"deg": 11.92
+},
+"source": "EastNet",
+"target": "Leeds"
+},
+{
+"dist": 111.62,
+"ecmp_fwd": {
+"uni": 22.49,
+"deg": 13.23
+},
+"ecmp_bwd": {
+"uni": 24.06,
+"deg": 14.30
+},
+"source": "LeNSE",
+"target": "London"
+},
+{
+"dist": 102.21,
+"ecmp_fwd": {
+"uni": 9.47,
+"deg": 6.27
+},
+"ecmp_bwd": {
+"uni": 7.89,
+"deg": 5.20
+},
+"source": "LeNSE",
+"target": "Bristol"
+},
+{
+"dist": 48.60,
+"ecmp_fwd": {
+"uni": 19.82,
+"deg": 14.78
+},
+"ecmp_bwd": {
+"uni": 19.82,
+"deg": 14.97
+},
+"source": "Kentish MAN",
+"target": "London"
+},
+{
+"dist": 105.67,
+"ecmp_fwd": {
+"uni": 16.57,
+"deg": 13.70
+},
+"ecmp_bwd": {
+"uni": 16.57,
+"deg": 13.50
+},
+"source": "Kentish MAN",
+"target": "Reading"
+},
+{
+"dist": 168.42,
+"ecmp_fwd": {
+"uni": 12.43,
+"deg": 7.20
+},
+"ecmp_bwd": {
+"uni": 13.02,
+"deg": 7.58
+},
+"source": "EMMAN",
+"target": "London"
+},
+{
+"dist": 108.36,
+"ecmp_fwd": {
+"uni": 19.53,
+"deg": 12.30
+},
+"ecmp_bwd": {
+"uni": 18.93,
+"deg": 11.92
+},
+"source": "EMMAN",
+"target": "Leeds"
+},
+{
+"dist": 261.81,
+"ecmp_fwd": {
+"uni": 28.21,
+"deg": 24.12
+},
+"ecmp_bwd": {
+"uni": 27.66,
+"deg": 23.51
+},
+"source": "Sco-locate",
+"target": "Leeds"
+},
+{
+"dist": 66.61,
+"ecmp_fwd": {
+"uni": 17.60,
+"deg": 17.24
+},
+"ecmp_bwd": {
+"uni": 18.15,
+"deg": 17.86
+},
+"source": "Sco-locate",
+"target": "Glasgow"
+},
+{
+"dist": 241.43,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 93.02
+},
+"ecmp_bwd": {
+"uni": 98.22,
+"deg": 91.29
+},
+"source": "Reading",
+"target": "Warrington"
+},
+{
+"dist": 58.85,
+"ecmp_fwd": {
+"uni": 28.01,
+"deg": 17.28
+},
+"ecmp_bwd": {
+"uni": 28.40,
+"deg": 17.88
+},
+"source": "Reading",
+"target": "Telecity"
+},
+{
+"dist": 111.74,
+"ecmp_fwd": {
+"uni": 26.23,
+"deg": 28.69
+},
+"ecmp_bwd": {
+"uni": 27.51,
+"deg": 29.48
+},
+"source": "Reading",
+"target": "Bristol"
+},
+{
+"dist": 81.63,
+"ecmp_fwd": {
+"uni": 50.74,
+"deg": 67.85
+},
+"ecmp_bwd": {
+"uni": 49.01,
+"deg": 66.71
+},
+"source": "Leeds",
+"target": "Warrington"
+},
+{
+"dist": 271.96,
+"ecmp_fwd": {
+"uni": 99.41,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 96.45,
+"deg": 97.50
+},
+"source": "Leeds",
+"target": "London"
+},
+{
+"dist": 293.76,
+"ecmp_fwd": {
+"uni": 50.74,
+"deg": 32.04
+},
+"ecmp_bwd": {
+"uni": 52.07,
+"deg": 33.08
+},
+"source": "Leeds",
+"target": "FaTMAN"
+},
+{
+"dist": 261.81,
+"ecmp_fwd": {
+"uni": 38.36,
+"deg": 24.26
+},
+"ecmp_bwd": {
+"uni": 38.46,
+"deg": 24.26
+},
+"source": "Leeds",
+"target": "EaStMAN"
+},
+{
+"dist": 130.96,
+"ecmp_fwd": {
+"uni": 27.66,
+"deg": 23.51
+},
+"ecmp_bwd": {
+"uni": 28.21,
+"deg": 24.12
+},
+"source": "Leeds",
+"target": "NorMAN"
+},
+{
+"dist": 92.01,
+"ecmp_fwd": {
+"uni": 27.51,
+"deg": 18.69
+},
+"ecmp_bwd": {
+"uni": 28.21,
+"deg": 19.15
+},
+"source": "Leeds",
+"target": "YHMAN"
+},
+{
+"dist": 295.44,
+"ecmp_fwd": {
+"uni": 59.32,
+"deg": 61.11
+},
+"ecmp_bwd": {
+"uni": 56.61,
+"deg": 58.72
+},
+"source": "Warrington",
+"target": "Glasgow"
+},
+{
+"dist": 133.48,
+"ecmp_fwd": {
+"uni": 22.19,
+"deg": 14.39
+},
+"ecmp_bwd": {
+"uni": 21.89,
+"deg": 14.28
+},
+"source": "Warrington",
+"target": "C&NLMAN"
+},
+{
+"dist": 24.75,
+"ecmp_fwd": {
+"uni": 19.82,
+"deg": 17.99
+},
+"ecmp_bwd": {
+"uni": 19.63,
+"deg": 17.76
+},
+"source": "Warrington",
+"target": "NNW"
+},
+{
+"dist": 168.79,
+"ecmp_fwd": {
+"uni": 9.76,
+"deg": 5.11
+},
+"ecmp_bwd": {
+"uni": 10.06,
+"deg": 5.22
+},
+"source": "Glasgow",
+"target": "C&NLMAN"
+},
+{
+"dist": 208.15,
+"ecmp_fwd": {
+"uni": 31.95,
+"deg": 9.87
+},
+"ecmp_bwd": {
+"uni": 31.95,
+"deg": 9.87
+},
+"source": "Glasgow",
+"target": "NIRAN"
+},
+{
+"dist": 142.31,
+"ecmp_fwd": {
+"uni": 38.02,
+"deg": 23.68
+},
+"ecmp_bwd": {
+"uni": 36.69,
+"deg": 22.63
+},
+"source": "Glasgow",
+"target": "UHIMI"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 23.18,
+"deg": 13.81
+},
+"ecmp_bwd": {
+"uni": 23.08,
+"deg": 13.81
+},
+"source": "Glasgow",
+"target": "Clydenet"
+},
+{
+"dist": 194.13,
+"ecmp_fwd": {
+"uni": 18.15,
+"deg": 17.86
+},
+"ecmp_bwd": {
+"uni": 17.60,
+"deg": 17.24
+},
+"source": "Glasgow",
+"target": "NorMAN"
+},
+{
+"dist": 295.28,
+"ecmp_fwd": {
+"uni": 14.20,
+"deg": 10.33
+},
+"ecmp_bwd": {
+"uni": 13.71,
+"deg": 10.10
+},
+"source": "Glasgow",
+"target": "NNW"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 15.38,
+"deg": 10.45
+},
+"ecmp_bwd": {
+"uni": 14.99,
+"deg": 9.85
+},
+"source": "Telehouse",
+"target": "Telecity"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 33.14,
+"deg": 20.20
+},
+"ecmp_bwd": {
+"uni": 33.53,
+"deg": 20.80
+},
+"source": "Telehouse",
+"target": "London"
+},
+{
+"dist": 170.36,
+"ecmp_fwd": {
+"uni": 34.32,
+"deg": 33.20
+},
+"ecmp_bwd": {
+"uni": 34.91,
+"deg": 33.93
+},
+"source": "London",
+"target": "Bristol"
+},
+{
+"dist": 157.67,
+"ecmp_fwd": {
+"uni": 16.57,
+"deg": 10.74
+},
+"ecmp_bwd": {
+"uni": 15.24,
+"deg": 9.69
+},
+"source": "UHIMI",
+"target": "AbMAN"
+},
+{
+"dist": 99.22,
+"ecmp_fwd": {
+"uni": 26.63,
+"deg": 17.01
+},
+"ecmp_bwd": {
+"uni": 25.30,
+"deg": 15.96
+},
+"source": "AbMAN",
+"target": "FaTMAN"
+},
+{
+"dist": 66.61,
+"ecmp_fwd": {
+"uni": 18.05,
+"deg": 11.84
+},
+"ecmp_bwd": {
+"uni": 18.15,
+"deg": 11.84
+},
+"source": "EaStMAN",
+"target": "Clydenet"
+},
+{
+"dist": 149.44,
+"ecmp_fwd": {
+"uni": 13.02,
+"deg": 10.68
+},
+"ecmp_bwd": {
+"uni": 13.71,
+"deg": 11.14
+},
+"source": "YHMAN",
+"target": "NNW"
+}
+]
+}

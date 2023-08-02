@@ -1,0 +1,415 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "uran",
+"demands": {},
+"stats": {
+"nodes": 19,
+"links": 19,
+"demands": 342,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 1.38,
+"max_degree": 7,
+"gini": 0.30,
+"min_link_len": 58.84,
+"avg_link_len": 186.00,
+"max_link_len": 468.23,
+"diameter_len": 1422.23,
+"diameter_hops": 8,
+"avg_sdp_num": 1.01,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.47,
+"avg_sdp_len": 659.36,
+"avg_adp_num": 1.04,
+"max_adp_num": 2,
+"avg_adp_hops": 3.50,
+"avg_adp_len": 668.11
+}
+},
+"nodes": [
+{
+"pos": [
+32.60,
+46.63
+],
+"id": "Kherson"
+},
+{
+"pos": [
+32.00,
+46.97
+],
+"id": "Mykolaiv"
+},
+{
+"pos": [
+33.52,
+44.59
+],
+"id": "Sevastopol"
+},
+{
+"pos": [
+34.11,
+44.96
+],
+"id": "Simferopol"
+},
+{
+"pos": [
+28.48,
+49.23
+],
+"id": "Vinnitsa"
+},
+{
+"pos": [
+27.00,
+49.42
+],
+"id": "Khmelnitsky"
+},
+{
+"pos": [
+30.73,
+46.48
+],
+"id": "Odessa"
+},
+{
+"pos": [
+26.57,
+48.67
+],
+"id": "Kamianets-Podilsky"
+},
+{
+"pos": [
+32.07,
+49.43
+],
+"id": "Cherkassy"
+},
+{
+"pos": [
+35.18,
+47.82
+],
+"id": "Zaporizhia"
+},
+{
+"pos": [
+34.98,
+48.45
+],
+"id": "Dnipropetrovsk"
+},
+{
+"pos": [
+24.02,
+49.84
+],
+"id": "Lviv"
+},
+{
+"pos": [
+25.33,
+50.75
+],
+"id": "Lutsk"
+},
+{
+"pos": [
+28.67,
+50.25
+],
+"id": "Zhitomir"
+},
+{
+"pos": [
+30.52,
+50.45
+],
+"id": "Kiev"
+},
+{
+"pos": [
+31.47,
+50.08
+],
+"id": "Pereyaslav"
+},
+{
+"pos": [
+34.57,
+49.58
+],
+"id": "Poltava"
+},
+{
+"pos": [
+36.25,
+50.00
+],
+"id": "Kharkiv"
+},
+{
+"pos": [
+37.80,
+48.00
+],
+"id": "Donetsk"
+}
+],
+"links": [
+{
+"dist": 58.84,
+"ecmp_fwd": {
+"uni": 61.54,
+"deg": 55.56
+},
+"ecmp_bwd": {
+"uni": 61.54,
+"deg": 55.56
+},
+"source": "Kherson",
+"target": "Mykolaiv"
+},
+{
+"dist": 219.85,
+"ecmp_fwd": {
+"uni": 43.59,
+"deg": 35.35
+},
+"ecmp_bwd": {
+"uni": 43.59,
+"deg": 35.35
+},
+"source": "Kherson",
+"target": "Simferopol"
+},
+{
+"dist": 274.40,
+"ecmp_fwd": {
+"uni": 89.74,
+"deg": 87.88
+},
+"ecmp_bwd": {
+"uni": 89.74,
+"deg": 87.88
+},
+"source": "Mykolaiv",
+"target": "Cherkassy"
+},
+{
+"dist": 110.90,
+"ecmp_fwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"ecmp_bwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"source": "Mykolaiv",
+"target": "Odessa"
+},
+{
+"dist": 61.73,
+"ecmp_fwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"ecmp_bwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"source": "Sevastopol",
+"target": "Simferopol"
+},
+{
+"dist": 199.67,
+"ecmp_fwd": {
+"uni": 31.41,
+"deg": 33.00
+},
+"ecmp_bwd": {
+"uni": 31.41,
+"deg": 33.00
+},
+"source": "Vinnitsa",
+"target": "Kiev"
+},
+{
+"dist": 109.45,
+"ecmp_fwd": {
+"uni": 12.18,
+"deg": 12.79
+},
+"ecmp_bwd": {
+"uni": 12.18,
+"deg": 12.79
+},
+"source": "Vinnitsa",
+"target": "Khmelnitsky"
+},
+{
+"dist": 219.52,
+"ecmp_fwd": {
+"uni": 12.18,
+"deg": 12.79
+},
+"ecmp_bwd": {
+"uni": 12.18,
+"deg": 12.79
+},
+"source": "Khmelnitsky",
+"target": "Lviv"
+},
+{
+"dist": 347.85,
+"ecmp_fwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"ecmp_bwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"source": "Kamianets-Podilsky",
+"target": "Kiev"
+},
+{
+"dist": 158.43,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Cherkassy",
+"target": "Kiev"
+},
+{
+"dist": 71.99,
+"ecmp_fwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"ecmp_bwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"source": "Zaporizhia",
+"target": "Dnipropetrovsk"
+},
+{
+"dist": 129.67,
+"ecmp_fwd": {
+"uni": 61.54,
+"deg": 55.56
+},
+"ecmp_bwd": {
+"uni": 61.54,
+"deg": 55.56
+},
+"source": "Dnipropetrovsk",
+"target": "Poltava"
+},
+{
+"dist": 214.62,
+"ecmp_fwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"ecmp_bwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"source": "Dnipropetrovsk",
+"target": "Donetsk"
+},
+{
+"dist": 468.23,
+"ecmp_fwd": {
+"uni": 31.41,
+"deg": 33.00
+},
+"ecmp_bwd": {
+"uni": 31.41,
+"deg": 33.00
+},
+"source": "Lviv",
+"target": "Kiev"
+},
+{
+"dist": 242.27,
+"ecmp_fwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"ecmp_bwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"source": "Lutsk",
+"target": "Zhitomir"
+},
+{
+"dist": 133.75,
+"ecmp_fwd": {
+"uni": 43.59,
+"deg": 35.35
+},
+"ecmp_bwd": {
+"uni": 43.59,
+"deg": 35.35
+},
+"source": "Zhitomir",
+"target": "Kiev"
+},
+{
+"dist": 78.73,
+"ecmp_fwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"ecmp_bwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"source": "Kiev",
+"target": "Pereyaslav"
+},
+{
+"dist": 304.70,
+"ecmp_fwd": {
+"uni": 89.74,
+"deg": 87.88
+},
+"ecmp_bwd": {
+"uni": 89.74,
+"deg": 87.88
+},
+"source": "Kiev",
+"target": "Poltava"
+},
+{
+"dist": 129.45,
+"ecmp_fwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"ecmp_bwd": {
+"uni": 23.08,
+"deg": 12.46
+},
+"source": "Poltava",
+"target": "Kharkiv"
+}
+]
+}

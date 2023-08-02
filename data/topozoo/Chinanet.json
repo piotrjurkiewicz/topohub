@@ -1,0 +1,1107 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "chinanet",
+"demands": {},
+"stats": {
+"nodes": 38,
+"links": 62,
+"demands": 1406,
+"min_degree": 1,
+"avg_degree": 3.26,
+"std_degree": 4.03,
+"max_degree": 19,
+"gini": 0.52,
+"min_link_len": 80.47,
+"avg_link_len": 912.23,
+"max_link_len": 2564.99,
+"diameter_len": 7153.70,
+"diameter_hops": 4,
+"avg_sdp_num": 1.14,
+"max_sdp_num": 4,
+"avg_sdp_hops": 2.48,
+"avg_sdp_len": 2233.03,
+"avg_adp_num": 1.43,
+"max_adp_num": 11,
+"avg_adp_hops": 2.59,
+"avg_adp_len": 2471.77
+}
+},
+"nodes": [
+{
+"pos": [
+91.10,
+29.65
+],
+"id": "Lhasa"
+},
+{
+"pos": [
+103.79,
+36.06
+],
+"id": "Lanzhou"
+},
+{
+"pos": [
+75.98,
+39.45
+],
+"id": "Kashi"
+},
+{
+"pos": [
+80.07,
+32.52
+],
+"id": "Shiquanhe"
+},
+{
+"pos": [
+117.00,
+36.67
+],
+"id": "Jinan"
+},
+{
+"pos": [
+120.37,
+36.10
+],
+"id": "Qingdao"
+},
+{
+"pos": [
+112.56,
+37.87
+],
+"id": "Taiyuan"
+},
+{
+"pos": [
+114.48,
+38.04
+],
+"id": "Shilazhuang"
+},
+{
+"pos": [
+121.46,
+31.22
+],
+"id": "Shanghai"
+},
+{
+"pos": [
+120.62,
+31.31
+],
+"id": "Suzhou"
+},
+{
+"pos": [
+108.32,
+22.82
+],
+"id": "Nanning"
+},
+{
+"pos": [
+112.97,
+28.20
+],
+"id": "Changsha"
+},
+{
+"pos": [
+106.72,
+26.58
+],
+"id": "Guiyang"
+},
+{
+"pos": [
+106.55,
+29.56
+],
+"id": "Chongqing"
+},
+{
+"pos": [
+104.07,
+30.67
+],
+"id": "Chengdu"
+},
+{
+"pos": [
+102.72,
+25.04
+],
+"id": "Kunming"
+},
+{
+"pos": [
+108.93,
+34.26
+],
+"id": "Xi'an"
+},
+{
+"pos": [
+113.65,
+34.76
+],
+"id": "Zhengzhou"
+},
+{
+"pos": [
+110.34,
+20.05
+],
+"id": "Haikou"
+},
+{
+"pos": [
+100.52,
+30.13
+],
+"id": "Hong Kong"
+},
+{
+"pos": [
+120.17,
+30.26
+],
+"id": "Hangzhou"
+},
+{
+"pos": [
+114.27,
+30.58
+],
+"id": "Wuhan"
+},
+{
+"pos": [
+117.28,
+31.86
+],
+"id": "Hefei"
+},
+{
+"pos": [
+118.78,
+32.06
+],
+"id": "Nanjing"
+},
+{
+"pos": [
+113.25,
+23.12
+],
+"id": "Guangzhou"
+},
+{
+"pos": [
+118.08,
+24.48
+],
+"id": "Xiamen"
+},
+{
+"pos": [
+119.31,
+26.06
+],
+"id": "Fuzhou"
+},
+{
+"pos": [
+115.88,
+28.68
+],
+"id": "Nandhang"
+},
+{
+"pos": [
+101.77,
+36.62
+],
+"id": "Xining"
+},
+{
+"pos": [
+87.58,
+43.80
+],
+"id": "Urumqi"
+},
+{
+"pos": [
+126.65,
+45.75
+],
+"id": "Harbin"
+},
+{
+"pos": [
+125.32,
+43.88
+],
+"id": "Changchun"
+},
+{
+"pos": [
+123.43,
+41.79
+],
+"id": "Shenyang"
+},
+{
+"pos": [
+121.60,
+38.91
+],
+"id": "Dalian"
+},
+{
+"pos": [
+117.18,
+39.14
+],
+"id": "Tianjin"
+},
+{
+"pos": [
+116.40,
+39.91
+],
+"id": "Beijing"
+},
+{
+"pos": [
+111.65,
+40.81
+],
+"id": "Hohhot"
+},
+{
+"pos": [
+106.27,
+38.47
+],
+"id": "Yinchuan"
+}
+],
+"links": [
+{
+"dist": 1251.43,
+"ecmp_fwd": {
+"uni": 29.11,
+"deg": 22.95
+},
+"ecmp_bwd": {
+"uni": 29.62,
+"deg": 24.07
+},
+"source": "Lhasa",
+"target": "Chengdu"
+},
+{
+"dist": 1097.66,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Lhasa",
+"target": "Shiquanhe"
+},
+{
+"dist": 2564.99,
+"ecmp_fwd": {
+"uni": 76.61,
+"deg": 53.79
+},
+"ecmp_bwd": {
+"uni": 76.10,
+"deg": 52.67
+},
+"source": "Lhasa",
+"target": "Beijing"
+},
+{
+"dist": 508.00,
+"ecmp_fwd": {
+"uni": 17.71,
+"deg": 12.49
+},
+"ecmp_bwd": {
+"uni": 17.53,
+"deg": 12.30
+},
+"source": "Lanzhou",
+"target": "Xi'an"
+},
+{
+"dist": 1183.84,
+"ecmp_fwd": {
+"uni": 32.69,
+"deg": 19.60
+},
+"ecmp_bwd": {
+"uni": 32.86,
+"deg": 19.79
+},
+"source": "Lanzhou",
+"target": "Beijing"
+},
+{
+"dist": 1077.66,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Kashi",
+"target": "Urumqi"
+},
+{
+"dist": 732.14,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Jinan",
+"target": "Shanghai"
+},
+{
+"dist": 440.21,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Qingdao",
+"target": "Tianjin"
+},
+{
+"dist": 517.53,
+"ecmp_fwd": {
+"uni": 17.71,
+"deg": 12.49
+},
+"ecmp_bwd": {
+"uni": 17.53,
+"deg": 12.30
+},
+"source": "Taiyuan",
+"target": "Xi'an"
+},
+{
+"dist": 402.10,
+"ecmp_fwd": {
+"uni": 32.69,
+"deg": 19.60
+},
+"ecmp_bwd": {
+"uni": 32.86,
+"deg": 19.79
+},
+"source": "Taiyuan",
+"target": "Beijing"
+},
+{
+"dist": 265.70,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Shilazhuang",
+"target": "Beijing"
+},
+{
+"dist": 962.74,
+"ecmp_fwd": {
+"uni": 37.45,
+"deg": 31.45
+},
+"ecmp_bwd": {
+"uni": 37.45,
+"deg": 31.45
+},
+"source": "Shanghai",
+"target": "Tianjin"
+},
+{
+"dist": 1068.56,
+"ecmp_fwd": {
+"uni": 81.89,
+"deg": 84.24
+},
+"ecmp_bwd": {
+"uni": 81.89,
+"deg": 84.24
+},
+"source": "Shanghai",
+"target": "Beijing"
+},
+{
+"dist": 80.47,
+"ecmp_fwd": {
+"uni": 33.71,
+"deg": 20.91
+},
+"ecmp_bwd": {
+"uni": 32.69,
+"deg": 20.52
+},
+"source": "Shanghai",
+"target": "Suzhou"
+},
+{
+"dist": 1658.50,
+"ecmp_fwd": {
+"uni": 32.38,
+"deg": 41.60
+},
+"ecmp_bwd": {
+"uni": 32.80,
+"deg": 41.69
+},
+"source": "Shanghai",
+"target": "Chengdu"
+},
+{
+"dist": 1218.92,
+"ecmp_fwd": {
+"uni": 37.17,
+"deg": 51.71
+},
+"ecmp_bwd": {
+"uni": 37.57,
+"deg": 52.17
+},
+"source": "Shanghai",
+"target": "Xi'an"
+},
+{
+"dist": 2003.85,
+"ecmp_fwd": {
+"uni": 13.39,
+"deg": 14.01
+},
+"ecmp_bwd": {
+"uni": 13.39,
+"deg": 14.01
+},
+"source": "Shanghai",
+"target": "Hong Kong"
+},
+{
+"dist": 163.57,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Shanghai",
+"target": "Hangzhou"
+},
+{
+"dist": 689.87,
+"ecmp_fwd": {
+"uni": 30.30,
+"deg": 31.14
+},
+"ecmp_bwd": {
+"uni": 29.35,
+"deg": 30.49
+},
+"source": "Shanghai",
+"target": "Wuhan"
+},
+{
+"dist": 402.32,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Shanghai",
+"target": "Hefei"
+},
+{
+"dist": 270.42,
+"ecmp_fwd": {
+"uni": 21.79,
+"deg": 27.09
+},
+"ecmp_bwd": {
+"uni": 21.79,
+"deg": 27.09
+},
+"source": "Shanghai",
+"target": "Nanjing"
+},
+{
+"dist": 1212.55,
+"ecmp_fwd": {
+"uni": 49.91,
+"deg": 52.35
+},
+"ecmp_bwd": {
+"uni": 51.07,
+"deg": 52.84
+},
+"source": "Shanghai",
+"target": "Guangzhou"
+},
+{
+"dist": 606.81,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Shanghai",
+"target": "Nandhang"
+},
+{
+"dist": 193.13,
+"ecmp_fwd": {
+"uni": 17.71,
+"deg": 11.57
+},
+"ecmp_bwd": {
+"uni": 16.68,
+"deg": 11.18
+},
+"source": "Suzhou",
+"target": "Nanjing"
+},
+{
+"dist": 506.30,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Nanning",
+"target": "Guangzhou"
+},
+{
+"dist": 293.49,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Changsha",
+"target": "Wuhan"
+},
+{
+"dist": 522.64,
+"ecmp_fwd": {
+"uni": 12.94,
+"deg": 8.42
+},
+"ecmp_bwd": {
+"uni": 12.73,
+"deg": 8.18
+},
+"source": "Guiyang",
+"target": "Chengdu"
+},
+{
+"dist": 763.66,
+"ecmp_fwd": {
+"uni": 37.45,
+"deg": 23.67
+},
+"ecmp_bwd": {
+"uni": 37.66,
+"deg": 23.91
+},
+"source": "Guiyang",
+"target": "Guangzhou"
+},
+{
+"dist": 268.86,
+"ecmp_fwd": {
+"uni": 12.94,
+"deg": 8.42
+},
+"ecmp_bwd": {
+"uni": 12.73,
+"deg": 8.18
+},
+"source": "Chongqing",
+"target": "Chengdu"
+},
+{
+"dist": 979.18,
+"ecmp_fwd": {
+"uni": 37.45,
+"deg": 23.67
+},
+"ecmp_bwd": {
+"uni": 37.66,
+"deg": 23.91
+},
+"source": "Chongqing",
+"target": "Guangzhou"
+},
+{
+"dist": 1404.64,
+"ecmp_fwd": {
+"uni": 23.27,
+"deg": 31.96
+},
+"ecmp_bwd": {
+"uni": 24.07,
+"deg": 32.50
+},
+"source": "Chengdu",
+"target": "Nanjing"
+},
+{
+"dist": 1237.97,
+"ecmp_fwd": {
+"uni": 23.95,
+"deg": 36.17
+},
+"ecmp_bwd": {
+"uni": 23.66,
+"deg": 36.36
+},
+"source": "Chengdu",
+"target": "Guangzhou"
+},
+{
+"dist": 1090.31,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Kunming",
+"target": "Guangzhou"
+},
+{
+"dist": 699.79,
+"ecmp_fwd": {
+"uni": 17.53,
+"deg": 12.30
+},
+"ecmp_bwd": {
+"uni": 17.71,
+"deg": 12.49
+},
+"source": "Xi'an",
+"target": "Xining"
+},
+{
+"dist": 2118.65,
+"ecmp_fwd": {
+"uni": 33.71,
+"deg": 24.07
+},
+"ecmp_bwd": {
+"uni": 34.05,
+"deg": 24.46
+},
+"source": "Xi'an",
+"target": "Urumqi"
+},
+{
+"dist": 525.11,
+"ecmp_fwd": {
+"uni": 17.53,
+"deg": 12.30
+},
+"ecmp_bwd": {
+"uni": 17.71,
+"deg": 12.49
+},
+"source": "Xi'an",
+"target": "Yinchuan"
+},
+{
+"dist": 912.58,
+"ecmp_fwd": {
+"uni": 12.71,
+"deg": 45.33
+},
+"ecmp_bwd": {
+"uni": 12.71,
+"deg": 45.33
+},
+"source": "Xi'an",
+"target": "Beijing"
+},
+{
+"dist": 767.24,
+"ecmp_fwd": {
+"uni": 17.53,
+"deg": 12.30
+},
+"ecmp_bwd": {
+"uni": 17.71,
+"deg": 12.49
+},
+"source": "Xi'an",
+"target": "Hohhot"
+},
+{
+"dist": 646.55,
+"ecmp_fwd": {
+"uni": 18.73,
+"deg": 22.85
+},
+"ecmp_bwd": {
+"uni": 19.14,
+"deg": 23.13
+},
+"source": "Xi'an",
+"target": "Wuhan"
+},
+{
+"dist": 948.62,
+"ecmp_fwd": {
+"uni": 20.09,
+"deg": 29.99
+},
+"ecmp_bwd": {
+"uni": 19.69,
+"deg": 29.53
+},
+"source": "Xi'an",
+"target": "Nanjing"
+},
+{
+"dist": 1308.60,
+"ecmp_fwd": {
+"uni": 50.23,
+"deg": 65.04
+},
+"ecmp_bwd": {
+"uni": 49.43,
+"deg": 64.30
+},
+"source": "Xi'an",
+"target": "Guangzhou"
+},
+{
+"dist": 622.14,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Zhengzhou",
+"target": "Beijing"
+},
+{
+"dist": 1236.40,
+"ecmp_fwd": {
+"uni": 23.83,
+"deg": 17.33
+},
+"ecmp_bwd": {
+"uni": 23.90,
+"deg": 17.47
+},
+"source": "Haikou",
+"target": "Wuhan"
+},
+{
+"dist": 455.10,
+"ecmp_fwd": {
+"uni": 33.78,
+"deg": 22.86
+},
+"ecmp_bwd": {
+"uni": 33.71,
+"deg": 22.72
+},
+"source": "Haikou",
+"target": "Guangzhou"
+},
+{
+"dist": 1485.42,
+"ecmp_fwd": {
+"uni": 12.03,
+"deg": 11.84
+},
+"ecmp_bwd": {
+"uni": 12.03,
+"deg": 11.84
+},
+"source": "Hong Kong",
+"target": "Guangzhou"
+},
+{
+"dist": 1804.91,
+"ecmp_fwd": {
+"uni": 24.97,
+"deg": 21.90
+},
+"ecmp_bwd": {
+"uni": 24.97,
+"deg": 21.90
+},
+"source": "Hong Kong",
+"target": "Beijing"
+},
+{
+"dist": 1054.90,
+"ecmp_fwd": {
+"uni": 48.42,
+"deg": 45.62
+},
+"ecmp_bwd": {
+"uni": 47.33,
+"deg": 45.08
+},
+"source": "Wuhan",
+"target": "Beijing"
+},
+{
+"dist": 459.03,
+"ecmp_fwd": {
+"uni": 12.33,
+"deg": 14.02
+},
+"ecmp_bwd": {
+"uni": 12.94,
+"deg": 14.34
+},
+"source": "Wuhan",
+"target": "Nanjing"
+},
+{
+"dist": 898.48,
+"ecmp_fwd": {
+"uni": 47.16,
+"deg": 54.38
+},
+"ecmp_bwd": {
+"uni": 47.16,
+"deg": 54.38
+},
+"source": "Nanjing",
+"target": "Beijing"
+},
+{
+"dist": 669.36,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Nanjing",
+"target": "Fuzhou"
+},
+{
+"dist": 1820.72,
+"ecmp_fwd": {
+"uni": 33.37,
+"deg": 26.39
+},
+"ecmp_bwd": {
+"uni": 33.37,
+"deg": 26.39
+},
+"source": "Guangzhou",
+"target": "Tianjin"
+},
+{
+"dist": 1890.91,
+"ecmp_fwd": {
+"uni": 99.59,
+"deg": 99.72
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Guangzhou",
+"target": "Beijing"
+},
+{
+"dist": 514.54,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Guangzhou",
+"target": "Xiamen"
+},
+{
+"dist": 1327.36,
+"ecmp_fwd": {
+"uni": 32.69,
+"deg": 19.60
+},
+"ecmp_bwd": {
+"uni": 32.86,
+"deg": 19.79
+},
+"source": "Xining",
+"target": "Beijing"
+},
+{
+"dist": 2413.38,
+"ecmp_fwd": {
+"uni": 64.01,
+"deg": 38.67
+},
+"ecmp_bwd": {
+"uni": 64.35,
+"deg": 39.06
+},
+"source": "Urumqi",
+"target": "Beijing"
+},
+{
+"dist": 1057.70,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Harbin",
+"target": "Beijing"
+},
+{
+"dist": 860.29,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Changchun",
+"target": "Beijing"
+},
+{
+"dist": 627.72,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Shenyang",
+"target": "Beijing"
+},
+{
+"dist": 383.21,
+"ecmp_fwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"ecmp_bwd": {
+"uni": 50.39,
+"deg": 16.18
+},
+"source": "Dalian",
+"target": "Tianjin"
+},
+{
+"dist": 108.24,
+"ecmp_fwd": {
+"uni": 72.18,
+"deg": 49.87
+},
+"ecmp_bwd": {
+"uni": 72.18,
+"deg": 49.87
+},
+"source": "Tianjin",
+"target": "Beijing"
+},
+{
+"dist": 886.85,
+"ecmp_fwd": {
+"uni": 32.86,
+"deg": 19.79
+},
+"ecmp_bwd": {
+"uni": 32.69,
+"deg": 19.60
+},
+"source": "Beijing",
+"target": "Yinchuan"
+},
+{
+"dist": 414.46,
+"ecmp_fwd": {
+"uni": 32.86,
+"deg": 19.79
+},
+"ecmp_bwd": {
+"uni": 32.69,
+"deg": 19.60
+},
+"source": "Beijing",
+"target": "Hohhot"
+}
+]
+}

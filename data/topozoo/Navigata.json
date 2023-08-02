@@ -1,0 +1,347 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "navigata",
+"demands": {},
+"stats": {
+"nodes": 13,
+"links": 17,
+"demands": 156,
+"min_degree": 1,
+"avg_degree": 2.62,
+"std_degree": 1.90,
+"max_degree": 7,
+"gini": 0.38,
+"min_link_len": 74.20,
+"avg_link_len": 961.90,
+"max_link_len": 2217.43,
+"diameter_len": 6464.66,
+"diameter_hops": 4,
+"avg_sdp_num": 1.15,
+"max_sdp_num": 4,
+"avg_sdp_hops": 2.31,
+"avg_sdp_len": 2589.25,
+"avg_adp_num": 1.42,
+"max_adp_num": 4,
+"avg_adp_hops": 2.47,
+"avg_adp_len": 2874.68
+}
+},
+"nodes": [
+{
+"pos": [
+-79.07,
+43.08
+],
+"id": "New York"
+},
+{
+"pos": [
+-73.59,
+45.51
+],
+"id": "Montreal"
+},
+{
+"pos": [
+-63.57,
+44.65
+],
+"id": "Halifax"
+},
+{
+"pos": [
+-139.53,
+63.05
+],
+"id": "Los Angeles"
+},
+{
+"pos": [
+-79.42,
+43.70
+],
+"id": "Toronto"
+},
+{
+"pos": [
+-123.12,
+49.25
+],
+"id": "Vancouver"
+},
+{
+"pos": [
+-123.37,
+48.43
+],
+"id": "Victoria"
+},
+{
+"pos": [
+-139.20,
+60.09
+],
+"id": "Seattle"
+},
+{
+"pos": [
+-114.09,
+51.05
+],
+"id": "Calgary"
+},
+{
+"pos": [
+-113.47,
+53.55
+],
+"id": "Edmonton"
+},
+{
+"pos": [
+-106.63,
+52.12
+],
+"id": "Saskatoon"
+},
+{
+"pos": [
+-104.62,
+50.45
+],
+"id": "Regina"
+},
+{
+"pos": [
+-97.15,
+49.88
+],
+"id": "Winnipeg"
+}
+],
+"links": [
+{
+"dist": 74.20,
+"ecmp_fwd": {
+"uni": 65.75,
+"deg": 30.56
+},
+"ecmp_bwd": {
+"uni": 65.75,
+"deg": 30.56
+},
+"source": "New York",
+"target": "Toronto"
+},
+{
+"dist": 503.34,
+"ecmp_fwd": {
+"uni": 65.75,
+"deg": 30.56
+},
+"ecmp_bwd": {
+"uni": 65.75,
+"deg": 30.56
+},
+"source": "Montreal",
+"target": "Toronto"
+},
+{
+"dist": 1266.25,
+"ecmp_fwd": {
+"uni": 65.75,
+"deg": 30.56
+},
+"ecmp_bwd": {
+"uni": 65.75,
+"deg": 30.56
+},
+"source": "Halifax",
+"target": "Toronto"
+},
+{
+"dist": 1829.32,
+"ecmp_fwd": {
+"uni": 65.75,
+"deg": 30.56
+},
+"ecmp_bwd": {
+"uni": 65.75,
+"deg": 30.56
+},
+"source": "Los Angeles",
+"target": "Vancouver"
+},
+{
+"dist": 2038.99,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Toronto",
+"target": "Regina"
+},
+{
+"dist": 2217.43,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Toronto",
+"target": "Saskatoon"
+},
+{
+"dist": 92.67,
+"ecmp_fwd": {
+"uni": 65.75,
+"deg": 30.56
+},
+"ecmp_bwd": {
+"uni": 65.75,
+"deg": 30.56
+},
+"source": "Vancouver",
+"target": "Victoria"
+},
+{
+"dist": 1579.95,
+"ecmp_fwd": {
+"uni": 65.75,
+"deg": 30.56
+},
+"ecmp_bwd": {
+"uni": 65.75,
+"deg": 30.56
+},
+"source": "Vancouver",
+"target": "Seattle"
+},
+{
+"dist": 673.79,
+"ecmp_fwd": {
+"uni": 21.92,
+"deg": 37.04
+},
+"ecmp_bwd": {
+"uni": 21.92,
+"deg": 37.04
+},
+"source": "Vancouver",
+"target": "Calgary"
+},
+{
+"dist": 821.84,
+"ecmp_fwd": {
+"uni": 41.10,
+"deg": 35.19
+},
+"ecmp_bwd": {
+"uni": 41.10,
+"deg": 35.19
+},
+"source": "Vancouver",
+"target": "Edmonton"
+},
+{
+"dist": 1201.76,
+"ecmp_fwd": {
+"uni": 87.67,
+"deg": 95.37
+},
+"ecmp_bwd": {
+"uni": 87.67,
+"deg": 95.37
+},
+"source": "Vancouver",
+"target": "Saskatoon"
+},
+{
+"dist": 1330.10,
+"ecmp_fwd": {
+"uni": 87.67,
+"deg": 95.37
+},
+"ecmp_bwd": {
+"uni": 87.67,
+"deg": 95.37
+},
+"source": "Vancouver",
+"target": "Regina"
+},
+{
+"dist": 281.21,
+"ecmp_fwd": {
+"uni": 24.66,
+"deg": 24.07
+},
+"ecmp_bwd": {
+"uni": 24.66,
+"deg": 24.07
+},
+"source": "Calgary",
+"target": "Edmonton"
+},
+{
+"dist": 528.18,
+"ecmp_fwd": {
+"uni": 30.14,
+"deg": 45.37
+},
+"ecmp_bwd": {
+"uni": 30.14,
+"deg": 45.37
+},
+"source": "Calgary",
+"target": "Saskatoon"
+},
+{
+"dist": 669.12,
+"ecmp_fwd": {
+"uni": 30.14,
+"deg": 45.37
+},
+"ecmp_bwd": {
+"uni": 30.14,
+"deg": 45.37
+},
+"source": "Calgary",
+"target": "Regina"
+},
+{
+"dist": 708.34,
+"ecmp_fwd": {
+"uni": 34.25,
+"deg": 33.33
+},
+"ecmp_bwd": {
+"uni": 34.25,
+"deg": 33.33
+},
+"source": "Saskatoon",
+"target": "Winnipeg"
+},
+{
+"dist": 535.73,
+"ecmp_fwd": {
+"uni": 34.25,
+"deg": 33.33
+},
+"ecmp_bwd": {
+"uni": 34.25,
+"deg": 33.33
+},
+"source": "Regina",
+"target": "Winnipeg"
+}
+]
+}

@@ -1,0 +1,168 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "napnet",
+"demands": {},
+"stats": {
+"nodes": 6,
+"links": 7,
+"demands": 30,
+"min_degree": 1,
+"avg_degree": 2.33,
+"std_degree": 1.37,
+"max_degree": 5,
+"gini": 0.31,
+"min_link_len": 571.53,
+"avg_link_len": 1937.28,
+"max_link_len": 3869.85,
+"diameter_len": 4249.33,
+"diameter_hops": 2,
+"avg_sdp_num": 1.07,
+"max_sdp_num": 2,
+"avg_sdp_hops": 1.53,
+"avg_sdp_len": 2160.89,
+"avg_adp_num": 1.47,
+"max_adp_num": 3,
+"avg_adp_hops": 1.71,
+"avg_adp_len": 3040.78
+}
+},
+"nodes": [
+{
+"pos": [
+-122.33,
+47.61
+],
+"id": "Seattle"
+},
+{
+"pos": [
+-121.89,
+37.34
+],
+"id": "San Jose"
+},
+{
+"pos": [
+-93.26,
+44.98
+],
+"id": "Minneapolis"
+},
+{
+"pos": [
+-87.65,
+41.85
+],
+"id": "Chicago"
+},
+{
+"pos": [
+-77.27,
+38.90
+],
+"id": "Vienna"
+},
+{
+"pos": [
+-96.81,
+32.78
+],
+"id": "Dallas"
+}
+],
+"links": [
+{
+"dist": 1142.50,
+"ecmp_fwd": {
+"uni": 30.00,
+"deg": 38.10
+},
+"ecmp_bwd": {
+"uni": 30.00,
+"deg": 38.10
+},
+"source": "Seattle",
+"target": "San Jose"
+},
+{
+"dist": 2789.45,
+"ecmp_fwd": {
+"uni": 70.00,
+"deg": 76.19
+},
+"ecmp_bwd": {
+"uni": 70.00,
+"deg": 76.19
+},
+"source": "Seattle",
+"target": "Chicago"
+},
+{
+"dist": 2957.50,
+"ecmp_fwd": {
+"uni": 60.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 60.00,
+"deg": 100.00
+},
+"source": "San Jose",
+"target": "Chicago"
+},
+{
+"dist": 3869.85,
+"ecmp_fwd": {
+"uni": 30.00,
+"deg": 38.10
+},
+"ecmp_bwd": {
+"uni": 30.00,
+"deg": 38.10
+},
+"source": "San Jose",
+"target": "Vienna"
+},
+{
+"dist": 571.53,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 61.90
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 61.90
+},
+"source": "Minneapolis",
+"target": "Chicago"
+},
+{
+"dist": 938.32,
+"ecmp_fwd": {
+"uni": 70.00,
+"deg": 76.19
+},
+"ecmp_bwd": {
+"uni": 70.00,
+"deg": 76.19
+},
+"source": "Chicago",
+"target": "Vienna"
+},
+{
+"dist": 1291.83,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 61.90
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 61.90
+},
+"source": "Chicago",
+"target": "Dallas"
+}
+]
+}

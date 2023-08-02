@@ -1,0 +1,1203 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "bellcanada",
+"demands": {},
+"stats": {
+"nodes": 48,
+"links": 64,
+"demands": 2256,
+"min_degree": 1,
+"avg_degree": 2.67,
+"std_degree": 1.23,
+"max_degree": 6,
+"gini": 0.25,
+"min_link_len": 44.33,
+"avg_link_len": 565.43,
+"max_link_len": 3697.22,
+"diameter_len": 9102.03,
+"diameter_hops": 13,
+"avg_sdp_num": 1.03,
+"max_sdp_num": 2,
+"avg_sdp_hops": 5.31,
+"avg_sdp_len": 2464.39,
+"avg_adp_num": 1.74,
+"max_adp_num": 4,
+"avg_adp_hops": 6.53,
+"avg_adp_len": 4106.78
+}
+},
+"nodes": [
+{
+"pos": [
+-110.20,
+54.45
+],
+"id": "Cold Lake"
+},
+{
+"pos": [
+-118.80,
+55.17
+],
+"id": "Grande Prairie"
+},
+{
+"pos": [
+-113.47,
+53.55
+],
+"id": "Edmonton"
+},
+{
+"pos": [
+-111.39,
+56.73
+],
+"id": "Fort McMurray"
+},
+{
+"pos": [
+-120.32,
+50.67
+],
+"id": "Kamloops"
+},
+{
+"pos": [
+-73.84,
+40.91
+],
+"id": "Vernon"
+},
+{
+"pos": [
+-120.24,
+55.77
+],
+"id": "Dawson Creek"
+},
+{
+"pos": [
+-122.75,
+53.92
+],
+"id": "Prince George"
+},
+{
+"pos": [
+-119.49,
+49.88
+],
+"id": "Kelowna"
+},
+{
+"pos": [
+-119.59,
+49.48
+],
+"id": "Penticton?"
+},
+{
+"pos": [
+-66.38,
+50.20
+],
+"id": "Sept -Iles"
+},
+{
+"pos": [
+-63.13,
+46.24
+],
+"id": "Charlottetown"
+},
+{
+"pos": [
+-74.01,
+40.71
+],
+"id": "New York"
+},
+{
+"pos": [
+-75.70,
+45.41
+],
+"id": "Ottawa"
+},
+{
+"pos": [
+-73.59,
+45.51
+],
+"id": "Montreal"
+},
+{
+"pos": [
+-71.90,
+45.40
+],
+"id": "Sherbrooke"
+},
+{
+"pos": [
+-71.21,
+46.81
+],
+"id": "Quebec City"
+},
+{
+"pos": [
+-71.06,
+48.43
+],
+"id": "Chicoutimi"
+},
+{
+"pos": [
+-68.52,
+48.45
+],
+"id": "Rimouski"
+},
+{
+"pos": [
+-68.15,
+49.22
+],
+"id": "Baie-Comeau"
+},
+{
+"pos": [
+-66.07,
+45.27
+],
+"id": "Saint John"
+},
+{
+"pos": [
+-64.80,
+46.12
+],
+"id": "Moncton"
+},
+{
+"pos": [
+-63.57,
+44.65
+],
+"id": "Halifax"
+},
+{
+"pos": [
+-66.67,
+45.95
+],
+"id": "Fredericton"
+},
+{
+"pos": [
+-52.71,
+47.56
+],
+"id": "St John's"
+},
+{
+"pos": [
+-63.28,
+45.37
+],
+"id": "Onslow"
+},
+{
+"pos": [
+-112.82,
+49.70
+],
+"id": "Lethbridge"
+},
+{
+"pos": [
+-114.09,
+51.05
+],
+"id": "Calgary"
+},
+{
+"pos": [
+-78.88,
+42.89
+],
+"id": "Buffalo"
+},
+{
+"pos": [
+-79.42,
+43.70
+],
+"id": "Toronto"
+},
+{
+"pos": [
+-123.37,
+48.43
+],
+"id": "Victoria"
+},
+{
+"pos": [
+-122.33,
+47.61
+],
+"id": "Seattle"
+},
+{
+"pos": [
+-124.99,
+49.69
+],
+"id": "Courtenay"
+},
+{
+"pos": [
+-123.12,
+49.25
+],
+"id": "Vancouver"
+},
+{
+"pos": [
+-87.65,
+41.85
+],
+"id": "Chicago"
+},
+{
+"pos": [
+-118.24,
+34.05
+],
+"id": "Los Angeles"
+},
+{
+"pos": [
+-122.14,
+37.44
+],
+"id": "Palo Alto"
+},
+{
+"pos": [
+-122.42,
+37.77
+],
+"id": "San Francisco"
+},
+{
+"pos": [
+-110.67,
+50.05
+],
+"id": "Medicine Hat"
+},
+{
+"pos": [
+-113.80,
+52.27
+],
+"id": "Red Deer"
+},
+{
+"pos": [
+-77.04,
+38.90
+],
+"id": "Washington"
+},
+{
+"pos": [
+-84.39,
+33.75
+],
+"id": "Atlanta"
+},
+{
+"pos": [
+-96.81,
+32.78
+],
+"id": "Dallas"
+},
+{
+"pos": [
+-80.99,
+46.49
+],
+"id": "Sudbury"
+},
+{
+"pos": [
+-89.32,
+48.40
+],
+"id": "Thunder Bay"
+},
+{
+"pos": [
+-97.15,
+49.88
+],
+"id": "Winnipeg"
+},
+{
+"pos": [
+-106.63,
+52.12
+],
+"id": "Saskatoon"
+},
+{
+"pos": [
+-104.62,
+50.45
+],
+"id": "Regina"
+}
+],
+"links": [
+{
+"dist": 235.85,
+"ecmp_fwd": {
+"uni": 11.19,
+"deg": 4.22
+},
+"ecmp_bwd": {
+"uni": 11.19,
+"deg": 4.22
+},
+"source": "Cold Lake",
+"target": "Edmonton"
+},
+{
+"dist": 389.53,
+"ecmp_fwd": {
+"uni": 16.19,
+"deg": 12.03
+},
+"ecmp_bwd": {
+"uni": 16.19,
+"deg": 12.03
+},
+"source": "Grande Prairie",
+"target": "Edmonton"
+},
+{
+"dist": 112.34,
+"ecmp_fwd": {
+"uni": 5.95,
+"deg": 4.19
+},
+"ecmp_bwd": {
+"uni": 5.95,
+"deg": 4.19
+},
+"source": "Grande Prairie",
+"target": "Dawson Creek"
+},
+{
+"dist": 377.99,
+"ecmp_fwd": {
+"uni": 11.19,
+"deg": 4.22
+},
+"ecmp_bwd": {
+"uni": 11.19,
+"deg": 4.22
+},
+"source": "Edmonton",
+"target": "Fort McMurray"
+},
+{
+"dist": 566.95,
+"ecmp_fwd": {
+"uni": 22.32,
+"deg": 22.82
+},
+"ecmp_bwd": {
+"uni": 22.68,
+"deg": 23.16
+},
+"source": "Edmonton",
+"target": "Kamloops"
+},
+{
+"dist": 144.48,
+"ecmp_fwd": {
+"uni": 10.60,
+"deg": 8.44
+},
+"ecmp_bwd": {
+"uni": 10.20,
+"deg": 8.11
+},
+"source": "Edmonton",
+"target": "Red Deer"
+},
+{
+"dist": 485.88,
+"ecmp_fwd": {
+"uni": 43.12,
+"deg": 38.72
+},
+"ecmp_bwd": {
+"uni": 43.15,
+"deg": 38.71
+},
+"source": "Edmonton",
+"target": "Saskatoon"
+},
+{
+"dist": 254.89,
+"ecmp_fwd": {
+"uni": 33.45,
+"deg": 35.26
+},
+"ecmp_bwd": {
+"uni": 33.67,
+"deg": 35.46
+},
+"source": "Kamloops",
+"target": "Vancouver"
+},
+{
+"dist": 3697.22,
+"ecmp_fwd": {
+"uni": 8.04,
+"deg": 6.18
+},
+"ecmp_bwd": {
+"uni": 8.17,
+"deg": 6.32
+},
+"source": "Kamloops",
+"target": "Vernon"
+},
+{
+"dist": 397.55,
+"ecmp_fwd": {
+"uni": 15.95,
+"deg": 12.30
+},
+"ecmp_bwd": {
+"uni": 15.95,
+"deg": 12.30
+},
+"source": "Kamloops",
+"target": "Prince George"
+},
+{
+"dist": 3640.44,
+"ecmp_fwd": {
+"uni": 5.83,
+"deg": 4.55
+},
+"ecmp_bwd": {
+"uni": 5.97,
+"deg": 4.69
+},
+"source": "Vernon",
+"target": "Kelowna"
+},
+{
+"dist": 261.36,
+"ecmp_fwd": {
+"uni": 5.71,
+"deg": 4.45
+},
+"ecmp_bwd": {
+"uni": 5.71,
+"deg": 4.45
+},
+"source": "Dawson Creek",
+"target": "Prince George"
+},
+{
+"dist": 45.34,
+"ecmp_fwd": {
+"uni": 11.19,
+"deg": 4.22
+},
+"ecmp_bwd": {
+"uni": 11.19,
+"deg": 4.22
+},
+"source": "Kelowna",
+"target": "Penticton?"
+},
+{
+"dist": 403.66,
+"ecmp_fwd": {
+"uni": 7.10,
+"deg": 6.22
+},
+"ecmp_bwd": {
+"uni": 7.50,
+"deg": 6.55
+},
+"source": "Kelowna",
+"target": "Calgary"
+},
+{
+"dist": 271.40,
+"ecmp_fwd": {
+"uni": 16.87,
+"deg": 15.62
+},
+"ecmp_bwd": {
+"uni": 16.61,
+"deg": 15.43
+},
+"source": "Kelowna",
+"target": "Vancouver"
+},
+{
+"dist": 167.66,
+"ecmp_fwd": {
+"uni": 11.19,
+"deg": 4.22
+},
+"ecmp_bwd": {
+"uni": 11.19,
+"deg": 4.22
+},
+"source": "Sept -Iles",
+"target": "Baie-Comeau"
+},
+{
+"dist": 97.34,
+"ecmp_fwd": {
+"uni": 0.71,
+"deg": 0.60
+},
+"ecmp_bwd": {
+"uni": 0.71,
+"deg": 0.60
+},
+"source": "Charlottetown",
+"target": "Onslow"
+},
+{
+"dist": 129.70,
+"ecmp_fwd": {
+"uni": 10.48,
+"deg": 7.78
+},
+"ecmp_bwd": {
+"uni": 10.48,
+"deg": 7.78
+},
+"source": "Charlottetown",
+"target": "Moncton"
+},
+{
+"dist": 328.58,
+"ecmp_fwd": {
+"uni": 72.50,
+"deg": 76.66
+},
+"ecmp_bwd": {
+"uni": 72.46,
+"deg": 76.53
+},
+"source": "New York",
+"target": "Washington"
+},
+{
+"dist": 470.62,
+"ecmp_fwd": {
+"uni": 12.58,
+"deg": 12.17
+},
+"ecmp_bwd": {
+"uni": 12.62,
+"deg": 12.30
+},
+"source": "New York",
+"target": "Buffalo"
+},
+{
+"dist": 534.36,
+"ecmp_fwd": {
+"uni": 67.50,
+"deg": 70.31
+},
+"ecmp_bwd": {
+"uni": 67.50,
+"deg": 70.31
+},
+"source": "New York",
+"target": "Montreal"
+},
+{
+"dist": 350.74,
+"ecmp_fwd": {
+"uni": 50.36,
+"deg": 46.71
+},
+"ecmp_bwd": {
+"uni": 50.36,
+"deg": 46.71
+},
+"source": "Ottawa",
+"target": "Toronto"
+},
+{
+"dist": 164.99,
+"ecmp_fwd": {
+"uni": 50.83,
+"deg": 47.57
+},
+"ecmp_bwd": {
+"uni": 50.83,
+"deg": 47.57
+},
+"source": "Ottawa",
+"target": "Montreal"
+},
+{
+"dist": 233.32,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Montreal",
+"target": "Quebec City"
+},
+{
+"dist": 132.31,
+"ecmp_fwd": {
+"uni": 8.33,
+"deg": 6.25
+},
+"ecmp_bwd": {
+"uni": 8.33,
+"deg": 6.25
+},
+"source": "Montreal",
+"target": "Sherbrooke"
+},
+{
+"dist": 165.71,
+"ecmp_fwd": {
+"uni": 2.86,
+"deg": 2.13
+},
+"ecmp_bwd": {
+"uni": 2.86,
+"deg": 2.13
+},
+"source": "Sherbrooke",
+"target": "Quebec City"
+},
+{
+"dist": 180.01,
+"ecmp_fwd": {
+"uni": 41.90,
+"deg": 28.16
+},
+"ecmp_bwd": {
+"uni": 41.90,
+"deg": 28.16
+},
+"source": "Quebec City",
+"target": "Chicoutimi"
+},
+{
+"dist": 497.22,
+"ecmp_fwd": {
+"uni": 49.17,
+"deg": 54.19
+},
+"ecmp_bwd": {
+"uni": 51.55,
+"deg": 56.82
+},
+"source": "Quebec City",
+"target": "Moncton"
+},
+{
+"dist": 362.07,
+"ecmp_fwd": {
+"uni": 19.82,
+"deg": 18.22
+},
+"ecmp_bwd": {
+"uni": 17.44,
+"deg": 15.59
+},
+"source": "Quebec City",
+"target": "Fredericton"
+},
+{
+"dist": 187.40,
+"ecmp_fwd": {
+"uni": 32.14,
+"deg": 20.45
+},
+"ecmp_bwd": {
+"uni": 32.14,
+"deg": 20.45
+},
+"source": "Chicoutimi",
+"target": "Rimouski"
+},
+{
+"dist": 89.73,
+"ecmp_fwd": {
+"uni": 21.90,
+"deg": 12.47
+},
+"ecmp_bwd": {
+"uni": 21.90,
+"deg": 12.47
+},
+"source": "Rimouski",
+"target": "Baie-Comeau"
+},
+{
+"dist": 135.89,
+"ecmp_fwd": {
+"uni": 8.33,
+"deg": 9.34
+},
+"ecmp_bwd": {
+"uni": 8.33,
+"deg": 9.34
+},
+"source": "Saint John",
+"target": "Moncton"
+},
+{
+"dist": 208.31,
+"ecmp_fwd": {
+"uni": 8.57,
+"deg": 9.38
+},
+"ecmp_bwd": {
+"uni": 6.19,
+"deg": 6.75
+},
+"source": "Saint John",
+"target": "Halifax"
+},
+{
+"dist": 88.11,
+"ecmp_fwd": {
+"uni": 8.45,
+"deg": 9.01
+},
+"ecmp_bwd": {
+"uni": 10.83,
+"deg": 11.64
+},
+"source": "Saint John",
+"target": "Fredericton"
+},
+{
+"dist": 144.43,
+"ecmp_fwd": {
+"uni": 22.86,
+"deg": 25.63
+},
+"ecmp_bwd": {
+"uni": 25.24,
+"deg": 28.26
+},
+"source": "Moncton",
+"target": "Onslow"
+},
+{
+"dist": 897.54,
+"ecmp_fwd": {
+"uni": 0.71,
+"deg": 0.53
+},
+"ecmp_bwd": {
+"uni": 0.71,
+"deg": 0.53
+},
+"source": "Halifax",
+"target": "St John's"
+},
+{
+"dist": 83.39,
+"ecmp_fwd": {
+"uni": 5.65,
+"deg": 6.45
+},
+"ecmp_bwd": {
+"uni": 3.27,
+"deg": 3.82
+},
+"source": "Halifax",
+"target": "Onslow"
+},
+{
+"dist": 845.29,
+"ecmp_fwd": {
+"uni": 10.48,
+"deg": 7.85
+},
+"ecmp_bwd": {
+"uni": 10.48,
+"deg": 7.85
+},
+"source": "St John's",
+"target": "Onslow"
+},
+{
+"dist": 174.99,
+"ecmp_fwd": {
+"uni": 11.19,
+"deg": 4.22
+},
+"ecmp_bwd": {
+"uni": 11.19,
+"deg": 4.22
+},
+"source": "Lethbridge",
+"target": "Calgary"
+},
+{
+"dist": 673.79,
+"ecmp_fwd": {
+"uni": 23.15,
+"deg": 24.75
+},
+"ecmp_bwd": {
+"uni": 23.17,
+"deg": 24.79
+},
+"source": "Calgary",
+"target": "Vancouver"
+},
+{
+"dist": 265.84,
+"ecmp_fwd": {
+"uni": 16.75,
+"deg": 15.98
+},
+"ecmp_bwd": {
+"uni": 16.73,
+"deg": 15.94
+},
+"source": "Calgary",
+"target": "Medicine Hat"
+},
+{
+"dist": 136.73,
+"ecmp_fwd": {
+"uni": 9.96,
+"deg": 8.24
+},
+"ecmp_bwd": {
+"uni": 10.36,
+"deg": 8.58
+},
+"source": "Calgary",
+"target": "Red Deer"
+},
+{
+"dist": 100.43,
+"ecmp_fwd": {
+"uni": 10.14,
+"deg": 9.88
+},
+"ecmp_bwd": {
+"uni": 10.18,
+"deg": 10.01
+},
+"source": "Buffalo",
+"target": "Toronto"
+},
+{
+"dist": 702.66,
+"ecmp_fwd": {
+"uni": 50.00,
+"deg": 47.47
+},
+"ecmp_bwd": {
+"uni": 49.98,
+"deg": 47.55
+},
+"source": "Toronto",
+"target": "Chicago"
+},
+{
+"dist": 333.99,
+"ecmp_fwd": {
+"uni": 11.01,
+"deg": 8.43
+},
+"ecmp_bwd": {
+"uni": 11.07,
+"deg": 8.48
+},
+"source": "Toronto",
+"target": "Sudbury"
+},
+{
+"dist": 182.90,
+"ecmp_fwd": {
+"uni": 11.19,
+"deg": 4.22
+},
+"ecmp_bwd": {
+"uni": 11.19,
+"deg": 4.22
+},
+"source": "Victoria",
+"target": "Courtenay"
+},
+{
+"dist": 92.67,
+"ecmp_fwd": {
+"uni": 9.52,
+"deg": 6.98
+},
+"ecmp_bwd": {
+"uni": 9.52,
+"deg": 6.98
+},
+"source": "Victoria",
+"target": "Vancouver"
+},
+{
+"dist": 120.04,
+"ecmp_fwd": {
+"uni": 12.38,
+"deg": 9.51
+},
+"ecmp_bwd": {
+"uni": 12.38,
+"deg": 9.51
+},
+"source": "Victoria",
+"target": "Seattle"
+},
+{
+"dist": 191.80,
+"ecmp_fwd": {
+"uni": 58.45,
+"deg": 65.13
+},
+"ecmp_bwd": {
+"uni": 58.47,
+"deg": 65.08
+},
+"source": "Seattle",
+"target": "Vancouver"
+},
+{
+"dist": 1545.74,
+"ecmp_fwd": {
+"uni": 64.66,
+"deg": 69.67
+},
+"ecmp_bwd": {
+"uni": 64.64,
+"deg": 69.75
+},
+"source": "Seattle",
+"target": "Los Angeles"
+},
+{
+"dist": 1130.65,
+"ecmp_fwd": {
+"uni": 5.00,
+"deg": 5.62
+},
+"ecmp_bwd": {
+"uni": 5.00,
+"deg": 5.59
+},
+"source": "Seattle",
+"target": "Palo Alto"
+},
+{
+"dist": 1093.52,
+"ecmp_fwd": {
+"uni": 8.10,
+"deg": 6.05
+},
+"ecmp_bwd": {
+"uni": 8.10,
+"deg": 6.05
+},
+"source": "Seattle",
+"target": "San Francisco"
+},
+{
+"dist": 1291.83,
+"ecmp_fwd": {
+"uni": 12.86,
+"deg": 10.57
+},
+"ecmp_bwd": {
+"uni": 12.92,
+"deg": 10.65
+},
+"source": "Chicago",
+"target": "Dallas"
+},
+{
+"dist": 1155.53,
+"ecmp_fwd": {
+"uni": 54.82,
+"deg": 51.25
+},
+"ecmp_bwd": {
+"uni": 54.74,
+"deg": 51.24
+},
+"source": "Chicago",
+"target": "Winnipeg"
+},
+{
+"dist": 3693.20,
+"ecmp_fwd": {
+"uni": 74.19,
+"deg": 79.38
+},
+"ecmp_bwd": {
+"uni": 74.17,
+"deg": 79.42
+},
+"source": "Los Angeles",
+"target": "Washington"
+},
+{
+"dist": 515.69,
+"ecmp_fwd": {
+"uni": 8.81,
+"deg": 8.78
+},
+"ecmp_bwd": {
+"uni": 8.81,
+"deg": 8.81
+},
+"source": "Los Angeles",
+"target": "Palo Alto"
+},
+{
+"dist": 44.33,
+"ecmp_fwd": {
+"uni": 3.10,
+"deg": 2.33
+},
+"ecmp_bwd": {
+"uni": 3.10,
+"deg": 2.33
+},
+"source": "Palo Alto",
+"target": "San Francisco"
+},
+{
+"dist": 432.50,
+"ecmp_fwd": {
+"uni": 17.70,
+"deg": 16.45
+},
+"ecmp_bwd": {
+"uni": 17.68,
+"deg": 16.41
+},
+"source": "Medicine Hat",
+"target": "Regina"
+},
+{
+"dist": 872.17,
+"ecmp_fwd": {
+"uni": 14.58,
+"deg": 12.72
+},
+"ecmp_bwd": {
+"uni": 14.52,
+"deg": 12.63
+},
+"source": "Washington",
+"target": "Atlanta"
+},
+{
+"dist": 1159.21,
+"ecmp_fwd": {
+"uni": 10.30,
+"deg": 9.13
+},
+"ecmp_bwd": {
+"uni": 10.24,
+"deg": 9.04
+},
+"source": "Atlanta",
+"target": "Dallas"
+},
+{
+"dist": 661.00,
+"ecmp_fwd": {
+"uni": 9.35,
+"deg": 6.96
+},
+"ecmp_bwd": {
+"uni": 9.40,
+"deg": 7.01
+},
+"source": "Sudbury",
+"target": "Thunder Bay"
+},
+{
+"dist": 592.86,
+"ecmp_fwd": {
+"uni": 10.83,
+"deg": 8.01
+},
+"ecmp_bwd": {
+"uni": 10.89,
+"deg": 8.06
+},
+"source": "Thunder Bay",
+"target": "Winnipeg"
+},
+{
+"dist": 708.34,
+"ecmp_fwd": {
+"uni": 44.82,
+"deg": 39.78
+},
+"ecmp_bwd": {
+"uni": 44.78,
+"deg": 39.78
+},
+"source": "Winnipeg",
+"target": "Saskatoon"
+},
+{
+"dist": 535.73,
+"ecmp_fwd": {
+"uni": 21.73,
+"deg": 19.20
+},
+"ecmp_bwd": {
+"uni": 21.75,
+"deg": 19.24
+},
+"source": "Winnipeg",
+"target": "Regina"
+}
+]
+}

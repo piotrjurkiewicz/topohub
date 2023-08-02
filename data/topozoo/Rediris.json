@@ -1,0 +1,571 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "rediris",
+"demands": {},
+"stats": {
+"nodes": 19,
+"links": 31,
+"demands": 342,
+"min_degree": 1,
+"avg_degree": 3.26,
+"std_degree": 2.22,
+"max_degree": 11,
+"gini": 0.31,
+"min_link_len": 0.00,
+"avg_link_len": 343.37,
+"max_link_len": 1756.93,
+"diameter_len": 2320.09,
+"diameter_hops": 4,
+"avg_sdp_num": 1.18,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.27,
+"avg_sdp_len": 525.48,
+"avg_adp_num": 2.20,
+"max_adp_num": 6,
+"avg_adp_hops": 2.99,
+"avg_adp_len": 1061.27
+}
+},
+"nodes": [
+{
+"pos": [
+-1.64,
+42.82
+],
+"id": "Navarra"
+},
+{
+"pos": [
+-2.45,
+42.47
+],
+"id": "Rioja"
+},
+{
+"pos": [
+-3.80,
+43.46
+],
+"id": "Cantabria"
+},
+{
+"pos": [
+-2.75,
+43.00
+],
+"id": "Pais Vasco"
+},
+{
+"pos": [
+2.65,
+39.57
+],
+"id": "Baleares"
+},
+{
+"pos": [
+-0.38,
+39.47
+],
+"id": "Valencia"
+},
+{
+"pos": [
+-0.88,
+41.66
+],
+"id": "Aragon"
+},
+{
+"pos": [
+2.16,
+41.39
+],
+"id": "Cataluna"
+},
+{
+"pos": [
+-1.12,
+37.98
+],
+"id": "Murcia"
+},
+{
+"pos": [
+-8.55,
+42.88
+],
+"id": "Galacia"
+},
+{
+"pos": [
+-5.84,
+43.36
+],
+"id": "Asturias"
+},
+{
+"pos": [
+-6.97,
+38.88
+],
+"id": "Extremadura"
+},
+{
+"pos": [
+-5.99,
+37.38
+],
+"id": "Andalucia"
+},
+{
+"pos": [
+-15.42,
+28.10
+],
+"id": "Canarias (las palmas)"
+},
+{
+"pos": [
+-16.32,
+28.48
+],
+"id": "Canarias (tenerife)"
+},
+{
+"pos": [
+-3.93,
+38.98
+],
+"id": "Castilla La Mancha"
+},
+{
+"pos": [
+-3.70,
+40.42
+],
+"id": "Nacional"
+},
+{
+"pos": [
+-3.70,
+40.42
+],
+"id": "Madrid"
+},
+{
+"pos": [
+-4.72,
+41.65
+],
+"id": "Castilla Y Leon"
+}
+],
+"links": [
+{
+"dist": 92.44,
+"ecmp_fwd": {
+"uni": 35.85,
+"deg": 24.92
+},
+"ecmp_bwd": {
+"uni": 34.57,
+"deg": 24.03
+},
+"source": "Navarra",
+"target": "Pais Vasco"
+},
+{
+"dist": 143.69,
+"ecmp_fwd": {
+"uni": 35.85,
+"deg": 25.03
+},
+"ecmp_bwd": {
+"uni": 37.13,
+"deg": 25.91
+},
+"source": "Navarra",
+"target": "Aragon"
+},
+{
+"dist": 208.05,
+"ecmp_fwd": {
+"uni": 31.58,
+"deg": 21.43
+},
+"ecmp_bwd": {
+"uni": 31.44,
+"deg": 20.93
+},
+"source": "Rioja",
+"target": "Castilla Y Leon"
+},
+{
+"dist": 158.09,
+"ecmp_fwd": {
+"uni": 35.28,
+"deg": 23.59
+},
+"ecmp_bwd": {
+"uni": 35.42,
+"deg": 24.09
+},
+"source": "Rioja",
+"target": "Aragon"
+},
+{
+"dist": 165.26,
+"ecmp_fwd": {
+"uni": 11.95,
+"deg": 6.31
+},
+"ecmp_bwd": {
+"uni": 9.82,
+"deg": 5.32
+},
+"source": "Cantabria",
+"target": "Asturias"
+},
+{
+"dist": 99.87,
+"ecmp_fwd": {
+"uni": 56.33,
+"deg": 37.54
+},
+"ecmp_bwd": {
+"uni": 58.46,
+"deg": 38.54
+},
+"source": "Cantabria",
+"target": "Pais Vasco"
+},
+{
+"dist": 472.01,
+"ecmp_fwd": {
+"uni": 17.07,
+"deg": 15.39
+},
+"ecmp_bwd": {
+"uni": 16.93,
+"deg": 15.28
+},
+"source": "Pais Vasco",
+"target": "Galacia"
+},
+{
+"dist": 298.03,
+"ecmp_fwd": {
+"uni": 99.00,
+"deg": 96.79
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 97.01
+},
+"source": "Pais Vasco",
+"target": "Nacional"
+},
+{
+"dist": 260.00,
+"ecmp_fwd": {
+"uni": 30.73,
+"deg": 20.93
+},
+"ecmp_bwd": {
+"uni": 32.43,
+"deg": 21.59
+},
+"source": "Baleares",
+"target": "Valencia"
+},
+{
+"dist": 206.59,
+"ecmp_fwd": {
+"uni": 30.73,
+"deg": 18.94
+},
+"ecmp_bwd": {
+"uni": 29.02,
+"deg": 18.27
+},
+"source": "Baleares",
+"target": "Cataluna"
+},
+{
+"dist": 177.34,
+"ecmp_fwd": {
+"uni": 29.87,
+"deg": 20.27
+},
+"ecmp_bwd": {
+"uni": 29.02,
+"deg": 19.60
+},
+"source": "Valencia",
+"target": "Murcia"
+},
+{
+"dist": 541.25,
+"ecmp_fwd": {
+"uni": 22.19,
+"deg": 27.91
+},
+"ecmp_bwd": {
+"uni": 23.04,
+"deg": 27.91
+},
+"source": "Valencia",
+"target": "Andalucia"
+},
+{
+"dist": 302.45,
+"ecmp_fwd": {
+"uni": 67.43,
+"deg": 79.40
+},
+"ecmp_bwd": {
+"uni": 69.13,
+"deg": 81.06
+},
+"source": "Valencia",
+"target": "Nacional"
+},
+{
+"dist": 302.75,
+"ecmp_fwd": {
+"uni": 17.07,
+"deg": 21.93
+},
+"ecmp_bwd": {
+"uni": 17.07,
+"deg": 21.59
+},
+"source": "Valencia",
+"target": "Cataluna"
+},
+{
+"dist": 274.19,
+"ecmp_fwd": {
+"uni": 69.13,
+"deg": 74.25
+},
+"ecmp_bwd": {
+"uni": 69.70,
+"deg": 74.64
+},
+"source": "Aragon",
+"target": "Nacional"
+},
+{
+"dist": 254.58,
+"ecmp_fwd": {
+"uni": 27.31,
+"deg": 22.92
+},
+"ecmp_bwd": {
+"uni": 28.17,
+"deg": 23.92
+},
+"source": "Aragon",
+"target": "Cataluna"
+},
+{
+"dist": 504.38,
+"ecmp_fwd": {
+"uni": 54.62,
+"deg": 60.13
+},
+"ecmp_bwd": {
+"uni": 53.77,
+"deg": 60.13
+},
+"source": "Cataluna",
+"target": "Nacional"
+},
+{
+"dist": 433.94,
+"ecmp_fwd": {
+"uni": 32.43,
+"deg": 20.27
+},
+"ecmp_bwd": {
+"uni": 31.58,
+"deg": 19.60
+},
+"source": "Murcia",
+"target": "Andalucia"
+},
+{
+"dist": 486.84,
+"ecmp_fwd": {
+"uni": 81.93,
+"deg": 85.71
+},
+"ecmp_bwd": {
+"uni": 81.93,
+"deg": 85.71
+},
+"source": "Galacia",
+"target": "Nacional"
+},
+{
+"dist": 225.67,
+"ecmp_fwd": {
+"uni": 57.61,
+"deg": 38.54
+},
+"ecmp_bwd": {
+"uni": 59.74,
+"deg": 39.53
+},
+"source": "Galacia",
+"target": "Asturias"
+},
+{
+"dist": 343.56,
+"ecmp_fwd": {
+"uni": 22.19,
+"deg": 15.73
+},
+"ecmp_bwd": {
+"uni": 19.91,
+"deg": 14.62
+},
+"source": "Galacia",
+"target": "Castilla Y Leon"
+},
+{
+"dist": 327.41,
+"ecmp_fwd": {
+"uni": 46.09,
+"deg": 30.23
+},
+"ecmp_bwd": {
+"uni": 46.94,
+"deg": 30.56
+},
+"source": "Extremadura",
+"target": "Nacional"
+},
+{
+"dist": 188.17,
+"ecmp_fwd": {
+"uni": 15.36,
+"deg": 9.63
+},
+"ecmp_bwd": {
+"uni": 14.51,
+"deg": 9.30
+},
+"source": "Extremadura",
+"target": "Andalucia"
+},
+{
+"dist": 1356.00,
+"ecmp_fwd": {
+"uni": 42.67,
+"deg": 28.57
+},
+"ecmp_bwd": {
+"uni": 42.67,
+"deg": 28.24
+},
+"source": "Andalucia",
+"target": "Canarias (las palmas)"
+},
+{
+"dist": 253.27,
+"ecmp_fwd": {
+"uni": 14.51,
+"deg": 9.30
+},
+"ecmp_bwd": {
+"uni": 15.36,
+"deg": 9.63
+},
+"source": "Andalucia",
+"target": "Castilla La Mancha"
+},
+{
+"dist": 391.60,
+"ecmp_fwd": {
+"uni": 73.40,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 71.69,
+"deg": 99.00
+},
+"source": "Andalucia",
+"target": "Nacional"
+},
+{
+"dist": 97.92,
+"ecmp_fwd": {
+"uni": 24.75,
+"deg": 16.61
+},
+"ecmp_bwd": {
+"uni": 24.75,
+"deg": 16.28
+},
+"source": "Canarias (las palmas)",
+"target": "Canarias (tenerife)"
+},
+{
+"dist": 1756.93,
+"ecmp_fwd": {
+"uni": 73.40,
+"deg": 48.84
+},
+"ecmp_bwd": {
+"uni": 73.40,
+"deg": 48.50
+},
+"source": "Canarias (tenerife)",
+"target": "Nacional"
+},
+{
+"dist": 160.62,
+"ecmp_fwd": {
+"uni": 46.09,
+"deg": 30.23
+},
+"ecmp_bwd": {
+"uni": 46.94,
+"deg": 30.56
+},
+"source": "Castilla La Mancha",
+"target": "Nacional"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 61.45,
+"deg": 20.27
+},
+"ecmp_bwd": {
+"uni": 61.45,
+"deg": 20.27
+},
+"source": "Nacional",
+"target": "Madrid"
+},
+{
+"dist": 161.44,
+"ecmp_fwd": {
+"uni": 58.46,
+"deg": 54.87
+},
+"ecmp_bwd": {
+"uni": 60.88,
+"deg": 56.48
+},
+"source": "Nacional",
+"target": "Castilla Y Leon"
+}
+]
+}

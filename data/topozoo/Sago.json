@@ -1,0 +1,382 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "sago",
+"demands": {},
+"stats": {
+"nodes": 18,
+"links": 17,
+"demands": 306,
+"min_degree": 1,
+"avg_degree": 1.89,
+"std_degree": 0.46,
+"max_degree": 3,
+"gini": 0.10,
+"min_link_len": 39.04,
+"avg_link_len": 72.29,
+"max_link_len": 95.78,
+"diameter_len": 1012.52,
+"diameter_hops": 14,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 5.39,
+"avg_sdp_len": 398.38,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 5.39,
+"avg_adp_len": 398.38
+}
+},
+"nodes": [
+{
+"pos": [
+-80.33,
+27.45
+],
+"id": "Ft. Pierce"
+},
+{
+"pos": [
+-80.61,
+28.08
+],
+"id": "Melbourne"
+},
+{
+"pos": [
+-81.72,
+28.09
+],
+"id": "Lake Alfred"
+},
+{
+"pos": [
+-81.38,
+28.54
+],
+"id": "Orlando"
+},
+{
+"pos": [
+-80.05,
+26.72
+],
+"id": "West Palm Beach"
+},
+{
+"pos": [
+-82.46,
+27.95
+],
+"id": "Tampa"
+},
+{
+"pos": [
+-80.19,
+25.77
+],
+"id": "Miami"
+},
+{
+"pos": [
+-80.14,
+26.12
+],
+"id": "Ft. Lauderdale"
+},
+{
+"pos": [
+-83.90,
+33.25
+],
+"id": "Flovilla"
+},
+{
+"pos": [
+-84.39,
+33.75
+],
+"id": "Atlanta"
+},
+{
+"pos": [
+-82.56,
+32.32
+],
+"id": "Tarrytown"
+},
+{
+"pos": [
+-83.33,
+32.88
+],
+"id": "Gordon"
+},
+{
+"pos": [
+-82.02,
+30.94
+],
+"id": "Newell"
+},
+{
+"pos": [
+-82.20,
+31.72
+],
+"id": "Surrency"
+},
+{
+"pos": [
+-81.31,
+29.89
+],
+"id": "St. Augustine"
+},
+{
+"pos": [
+-81.66,
+30.33
+],
+"id": "Jacksonville"
+},
+{
+"pos": [
+-80.81,
+28.61
+],
+"id": "Titusville"
+},
+{
+"pos": [
+-81.02,
+29.21
+],
+"id": "Daytona Beach"
+}
+],
+"links": [
+{
+"dist": 76.10,
+"ecmp_fwd": {
+"uni": 70.00,
+"deg": 66.32
+},
+"ecmp_bwd": {
+"uni": 70.00,
+"deg": 66.32
+},
+"source": "Ft. Pierce",
+"target": "Melbourne"
+},
+{
+"dist": 85.70,
+"ecmp_fwd": {
+"uni": 56.25,
+"deg": 50.88
+},
+"ecmp_bwd": {
+"uni": 56.25,
+"deg": 50.88
+},
+"source": "Ft. Pierce",
+"target": "West Palm Beach"
+},
+{
+"dist": 61.95,
+"ecmp_fwd": {
+"uni": 81.25,
+"deg": 78.95
+},
+"ecmp_bwd": {
+"uni": 81.25,
+"deg": 78.95
+},
+"source": "Melbourne",
+"target": "Titusville"
+},
+{
+"dist": 60.01,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 32.63
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 32.63
+},
+"source": "Lake Alfred",
+"target": "Orlando"
+},
+{
+"dist": 73.94,
+"ecmp_fwd": {
+"uni": 21.25,
+"deg": 11.58
+},
+"ecmp_bwd": {
+"uni": 21.25,
+"deg": 11.58
+},
+"source": "Lake Alfred",
+"target": "Tampa"
+},
+{
+"dist": 82.46,
+"ecmp_fwd": {
+"uni": 56.25,
+"deg": 50.88
+},
+"ecmp_bwd": {
+"uni": 56.25,
+"deg": 50.88
+},
+"source": "Orlando",
+"target": "Daytona Beach"
+},
+{
+"dist": 66.57,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 32.63
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 32.63
+},
+"source": "West Palm Beach",
+"target": "Ft. Lauderdale"
+},
+{
+"dist": 39.04,
+"ecmp_fwd": {
+"uni": 21.25,
+"deg": 11.58
+},
+"ecmp_bwd": {
+"uni": 21.25,
+"deg": 11.58
+},
+"source": "Miami",
+"target": "Ft. Lauderdale"
+},
+{
+"dist": 71.38,
+"ecmp_fwd": {
+"uni": 21.25,
+"deg": 11.58
+},
+"ecmp_bwd": {
+"uni": 21.25,
+"deg": 11.58
+},
+"source": "Flovilla",
+"target": "Atlanta"
+},
+{
+"dist": 67.03,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 32.63
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 32.63
+},
+"source": "Flovilla",
+"target": "Gordon"
+},
+{
+"dist": 95.78,
+"ecmp_fwd": {
+"uni": 56.25,
+"deg": 50.88
+},
+"ecmp_bwd": {
+"uni": 56.25,
+"deg": 50.88
+},
+"source": "Tarrytown",
+"target": "Gordon"
+},
+{
+"dist": 74.44,
+"ecmp_fwd": {
+"uni": 70.00,
+"deg": 66.32
+},
+"ecmp_bwd": {
+"uni": 70.00,
+"deg": 66.32
+},
+"source": "Tarrytown",
+"target": "Surrency"
+},
+{
+"dist": 88.59,
+"ecmp_fwd": {
+"uni": 81.25,
+"deg": 78.95
+},
+"ecmp_bwd": {
+"uni": 81.25,
+"deg": 78.95
+},
+"source": "Newell",
+"target": "Surrency"
+},
+{
+"dist": 76.32,
+"ecmp_fwd": {
+"uni": 90.00,
+"deg": 88.77
+},
+"ecmp_bwd": {
+"uni": 90.00,
+"deg": 88.77
+},
+"source": "Newell",
+"target": "Jacksonville"
+},
+{
+"dist": 81.13,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "St. Augustine",
+"target": "Daytona Beach"
+},
+{
+"dist": 58.69,
+"ecmp_fwd": {
+"uni": 96.25,
+"deg": 95.79
+},
+"ecmp_bwd": {
+"uni": 96.25,
+"deg": 95.79
+},
+"source": "St. Augustine",
+"target": "Jacksonville"
+},
+{
+"dist": 69.80,
+"ecmp_fwd": {
+"uni": 90.00,
+"deg": 88.77
+},
+"ecmp_bwd": {
+"uni": 90.00,
+"deg": 88.77
+},
+"source": "Titusville",
+"target": "Daytona Beach"
+}
+]
+}

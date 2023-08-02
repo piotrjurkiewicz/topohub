@@ -1,0 +1,570 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "belnet2003",
+"demands": {},
+"stats": {
+"nodes": 17,
+"links": 32,
+"demands": 272,
+"min_degree": 2,
+"avg_degree": 3.76,
+"std_degree": 4.48,
+"max_degree": 16,
+"gini": 0.41,
+"min_link_len": 0.00,
+"avg_link_len": 52.83,
+"max_link_len": 166.56,
+"diameter_len": 255.72,
+"diameter_hops": 2,
+"avg_sdp_num": 1.76,
+"max_sdp_num": 2,
+"avg_sdp_hops": 1.76,
+"avg_sdp_len": 93.23,
+"avg_adp_num": 2.14,
+"max_adp_num": 16,
+"avg_adp_hops": 1.89,
+"avg_adp_len": 100.22
+}
+},
+"nodes": [
+{
+"pos": [
+5.00,
+51.17
+],
+"id": "Geel"
+},
+{
+"pos": [
+4.42,
+51.22
+],
+"id": "Antwerpen"
+},
+{
+"pos": [
+4.70,
+50.88
+],
+"id": "Leuven"
+},
+{
+"pos": [
+5.33,
+50.93
+],
+"id": "Hasselt"
+},
+{
+"pos": [
+4.35,
+50.85
+],
+"id": "Brussel II B"
+},
+{
+"pos": [
+4.35,
+50.85
+],
+"id": "Brussel I B"
+},
+{
+"pos": [
+4.35,
+50.85
+],
+"id": "Brussel II A"
+},
+{
+"pos": [
+5.57,
+50.64
+],
+"id": "Liege"
+},
+{
+"pos": [
+4.35,
+50.85
+],
+"id": "Brussel I A"
+},
+{
+"pos": [
+3.22,
+51.21
+],
+"id": "Brugge"
+},
+{
+"pos": [
+3.72,
+51.05
+],
+"id": "Gent"
+},
+{
+"pos": [
+3.26,
+50.83
+],
+"id": "Korthijk"
+},
+{
+"pos": [
+3.95,
+50.45
+],
+"id": "Mons"
+},
+{
+"pos": [
+4.43,
+50.42
+],
+"id": "Charleroi"
+},
+{
+"pos": [
+4.61,
+50.67
+],
+"id": "Louvain-la-Neuve"
+},
+{
+"pos": [
+4.83,
+50.47
+],
+"id": "Namur"
+},
+{
+"pos": [
+5.82,
+49.68
+],
+"id": "Arlon"
+}
+],
+"links": [
+{
+"dist": 57.57,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Geel",
+"target": "Brussel II B"
+},
+{
+"dist": 57.57,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Geel",
+"target": "Brussel I B"
+},
+{
+"dist": 41.01,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Antwerpen",
+"target": "Brussel II B"
+},
+{
+"dist": 41.01,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Antwerpen",
+"target": "Brussel I B"
+},
+{
+"dist": 24.93,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Leuven",
+"target": "Brussel II B"
+},
+{
+"dist": 24.93,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Leuven",
+"target": "Brussel I B"
+},
+{
+"dist": 69.69,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Hasselt",
+"target": "Brussel II B"
+},
+{
+"dist": 69.69,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Hasselt",
+"target": "Brussel I B"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 12.50,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 12.50,
+"deg": 100.00
+},
+"source": "Brussel II B",
+"target": "Brussel I B"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 93.75,
+"deg": 33.98
+},
+"ecmp_bwd": {
+"uni": 93.75,
+"deg": 33.98
+},
+"source": "Brussel II B",
+"target": "Brussel II A"
+},
+{
+"dist": 89.16,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel II B",
+"target": "Liege"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 93.75,
+"deg": 33.98
+},
+"ecmp_bwd": {
+"uni": 93.75,
+"deg": 33.98
+},
+"source": "Brussel II B",
+"target": "Brussel I A"
+},
+{
+"dist": 88.19,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel II B",
+"target": "Brugge"
+},
+{
+"dist": 49.54,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel II B",
+"target": "Gent"
+},
+{
+"dist": 76.17,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel II B",
+"target": "Korthijk"
+},
+{
+"dist": 52.20,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel II B",
+"target": "Mons"
+},
+{
+"dist": 48.62,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel II B",
+"target": "Charleroi"
+},
+{
+"dist": 27.57,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel II B",
+"target": "Louvain-la-Neuve"
+},
+{
+"dist": 54.06,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel II B",
+"target": "Namur"
+},
+{
+"dist": 166.56,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel II B",
+"target": "Arlon"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 93.75,
+"deg": 33.98
+},
+"ecmp_bwd": {
+"uni": 93.75,
+"deg": 33.98
+},
+"source": "Brussel I B",
+"target": "Brussel II A"
+},
+{
+"dist": 89.16,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel I B",
+"target": "Liege"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 93.75,
+"deg": 33.98
+},
+"ecmp_bwd": {
+"uni": 93.75,
+"deg": 33.98
+},
+"source": "Brussel I B",
+"target": "Brussel I A"
+},
+{
+"dist": 88.19,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel I B",
+"target": "Brugge"
+},
+{
+"dist": 49.54,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel I B",
+"target": "Gent"
+},
+{
+"dist": 76.17,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel I B",
+"target": "Korthijk"
+},
+{
+"dist": 52.20,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel I B",
+"target": "Mons"
+},
+{
+"dist": 48.62,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel I B",
+"target": "Charleroi"
+},
+{
+"dist": 27.57,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel I B",
+"target": "Louvain-la-Neuve"
+},
+{
+"dist": 54.06,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel I B",
+"target": "Namur"
+},
+{
+"dist": 166.56,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 24.22
+},
+"source": "Brussel I B",
+"target": "Arlon"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 12.50,
+"deg": 3.52
+},
+"ecmp_bwd": {
+"uni": 12.50,
+"deg": 3.52
+},
+"source": "Brussel II A",
+"target": "Brussel I A"
+}
+]
+}

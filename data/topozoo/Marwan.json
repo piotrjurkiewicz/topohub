@@ -1,0 +1,155 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "marwan",
+"demands": {},
+"stats": {
+"nodes": 6,
+"links": 6,
+"demands": 30,
+"min_degree": 2,
+"avg_degree": 2.00,
+"std_degree": 0.00,
+"max_degree": 2,
+"gini": 0.00,
+"min_link_len": 86.44,
+"avg_link_len": 275.98,
+"max_link_len": 476.86,
+"diameter_len": 798.49,
+"diameter_hops": 3,
+"avg_sdp_num": 1.20,
+"max_sdp_num": 2,
+"avg_sdp_hops": 1.80,
+"avg_sdp_len": 331.17,
+"avg_adp_num": 2.00,
+"max_adp_num": 2,
+"avg_adp_hops": 3.00,
+"avg_adp_len": 827.93
+}
+},
+"nodes": [
+{
+"pos": [
+-8.01,
+31.63
+],
+"id": "Marrkech"
+},
+{
+"pos": [
+-5.00,
+34.04
+],
+"id": "Fes"
+},
+{
+"pos": [
+-6.83,
+34.01
+],
+"id": "Rabat"
+},
+{
+"pos": [
+-9.60,
+30.42
+],
+"id": "Agadir"
+},
+{
+"pos": [
+-5.81,
+35.78
+],
+"id": "Tanger"
+},
+{
+"pos": [
+-7.62,
+33.59
+],
+"id": "Casa"
+}
+],
+"links": [
+{
+"dist": 388.09,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Marrkech",
+"target": "Fes"
+},
+{
+"dist": 202.76,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Marrkech",
+"target": "Agadir"
+},
+{
+"dist": 207.64,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Fes",
+"target": "Tanger"
+},
+{
+"dist": 476.86,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Rabat",
+"target": "Agadir"
+},
+{
+"dist": 86.44,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Rabat",
+"target": "Casa"
+},
+{
+"dist": 294.06,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Tanger",
+"target": "Casa"
+}
+]
+}

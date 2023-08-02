@@ -1,0 +1,501 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "abilene",
+"demands": {
+"IPLSng": {
+"STTLng": 3580.00,
+"CHINng": 27187.00,
+"NYCMng": 18695.00,
+"KSCYng": 4841.00,
+"WASHng": 13342.00,
+"DNVRng": 10771.00,
+"ATLAM5": 1992.00,
+"LOSAng": 22366.00,
+"ATLAng": 8016.00,
+"HSTNng": 14702.00,
+"SNVAng": 2094.00
+},
+"CHINng": {
+"ATLAM5": 2770.00,
+"DNVRng": 31363.00,
+"STTLng": 5082.00,
+"NYCMng": 23882.00,
+"ATLAng": 36737.00,
+"IPLSng": 14471.00,
+"KSCYng": 33734.00,
+"HSTNng": 329673.00,
+"SNVAng": 3602.00,
+"WASHng": 21896.00,
+"LOSAng": 385991.00
+},
+"HSTNng": {
+"STTLng": 1745.00,
+"LOSAng": 16437.00,
+"ATLAM5": 832.00,
+"IPLSng": 3337.00,
+"DNVRng": 1454.00,
+"WASHng": 15095.00,
+"ATLAng": 26089.00,
+"SNVAng": 630.00,
+"NYCMng": 6840.00,
+"CHINng": 12913.00,
+"KSCYng": 2026.00
+},
+"LOSAng": {
+"KSCYng": 2766.00,
+"NYCMng": 11969.00,
+"STTLng": 9684.00,
+"SNVAng": 22906.00,
+"ATLAM5": 1337.00,
+"IPLSng": 11906.00,
+"HSTNng": 161581.00,
+"CHINng": 424969.00,
+"DNVRng": 6459.00,
+"ATLAng": 44484.00,
+"WASHng": 71197.00
+},
+"DNVRng": {
+"ATLAM5": 1642.00,
+"IPLSng": 7694.00,
+"KSCYng": 4165.00,
+"WASHng": 10290.00,
+"CHINng": 14012.00,
+"ATLAng": 3424.00,
+"LOSAng": 7652.00,
+"HSTNng": 7649.00,
+"SNVAng": 22050.00,
+"STTLng": 6470.00,
+"NYCMng": 6177.00
+},
+"ATLAM5": {
+"KSCYng": 630.00,
+"IPLSng": 789.00,
+"SNVAng": 233.00,
+"WASHng": 5538.00,
+"CHINng": 3128.00,
+"LOSAng": 1016.00,
+"HSTNng": 1754.00,
+"STTLng": 249.00,
+"ATLAng": 1140.00,
+"NYCMng": 1149.00,
+"DNVRng": 415.00
+},
+"KSCYng": {
+"NYCMng": 3823.00,
+"WASHng": 4507.00,
+"STTLng": 1946.00,
+"LOSAng": 2783.00,
+"HSTNng": 2893.00,
+"DNVRng": 3962.00,
+"SNVAng": 1213.00,
+"ATLAng": 2001.00,
+"IPLSng": 3800.00,
+"CHINng": 7815.00,
+"ATLAM5": 745.00
+},
+"WASHng": {
+"NYCMng": 40069.00,
+"DNVRng": 16062.00,
+"KSCYng": 10130.00,
+"LOSAng": 44119.00,
+"IPLSng": 10055.00,
+"STTLng": 7930.00,
+"ATLAng": 25503.00,
+"HSTNng": 26779.00,
+"SNVAng": 6207.00,
+"ATLAM5": 1982.00,
+"CHINng": 34597.00
+},
+"SNVAng": {
+"NYCMng": 5447.00,
+"DNVRng": 5128.00,
+"CHINng": 6961.00,
+"ATLAM5": 646.00,
+"HSTNng": 2883.00,
+"LOSAng": 9589.00,
+"WASHng": 3962.00,
+"IPLSng": 3338.00,
+"KSCYng": 2006.00,
+"ATLAng": 955.00,
+"STTLng": 6139.00
+},
+"NYCMng": {
+"SNVAng": 5169.00,
+"LOSAng": 34167.00,
+"CHINng": 122327.00,
+"KSCYng": 6894.00,
+"ATLAng": 17991.00,
+"ATLAM5": 1076.00,
+"STTLng": 8686.00,
+"WASHng": 47980.00,
+"HSTNng": 32998.00,
+"IPLSng": 8773.00,
+"DNVRng": 11677.00
+},
+"ATLAng": {
+"NYCMng": 8783.00,
+"WASHng": 37150.00,
+"HSTNng": 56067.00,
+"LOSAng": 69016.00,
+"CHINng": 6142.00,
+"IPLSng": 9094.00,
+"STTLng": 2604.00,
+"ATLAM5": 2146.00,
+"SNVAng": 2174.00,
+"DNVRng": 3360.00,
+"KSCYng": 2429.00
+},
+"STTLng": {
+"HSTNng": 7754.00,
+"NYCMng": 12889.00,
+"DNVRng": 7469.00,
+"CHINng": 24371.00,
+"SNVAng": 26143.00,
+"WASHng": 16178.00,
+"KSCYng": 13517.00,
+"ATLAng": 41339.00,
+"ATLAM5": 932.00,
+"LOSAng": 36468.00,
+"IPLSng": 29555.00
+}
+},
+"stats": {
+"nodes": 12,
+"links": 15,
+"demands": 132,
+"min_degree": 1,
+"avg_degree": 2.50,
+"std_degree": 0.76,
+"max_degree": 4,
+"gini": 0.16,
+"min_link_len": 132.40,
+"avg_link_len": 935.56,
+"max_link_len": 2193.58,
+"diameter_len": 4706.89,
+"diameter_hops": 5,
+"avg_sdp_num": 1.03,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.70,
+"avg_sdp_len": 1385.88,
+"avg_adp_num": 2.01,
+"max_adp_num": 3,
+"avg_adp_hops": 3.73,
+"avg_adp_len": 3457.22
+}
+},
+"nodes": [
+{
+"pos": [
+-84.38,
+33.75
+],
+"id": "ATLAM5"
+},
+{
+"pos": [
+-85.50,
+34.50
+],
+"id": "ATLAng"
+},
+{
+"pos": [
+-87.62,
+41.83
+],
+"id": "CHINng"
+},
+{
+"pos": [
+-105.00,
+40.75
+],
+"id": "DNVRng"
+},
+{
+"pos": [
+-95.52,
+29.77
+],
+"id": "HSTNng"
+},
+{
+"pos": [
+-86.16,
+39.78
+],
+"id": "IPLSng"
+},
+{
+"pos": [
+-96.60,
+38.96
+],
+"id": "KSCYng"
+},
+{
+"pos": [
+-118.25,
+34.05
+],
+"id": "LOSAng"
+},
+{
+"pos": [
+-73.97,
+40.78
+],
+"id": "NYCMng"
+},
+{
+"pos": [
+-122.03,
+37.39
+],
+"id": "SNVAng"
+},
+{
+"pos": [
+-122.30,
+47.60
+],
+"id": "STTLng"
+},
+{
+"pos": [
+-77.03,
+38.90
+],
+"id": "WASHng"
+}
+],
+"links": [
+{
+"dist": 132.40,
+"ecmp_fwd": {
+"org": 2.21,
+"uni": 58.67,
+"deg": 24.07
+},
+"ecmp_bwd": {
+"org": 2.21,
+"uni": 58.67,
+"deg": 24.07
+},
+"source": "ATLAM5",
+"target": "ATLAng"
+},
+{
+"dist": 1079.45,
+"ecmp_fwd": {
+"org": 77.63,
+"uni": 96.00,
+"deg": 90.87
+},
+"ecmp_bwd": {
+"org": 78.82,
+"uni": 100.00,
+"deg": 93.78
+},
+"source": "ATLAng",
+"target": "HSTNng"
+},
+{
+"dist": 590.24,
+"ecmp_fwd": {
+"org": 52.10,
+"uni": 61.33,
+"deg": 59.34
+},
+"ecmp_bwd": {
+"org": 50.91,
+"uni": 57.33,
+"deg": 56.43
+},
+"source": "ATLAng",
+"target": "IPLSng"
+},
+{
+"dist": 899.49,
+"ecmp_fwd": {
+"org": 30.70,
+"uni": 72.00,
+"deg": 58.92
+},
+"ecmp_bwd": {
+"org": 30.70,
+"uni": 72.00,
+"deg": 58.92
+},
+"source": "ATLAng",
+"target": "WASHng"
+},
+{
+"dist": 259.17,
+"ecmp_fwd": {
+"org": 100.00,
+"uni": 72.00,
+"deg": 60.58
+},
+"ecmp_bwd": {
+"org": 100.00,
+"uni": 72.00,
+"deg": 60.58
+},
+"source": "CHINng",
+"target": "IPLSng"
+},
+{
+"dist": 1145.19,
+"ecmp_fwd": {
+"org": 19.65,
+"uni": 34.67,
+"deg": 27.39
+},
+"ecmp_bwd": {
+"org": 19.65,
+"uni": 34.67,
+"deg": 27.39
+},
+"source": "CHINng",
+"target": "NYCMng"
+},
+{
+"dist": 744.22,
+"ecmp_fwd": {
+"org": 20.47,
+"uni": 93.33,
+"deg": 97.10
+},
+"ecmp_bwd": {
+"org": 21.66,
+"uni": 97.33,
+"deg": 100.00
+},
+"source": "DNVRng",
+"target": "KSCYng"
+},
+{
+"dist": 1514.43,
+"ecmp_fwd": {
+"org": 4.53,
+"uni": 29.33,
+"deg": 34.85
+},
+"ecmp_bwd": {
+"org": 4.53,
+"uni": 29.33,
+"deg": 34.85
+},
+"source": "DNVRng",
+"target": "SNVAng"
+},
+{
+"dist": 1571.42,
+"ecmp_fwd": {
+"org": 11.71,
+"uni": 41.33,
+"deg": 32.78
+},
+"ecmp_bwd": {
+"org": 10.52,
+"uni": 37.33,
+"deg": 29.88
+},
+"source": "DNVRng",
+"target": "STTLng"
+},
+{
+"dist": 1027.12,
+"ecmp_fwd": {
+"org": 46.25,
+"uni": 49.33,
+"deg": 53.11
+},
+"ecmp_bwd": {
+"org": 46.25,
+"uni": 49.33,
+"deg": 53.11
+},
+"source": "HSTNng",
+"target": "KSCYng"
+},
+{
+"dist": 2193.58,
+"ecmp_fwd": {
+"org": 92.94,
+"uni": 73.33,
+"deg": 65.98
+},
+"ecmp_bwd": {
+"org": 94.13,
+"uni": 77.33,
+"deg": 68.88
+},
+"source": "HSTNng",
+"target": "LOSAng"
+},
+{
+"dist": 901.52,
+"ecmp_fwd": {
+"org": 62.83,
+"uni": 96.00,
+"deg": 95.02
+},
+"ecmp_bwd": {
+"org": 61.64,
+"uni": 92.00,
+"deg": 92.12
+},
+"source": "IPLSng",
+"target": "KSCYng"
+},
+{
+"dist": 503.79,
+"ecmp_fwd": {
+"org": 9.48,
+"uni": 46.67,
+"deg": 46.06
+},
+"ecmp_bwd": {
+"org": 10.67,
+"uni": 50.67,
+"deg": 48.96
+},
+"source": "LOSAng",
+"target": "SNVAng"
+},
+{
+"dist": 335.08,
+"ecmp_fwd": {
+"org": 18.22,
+"uni": 34.67,
+"deg": 25.73
+},
+"ecmp_bwd": {
+"org": 18.22,
+"uni": 34.67,
+"deg": 25.73
+},
+"source": "NYCMng",
+"target": "WASHng"
+},
+{
+"dist": 1136.31,
+"ecmp_fwd": {
+"org": 6.91,
+"uni": 17.33,
+"deg": 13.69
+},
+"ecmp_bwd": {
+"org": 8.10,
+"uni": 21.33,
+"deg": 16.60
+},
+"source": "SNVAng",
+"target": "STTLng"
+}
+]
+}

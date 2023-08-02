@@ -1,0 +1,582 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "arn",
+"demands": {},
+"stats": {
+"nodes": 28,
+"links": 27,
+"demands": 756,
+"min_degree": 1,
+"avg_degree": 1.93,
+"std_degree": 2.52,
+"max_degree": 10,
+"gini": 0.43,
+"min_link_len": 36.78,
+"avg_link_len": 160.39,
+"max_link_len": 573.85,
+"diameter_len": 1414.11,
+"diameter_hops": 4,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 2.78,
+"avg_sdp_len": 623.98,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 2.78,
+"avg_adp_len": 623.98
+}
+},
+"nodes": [
+{
+"pos": [
+3.26,
+34.67
+],
+"id": "Djelfa"
+},
+{
+"pos": [
+2.75,
+36.26
+],
+"id": "Medea"
+},
+{
+"pos": [
+2.83,
+36.47
+],
+"id": "Blida"
+},
+{
+"pos": [
+6.86,
+33.36
+],
+"id": "ElOued"
+},
+{
+"pos": [
+5.67,
+36.66
+],
+"id": "Msila"
+},
+{
+"pos": [
+2.87,
+33.80
+],
+"id": "Laghouat"
+},
+{
+"pos": [
+5.33,
+31.95
+],
+"id": "Ouargla"
+},
+{
+"pos": [
+6.61,
+36.37
+],
+"id": "Constantine"
+},
+{
+"pos": [
+5.73,
+34.85
+],
+"id": "Biskra"
+},
+{
+"pos": [
+6.17,
+35.56
+],
+"id": "Batna"
+},
+{
+"pos": [
+4.05,
+36.71
+],
+"id": "Tizi Ouzou"
+},
+{
+"pos": [
+7.77,
+36.90
+],
+"id": "Annaba"
+},
+{
+"pos": [
+7.43,
+36.46
+],
+"id": "Guelma"
+},
+{
+"pos": [
+8.12,
+35.40
+],
+"id": "Tebessa"
+},
+{
+"pos": [
+7.11,
+35.88
+],
+"id": "Oum el Bouaghi"
+},
+{
+"pos": [
+5.08,
+36.76
+],
+"id": "Bejaia"
+},
+{
+"pos": [
+5.41,
+36.19
+],
+"id": "Setif"
+},
+{
+"pos": [
+6.91,
+36.88
+],
+"id": "Skikda"
+},
+{
+"pos": [
+5.77,
+36.82
+],
+"id": "Jijel"
+},
+{
+"pos": [
+1.32,
+35.37
+],
+"id": "Tiaret"
+},
+{
+"pos": [
+3.04,
+36.75
+],
+"id": "Alger"
+},
+{
+"pos": [
+1.26,
+36.20
+],
+"id": "Chlef"
+},
+{
+"pos": [
+-0.64,
+35.69
+],
+"id": "Oran"
+},
+{
+"pos": [
+0.09,
+35.93
+],
+"id": "Mostaganem"
+},
+{
+"pos": [
+-1.31,
+34.88
+],
+"id": "Tlemcen"
+},
+{
+"pos": [
+-0.63,
+35.19
+],
+"id": "Sidi Bel Abbes"
+},
+{
+"pos": [
+0.15,
+34.83
+],
+"id": "Saida"
+},
+{
+"pos": [
+-0.05,
+35.31
+],
+"id": "Mascara"
+}
+],
+"links": [
+{
+"dist": 232.18,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Djelfa",
+"target": "Alger"
+},
+{
+"dist": 60.11,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Medea",
+"target": "Alger"
+},
+{
+"dist": 36.78,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Blida",
+"target": "Alger"
+},
+{
+"dist": 212.67,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "ElOued",
+"target": "Ouargla"
+},
+{
+"dist": 90.43,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Msila",
+"target": "Constantine"
+},
+{
+"dist": 308.48,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Laghouat",
+"target": "Ouargla"
+},
+{
+"dist": 573.85,
+"ecmp_fwd": {
+"uni": 41.67,
+"deg": 36.84
+},
+"ecmp_bwd": {
+"uni": 41.67,
+"deg": 36.84
+},
+"source": "Ouargla",
+"target": "Alger"
+},
+{
+"dist": 186.57,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Constantine",
+"target": "Biskra"
+},
+{
+"dist": 98.34,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Constantine",
+"target": "Batna"
+},
+{
+"dist": 118.80,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Constantine",
+"target": "Annaba"
+},
+{
+"dist": 73.42,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Constantine",
+"target": "Guelma"
+},
+{
+"dist": 172.98,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Constantine",
+"target": "Tebessa"
+},
+{
+"dist": 70.53,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Constantine",
+"target": "Oum el Bouaghi"
+},
+{
+"dist": 62.64,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Constantine",
+"target": "Skikda"
+},
+{
+"dist": 91.12,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Constantine",
+"target": "Jijel"
+},
+{
+"dist": 322.07,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Constantine",
+"target": "Alger"
+},
+{
+"dist": 89.61,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Tizi Ouzou",
+"target": "Alger"
+},
+{
+"dist": 182.00,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Bejaia",
+"target": "Alger"
+},
+{
+"dist": 221.13,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Setif",
+"target": "Alger"
+},
+{
+"dist": 180.83,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Tiaret",
+"target": "Oran"
+},
+{
+"dist": 171.36,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Alger",
+"target": "Chlef"
+},
+{
+"dist": 350.95,
+"ecmp_fwd": {
+"uni": 81.67,
+"deg": 80.15
+},
+"ecmp_bwd": {
+"uni": 81.67,
+"deg": 80.15
+},
+"source": "Alger",
+"target": "Oran"
+},
+{
+"dist": 71.12,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Oran",
+"target": "Mostaganem"
+},
+{
+"dist": 109.13,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Oran",
+"target": "Tlemcen"
+},
+{
+"dist": 55.75,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Oran",
+"target": "Sidi Bel Abbes"
+},
+{
+"dist": 119.82,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Oran",
+"target": "Saida"
+},
+{
+"dist": 67.96,
+"ecmp_fwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 15.00,
+"deg": 7.97
+},
+"source": "Oran",
+"target": "Mascara"
+}
+]
+}

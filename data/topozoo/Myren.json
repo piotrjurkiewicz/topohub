@@ -1,0 +1,461 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "myren",
+"demands": {},
+"stats": {
+"nodes": 20,
+"links": 22,
+"demands": 380,
+"min_degree": 1,
+"avg_degree": 2.20,
+"std_degree": 2.48,
+"max_degree": 10,
+"gini": 0.45,
+"min_link_len": 0.00,
+"avg_link_len": 239.57,
+"max_link_len": 1625.23,
+"diameter_len": 2602.31,
+"diameter_hops": 4,
+"avg_sdp_num": 1.02,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.41,
+"avg_sdp_len": 557.63,
+"avg_adp_num": 1.06,
+"max_adp_num": 4,
+"avg_adp_hops": 2.43,
+"avg_adp_len": 564.31
+}
+},
+"nodes": [
+{
+"pos": [
+101.08,
+4.58
+],
+"id": "UTP"
+},
+{
+"pos": [
+100.56,
+5.35
+],
+"id": "UUM"
+},
+{
+"pos": [
+101.69,
+3.14
+],
+"id": "UM"
+},
+{
+"pos": [
+110.33,
+1.55
+],
+"id": "UNIMAS"
+},
+{
+"pos": [
+116.07,
+5.98
+],
+"id": "UMS"
+},
+{
+"pos": [
+100.62,
+5.20
+],
+"id": "UPM"
+},
+{
+"pos": [
+103.76,
+1.47
+],
+"id": "UTM"
+},
+{
+"pos": [
+102.24,
+6.13
+],
+"id": "UMK"
+},
+{
+"pos": [
+103.33,
+3.81
+],
+"id": "UMP"
+},
+{
+"pos": [
+101.82,
+2.92
+],
+"id": "UKM"
+},
+{
+"pos": [
+101.66,
+2.92
+],
+"id": "MMU"
+},
+{
+"pos": [
+101.93,
+2.72
+],
+"id": "USIM"
+},
+{
+"pos": [
+103.33,
+3.81
+],
+"id": "UNITEN"
+},
+{
+"pos": [
+101.61,
+3.11
+],
+"id": "Monash Malaysia"
+},
+{
+"pos": [
+100.34,
+5.41
+],
+"id": "USM"
+},
+{
+"pos": [
+101.66,
+2.92
+],
+"id": "Cyberjaya PoP (NOC)"
+},
+{
+"pos": [
+103.76,
+1.47
+],
+"id": "South PoP (UTM)"
+},
+{
+"pos": [
+103.33,
+3.81
+],
+"id": "East Coast PoP (UMP)"
+},
+{
+"pos": [
+100.34,
+5.41
+],
+"id": "North PoP (USM)"
+},
+{
+"pos": [
+101.69,
+3.14
+],
+"id": "KL PoP (UM)"
+}
+],
+"links": [
+{
+"dist": 173.91,
+"ecmp_fwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"ecmp_bwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"source": "UTP",
+"target": "KL PoP (UM)"
+},
+{
+"dist": 25.49,
+"ecmp_fwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"ecmp_bwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"source": "UUM",
+"target": "North PoP (USM)"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"ecmp_bwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"source": "UM",
+"target": "KL PoP (UM)"
+},
+{
+"dist": 977.08,
+"ecmp_fwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"ecmp_bwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"source": "UNIMAS",
+"target": "KL PoP (UM)"
+},
+{
+"dist": 1625.23,
+"ecmp_fwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"ecmp_bwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"source": "UMS",
+"target": "KL PoP (UM)"
+},
+{
+"dist": 278.35,
+"ecmp_fwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"ecmp_bwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"source": "UPM",
+"target": "Cyberjaya PoP (NOC)"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"ecmp_bwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"source": "UTM",
+"target": "South PoP (UTM)"
+},
+{
+"dist": 285.35,
+"ecmp_fwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"ecmp_bwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"source": "UMK",
+"target": "East Coast PoP (UMP)"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"ecmp_bwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"source": "UMP",
+"target": "East Coast PoP (UMP)"
+},
+{
+"dist": 17.62,
+"ecmp_fwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"ecmp_bwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"source": "UKM",
+"target": "Cyberjaya PoP (NOC)"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"ecmp_bwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"source": "MMU",
+"target": "Cyberjaya PoP (NOC)"
+},
+{
+"dist": 38.30,
+"ecmp_fwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"ecmp_bwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"source": "USIM",
+"target": "Cyberjaya PoP (NOC)"
+},
+{
+"dist": 209.81,
+"ecmp_fwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"ecmp_bwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"source": "UNITEN",
+"target": "Cyberjaya PoP (NOC)"
+},
+{
+"dist": 21.27,
+"ecmp_fwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"ecmp_bwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"source": "Monash Malaysia",
+"target": "Cyberjaya PoP (NOC)"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"ecmp_bwd": {
+"uni": 54.29,
+"deg": 22.40
+},
+"source": "USM",
+"target": "North PoP (USM)"
+},
+{
+"dist": 209.81,
+"ecmp_fwd": {
+"uni": 81.43,
+"deg": 65.62
+},
+"ecmp_bwd": {
+"uni": 81.43,
+"deg": 65.62
+},
+"source": "Cyberjaya PoP (NOC)",
+"target": "East Coast PoP (UMP)"
+},
+{
+"dist": 313.21,
+"ecmp_fwd": {
+"uni": 81.43,
+"deg": 65.62
+},
+"ecmp_bwd": {
+"uni": 81.43,
+"deg": 65.62
+},
+"source": "Cyberjaya PoP (NOC)",
+"target": "North PoP (USM)"
+},
+{
+"dist": 24.51,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Cyberjaya PoP (NOC)",
+"target": "KL PoP (UM)"
+},
+{
+"dist": 284.22,
+"ecmp_fwd": {
+"uni": 57.14,
+"deg": 45.83
+},
+"ecmp_bwd": {
+"uni": 57.14,
+"deg": 45.83
+},
+"source": "Cyberjaya PoP (NOC)",
+"target": "South PoP (UTM)"
+},
+{
+"dist": 296.18,
+"ecmp_fwd": {
+"uni": 45.71,
+"deg": 37.50
+},
+"ecmp_bwd": {
+"uni": 45.71,
+"deg": 37.50
+},
+"source": "South PoP (UTM)",
+"target": "KL PoP (UM)"
+},
+{
+"dist": 196.53,
+"ecmp_fwd": {
+"uni": 64.29,
+"deg": 53.12
+},
+"ecmp_bwd": {
+"uni": 64.29,
+"deg": 53.12
+},
+"source": "East Coast PoP (UMP)",
+"target": "KL PoP (UM)"
+},
+{
+"dist": 293.61,
+"ecmp_fwd": {
+"uni": 64.29,
+"deg": 53.12
+},
+"ecmp_bwd": {
+"uni": 64.29,
+"deg": 53.12
+},
+"source": "North PoP (USM)",
+"target": "KL PoP (UM)"
+}
+]
+}

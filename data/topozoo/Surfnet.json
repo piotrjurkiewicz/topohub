@@ -1,0 +1,1269 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "surfnet",
+"demands": {},
+"stats": {
+"nodes": 50,
+"links": 68,
+"demands": 2450,
+"min_degree": 1,
+"avg_degree": 2.72,
+"std_degree": 1.65,
+"max_degree": 10,
+"gini": 0.25,
+"min_link_len": 2.90,
+"avg_link_len": 31.59,
+"max_link_len": 112.29,
+"diameter_len": 395.27,
+"diameter_hops": 11,
+"avg_sdp_num": 1.06,
+"max_sdp_num": 2,
+"avg_sdp_hops": 4.36,
+"avg_sdp_len": 117.11,
+"avg_adp_num": 1.79,
+"max_adp_num": 7,
+"avg_adp_hops": 5.37,
+"avg_adp_len": 202.15
+}
+},
+"nodes": [
+{
+"pos": [
+6.61,
+52.85
+],
+"id": "Westerbork"
+},
+{
+"pos": [
+6.37,
+52.83
+],
+"id": "Dwingeloo"
+},
+{
+"pos": [
+6.57,
+53.22
+],
+"id": "Groningen"
+},
+{
+"pos": [
+6.56,
+53.00
+],
+"id": "Assen"
+},
+{
+"pos": [
+4.75,
+52.63
+],
+"id": "Alkmaar"
+},
+{
+"pos": [
+5.47,
+52.51
+],
+"id": "Lelystad"
+},
+{
+"pos": [
+5.81,
+53.20
+],
+"id": "Leeuwarden"
+},
+{
+"pos": [
+4.76,
+52.96
+],
+"id": "Den Helder"
+},
+{
+"pos": [
+4.89,
+52.37
+],
+"id": "Amsterdam"
+},
+{
+"pos": [
+4.64,
+52.38
+],
+"id": "Haarlem"
+},
+{
+"pos": [
+5.52,
+51.77
+],
+"id": "Oss"
+},
+{
+"pos": [
+5.30,
+51.70
+],
+"id": "Den Bosch"
+},
+{
+"pos": [
+5.17,
+52.03
+],
+"id": "Houten"
+},
+{
+"pos": [
+5.67,
+51.97
+],
+"id": "Wageningen"
+},
+{
+"pos": [
+5.85,
+51.84
+],
+"id": "Nijmegen"
+},
+{
+"pos": [
+6.17,
+51.37
+],
+"id": "Venlo"
+},
+{
+"pos": [
+5.98,
+50.88
+],
+"id": "Heerlen"
+},
+{
+"pos": [
+5.69,
+50.85
+],
+"id": "Maastricht"
+},
+{
+"pos": [
+5.89,
+51.14
+],
+"id": "Maasbracht"
+},
+{
+"pos": [
+5.48,
+51.44
+],
+"id": "Eindhoven"
+},
+{
+"pos": [
+4.05,
+51.49
+],
+"id": "Yerseke"
+},
+{
+"pos": [
+3.57,
+51.44
+],
+"id": "Vlissingen"
+},
+{
+"pos": [
+4.71,
+52.02
+],
+"id": "Gouda"
+},
+{
+"pos": [
+5.08,
+52.03
+],
+"id": "Nieuwegen"
+},
+{
+"pos": [
+5.09,
+51.56
+],
+"id": "Tilburg"
+},
+{
+"pos": [
+4.67,
+51.81
+],
+"id": "Dordrecht"
+},
+{
+"pos": [
+4.29,
+51.49
+],
+"id": "Bergen op Zoom"
+},
+{
+"pos": [
+4.78,
+51.59
+],
+"id": "Breda"
+},
+{
+"pos": [
+3.61,
+51.50
+],
+"id": "Middelburg"
+},
+{
+"pos": [
+3.92,
+51.65
+],
+"id": "Zierikzee"
+},
+{
+"pos": [
+5.12,
+52.09
+],
+"id": "Utrecht"
+},
+{
+"pos": [
+5.00,
+52.17
+],
+"id": "Breukelen"
+},
+{
+"pos": [
+4.49,
+52.16
+],
+"id": "Leiden"
+},
+{
+"pos": [
+4.47,
+52.18
+],
+"id": "Oegstgeest"
+},
+{
+"pos": [
+4.56,
+52.26
+],
+"id": "Lisse"
+},
+{
+"pos": [
+4.75,
+52.30
+],
+"id": "Schiphol-Rijk"
+},
+{
+"pos": [
+5.18,
+52.22
+],
+"id": "Hilversum"
+},
+{
+"pos": [
+4.48,
+51.92
+],
+"id": "Rotterdam"
+},
+{
+"pos": [
+4.36,
+52.01
+],
+"id": "Delft"
+},
+{
+"pos": [
+4.30,
+52.08
+],
+"id": "Den Haag"
+},
+{
+"pos": [
+6.91,
+52.78
+],
+"id": "Emmen"
+},
+{
+"pos": [
+7.03,
+53.14
+],
+"id": "Winschoten"
+},
+{
+"pos": [
+5.91,
+51.98
+],
+"id": "Arnhem"
+},
+{
+"pos": [
+5.97,
+52.21
+],
+"id": "Apeldoorn"
+},
+{
+"pos": [
+6.20,
+52.14
+],
+"id": "Zutphen"
+},
+{
+"pos": [
+6.90,
+52.22
+],
+"id": "Enschede"
+},
+{
+"pos": [
+6.16,
+52.26
+],
+"id": "Deventer"
+},
+{
+"pos": [
+6.09,
+52.51
+],
+"id": "Zwolle"
+},
+{
+"pos": [
+6.19,
+52.70
+],
+"id": "Meppel"
+},
+{
+"pos": [
+6.48,
+52.72
+],
+"id": "Hoogeveen"
+}
+],
+"links": [
+{
+"dist": 16.15,
+"ecmp_fwd": {
+"uni": 17.16,
+"deg": 6.13
+},
+"ecmp_bwd": {
+"uni": 17.16,
+"deg": 6.13
+},
+"source": "Westerbork",
+"target": "Dwingeloo"
+},
+{
+"dist": 112.29,
+"ecmp_fwd": {
+"uni": 73.52,
+"deg": 64.87
+},
+"ecmp_bwd": {
+"uni": 73.83,
+"deg": 65.27
+},
+"source": "Dwingeloo",
+"target": "Amsterdam"
+},
+{
+"dist": 22.23,
+"ecmp_fwd": {
+"uni": 49.32,
+"deg": 47.11
+},
+"ecmp_bwd": {
+"uni": 49.02,
+"deg": 46.70
+},
+"source": "Dwingeloo",
+"target": "Assen"
+},
+{
+"dist": 32.29,
+"ecmp_fwd": {
+"uni": 14.09,
+"deg": 9.99
+},
+"ecmp_bwd": {
+"uni": 14.18,
+"deg": 10.04
+},
+"source": "Groningen",
+"target": "Winschoten"
+},
+{
+"dist": 24.75,
+"ecmp_fwd": {
+"uni": 28.53,
+"deg": 26.06
+},
+"ecmp_bwd": {
+"uni": 28.53,
+"deg": 26.06
+},
+"source": "Groningen",
+"target": "Assen"
+},
+{
+"dist": 50.54,
+"ecmp_fwd": {
+"uni": 6.30,
+"deg": 4.27
+},
+"ecmp_bwd": {
+"uni": 6.21,
+"deg": 4.22
+},
+"source": "Groningen",
+"target": "Leeuwarden"
+},
+{
+"dist": 31.04,
+"ecmp_fwd": {
+"uni": 17.72,
+"deg": 16.30
+},
+"ecmp_bwd": {
+"uni": 17.42,
+"deg": 15.89
+},
+"source": "Assen",
+"target": "Hoogeveen"
+},
+{
+"dist": 30.21,
+"ecmp_fwd": {
+"uni": 46.65,
+"deg": 39.12
+},
+"ecmp_bwd": {
+"uni": 45.75,
+"deg": 38.47
+},
+"source": "Alkmaar",
+"target": "Amsterdam"
+},
+{
+"dist": 28.91,
+"ecmp_fwd": {
+"uni": 7.68,
+"deg": 5.71
+},
+"ecmp_bwd": {
+"uni": 8.49,
+"deg": 6.31
+},
+"source": "Alkmaar",
+"target": "Haarlem"
+},
+{
+"dist": 36.51,
+"ecmp_fwd": {
+"uni": 30.72,
+"deg": 22.39
+},
+"ecmp_bwd": {
+"uni": 30.81,
+"deg": 22.43
+},
+"source": "Alkmaar",
+"target": "Den Helder"
+},
+{
+"dist": 42.40,
+"ecmp_fwd": {
+"uni": 12.78,
+"deg": 9.17
+},
+"ecmp_bwd": {
+"uni": 12.78,
+"deg": 9.17
+},
+"source": "Lelystad",
+"target": "Amsterdam"
+},
+{
+"dist": 41.93,
+"ecmp_fwd": {
+"uni": 4.38,
+"deg": 3.00
+},
+"ecmp_bwd": {
+"uni": 4.38,
+"deg": 3.00
+},
+"source": "Lelystad",
+"target": "Zwolle"
+},
+{
+"dist": 75.07,
+"ecmp_fwd": {
+"uni": 17.86,
+"deg": 12.99
+},
+"ecmp_bwd": {
+"uni": 17.77,
+"deg": 12.94
+},
+"source": "Leeuwarden",
+"target": "Den Helder"
+},
+{
+"dist": 36.12,
+"ecmp_fwd": {
+"uni": 26.63,
+"deg": 30.06
+},
+"ecmp_bwd": {
+"uni": 26.70,
+"deg": 29.83
+},
+"source": "Amsterdam",
+"target": "Leiden"
+},
+{
+"dist": 12.57,
+"ecmp_fwd": {
+"uni": 30.81,
+"deg": 22.02
+},
+"ecmp_bwd": {
+"uni": 30.28,
+"deg": 21.71
+},
+"source": "Amsterdam",
+"target": "Schiphol-Rijk"
+},
+{
+"dist": 54.74,
+"ecmp_fwd": {
+"uni": 43.98,
+"deg": 45.29
+},
+"ecmp_bwd": {
+"uni": 43.76,
+"deg": 45.01
+},
+"source": "Amsterdam",
+"target": "Delft"
+},
+{
+"dist": 83.12,
+"ecmp_fwd": {
+"uni": 81.23,
+"deg": 83.06
+},
+"ecmp_bwd": {
+"uni": 81.05,
+"deg": 83.19
+},
+"source": "Amsterdam",
+"target": "Zwolle"
+},
+{
+"dist": 25.71,
+"ecmp_fwd": {
+"uni": 8.93,
+"deg": 6.56
+},
+"ecmp_bwd": {
+"uni": 8.93,
+"deg": 6.58
+},
+"source": "Amsterdam",
+"target": "Hilversum"
+},
+{
+"dist": 35.26,
+"ecmp_fwd": {
+"uni": 99.74,
+"deg": 99.58
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Amsterdam",
+"target": "Utrecht"
+},
+{
+"dist": 23.49,
+"ecmp_fwd": {
+"uni": 8.93,
+"deg": 6.56
+},
+"ecmp_bwd": {
+"uni": 8.93,
+"deg": 6.58
+},
+"source": "Amsterdam",
+"target": "Breukelen"
+},
+{
+"dist": 26.61,
+"ecmp_fwd": {
+"uni": 11.55,
+"deg": 8.56
+},
+"ecmp_bwd": {
+"uni": 12.36,
+"deg": 9.16
+},
+"source": "Haarlem",
+"target": "Leiden"
+},
+{
+"dist": 16.45,
+"ecmp_fwd": {
+"uni": 17.16,
+"deg": 6.13
+},
+"ecmp_bwd": {
+"uni": 17.16,
+"deg": 6.13
+},
+"source": "Oss",
+"target": "Den Bosch"
+},
+{
+"dist": 31.14,
+"ecmp_fwd": {
+"uni": 22.58,
+"deg": 15.53
+},
+"ecmp_bwd": {
+"uni": 22.67,
+"deg": 15.57
+},
+"source": "Den Bosch",
+"target": "Eindhoven"
+},
+{
+"dist": 39.79,
+"ecmp_fwd": {
+"uni": 14.79,
+"deg": 10.76
+},
+"ecmp_bwd": {
+"uni": 14.70,
+"deg": 10.72
+},
+"source": "Den Bosch",
+"target": "Nieuwegen"
+},
+{
+"dist": 7.63,
+"ecmp_fwd": {
+"uni": 17.16,
+"deg": 6.13
+},
+"ecmp_bwd": {
+"uni": 17.16,
+"deg": 6.13
+},
+"source": "Houten",
+"target": "Utrecht"
+},
+{
+"dist": 39.61,
+"ecmp_fwd": {
+"uni": 47.44,
+"deg": 43.23
+},
+"ecmp_bwd": {
+"uni": 47.99,
+"deg": 43.76
+},
+"source": "Wageningen",
+"target": "Utrecht"
+},
+{
+"dist": 19.08,
+"ecmp_fwd": {
+"uni": 38.01,
+"deg": 36.38
+},
+"ecmp_bwd": {
+"uni": 37.46,
+"deg": 35.85
+},
+"source": "Wageningen",
+"target": "Nijmegen"
+},
+{
+"dist": 15.81,
+"ecmp_fwd": {
+"uni": 20.48,
+"deg": 16.97
+},
+"ecmp_bwd": {
+"uni": 19.78,
+"deg": 16.44
+},
+"source": "Nijmegen",
+"target": "Arnhem"
+},
+{
+"dist": 82.72,
+"ecmp_fwd": {
+"uni": 18.03,
+"deg": 16.35
+},
+"ecmp_bwd": {
+"uni": 19.12,
+"deg": 17.12
+},
+"source": "Nijmegen",
+"target": "Enschede"
+},
+{
+"dist": 56.89,
+"ecmp_fwd": {
+"uni": 27.37,
+"deg": 20.07
+},
+"ecmp_bwd": {
+"uni": 26.43,
+"deg": 19.30
+},
+"source": "Nijmegen",
+"target": "Venlo"
+},
+{
+"dist": 55.64,
+"ecmp_fwd": {
+"uni": 15.65,
+"deg": 11.08
+},
+"ecmp_bwd": {
+"uni": 14.70,
+"deg": 10.31
+},
+"source": "Venlo",
+"target": "Heerlen"
+},
+{
+"dist": 20.92,
+"ecmp_fwd": {
+"uni": 14.27,
+"deg": 9.69
+},
+"ecmp_bwd": {
+"uni": 13.33,
+"deg": 8.92
+},
+"source": "Heerlen",
+"target": "Maastricht"
+},
+{
+"dist": 35.19,
+"ecmp_fwd": {
+"uni": 24.25,
+"deg": 17.07
+},
+"ecmp_bwd": {
+"uni": 23.30,
+"deg": 16.30
+},
+"source": "Maastricht",
+"target": "Maasbracht"
+},
+{
+"dist": 43.96,
+"ecmp_fwd": {
+"uni": 37.99,
+"deg": 27.20
+},
+"ecmp_bwd": {
+"uni": 37.05,
+"deg": 26.43
+},
+"source": "Maasbracht",
+"target": "Eindhoven"
+},
+{
+"dist": 29.65,
+"ecmp_fwd": {
+"uni": 70.02,
+"deg": 56.22
+},
+"ecmp_bwd": {
+"uni": 70.02,
+"deg": 56.22
+},
+"source": "Eindhoven",
+"target": "Tilburg"
+},
+{
+"dist": 76.33,
+"ecmp_fwd": {
+"uni": 99.34,
+"deg": 89.82
+},
+"ecmp_bwd": {
+"uni": 98.49,
+"deg": 89.09
+},
+"source": "Eindhoven",
+"target": "Utrecht"
+},
+{
+"dist": 16.74,
+"ecmp_fwd": {
+"uni": 32.56,
+"deg": 23.43
+},
+"ecmp_bwd": {
+"uni": 32.56,
+"deg": 23.43
+},
+"source": "Yerseke",
+"target": "Bergen op Zoom"
+},
+{
+"dist": 33.47,
+"ecmp_fwd": {
+"uni": 16.81,
+"deg": 11.99
+},
+"ecmp_bwd": {
+"uni": 16.81,
+"deg": 11.99
+},
+"source": "Yerseke",
+"target": "Vlissingen"
+},
+{
+"dist": 6.98,
+"ecmp_fwd": {
+"uni": 1.05,
+"deg": 0.54
+},
+"ecmp_bwd": {
+"uni": 1.05,
+"deg": 0.54
+},
+"source": "Vlissingen",
+"target": "Middelburg"
+},
+{
+"dist": 18.88,
+"ecmp_fwd": {
+"uni": 7.44,
+"deg": 6.13
+},
+"ecmp_bwd": {
+"uni": 7.92,
+"deg": 6.47
+},
+"source": "Gouda",
+"target": "Rotterdam"
+},
+{
+"dist": 29.49,
+"ecmp_fwd": {
+"uni": 18.03,
+"deg": 13.96
+},
+"ecmp_bwd": {
+"uni": 17.55,
+"deg": 13.62
+},
+"source": "Gouda",
+"target": "Utrecht"
+},
+{
+"dist": 7.43,
+"ecmp_fwd": {
+"uni": 26.78,
+"deg": 19.89
+},
+"ecmp_bwd": {
+"uni": 26.70,
+"deg": 19.84
+},
+"source": "Nieuwegen",
+"target": "Utrecht"
+},
+{
+"dist": 22.07,
+"ecmp_fwd": {
+"uni": 58.47,
+"deg": 47.50
+},
+"ecmp_bwd": {
+"uni": 58.47,
+"deg": 47.50
+},
+"source": "Tilburg",
+"target": "Breda"
+},
+{
+"dist": 25.83,
+"ecmp_fwd": {
+"uni": 39.56,
+"deg": 33.51
+},
+"ecmp_bwd": {
+"uni": 39.56,
+"deg": 33.51
+},
+"source": "Dordrecht",
+"target": "Breda"
+},
+{
+"dist": 18.30,
+"ecmp_fwd": {
+"uni": 47.61,
+"deg": 40.23
+},
+"ecmp_bwd": {
+"uni": 47.61,
+"deg": 40.23
+},
+"source": "Dordrecht",
+"target": "Rotterdam"
+},
+{
+"dist": 35.02,
+"ecmp_fwd": {
+"uni": 78.77,
+"deg": 62.44
+},
+"ecmp_bwd": {
+"uni": 78.77,
+"deg": 62.44
+},
+"source": "Bergen op Zoom",
+"target": "Breda"
+},
+{
+"dist": 30.97,
+"ecmp_fwd": {
+"uni": 32.56,
+"deg": 23.43
+},
+"ecmp_bwd": {
+"uni": 32.56,
+"deg": 23.43
+},
+"source": "Bergen op Zoom",
+"target": "Zierikzee"
+},
+{
+"dist": 26.92,
+"ecmp_fwd": {
+"uni": 16.81,
+"deg": 11.99
+},
+"ecmp_bwd": {
+"uni": 16.81,
+"deg": 11.99
+},
+"source": "Middelburg",
+"target": "Zierikzee"
+},
+{
+"dist": 15.19,
+"ecmp_fwd": {
+"uni": 8.23,
+"deg": 5.61
+},
+"ecmp_bwd": {
+"uni": 8.23,
+"deg": 5.59
+},
+"source": "Utrecht",
+"target": "Hilversum"
+},
+{
+"dist": 53.27,
+"ecmp_fwd": {
+"uni": 20.88,
+"deg": 23.56
+},
+"ecmp_bwd": {
+"uni": 20.26,
+"deg": 23.44
+},
+"source": "Utrecht",
+"target": "Delft"
+},
+{
+"dist": 12.41,
+"ecmp_fwd": {
+"uni": 8.23,
+"deg": 5.61
+},
+"ecmp_bwd": {
+"uni": 8.23,
+"deg": 5.59
+},
+"source": "Utrecht",
+"target": "Breukelen"
+},
+{
+"dist": 16.09,
+"ecmp_fwd": {
+"uni": 5.21,
+"deg": 3.75
+},
+"ecmp_bwd": {
+"uni": 5.25,
+"deg": 3.77
+},
+"source": "Leiden",
+"target": "Den Haag"
+},
+{
+"dist": 19.31,
+"ecmp_fwd": {
+"uni": 17.16,
+"deg": 17.80
+},
+"ecmp_bwd": {
+"uni": 17.46,
+"deg": 17.83
+},
+"source": "Leiden",
+"target": "Delft"
+},
+{
+"dist": 2.90,
+"ecmp_fwd": {
+"uni": 18.56,
+"deg": 13.40
+},
+"ecmp_bwd": {
+"uni": 19.08,
+"deg": 13.71
+},
+"source": "Leiden",
+"target": "Oegstgeest"
+},
+{
+"dist": 10.71,
+"ecmp_fwd": {
+"uni": 2.80,
+"deg": 1.95
+},
+"ecmp_bwd": {
+"uni": 3.33,
+"deg": 2.27
+},
+"source": "Oegstgeest",
+"target": "Lisse"
+},
+{
+"dist": 13.87,
+"ecmp_fwd": {
+"uni": 14.53,
+"deg": 10.26
+},
+"ecmp_bwd": {
+"uni": 15.05,
+"deg": 10.58
+},
+"source": "Lisse",
+"target": "Schiphol-Rijk"
+},
+{
+"dist": 12.63,
+"ecmp_fwd": {
+"uni": 52.69,
+"deg": 48.20
+},
+"ecmp_bwd": {
+"uni": 53.17,
+"deg": 48.54
+},
+"source": "Rotterdam",
+"target": "Delft"
+},
+{
+"dist": 8.71,
+"ecmp_fwd": {
+"uni": 11.95,
+"deg": 8.42
+},
+"ecmp_bwd": {
+"uni": 11.90,
+"deg": 8.40
+},
+"source": "Delft",
+"target": "Den Haag"
+},
+{
+"dist": 41.49,
+"ecmp_fwd": {
+"uni": 5.78,
+"deg": 3.86
+},
+"ecmp_bwd": {
+"uni": 5.69,
+"deg": 3.81
+},
+"source": "Emmen",
+"target": "Winschoten"
+},
+{
+"dist": 29.66,
+"ecmp_fwd": {
+"uni": 19.43,
+"deg": 13.94
+},
+"ecmp_bwd": {
+"uni": 19.52,
+"deg": 13.99
+},
+"source": "Emmen",
+"target": "Hoogeveen"
+},
+{
+"dist": 26.54,
+"ecmp_fwd": {
+"uni": 13.87,
+"deg": 9.66
+},
+"ecmp_bwd": {
+"uni": 13.30,
+"deg": 9.26
+},
+"source": "Arnhem",
+"target": "Zutphen"
+},
+{
+"dist": 35.12,
+"ecmp_fwd": {
+"uni": 14.88,
+"deg": 14.49
+},
+"ecmp_bwd": {
+"uni": 14.75,
+"deg": 14.35
+},
+"source": "Arnhem",
+"target": "Deventer"
+},
+{
+"dist": 17.72,
+"ecmp_fwd": {
+"uni": 5.38,
+"deg": 3.87
+},
+"ecmp_bwd": {
+"uni": 5.95,
+"deg": 4.27
+},
+"source": "Apeldoorn",
+"target": "Zutphen"
+},
+{
+"dist": 14.16,
+"ecmp_fwd": {
+"uni": 20.31,
+"deg": 14.71
+},
+"ecmp_bwd": {
+"uni": 19.74,
+"deg": 14.31
+},
+"source": "Apeldoorn",
+"target": "Deventer"
+},
+{
+"dist": 63.51,
+"ecmp_fwd": {
+"uni": 25.47,
+"deg": 22.07
+},
+"ecmp_bwd": {
+"uni": 26.56,
+"deg": 22.84
+},
+"source": "Enschede",
+"target": "Zwolle"
+},
+{
+"dist": 29.03,
+"ecmp_fwd": {
+"uni": 44.64,
+"deg": 40.78
+},
+"ecmp_bwd": {
+"uni": 43.94,
+"deg": 40.24
+},
+"source": "Deventer",
+"target": "Zwolle"
+},
+{
+"dist": 21.48,
+"ecmp_fwd": {
+"uni": 38.29,
+"deg": 31.81
+},
+"ecmp_bwd": {
+"uni": 38.51,
+"deg": 32.17
+},
+"source": "Zwolle",
+"target": "Meppel"
+},
+{
+"dist": 19.23,
+"ecmp_fwd": {
+"uni": 26.04,
+"deg": 22.73
+},
+"ecmp_bwd": {
+"uni": 26.26,
+"deg": 23.09
+},
+"source": "Meppel",
+"target": "Hoogeveen"
+}
+]
+}

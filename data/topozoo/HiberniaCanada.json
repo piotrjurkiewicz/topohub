@@ -1,0 +1,235 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "hiberniacanada",
+"demands": {},
+"stats": {
+"nodes": 10,
+"links": 10,
+"demands": 90,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 0.63,
+"max_degree": 3,
+"gini": 0.16,
+"min_link_len": 189.58,
+"avg_link_len": 1248.62,
+"max_link_len": 3285.80,
+"diameter_len": 7797.13,
+"diameter_hops": 7,
+"avg_sdp_num": 1.04,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.00,
+"avg_sdp_len": 2756.88,
+"avg_adp_num": 1.13,
+"max_adp_num": 2,
+"avg_adp_hops": 3.09,
+"avg_adp_len": 2699.07
+}
+},
+"nodes": [
+{
+"pos": [
+-79.07,
+43.08
+],
+"id": "New York"
+},
+{
+"pos": [
+-64.80,
+46.12
+],
+"id": "Moncton"
+},
+{
+"pos": [
+-68.33,
+47.37
+],
+"id": "Edmundston"
+},
+{
+"pos": [
+-71.21,
+46.81
+],
+"id": "Quebec"
+},
+{
+"pos": [
+-73.59,
+45.51
+],
+"id": "Montreal"
+},
+{
+"pos": [
+-79.42,
+43.70
+],
+"id": "Toronto"
+},
+{
+"pos": [
+-108.48,
+55.85
+],
+"id": "Buffalo"
+},
+{
+"pos": [
+-63.65,
+46.28
+],
+"id": "Albany"
+},
+{
+"pos": [
+-121.44,
+49.87
+],
+"id": "Boston"
+},
+{
+"pos": [
+-63.57,
+44.65
+],
+"id": "Halifax"
+}
+],
+"links": [
+{
+"dist": 1267.79,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 56.04
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 56.04
+},
+"source": "New York",
+"target": "Albany"
+},
+{
+"dist": 3285.80,
+"ecmp_fwd": {
+"uni": 37.50,
+"deg": 20.88
+},
+"ecmp_bwd": {
+"uni": 37.50,
+"deg": 20.88
+},
+"source": "New York",
+"target": "Boston"
+},
+{
+"dist": 189.58,
+"ecmp_fwd": {
+"uni": 37.50,
+"deg": 20.88
+},
+"ecmp_bwd": {
+"uni": 37.50,
+"deg": 20.88
+},
+"source": "Moncton",
+"target": "Halifax"
+},
+{
+"dist": 302.75,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 56.04
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 56.04
+},
+"source": "Moncton",
+"target": "Edmundston"
+},
+{
+"dist": 227.52,
+"ecmp_fwd": {
+"uni": 87.50,
+"deg": 82.42
+},
+"ecmp_bwd": {
+"uni": 87.50,
+"deg": 82.42
+},
+"source": "Edmundston",
+"target": "Quebec"
+},
+{
+"dist": 233.32,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Quebec",
+"target": "Montreal"
+},
+{
+"dist": 503.34,
+"ecmp_fwd": {
+"uni": 37.50,
+"deg": 39.56
+},
+"ecmp_bwd": {
+"uni": 37.50,
+"deg": 39.56
+},
+"source": "Montreal",
+"target": "Toronto"
+},
+{
+"dist": 773.67,
+"ecmp_fwd": {
+"uni": 79.17,
+"deg": 83.52
+},
+"ecmp_bwd": {
+"uni": 79.17,
+"deg": 83.52
+},
+"source": "Montreal",
+"target": "Albany"
+},
+{
+"dist": 2458.93,
+"ecmp_fwd": {
+"uni": 20.83,
+"deg": 21.98
+},
+"ecmp_bwd": {
+"uni": 20.83,
+"deg": 21.98
+},
+"source": "Toronto",
+"target": "Buffalo"
+},
+{
+"dist": 3243.54,
+"ecmp_fwd": {
+"uni": 29.17,
+"deg": 30.77
+},
+"ecmp_bwd": {
+"uni": 29.17,
+"deg": 30.77
+},
+"source": "Buffalo",
+"target": "Albany"
+}
+]
+}

@@ -1,0 +1,346 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "sprint",
+"demands": {},
+"stats": {
+"nodes": 11,
+"links": 18,
+"demands": 110,
+"min_degree": 1,
+"avg_degree": 3.27,
+"std_degree": 1.42,
+"max_degree": 6,
+"gini": 0.24,
+"min_link_len": 130.78,
+"avg_link_len": 1554.50,
+"max_link_len": 4030.10,
+"diameter_len": 4750.06,
+"diameter_hops": 4,
+"avg_sdp_num": 1.25,
+"max_sdp_num": 3,
+"avg_sdp_hops": 1.89,
+"avg_sdp_len": 1736.72,
+"avg_adp_num": 2.29,
+"max_adp_num": 5,
+"avg_adp_hops": 2.43,
+"avg_adp_len": 3651.14
+}
+},
+"nodes": [
+{
+"pos": [
+-104.82,
+41.14
+],
+"id": "Cheyenne"
+},
+{
+"pos": [
+-84.39,
+33.75
+],
+"id": "Atlanta"
+},
+{
+"pos": [
+-105.27,
+40.01
+],
+"id": "Boulder"
+},
+{
+"pos": [
+-122.33,
+47.61
+],
+"id": "Seattle"
+},
+{
+"pos": [
+-121.29,
+37.96
+],
+"id": "Stockton"
+},
+{
+"pos": [
+-117.91,
+33.84
+],
+"id": "Anaheim"
+},
+{
+"pos": [
+-97.32,
+32.73
+],
+"id": "Fort Worth"
+},
+{
+"pos": [
+-94.63,
+39.11
+],
+"id": "Kansas City"
+},
+{
+"pos": [
+-87.65,
+41.85
+],
+"id": "Chicago"
+},
+{
+"pos": [
+-74.01,
+40.71
+],
+"id": "New York (Pennsauken)"
+},
+{
+"pos": [
+-77.04,
+38.90
+],
+"id": "Washington, DC"
+}
+],
+"links": [
+{
+"dist": 130.78,
+"ecmp_fwd": {
+"uni": 88.24,
+"deg": 32.92
+},
+"ecmp_bwd": {
+"uni": 88.24,
+"deg": 32.92
+},
+"source": "Cheyenne",
+"target": "Boulder"
+},
+{
+"dist": 1453.80,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 77.12
+},
+"ecmp_bwd": {
+"uni": 95.59,
+"deg": 75.24
+},
+"source": "Cheyenne",
+"target": "Stockton"
+},
+{
+"dist": 895.06,
+"ecmp_fwd": {
+"uni": 64.71,
+"deg": 58.31
+},
+"ecmp_bwd": {
+"uni": 69.12,
+"deg": 60.19
+},
+"source": "Cheyenne",
+"target": "Kansas City"
+},
+{
+"dist": 872.17,
+"ecmp_fwd": {
+"uni": 52.94,
+"deg": 41.38
+},
+"ecmp_bwd": {
+"uni": 60.29,
+"deg": 45.77
+},
+"source": "Atlanta",
+"target": "Washington, DC"
+},
+{
+"dist": 1207.73,
+"ecmp_fwd": {
+"uni": 35.29,
+"deg": 22.57
+},
+"ecmp_bwd": {
+"uni": 27.94,
+"deg": 18.18
+},
+"source": "Atlanta",
+"target": "Fort Worth"
+},
+{
+"dist": 2789.45,
+"ecmp_fwd": {
+"uni": 26.47,
+"deg": 21.63
+},
+"ecmp_bwd": {
+"uni": 25.00,
+"deg": 20.38
+},
+"source": "Seattle",
+"target": "Chicago"
+},
+{
+"dist": 1076.50,
+"ecmp_fwd": {
+"uni": 61.76,
+"deg": 42.32
+},
+"ecmp_bwd": {
+"uni": 63.24,
+"deg": 43.57
+},
+"source": "Seattle",
+"target": "Stockton"
+},
+{
+"dist": 550.16,
+"ecmp_fwd": {
+"uni": 63.97,
+"deg": 53.61
+},
+"ecmp_bwd": {
+"uni": 64.71,
+"deg": 54.23
+},
+"source": "Stockton",
+"target": "Anaheim"
+},
+{
+"dist": 2884.04,
+"ecmp_fwd": {
+"uni": 33.82,
+"deg": 52.66
+},
+"ecmp_bwd": {
+"uni": 35.29,
+"deg": 53.92
+},
+"source": "Stockton",
+"target": "Chicago"
+},
+{
+"dist": 4030.10,
+"ecmp_fwd": {
+"uni": 39.71,
+"deg": 36.68
+},
+"ecmp_bwd": {
+"uni": 39.71,
+"deg": 36.68
+},
+"source": "Stockton",
+"target": "New York (Pennsauken)"
+},
+{
+"dist": 3819.12,
+"ecmp_fwd": {
+"uni": 72.79,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 67.65,
+"deg": 97.49
+},
+"source": "Stockton",
+"target": "Washington, DC"
+},
+{
+"dist": 1915.68,
+"ecmp_fwd": {
+"uni": 37.50,
+"deg": 36.68
+},
+"ecmp_bwd": {
+"uni": 38.24,
+"deg": 37.30
+},
+"source": "Anaheim",
+"target": "Fort Worth"
+},
+{
+"dist": 1948.90,
+"ecmp_fwd": {
+"uni": 29.41,
+"deg": 48.59
+},
+"ecmp_bwd": {
+"uni": 28.68,
+"deg": 47.96
+},
+"source": "Fort Worth",
+"target": "Washington, DC"
+},
+{
+"dist": 750.76,
+"ecmp_fwd": {
+"uni": 64.71,
+"deg": 66.46
+},
+"ecmp_bwd": {
+"uni": 58.82,
+"deg": 63.32
+},
+"source": "Fort Worth",
+"target": "Kansas City"
+},
+{
+"dist": 663.81,
+"ecmp_fwd": {
+"uni": 54.41,
+"deg": 72.10
+},
+"ecmp_bwd": {
+"uni": 52.94,
+"deg": 70.85
+},
+"source": "Kansas City",
+"target": "Chicago"
+},
+{
+"dist": 1518.27,
+"ecmp_fwd": {
+"uni": 38.24,
+"deg": 54.55
+},
+"ecmp_bwd": {
+"uni": 38.24,
+"deg": 54.55
+},
+"source": "Kansas City",
+"target": "Washington, DC"
+},
+{
+"dist": 1146.16,
+"ecmp_fwd": {
+"uni": 23.53,
+"deg": 28.53
+},
+"ecmp_bwd": {
+"uni": 22.06,
+"deg": 27.27
+},
+"source": "Chicago",
+"target": "New York (Pennsauken)"
+},
+{
+"dist": 328.58,
+"ecmp_fwd": {
+"uni": 36.76,
+"deg": 45.45
+},
+"ecmp_bwd": {
+"uni": 35.29,
+"deg": 44.20
+},
+"source": "New York (Pennsauken)",
+"target": "Washington, DC"
+}
+]
+}

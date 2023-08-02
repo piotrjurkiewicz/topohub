@@ -1,0 +1,526 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "hiberniaus",
+"demands": {},
+"stats": {
+"nodes": 20,
+"links": 27,
+"demands": 380,
+"min_degree": 1,
+"avg_degree": 2.70,
+"std_degree": 0.84,
+"max_degree": 4,
+"gini": 0.17,
+"min_link_len": 14.23,
+"avg_link_len": 270.21,
+"max_link_len": 791.87,
+"diameter_len": 2295.50,
+"diameter_hops": 10,
+"avg_sdp_num": 1.13,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.70,
+"avg_sdp_len": 653.94,
+"avg_adp_num": 1.75,
+"max_adp_num": 4,
+"avg_adp_hops": 4.35,
+"avg_adp_len": 984.90
+}
+},
+"nodes": [
+{
+"pos": [
+-80.00,
+40.44
+],
+"id": "Pittsburgh"
+},
+{
+"pos": [
+-75.16,
+39.95
+],
+"id": "Philadelphia"
+},
+{
+"pos": [
+-74.17,
+40.74
+],
+"id": "Newark"
+},
+{
+"pos": [
+-77.49,
+39.04
+],
+"id": "Ashburn"
+},
+{
+"pos": [
+-78.64,
+35.77
+],
+"id": "Raleigh"
+},
+{
+"pos": [
+-80.84,
+35.23
+],
+"id": "Charlotte"
+},
+{
+"pos": [
+-77.18,
+38.93
+],
+"id": "McLean"
+},
+{
+"pos": [
+-77.46,
+37.55
+],
+"id": "Richmond"
+},
+{
+"pos": [
+-84.39,
+33.75
+],
+"id": "Atlanta"
+},
+{
+"pos": [
+-74.01,
+40.71
+],
+"id": "New York"
+},
+{
+"pos": [
+-73.76,
+41.03
+],
+"id": "White Plains"
+},
+{
+"pos": [
+-73.54,
+41.05
+],
+"id": "Stamford"
+},
+{
+"pos": [
+-87.65,
+41.85
+],
+"id": "Chicago"
+},
+{
+"pos": [
+-81.70,
+41.50
+],
+"id": "Cleveland"
+},
+{
+"pos": [
+-78.88,
+42.89
+],
+"id": "Buffalo"
+},
+{
+"pos": [
+-79.42,
+43.70
+],
+"id": "Toronto"
+},
+{
+"pos": [
+-73.59,
+45.51
+],
+"id": "Montreal"
+},
+{
+"pos": [
+-73.76,
+42.65
+],
+"id": "Albany"
+},
+{
+"pos": [
+-71.06,
+42.36
+],
+"id": "Boston"
+},
+{
+"pos": [
+-63.57,
+44.65
+],
+"id": "Halifax"
+}
+],
+"links": [
+{
+"dist": 264.87,
+"ecmp_fwd": {
+"uni": 56.00,
+"deg": 66.42
+},
+"ecmp_bwd": {
+"uni": 56.30,
+"deg": 66.83
+},
+"source": "Pittsburgh",
+"target": "Ashburn"
+},
+{
+"dist": 659.73,
+"ecmp_fwd": {
+"uni": 14.96,
+"deg": 14.49
+},
+"ecmp_bwd": {
+"uni": 14.67,
+"deg": 14.07
+},
+"source": "Pittsburgh",
+"target": "Chicago"
+},
+{
+"dist": 185.04,
+"ecmp_fwd": {
+"uni": 37.33,
+"deg": 47.16
+},
+"ecmp_bwd": {
+"uni": 37.33,
+"deg": 47.16
+},
+"source": "Pittsburgh",
+"target": "Cleveland"
+},
+{
+"dist": 129.69,
+"ecmp_fwd": {
+"uni": 36.67,
+"deg": 51.73
+},
+"ecmp_bwd": {
+"uni": 32.76,
+"deg": 47.12
+},
+"source": "Philadelphia",
+"target": "New York"
+},
+{
+"dist": 121.05,
+"ecmp_fwd": {
+"uni": 2.67,
+"deg": 4.44
+},
+"ecmp_bwd": {
+"uni": 2.67,
+"deg": 4.44
+},
+"source": "Philadelphia",
+"target": "Newark"
+},
+{
+"dist": 223.57,
+"ecmp_fwd": {
+"uni": 34.09,
+"deg": 44.90
+},
+"ecmp_bwd": {
+"uni": 38.00,
+"deg": 49.51
+},
+"source": "Philadelphia",
+"target": "Ashburn"
+},
+{
+"dist": 339.75,
+"ecmp_fwd": {
+"uni": 54.20,
+"deg": 70.08
+},
+"ecmp_bwd": {
+"uni": 50.00,
+"deg": 65.06
+},
+"source": "Newark",
+"target": "Ashburn"
+},
+{
+"dist": 47.82,
+"ecmp_fwd": {
+"uni": 24.92,
+"deg": 27.16
+},
+"ecmp_bwd": {
+"uni": 27.28,
+"deg": 29.88
+},
+"source": "Newark",
+"target": "White Plains"
+},
+{
+"dist": 14.23,
+"ecmp_fwd": {
+"uni": 31.50,
+"deg": 50.49
+},
+"ecmp_bwd": {
+"uni": 33.34,
+"deg": 52.80
+},
+"source": "Newark",
+"target": "New York"
+},
+{
+"dist": 29.44,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Ashburn",
+"target": "McLean"
+},
+{
+"dist": 208.62,
+"ecmp_fwd": {
+"uni": 48.00,
+"deg": 37.78
+},
+"ecmp_bwd": {
+"uni": 48.00,
+"deg": 37.78
+},
+"source": "Raleigh",
+"target": "Charlotte"
+},
+{
+"dist": 224.32,
+"ecmp_fwd": {
+"uni": 68.00,
+"deg": 60.49
+},
+"ecmp_bwd": {
+"uni": 68.00,
+"deg": 60.49
+},
+"source": "Raleigh",
+"target": "Richmond"
+},
+{
+"dist": 364.17,
+"ecmp_fwd": {
+"uni": 25.33,
+"deg": 13.09
+},
+"ecmp_bwd": {
+"uni": 25.33,
+"deg": 13.09
+},
+"source": "Charlotte",
+"target": "Atlanta"
+},
+{
+"dist": 155.52,
+"ecmp_fwd": {
+"uni": 85.33,
+"deg": 81.23
+},
+"ecmp_bwd": {
+"uni": 85.33,
+"deg": 81.23
+},
+"source": "McLean",
+"target": "Richmond"
+},
+{
+"dist": 216.59,
+"ecmp_fwd": {
+"uni": 50.59,
+"deg": 80.42
+},
+"ecmp_bwd": {
+"uni": 54.33,
+"deg": 84.44
+},
+"source": "New York",
+"target": "Albany"
+},
+{
+"dist": 54.47,
+"ecmp_fwd": {
+"uni": 25.08,
+"deg": 35.09
+},
+"ecmp_bwd": {
+"uni": 19.28,
+"deg": 28.77
+},
+"source": "New York",
+"target": "Stamford"
+},
+{
+"dist": 18.93,
+"ecmp_fwd": {
+"uni": 15.83,
+"deg": 19.01
+},
+"ecmp_bwd": {
+"uni": 18.19,
+"deg": 21.73
+},
+"source": "White Plains",
+"target": "Stamford"
+},
+{
+"dist": 251.86,
+"ecmp_fwd": {
+"uni": 25.11,
+"deg": 31.76
+},
+"ecmp_bwd": {
+"uni": 21.67,
+"deg": 28.15
+},
+"source": "Stamford",
+"target": "Boston"
+},
+{
+"dist": 496.14,
+"ecmp_fwd": {
+"uni": 10.67,
+"deg": 11.60
+},
+"ecmp_bwd": {
+"uni": 10.37,
+"deg": 11.19
+},
+"source": "Chicago",
+"target": "Cleveland"
+},
+{
+"dist": 278.70,
+"ecmp_fwd": {
+"uni": 44.00,
+"deg": 56.54
+},
+"ecmp_bwd": {
+"uni": 43.70,
+"deg": 56.13
+},
+"source": "Cleveland",
+"target": "Buffalo"
+},
+{
+"dist": 100.43,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 23.70
+},
+"ecmp_bwd": {
+"uni": 22.00,
+"deg": 22.96
+},
+"source": "Buffalo",
+"target": "Toronto"
+},
+{
+"dist": 418.97,
+"ecmp_fwd": {
+"uni": 31.33,
+"deg": 50.25
+},
+"ecmp_bwd": {
+"uni": 31.79,
+"deg": 50.58
+},
+"source": "Buffalo",
+"target": "Albany"
+},
+{
+"dist": 503.34,
+"ecmp_fwd": {
+"uni": 12.67,
+"deg": 14.94
+},
+"ecmp_bwd": {
+"uni": 11.92,
+"deg": 14.20
+},
+"source": "Toronto",
+"target": "Montreal"
+},
+{
+"dist": 317.98,
+"ecmp_fwd": {
+"uni": 29.67,
+"deg": 40.74
+},
+"ecmp_bwd": {
+"uni": 27.25,
+"deg": 38.61
+},
+"source": "Montreal",
+"target": "Albany"
+},
+{
+"dist": 791.87,
+"ecmp_fwd": {
+"uni": 12.67,
+"deg": 13.80
+},
+"ecmp_bwd": {
+"uni": 14.33,
+"deg": 15.19
+},
+"source": "Montreal",
+"target": "Halifax"
+},
+{
+"dist": 223.50,
+"ecmp_fwd": {
+"uni": 22.67,
+"deg": 32.59
+},
+"ecmp_bwd": {
+"uni": 24.44,
+"deg": 34.81
+},
+"source": "Albany",
+"target": "Boston"
+},
+{
+"dist": 655.07,
+"ecmp_fwd": {
+"uni": 18.00,
+"deg": 18.92
+},
+"ecmp_bwd": {
+"uni": 16.33,
+"deg": 17.53
+},
+"source": "Boston",
+"target": "Halifax"
+}
+]
+}

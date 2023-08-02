@@ -1,0 +1,321 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "restena",
+"demands": {},
+"stats": {
+"nodes": 13,
+"links": 15,
+"demands": 156,
+"min_degree": 1,
+"avg_degree": 2.31,
+"std_degree": 1.32,
+"max_degree": 6,
+"gini": 0.27,
+"min_link_len": 0.00,
+"avg_link_len": 7.28,
+"max_link_len": 27.13,
+"diameter_len": 45.94,
+"diameter_hops": 5,
+"avg_sdp_num": 1.09,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.38,
+"avg_sdp_len": 11.08,
+"avg_adp_num": 1.62,
+"max_adp_num": 3,
+"avg_adp_hops": 2.99,
+"avg_adp_len": 18.44
+}
+},
+"nodes": [
+{
+"pos": [
+6.14,
+49.66
+],
+"id": "Walferdange"
+},
+{
+"pos": [
+6.13,
+49.61
+],
+"id": "CCRN"
+},
+{
+"pos": [
+6.10,
+49.85
+],
+"id": "Ettelbruck"
+},
+{
+"pos": [
+6.16,
+49.87
+],
+"id": "Diekirch"
+},
+{
+"pos": [
+6.15,
+49.62
+],
+"id": "RESTENA"
+},
+{
+"pos": [
+6.15,
+49.62
+],
+"id": "BCE"
+},
+{
+"pos": [
+6.12,
+49.62
+],
+"id": "UNI.iu"
+},
+{
+"pos": [
+6.11,
+49.62
+],
+"id": "Rollingergrund"
+},
+{
+"pos": [
+6.12,
+49.60
+],
+"id": "Campus Geesseknaeppchen"
+},
+{
+"pos": [
+5.98,
+49.50
+],
+"id": "Esch-sur-Alzette"
+},
+{
+"pos": [
+6.10,
+49.52
+],
+"id": "Bettembourg"
+},
+{
+"pos": [
+6.13,
+49.61
+],
+"id": "Luxembourg"
+},
+{
+"pos": [
+6.12,
+49.62
+],
+"id": "Limpertsberg"
+}
+],
+"links": [
+{
+"dist": 3.93,
+"ecmp_fwd": {
+"uni": 60.76,
+"deg": 26.36
+},
+"ecmp_bwd": {
+"uni": 60.76,
+"deg": 26.36
+},
+"source": "Walferdange",
+"target": "RESTENA"
+},
+{
+"dist": 1.95,
+"ecmp_fwd": {
+"uni": 60.76,
+"deg": 26.36
+},
+"ecmp_bwd": {
+"uni": 60.76,
+"deg": 26.36
+},
+"source": "CCRN",
+"target": "RESTENA"
+},
+{
+"dist": 25.08,
+"ecmp_fwd": {
+"uni": 43.04,
+"deg": 36.36
+},
+"ecmp_bwd": {
+"uni": 44.30,
+"deg": 37.73
+},
+"source": "Ettelbruck",
+"target": "BCE"
+},
+{
+"dist": 4.34,
+"ecmp_fwd": {
+"uni": 31.65,
+"deg": 26.36
+},
+"ecmp_bwd": {
+"uni": 30.38,
+"deg": 25.00
+},
+"source": "Ettelbruck",
+"target": "Diekirch"
+},
+{
+"dist": 27.13,
+"ecmp_fwd": {
+"uni": 68.35,
+"deg": 58.18
+},
+"ecmp_bwd": {
+"uni": 67.09,
+"deg": 56.82
+},
+"source": "Diekirch",
+"target": "RESTENA"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 89.87,
+"deg": 92.73
+},
+"ecmp_bwd": {
+"uni": 89.87,
+"deg": 92.73
+},
+"source": "RESTENA",
+"target": "BCE"
+},
+{
+"dist": 12.18,
+"ecmp_fwd": {
+"uni": 70.89,
+"deg": 61.82
+},
+"ecmp_bwd": {
+"uni": 70.89,
+"deg": 61.82
+},
+"source": "RESTENA",
+"target": "Bettembourg"
+},
+{
+"dist": 1.95,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 98.73,
+"deg": 98.64
+},
+"source": "RESTENA",
+"target": "Luxembourg"
+},
+{
+"dist": 2.03,
+"ecmp_fwd": {
+"uni": 67.09,
+"deg": 60.91
+},
+"ecmp_bwd": {
+"uni": 68.35,
+"deg": 62.27
+},
+"source": "BCE",
+"target": "Limpertsberg"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 53.16,
+"deg": 47.73
+},
+"ecmp_bwd": {
+"uni": 51.90,
+"deg": 46.36
+},
+"source": "UNI.iu",
+"target": "Limpertsberg"
+},
+{
+"dist": 2.05,
+"ecmp_fwd": {
+"uni": 60.76,
+"deg": 52.73
+},
+"ecmp_bwd": {
+"uni": 62.03,
+"deg": 54.09
+},
+"source": "UNI.iu",
+"target": "Campus Geesseknaeppchen"
+},
+{
+"dist": 2.55,
+"ecmp_fwd": {
+"uni": 60.76,
+"deg": 26.36
+},
+"ecmp_bwd": {
+"uni": 60.76,
+"deg": 26.36
+},
+"source": "Rollingergrund",
+"target": "Campus Geesseknaeppchen"
+},
+{
+"dist": 1.10,
+"ecmp_fwd": {
+"uni": 83.54,
+"deg": 84.09
+},
+"ecmp_bwd": {
+"uni": 84.81,
+"deg": 85.45
+},
+"source": "Campus Geesseknaeppchen",
+"target": "Luxembourg"
+},
+{
+"dist": 15.75,
+"ecmp_fwd": {
+"uni": 40.51,
+"deg": 32.73
+},
+"ecmp_bwd": {
+"uni": 40.51,
+"deg": 32.73
+},
+"source": "Campus Geesseknaeppchen",
+"target": "Esch-sur-Alzette"
+},
+{
+"dist": 9.18,
+"ecmp_fwd": {
+"uni": 50.63,
+"deg": 43.64
+},
+"ecmp_bwd": {
+"uni": 50.63,
+"deg": 43.64
+},
+"source": "Esch-sur-Alzette",
+"target": "Bettembourg"
+}
+]
+}

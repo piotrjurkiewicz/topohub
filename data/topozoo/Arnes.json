@@ -1,0 +1,871 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "arnes",
+"demands": {},
+"stats": {
+"nodes": 34,
+"links": 46,
+"demands": 1122,
+"min_degree": 1,
+"avg_degree": 2.71,
+"std_degree": 1.52,
+"max_degree": 9,
+"gini": 0.25,
+"min_link_len": 4.92,
+"avg_link_len": 30.16,
+"max_link_len": 104.08,
+"diameter_len": 254.86,
+"diameter_hops": 7,
+"avg_sdp_num": 1.04,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.44,
+"avg_sdp_len": 81.46,
+"avg_adp_num": 1.92,
+"max_adp_num": 5,
+"avg_adp_hops": 4.79,
+"avg_adp_len": 167.49
+}
+},
+"nodes": [
+{
+"pos": [
+15.05,
+46.16
+],
+"id": "Trbovlje"
+},
+{
+"pos": [
+15.49,
+45.96
+],
+"id": "Krsko"
+},
+{
+"pos": [
+15.26,
+46.23
+],
+"id": "Celje"
+},
+{
+"pos": [
+15.24,
+46.15
+],
+"id": "Lasko"
+},
+{
+"pos": [
+14.36,
+46.24
+],
+"id": "Kranj"
+},
+{
+"pos": [
+14.11,
+46.37
+],
+"id": "Bled"
+},
+{
+"pos": [
+15.17,
+45.80
+],
+"id": "Novo Mesto"
+},
+{
+"pos": [
+14.51,
+46.05
+],
+"id": "Ljubljana"
+},
+{
+"pos": [
+13.73,
+46.18
+],
+"id": "Tolmin"
+},
+{
+"pos": [
+13.65,
+45.96
+],
+"id": "Nova Gorica"
+},
+{
+"pos": [
+13.59,
+45.51
+],
+"id": "Portoroz"
+},
+{
+"pos": [
+15.99,
+46.67
+],
+"id": "Gornja Radgona"
+},
+{
+"pos": [
+16.04,
+46.64
+],
+"id": "Radenci"
+},
+{
+"pos": [
+15.64,
+46.24
+],
+"id": "Rogasja Slatina"
+},
+{
+"pos": [
+14.04,
+45.72
+],
+"id": "Senozece"
+},
+{
+"pos": [
+14.07,
+46.43
+],
+"id": "Jesenice"
+},
+{
+"pos": [
+13.87,
+45.71
+],
+"id": "Sezana"
+},
+{
+"pos": [
+13.97,
+45.68
+],
+"id": "Divaca"
+},
+{
+"pos": [
+14.22,
+45.78
+],
+"id": "Postojna"
+},
+{
+"pos": [
+13.91,
+45.89
+],
+"id": "Ajdovscina"
+},
+{
+"pos": [
+14.86,
+45.64
+],
+"id": "Kovevje"
+},
+{
+"pos": [
+14.61,
+46.23
+],
+"id": "Kamnik"
+},
+{
+"pos": [
+13.66,
+45.54
+],
+"id": "Izola"
+},
+{
+"pos": [
+13.73,
+45.55
+],
+"id": "Koper"
+},
+{
+"pos": [
+15.08,
+46.51
+],
+"id": "Slovenj Gradec"
+},
+{
+"pos": [
+15.11,
+46.36
+],
+"id": "Velenje"
+},
+{
+"pos": [
+16.17,
+46.66
+],
+"id": "Murska Sobota"
+},
+{
+"pos": [
+16.20,
+46.52
+],
+"id": "Ljutomer"
+},
+{
+"pos": [
+16.15,
+46.41
+],
+"id": "Ormoz"
+},
+{
+"pos": [
+15.87,
+46.42
+],
+"id": "Ptuj"
+},
+{
+"pos": [
+15.65,
+46.55
+],
+"id": "Maribor"
+},
+{
+"pos": [
+15.57,
+46.39
+],
+"id": "Slovenska Bistrica"
+},
+{
+"pos": [
+15.02,
+46.59
+],
+"id": "Dravograd"
+},
+{
+"pos": [
+14.97,
+46.54
+],
+"id": "Ravne na Koroskem"
+}
+],
+"links": [
+{
+"dist": 14.04,
+"ecmp_fwd": {
+"uni": 4.31,
+"deg": 3.54
+},
+"ecmp_bwd": {
+"uni": 4.55,
+"deg": 3.68
+},
+"source": "Trbovlje",
+"target": "Lasko"
+},
+{
+"dist": 43.83,
+"ecmp_fwd": {
+"uni": 11.48,
+"deg": 8.72
+},
+"ecmp_bwd": {
+"uni": 11.24,
+"deg": 8.58
+},
+"source": "Trbovlje",
+"target": "Ljubljana"
+},
+{
+"dist": 33.00,
+"ecmp_fwd": {
+"uni": 9.33,
+"deg": 6.67
+},
+"ecmp_bwd": {
+"uni": 9.33,
+"deg": 6.67
+},
+"source": "Krsko",
+"target": "Rogasja Slatina"
+},
+{
+"dist": 30.38,
+"ecmp_fwd": {
+"uni": 11.72,
+"deg": 8.85
+},
+"ecmp_bwd": {
+"uni": 11.72,
+"deg": 8.85
+},
+"source": "Krsko",
+"target": "Novo Mesto"
+},
+{
+"dist": 18.35,
+"ecmp_fwd": {
+"uni": 10.49,
+"deg": 11.99
+},
+"ecmp_bwd": {
+"uni": 9.33,
+"deg": 10.52
+},
+"source": "Celje",
+"target": "Velenje"
+},
+{
+"dist": 8.70,
+"ecmp_fwd": {
+"uni": 10.93,
+"deg": 15.42
+},
+"ecmp_bwd": {
+"uni": 11.40,
+"deg": 16.14
+},
+"source": "Celje",
+"target": "Lasko"
+},
+{
+"dist": 49.89,
+"ecmp_fwd": {
+"uni": 8.53,
+"deg": 10.72
+},
+"ecmp_bwd": {
+"uni": 9.13,
+"deg": 11.44
+},
+"source": "Celje",
+"target": "Kamnik"
+},
+{
+"dist": 30.10,
+"ecmp_fwd": {
+"uni": 4.11,
+"deg": 4.74
+},
+"ecmp_bwd": {
+"uni": 4.19,
+"deg": 4.77
+},
+"source": "Celje",
+"target": "Slovenska Bistrica"
+},
+{
+"dist": 54.56,
+"ecmp_fwd": {
+"uni": 10.13,
+"deg": 12.76
+},
+"ecmp_bwd": {
+"uni": 10.17,
+"deg": 12.80
+},
+"source": "Lasko",
+"target": "Maribor"
+},
+{
+"dist": 57.50,
+"ecmp_fwd": {
+"uni": 13.96,
+"deg": 21.32
+},
+"ecmp_bwd": {
+"uni": 14.63,
+"deg": 22.13
+},
+"source": "Lasko",
+"target": "Ljubljana"
+},
+{
+"dist": 23.85,
+"ecmp_fwd": {
+"uni": 34.45,
+"deg": 31.87
+},
+"ecmp_bwd": {
+"uni": 34.45,
+"deg": 31.87
+},
+"source": "Kranj",
+"target": "Ljubljana"
+},
+{
+"dist": 90.95,
+"ecmp_fwd": {
+"uni": 8.13,
+"deg": 7.42
+},
+"ecmp_bwd": {
+"uni": 8.13,
+"deg": 7.42
+},
+"source": "Kranj",
+"target": "Koper"
+},
+{
+"dist": 23.58,
+"ecmp_fwd": {
+"uni": 15.79,
+"deg": 12.39
+},
+"ecmp_bwd": {
+"uni": 15.79,
+"deg": 12.39
+},
+"source": "Kranj",
+"target": "Bled"
+},
+{
+"dist": 30.76,
+"ecmp_fwd": {
+"uni": 15.79,
+"deg": 6.20
+},
+"ecmp_bwd": {
+"uni": 15.79,
+"deg": 6.20
+},
+"source": "Kranj",
+"target": "Jesenice"
+},
+{
+"dist": 35.83,
+"ecmp_fwd": {
+"uni": 2.87,
+"deg": 2.04
+},
+"ecmp_bwd": {
+"uni": 2.87,
+"deg": 2.04
+},
+"source": "Bled",
+"target": "Tolmin"
+},
+{
+"dist": 29.70,
+"ecmp_fwd": {
+"uni": 22.25,
+"deg": 17.84
+},
+"ecmp_bwd": {
+"uni": 22.25,
+"deg": 17.84
+},
+"source": "Novo Mesto",
+"target": "Kovevje"
+},
+{
+"dist": 67.03,
+"ecmp_fwd": {
+"uni": 35.17,
+"deg": 33.09
+},
+"ecmp_bwd": {
+"uni": 35.17,
+"deg": 33.09
+},
+"source": "Ljubljana",
+"target": "Nova Gorica"
+},
+{
+"dist": 37.79,
+"ecmp_fwd": {
+"uni": 36.12,
+"deg": 28.74
+},
+"ecmp_bwd": {
+"uni": 36.12,
+"deg": 28.74
+},
+"source": "Ljubljana",
+"target": "Postojna"
+},
+{
+"dist": 53.17,
+"ecmp_fwd": {
+"uni": 35.17,
+"deg": 28.46
+},
+"ecmp_bwd": {
+"uni": 35.17,
+"deg": 28.46
+},
+"source": "Ljubljana",
+"target": "Kovevje"
+},
+{
+"dist": 21.12,
+"ecmp_fwd": {
+"uni": 19.66,
+"deg": 19.48
+},
+"ecmp_bwd": {
+"uni": 19.06,
+"deg": 18.75
+},
+"source": "Ljubljana",
+"target": "Kamnik"
+},
+{
+"dist": 82.23,
+"ecmp_fwd": {
+"uni": 42.58,
+"deg": 51.48
+},
+"ecmp_bwd": {
+"uni": 42.58,
+"deg": 51.48
+},
+"source": "Ljubljana",
+"target": "Koper"
+},
+{
+"dist": 104.08,
+"ecmp_fwd": {
+"uni": 98.96,
+"deg": 98.60
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Ljubljana",
+"target": "Maribor"
+},
+{
+"dist": 26.08,
+"ecmp_fwd": {
+"uni": 14.83,
+"deg": 11.58
+},
+"ecmp_bwd": {
+"uni": 14.83,
+"deg": 11.58
+},
+"source": "Tolmin",
+"target": "Nova Gorica"
+},
+{
+"dist": 21.65,
+"ecmp_fwd": {
+"uni": 15.07,
+"deg": 12.33
+},
+"ecmp_bwd": {
+"uni": 15.07,
+"deg": 12.33
+},
+"source": "Nova Gorica",
+"target": "Ajdovscina"
+},
+{
+"dist": 35.01,
+"ecmp_fwd": {
+"uni": 10.29,
+"deg": 7.83
+},
+"ecmp_bwd": {
+"uni": 10.29,
+"deg": 7.83
+},
+"source": "Portoroz",
+"target": "Divaca"
+},
+{
+"dist": 6.00,
+"ecmp_fwd": {
+"uni": 7.42,
+"deg": 5.79
+},
+"ecmp_bwd": {
+"uni": 7.42,
+"deg": 5.79
+},
+"source": "Portoroz",
+"target": "Izola"
+},
+{
+"dist": 4.92,
+"ecmp_fwd": {
+"uni": 27.51,
+"deg": 22.06
+},
+"ecmp_bwd": {
+"uni": 27.51,
+"deg": 22.06
+},
+"source": "Gornja Radgona",
+"target": "Radenci"
+},
+{
+"dist": 29.51,
+"ecmp_fwd": {
+"uni": 40.43,
+"deg": 32.69
+},
+"ecmp_bwd": {
+"uni": 40.43,
+"deg": 32.69
+},
+"source": "Gornja Radgona",
+"target": "Maribor"
+},
+{
+"dist": 10.08,
+"ecmp_fwd": {
+"uni": 14.59,
+"deg": 11.44
+},
+"ecmp_bwd": {
+"uni": 14.59,
+"deg": 11.44
+},
+"source": "Radenci",
+"target": "Murska Sobota"
+},
+{
+"dist": 26.94,
+"ecmp_fwd": {
+"uni": 22.25,
+"deg": 17.30
+},
+"ecmp_bwd": {
+"uni": 22.25,
+"deg": 17.30
+},
+"source": "Rogasja Slatina",
+"target": "Ptuj"
+},
+{
+"dist": 13.10,
+"ecmp_fwd": {
+"uni": 15.79,
+"deg": 6.20
+},
+"ecmp_bwd": {
+"uni": 15.79,
+"deg": 6.20
+},
+"source": "Senozece",
+"target": "Sezana"
+},
+{
+"dist": 6.83,
+"ecmp_fwd": {
+"uni": 8.37,
+"deg": 6.40
+},
+"ecmp_bwd": {
+"uni": 8.37,
+"deg": 6.40
+},
+"source": "Senozece",
+"target": "Divaca"
+},
+{
+"dist": 14.97,
+"ecmp_fwd": {
+"uni": 24.64,
+"deg": 19.48
+},
+"ecmp_bwd": {
+"uni": 24.64,
+"deg": 19.48
+},
+"source": "Senozece",
+"target": "Postojna"
+},
+{
+"dist": 22.88,
+"ecmp_fwd": {
+"uni": 6.46,
+"deg": 5.38
+},
+"ecmp_bwd": {
+"uni": 6.46,
+"deg": 5.38
+},
+"source": "Divaca",
+"target": "Ajdovscina"
+},
+{
+"dist": 24.21,
+"ecmp_fwd": {
+"uni": 22.25,
+"deg": 27.78
+},
+"ecmp_bwd": {
+"uni": 22.25,
+"deg": 27.78
+},
+"source": "Divaca",
+"target": "Koper"
+},
+{
+"dist": 5.37,
+"ecmp_fwd": {
+"uni": 20.33,
+"deg": 16.14
+},
+"ecmp_bwd": {
+"uni": 20.33,
+"deg": 16.14
+},
+"source": "Izola",
+"target": "Koper"
+},
+{
+"dist": 9.84,
+"ecmp_fwd": {
+"uni": 13.64,
+"deg": 10.49
+},
+"ecmp_bwd": {
+"uni": 13.76,
+"deg": 10.55
+},
+"source": "Slovenj Gradec",
+"target": "Dravograd"
+},
+{
+"dist": 16.96,
+"ecmp_fwd": {
+"uni": 2.15,
+"deg": 1.77
+},
+"ecmp_bwd": {
+"uni": 2.03,
+"deg": 1.70
+},
+"source": "Slovenj Gradec",
+"target": "Velenje"
+},
+{
+"dist": 26.40,
+"ecmp_fwd": {
+"uni": 10.53,
+"deg": 12.02
+},
+"ecmp_bwd": {
+"uni": 9.25,
+"deg": 10.49
+},
+"source": "Velenje",
+"target": "Dravograd"
+},
+{
+"dist": 15.94,
+"ecmp_fwd": {
+"uni": 4.07,
+"deg": 2.45
+},
+"ecmp_bwd": {
+"uni": 4.07,
+"deg": 2.45
+},
+"source": "Murska Sobota",
+"target": "Ljutomer"
+},
+{
+"dist": 12.61,
+"ecmp_fwd": {
+"uni": 16.99,
+"deg": 13.07
+},
+"ecmp_bwd": {
+"uni": 16.99,
+"deg": 13.07
+},
+"source": "Ljutomer",
+"target": "Ormoz"
+},
+{
+"dist": 21.82,
+"ecmp_fwd": {
+"uni": 29.90,
+"deg": 23.70
+},
+"ecmp_bwd": {
+"uni": 29.90,
+"deg": 23.70
+},
+"source": "Ormoz",
+"target": "Ptuj"
+},
+{
+"dist": 22.75,
+"ecmp_fwd": {
+"uni": 54.07,
+"deg": 49.64
+},
+"ecmp_bwd": {
+"uni": 54.07,
+"deg": 49.64
+},
+"source": "Ptuj",
+"target": "Maribor"
+},
+{
+"dist": 48.12,
+"ecmp_fwd": {
+"uni": 46.93,
+"deg": 43.85
+},
+"ecmp_bwd": {
+"uni": 48.09,
+"deg": 45.32
+},
+"source": "Maribor",
+"target": "Dravograd"
+},
+{
+"dist": 18.84,
+"ecmp_fwd": {
+"uni": 15.79,
+"deg": 13.55
+},
+"ecmp_bwd": {
+"uni": 15.71,
+"deg": 13.53
+},
+"source": "Maribor",
+"target": "Slovenska Bistrica"
+},
+{
+"dist": 6.30,
+"ecmp_fwd": {
+"uni": 15.79,
+"deg": 6.20
+},
+"ecmp_bwd": {
+"uni": 15.79,
+"deg": 6.20
+},
+"source": "Dravograd",
+"target": "Ravne na Koroskem"
+}
+]
+}

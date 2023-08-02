@@ -1,0 +1,435 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "cesnet2001",
+"demands": {},
+"stats": {
+"nodes": 20,
+"links": 20,
+"demands": 380,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 1.95,
+"max_degree": 9,
+"gini": 0.40,
+"min_link_len": 15.08,
+"avg_link_len": 80.03,
+"max_link_len": 277.69,
+"diameter_len": 481.87,
+"diameter_hops": 4,
+"avg_sdp_num": 1.01,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.68,
+"avg_sdp_len": 266.71,
+"avg_adp_num": 1.03,
+"max_adp_num": 2,
+"avg_adp_hops": 2.70,
+"avg_adp_len": 265.38
+}
+},
+"nodes": [
+{
+"pos": [
+17.25,
+49.60
+],
+"id": "Olomouc"
+},
+{
+"pos": [
+16.61,
+49.20
+],
+"id": "Brno"
+},
+{
+"pos": [
+15.78,
+50.04
+],
+"id": "Pardubice"
+},
+{
+"pos": [
+15.83,
+50.21
+],
+"id": "Hradec Kralove"
+},
+{
+"pos": [
+16.88,
+48.76
+],
+"id": "Breclav,Lednice"
+},
+{
+"pos": [
+18.28,
+49.83
+],
+"id": "Ostrava"
+},
+{
+"pos": [
+17.00,
+49.28
+],
+"id": "Vyskov"
+},
+{
+"pos": [
+17.67,
+49.22
+],
+"id": "Zlin"
+},
+{
+"pos": [
+18.49,
+49.84
+],
+"id": "Karvina"
+},
+{
+"pos": [
+17.90,
+49.94
+],
+"id": "Opava"
+},
+{
+"pos": [
+14.86,
+49.99
+],
+"id": "Kostelec n C.L"
+},
+{
+"pos": [
+14.66,
+49.41
+],
+"id": "Tabor"
+},
+{
+"pos": [
+15.00,
+49.14
+],
+"id": "Jindrichuv Hradec"
+},
+{
+"pos": [
+12.37,
+50.08
+],
+"id": "Cheb"
+},
+{
+"pos": [
+13.38,
+49.75
+],
+"id": "Plzen"
+},
+{
+"pos": [
+14.21,
+50.78
+],
+"id": "Decin"
+},
+{
+"pos": [
+14.03,
+50.66
+],
+"id": "Usti nad Labem"
+},
+{
+"pos": [
+14.42,
+50.09
+],
+"id": "Praha"
+},
+{
+"pos": [
+15.06,
+50.77
+],
+"id": "Liberec"
+},
+{
+"pos": [
+14.47,
+48.97
+],
+"id": "Ceske Budejovice"
+}
+],
+"links": [
+{
+"dist": 64.45,
+"ecmp_fwd": {
+"uni": 26.67,
+"deg": 26.67
+},
+"ecmp_bwd": {
+"uni": 26.67,
+"deg": 26.67
+},
+"source": "Olomouc",
+"target": "Brno"
+},
+{
+"dist": 78.72,
+"ecmp_fwd": {
+"uni": 25.00,
+"deg": 25.00
+},
+"ecmp_bwd": {
+"uni": 25.00,
+"deg": 25.00
+},
+"source": "Olomouc",
+"target": "Ostrava"
+},
+{
+"dist": 186.21,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Brno",
+"target": "Praha"
+},
+{
+"dist": 52.49,
+"ecmp_fwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"ecmp_bwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"source": "Brno",
+"target": "Breclav,Lednice"
+},
+{
+"dist": 29.83,
+"ecmp_fwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"ecmp_bwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"source": "Brno",
+"target": "Vyskov"
+},
+{
+"dist": 76.97,
+"ecmp_fwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"ecmp_bwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"source": "Brno",
+"target": "Zlin"
+},
+{
+"dist": 96.95,
+"ecmp_fwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"ecmp_bwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"source": "Pardubice",
+"target": "Praha"
+},
+{
+"dist": 101.54,
+"ecmp_fwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"ecmp_bwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"source": "Hradec Kralove",
+"target": "Praha"
+},
+{
+"dist": 15.08,
+"ecmp_fwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"ecmp_bwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"source": "Ostrava",
+"target": "Karvina"
+},
+{
+"dist": 277.69,
+"ecmp_fwd": {
+"uni": 80.00,
+"deg": 80.00
+},
+"ecmp_bwd": {
+"uni": 80.00,
+"deg": 80.00
+},
+"source": "Ostrava",
+"target": "Praha"
+},
+{
+"dist": 29.55,
+"ecmp_fwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"ecmp_bwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"source": "Ostrava",
+"target": "Opava"
+},
+{
+"dist": 33.02,
+"ecmp_fwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"ecmp_bwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"source": "Kostelec n C.L",
+"target": "Praha"
+},
+{
+"dist": 50.72,
+"ecmp_fwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"ecmp_bwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"source": "Tabor",
+"target": "Ceske Budejovice"
+},
+{
+"dist": 42.90,
+"ecmp_fwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"ecmp_bwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"source": "Jindrichuv Hradec",
+"target": "Ceske Budejovice"
+},
+{
+"dist": 80.82,
+"ecmp_fwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"ecmp_bwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"source": "Cheb",
+"target": "Plzen"
+},
+{
+"dist": 83.76,
+"ecmp_fwd": {
+"uni": 60.00,
+"deg": 46.25
+},
+"ecmp_bwd": {
+"uni": 60.00,
+"deg": 46.25
+},
+"source": "Plzen",
+"target": "Praha"
+},
+{
+"dist": 18.65,
+"ecmp_fwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"ecmp_bwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"source": "Decin",
+"target": "Usti nad Labem"
+},
+{
+"dist": 69.40,
+"ecmp_fwd": {
+"uni": 60.00,
+"deg": 46.25
+},
+"ecmp_bwd": {
+"uni": 60.00,
+"deg": 46.25
+},
+"source": "Usti nad Labem",
+"target": "Praha"
+},
+{
+"dist": 87.93,
+"ecmp_fwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"ecmp_bwd": {
+"uni": 31.67,
+"deg": 16.25
+},
+"source": "Praha",
+"target": "Liberec"
+},
+{
+"dist": 123.92,
+"ecmp_fwd": {
+"uni": 85.00,
+"deg": 72.92
+},
+"ecmp_bwd": {
+"uni": 85.00,
+"deg": 72.92
+},
+"source": "Praha",
+"target": "Ceske Budejovice"
+}
+]
+}

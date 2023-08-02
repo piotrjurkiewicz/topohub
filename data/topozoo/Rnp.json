@@ -1,0 +1,634 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "rnp",
+"demands": {},
+"stats": {
+"nodes": 28,
+"links": 31,
+"demands": 756,
+"min_degree": 1,
+"avg_degree": 2.21,
+"std_degree": 0.98,
+"max_degree": 5,
+"gini": 0.23,
+"min_link_len": 113.08,
+"avg_link_len": 743.23,
+"max_link_len": 2498.99,
+"diameter_len": 7433.23,
+"diameter_hops": 11,
+"avg_sdp_num": 1.02,
+"max_sdp_num": 2,
+"avg_sdp_hops": 4.57,
+"avg_sdp_len": 3317.62,
+"avg_adp_num": 1.17,
+"max_adp_num": 3,
+"avg_adp_hops": 4.79,
+"avg_adp_len": 3508.11
+}
+},
+"nodes": [
+{
+"pos": [
+-34.88,
+-8.05
+],
+"id": "Revife"
+},
+{
+"pos": [
+-35.74,
+-9.67
+],
+"id": "Maceio"
+},
+{
+"pos": [
+-35.88,
+-7.23
+],
+"id": "Campina Grande"
+},
+{
+"pos": [
+-34.86,
+-7.12
+],
+"id": "Jobo Passoa"
+},
+{
+"pos": [
+-47.93,
+-15.78
+],
+"id": "Brasilia"
+},
+{
+"pos": [
+-43.94,
+-19.92
+],
+"id": "Belo Horizonte"
+},
+{
+"pos": [
+-37.07,
+-10.91
+],
+"id": "Aracaju"
+},
+{
+"pos": [
+-38.51,
+-12.97
+],
+"id": "Salvador"
+},
+{
+"pos": [
+-40.34,
+-20.32
+],
+"id": "Vitoria"
+},
+{
+"pos": [
+-43.21,
+-22.90
+],
+"id": "Rio de Janeiro"
+},
+{
+"pos": [
+-60.02,
+-3.10
+],
+"id": "Manaus"
+},
+{
+"pos": [
+-49.25,
+-16.68
+],
+"id": "Goiania"
+},
+{
+"pos": [
+-56.10,
+-15.60
+],
+"id": "Cuiaba"
+},
+{
+"pos": [
+-49.27,
+-25.43
+],
+"id": "Curitiba"
+},
+{
+"pos": [
+-51.23,
+-30.03
+],
+"id": "Porto Alegro"
+},
+{
+"pos": [
+-48.55,
+-27.60
+],
+"id": "Florianopolis"
+},
+{
+"pos": [
+-46.64,
+-23.55
+],
+"id": "Sao Paulo"
+},
+{
+"pos": [
+-63.90,
+-8.76
+],
+"id": "Porto Velho"
+},
+{
+"pos": [
+-67.81,
+-9.97
+],
+"id": "Rio Branco"
+},
+{
+"pos": [
+-48.36,
+-10.21
+],
+"id": "Palmas"
+},
+{
+"pos": [
+-54.65,
+-20.44
+],
+"id": "Campo Grande"
+},
+{
+"pos": [
+-42.80,
+-5.09
+],
+"id": "Teresina"
+},
+{
+"pos": [
+-35.21,
+-5.79
+],
+"id": "Natal"
+},
+{
+"pos": [
+-60.67,
+2.82
+],
+"id": "Boa Vista"
+},
+{
+"pos": [
+-51.07,
+0.04
+],
+"id": "Macapa"
+},
+{
+"pos": [
+-48.50,
+-1.46
+],
+"id": "Belem"
+},
+{
+"pos": [
+-44.30,
+-2.53
+],
+"id": "Sao Luis"
+},
+{
+"pos": [
+-38.54,
+-3.72
+],
+"id": "Fortaleza"
+}
+],
+"links": [
+{
+"dist": 143.31,
+"ecmp_fwd": {
+"uni": 11.25,
+"deg": 10.20
+},
+"ecmp_bwd": {
+"uni": 11.25,
+"deg": 10.20
+},
+"source": "Revife",
+"target": "Campina Grande"
+},
+{
+"dist": 935.17,
+"ecmp_fwd": {
+"uni": 11.25,
+"deg": 10.20
+},
+"ecmp_bwd": {
+"uni": 11.25,
+"deg": 10.20
+},
+"source": "Revife",
+"target": "Teresina"
+},
+{
+"dist": 201.43,
+"ecmp_fwd": {
+"uni": 16.88,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 16.88,
+"deg": 7.97
+},
+"source": "Maceio",
+"target": "Aracaju"
+},
+{
+"dist": 113.08,
+"ecmp_fwd": {
+"uni": 23.75,
+"deg": 22.22
+},
+"ecmp_bwd": {
+"uni": 23.75,
+"deg": 22.22
+},
+"source": "Campina Grande",
+"target": "Jobo Passoa"
+},
+{
+"dist": 151.73,
+"ecmp_fwd": {
+"uni": 36.25,
+"deg": 34.25
+},
+"ecmp_bwd": {
+"uni": 36.25,
+"deg": 34.25
+},
+"source": "Jobo Passoa",
+"target": "Natal"
+},
+{
+"dist": 934.27,
+"ecmp_fwd": {
+"uni": 20.31,
+"deg": 20.85
+},
+"ecmp_bwd": {
+"uni": 20.31,
+"deg": 20.85
+},
+"source": "Brasilia",
+"target": "Rio de Janeiro"
+},
+{
+"dist": 2498.99,
+"ecmp_fwd": {
+"uni": 16.88,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 16.88,
+"deg": 7.97
+},
+"source": "Brasilia",
+"target": "Boa Vista"
+},
+{
+"dist": 1792.84,
+"ecmp_fwd": {
+"uni": 16.88,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 16.88,
+"deg": 7.97
+},
+"source": "Brasilia",
+"target": "Macapa"
+},
+{
+"dist": 1934.32,
+"ecmp_fwd": {
+"uni": 16.88,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 16.88,
+"deg": 7.97
+},
+"source": "Brasilia",
+"target": "Manaus"
+},
+{
+"dist": 625.03,
+"ecmp_fwd": {
+"uni": 45.31,
+"deg": 43.86
+},
+"ecmp_bwd": {
+"uni": 45.31,
+"deg": 43.86
+},
+"source": "Brasilia",
+"target": "Belo Horizonte"
+},
+{
+"dist": 490.31,
+"ecmp_fwd": {
+"uni": 90.31,
+"deg": 93.27
+},
+"ecmp_bwd": {
+"uni": 90.31,
+"deg": 93.27
+},
+"source": "Belo Horizonte",
+"target": "Sao Paulo"
+},
+{
+"dist": 1894.86,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Belo Horizonte",
+"target": "Fortaleza"
+},
+{
+"dist": 965.47,
+"ecmp_fwd": {
+"uni": 48.75,
+"deg": 45.49
+},
+"ecmp_bwd": {
+"uni": 48.75,
+"deg": 45.49
+},
+"source": "Belo Horizonte",
+"target": "Salvador"
+},
+{
+"dist": 277.53,
+"ecmp_fwd": {
+"uni": 32.50,
+"deg": 23.14
+},
+"ecmp_bwd": {
+"uni": 32.50,
+"deg": 23.14
+},
+"source": "Aracaju",
+"target": "Salvador"
+},
+{
+"dist": 840.16,
+"ecmp_fwd": {
+"uni": 9.38,
+"deg": 9.41
+},
+"ecmp_bwd": {
+"uni": 9.38,
+"deg": 9.41
+},
+"source": "Salvador",
+"target": "Vitoria"
+},
+{
+"dist": 413.04,
+"ecmp_fwd": {
+"uni": 11.25,
+"deg": 10.98
+},
+"ecmp_bwd": {
+"uni": 11.25,
+"deg": 10.98
+},
+"source": "Vitoria",
+"target": "Rio de Janeiro"
+},
+{
+"dist": 357.70,
+"ecmp_fwd": {
+"uni": 27.81,
+"deg": 30.00
+},
+"ecmp_bwd": {
+"uni": 27.81,
+"deg": 30.00
+},
+"source": "Rio de Janeiro",
+"target": "Sao Paulo"
+},
+{
+"dist": 725.63,
+"ecmp_fwd": {
+"uni": 16.88,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 16.88,
+"deg": 7.97
+},
+"source": "Goiania",
+"target": "Palmas"
+},
+{
+"dist": 740.91,
+"ecmp_fwd": {
+"uni": 32.50,
+"deg": 23.14
+},
+"ecmp_bwd": {
+"uni": 32.50,
+"deg": 23.14
+},
+"source": "Goiania",
+"target": "Cuiaba"
+},
+{
+"dist": 1138.99,
+"ecmp_fwd": {
+"uni": 32.50,
+"deg": 23.14
+},
+"ecmp_bwd": {
+"uni": 32.50,
+"deg": 23.14
+},
+"source": "Cuiaba",
+"target": "Porto Velho"
+},
+{
+"dist": 560.46,
+"ecmp_fwd": {
+"uni": 71.88,
+"deg": 62.35
+},
+"ecmp_bwd": {
+"uni": 71.88,
+"deg": 62.35
+},
+"source": "Cuiaba",
+"target": "Campo Grande"
+},
+{
+"dist": 339.07,
+"ecmp_fwd": {
+"uni": 91.25,
+"deg": 88.10
+},
+"ecmp_bwd": {
+"uni": 91.25,
+"deg": 88.10
+},
+"source": "Curitiba",
+"target": "Sao Paulo"
+},
+{
+"dist": 781.06,
+"ecmp_fwd": {
+"uni": 82.50,
+"deg": 73.33
+},
+"ecmp_bwd": {
+"uni": 82.50,
+"deg": 73.33
+},
+"source": "Curitiba",
+"target": "Campo Grande"
+},
+{
+"dist": 547.23,
+"ecmp_fwd": {
+"uni": 12.50,
+"deg": 11.24
+},
+"ecmp_bwd": {
+"uni": 12.50,
+"deg": 11.24
+},
+"source": "Curitiba",
+"target": "Porto Alegro"
+},
+{
+"dist": 376.39,
+"ecmp_fwd": {
+"uni": 8.75,
+"deg": 8.10
+},
+"ecmp_bwd": {
+"uni": 8.75,
+"deg": 8.10
+},
+"source": "Porto Alegro",
+"target": "Florianopolis"
+},
+{
+"dist": 489.54,
+"ecmp_fwd": {
+"uni": 20.00,
+"deg": 19.08
+},
+"ecmp_bwd": {
+"uni": 20.00,
+"deg": 19.08
+},
+"source": "Florianopolis",
+"target": "Sao Paulo"
+},
+{
+"dist": 449.38,
+"ecmp_fwd": {
+"uni": 16.88,
+"deg": 7.97
+},
+"ecmp_bwd": {
+"uni": 16.88,
+"deg": 7.97
+},
+"source": "Porto Velho",
+"target": "Rio Branco"
+},
+{
+"dist": 751.11,
+"ecmp_fwd": {
+"uni": 23.75,
+"deg": 22.22
+},
+"ecmp_bwd": {
+"uni": 23.75,
+"deg": 22.22
+},
+"source": "Teresina",
+"target": "Belem"
+},
+{
+"dist": 435.81,
+"ecmp_fwd": {
+"uni": 48.75,
+"deg": 46.27
+},
+"ecmp_bwd": {
+"uni": 48.75,
+"deg": 46.27
+},
+"source": "Natal",
+"target": "Fortaleza"
+},
+{
+"dist": 482.08,
+"ecmp_fwd": {
+"uni": 36.25,
+"deg": 34.25
+},
+"ecmp_bwd": {
+"uni": 36.25,
+"deg": 34.25
+},
+"source": "Belem",
+"target": "Sao Luis"
+},
+{
+"dist": 653.16,
+"ecmp_fwd": {
+"uni": 48.75,
+"deg": 46.27
+},
+"ecmp_bwd": {
+"uni": 48.75,
+"deg": 46.27
+},
+"source": "Sao Luis",
+"target": "Fortaleza"
+}
+]
+}

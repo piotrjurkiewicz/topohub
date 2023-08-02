@@ -1,0 +1,381 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "garr199901",
+"demands": {},
+"stats": {
+"nodes": 16,
+"links": 18,
+"demands": 240,
+"min_degree": 1,
+"avg_degree": 2.25,
+"std_degree": 2.19,
+"max_degree": 7,
+"gini": 0.43,
+"min_link_len": 31.20,
+"avg_link_len": 258.55,
+"max_link_len": 658.45,
+"diameter_len": 1393.98,
+"diameter_hops": 3,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 2.29,
+"avg_sdp_len": 596.38,
+"avg_adp_num": 1.10,
+"max_adp_num": 3,
+"avg_adp_hops": 2.33,
+"avg_adp_len": 621.94
+}
+},
+"nodes": [
+{
+"pos": [
+11.25,
+43.77
+],
+"id": "FI"
+},
+{
+"pos": [
+11.34,
+44.49
+],
+"id": "BO"
+},
+{
+"pos": [
+7.69,
+45.07
+],
+"id": "TO"
+},
+{
+"pos": [
+8.93,
+44.41
+],
+"id": "GE"
+},
+{
+"pos": [
+14.25,
+40.83
+],
+"id": "NA"
+},
+{
+"pos": [
+9.16,
+45.18
+],
+"id": "Pv"
+},
+{
+"pos": [
+11.88,
+45.42
+],
+"id": "PD"
+},
+{
+"pos": [
+9.19,
+45.46
+],
+"id": "MI"
+},
+{
+"pos": [
+10.40,
+43.72
+],
+"id": "PI"
+},
+{
+"pos": [
+9.13,
+39.21
+],
+"id": "CA"
+},
+{
+"pos": [
+12.48,
+41.89
+],
+"id": "RM"
+},
+{
+"pos": [
+13.40,
+42.35
+],
+"id": "AQ"
+},
+{
+"pos": [
+16.85,
+41.12
+],
+"id": "BA"
+},
+{
+"pos": [
+15.09,
+37.50
+],
+"id": "CT"
+},
+{
+"pos": [
+13.36,
+38.12
+],
+"id": "PA"
+},
+{
+"pos": [
+13.78,
+45.65
+],
+"id": "TS"
+}
+],
+"links": [
+{
+"dist": 81.19,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"source": "FI",
+"target": "BO"
+},
+{
+"dist": 471.58,
+"ecmp_fwd": {
+"uni": 80.00,
+"deg": 81.82
+},
+"ecmp_bwd": {
+"uni": 80.00,
+"deg": 81.82
+},
+"source": "BO",
+"target": "NA"
+},
+{
+"dist": 111.04,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"source": "BO",
+"target": "PD"
+},
+{
+"dist": 200.60,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "BO",
+"target": "MI"
+},
+{
+"dist": 114.70,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"source": "BO",
+"target": "PI"
+},
+{
+"dist": 303.62,
+"ecmp_fwd": {
+"uni": 60.00,
+"deg": 63.64
+},
+"ecmp_bwd": {
+"uni": 60.00,
+"deg": 63.64
+},
+"source": "BO",
+"target": "RM"
+},
+{
+"dist": 125.52,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"source": "TO",
+"target": "MI"
+},
+{
+"dist": 119.38,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"source": "GE",
+"target": "MI"
+},
+{
+"dist": 658.45,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "NA",
+"target": "MI"
+},
+{
+"dist": 188.87,
+"ecmp_fwd": {
+"uni": 60.00,
+"deg": 63.64
+},
+"ecmp_bwd": {
+"uni": 60.00,
+"deg": 63.64
+},
+"source": "NA",
+"target": "RM"
+},
+{
+"dist": 220.70,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"source": "NA",
+"target": "BA"
+},
+{
+"dist": 377.48,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"source": "NA",
+"target": "CT"
+},
+{
+"dist": 311.77,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"source": "NA",
+"target": "PA"
+},
+{
+"dist": 31.20,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"source": "Pv",
+"target": "MI"
+},
+{
+"dist": 477.24,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 77.78
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 77.78
+},
+"source": "MI",
+"target": "RM"
+},
+{
+"dist": 358.05,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"source": "MI",
+"target": "TS"
+},
+{
+"dist": 411.59,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"source": "CA",
+"target": "RM"
+},
+{
+"dist": 90.97,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 35.35
+},
+"source": "RM",
+"target": "AQ"
+}
+]
+}

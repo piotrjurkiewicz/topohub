@@ -1,0 +1,142 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "mren",
+"demands": {},
+"stats": {
+"nodes": 6,
+"links": 5,
+"demands": 30,
+"min_degree": 1,
+"avg_degree": 1.67,
+"std_degree": 1.49,
+"max_degree": 5,
+"gini": 0.33,
+"min_link_len": 35.74,
+"avg_link_len": 51.72,
+"max_link_len": 77.30,
+"diameter_len": 136.91,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.67,
+"avg_sdp_len": 86.21,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 1.67,
+"avg_adp_len": 86.21
+}
+},
+"nodes": [
+{
+"pos": [
+19.75,
+43.04
+],
+"id": "Bijelo Polje"
+},
+{
+"pos": [
+18.94,
+42.77
+],
+"id": "Niksic"
+},
+{
+"pos": [
+19.26,
+42.44
+],
+"id": "Podgorica"
+},
+{
+"pos": [
+18.83,
+42.43
+],
+"id": "Njegusi"
+},
+{
+"pos": [
+18.77,
+42.42
+],
+"id": "Kotor"
+},
+{
+"pos": [
+18.54,
+42.45
+],
+"id": "Herceg Novi"
+}
+],
+"links": [
+{
+"dist": 77.30,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Bijelo Polje",
+"target": "Podgorica"
+},
+{
+"dist": 45.23,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Niksic",
+"target": "Podgorica"
+},
+{
+"dist": 35.74,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Podgorica",
+"target": "Njegusi"
+},
+{
+"dist": 40.73,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Podgorica",
+"target": "Kotor"
+},
+{
+"dist": 59.61,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Podgorica",
+"target": "Herceg Novi"
+}
+]
+}

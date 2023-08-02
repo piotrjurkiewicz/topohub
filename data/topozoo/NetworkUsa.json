@@ -1,0 +1,787 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "networkusa",
+"demands": {},
+"stats": {
+"nodes": 35,
+"links": 39,
+"demands": 1190,
+"min_degree": 1,
+"avg_degree": 2.23,
+"std_degree": 0.72,
+"max_degree": 5,
+"gini": 0.12,
+"min_link_len": 1.98,
+"avg_link_len": 87.17,
+"max_link_len": 335.71,
+"diameter_len": 1175.69,
+"diameter_hops": 10,
+"avg_sdp_num": 1.01,
+"max_sdp_num": 2,
+"avg_sdp_hops": 5.15,
+"avg_sdp_len": 304.61,
+"avg_adp_num": 1.90,
+"max_adp_num": 3,
+"avg_adp_hops": 8.08,
+"avg_adp_len": 829.43
+}
+},
+"nodes": [
+{
+"pos": [
+-90.08,
+29.95
+],
+"id": "New Orleans"
+},
+{
+"pos": [
+-90.82,
+29.80
+],
+"id": "Thi'bodaux"
+},
+{
+"pos": [
+-90.10,
+30.48
+],
+"id": "Covington"
+},
+{
+"pos": [
+-89.09,
+30.37
+],
+"id": "Gulfport"
+},
+{
+"pos": [
+-91.15,
+30.45
+],
+"id": "Baton Rouge"
+},
+{
+"pos": [
+-92.02,
+30.22
+],
+"id": "Lafayette"
+},
+{
+"pos": [
+-91.21,
+29.70
+],
+"id": "Morgan City"
+},
+{
+"pos": [
+-90.46,
+30.50
+],
+"id": "Hammond"
+},
+{
+"pos": [
+-92.45,
+31.31
+],
+"id": "Alexandria"
+},
+{
+"pos": [
+-92.95,
+31.53
+],
+"id": "Derry"
+},
+{
+"pos": [
+-98.49,
+29.42
+],
+"id": "San Antonio"
+},
+{
+"pos": [
+-97.74,
+30.27
+],
+"id": "Austin"
+},
+{
+"pos": [
+-96.33,
+30.63
+],
+"id": "College Station"
+},
+{
+"pos": [
+-97.15,
+31.55
+],
+"id": "Waco"
+},
+{
+"pos": [
+-93.09,
+31.76
+],
+"id": "Natchitoches"
+},
+{
+"pos": [
+-95.36,
+29.76
+],
+"id": "Houston"
+},
+{
+"pos": [
+-94.80,
+30.06
+],
+"id": "Liberty"
+},
+{
+"pos": [
+-92.08,
+30.53
+],
+"id": "Opelousas"
+},
+{
+"pos": [
+-92.26,
+30.84
+],
+"id": "St Landry"
+},
+{
+"pos": [
+-93.21,
+31.05
+],
+"id": "Fort Polk"
+},
+{
+"pos": [
+-93.34,
+32.01
+],
+"id": "Coushatta"
+},
+{
+"pos": [
+-94.42,
+30.04
+],
+"id": "Nome"
+},
+{
+"pos": [
+-94.10,
+30.09
+],
+"id": "Beaumont"
+},
+{
+"pos": [
+-93.20,
+30.21
+],
+"id": "Lake Charles"
+},
+{
+"pos": [
+-93.29,
+30.85
+],
+"id": "Deridder"
+},
+{
+"pos": [
+-90.18,
+32.30
+],
+"id": "Jackson"
+},
+{
+"pos": [
+-89.78,
+30.28
+],
+"id": "Slidell"
+},
+{
+"pos": [
+-96.81,
+32.78
+],
+"id": "Dallas"
+},
+{
+"pos": [
+-95.30,
+32.35
+],
+"id": "Tyler"
+},
+{
+"pos": [
+-94.74,
+32.50
+],
+"id": "Longview"
+},
+{
+"pos": [
+-93.75,
+32.53
+],
+"id": "Shreveport"
+},
+{
+"pos": [
+-93.73,
+32.52
+],
+"id": "Bossier City"
+},
+{
+"pos": [
+-93.29,
+32.62
+],
+"id": "Minden"
+},
+{
+"pos": [
+-92.64,
+32.52
+],
+"id": "Ruston"
+},
+{
+"pos": [
+-92.12,
+32.51
+],
+"id": "Monroe"
+}
+],
+"links": [
+{
+"dist": 74.26,
+"ecmp_fwd": {
+"uni": 21.16,
+"deg": 19.58
+},
+"ecmp_bwd": {
+"uni": 21.16,
+"deg": 19.58
+},
+"source": "New Orleans",
+"target": "Thi'bodaux"
+},
+{
+"dist": 105.03,
+"ecmp_fwd": {
+"uni": 18.52,
+"deg": 15.78
+},
+"ecmp_bwd": {
+"uni": 18.52,
+"deg": 15.78
+},
+"source": "New Orleans",
+"target": "Gulfport"
+},
+{
+"dist": 71.52,
+"ecmp_fwd": {
+"uni": 36.51,
+"deg": 36.86
+},
+"ecmp_bwd": {
+"uni": 36.51,
+"deg": 36.86
+},
+"source": "New Orleans",
+"target": "Hammond"
+},
+{
+"dist": 38.59,
+"ecmp_fwd": {
+"uni": 19.58,
+"deg": 17.58
+},
+"ecmp_bwd": {
+"uni": 19.58,
+"deg": 17.58
+},
+"source": "Thi'bodaux",
+"target": "Morgan City"
+},
+{
+"dist": 37.92,
+"ecmp_fwd": {
+"uni": 16.40,
+"deg": 13.79
+},
+"ecmp_bwd": {
+"uni": 16.40,
+"deg": 13.79
+},
+"source": "Covington",
+"target": "Slidell"
+},
+{
+"dist": 34.68,
+"ecmp_fwd": {
+"uni": 32.28,
+"deg": 27.37
+},
+"ecmp_bwd": {
+"uni": 32.28,
+"deg": 27.37
+},
+"source": "Covington",
+"target": "Hammond"
+},
+{
+"dist": 66.88,
+"ecmp_fwd": {
+"uni": 2.65,
+"deg": 2.20
+},
+"ecmp_bwd": {
+"uni": 2.65,
+"deg": 2.20
+},
+"source": "Gulfport",
+"target": "Slidell"
+},
+{
+"dist": 86.81,
+"ecmp_fwd": {
+"uni": 77.78,
+"deg": 77.52
+},
+"ecmp_bwd": {
+"uni": 77.78,
+"deg": 77.52
+},
+"source": "Baton Rouge",
+"target": "Lafayette"
+},
+{
+"dist": 66.73,
+"ecmp_fwd": {
+"uni": 79.37,
+"deg": 79.52
+},
+"ecmp_bwd": {
+"uni": 79.37,
+"deg": 79.52
+},
+"source": "Baton Rouge",
+"target": "Hammond"
+},
+{
+"dist": 34.92,
+"ecmp_fwd": {
+"uni": 45.50,
+"deg": 38.76
+},
+"ecmp_bwd": {
+"uni": 45.50,
+"deg": 38.76
+},
+"source": "Lafayette",
+"target": "Opelousas"
+},
+{
+"dist": 97.70,
+"ecmp_fwd": {
+"uni": 26.46,
+"deg": 22.98
+},
+"ecmp_bwd": {
+"uni": 26.46,
+"deg": 22.98
+},
+"source": "Lafayette",
+"target": "Morgan City"
+},
+{
+"dist": 113.86,
+"ecmp_fwd": {
+"uni": 92.59,
+"deg": 82.32
+},
+"ecmp_bwd": {
+"uni": 92.59,
+"deg": 82.32
+},
+"source": "Lafayette",
+"target": "Lake Charles"
+},
+{
+"dist": 201.30,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Hammond",
+"target": "Jackson"
+},
+{
+"dist": 53.75,
+"ecmp_fwd": {
+"uni": 26.46,
+"deg": 21.98
+},
+"ecmp_bwd": {
+"uni": 26.46,
+"deg": 21.98
+},
+"source": "Alexandria",
+"target": "Derry"
+},
+{
+"dist": 54.91,
+"ecmp_fwd": {
+"uni": 29.10,
+"deg": 24.38
+},
+"ecmp_bwd": {
+"uni": 29.10,
+"deg": 24.38
+},
+"source": "Alexandria",
+"target": "St Landry"
+},
+{
+"dist": 28.42,
+"ecmp_fwd": {
+"uni": 29.10,
+"deg": 24.78
+},
+"ecmp_bwd": {
+"uni": 29.10,
+"deg": 24.78
+},
+"source": "Derry",
+"target": "Natchitoches"
+},
+{
+"dist": 118.47,
+"ecmp_fwd": {
+"uni": 32.28,
+"deg": 26.37
+},
+"ecmp_bwd": {
+"uni": 32.28,
+"deg": 26.37
+},
+"source": "San Antonio",
+"target": "Austin"
+},
+{
+"dist": 305.09,
+"ecmp_fwd": {
+"uni": 34.92,
+"deg": 28.77
+},
+"ecmp_bwd": {
+"uni": 34.92,
+"deg": 28.77
+},
+"source": "San Antonio",
+"target": "Houston"
+},
+{
+"dist": 140.91,
+"ecmp_fwd": {
+"uni": 34.92,
+"deg": 29.17
+},
+"ecmp_bwd": {
+"uni": 34.92,
+"deg": 29.17
+},
+"source": "Austin",
+"target": "College Station"
+},
+{
+"dist": 128.40,
+"ecmp_fwd": {
+"uni": 39.68,
+"deg": 33.57
+},
+"ecmp_bwd": {
+"uni": 39.68,
+"deg": 33.57
+},
+"source": "College Station",
+"target": "Waco"
+},
+{
+"dist": 140.91,
+"ecmp_fwd": {
+"uni": 47.09,
+"deg": 40.76
+},
+"ecmp_bwd": {
+"uni": 47.09,
+"deg": 40.76
+},
+"source": "Waco",
+"target": "Dallas"
+},
+{
+"dist": 37.19,
+"ecmp_fwd": {
+"uni": 33.86,
+"deg": 29.17
+},
+"ecmp_bwd": {
+"uni": 33.86,
+"deg": 29.17
+},
+"source": "Natchitoches",
+"target": "Coushatta"
+},
+{
+"dist": 63.81,
+"ecmp_fwd": {
+"uni": 38.62,
+"deg": 31.97
+},
+"ecmp_bwd": {
+"uni": 38.62,
+"deg": 31.97
+},
+"source": "Houston",
+"target": "Liberty"
+},
+{
+"dist": 35.82,
+"ecmp_fwd": {
+"uni": 48.15,
+"deg": 40.76
+},
+"ecmp_bwd": {
+"uni": 48.15,
+"deg": 40.76
+},
+"source": "Liberty",
+"target": "Nome"
+},
+{
+"dist": 38.47,
+"ecmp_fwd": {
+"uni": 32.80,
+"deg": 27.57
+},
+"ecmp_bwd": {
+"uni": 32.80,
+"deg": 27.57
+},
+"source": "Opelousas",
+"target": "St Landry"
+},
+{
+"dist": 23.66,
+"ecmp_fwd": {
+"uni": 17.99,
+"deg": 7.69
+},
+"ecmp_bwd": {
+"uni": 17.99,
+"deg": 7.69
+},
+"source": "Fort Polk",
+"target": "Deridder"
+},
+{
+"dist": 68.51,
+"ecmp_fwd": {
+"uni": 46.56,
+"deg": 40.36
+},
+"ecmp_bwd": {
+"uni": 46.56,
+"deg": 40.36
+},
+"source": "Coushatta",
+"target": "Shreveport"
+},
+{
+"dist": 31.55,
+"ecmp_fwd": {
+"uni": 57.67,
+"deg": 49.55
+},
+"ecmp_bwd": {
+"uni": 57.67,
+"deg": 49.55
+},
+"source": "Nome",
+"target": "Beaumont"
+},
+{
+"dist": 87.46,
+"ecmp_fwd": {
+"uni": 67.20,
+"deg": 58.34
+},
+"ecmp_bwd": {
+"uni": 67.20,
+"deg": 58.34
+},
+"source": "Beaumont",
+"target": "Lake Charles"
+},
+{
+"dist": 70.90,
+"ecmp_fwd": {
+"uni": 34.92,
+"deg": 22.48
+},
+"ecmp_bwd": {
+"uni": 34.92,
+"deg": 22.48
+},
+"source": "Lake Charles",
+"target": "Deridder"
+},
+{
+"dist": 335.71,
+"ecmp_fwd": {
+"uni": 98.94,
+"deg": 98.80
+},
+"ecmp_bwd": {
+"uni": 98.94,
+"deg": 98.80
+},
+"source": "Jackson",
+"target": "Shreveport"
+},
+{
+"dist": 149.08,
+"ecmp_fwd": {
+"uni": 56.61,
+"deg": 49.55
+},
+"ecmp_bwd": {
+"uni": 56.61,
+"deg": 49.55
+},
+"source": "Dallas",
+"target": "Tyler"
+},
+{
+"dist": 55.19,
+"ecmp_fwd": {
+"uni": 66.14,
+"deg": 58.34
+},
+"ecmp_bwd": {
+"uni": 66.14,
+"deg": 58.34
+},
+"source": "Tyler",
+"target": "Longview"
+},
+{
+"dist": 92.92,
+"ecmp_fwd": {
+"uni": 75.66,
+"deg": 67.13
+},
+"ecmp_bwd": {
+"uni": 75.66,
+"deg": 67.13
+},
+"source": "Longview",
+"target": "Shreveport"
+},
+{
+"dist": 152.97,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 28.37
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 28.37
+},
+"source": "Shreveport",
+"target": "Monroe"
+},
+{
+"dist": 1.98,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 28.37
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 28.37
+},
+"source": "Shreveport",
+"target": "Bossier City"
+},
+{
+"dist": 43.18,
+"ecmp_fwd": {
+"uni": 17.46,
+"deg": 14.79
+},
+"ecmp_bwd": {
+"uni": 17.46,
+"deg": 14.79
+},
+"source": "Bossier City",
+"target": "Minden"
+},
+{
+"dist": 61.68,
+"ecmp_fwd": {
+"uni": 1.59,
+"deg": 1.20
+},
+"ecmp_bwd": {
+"uni": 1.59,
+"deg": 1.20
+},
+"source": "Minden",
+"target": "Ruston"
+},
+{
+"dist": 48.67,
+"ecmp_fwd": {
+"uni": 17.46,
+"deg": 14.79
+},
+"ecmp_bwd": {
+"uni": 17.46,
+"deg": 14.79
+},
+"source": "Ruston",
+"target": "Monroe"
+}
+]
+}

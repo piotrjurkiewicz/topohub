@@ -1,0 +1,1279 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "nobel_eu",
+"demands": {
+"Amsterdam": {
+"Athens": 6.00,
+"Barcelona": 6.00,
+"Belgrade": 2.00,
+"Berlin": 16.00,
+"Bordeaux": 4.00,
+"Brussels": 16.00,
+"Budapest": 4.00,
+"Copenhagen": 8.00,
+"Dublin": 4.00,
+"Frankfurt": 20.00,
+"Glasgow": 26.00,
+"Hamburg": 28.00,
+"London": 38.00,
+"Lyon": 8.00,
+"Madrid": 6.00,
+"Milan": 16.00,
+"Munich": 14.00,
+"Oslo": 8.00,
+"Paris": 10.00,
+"Prague": 8.00,
+"Rome": 14.00,
+"Stockholm": 12.00,
+"Strasbourg": 10.00,
+"Vienna": 6.00,
+"Warsaw": 18.00,
+"Zagreb": 2.00,
+"Zurich": 8.00
+},
+"Athens": {
+"Barcelona": 2.00,
+"Belgrade": 2.00,
+"Berlin": 2.00,
+"Bordeaux": 2.00,
+"Brussels": 2.00,
+"Budapest": 2.00,
+"Copenhagen": 2.00,
+"Dublin": 2.00,
+"Frankfurt": 8.00,
+"Glasgow": 2.00,
+"Hamburg": 2.00,
+"London": 4.00,
+"Lyon": 2.00,
+"Madrid": 2.00,
+"Milan": 2.00,
+"Munich": 2.00,
+"Oslo": 2.00,
+"Paris": 2.00,
+"Prague": 2.00,
+"Rome": 2.00,
+"Stockholm": 2.00,
+"Strasbourg": 2.00,
+"Vienna": 2.00,
+"Warsaw": 2.00,
+"Zagreb": 2.00,
+"Zurich": 2.00
+},
+"Barcelona": {
+"Belgrade": 2.00,
+"Berlin": 4.00,
+"Bordeaux": 4.00,
+"Brussels": 2.00,
+"Budapest": 2.00,
+"Copenhagen": 2.00,
+"Dublin": 2.00,
+"Frankfurt": 18.00,
+"Glasgow": 4.00,
+"Hamburg": 4.00,
+"London": 12.00,
+"Lyon": 4.00,
+"Madrid": 6.00,
+"Milan": 6.00,
+"Munich": 4.00,
+"Oslo": 2.00,
+"Paris": 2.00,
+"Prague": 2.00,
+"Rome": 4.00,
+"Stockholm": 2.00,
+"Strasbourg": 2.00,
+"Vienna": 2.00,
+"Warsaw": 4.00,
+"Zagreb": 2.00,
+"Zurich": 2.00
+},
+"Belgrade": {
+"Berlin": 2.00,
+"Bordeaux": 2.00,
+"Brussels": 2.00,
+"Budapest": 2.00,
+"Copenhagen": 2.00,
+"Dublin": 2.00,
+"Frankfurt": 4.00,
+"Glasgow": 2.00,
+"Hamburg": 2.00,
+"London": 2.00,
+"Lyon": 2.00,
+"Madrid": 2.00,
+"Milan": 2.00,
+"Munich": 2.00,
+"Oslo": 2.00,
+"Paris": 2.00,
+"Prague": 2.00,
+"Rome": 2.00,
+"Stockholm": 2.00,
+"Strasbourg": 2.00,
+"Vienna": 2.00,
+"Warsaw": 2.00,
+"Zagreb": 2.00,
+"Zurich": 2.00
+},
+"Berlin": {
+"Bordeaux": 2.00,
+"Brussels": 4.00,
+"Budapest": 2.00,
+"Copenhagen": 4.00,
+"Dublin": 2.00,
+"Frankfurt": 28.00,
+"Glasgow": 8.00,
+"Hamburg": 14.00,
+"London": 12.00,
+"Lyon": 4.00,
+"Madrid": 2.00,
+"Milan": 6.00,
+"Munich": 8.00,
+"Oslo": 2.00,
+"Paris": 4.00,
+"Prague": 8.00,
+"Rome": 4.00,
+"Stockholm": 4.00,
+"Strasbourg": 4.00,
+"Vienna": 4.00,
+"Warsaw": 12.00,
+"Zagreb": 2.00,
+"Zurich": 4.00
+},
+"Bordeaux": {
+"Brussels": 2.00,
+"Budapest": 2.00,
+"Copenhagen": 2.00,
+"Dublin": 2.00,
+"Frankfurt": 8.00,
+"Glasgow": 4.00,
+"Hamburg": 2.00,
+"London": 16.00,
+"Lyon": 4.00,
+"Madrid": 4.00,
+"Milan": 4.00,
+"Munich": 4.00,
+"Oslo": 2.00,
+"Paris": 4.00,
+"Prague": 2.00,
+"Rome": 4.00,
+"Stockholm": 2.00,
+"Strasbourg": 2.00,
+"Vienna": 2.00,
+"Warsaw": 2.00,
+"Zagreb": 2.00,
+"Zurich": 2.00
+},
+"Brussels": {
+"Budapest": 2.00,
+"Copenhagen": 2.00,
+"Dublin": 2.00,
+"Frankfurt": 10.00,
+"Glasgow": 4.00,
+"Hamburg": 4.00,
+"London": 10.00,
+"Lyon": 2.00,
+"Madrid": 2.00,
+"Milan": 4.00,
+"Munich": 4.00,
+"Oslo": 2.00,
+"Paris": 4.00,
+"Prague": 2.00,
+"Rome": 2.00,
+"Stockholm": 2.00,
+"Strasbourg": 4.00,
+"Vienna": 2.00,
+"Warsaw": 4.00,
+"Zagreb": 2.00,
+"Zurich": 2.00
+},
+"Budapest": {
+"Copenhagen": 2.00,
+"Dublin": 2.00,
+"Frankfurt": 8.00,
+"Glasgow": 2.00,
+"Hamburg": 2.00,
+"London": 4.00,
+"Lyon": 2.00,
+"Madrid": 2.00,
+"Milan": 2.00,
+"Munich": 4.00,
+"Oslo": 2.00,
+"Paris": 2.00,
+"Prague": 2.00,
+"Rome": 2.00,
+"Stockholm": 2.00,
+"Strasbourg": 2.00,
+"Vienna": 4.00,
+"Warsaw": 4.00,
+"Zagreb": 2.00,
+"Zurich": 2.00
+},
+"Copenhagen": {
+"Dublin": 2.00,
+"Frankfurt": 4.00,
+"Glasgow": 2.00,
+"Hamburg": 4.00,
+"London": 4.00,
+"Lyon": 2.00,
+"Madrid": 2.00,
+"Milan": 2.00,
+"Munich": 2.00,
+"Oslo": 2.00,
+"Paris": 2.00,
+"Prague": 2.00,
+"Rome": 2.00,
+"Stockholm": 2.00,
+"Strasbourg": 2.00,
+"Vienna": 2.00,
+"Warsaw": 4.00,
+"Zagreb": 2.00,
+"Zurich": 2.00
+},
+"Dublin": {
+"Frankfurt": 2.00,
+"Glasgow": 4.00,
+"Hamburg": 2.00,
+"London": 6.00,
+"Lyon": 2.00,
+"Madrid": 2.00,
+"Milan": 2.00,
+"Munich": 2.00,
+"Oslo": 2.00,
+"Paris": 2.00,
+"Prague": 2.00,
+"Rome": 2.00,
+"Stockholm": 2.00,
+"Strasbourg": 2.00,
+"Vienna": 2.00,
+"Warsaw": 2.00,
+"Zagreb": 2.00,
+"Zurich": 2.00
+},
+"Frankfurt": {
+"Glasgow": 14.00,
+"Hamburg": 20.00,
+"London": 20.00,
+"Lyon": 16.00,
+"Madrid": 10.00,
+"Milan": 28.00,
+"Munich": 32.00,
+"Oslo": 4.00,
+"Paris": 8.00,
+"Prague": 14.00,
+"Rome": 26.00,
+"Stockholm": 8.00,
+"Strasbourg": 24.00,
+"Vienna": 10.00,
+"Warsaw": 34.00,
+"Zagreb": 4.00,
+"Zurich": 14.00
+},
+"Glasgow": {
+"Hamburg": 8.00,
+"London": 54.00,
+"Lyon": 4.00,
+"Madrid": 4.00,
+"Milan": 8.00,
+"Munich": 8.00,
+"Oslo": 4.00,
+"Paris": 6.00,
+"Prague": 4.00,
+"Rome": 6.00,
+"Stockholm": 4.00,
+"Strasbourg": 4.00,
+"Vienna": 4.00,
+"Warsaw": 8.00,
+"Zagreb": 2.00,
+"Zurich": 4.00
+},
+"Hamburg": {
+"London": 14.00,
+"Lyon": 4.00,
+"Madrid": 2.00,
+"Milan": 6.00,
+"Munich": 6.00,
+"Oslo": 2.00,
+"Paris": 4.00,
+"Prague": 4.00,
+"Rome": 4.00,
+"Stockholm": 4.00,
+"Strasbourg": 4.00,
+"Vienna": 2.00,
+"Warsaw": 8.00,
+"Zagreb": 2.00,
+"Zurich": 4.00
+},
+"London": {
+"Lyon": 8.00,
+"Madrid": 20.00,
+"Milan": 12.00,
+"Munich": 12.00,
+"Oslo": 4.00,
+"Paris": 22.00,
+"Prague": 6.00,
+"Rome": 10.00,
+"Stockholm": 6.00,
+"Strasbourg": 8.00,
+"Vienna": 4.00,
+"Warsaw": 12.00,
+"Zagreb": 2.00,
+"Zurich": 6.00
+},
+"Lyon": {
+"Madrid": 2.00,
+"Milan": 8.00,
+"Munich": 4.00,
+"Oslo": 2.00,
+"Paris": 4.00,
+"Prague": 2.00,
+"Rome": 4.00,
+"Stockholm": 2.00,
+"Strasbourg": 4.00,
+"Vienna": 2.00,
+"Warsaw": 4.00,
+"Zagreb": 2.00,
+"Zurich": 4.00
+},
+"Madrid": {
+"Milan": 4.00,
+"Munich": 4.00,
+"Oslo": 2.00,
+"Paris": 2.00,
+"Prague": 2.00,
+"Rome": 4.00,
+"Stockholm": 2.00,
+"Strasbourg": 2.00,
+"Vienna": 2.00,
+"Warsaw": 4.00,
+"Zagreb": 2.00,
+"Zurich": 2.00
+},
+"Milan": {
+"Munich": 12.00,
+"Oslo": 2.00,
+"Paris": 4.00,
+"Prague": 4.00,
+"Rome": 10.00,
+"Stockholm": 2.00,
+"Strasbourg": 8.00,
+"Vienna": 4.00,
+"Warsaw": 6.00,
+"Zagreb": 2.00,
+"Zurich": 8.00
+},
+"Munich": {
+"Oslo": 2.00,
+"Paris": 4.00,
+"Prague": 6.00,
+"Rome": 6.00,
+"Stockholm": 2.00,
+"Strasbourg": 8.00,
+"Vienna": 4.00,
+"Warsaw": 8.00,
+"Zagreb": 2.00,
+"Zurich": 6.00
+},
+"Oslo": {
+"Paris": 2.00,
+"Prague": 2.00,
+"Rome": 2.00,
+"Stockholm": 2.00,
+"Strasbourg": 2.00,
+"Vienna": 2.00,
+"Warsaw": 2.00,
+"Zagreb": 2.00,
+"Zurich": 2.00
+},
+"Paris": {
+"Prague": 2.00,
+"Rome": 4.00,
+"Stockholm": 2.00,
+"Strasbourg": 4.00,
+"Vienna": 2.00,
+"Warsaw": 4.00,
+"Zagreb": 2.00,
+"Zurich": 2.00
+},
+"Prague": {
+"Rome": 4.00,
+"Stockholm": 2.00,
+"Strasbourg": 2.00,
+"Vienna": 4.00,
+"Warsaw": 6.00,
+"Zagreb": 2.00,
+"Zurich": 2.00
+},
+"Rome": {
+"Stockholm": 2.00,
+"Strasbourg": 4.00,
+"Vienna": 4.00,
+"Warsaw": 6.00,
+"Zagreb": 2.00,
+"Zurich": 4.00
+},
+"Stockholm": {
+"Strasbourg": 2.00,
+"Vienna": 2.00,
+"Warsaw": 4.00,
+"Zagreb": 2.00,
+"Zurich": 2.00
+},
+"Strasbourg": {
+"Vienna": 2.00,
+"Warsaw": 4.00,
+"Zagreb": 2.00,
+"Zurich": 8.00
+},
+"Vienna": {
+"Warsaw": 4.00,
+"Zagreb": 2.00,
+"Zurich": 2.00
+},
+"Warsaw": {
+"Zagreb": 2.00,
+"Zurich": 4.00
+},
+"Zagreb": {
+"Zurich": 2.00
+}
+},
+"stats": {
+"nodes": 28,
+"links": 41,
+"demands": 756,
+"min_degree": 2,
+"avg_degree": 2.93,
+"std_degree": 0.84,
+"max_degree": 5,
+"gini": 0.15,
+"min_link_len": 141.51,
+"avg_link_len": 416.11,
+"max_link_len": 1049.66,
+"diameter_len": 3364.69,
+"diameter_hops": 8,
+"avg_sdp_num": 1.20,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.93,
+"avg_sdp_len": 572.15,
+"avg_adp_num": 2.61,
+"max_adp_num": 4,
+"avg_adp_hops": 4.56,
+"avg_adp_len": 1753.06
+}
+},
+"nodes": [
+{
+"pos": [
+4.51,
+52.20
+],
+"id": "Amsterdam"
+},
+{
+"pos": [
+23.42,
+37.58
+],
+"id": "Athens"
+},
+{
+"pos": [
+2.07,
+41.22
+],
+"id": "Barcelona"
+},
+{
+"pos": [
+20.25,
+44.47
+],
+"id": "Belgrade"
+},
+{
+"pos": [
+13.21,
+52.31
+],
+"id": "Berlin"
+},
+{
+"pos": [
+-0.35,
+44.51
+],
+"id": "Bordeaux"
+},
+{
+"pos": [
+4.20,
+50.49
+],
+"id": "Brussels"
+},
+{
+"pos": [
+19.02,
+47.29
+],
+"id": "Budapest"
+},
+{
+"pos": [
+12.32,
+55.41
+],
+"id": "Copenhagen"
+},
+{
+"pos": [
+-6.15,
+53.21
+],
+"id": "Dublin"
+},
+{
+"pos": [
+8.38,
+50.07
+],
+"id": "Frankfurt"
+},
+{
+"pos": [
+-4.16,
+55.51
+],
+"id": "Glasgow"
+},
+{
+"pos": [
+10.00,
+53.33
+],
+"id": "Hamburg"
+},
+{
+"pos": [
+-0.07,
+51.30
+],
+"id": "London"
+},
+{
+"pos": [
+4.49,
+45.43
+],
+"id": "Lyon"
+},
+{
+"pos": [
+-3.42,
+40.25
+],
+"id": "Madrid"
+},
+{
+"pos": [
+9.11,
+45.28
+],
+"id": "Milan"
+},
+{
+"pos": [
+11.33,
+48.07
+],
+"id": "Munich"
+},
+{
+"pos": [
+10.45,
+59.54
+],
+"id": "Oslo"
+},
+{
+"pos": [
+2.20,
+48.51
+],
+"id": "Paris"
+},
+{
+"pos": [
+14.25,
+50.04
+],
+"id": "Prague"
+},
+{
+"pos": [
+12.29,
+41.53
+],
+"id": "Rome"
+},
+{
+"pos": [
+18.03,
+59.19
+],
+"id": "Stockholm"
+},
+{
+"pos": [
+7.45,
+48.35
+],
+"id": "Strasbourg"
+},
+{
+"pos": [
+16.21,
+48.12
+],
+"id": "Vienna"
+},
+{
+"pos": [
+20.59,
+52.14
+],
+"id": "Warsaw"
+},
+{
+"pos": [
+15.57,
+45.48
+],
+"id": "Zagreb"
+},
+{
+"pos": [
+8.32,
+47.22
+],
+"id": "Zurich"
+}
+],
+"links": [
+{
+"dist": 191.41,
+"ecmp_fwd": {
+"org": 38.81,
+"uni": 31.62,
+"deg": 33.48
+},
+"ecmp_bwd": {
+"org": 34.20,
+"uni": 29.34,
+"deg": 30.94
+},
+"source": "Amsterdam",
+"target": "Brussels"
+},
+{
+"dist": 676.81,
+"ecmp_fwd": {
+"org": 48.15,
+"uni": 41.67,
+"deg": 29.84
+},
+"ecmp_bwd": {
+"org": 46.46,
+"uni": 40.34,
+"deg": 29.10
+},
+"source": "Amsterdam",
+"target": "Glasgow"
+},
+{
+"dist": 390.16,
+"ecmp_fwd": {
+"org": 92.35,
+"uni": 83.76,
+"deg": 83.23
+},
+"ecmp_bwd": {
+"org": 97.99,
+"uni": 83.68,
+"deg": 82.28
+},
+"source": "Amsterdam",
+"target": "Hamburg"
+},
+{
+"dist": 330.82,
+"ecmp_fwd": {
+"org": 56.25,
+"uni": 38.85,
+"deg": 38.81
+},
+"ecmp_bwd": {
+"org": 56.90,
+"uni": 42.54,
+"deg": 43.04
+},
+"source": "Amsterdam",
+"target": "London"
+},
+{
+"dist": 811.02,
+"ecmp_fwd": {
+"org": 9.19,
+"uni": 21.25,
+"deg": 16.81
+},
+"ecmp_bwd": {
+"org": 8.63,
+"uni": 20.97,
+"deg": 16.99
+},
+"source": "Athens",
+"target": "Belgrade"
+},
+{
+"dist": 1049.66,
+"ecmp_fwd": {
+"org": 15.67,
+"uni": 32.59,
+"deg": 25.83
+},
+"ecmp_bwd": {
+"org": 16.22,
+"uni": 32.88,
+"deg": 25.65
+},
+"source": "Athens",
+"target": "Rome"
+},
+{
+"dist": 507.49,
+"ecmp_fwd": {
+"org": 33.91,
+"uni": 49.91,
+"deg": 35.41
+},
+"ecmp_bwd": {
+"org": 33.07,
+"uni": 48.09,
+"deg": 34.20
+},
+"source": "Barcelona",
+"target": "Lyon"
+},
+{
+"dist": 475.02,
+"ecmp_fwd": {
+"org": 9.57,
+"uni": 16.64,
+"deg": 10.91
+},
+"ecmp_bwd": {
+"org": 10.41,
+"uni": 18.46,
+"deg": 12.13
+},
+"source": "Barcelona",
+"target": "Madrid"
+},
+{
+"dist": 327.79,
+"ecmp_fwd": {
+"org": 15.98,
+"uni": 37.72,
+"deg": 33.63
+},
+"ecmp_bwd": {
+"org": 14.69,
+"uni": 35.78,
+"deg": 31.99
+},
+"source": "Belgrade",
+"target": "Budapest"
+},
+{
+"dist": 384.92,
+"ecmp_fwd": {
+"org": 9.26,
+"uni": 21.65,
+"deg": 22.27
+},
+"ecmp_bwd": {
+"org": 9.99,
+"uni": 23.30,
+"deg": 24.09
+},
+"source": "Belgrade",
+"target": "Zagreb"
+},
+{
+"dist": 349.70,
+"ecmp_fwd": {
+"org": 31.78,
+"uni": 62.22,
+"deg": 45.11
+},
+"ecmp_bwd": {
+"org": 31.78,
+"uni": 62.22,
+"deg": 45.11
+},
+"source": "Berlin",
+"target": "Copenhagen"
+},
+{
+"dist": 243.74,
+"ecmp_fwd": {
+"org": 100.00,
+"uni": 100.00,
+"deg": 99.56
+},
+"ecmp_bwd": {
+"org": 94.76,
+"uni": 98.89,
+"deg": 100.00
+},
+"source": "Berlin",
+"target": "Hamburg"
+},
+{
+"dist": 490.19,
+"ecmp_fwd": {
+"org": 62.14,
+"uni": 84.44,
+"deg": 87.40
+},
+"ecmp_bwd": {
+"org": 65.47,
+"uni": 82.11,
+"deg": 84.05
+},
+"source": "Berlin",
+"target": "Munich"
+},
+{
+"dist": 262.69,
+"ecmp_fwd": {
+"org": 28.14,
+"uni": 43.72,
+"deg": 46.10
+},
+"ecmp_bwd": {
+"org": 28.62,
+"uni": 44.90,
+"deg": 46.60
+},
+"source": "Berlin",
+"target": "Prague"
+},
+{
+"dist": 502.96,
+"ecmp_fwd": {
+"org": 64.20,
+"uni": 67.36,
+"deg": 63.74
+},
+"ecmp_bwd": {
+"org": 65.64,
+"uni": 69.63,
+"deg": 66.13
+},
+"source": "Berlin",
+"target": "Warsaw"
+},
+{
+"dist": 536.68,
+"ecmp_fwd": {
+"org": 19.27,
+"uni": 23.02,
+"deg": 16.25
+},
+"ecmp_bwd": {
+"org": 18.42,
+"uni": 21.20,
+"deg": 15.04
+},
+"source": "Bordeaux",
+"target": "Madrid"
+},
+{
+"dist": 485.77,
+"ecmp_fwd": {
+"org": 38.72,
+"uni": 52.65,
+"deg": 38.32
+},
+"ecmp_bwd": {
+"org": 39.56,
+"uni": 54.47,
+"deg": 39.53
+},
+"source": "Bordeaux",
+"target": "Paris"
+},
+{
+"dist": 300.71,
+"ecmp_fwd": {
+"org": 45.33,
+"uni": 46.21,
+"deg": 51.89
+},
+"ecmp_bwd": {
+"org": 41.97,
+"uni": 46.55,
+"deg": 52.21
+},
+"source": "Brussels",
+"target": "Frankfurt"
+},
+{
+"dist": 263.36,
+"ecmp_fwd": {
+"org": 32.29,
+"uni": 40.40,
+"deg": 44.15
+},
+"ecmp_bwd": {
+"org": 31.04,
+"uni": 37.78,
+"deg": 41.28
+},
+"source": "Brussels",
+"target": "Paris"
+},
+{
+"dist": 464.96,
+"ecmp_fwd": {
+"org": 13.31,
+"uni": 25.87,
+"deg": 26.43
+},
+"ecmp_bwd": {
+"org": 13.46,
+"uni": 26.20,
+"deg": 27.18
+},
+"source": "Budapest",
+"target": "Prague"
+},
+{
+"dist": 551.10,
+"ecmp_fwd": {
+"org": 18.34,
+"uni": 37.26,
+"deg": 34.07
+},
+"ecmp_bwd": {
+"org": 16.89,
+"uni": 35.00,
+"deg": 31.69
+},
+"source": "Budapest",
+"target": "Warsaw"
+},
+{
+"dist": 472.73,
+"ecmp_fwd": {
+"org": 15.22,
+"uni": 30.77,
+"deg": 21.83
+},
+"ecmp_bwd": {
+"org": 15.22,
+"uni": 30.77,
+"deg": 21.83
+},
+"source": "Copenhagen",
+"target": "Oslo"
+},
+{
+"dist": 286.46,
+"ecmp_fwd": {
+"org": 14.35,
+"uni": 14.44,
+"deg": 10.17
+},
+"ecmp_bwd": {
+"org": 16.04,
+"uni": 15.77,
+"deg": 10.90
+},
+"source": "Dublin",
+"target": "Glasgow"
+},
+{
+"dist": 465.09,
+"ecmp_fwd": {
+"org": 22.43,
+"uni": 30.77,
+"deg": 21.34
+},
+"ecmp_bwd": {
+"org": 20.74,
+"uni": 29.44,
+"deg": 20.60
+},
+"source": "Dublin",
+"target": "London"
+},
+{
+"dist": 379.38,
+"ecmp_fwd": {
+"org": 46.62,
+"uni": 37.09,
+"deg": 41.53
+},
+"ecmp_bwd": {
+"org": 46.22,
+"uni": 38.29,
+"deg": 42.04
+},
+"source": "Frankfurt",
+"target": "Hamburg"
+},
+{
+"dist": 309.30,
+"ecmp_fwd": {
+"org": 88.48,
+"uni": 73.59,
+"deg": 85.13
+},
+"ecmp_bwd": {
+"org": 83.36,
+"uni": 72.42,
+"deg": 84.84
+},
+"source": "Frankfurt",
+"target": "Munich"
+},
+{
+"dist": 202.89,
+"ecmp_fwd": {
+"org": 42.47,
+"uni": 43.22,
+"deg": 49.15
+},
+"ecmp_bwd": {
+"org": 44.64,
+"uni": 43.53,
+"deg": 49.25
+},
+"source": "Frankfurt",
+"target": "Strasbourg"
+},
+{
+"dist": 350.30,
+"ecmp_fwd": {
+"org": 58.40,
+"uni": 48.63,
+"deg": 43.54
+},
+"ecmp_bwd": {
+"org": 57.37,
+"uni": 51.00,
+"deg": 47.03
+},
+"source": "London",
+"target": "Paris"
+},
+{
+"dist": 384.10,
+"ecmp_fwd": {
+"org": 33.78,
+"uni": 37.26,
+"deg": 35.95
+},
+"ecmp_bwd": {
+"org": 35.96,
+"uni": 37.89,
+"deg": 36.56
+},
+"source": "Lyon",
+"target": "Paris"
+},
+{
+"dist": 355.15,
+"ecmp_fwd": {
+"org": 47.57,
+"uni": 73.79,
+"deg": 63.95
+},
+"ecmp_bwd": {
+"org": 44.55,
+"uni": 71.34,
+"deg": 62.13
+},
+"source": "Lyon",
+"target": "Zurich"
+},
+{
+"dist": 353.52,
+"ecmp_fwd": {
+"org": 72.14,
+"uni": 79.89,
+"deg": 78.25
+},
+"ecmp_bwd": {
+"org": 72.59,
+"uni": 80.00,
+"deg": 78.68
+},
+"source": "Milan",
+"target": "Munich"
+},
+{
+"dist": 489.81,
+"ecmp_fwd": {
+"org": 51.96,
+"uni": 70.60,
+"deg": 65.35
+},
+"ecmp_bwd": {
+"org": 51.40,
+"uni": 70.54,
+"deg": 65.64
+},
+"source": "Milan",
+"target": "Rome"
+},
+{
+"dist": 224.17,
+"ecmp_fwd": {
+"org": 59.64,
+"uni": 95.61,
+"deg": 87.39
+},
+"ecmp_bwd": {
+"org": 59.75,
+"uni": 95.56,
+"deg": 86.66
+},
+"source": "Milan",
+"target": "Zurich"
+},
+{
+"dist": 362.51,
+"ecmp_fwd": {
+"org": 29.04,
+"uni": 51.71,
+"deg": 57.36
+},
+"ecmp_bwd": {
+"org": 27.68,
+"uni": 48.32,
+"deg": 54.16
+},
+"source": "Munich",
+"target": "Vienna"
+},
+{
+"dist": 431.14,
+"ecmp_fwd": {
+"org": 3.47,
+"uni": 8.89,
+"deg": 5.34
+},
+"ecmp_bwd": {
+"org": 3.47,
+"uni": 8.89,
+"deg": 5.34
+},
+"source": "Oslo",
+"target": "Stockholm"
+},
+{
+"dist": 387.80,
+"ecmp_fwd": {
+"org": 33.71,
+"uni": 42.39,
+"deg": 45.41
+},
+"ecmp_bwd": {
+"org": 34.46,
+"uni": 44.59,
+"deg": 47.85
+},
+"source": "Paris",
+"target": "Strasbourg"
+},
+{
+"dist": 256.88,
+"ecmp_fwd": {
+"org": 14.73,
+"uni": 23.79,
+"deg": 25.42
+},
+"ecmp_bwd": {
+"org": 15.35,
+"uni": 25.30,
+"deg": 26.68
+},
+"source": "Prague",
+"target": "Vienna"
+},
+{
+"dist": 512.77,
+"ecmp_fwd": {
+"org": 10.46,
+"uni": 23.13,
+"deg": 22.64
+},
+"ecmp_bwd": {
+"org": 10.46,
+"uni": 23.36,
+"deg": 22.76
+},
+"source": "Rome",
+"target": "Zagreb"
+},
+{
+"dist": 800.27,
+"ecmp_fwd": {
+"org": 23.23,
+"uni": 40.34,
+"deg": 28.62
+},
+"ecmp_bwd": {
+"org": 23.23,
+"uni": 40.34,
+"deg": 28.62
+},
+"source": "Stockholm",
+"target": "Warsaw"
+},
+{
+"dist": 141.51,
+"ecmp_fwd": {
+"org": 26.19,
+"uni": 26.89,
+"deg": 27.63
+},
+"ecmp_bwd": {
+"org": 29.11,
+"uni": 29.40,
+"deg": 30.17
+},
+"source": "Strasbourg",
+"target": "Zurich"
+},
+{
+"dist": 297.65,
+"ecmp_fwd": {
+"org": 13.95,
+"uni": 30.26,
+"deg": 33.95
+},
+"ecmp_bwd": {
+"org": 13.22,
+"uni": 28.38,
+"deg": 32.01
+},
+"source": "Vienna",
+"target": "Zagreb"
+}
+]
+}

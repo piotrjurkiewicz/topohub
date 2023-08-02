@@ -1,0 +1,345 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "airtel",
+"demands": {},
+"stats": {
+"nodes": 9,
+"links": 19,
+"demands": 72,
+"min_degree": 1,
+"avg_degree": 4.22,
+"std_degree": 1.93,
+"max_degree": 8,
+"gini": 0.25,
+"min_link_len": 1002.59,
+"avg_link_len": 7885.08,
+"max_link_len": 15343.75,
+"diameter_len": 21528.56,
+"diameter_hops": 2,
+"avg_sdp_num": 1.36,
+"max_sdp_num": 3,
+"avg_sdp_hops": 1.47,
+"avg_sdp_len": 7088.65,
+"avg_adp_num": 3.03,
+"max_adp_num": 6,
+"avg_adp_hops": 1.96,
+"avg_adp_len": 15039.04
+}
+},
+"nodes": [
+{
+"pos": [
+-118.24,
+34.05
+],
+"id": "Los Angeles"
+},
+{
+"pos": [
+80.28,
+13.09
+],
+"id": "Chennai"
+},
+{
+"pos": [
+-74.01,
+40.71
+],
+"id": "New York"
+},
+{
+"pos": [
+-0.13,
+51.51
+],
+"id": "London"
+},
+{
+"pos": [
+72.85,
+19.01
+],
+"id": "Mumbai"
+},
+{
+"pos": [
+13.36,
+38.12
+],
+"id": "Palermo"
+},
+{
+"pos": [
+5.40,
+43.30
+],
+"id": "Marseille"
+},
+{
+"pos": [
+114.16,
+22.29
+],
+"id": "Hong Kong"
+},
+{
+"pos": [
+103.85,
+1.29
+],
+"id": "Singapore"
+}
+],
+"links": [
+{
+"dist": 14423.06,
+"ecmp_fwd": {
+"uni": 41.67,
+"deg": 91.11
+},
+"ecmp_bwd": {
+"uni": 41.67,
+"deg": 91.11
+},
+"source": "Los Angeles",
+"target": "Chennai"
+},
+{
+"dist": 11656.24,
+"ecmp_fwd": {
+"uni": 16.67,
+"deg": 30.00
+},
+"ecmp_bwd": {
+"uni": 16.67,
+"deg": 30.00
+},
+"source": "Los Angeles",
+"target": "Hong Kong"
+},
+{
+"dist": 14127.62,
+"ecmp_fwd": {
+"uni": 16.67,
+"deg": 44.44
+},
+"ecmp_bwd": {
+"uni": 16.67,
+"deg": 44.44
+},
+"source": "Los Angeles",
+"target": "Singapore"
+},
+{
+"dist": 3936.85,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 81.11
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 81.11
+},
+"source": "Los Angeles",
+"target": "New York"
+},
+{
+"dist": 13476.38,
+"ecmp_fwd": {
+"uni": 29.17,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 29.17,
+"deg": 100.00
+},
+"source": "Chennai",
+"target": "New York"
+},
+{
+"dist": 8213.12,
+"ecmp_fwd": {
+"uni": 35.42,
+"deg": 98.61
+},
+"ecmp_bwd": {
+"uni": 35.42,
+"deg": 98.61
+},
+"source": "Chennai",
+"target": "London"
+},
+{
+"dist": 1031.79,
+"ecmp_fwd": {
+"uni": 52.08,
+"deg": 83.33
+},
+"ecmp_bwd": {
+"uni": 52.08,
+"deg": 83.33
+},
+"source": "Chennai",
+"target": "Mumbai"
+},
+{
+"dist": 7105.50,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 61.67
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 61.67
+},
+"source": "Chennai",
+"target": "Palermo"
+},
+{
+"dist": 7798.05,
+"ecmp_fwd": {
+"uni": 52.08,
+"deg": 83.33
+},
+"ecmp_bwd": {
+"uni": 52.08,
+"deg": 83.33
+},
+"source": "Chennai",
+"target": "Marseille"
+},
+{
+"dist": 3723.38,
+"ecmp_fwd": {
+"uni": 60.42,
+"deg": 97.50
+},
+"ecmp_bwd": {
+"uni": 60.42,
+"deg": 97.50
+},
+"source": "Chennai",
+"target": "Hong Kong"
+},
+{
+"dist": 2908.86,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 91.67
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 91.67
+},
+"source": "Chennai",
+"target": "Singapore"
+},
+{
+"dist": 5571.79,
+"ecmp_fwd": {
+"uni": 16.67,
+"deg": 61.11
+},
+"ecmp_bwd": {
+"uni": 16.67,
+"deg": 61.11
+},
+"source": "New York",
+"target": "London"
+},
+{
+"dist": 12546.14,
+"ecmp_fwd": {
+"uni": 27.08,
+"deg": 53.33
+},
+"ecmp_bwd": {
+"uni": 27.08,
+"deg": 53.33
+},
+"source": "New York",
+"target": "Mumbai"
+},
+{
+"dist": 6308.48,
+"ecmp_fwd": {
+"uni": 27.08,
+"deg": 53.33
+},
+"ecmp_bwd": {
+"uni": 27.08,
+"deg": 53.33
+},
+"source": "New York",
+"target": "Marseille"
+},
+{
+"dist": 15343.75,
+"ecmp_fwd": {
+"uni": 25.00,
+"deg": 76.67
+},
+"ecmp_bwd": {
+"uni": 25.00,
+"deg": 76.67
+},
+"source": "New York",
+"target": "Singapore"
+},
+{
+"dist": 7196.68,
+"ecmp_fwd": {
+"uni": 20.83,
+"deg": 38.33
+},
+"ecmp_bwd": {
+"uni": 20.83,
+"deg": 38.33
+},
+"source": "London",
+"target": "Mumbai"
+},
+{
+"dist": 1002.59,
+"ecmp_fwd": {
+"uni": 20.83,
+"deg": 38.33
+},
+"ecmp_bwd": {
+"uni": 20.83,
+"deg": 38.33
+},
+"source": "London",
+"target": "Marseille"
+},
+{
+"dist": 10858.30,
+"ecmp_fwd": {
+"uni": 31.25,
+"deg": 81.94
+},
+"ecmp_bwd": {
+"uni": 31.25,
+"deg": 81.94
+},
+"source": "London",
+"target": "Singapore"
+},
+{
+"dist": 2587.86,
+"ecmp_fwd": {
+"uni": 22.92,
+"deg": 47.50
+},
+"ecmp_bwd": {
+"uni": 22.92,
+"deg": 47.50
+},
+"source": "Hong Kong",
+"target": "Singapore"
+}
+]
+}

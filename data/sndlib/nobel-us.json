@@ -1,0 +1,566 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "nobel_us",
+"demands": {
+"Palo-Alto": {
+"San-Diego": 52.00,
+"Boulder": 18.00,
+"Washington": 32.00,
+"Atlanta": 64.00,
+"Urbana-Champaign": 40.00,
+"Ann-Arbor": 34.00,
+"Lincoln": 14.00,
+"Princeton": 16.00,
+"Ithaca": 50.00,
+"Pittsburgh": 40.00,
+"Houston": 52.00,
+"Salt-Lake-City": 22.00,
+"Seattle": 24.00
+},
+"San-Diego": {
+"Boulder": 26.00,
+"Washington": 46.00,
+"Atlanta": 94.00,
+"Urbana-Champaign": 58.00,
+"Ann-Arbor": 48.00,
+"Lincoln": 20.00,
+"Princeton": 22.00,
+"Ithaca": 74.00,
+"Pittsburgh": 56.00,
+"Houston": 76.00,
+"Salt-Lake-City": 30.00,
+"Seattle": 32.00
+},
+"Boulder": {
+"Washington": 22.00,
+"Atlanta": 44.00,
+"Urbana-Champaign": 30.00,
+"Ann-Arbor": 24.00,
+"Lincoln": 12.00,
+"Princeton": 10.00,
+"Ithaca": 34.00,
+"Pittsburgh": 26.00,
+"Houston": 40.00,
+"Salt-Lake-City": 16.00,
+"Seattle": 14.00
+},
+"Washington": {
+"Atlanta": 122.00,
+"Urbana-Champaign": 74.00,
+"Ann-Arbor": 70.00,
+"Lincoln": 22.00,
+"Princeton": 60.00,
+"Ithaca": 168.00,
+"Pittsburgh": 194.00,
+"Houston": 78.00,
+"Salt-Lake-City": 24.00,
+"Seattle": 26.00
+},
+"Atlanta": {
+"Urbana-Champaign": 148.00,
+"Ann-Arbor": 126.00,
+"Lincoln": 44.00,
+"Princeton": 54.00,
+"Ithaca": 182.00,
+"Pittsburgh": 144.00,
+"Houston": 172.00,
+"Salt-Lake-City": 46.00,
+"Seattle": 52.00
+},
+"Urbana-Champaign": {
+"Ann-Arbor": 102.00,
+"Lincoln": 34.00,
+"Princeton": 34.00,
+"Ithaca": 114.00,
+"Pittsburgh": 88.00,
+"Houston": 102.00,
+"Salt-Lake-City": 30.00,
+"Seattle": 34.00
+},
+"Ann-Arbor": {
+"Lincoln": 26.00,
+"Princeton": 32.00,
+"Ithaca": 110.00,
+"Pittsburgh": 86.00,
+"Houston": 84.00,
+"Salt-Lake-City": 26.00,
+"Seattle": 28.00
+},
+"Lincoln": {
+"Princeton": 10.00,
+"Ithaca": 34.00,
+"Pittsburgh": 26.00,
+"Houston": 38.00,
+"Salt-Lake-City": 12.00,
+"Seattle": 12.00
+},
+"Princeton": {
+"Ithaca": 168.00,
+"Pittsburgh": 236.00,
+"Houston": 36.00,
+"Salt-Lake-City": 12.00,
+"Seattle": 12.00
+},
+"Ithaca": {
+"Pittsburgh": 324.00,
+"Houston": 122.00,
+"Salt-Lake-City": 36.00,
+"Seattle": 42.00
+},
+"Pittsburgh": {
+"Houston": 94.00,
+"Salt-Lake-City": 28.00,
+"Seattle": 32.00
+},
+"Houston": {
+"Salt-Lake-City": 40.00,
+"Seattle": 42.00
+},
+"Salt-Lake-City": {
+"Seattle": 16.00
+}
+},
+"stats": {
+"nodes": 14,
+"links": 21,
+"demands": 182,
+"min_degree": 2,
+"avg_degree": 3.00,
+"std_degree": 0.53,
+"max_degree": 4,
+"gini": 0.08,
+"min_link_len": 294.05,
+"avg_link_len": 1087.54,
+"max_link_len": 2833.58,
+"diameter_len": 4457.20,
+"diameter_hops": 3,
+"avg_sdp_num": 1.24,
+"max_sdp_num": 3,
+"avg_sdp_hops": 1.94,
+"avg_sdp_len": 974.35,
+"avg_adp_num": 2.73,
+"max_adp_num": 4,
+"avg_adp_hops": 3.17,
+"avg_adp_len": 3417.79
+}
+},
+"nodes": [
+{
+"pos": [
+-122.07,
+37.25
+],
+"id": "Palo-Alto"
+},
+{
+"pos": [
+-117.08,
+32.42
+],
+"id": "San-Diego"
+},
+{
+"pos": [
+-105.16,
+40.00
+],
+"id": "Boulder"
+},
+{
+"pos": [
+-77.02,
+38.52
+],
+"id": "Washington"
+},
+{
+"pos": [
+-84.23,
+33.44
+],
+"id": "Atlanta"
+},
+{
+"pos": [
+-88.14,
+40.06
+],
+"id": "Urbana-Champaign"
+},
+{
+"pos": [
+-83.43,
+42.16
+],
+"id": "Ann-Arbor"
+},
+{
+"pos": [
+-96.42,
+40.47
+],
+"id": "Lincoln"
+},
+{
+"pos": [
+-74.39,
+40.21
+],
+"id": "Princeton"
+},
+{
+"pos": [
+-76.30,
+42.26
+],
+"id": "Ithaca"
+},
+{
+"pos": [
+-79.58,
+40.26
+],
+"id": "Pittsburgh"
+},
+{
+"pos": [
+-95.21,
+29.45
+],
+"id": "Houston"
+},
+{
+"pos": [
+-111.55,
+40.39
+],
+"id": "Salt-Lake-City"
+},
+{
+"pos": [
+-122.24,
+47.33
+],
+"id": "Seattle"
+}
+],
+"links": [
+{
+"dist": 704.13,
+"ecmp_fwd": {
+"org": 26.30,
+"uni": 39.13,
+"deg": 39.42
+},
+"ecmp_bwd": {
+"org": 26.30,
+"uni": 39.13,
+"deg": 39.42
+},
+"source": "Palo-Alto",
+"target": "San-Diego"
+},
+{
+"dist": 975.47,
+"ecmp_fwd": {
+"org": 27.31,
+"uni": 67.39,
+"deg": 66.79
+},
+"ecmp_bwd": {
+"org": 27.31,
+"uni": 67.39,
+"deg": 66.79
+},
+"source": "Palo-Alto",
+"target": "Salt-Lake-City"
+},
+{
+"dist": 1121.25,
+"ecmp_fwd": {
+"org": 16.52,
+"uni": 41.30,
+"deg": 42.70
+},
+"ecmp_bwd": {
+"org": 16.52,
+"uni": 41.30,
+"deg": 42.70
+},
+"source": "Palo-Alto",
+"target": "Seattle"
+},
+{
+"dist": 2108.66,
+"ecmp_fwd": {
+"org": 62.13,
+"uni": 85.87,
+"deg": 88.32
+},
+"ecmp_bwd": {
+"org": 62.13,
+"uni": 85.87,
+"deg": 88.32
+},
+"source": "San-Diego",
+"target": "Houston"
+},
+{
+"dist": 1714.87,
+"ecmp_fwd": {
+"org": 24.66,
+"uni": 40.22,
+"deg": 42.34
+},
+"ecmp_bwd": {
+"org": 24.66,
+"uni": 40.22,
+"deg": 42.34
+},
+"source": "San-Diego",
+"target": "Seattle"
+},
+{
+"dist": 743.65,
+"ecmp_fwd": {
+"org": 23.24,
+"uni": 59.78,
+"deg": 48.54
+},
+"ecmp_bwd": {
+"org": 23.24,
+"uni": 59.78,
+"deg": 48.54
+},
+"source": "Boulder",
+"target": "Lincoln"
+},
+{
+"dist": 1482.54,
+"ecmp_fwd": {
+"org": 40.08,
+"uni": 78.26,
+"deg": 75.55
+},
+"ecmp_bwd": {
+"org": 41.03,
+"uni": 78.26,
+"deg": 75.91
+},
+"source": "Boulder",
+"target": "Houston"
+},
+{
+"dist": 544.51,
+"ecmp_fwd": {
+"org": 26.55,
+"uni": 66.30,
+"deg": 62.41
+},
+"ecmp_bwd": {
+"org": 25.61,
+"uni": 66.30,
+"deg": 62.04
+},
+"source": "Boulder",
+"target": "Salt-Lake-City"
+},
+{
+"dist": 294.05,
+"ecmp_fwd": {
+"org": 35.67,
+"uni": 38.59,
+"deg": 42.70
+},
+"ecmp_bwd": {
+"org": 36.14,
+"uni": 38.59,
+"deg": 42.88
+},
+"source": "Washington",
+"target": "Princeton"
+},
+{
+"dist": 420.43,
+"ecmp_fwd": {
+"org": 60.08,
+"uni": 38.59,
+"deg": 42.70
+},
+"ecmp_bwd": {
+"org": 60.55,
+"uni": 38.59,
+"deg": 42.88
+},
+"source": "Washington",
+"target": "Ithaca"
+},
+{
+"dist": 1952.11,
+"ecmp_fwd": {
+"org": 65.09,
+"uni": 84.78,
+"deg": 89.05
+},
+"ecmp_bwd": {
+"org": 64.14,
+"uni": 84.78,
+"deg": 88.69
+},
+"source": "Washington",
+"target": "Houston"
+},
+{
+"dist": 863.79,
+"ecmp_fwd": {
+"org": 82.40,
+"uni": 54.35,
+"deg": 50.36
+},
+"ecmp_bwd": {
+"org": 82.40,
+"uni": 54.35,
+"deg": 50.36
+},
+"source": "Atlanta",
+"target": "Pittsburgh"
+},
+{
+"dist": 1131.68,
+"ecmp_fwd": {
+"org": 71.81,
+"uni": 60.87,
+"deg": 54.74
+},
+"ecmp_bwd": {
+"org": 71.81,
+"uni": 60.87,
+"deg": 54.74
+},
+"source": "Atlanta",
+"target": "Houston"
+},
+{
+"dist": 703.96,
+"ecmp_fwd": {
+"org": 23.81,
+"uni": 59.78,
+"deg": 48.54
+},
+"ecmp_bwd": {
+"org": 23.81,
+"uni": 59.78,
+"deg": 48.54
+},
+"source": "Urbana-Champaign",
+"target": "Lincoln"
+},
+{
+"dist": 727.69,
+"ecmp_fwd": {
+"org": 83.16,
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"org": 83.16,
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Urbana-Champaign",
+"target": "Pittsburgh"
+},
+{
+"dist": 2833.58,
+"ecmp_fwd": {
+"org": 37.34,
+"uni": 72.83,
+"deg": 74.09
+},
+"ecmp_bwd": {
+"org": 37.34,
+"uni": 72.83,
+"deg": 74.09
+},
+"source": "Urbana-Champaign",
+"target": "Seattle"
+},
+{
+"dist": 786.74,
+"ecmp_fwd": {
+"org": 34.15,
+"uni": 45.11,
+"deg": 47.26
+},
+"ecmp_bwd": {
+"org": 33.68,
+"uni": 45.11,
+"deg": 47.08
+},
+"source": "Ann-Arbor",
+"target": "Princeton"
+},
+{
+"dist": 587.33,
+"ecmp_fwd": {
+"org": 48.16,
+"uni": 45.11,
+"deg": 47.26
+},
+"ecmp_bwd": {
+"org": 47.68,
+"uni": 45.11,
+"deg": 47.08
+},
+"source": "Ann-Arbor",
+"target": "Ithaca"
+},
+{
+"dist": 2348.18,
+"ecmp_fwd": {
+"org": 37.28,
+"uni": 84.78,
+"deg": 86.13
+},
+"ecmp_bwd": {
+"org": 38.22,
+"uni": 84.78,
+"deg": 86.50
+},
+"source": "Ann-Arbor",
+"target": "Salt-Lake-City"
+},
+{
+"dist": 440.66,
+"ecmp_fwd": {
+"org": 66.89,
+"uni": 54.35,
+"deg": 54.74
+},
+"ecmp_bwd": {
+"org": 66.89,
+"uni": 54.35,
+"deg": 54.74
+},
+"source": "Princeton",
+"target": "Pittsburgh"
+},
+{
+"dist": 353.07,
+"ecmp_fwd": {
+"org": 100.00,
+"uni": 54.35,
+"deg": 54.74
+},
+"ecmp_bwd": {
+"org": 100.00,
+"uni": 54.35,
+"deg": 54.74
+},
+"source": "Ithaca",
+"target": "Pittsburgh"
+}
+]
+}

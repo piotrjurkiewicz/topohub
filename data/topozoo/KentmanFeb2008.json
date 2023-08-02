@@ -1,0 +1,535 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "kentmanfeb2008",
+"demands": {},
+"stats": {
+"nodes": 25,
+"links": 25,
+"demands": 600,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 1.90,
+"max_degree": 8,
+"gini": 0.40,
+"min_link_len": 0.00,
+"avg_link_len": 17.22,
+"max_link_len": 70.31,
+"diameter_len": 133.51,
+"diameter_hops": 6,
+"avg_sdp_num": 1.01,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.07,
+"avg_sdp_len": 74.75,
+"avg_adp_num": 1.02,
+"max_adp_num": 2,
+"avg_adp_hops": 3.08,
+"avg_adp_len": 77.12
+}
+},
+"nodes": [
+{
+"pos": [
+1.09,
+51.28
+],
+"id": "UCCA-C"
+},
+{
+"pos": [
+1.09,
+51.27
+],
+"id": "Canterbury College"
+},
+{
+"pos": [
+0.55,
+51.39
+],
+"id": "Medway ACL"
+},
+{
+"pos": [
+0.55,
+51.39
+],
+"id": "Mid Kent College"
+},
+{
+"pos": [
+0.86,
+51.14
+],
+"id": "South Kent College - Ashford"
+},
+{
+"pos": [
+0.50,
+51.27
+],
+"id": "KIAD-O"
+},
+{
+"pos": [
+1.43,
+51.35
+],
+"id": "Thanet College"
+},
+{
+"pos": [
+1.43,
+51.36
+],
+"id": "Hilderstone College"
+},
+{
+"pos": [
+0.52,
+51.28
+],
+"id": "Kent ACL"
+},
+{
+"pos": [
+0.33,
+51.22
+],
+"id": "Hadlow College"
+},
+{
+"pos": [
+1.18,
+51.08
+],
+"id": "University College Folkestone"
+},
+{
+"pos": [
+1.06,
+51.30
+],
+"id": "UoK-C"
+},
+{
+"pos": [
+0.26,
+51.19
+],
+"id": "West Kent College"
+},
+{
+"pos": [
+0.03,
+51.44
+],
+"id": "Hadlow College Mottingham"
+},
+{
+"pos": [
+1.08,
+51.28
+],
+"id": "IFS School of Finance"
+},
+{
+"pos": [
+0.22,
+51.45
+],
+"id": "NW Kent College - Dartford"
+},
+{
+"pos": [
+0.51,
+51.38
+],
+"id": "KIAD-R"
+},
+{
+"pos": [
+0.08,
+51.45
+],
+"id": "UoG-AH"
+},
+{
+"pos": [
+0.08,
+51.45
+],
+"id": "University of Greenwich"
+},
+{
+"pos": [
+1.09,
+51.28
+],
+"id": "CCCU-C"
+},
+{
+"pos": [
+0.94,
+51.18
+],
+"id": "IC-Wye"
+},
+{
+"pos": [
+0.55,
+51.26
+],
+"id": "EIS-Maidstone"
+},
+{
+"pos": [
+0.24,
+51.15
+],
+"id": "CCCU-S"
+},
+{
+"pos": [
+1.41,
+51.36
+],
+"id": "CCCU-T"
+},
+{
+"pos": [
+0.22,
+51.29
+],
+"id": "Dorton College"
+}
+],
+"links": [
+{
+"dist": 3.22,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "UCCA-C",
+"target": "UoK-C"
+},
+{
+"dist": 3.21,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "Canterbury College",
+"target": "UoK-C"
+},
+{
+"dist": 33.23,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "Medway ACL",
+"target": "University of Greenwich"
+},
+{
+"dist": 33.03,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "Mid Kent College",
+"target": "University of Greenwich"
+},
+{
+"dist": 7.12,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "South Kent College - Ashford",
+"target": "IC-Wye"
+},
+{
+"dist": 3.93,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "KIAD-O",
+"target": "EIS-Maidstone"
+},
+{
+"dist": 2.06,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "Thanet College",
+"target": "CCCU-T"
+},
+{
+"dist": 1.68,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "Hilderstone College",
+"target": "CCCU-T"
+},
+{
+"dist": 36.22,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "Kent ACL",
+"target": "University of Greenwich"
+},
+{
+"dist": 9.54,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "Hadlow College",
+"target": "CCCU-S"
+},
+{
+"dist": 20.48,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "University College Folkestone",
+"target": "IC-Wye"
+},
+{
+"dist": 2.72,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "UoK-C",
+"target": "IFS School of Finance"
+},
+{
+"dist": 70.31,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "UoK-C",
+"target": "University of Greenwich"
+},
+{
+"dist": 2.82,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "UoK-C",
+"target": "CCCU-C"
+},
+{
+"dist": 15.46,
+"ecmp_fwd": {
+"uni": 54.50,
+"deg": 54.50
+},
+"ecmp_bwd": {
+"uni": 54.50,
+"deg": 54.50
+},
+"source": "UoK-C",
+"target": "IC-Wye"
+},
+{
+"dist": 24.93,
+"ecmp_fwd": {
+"uni": 62.56,
+"deg": 53.32
+},
+"ecmp_bwd": {
+"uni": 62.56,
+"deg": 53.32
+},
+"source": "UoK-C",
+"target": "CCCU-T"
+},
+{
+"dist": 4.24,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "West Kent College",
+"target": "CCCU-S"
+},
+{
+"dist": 3.31,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "Hadlow College Mottingham",
+"target": "UoG-AH"
+},
+{
+"dist": 9.69,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "NW Kent College - Dartford",
+"target": "UoG-AH"
+},
+{
+"dist": 31.22,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "KIAD-R",
+"target": "University of Greenwich"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 62.56,
+"deg": 53.32
+},
+"ecmp_bwd": {
+"uni": 62.56,
+"deg": 53.32
+},
+"source": "UoG-AH",
+"target": "University of Greenwich"
+},
+{
+"dist": 39.01,
+"ecmp_fwd": {
+"uni": 74.41,
+"deg": 74.41
+},
+"ecmp_bwd": {
+"uni": 74.41,
+"deg": 74.41
+},
+"source": "University of Greenwich",
+"target": "EIS-Maidstone"
+},
+{
+"dist": 20.43,
+"ecmp_fwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"ecmp_bwd": {
+"uni": 22.75,
+"deg": 11.61
+},
+"source": "University of Greenwich",
+"target": "Dorton College"
+},
+{
+"dist": 28.21,
+"ecmp_fwd": {
+"uni": 45.97,
+"deg": 45.97
+},
+"ecmp_bwd": {
+"uni": 45.97,
+"deg": 45.97
+},
+"source": "IC-Wye",
+"target": "EIS-Maidstone"
+},
+{
+"dist": 24.31,
+"ecmp_fwd": {
+"uni": 62.56,
+"deg": 53.32
+},
+"ecmp_bwd": {
+"uni": 62.56,
+"deg": 53.32
+},
+"source": "EIS-Maidstone",
+"target": "CCCU-S"
+}
+]
+}

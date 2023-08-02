@@ -1,0 +1,621 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "gtsslovakia",
+"demands": {},
+"stats": {
+"nodes": 28,
+"links": 30,
+"demands": 756,
+"min_degree": 1,
+"avg_degree": 2.14,
+"std_degree": 2.39,
+"max_degree": 10,
+"gini": 0.44,
+"min_link_len": 16.73,
+"avg_link_len": 73.13,
+"max_link_len": 312.20,
+"diameter_len": 489.69,
+"diameter_hops": 6,
+"avg_sdp_num": 1.03,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.83,
+"avg_sdp_len": 280.49,
+"avg_adp_num": 1.08,
+"max_adp_num": 3,
+"avg_adp_hops": 2.89,
+"avg_adp_len": 292.37
+}
+},
+"nodes": [
+{
+"pos": [
+19.32,
+49.08
+],
+"id": "Ruzombernk"
+},
+{
+"pos": [
+20.21,
+49.06
+],
+"id": "Svit"
+},
+{
+"pos": [
+19.62,
+49.08
+],
+"id": "Liptovdky Mikulas"
+},
+{
+"pos": [
+19.42,
+48.57
+],
+"id": "Detva"
+},
+{
+"pos": [
+19.13,
+48.58
+],
+"id": "Zvolen"
+},
+{
+"pos": [
+18.74,
+49.22
+],
+"id": "Zilina"
+},
+{
+"pos": [
+19.50,
+49.40
+],
+"id": "Namestovo"
+},
+{
+"pos": [
+20.03,
+48.38
+],
+"id": "Rimavska Sobota"
+},
+{
+"pos": [
+19.67,
+48.33
+],
+"id": "Lucenec"
+},
+{
+"pos": [
+18.12,
+47.76
+],
+"id": "Komarno"
+},
+{
+"pos": [
+18.16,
+47.99
+],
+"id": "Nove Zamky"
+},
+{
+"pos": [
+18.08,
+48.31
+],
+"id": "Nitra"
+},
+{
+"pos": [
+18.04,
+48.89
+],
+"id": "Trencin"
+},
+{
+"pos": [
+18.18,
+48.57
+],
+"id": "Topolcany"
+},
+{
+"pos": [
+18.55,
+48.72
+],
+"id": "Novaky"
+},
+{
+"pos": [
+18.63,
+48.77
+],
+"id": "Prievidza"
+},
+{
+"pos": [
+17.83,
+48.60
+],
+"id": "Piestany"
+},
+{
+"pos": [
+17.83,
+48.76
+],
+"id": "Nove Mest nad Vahom"
+},
+{
+"pos": [
+20.57,
+48.95
+],
+"id": "Spisska"
+},
+{
+"pos": [
+20.30,
+49.05
+],
+"id": "Poprad"
+},
+{
+"pos": [
+19.15,
+48.73
+],
+"id": "Banska Bystrica"
+},
+{
+"pos": [
+17.11,
+48.15
+],
+"id": "Bratislava"
+},
+{
+"pos": [
+21.25,
+48.72
+],
+"id": "Kosice"
+},
+{
+"pos": [
+21.25,
+49.00
+],
+"id": "Presov"
+},
+{
+"pos": [
+21.28,
+49.28
+],
+"id": "Bardejov"
+},
+{
+"pos": [
+21.57,
+49.30
+],
+"id": "Svidnik"
+},
+{
+"pos": [
+21.92,
+48.93
+],
+"id": "Humenne"
+},
+{
+"pos": [
+21.93,
+48.75
+],
+"id": "Michalovce"
+}
+],
+"links": [
+{
+"dist": 40.79,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Ruzombernk",
+"target": "Banska Bystrica"
+},
+{
+"dist": 85.31,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Svit",
+"target": "Kosice"
+},
+{
+"dist": 51.80,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Liptovdky Mikulas",
+"target": "Banska Bystrica"
+},
+{
+"dist": 49.83,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Detva",
+"target": "Rimavska Sobota"
+},
+{
+"dist": 26.97,
+"ecmp_fwd": {
+"uni": 35.45,
+"deg": 26.59
+},
+"ecmp_bwd": {
+"uni": 35.45,
+"deg": 26.59
+},
+"source": "Detva",
+"target": "Banska Bystrica"
+},
+{
+"dist": 16.73,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Zvolen",
+"target": "Banska Bystrica"
+},
+{
+"dist": 62.47,
+"ecmp_fwd": {
+"uni": 10.11,
+"deg": 12.29
+},
+"ecmp_bwd": {
+"uni": 10.34,
+"deg": 12.60
+},
+"source": "Zilina",
+"target": "Trencin"
+},
+{
+"dist": 115.18,
+"ecmp_fwd": {
+"uni": 25.80,
+"deg": 31.10
+},
+"ecmp_bwd": {
+"uni": 25.34,
+"deg": 30.48
+},
+"source": "Zilina",
+"target": "Poprad"
+},
+{
+"dist": 62.18,
+"ecmp_fwd": {
+"uni": 31.59,
+"deg": 37.48
+},
+"ecmp_bwd": {
+"uni": 31.82,
+"deg": 37.79
+},
+"source": "Zilina",
+"target": "Banska Bystrica"
+},
+{
+"dist": 78.41,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Namestovo",
+"target": "Banska Bystrica"
+},
+{
+"dist": 58.54,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Lucenec",
+"target": "Banska Bystrica"
+},
+{
+"dist": 86.93,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Komarno",
+"target": "Bratislava"
+},
+{
+"dist": 80.49,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Nove Zamky",
+"target": "Bratislava"
+},
+{
+"dist": 74.59,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Nitra",
+"target": "Bratislava"
+},
+{
+"dist": 107.99,
+"ecmp_fwd": {
+"uni": 16.93,
+"deg": 18.51
+},
+"ecmp_bwd": {
+"uni": 17.16,
+"deg": 18.82
+},
+"source": "Trencin",
+"target": "Bratislava"
+},
+{
+"dist": 92.18,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Topolcany",
+"target": "Bratislava"
+},
+{
+"dist": 44.06,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Novaky",
+"target": "Banska Bystrica"
+},
+{
+"dist": 38.07,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Prievidza",
+"target": "Banska Bystrica"
+},
+{
+"dist": 73.54,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Piestany",
+"target": "Bratislava"
+},
+{
+"dist": 86.31,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Nove Mest nad Vahom",
+"target": "Bratislava"
+},
+{
+"dist": 22.41,
+"ecmp_fwd": {
+"uni": 9.43,
+"deg": 11.35
+},
+"ecmp_bwd": {
+"uni": 9.66,
+"deg": 11.66
+},
+"source": "Spisska",
+"target": "Poprad"
+},
+{
+"dist": 56.36,
+"ecmp_fwd": {
+"uni": 16.48,
+"deg": 17.88
+},
+"ecmp_bwd": {
+"uni": 16.25,
+"deg": 17.57
+},
+"source": "Spisska",
+"target": "Kosice"
+},
+{
+"dist": 69.51,
+"ecmp_fwd": {
+"uni": 14.77,
+"deg": 16.95
+},
+"ecmp_bwd": {
+"uni": 14.55,
+"deg": 16.64
+},
+"source": "Poprad",
+"target": "Presov"
+},
+{
+"dist": 164.21,
+"ecmp_fwd": {
+"uni": 99.77,
+"deg": 99.69
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": "Banska Bystrica",
+"target": "Bratislava"
+},
+{
+"dist": 312.20,
+"ecmp_fwd": {
+"uni": 90.80,
+"deg": 93.31
+},
+"ecmp_bwd": {
+"uni": 91.25,
+"deg": 93.93
+},
+"source": "Bratislava",
+"target": "Kosice"
+},
+{
+"dist": 68.87,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Kosice",
+"target": "Svidnik"
+},
+{
+"dist": 54.44,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Kosice",
+"target": "Humenne"
+},
+{
+"dist": 50.27,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Kosice",
+"target": "Michalovce"
+},
+{
+"dist": 31.51,
+"ecmp_fwd": {
+"uni": 28.18,
+"deg": 29.08
+},
+"ecmp_bwd": {
+"uni": 28.41,
+"deg": 29.39
+},
+"source": "Kosice",
+"target": "Presov"
+},
+{
+"dist": 31.61,
+"ecmp_fwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"ecmp_bwd": {
+"uni": 18.41,
+"deg": 9.18
+},
+"source": "Presov",
+"target": "Bardejov"
+}
+]
+}

@@ -1,0 +1,800 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "niif",
+"demands": {},
+"stats": {
+"nodes": 35,
+"links": 40,
+"demands": 1190,
+"min_degree": 1,
+"avg_degree": 2.29,
+"std_degree": 2.16,
+"max_degree": 13,
+"gini": 0.38,
+"min_link_len": 20.36,
+"avg_link_len": 71.32,
+"max_link_len": 194.85,
+"diameter_len": 524.07,
+"diameter_hops": 7,
+"avg_sdp_num": 1.03,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.17,
+"avg_sdp_len": 230.21,
+"avg_adp_num": 1.30,
+"max_adp_num": 3,
+"avg_adp_hops": 3.61,
+"avg_adp_len": 297.83
+}
+},
+"nodes": [
+{
+"pos": [
+20.78,
+48.10
+],
+"id": "Miskolc"
+},
+{
+"pos": [
+21.58,
+48.32
+],
+"id": "Sarospatak"
+},
+{
+"pos": [
+19.93,
+47.78
+],
+"id": "Gyongyos"
+},
+{
+"pos": [
+20.37,
+47.90
+],
+"id": "Eger"
+},
+{
+"pos": [
+19.37,
+47.60
+],
+"id": "Godollo"
+},
+{
+"pos": [
+19.92,
+47.50
+],
+"id": "Jaszbereny"
+},
+{
+"pos": [
+21.72,
+47.96
+],
+"id": "Nyiregyhaza"
+},
+{
+"pos": [
+21.63,
+47.53
+],
+"id": "Debrecen"
+},
+{
+"pos": [
+20.20,
+47.18
+],
+"id": "Szolnok"
+},
+{
+"pos": [
+19.69,
+46.91
+],
+"id": "Kecskemet"
+},
+{
+"pos": [
+18.41,
+47.19
+],
+"id": "Szekesfahervar"
+},
+{
+"pos": [
+17.91,
+47.09
+],
+"id": "Veszprem"
+},
+{
+"pos": [
+17.25,
+46.77
+],
+"id": "Keszthely"
+},
+{
+"pos": [
+16.99,
+46.45
+],
+"id": "Nagykanizsa"
+},
+{
+"pos": [
+16.84,
+46.84
+],
+"id": "Zalaegerszeg"
+},
+{
+"pos": [
+16.62,
+47.23
+],
+"id": "Szombathely"
+},
+{
+"pos": [
+17.80,
+46.37
+],
+"id": "Kaposvar"
+},
+{
+"pos": [
+18.72,
+46.35
+],
+"id": "Szekszard"
+},
+{
+"pos": [
+20.33,
+46.42
+],
+"id": "Hodmazovasarhely"
+},
+{
+"pos": [
+21.10,
+46.68
+],
+"id": "Bekescsaba"
+},
+{
+"pos": [
+20.55,
+46.87
+],
+"id": "Szavas"
+},
+{
+"pos": [
+18.93,
+46.98
+],
+"id": "Dunaujvaros"
+},
+{
+"pos": [
+18.97,
+46.18
+],
+"id": "Baja"
+},
+{
+"pos": [
+18.23,
+46.08
+],
+"id": "Pecs"
+},
+{
+"pos": [
+21.18,
+46.58
+],
+"id": "Szabadka"
+},
+{
+"pos": [
+20.15,
+46.25
+],
+"id": "Szeged"
+},
+{
+"pos": [
+17.28,
+47.87
+],
+"id": "Mosonmagyarovar"
+},
+{
+"pos": [
+16.60,
+47.68
+],
+"id": "Sopron"
+},
+{
+"pos": [
+19.80,
+48.10
+],
+"id": "Salgotarjan"
+},
+{
+"pos": [
+19.13,
+47.78
+],
+"id": "Vac"
+},
+{
+"pos": [
+18.75,
+47.80
+],
+"id": "Esztergom"
+},
+{
+"pos": [
+19.04,
+47.50
+],
+"id": "Budapest"
+},
+{
+"pos": [
+18.12,
+47.73
+],
+"id": "Revkomarom"
+},
+{
+"pos": [
+18.83,
+47.62
+],
+"id": "Piliscsaba"
+},
+{
+"pos": [
+17.64,
+47.68
+],
+"id": "Gyor"
+}
+],
+"links": [
+{
+"dist": 146.46,
+"ecmp_fwd": {
+"uni": 65.22,
+"deg": 59.35
+},
+"ecmp_bwd": {
+"uni": 65.22,
+"deg": 59.35
+},
+"source": "Miskolc",
+"target": "Budapest"
+},
+{
+"dist": 64.01,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Miskolc",
+"target": "Sarospatak"
+},
+{
+"dist": 37.59,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Miskolc",
+"target": "Eger"
+},
+{
+"dist": 89.46,
+"ecmp_fwd": {
+"uni": 10.67,
+"deg": 9.27
+},
+"ecmp_bwd": {
+"uni": 10.67,
+"deg": 9.27
+},
+"source": "Miskolc",
+"target": "Debrecen"
+},
+{
+"dist": 47.07,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Gyongyos",
+"target": "Godollo"
+},
+{
+"dist": 27.03,
+"ecmp_fwd": {
+"uni": 83.00,
+"deg": 75.73
+},
+"ecmp_bwd": {
+"uni": 83.00,
+"deg": 75.73
+},
+"source": "Godollo",
+"target": "Budapest"
+},
+{
+"dist": 42.76,
+"ecmp_fwd": {
+"uni": 38.74,
+"deg": 34.93
+},
+"ecmp_bwd": {
+"uni": 38.74,
+"deg": 34.93
+},
+"source": "Godollo",
+"target": "Jaszbereny"
+},
+{
+"dist": 41.19,
+"ecmp_fwd": {
+"uni": 15.81,
+"deg": 13.91
+},
+"ecmp_bwd": {
+"uni": 15.81,
+"deg": 13.91
+},
+"source": "Jaszbereny",
+"target": "Szolnok"
+},
+{
+"dist": 47.36,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Nyiregyhaza",
+"target": "Debrecen"
+},
+{
+"dist": 194.85,
+"ecmp_fwd": {
+"uni": 77.47,
+"deg": 80.53
+},
+"ecmp_bwd": {
+"uni": 77.87,
+"deg": 80.83
+},
+"source": "Debrecen",
+"target": "Budapest"
+},
+{
+"dist": 102.80,
+"ecmp_fwd": {
+"uni": 45.85,
+"deg": 41.42
+},
+"ecmp_bwd": {
+"uni": 45.45,
+"deg": 41.11
+},
+"source": "Debrecen",
+"target": "Bekescsaba"
+},
+{
+"dist": 49.37,
+"ecmp_fwd": {
+"uni": 15.02,
+"deg": 13.29
+},
+"ecmp_bwd": {
+"uni": 15.02,
+"deg": 13.29
+},
+"source": "Szolnok",
+"target": "Kecskemet"
+},
+{
+"dist": 58.19,
+"ecmp_fwd": {
+"uni": 37.15,
+"deg": 33.69
+},
+"ecmp_bwd": {
+"uni": 37.15,
+"deg": 33.69
+},
+"source": "Kecskemet",
+"target": "Dunaujvaros"
+},
+{
+"dist": 39.24,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Szekesfahervar",
+"target": "Veszprem"
+},
+{
+"dist": 96.29,
+"ecmp_fwd": {
+"uni": 88.41,
+"deg": 85.39
+},
+"ecmp_bwd": {
+"uni": 89.33,
+"deg": 86.27
+},
+"source": "Veszprem",
+"target": "Budapest"
+},
+{
+"dist": 118.58,
+"ecmp_fwd": {
+"uni": 34.78,
+"deg": 36.19
+},
+"ecmp_bwd": {
+"uni": 33.86,
+"deg": 35.32
+},
+"source": "Veszprem",
+"target": "Sopron"
+},
+{
+"dist": 62.00,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Veszprem",
+"target": "Keszthely"
+},
+{
+"dist": 62.79,
+"ecmp_fwd": {
+"uni": 37.81,
+"deg": 34.31
+},
+"ecmp_bwd": {
+"uni": 35.97,
+"deg": 32.56
+},
+"source": "Nagykanizsa",
+"target": "Kaposvar"
+},
+{
+"dist": 44.44,
+"ecmp_fwd": {
+"uni": 17.79,
+"deg": 15.87
+},
+"ecmp_bwd": {
+"uni": 19.63,
+"deg": 17.62
+},
+"source": "Nagykanizsa",
+"target": "Zalaegerszeg"
+},
+{
+"dist": 46.63,
+"ecmp_fwd": {
+"uni": 18.97,
+"deg": 16.85
+},
+"ecmp_bwd": {
+"uni": 20.82,
+"deg": 18.60
+},
+"source": "Zalaegerszeg",
+"target": "Szombathely"
+},
+{
+"dist": 50.35,
+"ecmp_fwd": {
+"uni": 38.74,
+"deg": 35.09
+},
+"ecmp_bwd": {
+"uni": 40.58,
+"deg": 36.84
+},
+"source": "Szombathely",
+"target": "Sopron"
+},
+{
+"dist": 45.88,
+"ecmp_fwd": {
+"uni": 59.29,
+"deg": 53.94
+},
+"ecmp_bwd": {
+"uni": 57.44,
+"deg": 52.19
+},
+"source": "Kaposvar",
+"target": "Pecs"
+},
+{
+"dist": 47.58,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Szekszard",
+"target": "Pecs"
+},
+{
+"dist": 23.10,
+"ecmp_fwd": {
+"uni": 30.43,
+"deg": 27.51
+},
+"ecmp_bwd": {
+"uni": 30.04,
+"deg": 27.20
+},
+"source": "Hodmazovasarhely",
+"target": "Szeged"
+},
+{
+"dist": 65.72,
+"ecmp_fwd": {
+"uni": 11.86,
+"deg": 10.51
+},
+"ecmp_bwd": {
+"uni": 12.25,
+"deg": 10.82
+},
+"source": "Hodmazovasarhely",
+"target": "Bekescsaba"
+},
+{
+"dist": 46.60,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Bekescsaba",
+"target": "Szavas"
+},
+{
+"dist": 57.81,
+"ecmp_fwd": {
+"uni": 60.08,
+"deg": 54.71
+},
+"ecmp_bwd": {
+"uni": 60.08,
+"deg": 54.71
+},
+"source": "Dunaujvaros",
+"target": "Budapest"
+},
+{
+"dist": 57.61,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Baja",
+"target": "Pecs"
+},
+{
+"dist": 168.91,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 97.76,
+"deg": 97.94
+},
+"source": "Pecs",
+"target": "Budapest"
+},
+{
+"dist": 148.70,
+"ecmp_fwd": {
+"uni": 18.58,
+"deg": 17.77
+},
+"ecmp_bwd": {
+"uni": 18.97,
+"deg": 18.08
+},
+"source": "Pecs",
+"target": "Szeged"
+},
+{
+"dist": 87.46,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Szabadka",
+"target": "Szeged"
+},
+{
+"dist": 162.10,
+"ecmp_fwd": {
+"uni": 54.15,
+"deg": 58.11
+},
+"ecmp_bwd": {
+"uni": 54.15,
+"deg": 58.11
+},
+"source": "Szeged",
+"target": "Budapest"
+},
+{
+"dist": 33.28,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Mosonmagyarovar",
+"target": "Gyor"
+},
+{
+"dist": 77.51,
+"ecmp_fwd": {
+"uni": 31.09,
+"deg": 32.84
+},
+"ecmp_bwd": {
+"uni": 32.02,
+"deg": 33.72
+},
+"source": "Sopron",
+"target": "Gyor"
+},
+{
+"dist": 87.83,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Salgotarjan",
+"target": "Budapest"
+},
+{
+"dist": 32.50,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Vac",
+"target": "Budapest"
+},
+{
+"dist": 40.00,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Esztergom",
+"target": "Budapest"
+},
+{
+"dist": 74.00,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Budapest",
+"target": "Revkomarom"
+},
+{
+"dist": 20.36,
+"ecmp_fwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"ecmp_bwd": {
+"uni": 26.88,
+"deg": 12.21
+},
+"source": "Budapest",
+"target": "Piliscsaba"
+},
+{
+"dist": 107.37,
+"ecmp_fwd": {
+"uni": 68.38,
+"deg": 67.10
+},
+"ecmp_bwd": {
+"uni": 67.46,
+"deg": 66.23
+},
+"source": "Budapest",
+"target": "Gyor"
+}
+]
+}

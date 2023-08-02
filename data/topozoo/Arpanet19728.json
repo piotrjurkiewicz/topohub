@@ -1,0 +1,640 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "arpanet19728",
+"demands": {},
+"stats": {
+"nodes": 27,
+"links": 32,
+"demands": 702,
+"min_degree": 2,
+"avg_degree": 2.37,
+"std_degree": 0.62,
+"max_degree": 4,
+"gini": 0.12,
+"min_link_len": 0.00,
+"avg_link_len": 503.07,
+"max_link_len": 1932.05,
+"diameter_len": 5063.05,
+"diameter_hops": 9,
+"avg_sdp_num": 1.06,
+"max_sdp_num": 2,
+"avg_sdp_hops": 4.46,
+"avg_sdp_len": 1428.51,
+"avg_adp_num": 2.04,
+"max_adp_num": 3,
+"avg_adp_hops": 6.95,
+"avg_adp_len": 4019.36
+}
+},
+"nodes": [
+{
+"pos": [
+-89.64,
+39.80
+],
+"id": "ILLINOIS"
+},
+{
+"pos": [
+-70.93,
+41.64
+],
+"id": "MITRE"
+},
+{
+"pos": [
+-79.94,
+40.44
+],
+"id": "CARNEGIE"
+},
+{
+"pos": [
+-81.60,
+41.50
+],
+"id": "CASE"
+},
+{
+"pos": [
+-77.04,
+38.90
+],
+"id": "ETAC"
+},
+{
+"pos": [
+-89.85,
+38.54
+],
+"id": "AFGWC"
+},
+{
+"pos": [
+-71.11,
+42.38
+],
+"id": "BBN"
+},
+{
+"pos": [
+-77.20,
+39.14
+],
+"id": "NBS"
+},
+{
+"pos": [
+-97.39,
+35.41
+],
+"id": "Tinker"
+},
+{
+"pos": [
+-122.08,
+37.39
+],
+"id": "AMES"
+},
+{
+"pos": [
+-77.10,
+38.88
+],
+"id": "ARPA"
+},
+{
+"pos": [
+-75.46,
+43.21
+],
+"id": "RADC"
+},
+{
+"pos": [
+-121.37,
+38.69
+],
+"id": "McClellan"
+},
+{
+"pos": [
+-118.49,
+34.02
+],
+"id": "RAND"
+},
+{
+"pos": [
+-105.49,
+39.91
+],
+"id": "NOAA {[Boulder, Colorado}}"
+},
+{
+"pos": [
+-77.05,
+38.80
+],
+"id": "SAAC"
+},
+{
+"pos": [
+-77.15,
+38.71
+],
+"id": "BELVOIR"
+},
+{
+"pos": [
+-118.49,
+34.02
+],
+"id": "SDC"
+},
+{
+"pos": [
+-71.12,
+42.38
+],
+"id": "HARVARD"
+},
+{
+"pos": [
+-122.18,
+37.45
+],
+"id": "SRI"
+},
+{
+"pos": [
+-119.70,
+34.42
+],
+"id": "UCSB"
+},
+{
+"pos": [
+-118.24,
+34.05
+],
+"id": "UCLA"
+},
+{
+"pos": [
+-122.14,
+37.44
+],
+"id": "Stanford"
+},
+{
+"pos": [
+-118.24,
+34.05
+],
+"id": "USC"
+},
+{
+"pos": [
+-111.89,
+40.76
+],
+"id": "UTAH"
+},
+{
+"pos": [
+-71.22,
+42.45
+],
+"id": "Lincoln"
+},
+{
+"pos": [
+-71.09,
+42.36
+],
+"id": "MIT"
+}
+],
+"links": [
+{
+"dist": 1885.69,
+"ecmp_fwd": {
+"uni": 68.83,
+"deg": 70.20
+},
+"ecmp_bwd": {
+"uni": 68.61,
+"deg": 69.64
+},
+"source": "ILLINOIS",
+"target": "UTAH"
+},
+{
+"dist": 1577.90,
+"ecmp_fwd": {
+"uni": 77.71,
+"deg": 75.96
+},
+"ecmp_bwd": {
+"uni": 77.92,
+"deg": 76.52
+},
+"source": "ILLINOIS",
+"target": "MIT"
+},
+{
+"dist": 606.97,
+"ecmp_fwd": {
+"uni": 54.22,
+"deg": 46.95
+},
+"ecmp_bwd": {
+"uni": 54.55,
+"deg": 47.40
+},
+"source": "MITRE",
+"target": "SAAC"
+},
+{
+"dist": 606.56,
+"ecmp_fwd": {
+"uni": 66.23,
+"deg": 59.14
+},
+"ecmp_bwd": {
+"uni": 65.91,
+"deg": 58.69
+},
+"source": "MITRE",
+"target": "ARPA"
+},
+{
+"dist": 307.36,
+"ecmp_fwd": {
+"uni": 55.84,
+"deg": 45.60
+},
+"ecmp_bwd": {
+"uni": 55.52,
+"deg": 45.15
+},
+"source": "CARNEGIE",
+"target": "BELVOIR"
+},
+{
+"dist": 182.44,
+"ecmp_fwd": {
+"uni": 67.53,
+"deg": 55.98
+},
+"ecmp_bwd": {
+"uni": 67.86,
+"deg": 56.43
+},
+"source": "CARNEGIE",
+"target": "CASE"
+},
+{
+"dist": 539.17,
+"ecmp_fwd": {
+"uni": 77.92,
+"deg": 70.88
+},
+"ecmp_bwd": {
+"uni": 77.71,
+"deg": 70.32
+},
+"source": "CASE",
+"target": "RADC"
+},
+{
+"dist": 775.88,
+"ecmp_fwd": {
+"uni": 72.73,
+"deg": 64.33
+},
+"ecmp_bwd": {
+"uni": 73.27,
+"deg": 65.35
+},
+"source": "CASE",
+"target": "AFGWC"
+},
+{
+"dist": 1840.93,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 99.68,
+"deg": 99.55
+},
+"source": "ETAC",
+"target": "Tinker"
+},
+{
+"dist": 6.08,
+"ecmp_fwd": {
+"uni": 80.19,
+"deg": 72.23
+},
+"ecmp_bwd": {
+"uni": 80.52,
+"deg": 72.69
+},
+"source": "ETAC",
+"target": "ARPA"
+},
+{
+"dist": 31.08,
+"ecmp_fwd": {
+"uni": 72.73,
+"deg": 72.23
+},
+"ecmp_bwd": {
+"uni": 72.73,
+"deg": 72.23
+},
+"source": "ETAC",
+"target": "NBS"
+},
+{
+"dist": 1354.51,
+"ecmp_fwd": {
+"uni": 67.53,
+"deg": 61.17
+},
+"ecmp_bwd": {
+"uni": 68.07,
+"deg": 62.19
+},
+"source": "AFGWC",
+"target": "NOAA {[Boulder, Colorado}}"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": "BBN",
+"target": "BBN"
+},
+{
+"dist": 2.07,
+"ecmp_fwd": {
+"uni": 67.53,
+"deg": 73.14
+},
+"ecmp_bwd": {
+"uni": 67.53,
+"deg": 73.14
+},
+"source": "BBN",
+"target": "MIT"
+},
+{
+"dist": 0.96,
+"ecmp_fwd": {
+"uni": 62.34,
+"deg": 64.11
+},
+"ecmp_bwd": {
+"uni": 62.34,
+"deg": 64.11
+},
+"source": "BBN",
+"target": "HARVARD"
+},
+{
+"dist": 626.05,
+"ecmp_fwd": {
+"uni": 64.94,
+"deg": 65.91
+},
+"ecmp_bwd": {
+"uni": 64.94,
+"deg": 65.91
+},
+"source": "NBS",
+"target": "HARVARD"
+},
+{
+"dist": 1932.05,
+"ecmp_fwd": {
+"uni": 98.70,
+"deg": 99.55
+},
+"ecmp_bwd": {
+"uni": 98.38,
+"deg": 99.10
+},
+"source": "Tinker",
+"target": "RAND"
+},
+{
+"dist": 11.50,
+"ecmp_fwd": {
+"uni": 35.71,
+"deg": 44.81
+},
+"ecmp_bwd": {
+"uni": 35.98,
+"deg": 45.37
+},
+"source": "AMES",
+"target": "SRI"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": "AMES",
+"target": "AMES"
+},
+{
+"dist": 8.12,
+"ecmp_fwd": {
+"uni": 37.12,
+"deg": 44.92
+},
+"ecmp_bwd": {
+"uni": 36.85,
+"deg": 44.36
+},
+"source": "AMES",
+"target": "Stanford"
+},
+{
+"dist": 355.45,
+"ecmp_fwd": {
+"uni": 77.92,
+"deg": 72.69
+},
+"ecmp_bwd": {
+"uni": 77.71,
+"deg": 72.12
+},
+"source": "RADC",
+"target": "Lincoln"
+},
+{
+"dist": 842.80,
+"ecmp_fwd": {
+"uni": 62.12,
+"deg": 65.12
+},
+"ecmp_bwd": {
+"uni": 62.34,
+"deg": 65.69
+},
+"source": "McClellan",
+"target": "UTAH"
+},
+{
+"dist": 154.29,
+"ecmp_fwd": {
+"uni": 64.94,
+"deg": 68.40
+},
+"ecmp_bwd": {
+"uni": 64.72,
+"deg": 67.83
+},
+"source": "McClellan",
+"target": "SRI"
+},
+{
+"dist": 503.52,
+"ecmp_fwd": {
+"uni": 49.84,
+"deg": 54.29
+},
+"ecmp_bwd": {
+"uni": 50.11,
+"deg": 54.85
+},
+"source": "RAND",
+"target": "Stanford"
+},
+{
+"dist": 23.10,
+"ecmp_fwd": {
+"uni": 80.19,
+"deg": 77.99
+},
+"ecmp_bwd": {
+"uni": 79.60,
+"deg": 76.98
+},
+"source": "RAND",
+"target": "UCLA"
+},
+{
+"dist": 1304.96,
+"ecmp_fwd": {
+"uni": 67.53,
+"deg": 62.08
+},
+"ecmp_bwd": {
+"uni": 68.07,
+"deg": 63.09
+},
+"source": "NOAA {[Boulder, Colorado}}",
+"target": "USC"
+},
+{
+"dist": 13.44,
+"ecmp_fwd": {
+"uni": 51.62,
+"deg": 42.44
+},
+"ecmp_bwd": {
+"uni": 51.95,
+"deg": 42.89
+},
+"source": "SAAC",
+"target": "BELVOIR"
+},
+{
+"dist": 23.10,
+"ecmp_fwd": {
+"uni": 73.27,
+"deg": 67.61
+},
+"ecmp_bwd": {
+"uni": 72.73,
+"deg": 66.59
+},
+"source": "SDC",
+"target": "USC"
+},
+{
+"dist": 23.10,
+"ecmp_fwd": {
+"uni": 83.12,
+"deg": 76.98
+},
+"ecmp_bwd": {
+"uni": 83.66,
+"deg": 77.99
+},
+"source": "SDC",
+"target": "UCLA"
+},
+{
+"dist": 404.74,
+"ecmp_fwd": {
+"uni": 50.11,
+"deg": 50.90
+},
+"ecmp_bwd": {
+"uni": 50.16,
+"deg": 50.90
+},
+"source": "SRI",
+"target": "UCSB"
+},
+{
+"dist": 139.89,
+"ecmp_fwd": {
+"uni": 60.50,
+"deg": 57.22
+},
+"ecmp_bwd": {
+"uni": 60.55,
+"deg": 57.22
+},
+"source": "UCSB",
+"target": "UCLA"
+},
+{
+"dist": 14.64,
+"ecmp_fwd": {
+"uni": 84.42,
+"deg": 80.36
+},
+"ecmp_bwd": {
+"uni": 84.20,
+"deg": 79.80
+},
+"source": "Lincoln",
+"target": "MIT"
+}
+]
+}
