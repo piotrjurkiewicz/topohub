@@ -5,6 +5,22 @@ import statistics
 import time
 
 def haversine(src, dst):
+    """
+    Calculate the great-circle distance between two points on a sphere given their longitudes and latitudes.
+
+    Parameters
+    ----------
+    src : (float, float)
+        coordinates (lon0, lat0)
+    dst : (float, float)
+        coordinates (lon1, lat1)
+
+    Returns
+    -------
+    float
+        distance in kilometers
+    """
+
     (lon0, lat0) = src
     (lon1, lat1) = dst
     R = 6372.8
@@ -16,6 +32,19 @@ def haversine(src, dst):
     return R * 2 * math.asin(math.sqrt(a))
 
 def gini(list_of_values):
+    """
+    Calculate the Gini coefficient of a give list of values.
+
+    Parameters
+    ----------
+    list_of_values : lits[float]
+
+    Returns
+    -------
+    float
+        calculated Gini coefficient
+    """
+
     sorted_list = sorted(list_of_values)
     height, area = 0, 0
     for value in sorted_list:
@@ -25,6 +54,19 @@ def gini(list_of_values):
     return (fair_area - area) / fair_area
 
 def all_shortest_paths_all_targets(g, source, weight=None, limit=None):
+    """
+    Calculate the Gini coefficient of a give list of values.
+
+    Parameters
+    ----------
+    list_of_values : lits[float]
+
+    Returns
+    -------
+    float
+        calculated Gini coefficient
+    """
+
     import networkx as nx
 
     paths = {}
@@ -454,32 +496,29 @@ def topo_stats(g, ps=None):
     return stats
 
 def topo_stats_print(stats, name, filename=None):
-    # with importlib.resources.open_text("MyPackage", "data.json") as file:
-    #     data = json.load(file)
-
-    JUST = 38
+    just = 38
     text = \
-        'Topology name'.ljust(JUST) + ' & %s' % name.replace('_', '\\_') + '\n\n' + \
-        'Number of nodes'.ljust(JUST) + ' & %s' % stats['nodes'] + '\n' + \
-        'Number of links'.ljust(JUST) + ' & %s' % stats['links'] + '\n' + \
-        'Number of demands'.ljust(JUST) + ' & %s' % stats['demands'] + '\n' + \
-        'Min. vertex degree'.ljust(JUST) + ' & %.2f' % stats['min_degree'] + '\n' + \
-        'Avg. vertex degree'.ljust(JUST) + ' & %.2f' % stats['avg_degree'] + '\n' + \
-        'Max. vertex degree'.ljust(JUST) + ' & %.2f' % stats['max_degree'] + '\n' + \
-        'Min. link length'.ljust(JUST) + ' & %.2f' % stats['min_link_len'] + '\n' + \
-        'Avg. link length'.ljust(JUST) + ' & %.2f' % stats['avg_link_len'] + '\n' + \
-        'Max. link length'.ljust(JUST) + ' & %.2f' % stats['max_link_len'] + '\n'
+        'Topology name'.ljust(just) + ' & %s' % name.replace('_', '\\_') + '\n\n' + \
+        'Number of nodes'.ljust(just) + ' & %s' % stats['nodes'] + '\n' + \
+        'Number of links'.ljust(just) + ' & %s' % stats['links'] + '\n' + \
+        'Number of demands'.ljust(just) + ' & %s' % stats['demands'] + '\n' + \
+        'Min. vertex degree'.ljust(just) + ' & %.2f' % stats['min_degree'] + '\n' + \
+        'Avg. vertex degree'.ljust(just) + ' & %.2f' % stats['avg_degree'] + '\n' + \
+        'Max. vertex degree'.ljust(just) + ' & %.2f' % stats['max_degree'] + '\n' + \
+        'Min. link length'.ljust(just) + ' & %.2f' % stats['min_link_len'] + '\n' + \
+        'Avg. link length'.ljust(just) + ' & %.2f' % stats['avg_link_len'] + '\n' + \
+        'Max. link length'.ljust(just) + ' & %.2f' % stats['max_link_len'] + '\n'
 
     if 'avg_sdp_num' in stats:
         text += \
-            'Avg. number of disjoint shortest paths'.ljust(JUST) + ' & %.2f' % stats['avg_sdp_num'] + '\n' + \
-            'Max. number of disjoint shortest paths'.ljust(JUST) + ' & %.2f' % stats['max_sdp_num'] + '\n' + \
-            'Avg. hops of disjoint shortest paths'.ljust(JUST) + ' & %.2f' % stats['avg_sdp_hops'] + '\n' + \
-            'Avg. length of disjoint shortest paths'.ljust(JUST) + ' & %.2f' % stats['avg_sdp_len'] + '\n' + \
-            'Avg. number of all disjoint paths'.ljust(JUST) + ' & %.2f' % stats['avg_adp_num'] + '\n' + \
-            'Max. number of all disjoint paths'.ljust(JUST) + ' & %.2f' % stats['max_adp_num'] + '\n' + \
-            'Avg. hops of all disjoint paths'.ljust(JUST) + ' & %.2f' % stats['avg_adp_hops'] + '\n' + \
-            'Avg. length of all disjoint paths'.ljust(JUST) + ' & %.2f' % stats['avg_adp_len'] + '\n'
+            'Avg. number of disjoint shortest paths'.ljust(just) + ' & %.2f' % stats['avg_sdp_num'] + '\n' + \
+            'Max. number of disjoint shortest paths'.ljust(just) + ' & %.2f' % stats['max_sdp_num'] + '\n' + \
+            'Avg. hops of disjoint shortest paths'.ljust(just) + ' & %.2f' % stats['avg_sdp_hops'] + '\n' + \
+            'Avg. length of disjoint shortest paths'.ljust(just) + ' & %.2f' % stats['avg_sdp_len'] + '\n' + \
+            'Avg. number of all disjoint paths'.ljust(just) + ' & %.2f' % stats['avg_adp_num'] + '\n' + \
+            'Max. number of all disjoint paths'.ljust(just) + ' & %.2f' % stats['max_adp_num'] + '\n' + \
+            'Avg. hops of all disjoint paths'.ljust(just) + ' & %.2f' % stats['avg_adp_hops'] + '\n' + \
+            'Avg. length of all disjoint paths'.ljust(just) + ' & %.2f' % stats['avg_adp_len'] + '\n'
 
     if not filename:
         print(text)
