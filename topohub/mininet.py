@@ -1,8 +1,11 @@
 import json
+import importlib.resources
 
 import mininet
 import mininet.node
 import mininet.topo
+
+import topohub.data
 
 class Demands(dict):
     def __missing__(self, key):
@@ -55,23 +58,22 @@ class JSONTopo(mininet.topo.Topo):
 
         super(JSONTopo, self).build(**params)
 
-def make_topo_class_from_json(topo):
-    name = topo['graph']['name']
-    cls_name = name.title().replace('_', '')
+def make_topo_class_from_json(name, topo):
+    cls_name = name.title().replace('/', '_')
     cls = type(str(cls_name), (JSONTopo,), {'name': name, 'topo_json': topo})
     return cls
 
 class TopoDict(dict):
     def __missing__(self, key):
         try:
-            topo = json.load(open('data/%s.json' % key))
-            cls = make_topo_class_from_json(topo)
+            topo = json.load((importlib.resources.files(topohub) / f'data/{key}.json').open())
+            cls = make_topo_class_from_json(key, topo)
             self[key] = cls
             return cls
         except IOError:
             raise KeyError
 
-TOPOS = TopoDict()
+TOPO = TopoDict()
 
 class AutoHostTopo(mininet.topo.Topo):
     """Adds k hosts per switch"""
