@@ -1,5 +1,5 @@
-import json
 import importlib.resources
+import json
 
 import mininet
 import mininet.node

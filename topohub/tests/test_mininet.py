@@ -1,4 +1,3 @@
-import mininet.net
 from topohub.mininet import TOPO
 
 def test_mininet():
