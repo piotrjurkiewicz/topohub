@@ -349,9 +349,9 @@ def calculate_utilization(g):
         nhops[n] = all_shortest_nhops_all_targets(g, n)[0]
 
     modes = {
-        'demands': (((src, dst, g.graph['demands'][src][dst]) for src in g.graph['demands'] for dst in g.graph['demands'][src]) if 'demands' in g.graph else None),
-        'unit': ((src, dst, 1) for src, dst in itertools.combinations(g, 2)),
-        'degree': ((src, dst, g.degree[src] * g.degree[dst]) for src, dst in itertools.combinations(g, 2))
+        'org': (((src, dst, g.graph['demands'][src][dst]) for src in g.graph['demands'] for dst in g.graph['demands'][src]) if 'demands' in g.graph else None),
+        'uni': ((src, dst, 1) for src, dst in itertools.combinations(g, 2)),
+        'deg': ((src, dst, g.degree[src] * g.degree[dst]) for src, dst in itertools.combinations(g, 2))
     }
 
     def dfs(src, dst, dem, ut):
