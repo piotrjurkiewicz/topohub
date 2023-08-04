@@ -31,9 +31,17 @@
             margin: 0;
         }
 
-        h2, h3 {
-            margin-top: 0;
+        h2 {
             font-size: 20px;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin-top: 24px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
         }
 
         .container {
@@ -175,6 +183,21 @@
             line-height: 20px;
         }
 
+        #dynamicControl {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #dynamicControl input {
+            margin: 5px 0 5px 5px;
+        }
+
+        #dynamicControlLabel {
+            min-width: fit-content;
+            white-space: nowrap;
+            line-height: 24px;
+        }
+
         #trafficModelDropdown {
             width: 100%;
             min-width: fit-content;
@@ -284,22 +307,15 @@
         </div>
 
         <div id="displayControl" class="box">
-            <h2>Display control</h2>
+            <h2>Display controls</h2>
 
-            <input id="showNodeNames" type="checkbox" autocomplete="off" checked><label
-                for="showNodeNames">Show node names</label><br/>
-            <input id="showNodeNamesBelow" type="checkbox" autocomplete="off"><label
-                for="showNodeNamesBelow">Show names below nodes</label><br/>
-            <input id="showNodes" type="checkbox" autocomplete="off" checked><label
-                for="showNodes">Show node circles</label><br/>
+            <span><label for="showNodeNames">Show node names: </label><input id="showNodeNames" type="checkbox" autocomplete="off" checked></span></br>
+            <span><label for="showNodeNamesBelow">Show node names below nodes: </label><input id="showNodeNamesBelow" type="checkbox" autocomplete="off"></span></br>
+            <span><label for="showNodeCircles">Show node circles:</label><input id="showNodeCircles" type="checkbox" autocomplete="off"></span>
 
-        </div>
-
-        <div id="ecmpLinkUtilization" class="box">
-
-            <h2>ECMP routing link utilization</h2>
+            <h3>ECMP routing link utilization</h3>
             <div id="trafficModelDiv">
-                <label id="trafficModelLabel" for="trafficModelDropdown">Displayed demands model:</label>
+                <label id="trafficModelLabel" for="trafficModelDropdown">Selected demands model:</label>
                 <select id="trafficModelDropdown">
                     <option value="none" selected>None</option>
                     <!-- Add options for each category in the JSON data -->
@@ -308,16 +324,14 @@
                     <option value="deg">Degree</option>
                 </select>
             </div>
-            <p>Description: This is the first topology.</p>
-            <div id="control">
-                <input id="dynamicWidthCheckbox" type="checkbox" autocomplete="off" checked><label
-                    for="dynamicWidthCheckbox">Dynamic links width</label><br/>
-                <input id="dynamicColorCheckbox" type="checkbox" autocomplete="off" checked><label
-                    for="dynamicColorCheckbox">Dynamic links color</label><br/>
-                <input id="dynamicOpacityCheckbox" type="checkbox" autocomplete="off"><label
-                    for="dynamicOpacityCheckbox">Dynamic links opacity</label><br/>
-
+            <div id="dynamicControl">
+                <span id="dynamicControlLabel">Dynamic links:</span>
+                <span><label for="dynamicWidthCheckbox">Width</label><input id="dynamicWidthCheckbox" type="checkbox" autocomplete="off" checked></span>
+                <span><label for="dynamicColorCheckbox">Color</label><input id="dynamicColorCheckbox" type="checkbox" autocomplete="off" checked></span>
+                <span><label for="dynamicOpacityCheckbox">Opacity</label><input id="dynamicOpacityCheckbox" type="checkbox" autocomplete="off"></span>
             </div>
+            <p>Description: This is the first topology.</p>
+
         </div>
     </aside>
 </div>
@@ -369,10 +383,9 @@
         const topoDisplay = document.getElementById("topoDisplay");
         const topologyProperties = document.getElementById("topologyProperties");
         const topologyPropertiesList = document.getElementById("topologyPropertiesList");
-        const ecmpLinkUtilization = document.getElementById("ecmpLinkUtilization");
         const showNodeNames = document.getElementById("showNodeNames");
         const showNodeNamesBelow = document.getElementById("showNodeNamesBelow");
-        const showNodes = document.getElementById("showNodes");
+        const showNodeCircles = document.getElementById("showNodeCircles");
         const trafficModelDropdown = document.getElementById("trafficModelDropdown");
         const dynamicWidthCheckbox = document.getElementById("dynamicWidthCheckbox");
         const dynamicColorCheckbox = document.getElementById("dynamicColorCheckbox");
@@ -578,11 +591,9 @@
                     elm.style['stroke'] = null;
                     elm.setAttribute('r', '10');
                 })
-                displayNodes();
                 return;
             }
 
-            displayNodes();
             svg.querySelectorAll("circle").forEach(elm => {
                 elm.style['fill'] = 'white';
                 elm.style['stroke'] = 'black';
@@ -623,7 +634,7 @@
                     elm.setAttribute('visibility', 'hidden');
             })
             svg.querySelectorAll("circle").forEach(elm => {
-                if (showNodes.checked) {
+                if (showNodeCircles.checked) {
                     elm.removeAttribute('visibility');
                 } else
                     elm.setAttribute('visibility', 'hidden');
@@ -632,7 +643,7 @@
 
         showNodeNames.addEventListener("change", displayNodes);
         showNodeNamesBelow.addEventListener("change", displayNodes);
-        showNodes.addEventListener("change", displayNodes);
+        showNodeCircles.addEventListener("change", displayNodes);
 
         trafficModelDropdown.addEventListener("change", () => {
             if (trafficModelDropdown.value !== 'none')
@@ -640,6 +651,7 @@
             visualizeTraffic();
             if (trafficModelDropdown.value === 'none')
                 showNodeNames.checked = true;
+            displayNodes();
         });
         dynamicWidthCheckbox.addEventListener("change", visualizeTraffic);
         dynamicColorCheckbox.addEventListener("change", visualizeTraffic);
@@ -750,6 +762,7 @@
                 parseSVG();
                 populateTopologyProperties(topology_json['graph']['stats']);
                 visualizeTraffic();
+                displayNodes();
                 topoDisplay.style.visibility = null;
                 trafficModelDropdown.disabled = false;
             } catch (error) {
