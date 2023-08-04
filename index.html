@@ -635,7 +635,7 @@
         showNodeNamesBelow.addEventListener("change", displayNodes);
         showNodes.addEventListener("change", displayNodes);
 
-        trafficModelDropdown.addEventListener("change", () =>  {
+        trafficModelDropdown.addEventListener("change", () => {
             if (trafficModelDropdown.value !== 'none')
                 showNodeNames.checked = false;
             visualizeTraffic();
@@ -722,26 +722,38 @@
         // Function to fetch and display the selected topology
         const fetchAndDisplayTopology = async (selectedCategory, selectedTopology) => {
             try {
-                const response = await fetch(`data/${selectedCategory}/${selectedTopology}.svg`);
-                if (!response.ok) {
-                    throw new Error("Failed to fetch SVG file");
-                }
-                const svg_text = await response.text();
-                topoDisplay.setAttribute('visibility', 'hidden');
+                // Fetch both SVG and JSON files in parallel
+                const svgPromise = fetch(`data/${selectedCategory}/${selectedTopology}.svg`)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error("Failed to fetch SVG file");
+                        }
+                        return response.text();
+                    });
+
+                const jsonPromise = fetch(`data/${selectedCategory}/${selectedTopology}.json`)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error("Failed to fetch JSON file");
+                        }
+                        return response.json();
+                    });
+
+                // Wait for both promises to resolve
+                const [svg_text, topology_json] = await Promise.all([svgPromise, jsonPromise]);
+
+                // Display the SVG content
+                topoDisplay.style.visibility = 'hidden';
                 topoDisplay.innerHTML = svg_text;
 
-                // Fetch and display JSON file
-                const responseJSON = await fetch(`data/${selectedCategory}/${selectedTopology}.json`);
-                if (!responseJSON.ok) {
-                    throw new Error("Failed to fetch JSON file");
-                }
-                topology_json = await responseJSON.json();
+                // Parse SVG and perform other operations
                 parseSVG();
                 populateTopologyProperties(topology_json['graph']['stats']);
-                visualizeTraffic()
-                topoDisplay.removeAttribute('visibility');
+                visualizeTraffic();
+                topoDisplay.style.visibility = null;
             } catch (error) {
-                topoDisplay.removeAttribute('visibility');
+                // Handle errors during fetching and display an error message
+                topoDisplay.style.visibility = null;
                 topoDisplay.innerHTML = "<p>Error loading topology data.</p>";
                 topologyPropertiesList.innerHTML = "";
                 trafficModelDropdown.value = 'none';
