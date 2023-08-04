@@ -603,7 +603,6 @@
                 bwd_path.style['stroke'] = dynamicColorCheckbox.checked ? hot_rgb(bwd) : 'black';
                 bwd_path.style['opacity'] = dynamicOpacityCheckbox.checked ? bwd : 1.0;
                 bwd_path.setAttribute('title', `${link.target} -> ${link.source} ${(bwd * 100).toFixed(2)}%`);
-                console.log(link);
             }
         }
 
@@ -752,6 +751,7 @@
                 populateTopologyProperties(topology_json['graph']['stats']);
                 visualizeTraffic();
                 topoDisplay.style.visibility = null;
+                trafficModelDropdown.disabled = false;
             } catch (error) {
                 // Handle errors during fetching and display an error message
                 topoDisplay.style.visibility = null;
