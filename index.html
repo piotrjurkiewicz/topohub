@@ -359,9 +359,7 @@
         ['avg_adp_hops', 'Average hops of all disjoint paths'], ['avg_adp_len', 'Average length of all disjoint paths']]
 
     let topology_json = null;
-    let name_to_circle = {};
     let pos_to_name = {};
-    let pair_to_link = {};
 
     document.addEventListener("DOMContentLoaded", () => {
         const firstLevelDropdown = document.getElementById("firstLevelDropdown");
@@ -402,14 +400,11 @@
             const circles = svg.getElementsByTagName('circle');
             const paths = svg.getElementsByTagName('path');
             const textElements = svg.getElementsByTagName('text');
-            name_to_circle = {};
             pos_to_name = {};
-            pair_to_link = {};
 
             for (let i = 0; i < circles.length; i++) {
                 const circle = circles[i];
                 const name = textElements[i].textContent.trim();
-                name_to_circle[name] = circle
                 circle.getAttribute('cx')
                 circle.getAttribute('cy')
                 circle.setAttribute('title', name);
@@ -427,7 +422,6 @@
                 path.setAttribute('title', `${start_name} <-> ${end_name}`);
                 path.addEventListener('mousemove', showTooltip);
                 path.addEventListener('mouseout', hideTooltip);
-                pair_to_link[`${start_name}-${end_name}`] = path;
             }
         }
 
@@ -584,12 +578,10 @@
                     elm.style['stroke'] = null;
                     elm.setAttribute('r', '10');
                 })
-                showNodeNames.checked = true;
                 displayNodes();
                 return;
             }
 
-            showNodeNames.checked = false;
             displayNodes();
             svg.querySelectorAll("circle").forEach(elm => {
                 elm.style['fill'] = 'white';
@@ -643,7 +635,13 @@
         showNodeNamesBelow.addEventListener("change", displayNodes);
         showNodes.addEventListener("change", displayNodes);
 
-        trafficModelDropdown.addEventListener("change", visualizeTraffic);
+        trafficModelDropdown.addEventListener("change", () =>  {
+            if (trafficModelDropdown.value !== 'none')
+                showNodeNames.checked = false;
+            visualizeTraffic();
+            if (trafficModelDropdown.value === 'none')
+                showNodeNames.checked = true;
+        });
         dynamicWidthCheckbox.addEventListener("change", visualizeTraffic);
         dynamicColorCheckbox.addEventListener("change", visualizeTraffic);
         dynamicOpacityCheckbox.addEventListener("change", visualizeTraffic);
@@ -728,7 +726,9 @@
                 if (!response.ok) {
                     throw new Error("Failed to fetch SVG file");
                 }
-                topoDisplay.innerHTML = await response.text();
+                const svg_text = await response.text();
+                topoDisplay.setAttribute('visibility', 'hidden');
+                topoDisplay.innerHTML = svg_text;
 
                 // Fetch and display JSON file
                 const responseJSON = await fetch(`data/${selectedCategory}/${selectedTopology}.json`);
@@ -739,7 +739,9 @@
                 parseSVG();
                 populateTopologyProperties(topology_json['graph']['stats']);
                 visualizeTraffic()
+                topoDisplay.removeAttribute('visibility');
             } catch (error) {
+                topoDisplay.removeAttribute('visibility');
                 topoDisplay.innerHTML = "<p>Error loading topology data.</p>";
                 topologyPropertiesList.innerHTML = "";
                 trafficModelDropdown.value = 'none';
