@@ -1,5 +1,5 @@
 Welcome to topohub's documentation!
-***************************************
+***********************************
 
 `topohub`_ is a
 
@@ -15,6 +15,7 @@ Contents
 .. toctree::
    :maxdepth: 2
 
+   web
    mininet
 
 Reference
