@@ -171,6 +171,10 @@
             background-color: #f6f8fa;
         }
 
+        #topologyInfo div {
+            line-height: 20px;
+        }
+
         #trafficModelDiv {
             display: flex;
             justify-content: space-between;
@@ -296,29 +300,22 @@
         </div>
     </main>
     <aside class="sidebar-right">
-        <div id="topologyInfo" class="box">
-            <h2>Topology info</h2>
-
-        </div>
-        <div id="topologyProperties" class="box">
-            <h2>Topology properties</h2>
-            <ul id="topologyPropertiesList">
-            </ul>
-        </div>
-
         <div id="displayControl" class="box">
             <h2>Display controls</h2>
 
-            <span><label for="showNodeNames">Show node names: </label><input id="showNodeNames" type="checkbox" autocomplete="off" checked></span></br>
-            <span><label for="showNodeNamesBelow">Show node names below nodes: </label><input id="showNodeNamesBelow" type="checkbox" autocomplete="off"></span></br>
-            <span><label for="showNodeCircles">Show node circles:</label><input id="showNodeCircles" type="checkbox" autocomplete="off"></span>
+            <span><label for="showNodeNames">Show node names: </label><input id="showNodeNames" type="checkbox"
+                                                                             autocomplete="off" checked></span></br>
+            <span><label for="showNodeNamesBelow">Show node names below nodes: </label><input id="showNodeNamesBelow"
+                                                                                              type="checkbox"
+                                                                                              autocomplete="off"></span></br>
+            <span><label for="showNodeCircles">Show node circles:</label><input id="showNodeCircles" type="checkbox"
+                                                                                autocomplete="off" checked></span>
 
             <h3>ECMP routing link utilization</h3>
             <div id="trafficModelDiv">
                 <label id="trafficModelLabel" for="trafficModelDropdown">Selected demands model:</label>
                 <select id="trafficModelDropdown">
                     <option value="none" selected>None</option>
-                    <!-- Add options for each category in the JSON data -->
                     <option value="org">Original</option>
                     <option value="uni">Uniform</option>
                     <option value="deg">Degree</option>
@@ -326,12 +323,26 @@
             </div>
             <div id="dynamicControl">
                 <span id="dynamicControlLabel">Dynamic links:</span>
-                <span><label for="dynamicWidthCheckbox">Width</label><input id="dynamicWidthCheckbox" type="checkbox" autocomplete="off" checked></span>
-                <span><label for="dynamicColorCheckbox">Color</label><input id="dynamicColorCheckbox" type="checkbox" autocomplete="off" checked></span>
-                <span><label for="dynamicOpacityCheckbox">Opacity</label><input id="dynamicOpacityCheckbox" type="checkbox" autocomplete="off"></span>
+                <span><label for="dynamicWidthCheckbox">Width</label><input id="dynamicWidthCheckbox" type="checkbox"
+                                                                            autocomplete="off" checked></span>
+                <span><label for="dynamicColorCheckbox">Color</label><input id="dynamicColorCheckbox" type="checkbox"
+                                                                            autocomplete="off" checked></span>
+                <span><label for="dynamicOpacityCheckbox">Opacity</label><input id="dynamicOpacityCheckbox"
+                                                                                type="checkbox"
+                                                                                autocomplete="off"></span>
             </div>
             <p>Description: This is the first topology.</p>
 
+        </div>
+        <div id="topologyInfo" class="box">
+            <h2>Topology info</h2>
+            <div>Category: <span>Gabriel</span></div>
+            <div>Name: <span>25/0</span></div>
+        </div>
+        <div id="topologyProperties" class="box">
+            <h2>Topology properties</h2>
+            <ul id="topologyPropertiesList">
+            </ul>
         </div>
     </aside>
 </div>
