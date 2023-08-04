@@ -740,11 +740,12 @@
                     });
 
                 // Wait for both promises to resolve
-                const [svg_text, topology_json] = await Promise.all([svgPromise, jsonPromise]);
+                const [new_svg, new_json] = await Promise.all([svgPromise, jsonPromise]);
+                topology_json = new_json;
 
                 // Display the SVG content
                 topoDisplay.style.visibility = 'hidden';
-                topoDisplay.innerHTML = svg_text;
+                topoDisplay.innerHTML = new_svg;
 
                 // Parse SVG and perform other operations
                 parseSVG();
