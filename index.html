@@ -535,7 +535,7 @@
                 const {start, end} = parsePathCoordinates(pathData);
                 const start_name = pos_to_name[`${start.x}, ${start.y}`];
                 const end_name = pos_to_name[`${end.x}, ${end.y}`];
-                path.setAttribute('title', `${start_name} <-> ${end_name}`);
+                path.setAttribute('title', `${start_name} ⇄ ${end_name}`);
                 path.addEventListener('mousemove', showTooltip);
                 path.addEventListener('mouseout', hideTooltip);
             }
@@ -619,8 +619,8 @@
 
                 newPath1.setAttribute('id', `utilization-${start_node}-${end_node}`);
                 newPath2.setAttribute('id', `utilization-${end_node}-${start_node}`);
-                newPath1.setAttribute('title', `${start_node} -> ${end_node}`);
-                newPath2.setAttribute('title', `${end_node} -> ${start_node}`);
+                newPath1.setAttribute('title', `${start_node} → ${end_node}`);
+                newPath2.setAttribute('title', `${end_node} → ${start_node}`);
                 newPath1.setAttribute('d', bezierPath1);
                 newPath2.setAttribute('d', bezierPath2);
                 newPath1.setAttribute('class', 'utilization');
@@ -711,12 +711,12 @@
                 fwd_path.style['stroke-width'] = dynamicWidthCheckbox.checked ? `${fwd * 8}` : 3;
                 fwd_path.style['stroke'] = dynamicColorCheckbox.checked ? hot_rgb(fwd) : 'black';
                 fwd_path.style['opacity'] = dynamicOpacityCheckbox.checked ? fwd : 1.0;
-                fwd_path.setAttribute('title', `${link.source} -> ${link.target} ${(fwd * 100).toFixed(2)}%`);
+                fwd_path.setAttribute('title', `${link.source} → ${link.target} ${(fwd * 100).toFixed(2)}%`);
                 const bwd_path = svg.getElementById(`utilization-${link.target}-${link.source}`);
                 bwd_path.style['stroke-width'] = dynamicWidthCheckbox.checked ? `${bwd * 8}` : 3;
                 bwd_path.style['stroke'] = dynamicColorCheckbox.checked ? hot_rgb(bwd) : 'black';
                 bwd_path.style['opacity'] = dynamicOpacityCheckbox.checked ? bwd : 1.0;
-                bwd_path.setAttribute('title', `${link.target} -> ${link.source} ${(bwd * 100).toFixed(2)}%`);
+                bwd_path.setAttribute('title', `${link.target} → ${link.source} ${(bwd * 100).toFixed(2)}%`);
             }
         }
 
