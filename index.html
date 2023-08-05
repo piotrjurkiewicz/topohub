@@ -32,7 +32,7 @@
             margin: 0;
         }
 
-        header button {
+        header a.button {
             margin: 8px;
         }
 
@@ -111,11 +111,23 @@
             display: flex;
             align-items: center;
             gap: 16px;
+            justify-content: space-between;
         }
 
         #topoDownload a.button {
             padding-top: 2px;
             padding-bottom: 2px;
+            width: 80px;
+            height: 32px;
+        }
+
+        #topoDownload a.button svg {
+            flex-shrink: 0;
+        }
+
+        #topoDownloadSVGView .button_text {
+            font-size: 10px;
+            line-height: initial;
         }
 
         .box {
@@ -385,26 +397,33 @@
             <div>Name: <span>25/0</span></div>
             <h2>Download</h2>
             <div id="topoDownload">
-                <a id="topoDownloadJSON" class="button" href="" target="_blank">
+                <a id="topoDownloadJSON" class="button" href="#" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                         <path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z"/>
                         <path d="M10 15l5-6h-4V1H9v8H5l5 6z"/>
                     </svg>
                     <span class="button_text">JSON</span>
                 </a>
-                <a id="topoDownloadGML" class="button" href="" target="_blank">
+                <a id="topoDownloadGML" class="button" href="#" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                         <path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z"/>
                         <path d="M10 15l5-6h-4V1H9v8H5l5 6z"/>
                     </svg>
                     <span class="button_text">GML</span>
                 </a>
-                <a id="topoDownloadSVG" class="button" href="" target="_blank">
+                <a id="topoDownloadSVG" class="button" href="#" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                         <path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z"/>
                         <path d="M10 15l5-6h-4V1H9v8H5l5 6z"/>
                     </svg>
                     <span class="button_text">SVG</span>
+                </a>
+                <a id="topoDownloadSVGView" class="button" href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z"/>
+                        <path d="M10 15l5-6h-4V1H9v8H5l5 6z"/>
+                    </svg>
+                    <span class="button_text">SVG</br>view</span>
                 </a>
             </div>
         </div>
@@ -473,6 +492,7 @@
         const topoDownloadJSON = document.getElementById("topoDownloadJSON");
         const topoDownloadGML = document.getElementById("topoDownloadGML");
         const topoDownloadSVG = document.getElementById("topoDownloadSVG");
+        const topoDownloadSVGView = document.getElementById("topoDownloadSVGView");
 
         function parsePathCoordinates(pathData) {
             // Assuming the path data is in the format "Mx1,y1,x2,y2"
@@ -813,6 +833,16 @@
             populateTopologyList(topologyCatalog[selectedCategory][selectedTopology]);
         });
 
+        function downloadSVG() {
+            const svgContent = topoDisplay.innerHTML;
+            const svgBlob = new Blob([svgContent], {type: "image/svg+xml"});
+            const svgUrl = URL.createObjectURL(svgBlob);
+            topoDownloadSVGView.href = svgUrl;
+            topoDownloadSVGView.download = `${topology_json.graph.name}.svg`;
+        }
+
+        topoDownloadSVGView.addEventListener("click", downloadSVG);
+
         // Function to fetch and display the selected topology
         const fetchAndDisplayTopology = async (selectedCategory, selectedTopology) => {
             try {
@@ -851,6 +881,7 @@
                 topoDownloadJSON.href = `data/${selectedCategory}/${selectedTopology}.json`;
                 topoDownloadGML.href = `data/${selectedCategory}/${selectedTopology}.gml`;
                 topoDownloadSVG.href = `data/${selectedCategory}/${selectedTopology}.svg`;
+                topoDownloadSVGView.href = "#";
             } catch (error) {
                 // Handle errors during fetching and display an error message
                 topoDisplay.style.visibility = null;
