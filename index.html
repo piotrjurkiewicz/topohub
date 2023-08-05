@@ -25,10 +25,15 @@
             align-items: center;
             padding: 0 16px;
             border-bottom: 1px solid #d0d7de;
+            justify-content: space-between;
         }
 
         header h1 {
             margin: 0;
+        }
+
+        header button {
+            margin: 8px;
         }
 
         h2 {
@@ -77,6 +82,40 @@
             flex-direction: column;
             flex-grow: 1;
             max-height: calc(100vh - 64px);
+        }
+
+        a.button {
+            padding: 4px 6px 4px 6px;
+            background-color: #f6f8fa;
+            border: 1px solid #d8dee4;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            cursor: pointer;
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        a.button:hover {
+            background-color: #eaeef2;
+        }
+
+        .button_text {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        #topoDownload {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        #topoDownload a.button {
+            padding-top: 2px;
+            padding-bottom: 2px;
         }
 
         .box {
@@ -190,7 +229,7 @@
 
         #dynamicControl {
             display: flex;
-            justify-content: space-between;
+            gap: 8px;
         }
 
         #dynamicControl input {
@@ -235,28 +274,28 @@
             }
         }
 
-        svg text {
+        #topoDisplay svg text {
             pointer-events: none;
         }
 
-        svg circle {
+        #topoDisplay svg circle {
             cursor: pointer;
         }
 
-        svg circle:hover {
+        #topoDisplay svg circle:hover {
             fill: orange;
         }
 
-        svg path {
+        #topoDisplay svg path {
             fill: none;
             cursor: pointer;
         }
 
-        svg path:hover {
+        #topoDisplay svg path:hover {
             stroke: orange;
         }
 
-        svg path.utilization {
+        #topoDisplay svg path.utilization {
             stroke: black;
             stroke-width: 1;
         }
@@ -273,6 +312,11 @@
 <body>
 <header>
     <h1>TopoHub</h1>
+    <a class="button" href="https://github.com/piotrjurkiewicz/topohub" target="_blank">
+        <svg height="16" viewBox="0 0 16 16" width="16">
+            <path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path>
+        </svg>
+        <span class="button_text">Contribute your topology</span></a>
 </header>
 <div class="container">
     <div id="tooltip" class="tooltip" style="display: none;"></div>
@@ -307,12 +351,12 @@
             <span><label for="showNodeNames">Show node names: </label><input id="showNodeNames" type="checkbox"
                                                                              autocomplete="off" checked></span>
             <span><label for="showNodeNamesBelow">below nodes: </label><input id="showNodeNamesBelow"
-                                                                                              type="checkbox"
-                                                                                              autocomplete="off"></span></br>
+                                                                              type="checkbox"
+                                                                              autocomplete="off"></span></br>
             <span><label for="showNodeCircles">Show node circles: </label><input id="showNodeCircles" type="checkbox"
-                                                                                autocomplete="off" checked></span>
+                                                                                 autocomplete="off" checked></span>
 
-            <h3>ECMP routing link utilization</h3>
+            <h2>ECMP routing link utilization</h2>
             <div id="trafficModelDiv">
                 <label id="trafficModelLabel" for="trafficModelDropdown">Selected demands model:</label>
                 <select id="trafficModelDropdown">
@@ -339,6 +383,30 @@
             <h2>Topology info</h2>
             <div>Category: <span>Gabriel</span></div>
             <div>Name: <span>25/0</span></div>
+            <h2>Download</h2>
+            <div id="topoDownload">
+                <a id="topoDownloadJSON" class="button" href="" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z"/>
+                        <path d="M10 15l5-6h-4V1H9v8H5l5 6z"/>
+                    </svg>
+                    <span class="button_text">JSON</span>
+                </a>
+                <a id="topoDownloadGML" class="button" href="" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z"/>
+                        <path d="M10 15l5-6h-4V1H9v8H5l5 6z"/>
+                    </svg>
+                    <span class="button_text">GML</span>
+                </a>
+                <a id="topoDownloadSVG" class="button" href="" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z"/>
+                        <path d="M10 15l5-6h-4V1H9v8H5l5 6z"/>
+                    </svg>
+                    <span class="button_text">SVG</span>
+                </a>
+            </div>
         </div>
         <div id="topologyProperties" class="box">
             <h2>Topology properties</h2>
@@ -402,6 +470,9 @@
         const dynamicWidthCheckbox = document.getElementById("dynamicWidthCheckbox");
         const dynamicColorCheckbox = document.getElementById("dynamicColorCheckbox");
         const dynamicOpacityCheckbox = document.getElementById("dynamicOpacityCheckbox");
+        const topoDownloadJSON = document.getElementById("topoDownloadJSON");
+        const topoDownloadGML = document.getElementById("topoDownloadGML");
+        const topoDownloadSVG = document.getElementById("topoDownloadSVG");
 
         function parsePathCoordinates(pathData) {
             // Assuming the path data is in the format "Mx1,y1,x2,y2"
@@ -777,6 +848,9 @@
                 displayNodes();
                 topoDisplay.style.visibility = null;
                 trafficModelDropdown.disabled = false;
+                topoDownloadJSON.href = `data/${selectedCategory}/${selectedTopology}.json`;
+                topoDownloadGML.href = `data/${selectedCategory}/${selectedTopology}.gml`;
+                topoDownloadSVG.href = `data/${selectedCategory}/${selectedTopology}.svg`;
             } catch (error) {
                 // Handle errors during fetching and display an error message
                 topoDisplay.style.visibility = null;
