@@ -242,15 +242,15 @@
         #trafficModelLabel {
             min-width: fit-content;
             white-space: nowrap;
-            line-height: 20px;
+            line-height: 24px;
         }
 
-        #dynamicControl {
+        #displayControl, #dynamicControl {
             display: flex;
-            gap: 8px;
+            justify-content: space-between;
         }
 
-        #dynamicControl input {
+        #displayControl input, #dynamicControl input {
             margin: 5px 0 5px 5px;
         }
 
@@ -263,6 +263,7 @@
         #trafficModelDropdown {
             width: 100%;
             min-width: fit-content;
+            margin-bottom: 2px;
         }
 
         /* Adjust the styles for smaller screens */
@@ -376,17 +377,19 @@
         </div>
     </main>
     <aside class="sidebar-right">
-        <div id="displayControl" class="box">
+        <div class="box">
             <h2>Display controls</h2>
 
+            <div id="displayControl">
             <span><label for="showNodeNames">Show node names: </label><input id="showNodeNames" type="checkbox"
                                                                              autocomplete="off" checked></span>
             <span><label for="showNodeNamesBelow">below nodes: </label><input id="showNodeNamesBelow"
                                                                               type="checkbox"
-                                                                              autocomplete="off"></span></br>
-            <span><label for="showNodeCircles">Show node circles: </label><input id="showNodeCircles" type="checkbox"
+                                                                              autocomplete="off"></span>
+            <span><label for="showNodeCircles">circles: </label><input id="showNodeCircles" type="checkbox"
                                                                                  autocomplete="off" checked></span>
 
+            </div>
             <h2>ECMP routing link utilization</h2>
             <div id="trafficModelDiv">
                 <label id="trafficModelLabel" for="trafficModelDropdown">Selected demands model:</label>
@@ -398,12 +401,12 @@
                 </select>
             </div>
             <div id="dynamicControl">
-                <span id="dynamicControlLabel">Dynamic links:</span>
-                <span><label for="dynamicWidthCheckbox">Width</label><input id="dynamicWidthCheckbox" type="checkbox"
+                <span id="dynamicControlLabel">Visualize usage as link:</span>
+                <span><label for="dynamicWidthCheckbox">width</label><input id="dynamicWidthCheckbox" type="checkbox"
                                                                             autocomplete="off" checked></span>
-                <span><label for="dynamicColorCheckbox">Color</label><input id="dynamicColorCheckbox" type="checkbox"
+                <span><label for="dynamicColorCheckbox">color</label><input id="dynamicColorCheckbox" type="checkbox"
                                                                             autocomplete="off" checked></span>
-                <span><label for="dynamicOpacityCheckbox">Opacity</label><input id="dynamicOpacityCheckbox"
+                <span><label for="dynamicOpacityCheckbox">opacity</label><input id="dynamicOpacityCheckbox"
                                                                                 type="checkbox"
                                                                                 autocomplete="off"></span>
             </div>
@@ -413,8 +416,7 @@
         </div>
         <div id="topologyInfo" class="box">
             <h2>Topology info</h2>
-            <div>Category: <span>Gabriel</span></div>
-            <div>Name: <span>25/0</span></div>
+            <p>Gabriel graph topology with <b>25</b> nodes, synthetically generated using seed <b>0</b>.</p>
             <h2>Download</h2>
             <div id="topoDownload">
                 <a id="topoDownloadJSON" class="button" href="#" target="_blank">
