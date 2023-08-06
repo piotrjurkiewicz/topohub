@@ -319,6 +319,14 @@
             padding: 4px 6px;
         }
 
+        #trafficHistogram svg rect {
+            cursor: pointer;
+        }
+
+        #trafficHistogram svg rect:hover {
+            stroke: black;
+        }
+
     </style>
 </head>
 <body>
@@ -703,7 +711,7 @@
                 elm.setAttribute('r', '6');
             })
 
-            const top_links = Array(10).fill([0.0, undefined]);
+            const top_links = Array(20).fill([0.0, undefined]);
 
             displayBezierCurves();
             for (const link of links) {
@@ -733,35 +741,30 @@
                 }
             }
             console.log(top_links);
+            drawHistogram(top_links);
         }
 
-        // Sample array of 20 sorted values between 0 and 100
-        const values = [5, 12, 22, 30, 35, 40, 48, 55, 60, 62, 65, 70, 72, 76, 80, 85, 88, 92, 95, 100];
-
         // Function to draw the histogram plot
-        function drawHistogram() {
+        function drawHistogram(values) {
+            values.reverse();
             const svg = document.getElementById("trafficHistogram");
             const barWidth = svg.getAttribute("width") / values.length;
             const maxBarHeight = svg.getAttribute("height");
 
-
-            values.reverse();
             for (let i = 0; i < values.length; i++) {
                 const x = i * barWidth;
-                const barHeight = (values[i] / 100) * maxBarHeight;
+                const barHeight = values[i][0] * maxBarHeight;
 
                 const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
                 rect.setAttribute("x", x);
                 rect.setAttribute("y", maxBarHeight - barHeight);
                 rect.setAttribute("width", barWidth);
                 rect.setAttribute("height", barHeight);
-                rect.setAttribute("fill", "steelblue");
+                rect.setAttribute("fill", values[i][1].style['stroke']);
 
                 svg.appendChild(rect);
             }
         }
-
-        drawHistogram();
 
         function displayNodes() {
             const svg = topoDisplay.getElementsByTagName('svg')[0];
