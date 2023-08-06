@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
     <title>TopoHub</title>
     <style>
         * {
@@ -26,6 +27,11 @@
             padding: 0 16px;
             border-bottom: 1px solid #d0d7de;
             justify-content: space-between;
+        }
+
+        header div {
+            display: inherit;
+            gap: 12px;
         }
 
         header h1 {
@@ -343,12 +349,16 @@
 </head>
 <body>
 <header>
+    <div>
+    <img src="favicon.svg"/>
     <h1>TopoHub</h1>
+    </div>
     <a class="button" href="https://github.com/piotrjurkiewicz/topohub" target="_blank">
         <svg height="16" viewBox="0 0 16 16" width="16">
             <path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path>
         </svg>
-        <span class="button_text">Contribute your topology</span></a>
+        <span class="button_text">Contribute your topology</span>
+    </a>
 </header>
 <div class="container">
     <div id="tooltip" class="tooltip" style="display: none;"></div>
