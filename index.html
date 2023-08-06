@@ -703,6 +703,8 @@
                 elm.setAttribute('r', '6');
             })
 
+            const top_links = Array(10).fill([0.0, undefined]);
+
             displayBezierCurves();
             for (const link of links) {
                 const fwd = link.ecmp_fwd[mode] / 100;
@@ -712,12 +714,19 @@
                 fwd_path.style['stroke'] = dynamicColorCheckbox.checked ? hot_rgb(fwd) : 'black';
                 fwd_path.style['opacity'] = dynamicOpacityCheckbox.checked ? fwd : 1.0;
                 fwd_path.setAttribute('title', `${link.source} → ${link.target} ${(fwd * 100).toFixed(2)}%`);
+                if (fwd > top_links[top_links.length - 1][0]) {
+                    top_links[top_links.length - 1] = [fwd, fwd_path];
+                    top_links.sort((a, b) => {
+                        return a[0] - b[0];
+                    })
+                }
                 const bwd_path = svg.getElementById(`utilization-${link.target}-${link.source}`);
                 bwd_path.style['stroke-width'] = dynamicWidthCheckbox.checked ? `${bwd * 8}` : 3;
                 bwd_path.style['stroke'] = dynamicColorCheckbox.checked ? hot_rgb(bwd) : 'black';
                 bwd_path.style['opacity'] = dynamicOpacityCheckbox.checked ? bwd : 1.0;
                 bwd_path.setAttribute('title', `${link.target} → ${link.source} ${(bwd * 100).toFixed(2)}%`);
             }
+            console.log(top_links);
         }
 
         function displayNodes() {
