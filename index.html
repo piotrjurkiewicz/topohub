@@ -235,7 +235,7 @@
 
         #trafficHistogramDiv {
             margin-top: 4px;
-            border: 1px solid #d8dee4;
+            border: 1px solid transparent;
             border-radius: 3px;
         }
 
@@ -319,7 +319,7 @@
         }
 
         .tooltip {
-            position: absolute;
+            position: fixed;
             background: white;
             border: 1px solid black;
             padding: 4px 6px;
@@ -327,10 +327,11 @@
 
         #trafficHistogram rect {
             cursor: pointer;
+            fill-opacity: 0.7;
         }
 
         #trafficHistogram rect:hover {
-            stroke: black;
+            fill-opacity: 0.3;
         }
 
     </style>
