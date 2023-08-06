@@ -70,7 +70,7 @@
         }
 
         .sidebar-right {
-            width: 400px;
+            width: 398px;
             padding-left: 0;
             font-size: 14px;
             flex-shrink: 0;
@@ -388,7 +388,7 @@
                                                                                 type="checkbox"
                                                                                 autocomplete="off"></span>
             </div>
-            <p>Description: This is the first topology.</p>
+            <svg id="trafficHistogram" width="340" height="160" xmlns="http://www.w3.org/2000/svg"></svg>
 
         </div>
         <div id="topologyInfo" class="box">
@@ -714,8 +714,8 @@
                 fwd_path.style['stroke'] = dynamicColorCheckbox.checked ? hot_rgb(fwd) : 'black';
                 fwd_path.style['opacity'] = dynamicOpacityCheckbox.checked ? fwd : 1.0;
                 fwd_path.setAttribute('title', `${link.source} → ${link.target} ${(fwd * 100).toFixed(2)}%`);
-                if (fwd > top_links[top_links.length - 1][0]) {
-                    top_links[top_links.length - 1] = [fwd, fwd_path];
+                if (fwd > top_links[0][0]) {
+                    top_links[0] = [fwd, fwd_path];
                     top_links.sort((a, b) => {
                         return a[0] - b[0];
                     })
@@ -725,9 +725,43 @@
                 bwd_path.style['stroke'] = dynamicColorCheckbox.checked ? hot_rgb(bwd) : 'black';
                 bwd_path.style['opacity'] = dynamicOpacityCheckbox.checked ? bwd : 1.0;
                 bwd_path.setAttribute('title', `${link.target} → ${link.source} ${(bwd * 100).toFixed(2)}%`);
+                if (bwd > top_links[0][0]) {
+                    top_links[0] = [bwd, bwd_path];
+                    top_links.sort((a, b) => {
+                        return a[0] - b[0];
+                    })
+                }
             }
             console.log(top_links);
         }
+
+        // Sample array of 20 sorted values between 0 and 100
+        const values = [5, 12, 22, 30, 35, 40, 48, 55, 60, 62, 65, 70, 72, 76, 80, 85, 88, 92, 95, 100];
+
+        // Function to draw the histogram plot
+        function drawHistogram() {
+            const svg = document.getElementById("trafficHistogram");
+            const barWidth = svg.getAttribute("width") / values.length;
+            const maxBarHeight = svg.getAttribute("height");
+
+
+            values.reverse();
+            for (let i = 0; i < values.length; i++) {
+                const x = i * barWidth;
+                const barHeight = (values[i] / 100) * maxBarHeight;
+
+                const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                rect.setAttribute("x", x);
+                rect.setAttribute("y", maxBarHeight - barHeight);
+                rect.setAttribute("width", barWidth);
+                rect.setAttribute("height", barHeight);
+                rect.setAttribute("fill", "steelblue");
+
+                svg.appendChild(rect);
+            }
+        }
+
+        drawHistogram();
 
         function displayNodes() {
             const svg = topoDisplay.getElementsByTagName('svg')[0];
