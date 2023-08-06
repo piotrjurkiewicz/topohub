@@ -70,7 +70,7 @@
         }
 
         .sidebar-right {
-            width: 398px;
+            width: 400px;
             padding-left: 0;
             font-size: 14px;
             flex-shrink: 0;
@@ -233,6 +233,12 @@
             gap: 24px;
         }
 
+        #trafficHistogramDiv {
+            margin-top: 4px;
+            border: 1px solid #d8dee4;
+            border-radius: 3px;
+        }
+
         #trafficModelLabel {
             min-width: fit-content;
             white-space: nowrap;
@@ -319,11 +325,11 @@
             padding: 4px 6px;
         }
 
-        #trafficHistogram svg rect {
+        #trafficHistogram rect {
             cursor: pointer;
         }
 
-        #trafficHistogram svg rect:hover {
+        #trafficHistogram rect:hover {
             stroke: black;
         }
 
@@ -396,8 +402,9 @@
                                                                                 type="checkbox"
                                                                                 autocomplete="off"></span>
             </div>
-            <svg id="trafficHistogram" width="340" height="160" xmlns="http://www.w3.org/2000/svg"></svg>
-
+            <div id="trafficHistogramDiv">
+                <svg id="trafficHistogram" width="340" height="160" xmlns="http://www.w3.org/2000/svg"></svg>
+            </div>
         </div>
         <div id="topologyInfo" class="box">
             <h2>Topology info</h2>
@@ -750,6 +757,7 @@
             const svg = document.getElementById("trafficHistogram");
             const barWidth = svg.getAttribute("width") / values.length;
             const maxBarHeight = svg.getAttribute("height");
+            svg.innerHTML = "";
 
             for (let i = 0; i < values.length; i++) {
                 const x = i * barWidth;
@@ -760,8 +768,10 @@
                 rect.setAttribute("y", maxBarHeight - barHeight);
                 rect.setAttribute("width", barWidth);
                 rect.setAttribute("height", barHeight);
-                rect.setAttribute("fill", values[i][1].style['stroke']);
-
+                rect.setAttribute("fill", hot_rgb(values[i][0]));
+                rect.setAttribute('title', values[i][1].getAttribute('title'));
+                rect.addEventListener('mousemove', showTooltip);
+                rect.addEventListener('mouseout', hideTooltip);
                 svg.appendChild(rect);
             }
         }
