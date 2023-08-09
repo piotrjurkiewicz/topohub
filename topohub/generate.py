@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 import http.client as http
 import json
 import os
@@ -48,6 +47,15 @@ class TopoGenerator:
         json.encoder.float = float
 
 class SNDLibGenerator(TopoGenerator):
+    """
+    Generator of topologies from the SNDLib.
+
+    Source of data: http://sndlib.zib.de
+
+    Orlowski, S., Wessäly, R., Pióro, M. and Tomaszewski, A. (2010),
+    SNDlib 1.0—Survivable Network Design Library. Networks, 55: 276-286.
+    https://doi.org/10.1002/net.20371
+    """
 
     @classmethod
     def download_topo(cls, name):
@@ -60,6 +68,19 @@ class SNDLibGenerator(TopoGenerator):
 
     @classmethod
     def generate_topo(cls, name):
+        """
+        Download topology specified by name from SNDLib and generate its JSON.
+
+        Parameters
+        ----------
+        name : str
+            topology name
+
+        Returns
+        -------
+        dict
+            topology graph in NetworkX node-link format
+        """
 
         mode = None
         nodes = []
@@ -113,6 +134,15 @@ class SNDLibGenerator(TopoGenerator):
         return {'directed': False, 'multigraph': False, 'graph': {'name': name, 'demands': demands}, 'nodes': nodes, 'links': links}
 
 class TopoZooGenerator(TopoGenerator):
+    """
+    Generator of topologies from the Internet Topology Zoo.
+
+    Source of data: http://www.topology-zoo.org/
+
+    S. Knight, H. X. Nguyen, N. Falkner, R. Bowden and M. Roughan,
+    The Internet Topology Zoo. IEEE Journal on Selected Areas in Communications, vol. 29, no. 9, pp. 1765-1775.
+    https://doi.org/10.1109/JSAC.2011.111002
+    """
 
     @classmethod
     def download_topo(cls, name):
@@ -125,6 +155,19 @@ class TopoZooGenerator(TopoGenerator):
 
     @classmethod
     def generate_topo(cls, name):
+        """
+        Download topology specified by name from Topology Zoo and generate its JSON.
+
+        Parameters
+        ----------
+        name : str
+            topology name
+
+        Returns
+        -------
+        dict
+            topology graph in NetworkX node-link format
+        """
 
         mode = None
         node_id, node, lon, lat, node0, node1 = None, None, None, None, None, None
@@ -186,10 +229,37 @@ class TopoZooGenerator(TopoGenerator):
 
 
 class GabrielGenerator(TopoGenerator):
+    """
+    Generator of Gabriel graph synthetic topologies.
+
+    E. K. Çetinkaya, M. J. F. Alenazi, Y. Cheng, A. M. Peck and J. P. G. Sterbenz,
+    On the fitness of geographic graph generators for modelling physical level topologies.
+    2013 5th International Congress on Ultra Modern Telecommunications and Control Systems and Workshops (ICUMT), Almaty, Kazakhstan, 2013, pp. 38-45.
+    https://doi.org/10.1109/ICUMT.2013.6798402.
+
+    K. Ruben Gabriel , Robert R. Sokal,
+    A New Statistical Approach to Geographic Variation Analysis. Systematic Biology, Volume 18, Issue 3, September 1969, Pages 259–278.
+    https://doi.org/10.2307/2412323
+    """
     scaling = False
 
     @classmethod
     def generate_topo(cls, nnodes, seed):
+        """
+        Generate Gabriel graph topology with given number of nodes.
+
+        Parameters
+        ----------
+        nnodes : int
+            number of nodes
+        seed : int
+            random seed
+
+        Returns
+        -------
+        dict
+            topology graph in NetworkX node-link format
+        """
 
         assert nnodes <= MAX_GABRIEL_NODES
 
@@ -249,9 +319,37 @@ class GabrielGenerator(TopoGenerator):
 
 
 class NumpyGabrielGenerator(TopoGenerator):
+    """
+    Generator of Gabriel graph synthetic topologies basen on NumPy.
+
+    E. K. Çetinkaya, M. J. F. Alenazi, Y. Cheng, A. M. Peck and J. P. G. Sterbenz,
+    On the fitness of geographic graph generators for modelling physical level topologies.
+    2013 5th International Congress on Ultra Modern Telecommunications and Control Systems and Workshops (ICUMT), Almaty, Kazakhstan, 2013, pp. 38-45.
+    https://doi.org/10.1109/ICUMT.2013.6798402.
+
+    K. Ruben Gabriel , Robert R. Sokal,
+    A New Statistical Approach to Geographic Variation Analysis. Systematic Biology, Volume 18, Issue 3, September 1969, Pages 259–278.
+    https://doi.org/10.2307/2412323
+    """
 
     @classmethod
     def generate_topo(cls, nnodes, seed):
+        """
+        Generate Gabriel graph topology with given number of nodes.
+
+        Parameters
+        ----------
+        nnodes : int
+            number of nodes
+        seed : int
+            random seed
+
+        Returns
+        -------
+        dict
+            topology graph in NetworkX node-link format
+        """
+
         import numpy as np
 
         assert nnodes <= MAX_GABRIEL_NODES

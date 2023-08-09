@@ -8,11 +8,20 @@ import mininet.topo
 import topohub.data
 
 class Demands(dict):
+    """Demands dictionary"""
     def __missing__(self, key):
         return 0.0
 
     @property
     def maximum(self):
+        """
+        The maximum demand value in dictionary.
+
+        Returns
+        -------
+        float
+            maximum demand value
+        """
         try:
             return self.__maximum
         except AttributeError:
@@ -23,6 +32,25 @@ class Demands(dict):
             return self.__maximum
 
     def get(self, k, default=0.0, sym=False, norm=False):
+        """
+        Return the demand value for (src, dst) node pair if specified in the dictionary, else default.
+
+        Parameters
+        ----------
+        k : (str, str)
+            (src, dst) node pair
+        default : float, default 0.0
+            default demand to return if not specified in the dictionary
+        sym: bool, default False
+            return demand for (dst, src) instead default if demand for (src, dst) not specified in dictionary
+        norm: bool, default False
+            normalize returned demands to [0.0 - 1.0]
+
+        Returns
+        -------
+        float
+            demand between pair of nodes
+        """
         if k in self:
             val = self[k]
         else:
@@ -74,6 +102,16 @@ class TopoDict(dict):
             raise KeyError
 
 TOPO = TopoDict()
+"""
+Use this dictionary to access topologies from the repository.
+
+Example:
+
+    import topolib.mininet
+    
+    topo_cls = topolib.mininet.TOPO['gabriel/25/0']
+    topo_cls = topolib.mininet.TOPO['sndlib/germany50']
+"""
 
 class AutoHostTopo(mininet.topo.Topo):
     """Adds k hosts per switch"""

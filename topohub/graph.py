@@ -65,14 +65,14 @@ def all_shortest_paths_all_targets(g, source, weight=None, limit=None):
     source : object
         source node
     weight : str | function, default None
-        name of edge attribute or functions returning edge weight
+        name of edge attribute or a function returning edge weight
     limit : int, default None
-        limits the number of found shortest paths
+        limit the number of shortest paths to find
 
     Returns
     -------
     dict[object, list], dict[object, int]
-        paths and distances from source node to all target nodes
+        paths and distances from the source node to all other nodes
     """
 
     import networkx as nx
@@ -129,14 +129,14 @@ def all_shortest_nhops_all_targets(g, source, weight=None, limit=None):
     source : object
         source node
     weight : str | function, default None
-        name of edge attribute or functions returning edge weight
+        name of edge attribute or a function returning edge weight
     limit : int, default None
-        limits the number of found shortest paths
+        limit the number of shortest paths to find
 
     Returns
     -------
     dict[object, set], dict[object, int]
-        next hops and distances from source node to all target nodes
+        next hops and distances from the source node to all other nodes
     """
 
     import networkx as nx
@@ -469,7 +469,7 @@ def path_stats(g):
     Returns
     -------
     dict[(object, object), (int, int, float, int, float, float, float, object, object)]
-        dictionary of paths statistics between (src, dst) node pairs in format (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst)
+        dictionary of paths statistics between (src, dst) node pairs in a format (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst)
     """
 
     import networkx as nx
@@ -522,7 +522,7 @@ def path_stats(g):
 
 def path_stats_print(stats, filename=None):
     """
-    Print statistics for paths between all node pairs.
+    Print statistics for paths between all node pairs in the CSV format.
 
     Parameters
     ----------
@@ -542,7 +542,7 @@ def path_stats_print(stats, filename=None):
 
 def calculate_utilization(g):
     """
-    Calculate link utilization for ECMP shortest path routing and save it as edges properties.
+    Calculate link utilizations for ECMP shortest path routing and save them as edges properties.
 
     Parameters
     ----------
