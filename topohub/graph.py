@@ -33,11 +33,12 @@ def haversine(src, dst):
 
 def gini(list_of_values):
     """
-    Calculate the Gini coefficient of a give list of values.
+    Calculate the Gini coefficient of a given list of values.
 
     Parameters
     ----------
-    list_of_values : lits[float]
+    list_of_values : list[float]
+        given list of values
 
     Returns
     -------
@@ -55,16 +56,23 @@ def gini(list_of_values):
 
 def all_shortest_paths_all_targets(g, source, weight=None, limit=None):
     """
-    Calculate the Gini coefficient of a give list of values.
+    Find all shortest paths from a source node to all other nodes.
 
     Parameters
     ----------
-    list_of_values : lits[float]
+    g : networkx.Graph
+        network graph
+    source : object
+        source node
+    weight : str | function, default None
+        name of edge attribute or functions returning edge weight
+    limit : int, default None
+        limits the number of found shortest paths
 
     Returns
     -------
-    float
-        calculated Gini coefficient
+    dict[object, list], dict[object, int]
+        paths and distances from source node to all target nodes
     """
 
     import networkx as nx
@@ -111,6 +119,26 @@ def all_shortest_paths_all_targets(g, source, weight=None, limit=None):
     return paths, dist
 
 def all_shortest_nhops_all_targets(g, source, weight=None, limit=None):
+    """
+    Find all next hops from a source node to all other nodes.
+
+    Parameters
+    ----------
+    g : networkx.Graph
+        network graph
+    source : object
+        source node
+    weight : str | function, default None
+        name of edge attribute or functions returning edge weight
+    limit : int, default None
+        limits the number of found shortest paths
+
+    Returns
+    -------
+    dict[object, set], dict[object, int]
+        next hops and distances from source node to all target nodes
+    """
+
     import networkx as nx
 
     nhops = {}
@@ -155,6 +183,22 @@ def all_shortest_nhops_all_targets(g, source, weight=None, limit=None):
     return nhops, dist
 
 def all_disjoint_paths(g, ff):
+    """
+    Find all disjoint paths between all node pairs in a graph.
+
+    Parameters
+    ----------
+    g : networkx.Graph
+        network graph
+    ff : function
+        function for computing the maximum flow among a pair of nodes
+
+    Returns
+    -------
+    dict[(object, object), list]
+        dictionary of lists of disjoint paths between (src, dst) node pairs
+    """
+
     import networkx as nx
     h = nx.algorithms.connectivity.build_auxiliary_edge_connectivity(g)
     r = nx.algorithms.flow.build_residual_network(h, 'capacity')
@@ -164,6 +208,22 @@ def all_disjoint_paths(g, ff):
     return result
 
 def all_disjoint_paths_scipy(g, ff):
+    """
+    Find all disjoint paths between all node pairs in a graph using scipy.
+
+    Parameters
+    ----------
+    g : networkx.Graph
+        network graph
+    ff : function
+        function for computing the maximum flow among a pair of nodes
+
+    Returns
+    -------
+    dict[(object, object), list]
+        dictionary of lists of disjoint paths between (src, dst) node pairs
+    """
+
     import networkx as nx
     import scipy.sparse
     mat = nx.convert_matrix.to_scipy_sparse_matrix(g)
@@ -212,6 +272,20 @@ def all_disjoint_paths_scipy(g, ff):
     return result
 
 def shortest_disjoint_paths_slow(g):
+    """
+    Find all shortest disjoint paths between all node pairs in a graph.
+
+    Parameters
+    ----------
+    g : networkx.Graph
+        network graph
+
+    Returns
+    -------
+    dict[(object, object), list]
+        dictionary of lists of disjoint paths between (src, dst) node pairs
+    """
+
     import networkx as nx
     result = {}
     for src, dst in itertools.permutations(g, 2):
@@ -236,6 +310,22 @@ def shortest_disjoint_paths_slow(g):
     return result
 
 def shortest_disjoint_paths(g, ff):
+    """
+    Find all shortest disjoint paths between all node pairs in a graph.
+
+    Parameters
+    ----------
+    g : networkx.Graph
+        network graph
+    ff : function
+        function for computing the maximum flow among a pair of nodes
+
+    Returns
+    -------
+    dict[(object, object), list]
+        dictionary of lists of disjoint paths between (src, dst) node pairs
+    """
+
     import networkx as nx
     nhops = {}
     for n in g:
@@ -261,6 +351,19 @@ def shortest_disjoint_paths(g, ff):
     return result
 
 def save_topo_graph_pdf(g, filename=None, plot_aspect=1.0):
+    """
+    Generate and save topology graph as PDF file using matplotlib.
+
+    Parameters
+    ----------
+    g : networkx.Graph
+        network graph
+    filename : str, default None
+        filename
+    plot_aspect : float, default 1.0
+        plot aspect ratio
+    """
+
     import networkx as nx
     import matplotlib
     matplotlib.use('Agg')
@@ -293,6 +396,20 @@ def save_topo_graph_pdf(g, filename=None, plot_aspect=1.0):
     plt.close('all')
 
 def minmax(pos):
+    """
+    Find min and max in node positions dictionary.
+
+    Parameters
+    ----------
+    pos : dict
+        node positions dictionary
+
+    Returns
+    -------
+    (float, float, float, float)
+        max_x, max_y, min_x, min_y
+    """
+
     min0 = min(v[0] for v in pos.values())
     max0 = max(v[0] for v in pos.values())
     min1 = min(v[1] for v in pos.values())
@@ -300,6 +417,19 @@ def minmax(pos):
     return max0, max1, min0, min1
 
 def save_topo_graph_svg(g, filename=None, scaling=True):
+    """
+    Generate and save topology graph as SVG file.
+
+    Parameters
+    ----------
+    g : networkx.Graph
+        network graph
+    filename : str, default None
+        filename
+    scaling : bool, default True
+        scale width and height of SVG to topology diameter
+    """
+
     pos = {}
     for node in g.nodes(data=True):
         pos[node[0]] = node[1]['pos'][0], node[1]['pos'][1]
@@ -328,6 +458,20 @@ def save_topo_graph_svg(g, filename=None, scaling=True):
         f.write('</svg>\n')
 
 def path_stats(g):
+    """
+    Calculate statistics for paths between all node pairs.
+
+    Parameters
+    ----------
+    g : networkx.Graph
+        network graph
+
+    Returns
+    -------
+    dict[(object, object), (int, int, float, int, float, float, float, object, object)]
+        dictionary of paths statistics between (src, dst) node pairs in format (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst)
+    """
+
     import networkx as nx
     for ff in [
         nx.algorithms.flow.edmonds_karp,
@@ -377,6 +521,17 @@ def path_stats(g):
     return stats
 
 def path_stats_print(stats, filename=None):
+    """
+    Print statistics for paths between all node pairs.
+
+    Parameters
+    ----------
+    stats : dict
+        dictionary of paths statistics between (src, dst) node pairs
+    filename : str, default None
+        filename
+    """
+
     table = sorted(stats.values(), reverse=True, key=lambda r: (r[0:2], sorted(r[-2:]), r[-1]))
     text = 'adp_number,sdp_number,avg_adp_hops,avg_sdp_hops,avg_adp_length,avg_sdp_length,demand,src,dst\n'
     text += '\n'.join(','.join(f'{v:.2f}' if isinstance(v, float) else str(v) for v in row) for row in table)
@@ -386,6 +541,15 @@ def path_stats_print(stats, filename=None):
         open(filename + '.csv', 'w').write(text)
 
 def calculate_utilization(g):
+    """
+    Calculate link utilization for ECMP shortest path routing and save it as edges properties.
+
+    Parameters
+    ----------
+    g : networkx.Graph
+        network graph
+    """
+
     nhops = {}
     for n in g:
         nhops[n] = all_shortest_nhops_all_targets(g, n)[0]
@@ -415,9 +579,23 @@ def calculate_utilization(g):
                     g.edges[src, dst].setdefault('ecmp_fwd', {})[mode] = util.get((src, dst), 0.0) / max_util * 100
                     g.edges[src, dst].setdefault('ecmp_bwd', {})[mode] = util.get((dst, src), 0.0) / max_util * 100
 
-    return g
-
 def topo_stats(g, ps=None):
+    """
+    Calculate topology properties statistics.
+
+    Parameters
+    ----------
+    g : networkx.Graph
+        network graph
+    ps : dict, default None
+        dictionary of paths statistics between (src, dst) node pairs
+
+    Returns
+    -------
+    dict[str, int | float]
+        dictionary topology properties
+    """
+
     import networkx as nx
 
     min_link_length = min(e['dist'] for u, v, e in g.edges(data=True))
@@ -496,6 +674,19 @@ def topo_stats(g, ps=None):
     return stats
 
 def topo_stats_print(stats, name, filename=None):
+    """
+    Print topology statistics in a LaTeX format.
+
+    Parameters
+    ----------
+    stats : dict
+        dictionary topology properties
+    name : str
+        topology name
+    filename : str, default None
+        filename
+    """
+
     just = 38
     text = \
         'Topology name'.ljust(just) + ' & %s' % name.replace('_', '\\_') + '\n\n' + \
