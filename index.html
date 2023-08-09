@@ -208,7 +208,7 @@
 
         #topologyPropertiesList {
             padding: 0;
-            margin: 0;
+            margin: 16px 0 0 0;
             border: 1px solid #d8dee4;
             border-radius: 3px;
             font-size: 12px;
@@ -248,7 +248,7 @@
 
         #trafficHistogramDiv {
             margin-top: 4px;
-            border: 1px solid #d8dee473;
+            border: 1px solid transparent;
             border-radius: 3px;
         }
 
@@ -770,7 +770,6 @@
                     })
                 }
             }
-            console.log(top_links);
             drawHistogram(top_links);
         }
 
@@ -957,19 +956,6 @@
                 // Display the SVG content
                 topoDisplay.style.visibility = 'hidden';
                 topoDisplay.innerHTML = new_svg;
-
-                // Parse SVG and perform other operations
-                parseSVG();
-                populateTopologyProperties(topology_json['graph']['stats']);
-                visualizeTraffic();
-                displayNodes();
-                topoDisplay.style.visibility = null;
-                trafficModelDropdown.disabled = false;
-                trafficModelDropdownOriginal.disabled = selectedCategory !== 'sndlib';
-                topoDownloadJSON.href = `data/${selectedCategory}/${selectedTopology}.json`;
-                topoDownloadGML.href = `data/${selectedCategory}/${selectedTopology}.gml`;
-                topoDownloadSVG.href = `data/${selectedCategory}/${selectedTopology}.svg`;
-                topoDownloadSVGView.href = "#";
             } catch (error) {
                 // Handle errors during fetching and display an error message
                 topoDisplay.style.visibility = null;
@@ -979,7 +965,20 @@
                 trafficModelDropdown.disabled = true;
                 topology_json = null;
                 drawHistogram(null);
+                return;
             }
+            // Parse SVG and perform other operations
+            parseSVG();
+            populateTopologyProperties(topology_json['graph']['stats']);
+            visualizeTraffic();
+            displayNodes();
+            topoDisplay.style.visibility = null;
+            trafficModelDropdown.disabled = false;
+            trafficModelDropdownOriginal.disabled = selectedCategory !== 'sndlib';
+            topoDownloadJSON.href = `data/${selectedCategory}/${selectedTopology}.json`;
+            topoDownloadGML.href = `data/${selectedCategory}/${selectedTopology}.gml`;
+            topoDownloadSVG.href = `data/${selectedCategory}/${selectedTopology}.svg`;
+            topoDownloadSVGView.href = "#";
         };
         firstLevelDropdown.value = 'gabriel';
         firstLevelDropdown.dispatchEvent(new Event('change'));
