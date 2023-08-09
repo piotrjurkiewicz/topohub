@@ -44,6 +44,8 @@
 
         h2 {
             font-size: 16px;
+            margin-top: 16px;
+            margin-bottom: 8px;
         }
 
         h3 {
@@ -73,6 +75,10 @@
             display: flex;
             flex-direction: column;
             flex-shrink: 0;
+        }
+
+        .sidebar-left h2 {
+            margin-bottom: 16px;
         }
 
         .sidebar-right {
@@ -236,24 +242,25 @@
         #trafficModelDiv {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             gap: 24px;
         }
 
         #trafficHistogramDiv {
             margin-top: 4px;
-            border: 1px solid transparent;
+            border: 1px solid #d8dee473;
             border-radius: 3px;
         }
 
         #trafficModelLabel {
             min-width: fit-content;
             white-space: nowrap;
-            line-height: 24px;
         }
 
         #displayControl, #dynamicControl {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
 
         #displayControl input, #dynamicControl input {
@@ -263,13 +270,11 @@
         #dynamicControlLabel {
             min-width: fit-content;
             white-space: nowrap;
-            line-height: 24px;
         }
 
         #trafficModelDropdown {
             width: 100%;
             min-width: fit-content;
-            margin-bottom: 2px;
         }
 
         /* Adjust the styles for smaller screens */
@@ -350,8 +355,8 @@
 <body>
 <header>
     <div>
-    <img src="favicon.svg"/>
-    <h1>TopoHub</h1>
+        <img src="favicon.svg"/>
+        <h1>TopoHub</h1>
     </div>
     <a class="button" href="https://github.com/piotrjurkiewicz/topohub" target="_blank">
         <svg height="16" viewBox="0 0 16 16" width="16">
@@ -393,11 +398,11 @@
             <div id="displayControl">
             <span><label for="showNodeNames">Show node names: </label><input id="showNodeNames" type="checkbox"
                                                                              autocomplete="off" checked></span>
-            <span><label for="showNodeNamesBelow">below nodes: </label><input id="showNodeNamesBelow"
-                                                                              type="checkbox"
-                                                                              autocomplete="off"></span>
-            <span><label for="showNodeCircles">circles: </label><input id="showNodeCircles" type="checkbox"
-                                                                                 autocomplete="off" checked></span>
+                <span><label for="showNodeNamesBelow">below nodes: </label><input id="showNodeNamesBelow"
+                                                                                  type="checkbox"
+                                                                                  autocomplete="off"></span>
+                <span><label for="showNodeCircles">circles: </label><input id="showNodeCircles" type="checkbox"
+                                                                           autocomplete="off" checked></span>
 
             </div>
             <h2>ECMP routing link utilization</h2>
@@ -405,9 +410,9 @@
                 <label id="trafficModelLabel" for="trafficModelDropdown">Selected demands model:</label>
                 <select id="trafficModelDropdown">
                     <option value="none" selected>None</option>
-                    <option value="org">Original</option>
                     <option value="uni">Uniform</option>
                     <option value="deg">Degree</option>
+                    <option id="trafficModelDropdownOriginal" value="org" disabled>Original</option>
                 </select>
             </div>
             <div id="dynamicControl">
@@ -517,6 +522,7 @@
         const showNodeNamesBelow = document.getElementById("showNodeNamesBelow");
         const showNodeCircles = document.getElementById("showNodeCircles");
         const trafficModelDropdown = document.getElementById("trafficModelDropdown");
+        const trafficModelDropdownOriginal = document.getElementById("trafficModelDropdownOriginal");
         const dynamicWidthCheckbox = document.getElementById("dynamicWidthCheckbox");
         const dynamicColorCheckbox = document.getElementById("dynamicColorCheckbox");
         const dynamicOpacityCheckbox = document.getElementById("dynamicOpacityCheckbox");
@@ -725,6 +731,7 @@
                     elm.style['stroke'] = null;
                     elm.setAttribute('r', '10');
                 })
+                drawHistogram(null);
                 return;
             }
 
@@ -769,26 +776,33 @@
 
         // Function to draw the histogram plot
         function drawHistogram(values) {
-            values.reverse();
-            const svg = document.getElementById("trafficHistogram");
-            const barWidth = svg.getAttribute("width") / values.length;
-            const maxBarHeight = svg.getAttribute("height");
-            svg.innerHTML = "";
+            if (values) {
+                values.reverse();
+                const svg = document.getElementById("trafficHistogram");
+                const barWidth = svg.getAttribute("width") / values.length;
+                const maxBarHeight = svg.getAttribute("height");
+                svg.innerHTML = "";
 
-            for (let i = 0; i < values.length; i++) {
-                const x = i * barWidth;
-                const barHeight = values[i][0] * maxBarHeight;
+                for (let i = 0; i < values.length; i++) {
+                    const x = i * barWidth;
+                    const barHeight = values[i][0] * maxBarHeight;
 
-                const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-                rect.setAttribute("x", x);
-                rect.setAttribute("y", maxBarHeight - barHeight);
-                rect.setAttribute("width", barWidth);
-                rect.setAttribute("height", barHeight);
-                rect.setAttribute("fill", hot_rgb(values[i][0]));
-                rect.setAttribute('title', values[i][1].getAttribute('title'));
-                rect.addEventListener('mousemove', showTooltip);
-                rect.addEventListener('mouseout', hideTooltip);
-                svg.appendChild(rect);
+                    const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                    rect.setAttribute("x", x);
+                    rect.setAttribute("y", maxBarHeight - barHeight);
+                    rect.setAttribute("width", barWidth);
+                    rect.setAttribute("height", barHeight);
+                    rect.setAttribute("fill", hot_rgb(values[i][0]));
+                    rect.setAttribute('title', values[i][1].getAttribute('title'));
+                    rect.addEventListener('mousemove', showTooltip);
+                    rect.addEventListener('mouseout', hideTooltip);
+                    svg.appendChild(rect);
+                }
+            } else {
+                const hist = document.getElementById("trafficHistogram");
+                const histWidth = hist.getAttribute("width");
+                const histHeight = hist.getAttribute("height");
+                hist.innerHTML = `<text x="${histWidth / 2}" y="${histHeight / 2}" text-anchor="middle">Please select demands model to see histogram</text>`;
             }
         }
 
@@ -951,6 +965,7 @@
                 displayNodes();
                 topoDisplay.style.visibility = null;
                 trafficModelDropdown.disabled = false;
+                trafficModelDropdownOriginal.disabled = selectedCategory !== 'sndlib';
                 topoDownloadJSON.href = `data/${selectedCategory}/${selectedTopology}.json`;
                 topoDownloadGML.href = `data/${selectedCategory}/${selectedTopology}.gml`;
                 topoDownloadSVG.href = `data/${selectedCategory}/${selectedTopology}.svg`;
@@ -963,6 +978,7 @@
                 trafficModelDropdown.value = 'none';
                 trafficModelDropdown.disabled = true;
                 topology_json = null;
+                drawHistogram(null);
             }
         };
         firstLevelDropdown.value = 'gabriel';

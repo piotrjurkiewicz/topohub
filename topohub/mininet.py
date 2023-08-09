@@ -15,7 +15,7 @@ class Demands(dict):
     @property
     def maximum(self):
         """
-        The maximum demand value in dictionary.
+        The maximum demand value in the dictionary.
 
         Returns
         -------
@@ -106,6 +106,8 @@ TOPO = TopoDict()
 Use this dictionary to access topologies from the repository.
 
 Example:
+
+.. code-block:: python
 
     import topolib.mininet
     
