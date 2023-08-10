@@ -990,7 +990,7 @@
                 // Handle errors during fetching and display an error message
                 topoDisplay.style.visibility = null;
                 topoDisplay.innerHTML = "<p>Error loading topology data.</p>";
-                topologyInfoParagraph.innerHTML = "";
+                topologyInfoParagraph.innerHTML = "Please select a topology from the left sidebar.";
                 topologyPropertiesList.innerHTML = "";
                 trafficModelDropdown.value = 'none';
                 trafficModelDropdown.disabled = true;
@@ -1006,6 +1006,7 @@
             topoDisplay.style.visibility = null;
             trafficModelDropdown.disabled = false;
             trafficModelDropdownOriginal.disabled = selectedCategory !== 'sndlib';
+            makeTopologyInfo(selectedCategory, selectedTopology);
             topoDownloadJSON.href = `data/${selectedCategory}/${selectedTopology}.json`;
             topoDownloadGML.href = `data/${selectedCategory}/${selectedTopology}.gml`;
             topoDownloadSVG.href = `data/${selectedCategory}/${selectedTopology}.svg`;
