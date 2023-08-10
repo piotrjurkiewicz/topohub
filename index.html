@@ -431,7 +431,7 @@
         </div>
         <div id="topologyInfo" class="box">
             <h2>Topology info</h2>
-            <p>Gabriel graph topology with <b>25</b> nodes, synthetically generated using seed <b>0</b>.</p>
+            <p id="topologyInfoParagraph"></p>
             <h2>Download</h2>
             <div id="topoDownload">
                 <a id="topoDownloadJSON" class="button" href="#" target="_blank">
@@ -530,6 +530,7 @@
         const topoDownloadGML = document.getElementById("topoDownloadGML");
         const topoDownloadSVG = document.getElementById("topoDownloadSVG");
         const topoDownloadSVGView = document.getElementById("topoDownloadSVGView");
+        const topologyInfoParagraph = document.getElementById("topologyInfoParagraph");
 
         function parsePathCoordinates(pathData) {
             // Assuming the path data is in the format "Mx1,y1,x2,y2"
@@ -939,6 +940,25 @@
         topoDownloadSVGView.addEventListener("click", downloadSVG);
         topoDownloadSVGView.addEventListener("contextmenu", downloadSVG);
 
+        function makeTopologyInfo(selectedCategory, selectedTopology) {
+            let text = "";
+
+            if (selectedCategory === 'gabriel') {
+                text += `Synthetically generated <b>Gabriel graph</b> topology with <b>${topology_json['graph']['stats']['nodes']}</b> nodes.`
+            }
+
+            if (selectedCategory === 'sndlib') {
+                text += `Real network based <b>${selectedCategory}</b> topology from the SNDLib database.`
+            }
+
+            if (selectedCategory === 'topozoo') {
+                text += `Real network based <b>${selectedCategory}</b> topology from the Internet Topology Zoo.`
+            }
+
+            text += ` Reference as <b>${selectedCategory}/${selectedTopology}</b>.`
+            topologyInfoParagraph.innerHTML = text;
+        }
+
         // Function to fetch and display the selected topology
         const fetchAndDisplayTopology = async (selectedCategory, selectedTopology) => {
             try {
@@ -970,6 +990,7 @@
                 // Handle errors during fetching and display an error message
                 topoDisplay.style.visibility = null;
                 topoDisplay.innerHTML = "<p>Error loading topology data.</p>";
+                topologyInfoParagraph.innerHTML = "";
                 topologyPropertiesList.innerHTML = "";
                 trafficModelDropdown.value = 'none';
                 trafficModelDropdown.disabled = true;
