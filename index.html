@@ -239,6 +239,10 @@
             line-height: 20px;
         }
 
+        #topologyInfoParagraph {
+            text-align: justify;
+        }
+
         #trafficModelDiv {
             display: flex;
             justify-content: space-between;
@@ -945,18 +949,18 @@
 
             if (selectedCategory.startsWith('gabriel')) {
                 text += `Synthetically generated <b>Gabriel graph</b> topology with <b>${topology_json['graph']['stats']['nodes']}</b> nodes.
-Gabriel graphs were shown to closely approximate real optical transport network topologies and to realistically model fibre leghts and node degrees.
-Reference as <b>${selectedCategory}/${selectedTopology}</b>.`
+<a href="https://doi.org/10.2307/2412323" target="_blank">Gabriel graphs</a> closely approximate real optical transport network topologies and realistically model fibre leghts and node degrees, as shown in <a href="https://doi.org/10.1109/ICUMT.2013.6798402" target="_blank">doi:10.1109/ICUMT.2013.6798402</a>.
+Reference as <b>${selectedCategory}/${selectedTopology}</b>`
             }
 
             if (selectedCategory === 'sndlib') {
                 text += `Topology named <b>${selectedTopology}</b> from the SNDLib.
-Source data is avaialble on <a href="http://sndlib.zib.de" target="_blank">sndlib.zib.de</a> and has been originally published <a href="https://doi.org/10.1002/net.20371" target="_blank">here</a>.`
+Source data is avaialble on <a href="http://sndlib.zib.de" target="_blank">sndlib.zib.de</a> and has been originally published in <a href="https://doi.org/10.1002/net.20371" target="_blank">doi:10.1002/net.20371</a>.`
             }
 
             if (selectedCategory === 'topozoo') {
                 text += `Topology named <b>${selectedTopology}</b> from the Internet Topology Zoo.
-Source data is avaialble on <a href="http://www.topology-zoo.org/" target="_blank">www.topology-zoo.org</a> and has been originally published <a href="https://doi.org/10.1109/JSAC.2011.111002" target="_blank">here</a>.`
+Source data is avaialble on <a href="http://www.topology-zoo.org/" target="_blank">www.topology-zoo.org</a> and has been originally published <a href="https://doi.org/10.1109/JSAC.2011.111002" target="_blank">doi:10.1109/JSAC.2011.111002</a>.`
             }
 
             topologyInfoParagraph.innerHTML = text;
