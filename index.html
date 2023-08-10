@@ -943,19 +943,22 @@
         function makeTopologyInfo(selectedCategory, selectedTopology) {
             let text = "";
 
-            if (selectedCategory === 'gabriel') {
-                text += `Synthetically generated <b>Gabriel graph</b> topology with <b>${topology_json['graph']['stats']['nodes']}</b> nodes.`
+            if (selectedCategory.startsWith('gabriel')) {
+                text += `Synthetically generated <b>Gabriel graph</b> topology with <b>${topology_json['graph']['stats']['nodes']}</b> nodes.
+Gabriel graphs were shown to closely approximate real optical transport network topologies and to realistically model fibre leghts and node degrees.
+Reference as <b>${selectedCategory}/${selectedTopology}</b>.`
             }
 
             if (selectedCategory === 'sndlib') {
-                text += `Real network based <b>${selectedCategory}</b> topology from the SNDLib database.`
+                text += `Topology named <b>${selectedTopology}</b> from the SNDLib.
+Source data is avaialble on <a href="http://sndlib.zib.de" target="_blank">sndlib.zib.de</a> and has been originally published <a href="https://doi.org/10.1002/net.20371" target="_blank">here</a>.`
             }
 
             if (selectedCategory === 'topozoo') {
-                text += `Real network based <b>${selectedCategory}</b> topology from the Internet Topology Zoo.`
+                text += `Topology named <b>${selectedTopology}</b> from the Internet Topology Zoo.
+Source data is avaialble on <a href="http://www.topology-zoo.org/" target="_blank">www.topology-zoo.org</a> and has been originally published <a href="https://doi.org/10.1109/JSAC.2011.111002" target="_blank">here</a>.`
             }
 
-            text += ` Reference as <b>${selectedCategory}/${selectedTopology}</b>.`
             topologyInfoParagraph.innerHTML = text;
         }
 
