@@ -243,6 +243,10 @@
             text-align: justify;
         }
 
+        #topologyInfoParagraph a {
+            text-decoration: inherit;
+        }
+
         #trafficModelDiv {
             display: flex;
             justify-content: space-between;
@@ -949,8 +953,7 @@
 
             if (selectedCategory.startsWith('gabriel')) {
                 text += `Synthetically generated <b>Gabriel graph</b> topology with <b>${topology_json['graph']['stats']['nodes']}</b> nodes.
-<a href="https://doi.org/10.2307/2412323" target="_blank">Gabriel graphs</a> closely approximate real optical transport network topologies and realistically model fibre leghts and node degrees, as shown in <a href="https://doi.org/10.1109/ICUMT.2013.6798402" target="_blank">doi:10.1109/ICUMT.2013.6798402</a>.
-Reference as <b>${selectedCategory}/${selectedTopology}</b>`
+<a href="https://doi.org/10.2307/2412323" target="_blank">Gabriel graphs</a> closely approximate real optical transport network topologies and realistically model fibre leghts and node degrees, as shown in <a href="https://doi.org/10.1109/ICUMT.2013.6798402" target="_blank">doi:10.1109/ICUMT.2013.6798402</a>.`
             }
 
             if (selectedCategory === 'sndlib') {
@@ -962,6 +965,8 @@ Source data is avaialble on <a href="http://sndlib.zib.de" target="_blank">sndli
                 text += `Topology named <b>${selectedTopology}</b> from the <b>Internet Topology Zoo</b>.
 Source data is avaialble on <a href="http://www.topology-zoo.org/" target="_blank">www.topology-zoo.org</a> and has been originally published <a href="https://doi.org/10.1109/JSAC.2011.111002" target="_blank">doi:10.1109/JSAC.2011.111002</a>.`
             }
+
+            text += `<br/><br/>Reference as <b>${selectedCategory}/${selectedTopology.toLowerCase()}</b>`;
 
             topologyInfoParagraph.innerHTML = text;
         }
