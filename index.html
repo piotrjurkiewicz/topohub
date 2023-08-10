@@ -203,7 +203,20 @@
         }
 
         #topologyList li {
+            display: flex;
+            justify-content: space-between;
+            white-space: nowrap;
+            gap: 24px;
             cursor: pointer;
+        }
+
+        #topologyList li span.featured {
+            border: 1px solid gold;
+            border-radius: 3px;
+            padding: 2px 4px 2px 4px;
+            font-size: 10px;
+            color: goldenrod;
+            background-color: white;
         }
 
         #topologyPropertiesList {
@@ -882,7 +895,9 @@
             topologyList.innerHTML = '';
             ll.forEach((topology) => {
                 const li = document.createElement('li');
-                li.textContent = topology;
+                li.innerHTML = `<span>${topology}</span>`;
+                if (topology === 'germany50' || topology === 'nobel-eu'|| topology === 'polska' || topology === 'Abilene')
+                    li.innerHTML += "<span class='featured'>widely used</span>";
                 topologyList.appendChild(li);
                 li.addEventListener("click", () => {
                     const selectedCategory = firstLevelDropdown.value;
