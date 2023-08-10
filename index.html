@@ -509,7 +509,7 @@
         ['avg_adp_hops', 'Average hops of all disjoint paths'], ['avg_adp_len', 'Average length of all disjoint paths']]
 
     let topology_json = null;
-    let pos_to_name = {};
+    let pos_to_name = null;
 
     document.addEventListener("DOMContentLoaded", () => {
         const firstLevelDropdown = document.getElementById("firstLevelDropdown");
@@ -563,7 +563,11 @@
                 circle.setAttribute('title', name);
                 circle.addEventListener('mousemove', showTooltip);
                 circle.addEventListener('mouseout', hideTooltip);
-                pos_to_name[`${circle.getAttribute('cx')}, ${circle.getAttribute('cy')}`] = name;
+                if (`${circle.getAttribute('cx')}, ${circle.getAttribute('cy')}` in pos_to_name) {
+                    pos_to_name = null;
+                    return;
+                } else
+                    pos_to_name[`${circle.getAttribute('cx')}, ${circle.getAttribute('cy')}`] = name;
             }
 
             for (let i = 0; i < paths.length; i++) {
@@ -716,10 +720,16 @@
             }
 
             const svg = topoDisplay.getElementsByTagName('svg')[0];
+            let mode = trafficModelDropdown.value;
 
-            const mode = trafficModelDropdown.value;
+            for (const link of links) {
+                if (!(mode in link.ecmp_fwd) || !(mode in link.ecmp_fwd)) {
+                    trafficModelDropdown.value = 'none';
+                    mode = 'none';
+                }
+            }
 
-            if (mode === 'none') {
+            if (mode === 'none' || pos_to_name === null) {
                 svg.querySelectorAll("path.utilization").forEach(elm => {
                     elm.setAttribute('visibility', 'hidden');
                 })
