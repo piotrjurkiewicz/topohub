@@ -7,7 +7,7 @@ A distinctive feature of the web interface is the visualization of link utilizat
 
 - ``uniform``, which assumes a constant traffic demand between all pairs of nodes,
 - ``degree``, in which the demand between nodes is proportional to the product of the degrees of these nodes, and
-- ``original``, based on the original traffic demand matrices provided by the SNDLib project (applicable only for SNDLib topologies).
+- ``original``, based on the original traffic demand matrices provided by the SNDlib project (applicable only for SNDlib topologies).
 
 Users have the capability to select their desired traffic model for visualization from a dropdown menu. The link utilization is represented on the topology graph by varying the width, color, or opacity of the links, with these visual attributes adjustable by the user. By hovering the mouse over a link, users can obtain the exact percentage utilization values. Furthermore, a histogram illustrating the 20 most utilized links is provided, and users can explore the details by hovering the mouse over the bars.
 

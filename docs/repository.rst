@@ -14,7 +14,7 @@ The definition of each topology is stored in a JSON file constructed according t
 - The ``links`` field, containing a list of links in the topology, defined by ``source`` and ``target`` node names. The links objects also contain the ``dist`` field providing the link length in kilometers, and ``ecmp_fwd`` and ``ecmp_bwd`` fields. They contain pre-calculated links percentage utilization in forward and backward directions for the case of ECMP shortest path routing being used in the network.
 
 
-Additionally, in addition to the synthetic Gabriel graph topologies, we also generated JSON definitions and SVG visualizations for topologies from the `Internet Topology Zoo <http://www.topology-zoo.org/>`_ and `SNDLib <http://sndlib.zib.de/>`_ and also provide them in the repository. This gives the possibility to explore their properties using the web interface and allows using them interchangeably with the synthetic Gabriel graph topologies, for example in Mininet with the help of the automatic import feature.
+Additionally, in addition to the synthetic Gabriel graph topologies, we also generated JSON definitions and SVG visualizations for topologies from the `Internet Topology Zoo <http://www.topology-zoo.org/>`_ and `SNDlib <https://sndlib.put.poznan.pl/>`_ and also provide them in the repository. This gives the possibility to explore their properties using the web interface and allows using them interchangeably with the synthetic Gabriel graph topologies, for example in Mininet with the help of the automatic import feature.
 
 .. toctree::
    :maxdepth: 2

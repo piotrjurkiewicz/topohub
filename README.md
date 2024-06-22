@@ -4,7 +4,7 @@ This project aims to create a repository of reference network topologies based o
 
 The web interface is available at: https://www.topohub.org
 
-The package also includes a module that can be imported into the popular network emulator Mininet, enabling automatic usage of the topologies from the repository. It is also important, that apart from synthetic Gabriel topologies, we included all existing topologies from The Internet Topology Zoo and SNDLib into our repository as well. This enables the possibility to study their pre-computed ECMP link loads and import them automatically into the Mininet.
+The package also includes a module that can be imported into the popular network emulator Mininet, enabling automatic usage of the topologies from the repository. It is also important, that apart from synthetic Gabriel topologies, we included all existing topologies from The Internet Topology Zoo and SNDlib into our repository as well. This enables the possibility to study their pre-computed ECMP link loads and import them automatically into the Mininet.
 
 The Python package can be installed from [Python Package Index (PyPI)](https://pypi.org/project/topohub/) using the following command:
 

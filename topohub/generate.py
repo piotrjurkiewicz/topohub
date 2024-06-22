@@ -46,11 +46,11 @@ class TopoGenerator:
         json.dump(nx.node_link_data(g), open(f'{filename}.json', 'w'), indent=kwargs.get('indent', 0), default=lambda x: format(x, '.2f'))
         json.encoder.float = float
 
-class SNDLibGenerator(TopoGenerator):
+class SNDlibGenerator(TopoGenerator):
     """
-    Generator of topologies from the SNDLib.
+    Generator of topologies from the SNDlib.
 
-    Source of data: http://sndlib.zib.de
+    Source of data: https://sndlib.put.poznan.pl
 
     Orlowski, S., Wessäly, R., Pióro, M. and Tomaszewski, A. (2010),
     SNDlib 1.0—Survivable Network Design Library. Networks, 55: 276-286.
@@ -60,8 +60,8 @@ class SNDLibGenerator(TopoGenerator):
     @classmethod
     def download_topo(cls, name):
 
-        con = http.HTTPConnection("sndlib.zib.de", timeout=5)
-        con.request('GET', "/coredata.download.action?objectName=%s&format=native&objectType=network" % name)
+        con = http.HTTPSConnection("sndlib.put.poznan.pl", timeout=5)
+        con.request('GET', "/download/sndlib-networks-native/%s.txt" % name)
         r = con.getresponse()
         data = r.read()
         return data
@@ -69,7 +69,7 @@ class SNDLibGenerator(TopoGenerator):
     @classmethod
     def generate_topo(cls, name):
         """
-        Download topology specified by name from SNDLib and generate its JSON.
+        Download topology specified by name from SNDlib and generate its JSON.
 
         Parameters
         ----------
@@ -422,7 +422,7 @@ if __name__ == '__main__':
                       'nobel-germany', 'nobel-us', 'norway', 'pdh', 'pioro40', 'polska', 'sun', 'ta1', 'ta2', 'zib54']
 
         for topo_name in topo_names:
-            SNDLibGenerator.save_topo(topo_name, filename=f'data/sndlib/{topo_name}', with_plot=True, with_path_stats=True, with_topo_stats=True)
+            SNDlibGenerator.save_topo(topo_name, filename=f'data/sndlib/{topo_name}', with_plot=True, with_path_stats=True, with_topo_stats=True)
 
     elif topo_names[0] == 'topozoo':
 
