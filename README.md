@@ -12,41 +12,45 @@ The Python package can be installed from [Python Package Index (PyPI)](https://p
 
 Then you can obtain topologies stored in the repository using the `topohub.get()` method and create NetworkX graph objects basing on them:
 
-    import networkx as nx
-    import topohub
+```python
+import networkx as nx
+import topohub
 
-    # Obtain topology dicts from JSON files stored in the repository
-    topo = topohub.get('gabriel/25/0')
-    topo = topohub.get('topozoo/Abilene')
-    topo = topohub.get('sndlib/polska')
+# Obtain topology dicts from JSON files stored in the repository
+topo = topohub.get('gabriel/25/0')
+topo = topohub.get('topozoo/Abilene')
+topo = topohub.get('sndlib/polska')
 
-    # Create NetworkX graph from node-link dict
-    g = nx.node_link_graph(topo)
+# Create NetworkX graph from node-link dict
+g = nx.node_link_graph(topo)
 
-    # Access graph parameters
-    print(g.graph['name'])
-    print(g.graph['demands'])
-    print(g.graph['stats']['avg_degree'])
+# Access graph parameters
+print(g.graph['name'])
+print(g.graph['demands'])
+print(g.graph['stats']['avg_degree'])
 
-    # Obtain link length or ECMP routing utilization
-    print(g.edges['Bydgoszcz', 'Warsaw']['dist'])
-    print(g.edges['Bydgoszcz', 'Warsaw']['ecmp_fwd']['uni'])
+# Obtain link length or ECMP routing utilization
+print(g.edges['Bydgoszcz', 'Warsaw']['dist'])
+print(g.edges['Bydgoszcz', 'Warsaw']['ecmp_fwd']['uni'])
+```
 
 For usage in Mininet, you can use a helper which automatically creates Mininet Topo classes for selected topologies:
 
-    import mininet.net
-    import topohub.mininet
+```python
+import mininet.net
+import topohub.mininet
 
-    # Obtain Mininet Topo classes for topologies stored in the repository
-    topo_cls = topohub.mininet.TOPO_CLS['gabriel/25/0']
-    topo_cls = topohub.mininet.TOPO_CLS['topozoo/Abilene']
-    topo_cls = topohub.mininet.TOPO_CLS['sndlib/polska']
+# Obtain Mininet Topo classes for topologies stored in the repository
+topo_cls = topohub.mininet.TOPO_CLS['gabriel/25/0']
+topo_cls = topohub.mininet.TOPO_CLS['topozoo/Abilene']
+topo_cls = topohub.mininet.TOPO_CLS['sndlib/polska']
 
-    # Initialize Mininet Topo object
-    topo = topo_cls()
-    # Create Mininet Network using the selected topology
-    net = mininet.net.Mininet(topo=topo)
-    # Start the network and Mininet shell
-    net.interact()
+# Initialize Mininet Topo object
+topo = topo_cls()
+# Create Mininet Network using the selected topology
+net = mininet.net.Mininet(topo=topo)
+# Start the network and Mininet shell
+net.interact()
+```
 
 A detailed documentation, including API reference and Mininet usage example, is available at: https://topohub.readthedocs.io
