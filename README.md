@@ -6,6 +6,19 @@ The web interface is available at: https://www.topohub.org
 
 The package also includes a module that can be imported into the popular network emulator Mininet, enabling automatic usage of the topologies from the repository. It is also important, that apart from synthetic Gabriel topologies, we included all existing topologies from The Internet Topology Zoo and SNDlib into our repository as well. This enables the possibility to study their pre-computed ECMP link loads and import them automatically into the Mininet.
 
+You can cite the following paper if you make use of TopoHub in your research:
+
+    @article{topohub,
+        title = {TopoHub: A repository of reference Gabriel graph and real-world topologies for networking research},
+        journal = {SoftwareX},
+        volume = {24},
+        pages = {101540},
+        year = {2023},
+        issn = {2352-7110},
+        doi = {10.1016/j.softx.2023.101540},
+        author = {Piotr Jurkiewicz}
+    }
+
 The Python package can be installed from [Python Package Index (PyPI)](https://pypi.org/project/topohub/) using the following command:
 
     pip install topohub
