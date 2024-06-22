@@ -1,6 +1,9 @@
 topohub package
 ===============
 
+.. automodule:: topohub
+   :members:
+
 topohub.generate module
 -----------------------
 
