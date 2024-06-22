@@ -252,11 +252,11 @@
             line-height: 20px;
         }
 
-        #topologyInfoParagraph {
+        .topologyInfoParagraph {
             margin: 0;
         }
 
-        #topologyInfoParagraph a {
+        .topologyInfoParagraph a {
             text-decoration: inherit;
         }
 
@@ -452,7 +452,7 @@
         </div>
         <div id="topologyInfo" class="box">
             <h2>Topology info</h2>
-            <p id="topologyInfoParagraph"></p>
+            <p id="topologyInfoParagraph" class="topologyInfoParagraph"></p>
             <h2>Download</h2>
             <div id="topoDownload">
                 <a id="topoDownloadJSON" class="button" href="#" target="_blank">
@@ -484,6 +484,10 @@
                     <span class="button_text">SVG</br>view</span>
                 </a>
             </div>
+            <h2>Usage in Python</h2>
+            <p class="topologyInfoParagraph">Examples are provided on <a href="https://topohub.readthedocs.io">topohub.readthedocs.io</a>.</p>
+            <h2>Citations</h2>
+            <p class="topologyInfoParagraph">Please cite <a href="https://www.sciencedirect.com/science/article/pii/S2352711023002364">this paper</a> if you make use of TopoHub in your research.</p>
         </div>
         <div id="topologyProperties" class="box">
             <h2>Topology properties</h2>
@@ -913,8 +917,11 @@
             topologyListWrapper.style.display = 'flex';
         };
 
-        const populateTopologyProperties = (stats) => {
+        const populateTopologyProperties = (name, stats) => {
             topologyPropertiesList.innerHTML = '';
+            const li = document.createElement('li');
+            li.innerHTML = `<span>Name:</span><span>${name}</span>`;
+            topologyPropertiesList.appendChild(li);
             for (const prop of propertiesNames) {
                 if (prop[0] in stats) {
                     const li = document.createElement('li');
@@ -969,20 +976,18 @@
 
             if (selectedCategory.startsWith('gabriel')) {
                 text += `Synthetically generated <b>Gabriel graph</b> topology with <b>${topology_json['graph']['stats']['nodes']}</b> nodes.
-<a href="https://doi.org/10.2307/2412323" target="_blank">Gabriel graphs</a> closely approximate real optical transport network topologies and realistically model fiber lengths and node degrees, as shown in <a href="https://doi.org/10.1109/ICUMT.2013.6798402" target="_blank">10.1109/ICUMT.2013.6798402</a>`
+<a href="https://doi.org/10.2307/2412323" target="_blank">Gabriel graphs</a> closely approximate real optical transport network topologies and realistically model fiber lengths and node degrees, as shown in <a href="https://doi.org/10.1109/ICUMT.2013.6798402" target="_blank">this paper</a>.`
             }
 
             if (selectedCategory === 'sndlib') {
                 text += `Topology named <b>${selectedTopology}</b> from the <b>SNDlib</b>.
-Source data is available on <a href="https://sndlib.put.poznan.pl" target="_blank">sndlib.put.poznan.pl</a> and has been originally published in <a href="https://doi.org/10.1002/net.20371" target="_blank">10.1002/net.20371</a>`
+Source data is available on <a href="https://sndlib.put.poznan.pl" target="_blank">sndlib.put.poznan.pl</a> and has been originally published in <a href="https://doi.org/10.1002/net.20371" target="_blank">this paper</a>.`
             }
 
             if (selectedCategory === 'topozoo') {
                 text += `Topology named <b>${selectedTopology}</b> from the <b>Internet Topology Zoo</b>.
-Source data is available on <a href="http://www.topology-zoo.org/" target="_blank">www.topology-zoo.org</a> and has been originally published in <a href="https://doi.org/10.1109/JSAC.2011.111002" target="_blank">10.1109/JSAC.2011.111002</a>`
+Source data is available on <a href="http://www.topology-zoo.org/" target="_blank">www.topology-zoo.org</a> and has been originally published in <a href="https://doi.org/10.1109/JSAC.2011.111002" target="_blank">this paper</a>.`
             }
-
-            text += `<br/><br/>Reference as <b>${selectedCategory}/${selectedTopology.toLowerCase()}</b>`;
 
             topologyInfoParagraph.innerHTML = text;
         }
@@ -1028,7 +1033,7 @@ Source data is available on <a href="http://www.topology-zoo.org/" target="_blan
             }
             // Parse SVG and perform other operations
             parseSVG();
-            populateTopologyProperties(topology_json['graph']['stats']);
+            populateTopologyProperties(`${selectedCategory}/${selectedTopology}`, topology_json['graph']['stats']);
             visualizeTraffic();
             displayNodes();
             topoDisplay.style.visibility = null;
