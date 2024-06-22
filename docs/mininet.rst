@@ -39,10 +39,14 @@ The code block below provides a minimal example of Python code initializing Mini
     import mininet.net
     import topohub.mininet
 
-    topo_cls = topohub.mininet.TOPO['gabriel/25/0']
-    topo = topo_cls()
+    # Obtain Mininet Topo class for a selected topology from the repository
+    topo_cls = topohub.mininet.TOPO_CLS['gabriel/25/0']
 
+    # Initialize Mininet Topo object
+    topo = topo_cls()
+    # Create Mininet Network using the selected topology
     net = mininet.net.Mininet(topo=topo)
+    # Start the network and Mininet shell
     net.interact()
 
 Then in order to build and initialize the network the script should be executed:

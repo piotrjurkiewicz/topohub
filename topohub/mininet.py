@@ -91,7 +91,7 @@ def make_topo_class_from_json(name, topo):
     cls = type(str(cls_name), (JSONTopo,), {'name': name, 'topo_json': topo})
     return cls
 
-class TopoDict(dict):
+class TopoClsDict(dict):
     def __missing__(self, key):
         try:
             topo = json.load((importlib.resources.files(topohub) / f'data/{key}.json').open())
@@ -101,18 +101,29 @@ class TopoDict(dict):
         except IOError:
             raise KeyError
 
-TOPO = TopoDict()
+
+TOPO_CLS = TopoClsDict()
 """
-Use this dictionary to access topologies from the repository.
+Use this dictionary to obtain topologies from the repository as Mininet Topo classes.
 
 Example:
 
 .. code-block:: python
 
-    import topolib.mininet
+    import mininet.net
+    import topohub.mininet
     
-    topo_cls = topolib.mininet.TOPO['gabriel/25/0']
-    topo_cls = topolib.mininet.TOPO['sndlib/germany50']
+    # Obtain Mininet Topo classes for topologies stored in the repository
+    topo_cls = topohub.mininet.TOPO_CLS['gabriel/25/0']
+    topo_cls = topohub.mininet.TOPO_CLS['topozoo/Abilene']
+    topo_cls = topohub.mininet.TOPO_CLS['sndlib/polska']
+
+    # Initialize Mininet Topo object
+    topo = topo_cls()
+    # Create Mininet Network using the selected topology
+    net = mininet.net.Mininet(topo=topo)
+    # Start the network and Mininet shell
+    net.interact()
 """
 
 class AutoHostTopo(mininet.topo.Topo):
