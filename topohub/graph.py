@@ -418,7 +418,7 @@ def minmax(pos):
     max1 = max(v[1] for v in pos.values())
     return max0, max1, min0, min1
 
-def save_topo_graph_svg(g, filename=None, scaling=True):
+def save_topo_graph_svg(g, filename=None, scaling=True, scale_factor=None, background=None):
     """
     Generate and save topology graph as SVG file.
 
@@ -433,29 +433,38 @@ def save_topo_graph_svg(g, filename=None, scaling=True):
     """
 
     pos = {}
+    names = {}
     for node in g.nodes(data=True):
         pos[node[0]] = node[1]['pos'][0], node[1]['pos'][1]
+        names[node[0]] = node[1].get('name')
 
     max0, max1, min0, min1 = minmax(pos)
 
     if scaling:
-        scale = 1000 / max(max0 - min0, max1 - min1)
+        if scale_factor:
+            scale = scale_factor
+        else:
+            scale = 1000 / max(max0 - min0, max1 - min1)
         for n in pos:
             pos[n] = pos[n][0] * scale, (max1 - pos[n][1]) * scale
         max0, max1, min0, min1 = minmax(pos)
 
     with open(filename + '.svg', 'w') as f:
-        f.write(f'<svg id="topo" width="{max0 - min0 + 90:.2f}" height="{max1 - min1 + 90:.2f}" viewBox="{min0 - 45:.2f} {min1 - 45:.2f} {max0 - min0 + 90:.2f} {max1 - min1 + 90:.2f}" xmlns="http://www.w3.org/2000/svg">\n')
-        f.write('<style>#topo path {fill: none; stroke: grey; stroke-width: 6;} #topo circle {fill: lightblue; stroke: none;} #topo text {fill: black; stroke: none; font-size: 16; font-family: sans-serif; text-anchor:middle;}</style>\n')
+        f.write(f'<svg id="topo" width="{360:.2f}" height="{180:.2f}" viewBox="{-180:.2f} {-90:.2f} {360:.2f} {180:.2f}" xmlns="http://www.w3.org/2000/svg">\n')
+        f.write('<style>#topo path {fill: none; stroke: grey; stroke-width: 1;} #topo circle {fill: lightblue; stroke: none;} #topo text {fill: black; stroke: none; font-size: 0.2px; font-family: sans-serif; text-anchor:middle;} #topo path.country {fill: lightgrey; stroke: black; stroke-width: 1;} #topo path.selection {fill: none; stroke: red; stroke-width: 1;}</style>\n')
+
+        if background:
+            for item in background:
+                f.write(item)
 
         for e in g.edges:
             x0, y0 = pos[e[0]]
             x1, y1 = pos[e[1]]
-            f.write(f'<path d="M{x0:.2f},{y0:.2f},{x1:.2f},{y1:.2f}"/>\n')
+            f.write(f'<path vector-effect="non-scaling-stroke" d="M{x0:.2f},{-y0:.2f},{x1:.2f},{-y1:.2f}"/>\n')
 
         for n, (x, y) in pos.items():
-            f.write(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="10"/>\n')
-            f.write(f'<text x="{x:.2f}" y="{y + 5:.2f}">{n}</text>\n')
+            f.write(f'<circle cx="{x:.2f}" cy="{-y:.2f}" r="0.02"/>\n')
+            f.write(f'<text x="{x:.2f}" y="{-y:.2f}">{names[n] or n}</text>\n')
 
         f.write('</svg>\n')
 

@@ -577,7 +577,7 @@
         function parseSVG() {
             const svg = topoDisplay.getElementsByTagName('svg')[0];
             const circles = svg.getElementsByTagName('circle');
-            const paths = svg.getElementsByTagName('path');
+            const paths = svg.querySelectorAll('path:not([class])');
             const textElements = svg.getElementsByTagName('text');
             pos_to_name = {};
 

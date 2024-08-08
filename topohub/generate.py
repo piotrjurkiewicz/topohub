@@ -35,7 +35,7 @@ class TopoGenerator:
         os.makedirs(filename.rpartition('/')[0], exist_ok=True)
         ps = None
         if kwargs.get('with_plot'):
-            topohub.graph.save_topo_graph_svg(g, filename, cls.scaling)
+            topohub.graph.save_topo_graph_svg(g, filename, cls.scaling, 50, kwargs.get('background'))
         if kwargs.get('with_utilization'):
             topohub.graph.calculate_utilization(g, node_filter=kwargs.get('node_filter'))
         if kwargs.get('with_path_stats'):
