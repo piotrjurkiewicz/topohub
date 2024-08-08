@@ -182,7 +182,7 @@ def all_shortest_nhops_all_targets(g, source, weight=None, limit=None):
 
     return nhops, dist
 
-def all_disjoint_paths(g, ff):
+def all_disjoint_paths(g, ff, node_filter=None):
     """
     Find all disjoint paths between all node pairs in a graph.
 
@@ -204,7 +204,8 @@ def all_disjoint_paths(g, ff):
     r = nx.algorithms.flow.build_residual_network(h, 'capacity')
     result = {}
     for src, dst in itertools.permutations(g, 2):
-        result[src, dst] = list(nx.edge_disjoint_paths(g, src, dst, auxiliary=h, residual=r, flow_func=ff))
+        if node_filter is None or node_filter(g.nodes[src]) and node_filter(g.nodes[dst]):
+            result[src, dst] = list(nx.edge_disjoint_paths(g, src, dst, auxiliary=h, residual=r, flow_func=ff))
     return result
 
 def all_disjoint_paths_scipy(g, ff):
@@ -309,7 +310,7 @@ def shortest_disjoint_paths_slow(g):
         result[src, dst] = longest_paths
     return result
 
-def shortest_disjoint_paths(g, ff):
+def shortest_disjoint_paths(g, ff, node_filter=None):
     """
     Find all shortest disjoint paths between all node pairs in a graph.
 
@@ -344,10 +345,11 @@ def shortest_disjoint_paths(g, ff):
     for src in g:
         for dst in g:
             if src != dst:
-                subgraph = nx.Graph()
-                added_edges = set()
-                dfs(src, dst, subgraph, added_edges)
-                result[src, dst] = list(nx.edge_disjoint_paths(subgraph, src, dst, flow_func=ff))
+                if node_filter is None or node_filter(g.nodes[src]) and node_filter(g.nodes[dst]):
+                    subgraph = nx.Graph()
+                    added_edges = set()
+                    dfs(src, dst, subgraph, added_edges)
+                    result[src, dst] = list(nx.edge_disjoint_paths(subgraph, src, dst, flow_func=ff))
     return result
 
 def save_topo_graph_pdf(g, filename=None, plot_aspect=1.0):
@@ -457,7 +459,7 @@ def save_topo_graph_svg(g, filename=None, scaling=True):
 
         f.write('</svg>\n')
 
-def path_stats(g):
+def path_stats(g, node_filter=None):
     """
     Calculate statistics for paths between all node pairs.
 
@@ -481,8 +483,8 @@ def path_stats(g):
         # nx.algorithms.flow.boykov_kolmogorov
     ]:
         ts = time.time()
-        ap = all_disjoint_paths(g, ff)
-        sp = shortest_disjoint_paths(g, ff)
+        ap = all_disjoint_paths(g, ff, node_filter=node_filter)
+        sp = shortest_disjoint_paths(g, ff, node_filter=node_filter)
         print(time.time() - ts)
     # sp_slow = shortest_disjoint_paths_slow(g)
     stats = {}
@@ -540,7 +542,7 @@ def path_stats_print(stats, filename=None):
     else:
         open(filename + '.csv', 'w').write(text)
 
-def calculate_utilization(g):
+def calculate_utilization(g, node_filter=None):
     """
     Calculate link utilizations for ECMP shortest path routing and save them as edges properties.
 
@@ -556,8 +558,8 @@ def calculate_utilization(g):
 
     modes = {
         'org': (((src, dst, g.graph['demands'][src][dst]) for src in g.graph['demands'] for dst in g.graph['demands'][src]) if 'demands' in g.graph else None),
-        'uni': ((src, dst, 1) for src, dst in itertools.combinations(g, 2)),
-        'deg': ((src, dst, g.degree[src] * g.degree[dst]) for src, dst in itertools.combinations(g, 2))
+        'uni': ((src, dst, 1) for src, dst in itertools.combinations(g, 2) if node_filter is None or node_filter(g.nodes[src]) and node_filter(g.nodes[dst])),
+        'deg': ((src, dst, g.degree[src] * g.degree[dst]) for src, dst in itertools.combinations(g, 2) if node_filter is None or node_filter(g.nodes[src]) and node_filter(g.nodes[dst]))
     }
 
     def dfs(src, dst, dem, ut):

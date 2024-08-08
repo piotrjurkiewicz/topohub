@@ -13,8 +13,10 @@ import topohub.graph
 json.encoder.c_make_encoder = None
 MAX_GABRIEL_NODES = 4096
 
+
 class RoundingFloat(float):
     __repr__ = staticmethod(lambda x: format(x, '.2f'))
+
 
 class TopoGenerator:
     scaling = True
@@ -26,7 +28,6 @@ class TopoGenerator:
     @classmethod
     def save_topo(cls, *args, **kwargs):
         g = nx.node_link_graph(cls.generate_topo(*args))
-        topohub.graph.calculate_utilization(g)
         if 'filename' in kwargs:
             filename = kwargs['filename']
         else:
@@ -35,8 +36,10 @@ class TopoGenerator:
         ps = None
         if kwargs.get('with_plot'):
             topohub.graph.save_topo_graph_svg(g, filename, cls.scaling)
+        if kwargs.get('with_utilization'):
+            topohub.graph.calculate_utilization(g, node_filter=kwargs.get('node_filter'))
         if kwargs.get('with_path_stats'):
-            ps = topohub.graph.path_stats(g)
+            ps = topohub.graph.path_stats(g, node_filter=kwargs.get('node_filter'))
             topohub.graph.path_stats_print(ps, filename)
         if kwargs.get('with_topo_stats'):
             ts = topohub.graph.topo_stats(g, ps)
@@ -45,6 +48,7 @@ class TopoGenerator:
         json.encoder.float = RoundingFloat
         json.dump(nx.node_link_data(g), open(f'{filename}.json', 'w'), indent=kwargs.get('indent', 0), default=lambda x: format(x, '.2f'))
         json.encoder.float = float
+
 
 class SNDlibGenerator(TopoGenerator):
     """
@@ -132,6 +136,7 @@ class SNDlibGenerator(TopoGenerator):
         name = name.lower()
 
         return {'directed': False, 'multigraph': False, 'graph': {'name': name, 'demands': demands}, 'nodes': nodes, 'links': links}
+
 
 class TopoZooGenerator(TopoGenerator):
     """
