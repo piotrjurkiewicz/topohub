@@ -92,7 +92,7 @@ def test_save_gabriel(tmp_path):
     for s in [25, 50, 75, 100]:
         for i in [0, 1]:
             topohub.generate.GabrielGenerator.save_topo(s, (i * topohub.generate.MAX_GABRIEL_NODES) + s, filename=f'{tmp_path}/gabriel/{s}/{i}',
-                                                        with_plot=True, with_topo_stats=True, with_path_stats=True)
+                                                        with_plot=True, with_utilization=True, with_topo_stats=True, with_path_stats=True)
             with (importlib.resources.files(topohub) / f'data/gabriel/{s}/{i}.json').open() as file, open(f'{tmp_path}/gabriel/{s}/{i}.json') as new_file:
                 org = json.load(file)
                 new = json.load(new_file)
