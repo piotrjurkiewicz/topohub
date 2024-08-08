@@ -422,9 +422,34 @@ if __name__ == '__main__':
 
     elif topo_names[0] == 'sndlib':
 
-        topo_names = ['abilene', 'atlanta', 'brain', 'cost266', 'dfn-bwin', 'dfn-gwin', 'di-yuan', 'france', 'geant',
-                      'germany50', 'giul39', 'india35', 'janos-us', 'janos-us-ca', 'newyork', 'nobel-eu',
-                      'nobel-germany', 'nobel-us', 'norway', 'pdh', 'pioro40', 'polska', 'sun', 'ta1', 'ta2', 'zib54']
+        topo_names = {
+            'abilene': {'include_countries': ['US']},
+            'atlanta': None,
+            'brain': {'include_countries': ['Germany']},
+            'cost266': {'include_continents': ['EU']},
+            'dfn-bwin': {'include_countries': ['Germany']},
+            'dfn-gwin': {'include_countries': ['Germany']},
+            'di-yuan': None,
+            'france': None,
+            'geant': {'include_continents': ['EU'], 'include_countries': ['US', 'Israel']},
+            'germany50': {'include_countries': ['Germany']},
+            'giul39': None,
+            'india35': None,
+            'janos-us': {'include_countries': ['US']},
+            'janos-us-ca': {'include_countries': ['US', 'Canada']},
+            'newyork': None,
+            'nobel-eu': {'include_continents': ['EU']},
+            'nobel-germany': {'include_countries': ['Germany']},
+            'nobel-us': {'include_countries': ['US']},
+            'norway': None,
+            'pdh': {'include_countries': ['Germany']},
+            'pioro40': None,
+            'polska': {'include_countries': ['Poland']},
+            'sun': None,
+            'ta1': None,
+            'ta2': None,
+            'zib54': None
+        }
 
         for topo_name in topo_names:
             SNDlibGenerator.save_topo(topo_name, filename=f'data/sndlib/{topo_name}', with_plot=True, with_path_stats=True, with_topo_stats=True)
