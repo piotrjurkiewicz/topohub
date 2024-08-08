@@ -749,10 +749,11 @@
             let mode = trafficModelDropdown.value;
 
             for (const link of links) {
-                if (!(mode in link.ecmp_fwd) || !(mode in link.ecmp_fwd)) {
+                if (!link.ecmp_fwd || !link.ecmp_bwd || !(mode in link.ecmp_fwd) || !(mode in link.ecmp_bwd)) {
                     trafficModelDropdown.value = 'none';
                     mode = 'none';
                     showNodeNames.checked = true;
+                    break;
                 }
             }
 
