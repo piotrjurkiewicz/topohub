@@ -60,6 +60,7 @@ class SNDlibGenerator(TopoGenerator):
     SNDlib 1.0—Survivable Network Design Library. Networks, 55: 276-286.
     https://doi.org/10.1002/net.20371
     """
+    scaling = False
 
     @classmethod
     def download_topo(cls, name):
@@ -148,6 +149,8 @@ class TopoZooGenerator(TopoGenerator):
     The Internet Topology Zoo. IEEE Journal on Selected Areas in Communications, vol. 29, no. 9, pp. 1765-1775.
     https://doi.org/10.1109/JSAC.2011.111002
     """
+
+    scaling = False
 
     @classmethod
     def download_topo(cls, name):
@@ -408,19 +411,90 @@ class NumpyGabrielGenerator(TopoGenerator):
         return {'directed': False, 'multigraph': False, 'graph': {'name': str(nnodes), 'demands': demands}, 'nodes': nodes, 'links': links}
 
 
-if __name__ == '__main__':
+class BackboneGenerator(TopoGenerator):
+    """
+    Generator of Gabriel graph synthetic topologies.
 
-    topo_names = sys.argv[1:]
+    E. K. Çetinkaya, M. J. F. Alenazi, Y. Cheng, A. M. Peck and J. P. G. Sterbenz,
+    On the fitness of geographic graph generators for modelling physical level topologies.
+    2013 5th International Congress on Ultra Modern Telecommunications and Control Systems and Workshops (ICUMT), Almaty, Kazakhstan, 2013, pp. 38-45.
+    https://doi.org/10.1109/ICUMT.2013.6798402.
 
+    K. Ruben Gabriel , Robert R. Sokal,
+    A New Statistical Approach to Geographic Variation Analysis. Systematic Biology, Volume 18, Issue 3, September 1969, Pages 259–278.
+    https://doi.org/10.2307/2412323
+    """
+    scaling = False
+
+    @classmethod
+    def generate_topo(cls, name):
+        """
+        Generate Gabriel graph topology with given number of nodes.
+
+        Parameters
+        ----------
+        nnodes : int
+            number of nodes
+        seed : int
+            random seed
+
+        Returns
+        -------
+        dict
+            topology graph in NetworkX node-link format
+        """
+        import topohub.backbone
+
+        j = json.load(open('graph.json'))
+
+        nodes = {}
+        names_set = set()
+        links = []
+
+        node_types = ['City', 'Seacable Landing Point']
+        region = topohub.backbone.regions.get(name)
+        if name.endswith('_nosc'):
+            region = topohub.backbone.regions.get(name[:-5])
+        else:
+            node_types.append('Seacable Waypoint')
+
+        for n in j['nodes']:
+            if n['type'] in node_types:
+                if not region or topohub.backbone.point_in_polygon(n['longitude'], n['latitude'], region):
+                    if -180 < n['longitude'] < 180:
+                        if n['type'] in ['City', 'Seacable Landing Point']:
+                            names_set.add(n['name'])
+                        else:
+                            n['name'] = None
+                        nodes[n['id']] = {'id': n['id'], 'pos': (n['longitude'], n['latitude']), 'type': n['type']}
+                        if n['name']:
+                            nodes[n['id']]['name'] = n['name']
+
+        for e in j['edges']:
+            if e['u'] in nodes and e['v'] in nodes:
+                if not name.endswith('_nosc') or e['type'] != 'seacable':
+                    if abs(nodes[e['u']]['pos'][0] - nodes[e['v']]['pos'][0]) < 180:
+                        links.append({'source': e['u'], 'target': e['v'], 'dist': e['distance'], 'type': e['type']})
+
+        g = nx.node_link_graph({'directed': False, 'multigraph': False, 'graph': {'name': str(name), 'demands': {}}, 'nodes': list(nodes.values()), 'links': links})
+        g = topohub.backbone.remove_dead_ends(g)
+        g = g.subgraph(max(nx.connected_components(g), key=len))
+
+        return nx.node_link_data(g)
+
+
+def main(topo_names):
     if topo_names[0] == 'gabriel':
 
-        for n in range(25, 525, 25):
+        for nodes_number in range(25, 525, 25):
             start_time = time.time()
             for i in range(10):
-                GabrielGenerator.save_topo(n, (i * MAX_GABRIEL_NODES) + n, filename=f'data/gabriel/{n}/{i}', with_plot=True, with_topo_stats=True, with_path_stats=True)
+                GabrielGenerator.save_topo(nodes_number, (i * MAX_GABRIEL_NODES) + nodes_number, filename=f'data/gabriel/{nodes_number}/{i}', with_plot=True, with_utilization=True, with_topo_stats=True, with_path_stats=True)
             print(time.time() - start_time)
 
     elif topo_names[0] == 'sndlib':
+
+        import topohub.backbone
 
         topo_names = {
             'abilene': {'include_countries': ['US']},
@@ -452,9 +526,15 @@ if __name__ == '__main__':
         }
 
         for topo_name in topo_names:
-            SNDlibGenerator.save_topo(topo_name, filename=f'data/sndlib/{topo_name}', with_plot=True, with_path_stats=True, with_topo_stats=True)
+            if topo_names[topo_name]:
+                background = topohub.backbone.generate_map(**topo_names[topo_name])
+            else:
+                background = None
+            SNDlibGenerator.save_topo(topo_name, filename=f'data/sndlib/{topo_name}', with_plot=True, with_utilization=False, with_path_stats=False, with_topo_stats=True, background=background)
 
     elif topo_names[0] == 'topozoo':
+
+        import topohub.backbone
 
         topo_names = {
             'Aarnet': {'include_countries': ['Australia']},
@@ -722,12 +802,55 @@ if __name__ == '__main__':
 
         for topo_name in topo_names:
             print(topo_name)
+            if topo_names[topo_name]:
+                background = topohub.backbone.generate_map(**topo_names[topo_name])
+            else:
+                background = None
             try:
-                TopoZooGenerator.save_topo(topo_name, filename=f'data/topozoo/{topo_name}', with_plot=True, with_path_stats=True, with_topo_stats=True)
+                TopoZooGenerator.save_topo(topo_name, filename=f'data/topozoo/{topo_name}', with_plot=True, with_utilization=False, with_path_stats=False, with_topo_stats=True, background=background)
             except nx.exception.NetworkXNoPath:
+                pass
+            except nx.NetworkXError:
                 pass
             except ValueError as exc:
                 if exc.args[0] == 'Empty graph':
                     pass
                 else:
                     raise
+
+    elif topo_names[0] == 'backbone':
+
+        import geopandas as gpd
+        import topohub.backbone
+
+        world = gpd.read_file(open('ne_50m_admin_0_countries_lakes.zip', 'rb'))
+        background = []
+        for _, country in world.iterrows():
+            path_data = topohub.backbone.geometry_to_path(country.geometry)
+            background.append(f'<path class="country" vector-effect="non-scaling-stroke" d="{path_data}"/>\n')
+
+        topo_names = ['world',
+                      'north_america', 'north_america_nosc',
+                      'americas', 'americas_nosc',
+                      'south_america', 'south_america_nosc',
+                      'atlantica',
+                      'europe', 'europe_nosc',
+                      'eurasia', 'eurasia_nosc',
+                      'eurafrasia', 'eurafrasia_nosc',
+                      'eastern', 'eastern_nosc',
+                      'emea', 'emea_nosc',
+                      'africa', 'africa_nosc']
+
+        for topo_name in topo_names:
+            bcg = background.copy()
+            region = topohub.backbone.regions.get(topo_name)
+            if topo_name.endswith('_nosc'):
+                region = topohub.backbone.regions.get(topo_name[:-5])
+            if region:
+                path_data = topohub.backbone.polygon_to_path(region)
+                bcg.append(f'<path class="selection" vector-effect="non-scaling-stroke" d="{path_data}"/>\n')
+            BackboneGenerator.save_topo(topo_name, filename=f'data/backbone/{topo_name}', with_plot=True, with_utilization=False, with_path_stats=False, with_topo_stats=True, background=bcg, node_filter=lambda n: n['type'] == 'City')
+
+
+if __name__ == '__main__':
+    main(sys.argv[1:])
