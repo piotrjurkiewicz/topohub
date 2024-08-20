@@ -88,8 +88,10 @@ class SNDlibGenerator(TopoGenerator):
         mode = None
         nodes = []
         links = []
+        name_to_id = {}
         pos = {}
         demands = {}
+        next_id = 0
 
         for line in cls.download_topo(name).splitlines():
 
@@ -110,8 +112,11 @@ class SNDlibGenerator(TopoGenerator):
                     continue
                 node = line.split()[0]
                 lon, lat = line.split()[2:4]
+                node_id = next_id
+                next_id += 1
+                name_to_id[node] = node_id
                 pos[node] = (float(lon), float(lat))
-                nodes.append({'id': node, 'pos': (float(lon), float(lat))})
+                nodes.append({'id': node_id, 'name': node, 'pos': (float(lon), float(lat))})
 
             if mode == 'links':
                 if line.startswith(")"):
@@ -119,17 +124,18 @@ class SNDlibGenerator(TopoGenerator):
                     continue
                 node0, node1 = line.split()[2:4]
                 dist = topohub.graph.haversine(pos[node0], pos[node1])
-                links.append({'source': node0, 'target': node1, 'dist': dist})
+                links.append({'source': name_to_id[node0], 'target': name_to_id[node1], 'dist': dist})
 
             if mode == 'demands':
                 if line.startswith(")"):
                     mode = None
                     continue
                 node0, node1 = line.split()[2:4]
+                node0_id, node1_id = name_to_id[node0], name_to_id[node1]
                 value = float(line.split()[6])
-                if node0 not in demands:
-                    demands[node0] = {}
-                demands[node0][node1] = value
+                if node0_id not in demands:
+                    demands[node0_id] = {}
+                demands[node0_id][node1_id] = value
 
         name = ''.join([c if c.isalnum() else '_' for c in name.title()])
         name = name.lower()
@@ -174,7 +180,7 @@ class TopoZooGenerator(TopoGenerator):
         """
 
         mode = None
-        node_id, node, lon, lat, node0, node1 = None, None, None, None, None, None
+        node_id, node, lon, lat, node0_id, node1_id = None, None, None, None, None, None
         nodes = []
         links = []
         pos = {}
@@ -191,7 +197,7 @@ class TopoZooGenerator(TopoGenerator):
                     node_id, node, lon, lat = None, None, None, None
                 elif line.startswith("  edge ["):
                     mode = 'edge'
-                    node0, node1 = None, None
+                    node0_id, node1_id = None, None
                 continue
 
             if mode == 'node':
@@ -199,7 +205,7 @@ class TopoZooGenerator(TopoGenerator):
                     if lon is not None and lat is not None:
                         node_id_to_name[node_id] = node
                         pos[node_id] = (float(lon), float(lat))
-                        nodes.append({'id': node, 'pos': (float(lon), float(lat))})
+                        nodes.append({'id': node_id, 'name': node, 'pos': (float(lon), float(lat))})
                     mode = None
                 elif line.startswith("    id "):
                     node_id = line.split()[-1]
@@ -213,15 +219,15 @@ class TopoZooGenerator(TopoGenerator):
             if mode == 'edge':
                 if line.startswith("  ]"):
                     try:
-                        dist = topohub.graph.haversine(pos[node0], pos[node1])
-                        links.append({'source': node_id_to_name[node0], 'target': node_id_to_name[node1], 'dist': dist})
+                        dist = topohub.graph.haversine(pos[node0_id], pos[node1_id])
+                        links.append({'source': node0_id, 'target': node1_id, 'dist': dist})
                     except KeyError:
                         pass
                     mode = None
                 elif line.startswith("    source "):
-                    node0 = line.split()[-1]
+                    node0_id = line.split()[-1]
                 elif line.startswith("    target "):
-                    node1 = line.split()[-1]
+                    node1_id = line.split()[-1]
 
         name = ''.join([c if c.isalnum() else '_' for c in name.title()])
         name = name.lower()
@@ -286,9 +292,10 @@ class GabrielGenerator(TopoGenerator):
                 nn = min(dist2(p, q) ** 0.5 for q in pos.values())
                 if nn < exclusion:
                     continue
-            node = 'R' + str(len(nodes))
-            pos[node] = p
-            nodes.append({'id': node, 'pos': p})
+            node_id = len(nodes)
+            node = 'R' + str(node_id)
+            pos[node_id] = p
+            nodes.append({'id': node_id, 'name': node, 'pos': p})
 
         def neighbors(p, q):
             c = ((p[0] + q[0]) / 2, (p[1] + q[1]) / 2)
@@ -298,25 +305,11 @@ class GabrielGenerator(TopoGenerator):
                     return False
             return True
 
-        for p, (p_name, p_pos) in enumerate(pos.items()):
-            for q, (q_name, q_pos) in enumerate(pos.items()):
+        for p, (p_id, p_pos) in enumerate(pos.items()):
+            for q, (q_id, q_pos) in enumerate(pos.items()):
                 if p < q and neighbors(p_pos, q_pos):
                     dist = dist2(p_pos, q_pos) ** 0.5
-                    links.append({'source': p_name, 'target': q_name, 'dist': dist})
-
-        # nps = []
-        # nss = []
-        # nns = []
-        # for pn, (p_name, p) in enumerate(pos.items()):
-        #     for qn, (q_name, q) in enumerate(pos.items()):
-        #         if p < q:
-        #             nps.append(tuple(sorted((p_name, q_name))))
-        #         if p_name < q_name:
-        #             nss.append(tuple(sorted((p_name, q_name))))
-        #         if pn < qn:
-        #             nns.append(tuple(sorted((p_name, q_name))))
-        #
-        # assert(set(nps) == set(nss) == set(nns))
+                    links.append({'source': p_id, 'target': q_id, 'dist': dist})
 
         return {'directed': False, 'multigraph': False, 'graph': {'name': str(nnodes), 'demands': demands}, 'nodes': nodes, 'links': links}
 
@@ -382,9 +375,10 @@ class NumpyGabrielGenerator(TopoGenerator):
             if nodes:
                 if np.nanmin(dist2(p, pos)) < exclusion_2:
                     continue
-            node = f'R{n}'
-            pos[n] = p
-            nodes.append({'id': node, 'pos': p})
+            node_id = n
+            node = f'R{node_id}'
+            pos[node_id] = p
+            nodes.append({'id': node_id, 'name': node, 'pos': p})
             n += 1
 
         def neighbors(p, q):
@@ -401,7 +395,7 @@ class NumpyGabrielGenerator(TopoGenerator):
                 if p < q and neighbors(p, q):
                     dist = (pos[p] - pos[q]) ** 2
                     dist = (dist[0] + dist[1]) ** 0.5
-                    links.append({'source': nodes[p]['id'], 'target': nodes[q]['id'], 'dist': dist})
+                    links.append({'source': p, 'target': q, 'dist': dist})
 
         return {'directed': False, 'multigraph': False, 'graph': {'name': str(nnodes), 'demands': demands}, 'nodes': nodes, 'links': links}
 
@@ -821,19 +815,30 @@ def main(topo_names):
         background = []
         for _, country in world.iterrows():
             path_data = topohub.backbone.geometry_to_path(country.geometry)
-            background.append(f'<path class="country" vector-effect="non-scaling-stroke" d="{path_data}"/>\n')
+            background.append(f'<path class="country" d="{path_data}"/>\n')
 
-        topo_names = ['world',
-                      'north_america', 'north_america_nosc',
-                      'americas', 'americas_nosc',
-                      'south_america', 'south_america_nosc',
-                      'atlantica',
-                      'europe', 'europe_nosc',
-                      'eurasia', 'eurasia_nosc',
-                      'eurafrasia', 'eurafrasia_nosc',
-                      'eastern', 'eastern_nosc',
-                      'emea', 'emea_nosc',
-                      'africa', 'africa_nosc']
+        topo_names = [
+            'africa',
+            'africa_nosc',
+            'americas',
+            'americas_nosc',
+            'atlantica',
+            'eastern',
+            'eastern_nosc',
+            'emea',
+            'emea_nosc',
+            'eurafrasia',
+            'eurafrasia_nosc',
+            'eurasia',
+            'eurasia_nosc',
+            'europe',
+            'europe_nosc',
+            'north_america',
+            'north_america_nosc',
+            'south_america',
+            'south_america_nosc',
+            'world'
+        ]
 
         for topo_name in topo_names:
             bcg = background.copy()
