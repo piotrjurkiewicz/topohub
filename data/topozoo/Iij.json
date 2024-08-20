@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.49,
 "max_sdp_num": 3,
 "avg_sdp_hops": 2.30,
-"avg_sdp_len": 2956.76,
+"avg_sdp_len": 2959.37,
 "avg_adp_num": 2.09,
 "max_adp_num": 14,
 "avg_adp_hops": 2.59,
@@ -30,200 +30,228 @@
 },
 "nodes": [
 {
+"name": "Tokyo DC1",
 "pos": [
 139.58,
 35.61
 ],
-"id": "Tokyo DC1"
+"id": "0"
 },
 {
+"name": "Tokyo DC2",
 "pos": [
 139.58,
 35.61
 ],
-"id": "Tokyo DC2"
+"id": "1"
 },
 {
+"name": "Sendai DC",
 "pos": [
 130.30,
 31.82
 ],
-"id": "Sendai DC"
+"id": "2"
 },
 {
+"name": "Saitama DC",
 "pos": [
 139.66,
 35.91
 ],
-"id": "Saitama DC"
+"id": "3"
 },
 {
+"name": "Nerima DC",
 "pos": [
 139.65,
 35.73
 ],
-"id": "Nerima DC"
+"id": "4"
 },
 {
+"name": "Yokohama DC1",
 "pos": [
 139.64,
 35.45
 ],
-"id": "Yokohama DC1"
+"id": "5"
 },
 {
+"name": "Shibuya DC",
 "pos": [
 139.70,
 35.66
 ],
-"id": "Shibuya DC"
+"id": "6"
 },
 {
+"name": "Ikebukuro DC",
 "pos": [
 139.71,
 35.73
 ],
-"id": "Ikebukuro DC"
+"id": "7"
 },
 {
+"name": "Yokohama DC2",
 "pos": [
 139.64,
 35.45
 ],
-"id": "Yokohama DC2"
+"id": "8"
 },
 {
+"name": "Nagoya DC",
 "pos": [
 136.91,
 35.18
 ],
-"id": "Nagoya DC"
+"id": "9"
 },
 {
+"name": "Newyork DC",
 "pos": [
 -74.01,
 40.71
 ],
-"id": "Newyork DC"
+"id": "19"
 },
 {
+"name": "Fukuoka DC",
 "pos": [
 130.42,
 33.61
 ],
-"id": "Fukuoka DC"
+"id": "20"
 },
 {
+"name": "Shinsaibashi DC",
 "pos": [
 135.50,
 34.68
 ],
-"id": "Shinsaibashi DC"
+"id": "21"
 },
 {
+"name": "Kyoto DC",
 "pos": [
 135.75,
 35.02
 ],
-"id": "Kyoto DC"
+"id": "22"
 },
 {
+"name": "Ashburn DC",
 "pos": [
 -77.49,
 39.04
 ],
-"id": "Ashburn DC"
+"id": "23"
 },
 {
+"name": "LA DC",
 "pos": [
 -91.15,
 30.45
 ],
-"id": "LA DC"
+"id": "24"
 },
 {
+"name": "San Jose DC",
 "pos": [
 -121.89,
 37.34
 ],
-"id": "San Jose DC"
+"id": "25"
 },
 {
+"name": "PaloAlto DC",
 "pos": [
 -122.14,
 37.44
 ],
-"id": "PaloAlto DC"
+"id": "26"
 },
 {
+"name": "Okinawa",
 "pos": [
 127.80,
 26.34
 ],
-"id": "Okinawa"
+"id": "27"
 },
 {
+"name": "Sappora DC",
 "pos": [
 141.35,
 43.06
 ],
-"id": "Sappora DC"
+"id": "28"
 },
 {
+"name": "Chiba",
 "pos": [
 140.12,
 35.60
 ],
-"id": "Chiba"
+"id": "29"
 },
 {
+"name": "Tokyo",
 "pos": [
 139.58,
 35.61
 ],
-"id": "Tokyo"
+"id": "30"
 },
 {
+"name": "Toyama",
 "pos": [
 137.21,
 36.70
 ],
-"id": "Toyama"
+"id": "31"
 },
 {
+"name": "Kanazawa",
 "pos": [
 136.63,
 36.59
 ],
-"id": "Kanazawa"
+"id": "32"
 },
 {
+"name": "Hamamatsu",
 "pos": [
 137.73,
 34.70
 ],
-"id": "Hamamatsu"
+"id": "33"
 },
 {
+"name": "Osaka",
 "pos": [
 135.50,
 34.69
 ],
-"id": "Osaka"
+"id": "34"
 },
 {
+"name": "Okayama",
 "pos": [
 133.94,
 34.66
 ],
-"id": "Okayama"
+"id": "35"
 },
 {
+"name": "Hiroshima",
 "pos": [
 132.46,
 34.40
 ],
-"id": "Hiroshima"
+"id": "36"
 }
 ],
 "links": [
@@ -237,8 +265,8 @@
 "uni": 27.08,
 "deg": 14.85
 },
-"source": "Tokyo DC1",
-"target": "Shibuya DC"
+"source": "0",
+"target": "6"
 },
 {
 "dist": 0.00,
@@ -250,8 +278,8 @@
 "uni": 30.27,
 "deg": 16.01
 },
-"source": "Tokyo DC1",
-"target": "Tokyo"
+"source": "0",
+"target": "30"
 },
 {
 "dist": 12.14,
@@ -263,8 +291,8 @@
 "uni": 27.08,
 "deg": 14.85
 },
-"source": "Tokyo DC2",
-"target": "Shibuya DC"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 0.00,
@@ -276,8 +304,8 @@
 "uni": 30.27,
 "deg": 16.01
 },
-"source": "Tokyo DC2",
-"target": "Tokyo"
+"source": "1",
+"target": "30"
 },
 {
 "dist": 968.54,
@@ -289,8 +317,8 @@
 "uni": 27.08,
 "deg": 14.85
 },
-"source": "Sendai DC",
-"target": "Shibuya DC"
+"source": "2",
+"target": "6"
 },
 {
 "dist": 956.40,
@@ -302,8 +330,8 @@
 "uni": 30.27,
 "deg": 16.01
 },
-"source": "Sendai DC",
-"target": "Tokyo"
+"source": "2",
+"target": "30"
 },
 {
 "dist": 28.20,
@@ -315,8 +343,8 @@
 "uni": 27.08,
 "deg": 14.85
 },
-"source": "Saitama DC",
-"target": "Shibuya DC"
+"source": "3",
+"target": "6"
 },
 {
 "dist": 33.31,
@@ -328,8 +356,8 @@
 "uni": 30.27,
 "deg": 16.01
 },
-"source": "Saitama DC",
-"target": "Tokyo"
+"source": "3",
+"target": "30"
 },
 {
 "dist": 9.78,
@@ -341,8 +369,8 @@
 "uni": 57.35,
 "deg": 15.57
 },
-"source": "Nerima DC",
-"target": "Shibuya DC"
+"source": "4",
+"target": "6"
 },
 {
 "dist": 24.01,
@@ -354,8 +382,8 @@
 "uni": 27.08,
 "deg": 14.85
 },
-"source": "Yokohama DC1",
-"target": "Shibuya DC"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 19.39,
@@ -367,8 +395,8 @@
 "uni": 30.27,
 "deg": 16.01
 },
-"source": "Yokohama DC1",
-"target": "Tokyo"
+"source": "5",
+"target": "30"
 },
 {
 "dist": 8.10,
@@ -380,8 +408,8 @@
 "uni": 18.05,
 "deg": 14.99
 },
-"source": "Shibuya DC",
-"target": "Ikebukuro DC"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 24.01,
@@ -393,8 +421,8 @@
 "uni": 27.61,
 "deg": 14.99
 },
-"source": "Shibuya DC",
-"target": "Yokohama DC2"
+"source": "6",
+"target": "8"
 },
 {
 "dist": 259.12,
@@ -406,8 +434,8 @@
 "uni": 20.71,
 "deg": 22.56
 },
-"source": "Shibuya DC",
-"target": "Nagoya DC"
+"source": "6",
+"target": "9"
 },
 {
 "dist": 396.81,
@@ -419,8 +447,8 @@
 "uni": 44.60,
 "deg": 52.40
 },
-"source": "Shibuya DC",
-"target": "Osaka"
+"source": "6",
+"target": "34"
 },
 {
 "dist": 397.58,
@@ -432,8 +460,8 @@
 "uni": 60.53,
 "deg": 62.15
 },
-"source": "Shibuya DC",
-"target": "Shinsaibashi DC"
+"source": "6",
+"target": "21"
 },
 {
 "dist": 10948.67,
@@ -445,8 +473,8 @@
 "uni": 74.34,
 "deg": 79.91
 },
-"source": "Shibuya DC",
-"target": "LA DC"
+"source": "6",
+"target": "24"
 },
 {
 "dist": 835.77,
@@ -458,8 +486,8 @@
 "uni": 27.61,
 "deg": 14.99
 },
-"source": "Shibuya DC",
-"target": "Sappora DC"
+"source": "6",
+"target": "28"
 },
 {
 "dist": 38.28,
@@ -471,8 +499,8 @@
 "uni": 27.61,
 "deg": 14.99
 },
-"source": "Shibuya DC",
-"target": "Chiba"
+"source": "6",
+"target": "29"
 },
 {
 "dist": 12.14,
@@ -484,8 +512,8 @@
 "uni": 14.51,
 "deg": 55.60
 },
-"source": "Shibuya DC",
-"target": "Tokyo"
+"source": "6",
+"target": "30"
 },
 {
 "dist": 399.48,
@@ -497,8 +525,8 @@
 "uni": 17.17,
 "deg": 12.81
 },
-"source": "Ikebukuro DC",
-"target": "Osaka"
+"source": "7",
+"target": "34"
 },
 {
 "dist": 17.41,
@@ -510,8 +538,8 @@
 "uni": 23.01,
 "deg": 18.49
 },
-"source": "Ikebukuro DC",
-"target": "Tokyo"
+"source": "7",
+"target": "30"
 },
 {
 "dist": 19.39,
@@ -523,8 +551,8 @@
 "uni": 30.27,
 "deg": 16.01
 },
-"source": "Yokohama DC2",
-"target": "Tokyo"
+"source": "8",
+"target": "30"
 },
 {
 "dist": 92.48,
@@ -536,8 +564,8 @@
 "uni": 11.68,
 "deg": 7.28
 },
-"source": "Nagoya DC",
-"target": "Hamamatsu"
+"source": "9",
+"target": "33"
 },
 {
 "dist": 139.05,
@@ -549,8 +577,8 @@
 "uni": 21.24,
 "deg": 19.36
 },
-"source": "Nagoya DC",
-"target": "Osaka"
+"source": "9",
+"target": "34"
 },
 {
 "dist": 247.26,
@@ -562,8 +590,8 @@
 "uni": 20.88,
 "deg": 23.29
 },
-"source": "Nagoya DC",
-"target": "Tokyo"
+"source": "9",
+"target": "30"
 },
 {
 "dist": 1920.16,
@@ -575,8 +603,8 @@
 "uni": 33.63,
 "deg": 26.93
 },
-"source": "Newyork DC",
-"target": "LA DC"
+"source": "19",
+"target": "24"
 },
 {
 "dist": 4103.66,
@@ -588,8 +616,8 @@
 "uni": 21.59,
 "deg": 17.61
 },
-"source": "Newyork DC",
-"target": "San Jose DC"
+"source": "19",
+"target": "25"
 },
 {
 "dist": 350.43,
@@ -601,8 +629,8 @@
 "uni": 2.12,
 "deg": 1.31
 },
-"source": "Newyork DC",
-"target": "Ashburn DC"
+"source": "19",
+"target": "23"
 },
 {
 "dist": 483.29,
@@ -614,8 +642,8 @@
 "uni": 66.90,
 "deg": 37.12
 },
-"source": "Fukuoka DC",
-"target": "Osaka"
+"source": "20",
+"target": "34"
 },
 {
 "dist": 846.97,
@@ -627,8 +655,8 @@
 "uni": 57.35,
 "deg": 15.57
 },
-"source": "Fukuoka DC",
-"target": "Okinawa"
+"source": "20",
+"target": "27"
 },
 {
 "dist": 482.66,
@@ -640,8 +668,8 @@
 "uni": 43.54,
 "deg": 23.44
 },
-"source": "Fukuoka DC",
-"target": "Shinsaibashi DC"
+"source": "20",
+"target": "21"
 },
 {
 "dist": 236.47,
@@ -653,8 +681,8 @@
 "uni": 44.60,
 "deg": 25.04
 },
-"source": "Shinsaibashi DC",
-"target": "Kanazawa"
+"source": "21",
+"target": "32"
 },
 {
 "dist": 2.08,
@@ -666,8 +694,8 @@
 "uni": 12.39,
 "deg": 25.23
 },
-"source": "Shinsaibashi DC",
-"target": "Osaka"
+"source": "21",
+"target": "34"
 },
 {
 "dist": 143.20,
@@ -679,8 +707,8 @@
 "uni": 23.36,
 "deg": 12.37
 },
-"source": "Shinsaibashi DC",
-"target": "Okayama"
+"source": "21",
+"target": "35"
 },
 {
 "dist": 280.34,
@@ -692,8 +720,8 @@
 "uni": 23.36,
 "deg": 12.37
 },
-"source": "Shinsaibashi DC",
-"target": "Hiroshima"
+"source": "21",
+"target": "36"
 },
 {
 "dist": 44.90,
@@ -705,8 +733,8 @@
 "uni": 23.36,
 "deg": 12.37
 },
-"source": "Shinsaibashi DC",
-"target": "Kyoto DC"
+"source": "21",
+"target": "22"
 },
 {
 "dist": 385.57,
@@ -718,8 +746,8 @@
 "uni": 64.78,
 "deg": 70.82
 },
-"source": "Shinsaibashi DC",
-"target": "Tokyo"
+"source": "21",
+"target": "30"
 },
 {
 "dist": 43.05,
@@ -731,8 +759,8 @@
 "uni": 34.51,
 "deg": 18.85
 },
-"source": "Kyoto DC",
-"target": "Osaka"
+"source": "22",
+"target": "34"
 },
 {
 "dist": 1569.73,
@@ -744,8 +772,8 @@
 "uni": 33.63,
 "deg": 26.93
 },
-"source": "Ashburn DC",
-"target": "LA DC"
+"source": "23",
+"target": "24"
 },
 {
 "dist": 3847.83,
@@ -757,8 +785,8 @@
 "uni": 21.59,
 "deg": 17.61
 },
-"source": "Ashburn DC",
-"target": "San Jose DC"
+"source": "23",
+"target": "25"
 },
 {
 "dist": 11280.78,
@@ -770,8 +798,8 @@
 "uni": 68.67,
 "deg": 65.82
 },
-"source": "LA DC",
-"target": "Osaka"
+"source": "24",
+"target": "34"
 },
 {
 "dist": 2925.37,
@@ -783,8 +811,8 @@
 "uni": 12.39,
 "deg": 23.00
 },
-"source": "LA DC",
-"target": "San Jose DC"
+"source": "24",
+"target": "25"
 },
 {
 "dist": 2948.37,
@@ -796,8 +824,8 @@
 "uni": 33.98,
 "deg": 17.90
 },
-"source": "LA DC",
-"target": "PaloAlto DC"
+"source": "24",
+"target": "26"
 },
 {
 "dist": 24.71,
@@ -809,8 +837,8 @@
 "uni": 23.36,
 "deg": 12.95
 },
-"source": "San Jose DC",
-"target": "PaloAlto DC"
+"source": "25",
+"target": "26"
 },
 {
 "dist": 8351.30,
@@ -822,8 +850,8 @@
 "uni": 100.00,
 "deg": 99.01
 },
-"source": "San Jose DC",
-"target": "Tokyo"
+"source": "25",
+"target": "30"
 },
 {
 "dist": 842.30,
@@ -835,8 +863,8 @@
 "uni": 30.27,
 "deg": 16.01
 },
-"source": "Sappora DC",
-"target": "Tokyo"
+"source": "28",
+"target": "30"
 },
 {
 "dist": 49.03,
@@ -848,8 +876,8 @@
 "uni": 30.27,
 "deg": 16.01
 },
-"source": "Chiba",
-"target": "Tokyo"
+"source": "29",
+"target": "30"
 },
 {
 "dist": 384.81,
@@ -861,8 +889,8 @@
 "uni": 53.81,
 "deg": 69.94
 },
-"source": "Tokyo",
-"target": "Osaka"
+"source": "30",
+"target": "34"
 },
 {
 "dist": 196.45,
@@ -874,8 +902,8 @@
 "uni": 45.66,
 "deg": 23.58
 },
-"source": "Tokyo",
-"target": "Hamamatsu"
+"source": "30",
+"target": "33"
 },
 {
 "dist": 244.40,
@@ -887,8 +915,8 @@
 "uni": 65.84,
 "deg": 35.52
 },
-"source": "Tokyo",
-"target": "Toyama"
+"source": "30",
+"target": "31"
 },
 {
 "dist": 53.47,
@@ -900,8 +928,8 @@
 "uni": 22.83,
 "deg": 10.33
 },
-"source": "Toyama",
-"target": "Kanazawa"
+"source": "31",
+"target": "32"
 },
 {
 "dist": 143.39,
@@ -913,8 +941,8 @@
 "uni": 33.98,
 "deg": 18.49
 },
-"source": "Osaka",
-"target": "Okayama"
+"source": "34",
+"target": "35"
 },
 {
 "dist": 280.71,
@@ -926,8 +954,8 @@
 "uni": 33.98,
 "deg": 18.49
 },
-"source": "Osaka",
-"target": "Hiroshima"
+"source": "34",
+"target": "36"
 }
 ]
 }

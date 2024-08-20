@@ -30,25 +30,28 @@
 },
 "nodes": [
 {
+"name": "Pacific Wave Sunnyvale",
 "pos": [
 -122.04,
 37.37
 ],
-"id": "Pacific Wave Sunnyvale"
+"id": "10"
 },
 {
+"name": "Pacific Wave Seattle",
 "pos": [
 -122.33,
 47.61
 ],
-"id": "Pacific Wave Seattle"
+"id": "11"
 },
 {
+"name": "Pacific Wave Los Angeles",
 "pos": [
 -118.24,
 34.05
 ],
-"id": "Pacific Wave Los Angeles"
+"id": "15"
 }
 ],
 "links": [
@@ -62,8 +65,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Pacific Wave Sunnyvale",
-"target": "Pacific Wave Seattle"
+"source": "10",
+"target": "11"
 },
 {
 "dist": 503.30,
@@ -75,8 +78,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Pacific Wave Sunnyvale",
-"target": "Pacific Wave Los Angeles"
+"source": "10",
+"target": "15"
 },
 {
 "dist": 1545.74,
@@ -88,8 +91,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Pacific Wave Seattle",
-"target": "Pacific Wave Los Angeles"
+"source": "11",
+"target": "15"
 }
 ]
 }

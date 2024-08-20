@@ -30,32 +30,36 @@
 },
 "nodes": [
 {
+"name": "Intercollege",
 "pos": [
 33.64,
 34.94
 ],
-"id": "Intercollege"
+"id": "1"
 },
 {
+"name": "Limassol PoP",
 "pos": [
 33.03,
 34.67
 ],
-"id": "Limassol PoP"
+"id": "20"
 },
 {
+"name": "Border Router",
 "pos": [
 33.37,
 35.17
 ],
-"id": "Border Router"
+"id": "22"
 },
 {
+"name": "Nicosia PoP",
 "pos": [
 33.37,
 35.17
 ],
-"id": "Nicosia PoP"
+"id": "29"
 }
 ],
 "links": [
@@ -69,8 +73,8 @@
 "uni": 75.00,
 "deg": 55.56
 },
-"source": "Intercollege",
-"target": "Limassol PoP"
+"source": "1",
+"target": "20"
 },
 {
 "dist": 62.57,
@@ -82,8 +86,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Limassol PoP",
-"target": "Border Router"
+"source": "20",
+"target": "22"
 },
 {
 "dist": 0.00,
@@ -95,8 +99,8 @@
 "uni": 75.00,
 "deg": 55.56
 },
-"source": "Border Router",
-"target": "Nicosia PoP"
+"source": "22",
+"target": "29"
 }
 ]
 }

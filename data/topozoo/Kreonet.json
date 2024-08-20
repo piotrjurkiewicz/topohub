@@ -30,95 +30,108 @@
 },
 "nodes": [
 {
+"name": "Jeonju",
 "pos": [
 127.15,
 35.82
 ],
-"id": "Jeonju"
+"id": "0"
 },
 {
+"name": "Jeju",
 "pos": [
 126.52,
 33.51
 ],
-"id": "Jeju"
+"id": "1"
 },
 {
+"name": "Kwangju",
 "pos": [
 126.92,
 35.15
 ],
-"id": "Kwangju"
+"id": "2"
 },
 {
+"name": "Busan",
 "pos": [
 129.04,
 35.10
 ],
-"id": "Busan"
+"id": "3"
 },
 {
+"name": "Changwon",
 "pos": [
 128.68,
 35.23
 ],
-"id": "Changwon"
+"id": "4"
 },
 {
+"name": "Seoul",
 "pos": [
 126.98,
 37.57
 ],
-"id": "Seoul"
+"id": "5"
 },
 {
+"name": "Incheon",
 "pos": [
 126.73,
 37.45
 ],
-"id": "Incheon"
+"id": "6"
 },
 {
+"name": "Suwon",
 "pos": [
 127.01,
 37.29
 ],
-"id": "Suwon"
+"id": "7"
 },
 {
+"name": "Cheonan",
 "pos": [
 127.15,
 36.81
 ],
-"id": "Cheonan"
+"id": "8"
 },
 {
+"name": "Ochang",
 "pos": [
 127.49,
 35.55
 ],
-"id": "Ochang"
+"id": "9"
 },
 {
+"name": "Daejeon",
 "pos": [
 127.42,
 36.32
 ],
-"id": "Daejeon"
+"id": "10"
 },
 {
+"name": "Pohang",
 "pos": [
 129.37,
 36.03
 ],
-"id": "Pohang"
+"id": "11"
 },
 {
+"name": "Daegu",
 "pos": [
 128.59,
 35.87
 ],
-"id": "Daegu"
+"id": "12"
 }
 ],
 "links": [
@@ -132,8 +145,8 @@
 "uni": 40.00,
 "deg": 24.21
 },
-"source": "Jeonju",
-"target": "Daejeon"
+"source": "0",
+"target": "10"
 },
 {
 "dist": 186.50,
@@ -145,8 +158,8 @@
 "uni": 40.00,
 "deg": 24.21
 },
-"source": "Jeju",
-"target": "Kwangju"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 137.52,
@@ -158,8 +171,8 @@
 "uni": 73.33,
 "deg": 66.32
 },
-"source": "Kwangju",
-"target": "Daejeon"
+"source": "2",
+"target": "10"
 },
 {
 "dist": 199.47,
@@ -171,8 +184,8 @@
 "uni": 40.00,
 "deg": 24.21
 },
-"source": "Busan",
-"target": "Daejeon"
+"source": "3",
+"target": "10"
 },
 {
 "dist": 166.57,
@@ -184,8 +197,8 @@
 "uni": 40.00,
 "deg": 24.21
 },
-"source": "Changwon",
-"target": "Daejeon"
+"source": "4",
+"target": "10"
 },
 {
 "dist": 144.14,
@@ -197,8 +210,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Seoul",
-"target": "Daejeon"
+"source": "5",
+"target": "10"
 },
 {
 "dist": 25.19,
@@ -210,8 +223,8 @@
 "uni": 40.00,
 "deg": 24.21
 },
-"source": "Seoul",
-"target": "Incheon"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 30.95,
@@ -223,8 +236,8 @@
 "uni": 40.00,
 "deg": 24.21
 },
-"source": "Seoul",
-"target": "Suwon"
+"source": "5",
+"target": "7"
 },
 {
 "dist": 59.01,
@@ -236,8 +249,8 @@
 "uni": 40.00,
 "deg": 24.21
 },
-"source": "Cheonan",
-"target": "Daejeon"
+"source": "8",
+"target": "10"
 },
 {
 "dist": 85.71,
@@ -249,8 +262,8 @@
 "uni": 40.00,
 "deg": 24.21
 },
-"source": "Ochang",
-"target": "Daejeon"
+"source": "9",
+"target": "10"
 },
 {
 "dist": 177.58,
@@ -262,8 +275,8 @@
 "uni": 40.00,
 "deg": 24.21
 },
-"source": "Daejeon",
-"target": "Pohang"
+"source": "10",
+"target": "11"
 },
 {
 "dist": 116.62,
@@ -275,8 +288,8 @@
 "uni": 40.00,
 "deg": 24.21
 },
-"source": "Daejeon",
-"target": "Daegu"
+"source": "10",
+"target": "12"
 }
 ]
 }

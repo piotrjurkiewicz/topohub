@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.01,
 "max_sdp_num": 2,
 "avg_sdp_hops": 3.07,
-"avg_sdp_len": 74.75,
+"avg_sdp_len": 66.22,
 "avg_adp_num": 1.02,
 "max_adp_num": 2,
 "avg_adp_hops": 3.08,
@@ -30,179 +30,204 @@
 },
 "nodes": [
 {
+"name": "UCCA-C",
 "pos": [
 1.09,
 51.28
 ],
-"id": "UCCA-C"
+"id": "0"
 },
 {
+"name": "Canterbury College",
 "pos": [
 1.09,
 51.27
 ],
-"id": "Canterbury College"
+"id": "1"
 },
 {
+"name": "Medway ACL",
 "pos": [
 0.55,
 51.39
 ],
-"id": "Medway ACL"
+"id": "2"
 },
 {
+"name": "Mid Kent College",
 "pos": [
 0.55,
 51.39
 ],
-"id": "Mid Kent College"
+"id": "3"
 },
 {
+"name": "South Kent College - Ashford",
 "pos": [
 0.86,
 51.14
 ],
-"id": "South Kent College - Ashford"
+"id": "4"
 },
 {
+"name": "KIAD-O",
 "pos": [
 0.50,
 51.27
 ],
-"id": "KIAD-O"
+"id": "5"
 },
 {
+"name": "Thanet College",
 "pos": [
 1.43,
 51.35
 ],
-"id": "Thanet College"
+"id": "6"
 },
 {
+"name": "Hilderstone College",
 "pos": [
 1.43,
 51.36
 ],
-"id": "Hilderstone College"
+"id": "7"
 },
 {
+"name": "Kent ACL",
 "pos": [
 0.52,
 51.28
 ],
-"id": "Kent ACL"
+"id": "8"
 },
 {
+"name": "Hadlow College",
 "pos": [
 0.33,
 51.22
 ],
-"id": "Hadlow College"
+"id": "9"
 },
 {
+"name": "University College Folkestone",
 "pos": [
 1.18,
 51.08
 ],
-"id": "University College Folkestone"
+"id": "10"
 },
 {
+"name": "UoK-C",
 "pos": [
 1.06,
 51.30
 ],
-"id": "UoK-C"
+"id": "12"
 },
 {
+"name": "West Kent College",
 "pos": [
 0.26,
 51.19
 ],
-"id": "West Kent College"
+"id": "13"
 },
 {
+"name": "Hadlow College Mottingham",
 "pos": [
 0.03,
 51.44
 ],
-"id": "Hadlow College Mottingham"
+"id": "14"
 },
 {
+"name": "IFS School of Finance",
 "pos": [
 1.08,
 51.28
 ],
-"id": "IFS School of Finance"
+"id": "15"
 },
 {
+"name": "NW Kent College - Dartford",
 "pos": [
 0.22,
 51.45
 ],
-"id": "NW Kent College - Dartford"
+"id": "16"
 },
 {
+"name": "KIAD-R",
 "pos": [
 0.51,
 51.38
 ],
-"id": "KIAD-R"
+"id": "17"
 },
 {
+"name": "UoG-AH",
 "pos": [
 0.08,
 51.45
 ],
-"id": "UoG-AH"
+"id": "18"
 },
 {
+"name": "University of Greenwich",
 "pos": [
 0.08,
 51.45
 ],
-"id": "University of Greenwich"
+"id": "19"
 },
 {
+"name": "CCCU-C",
 "pos": [
 1.09,
 51.28
 ],
-"id": "CCCU-C"
+"id": "20"
 },
 {
+"name": "IC-Wye",
 "pos": [
 0.94,
 51.18
 ],
-"id": "IC-Wye"
+"id": "21"
 },
 {
+"name": "EIS-Maidstone",
 "pos": [
 0.55,
 51.26
 ],
-"id": "EIS-Maidstone"
+"id": "22"
 },
 {
+"name": "CCCU-S",
 "pos": [
 0.24,
 51.15
 ],
-"id": "CCCU-S"
+"id": "23"
 },
 {
+"name": "CCCU-T",
 "pos": [
 1.41,
 51.36
 ],
-"id": "CCCU-T"
+"id": "24"
 },
 {
+"name": "Dorton College",
 "pos": [
 0.22,
 51.29
 ],
-"id": "Dorton College"
+"id": "25"
 }
 ],
 "links": [
@@ -216,8 +241,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "UCCA-C",
-"target": "UoK-C"
+"source": "0",
+"target": "12"
 },
 {
 "dist": 3.21,
@@ -229,8 +254,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "Canterbury College",
-"target": "UoK-C"
+"source": "1",
+"target": "12"
 },
 {
 "dist": 33.23,
@@ -242,8 +267,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "Medway ACL",
-"target": "University of Greenwich"
+"source": "2",
+"target": "19"
 },
 {
 "dist": 33.03,
@@ -255,8 +280,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "Mid Kent College",
-"target": "University of Greenwich"
+"source": "3",
+"target": "19"
 },
 {
 "dist": 7.12,
@@ -268,8 +293,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "South Kent College - Ashford",
-"target": "IC-Wye"
+"source": "4",
+"target": "21"
 },
 {
 "dist": 3.93,
@@ -281,8 +306,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "KIAD-O",
-"target": "EIS-Maidstone"
+"source": "5",
+"target": "22"
 },
 {
 "dist": 2.06,
@@ -294,8 +319,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "Thanet College",
-"target": "CCCU-T"
+"source": "6",
+"target": "24"
 },
 {
 "dist": 1.68,
@@ -307,8 +332,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "Hilderstone College",
-"target": "CCCU-T"
+"source": "7",
+"target": "24"
 },
 {
 "dist": 36.22,
@@ -320,8 +345,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "Kent ACL",
-"target": "University of Greenwich"
+"source": "8",
+"target": "19"
 },
 {
 "dist": 9.54,
@@ -333,8 +358,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "Hadlow College",
-"target": "CCCU-S"
+"source": "9",
+"target": "23"
 },
 {
 "dist": 20.48,
@@ -346,8 +371,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "University College Folkestone",
-"target": "IC-Wye"
+"source": "10",
+"target": "21"
 },
 {
 "dist": 2.72,
@@ -359,8 +384,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "UoK-C",
-"target": "IFS School of Finance"
+"source": "12",
+"target": "15"
 },
 {
 "dist": 70.31,
@@ -372,8 +397,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "UoK-C",
-"target": "University of Greenwich"
+"source": "12",
+"target": "19"
 },
 {
 "dist": 2.82,
@@ -385,8 +410,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "UoK-C",
-"target": "CCCU-C"
+"source": "12",
+"target": "20"
 },
 {
 "dist": 15.46,
@@ -398,8 +423,8 @@
 "uni": 54.50,
 "deg": 54.50
 },
-"source": "UoK-C",
-"target": "IC-Wye"
+"source": "12",
+"target": "21"
 },
 {
 "dist": 24.93,
@@ -411,8 +436,8 @@
 "uni": 62.56,
 "deg": 53.32
 },
-"source": "UoK-C",
-"target": "CCCU-T"
+"source": "12",
+"target": "24"
 },
 {
 "dist": 4.24,
@@ -424,8 +449,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "West Kent College",
-"target": "CCCU-S"
+"source": "13",
+"target": "23"
 },
 {
 "dist": 3.31,
@@ -437,8 +462,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "Hadlow College Mottingham",
-"target": "UoG-AH"
+"source": "14",
+"target": "18"
 },
 {
 "dist": 9.69,
@@ -450,8 +475,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "NW Kent College - Dartford",
-"target": "UoG-AH"
+"source": "16",
+"target": "18"
 },
 {
 "dist": 31.22,
@@ -463,8 +488,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "KIAD-R",
-"target": "University of Greenwich"
+"source": "17",
+"target": "19"
 },
 {
 "dist": 0.00,
@@ -476,8 +501,8 @@
 "uni": 62.56,
 "deg": 53.32
 },
-"source": "UoG-AH",
-"target": "University of Greenwich"
+"source": "18",
+"target": "19"
 },
 {
 "dist": 39.01,
@@ -489,8 +514,8 @@
 "uni": 74.41,
 "deg": 74.41
 },
-"source": "University of Greenwich",
-"target": "EIS-Maidstone"
+"source": "19",
+"target": "22"
 },
 {
 "dist": 20.43,
@@ -502,8 +527,8 @@
 "uni": 22.75,
 "deg": 11.61
 },
-"source": "University of Greenwich",
-"target": "Dorton College"
+"source": "19",
+"target": "25"
 },
 {
 "dist": 28.21,
@@ -515,8 +540,8 @@
 "uni": 45.97,
 "deg": 45.97
 },
-"source": "IC-Wye",
-"target": "EIS-Maidstone"
+"source": "21",
+"target": "22"
 },
 {
 "dist": 24.31,
@@ -528,8 +553,8 @@
 "uni": 62.56,
 "deg": 53.32
 },
-"source": "EIS-Maidstone",
-"target": "CCCU-S"
+"source": "22",
+"target": "23"
 }
 ]
 }

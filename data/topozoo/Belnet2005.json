@@ -30,123 +30,140 @@
 },
 "nodes": [
 {
+"name": "Geel",
 "pos": [
 5.00,
 51.17
 ],
-"id": "Geel"
+"id": "0"
 },
 {
+"name": "Antwerpen",
 "pos": [
 4.42,
 51.22
 ],
-"id": "Antwerpen"
+"id": "1"
 },
 {
+"name": "Leuven",
 "pos": [
 4.70,
 50.88
 ],
-"id": "Leuven"
+"id": "2"
 },
 {
+"name": "Hasselt",
 "pos": [
 5.33,
 50.93
 ],
-"id": "Hasselt"
+"id": "3"
 },
 {
+"name": "Brussel II B",
 "pos": [
 4.35,
 50.85
 ],
-"id": "Brussel II B"
+"id": "4"
 },
 {
+"name": "Brussel I B",
 "pos": [
 4.35,
 50.85
 ],
-"id": "Brussel I B"
+"id": "6"
 },
 {
+"name": "Brussel II A",
 "pos": [
 4.35,
 50.85
 ],
-"id": "Brussel II A"
+"id": "7"
 },
 {
+"name": "Liege",
 "pos": [
 5.57,
 50.64
 ],
-"id": "Liege"
+"id": "13"
 },
 {
+"name": "Brussel I A",
 "pos": [
 4.35,
 50.85
 ],
-"id": "Brussel I A"
+"id": "14"
 },
 {
+"name": "Brugge",
 "pos": [
 3.22,
 51.21
 ],
-"id": "Brugge"
+"id": "15"
 },
 {
+"name": "Gent",
 "pos": [
 3.72,
 51.05
 ],
-"id": "Gent"
+"id": "16"
 },
 {
+"name": "Korthijk",
 "pos": [
 3.26,
 50.83
 ],
-"id": "Korthijk"
+"id": "17"
 },
 {
+"name": "Mons",
 "pos": [
 3.95,
 50.45
 ],
-"id": "Mons"
+"id": "18"
 },
 {
+"name": "Charleroi",
 "pos": [
 4.43,
 50.42
 ],
-"id": "Charleroi"
+"id": "19"
 },
 {
+"name": "Louvain-la-Neuve",
 "pos": [
 4.61,
 50.67
 ],
-"id": "Louvain-la-Neuve"
+"id": "20"
 },
 {
+"name": "Namur",
 "pos": [
 4.83,
 50.47
 ],
-"id": "Namur"
+"id": "21"
 },
 {
+"name": "Arlon",
 "pos": [
 5.82,
 49.68
 ],
-"id": "Arlon"
+"id": "22"
 }
 ],
 "links": [
@@ -160,8 +177,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Geel",
-"target": "Brussel II B"
+"source": "0",
+"target": "4"
 },
 {
 "dist": 57.57,
@@ -173,8 +190,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Geel",
-"target": "Brussel I B"
+"source": "0",
+"target": "6"
 },
 {
 "dist": 41.01,
@@ -186,8 +203,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Antwerpen",
-"target": "Brussel II B"
+"source": "1",
+"target": "4"
 },
 {
 "dist": 41.01,
@@ -199,8 +216,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Antwerpen",
-"target": "Brussel I B"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 24.93,
@@ -212,8 +229,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Leuven",
-"target": "Brussel II B"
+"source": "2",
+"target": "4"
 },
 {
 "dist": 24.93,
@@ -225,8 +242,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Leuven",
-"target": "Brussel I B"
+"source": "2",
+"target": "6"
 },
 {
 "dist": 69.69,
@@ -238,8 +255,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Hasselt",
-"target": "Brussel II B"
+"source": "3",
+"target": "4"
 },
 {
 "dist": 69.69,
@@ -251,8 +268,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Hasselt",
-"target": "Brussel I B"
+"source": "3",
+"target": "6"
 },
 {
 "dist": 0.00,
@@ -264,8 +281,8 @@
 "uni": 12.50,
 "deg": 100.00
 },
-"source": "Brussel II B",
-"target": "Brussel I B"
+"source": "4",
+"target": "6"
 },
 {
 "dist": 0.00,
@@ -277,8 +294,8 @@
 "uni": 93.75,
 "deg": 33.98
 },
-"source": "Brussel II B",
-"target": "Brussel II A"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 89.16,
@@ -290,8 +307,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel II B",
-"target": "Liege"
+"source": "4",
+"target": "13"
 },
 {
 "dist": 0.00,
@@ -303,8 +320,8 @@
 "uni": 93.75,
 "deg": 33.98
 },
-"source": "Brussel II B",
-"target": "Brussel I A"
+"source": "4",
+"target": "14"
 },
 {
 "dist": 88.19,
@@ -316,8 +333,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel II B",
-"target": "Brugge"
+"source": "4",
+"target": "15"
 },
 {
 "dist": 49.54,
@@ -329,8 +346,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel II B",
-"target": "Gent"
+"source": "4",
+"target": "16"
 },
 {
 "dist": 76.17,
@@ -342,8 +359,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel II B",
-"target": "Korthijk"
+"source": "4",
+"target": "17"
 },
 {
 "dist": 52.20,
@@ -355,8 +372,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel II B",
-"target": "Mons"
+"source": "4",
+"target": "18"
 },
 {
 "dist": 48.62,
@@ -368,8 +385,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel II B",
-"target": "Charleroi"
+"source": "4",
+"target": "19"
 },
 {
 "dist": 27.57,
@@ -381,8 +398,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel II B",
-"target": "Louvain-la-Neuve"
+"source": "4",
+"target": "20"
 },
 {
 "dist": 54.06,
@@ -394,8 +411,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel II B",
-"target": "Namur"
+"source": "4",
+"target": "21"
 },
 {
 "dist": 166.56,
@@ -407,8 +424,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel II B",
-"target": "Arlon"
+"source": "4",
+"target": "22"
 },
 {
 "dist": 0.00,
@@ -420,8 +437,8 @@
 "uni": 93.75,
 "deg": 33.98
 },
-"source": "Brussel I B",
-"target": "Brussel II A"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 89.16,
@@ -433,8 +450,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel I B",
-"target": "Liege"
+"source": "6",
+"target": "13"
 },
 {
 "dist": 0.00,
@@ -446,8 +463,8 @@
 "uni": 93.75,
 "deg": 33.98
 },
-"source": "Brussel I B",
-"target": "Brussel I A"
+"source": "6",
+"target": "14"
 },
 {
 "dist": 88.19,
@@ -459,8 +476,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel I B",
-"target": "Brugge"
+"source": "6",
+"target": "15"
 },
 {
 "dist": 49.54,
@@ -472,8 +489,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel I B",
-"target": "Gent"
+"source": "6",
+"target": "16"
 },
 {
 "dist": 76.17,
@@ -485,8 +502,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel I B",
-"target": "Korthijk"
+"source": "6",
+"target": "17"
 },
 {
 "dist": 52.20,
@@ -498,8 +515,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel I B",
-"target": "Mons"
+"source": "6",
+"target": "18"
 },
 {
 "dist": 48.62,
@@ -511,8 +528,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel I B",
-"target": "Charleroi"
+"source": "6",
+"target": "19"
 },
 {
 "dist": 27.57,
@@ -524,8 +541,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel I B",
-"target": "Louvain-la-Neuve"
+"source": "6",
+"target": "20"
 },
 {
 "dist": 54.06,
@@ -537,8 +554,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel I B",
-"target": "Namur"
+"source": "6",
+"target": "21"
 },
 {
 "dist": 166.56,
@@ -550,8 +567,8 @@
 "uni": 100.00,
 "deg": 24.22
 },
-"source": "Brussel I B",
-"target": "Arlon"
+"source": "6",
+"target": "22"
 },
 {
 "dist": 0.00,
@@ -563,8 +580,8 @@
 "uni": 12.50,
 "deg": 3.52
 },
-"source": "Brussel II A",
-"target": "Brussel I A"
+"source": "7",
+"target": "14"
 }
 ]
 }

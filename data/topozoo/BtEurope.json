@@ -5,620 +5,662 @@
 "name": "bteurope",
 "demands": {},
 "stats": {
-"nodes": 21,
-"links": 34,
-"demands": 420,
+"nodes": 22,
+"links": 35,
+"demands": 462,
 "min_degree": 1,
-"avg_degree": 3.24,
-"std_degree": 3.45,
-"max_degree": 15,
-"gini": 0.44,
+"avg_degree": 3.18,
+"std_degree": 3.02,
+"max_degree": 12,
+"gini": 0.42,
 "min_link_len": 0.00,
-"avg_link_len": 613.07,
+"avg_link_len": 605.76,
 "max_link_len": 1449.50,
 "diameter_len": 3219.46,
 "diameter_hops": 4,
-"avg_sdp_num": 1.18,
-"max_sdp_num": 2,
-"avg_sdp_hops": 2.15,
-"avg_sdp_len": 1231.31,
-"avg_adp_num": 1.69,
-"max_adp_num": 8,
-"avg_adp_hops": 2.42,
-"avg_adp_len": 1632.09
+"avg_sdp_num": 1.16,
+"max_sdp_num": 3,
+"avg_sdp_hops": 2.26,
+"avg_sdp_len": 1143.89,
+"avg_adp_num": 1.74,
+"max_adp_num": 9,
+"avg_adp_hops": 2.57,
+"avg_adp_len": 1591.07
 }
 },
 "nodes": [
 {
+"name": "Budapest",
 "pos": [
 19.04,
 47.50
 ],
-"id": "Budapest"
+"id": "0"
 },
 {
+"name": "Munich",
 "pos": [
 11.58,
 48.14
 ],
-"id": "Munich"
+"id": "1"
 },
 {
+"name": "Prague",
 "pos": [
 14.42,
 50.09
 ],
-"id": "Prague"
+"id": "2"
 },
 {
+"name": "Vienna",
 "pos": [
 16.37,
 48.21
 ],
-"id": "Vienna"
+"id": "3"
 },
 {
+"name": "Dusseldorf",
 "pos": [
 6.78,
 51.22
 ],
-"id": "Dusseldorf"
+"id": "4"
 },
 {
+"name": "Frankfurt",
 "pos": [
 8.68,
 50.12
 ],
-"id": "Frankfurt"
+"id": "5"
 },
 {
+"name": "Zurich",
 "pos": [
 8.55,
 47.37
 ],
-"id": "Zurich"
+"id": "6"
 },
 {
+"name": "Paris",
 "pos": [
 2.35,
 48.85
 ],
-"id": "Paris"
+"id": "7"
 },
 {
+"name": "Milan",
 "pos": [
 9.19,
 45.46
 ],
-"id": "Milan"
+"id": "8"
 },
 {
+"name": "Barcelona",
 "pos": [
 2.16,
 41.39
 ],
-"id": "Barcelona"
+"id": "9"
 },
 {
+"name": "Goonhilly",
 "pos": [
 -5.20,
 50.05
 ],
-"id": "Goonhilly"
+"id": "10"
 },
 {
+"name": "Madrid",
 "pos": [
 -3.70,
 40.42
 ],
-"id": "Madrid"
+"id": "13"
 },
 {
+"name": "Helsinki",
 "pos": [
 24.94,
 60.17
 ],
-"id": "Helsinki"
+"id": "14"
 },
 {
+"name": "Copenhagen",
 "pos": [
 12.57,
 55.68
 ],
-"id": "Copenhagen"
+"id": "15"
 },
 {
+"name": "London",
 "pos": [
 -0.13,
 51.51
 ],
-"id": "London"
+"id": "16"
 },
 {
+"name": "London",
+"pos": [
+-0.13,
+51.51
+],
+"id": "17"
+},
+{
+"name": "Madley",
 "pos": [
 -2.85,
 52.03
 ],
-"id": "Madley"
+"id": "18"
 },
 {
+"name": "Dublin",
 "pos": [
 -6.27,
 53.34
 ],
-"id": "Dublin"
+"id": "19"
 },
 {
+"name": "Brussels",
 "pos": [
 4.35,
 50.85
 ],
-"id": "Brussels"
+"id": "20"
 },
 {
+"name": "Amsterdam",
 "pos": [
 4.89,
 52.37
 ],
-"id": "Amsterdam"
+"id": "21"
 },
 {
+"name": "Gothenburg",
 "pos": [
 11.97,
 57.71
 ],
-"id": "Gothenburg"
+"id": "22"
 },
 {
+"name": "Stockholm",
 "pos": [
 18.06,
 59.33
 ],
-"id": "Stockholm"
+"id": "23"
 }
 ],
 "links": [
 {
 "dist": 1449.50,
 "ecmp_fwd": {
-"uni": 34.67,
-"deg": 24.70
+"uni": 30.77,
+"deg": 21.28
 },
 "ecmp_bwd": {
-"uni": 36.00,
-"deg": 25.30
+"uni": 33.33,
+"deg": 22.55
 },
-"source": "Budapest",
-"target": "London"
+"source": "0",
+"target": "17"
 },
 {
 "dist": 811.79,
 "ecmp_fwd": {
-"uni": 18.67,
-"deg": 15.55
+"uni": 23.08,
+"deg": 17.30
 },
 "ecmp_bwd": {
-"uni": 17.33,
-"deg": 14.94
+"uni": 20.51,
+"deg": 16.03
 },
-"source": "Budapest",
-"target": "Frankfurt"
+"source": "0",
+"target": "5"
 },
 {
 "dist": 486.63,
 "ecmp_fwd": {
-"uni": 13.33,
-"deg": 9.15
+"uni": 14.10,
+"deg": 9.93
 },
 "ecmp_bwd": {
-"uni": 10.00,
-"deg": 7.47
+"uni": 11.97,
+"deg": 8.61
 },
-"source": "Munich",
-"target": "Dusseldorf"
+"source": "1",
+"target": "4"
 },
 {
 "dist": 304.55,
 "ecmp_fwd": {
-"uni": 40.00,
-"deg": 31.10
+"uni": 39.74,
+"deg": 28.65
 },
 "ecmp_bwd": {
-"uni": 43.33,
-"deg": 32.77
+"uni": 41.88,
+"deg": 29.98
 },
-"source": "Munich",
-"target": "Frankfurt"
+"source": "1",
+"target": "5"
 },
 {
 "dist": 1032.99,
 "ecmp_fwd": {
-"uni": 34.67,
-"deg": 24.70
+"uni": 24.36,
+"deg": 19.95
 },
 "ecmp_bwd": {
-"uni": 36.00,
-"deg": 25.30
+"uni": 25.43,
+"deg": 20.61
 },
-"source": "Prague",
-"target": "London"
+"source": "2",
+"target": "16"
 },
 {
 "dist": 409.23,
 "ecmp_fwd": {
-"uni": 18.67,
-"deg": 15.55
+"uni": 32.48,
+"deg": 26.57
 },
 "ecmp_bwd": {
-"uni": 17.33,
-"deg": 14.94
+"uni": 31.41,
+"deg": 25.91
 },
-"source": "Prague",
-"target": "Frankfurt"
+"source": "2",
+"target": "5"
 },
 {
 "dist": 597.80,
 "ecmp_fwd": {
-"uni": 24.00,
-"deg": 18.60
+"uni": 23.08,
+"deg": 16.45
 },
 "ecmp_bwd": {
-"uni": 23.33,
-"deg": 18.29
+"uni": 22.44,
+"deg": 16.17
 },
-"source": "Vienna",
-"target": "Frankfurt"
+"source": "3",
+"target": "5"
 },
 {
 "dist": 936.77,
 "ecmp_fwd": {
-"uni": 29.33,
-"deg": 21.65
+"uni": 30.77,
+"deg": 22.13
 },
 "ecmp_bwd": {
-"uni": 30.00,
-"deg": 21.95
+"uni": 31.41,
+"deg": 22.41
 },
-"source": "Vienna",
-"target": "Amsterdam"
+"source": "3",
+"target": "21"
 },
 {
 "dist": 182.15,
 "ecmp_fwd": {
-"uni": 21.33,
-"deg": 25.61
+"uni": 20.51,
+"deg": 22.55
 },
 "ecmp_bwd": {
-"uni": 20.67,
-"deg": 25.15
+"uni": 19.87,
+"deg": 22.13
 },
-"source": "Dusseldorf",
-"target": "Frankfurt"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 182.38,
 "ecmp_fwd": {
-"uni": 40.00,
-"deg": 39.33
+"uni": 42.31,
+"deg": 40.99
 },
 "ecmp_bwd": {
-"uni": 37.33,
-"deg": 38.11
+"uni": 40.81,
+"deg": 40.09
 },
-"source": "Dusseldorf",
-"target": "Amsterdam"
+"source": "4",
+"target": "21"
 },
 {
 "dist": 306.03,
 "ecmp_fwd": {
-"uni": 17.33,
-"deg": 14.94
+"uni": 20.51,
+"deg": 16.03
 },
 "ecmp_bwd": {
-"uni": 18.67,
-"deg": 15.55
+"uni": 23.08,
+"deg": 17.30
 },
-"source": "Frankfurt",
-"target": "Zurich"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 518.85,
 "ecmp_fwd": {
-"uni": 17.33,
-"deg": 14.94
+"uni": 20.51,
+"deg": 16.03
 },
 "ecmp_bwd": {
-"uni": 18.67,
-"deg": 15.55
+"uni": 23.08,
+"deg": 17.30
 },
-"source": "Frankfurt",
-"target": "Milan"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 637.72,
 "ecmp_fwd": {
-"uni": 50.00,
-"deg": 99.09
+"uni": 51.28,
+"deg": 79.95
 },
 "ecmp_bwd": {
-"uni": 52.00,
-"deg": 100.00
+"uni": 51.71,
+"deg": 80.19
 },
-"source": "Frankfurt",
-"target": "London"
+"source": "5",
+"target": "17"
 },
 {
 "dist": 364.34,
 "ecmp_fwd": {
-"uni": 38.00,
-"deg": 72.26
+"uni": 56.41,
+"deg": 91.44
 },
 "ecmp_bwd": {
-"uni": 32.67,
-"deg": 69.82
+"uni": 48.08,
+"deg": 87.33
 },
-"source": "Frankfurt",
-"target": "Amsterdam"
+"source": "5",
+"target": "21"
 },
 {
 "dist": 777.61,
 "ecmp_fwd": {
-"uni": 34.67,
-"deg": 24.70
+"uni": 30.77,
+"deg": 21.28
 },
 "ecmp_bwd": {
-"uni": 36.00,
-"deg": 25.30
+"uni": 33.33,
+"deg": 22.55
 },
-"source": "Zurich",
-"target": "London"
+"source": "6",
+"target": "17"
 },
 {
 "dist": 343.87,
 "ecmp_fwd": {
-"uni": 32.00,
-"deg": 23.17
+"uni": 26.92,
+"deg": 18.44
 },
 "ecmp_bwd": {
-"uni": 31.33,
-"deg": 22.87
+"uni": 26.28,
+"deg": 18.16
 },
-"source": "Paris",
-"target": "London"
+"source": "7",
+"target": "17"
 },
 {
 "dist": 430.63,
 "ecmp_fwd": {
-"uni": 21.33,
-"deg": 17.07
+"uni": 26.92,
+"deg": 20.14
 },
 "ecmp_bwd": {
-"uni": 22.00,
-"deg": 17.38
+"uni": 27.56,
+"deg": 20.43
 },
-"source": "Paris",
-"target": "Amsterdam"
+"source": "7",
+"target": "21"
 },
 {
 "dist": 959.61,
 "ecmp_fwd": {
-"uni": 34.67,
-"deg": 24.70
+"uni": 30.77,
+"deg": 21.28
 },
 "ecmp_bwd": {
-"uni": 36.00,
-"deg": 25.30
+"uni": 33.33,
+"deg": 22.55
 },
-"source": "Milan",
-"target": "London"
+"source": "8",
+"target": "17"
 },
 {
 "dist": 504.38,
 "ecmp_fwd": {
-"uni": 16.67,
-"deg": 12.96
+"uni": 17.31,
+"deg": 12.20
 },
 "ecmp_bwd": {
-"uni": 16.00,
-"deg": 12.80
+"uni": 18.59,
+"deg": 13.05
 },
-"source": "Barcelona",
-"target": "Madrid"
+"source": "9",
+"target": "13"
 },
 {
 "dist": 1239.12,
 "ecmp_fwd": {
-"uni": 45.33,
-"deg": 35.98
+"uni": 51.28,
+"deg": 38.30
 },
 "ecmp_bwd": {
-"uni": 46.00,
-"deg": 36.13
+"uni": 50.00,
+"deg": 37.45
 },
-"source": "Barcelona",
-"target": "Amsterdam"
+"source": "9",
+"target": "21"
 },
 {
 "dist": 391.90,
 "ecmp_fwd": {
-"uni": 53.33,
-"deg": 20.43
+"uni": 53.85,
+"deg": 19.57
 },
 "ecmp_bwd": {
-"uni": 53.33,
-"deg": 20.43
+"uni": 53.85,
+"deg": 19.57
 },
-"source": "Goonhilly",
-"target": "London"
+"source": "10",
+"target": "17"
 },
 {
 "dist": 1263.94,
 "ecmp_fwd": {
-"uni": 56.00,
-"deg": 42.07
+"uni": 51.28,
+"deg": 36.60
 },
 "ecmp_bwd": {
-"uni": 55.33,
-"deg": 41.92
+"uni": 52.56,
+"deg": 37.45
 },
-"source": "Madrid",
-"target": "London"
+"source": "13",
+"target": "17"
 },
 {
 "dist": 395.86,
 "ecmp_fwd": {
-"uni": 53.33,
-"deg": 20.43
+"uni": 53.85,
+"deg": 19.57
 },
 "ecmp_bwd": {
-"uni": 53.33,
-"deg": 20.43
+"uni": 53.85,
+"deg": 19.57
 },
-"source": "Helsinki",
-"target": "Stockholm"
+"source": "14",
+"target": "23"
 },
 {
 "dist": 522.53,
 "ecmp_fwd": {
-"uni": 53.33,
-"deg": 20.43
+"uni": 53.85,
+"deg": 19.57
 },
 "ecmp_bwd": {
-"uni": 53.33,
-"deg": 20.43
+"uni": 53.85,
+"deg": 19.57
 },
-"source": "Copenhagen",
-"target": "Stockholm"
+"source": "15",
+"target": "23"
 },
 {
 "dist": 0.00,
 "ecmp_fwd": {
-"uni": 0.00,
-"deg": 0.00
+"uni": 63.25,
+"deg": 60.76
 },
 "ecmp_bwd": {
-"uni": 0.00,
-"deg": 0.00
+"uni": 55.13,
+"deg": 56.41
 },
-"source": "London",
-"target": "London"
+"source": "16",
+"target": "17"
 },
 {
 "dist": 357.03,
 "ecmp_fwd": {
-"uni": 46.00,
-"deg": 91.31
+"uni": 20.30,
+"deg": 31.11
 },
 "ecmp_bwd": {
-"uni": 46.00,
-"deg": 91.31
+"uni": 21.15,
+"deg": 31.87
 },
-"source": "London",
-"target": "Amsterdam"
+"source": "16",
+"target": "21"
 },
 {
 "dist": 1432.99,
 "ecmp_fwd": {
-"uni": 94.67,
-"deg": 81.71
+"uni": 40.38,
+"deg": 32.20
 },
 "ecmp_bwd": {
-"uni": 100.00,
-"deg": 84.30
+"uni": 48.72,
+"deg": 36.45
 },
-"source": "London",
-"target": "Stockholm"
+"source": "16",
+"target": "23"
 },
 {
 "dist": 196.37,
 "ecmp_fwd": {
-"uni": 53.33,
-"deg": 20.43
+"uni": 53.85,
+"deg": 19.57
 },
 "ecmp_bwd": {
-"uni": 53.33,
-"deg": 20.43
+"uni": 53.85,
+"deg": 19.57
 },
-"source": "London",
-"target": "Madley"
+"source": "17",
+"target": "18"
 },
 {
 "dist": 463.67,
 "ecmp_fwd": {
-"uni": 31.33,
-"deg": 22.87
+"uni": 26.28,
+"deg": 18.16
 },
 "ecmp_bwd": {
-"uni": 32.00,
-"deg": 23.17
+"uni": 26.92,
+"deg": 18.44
 },
-"source": "London",
-"target": "Dublin"
+"source": "17",
+"target": "19"
 },
 {
 "dist": 320.40,
 "ecmp_fwd": {
-"uni": 53.33,
-"deg": 20.43
+"uni": 53.85,
+"deg": 19.57
 },
 "ecmp_bwd": {
-"uni": 53.33,
-"deg": 20.43
+"uni": 53.85,
+"deg": 19.57
 },
-"source": "London",
-"target": "Brussels"
+"source": "17",
+"target": "20"
+},
+{
+"dist": 357.03,
+"ecmp_fwd": {
+"uni": 72.44,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 72.44,
+"deg": 100.00
+},
+"source": "17",
+"target": "21"
 },
 {
 "dist": 756.18,
 "ecmp_fwd": {
-"uni": 21.33,
-"deg": 17.07
+"uni": 26.92,
+"deg": 20.14
 },
 "ecmp_bwd": {
-"uni": 22.00,
-"deg": 17.38
+"uni": 27.56,
+"deg": 20.43
 },
-"source": "Dublin",
-"target": "Amsterdam"
+"source": "19",
+"target": "21"
 },
 {
 "dist": 744.37,
 "ecmp_fwd": {
-"uni": 36.67,
-"deg": 28.96
+"uni": 44.23,
+"deg": 33.19
 },
 "ecmp_bwd": {
-"uni": 33.33,
-"deg": 27.44
+"uni": 43.59,
+"deg": 32.91
 },
-"source": "Amsterdam",
-"target": "Gothenburg"
+"source": "21",
+"target": "22"
 },
 {
 "dist": 1125.77,
 "ecmp_fwd": {
-"uni": 50.00,
-"deg": 51.22
+"uni": 100.00,
+"deg": 90.35
 },
 "ecmp_bwd": {
-"uni": 48.00,
-"deg": 50.15
+"uni": 92.31,
+"deg": 86.38
 },
-"source": "Amsterdam",
-"target": "Stockholm"
+"source": "21",
+"target": "23"
 },
 {
 "dist": 397.46,
 "ecmp_fwd": {
-"uni": 20.00,
-"deg": 12.80
+"uni": 10.26,
+"deg": 5.67
 },
 "ecmp_bwd": {
-"uni": 16.67,
-"deg": 11.28
+"uni": 9.62,
+"deg": 5.39
 },
-"source": "Gothenburg",
-"target": "Stockholm"
+"source": "22",
+"target": "23"
 }
 ]
 }

@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.13,
 "max_sdp_num": 2,
 "avg_sdp_hops": 3.58,
-"avg_sdp_len": 197.72,
+"avg_sdp_len": 196.15,
 "avg_adp_num": 2.21,
 "max_adp_num": 4,
 "avg_adp_hops": 4.68,
@@ -30,179 +30,204 @@
 },
 "nodes": [
 {
+"name": "R0",
 "pos": [
 188.48,
 463.39
 ],
-"id": "R0"
+"id": 0
 },
 {
+"name": "R1",
 "pos": [
 421.72,
 107.02
 ],
-"id": "R1"
+"id": 1
 },
 {
+"name": "R2",
 "pos": [
 435.85,
 318.23
 ],
-"id": "R2"
+"id": 2
 },
 {
+"name": "R3",
 "pos": [
 21.20,
 476.49
 ],
-"id": "R3"
+"id": 3
 },
 {
+"name": "R4",
 "pos": [
 127.84,
 152.95
 ],
-"id": "R4"
+"id": 4
 },
 {
+"name": "R5",
 "pos": [
 212.04,
 294.26
 ],
-"id": "R5"
+"id": 5
 },
 {
+"name": "R6",
 "pos": [
 62.20,
 343.34
 ],
-"id": "R6"
+"id": 6
 },
 {
+"name": "R7",
 "pos": [
 416.12,
 256.16
 ],
-"id": "R7"
+"id": 7
 },
 {
+"name": "R8",
 "pos": [
 397.23,
 312.49
 ],
-"id": "R8"
+"id": 8
 },
 {
+"name": "R9",
 "pos": [
 179.34,
 234.70
 ],
-"id": "R9"
+"id": 9
 },
 {
+"name": "R10",
 "pos": [
 51.99,
 486.55
 ],
-"id": "R10"
+"id": 10
 },
 {
+"name": "R11",
 "pos": [
 318.01,
 49.11
 ],
-"id": "R11"
+"id": 11
 },
 {
+"name": "R12",
 "pos": [
 291.39,
 207.21
 ],
-"id": "R12"
+"id": 12
 },
 {
+"name": "R13",
 "pos": [
 94.70,
 80.47
 ],
-"id": "R13"
+"id": 13
 },
 {
+"name": "R14",
 "pos": [
 230.37,
 35.18
 ],
-"id": "R14"
+"id": 14
 },
 {
+"name": "R15",
 "pos": [
 281.54,
 257.46
 ],
-"id": "R15"
+"id": 15
 },
 {
+"name": "R16",
 "pos": [
 63.54,
 437.58
 ],
-"id": "R16"
+"id": 16
 },
 {
+"name": "R17",
 "pos": [
 20.26,
 86.04
 ],
-"id": "R17"
+"id": 17
 },
 {
+"name": "R18",
 "pos": [
 217.78,
 247.07
 ],
-"id": "R18"
+"id": 18
 },
 {
+"name": "R19",
 "pos": [
 252.37,
 241.37
 ],
-"id": "R19"
+"id": 19
 },
 {
+"name": "R20",
 "pos": [
 28.80,
 408.17
 ],
-"id": "R20"
+"id": 20
 },
 {
+"name": "R21",
 "pos": [
 141.42,
 23.87
 ],
-"id": "R21"
+"id": 21
 },
 {
+"name": "R22",
 "pos": [
 204.14,
 407.22
 ],
-"id": "R22"
+"id": 22
 },
 {
+"name": "R23",
 "pos": [
 314.41,
 228.62
 ],
-"id": "R23"
+"id": 23
 },
 {
+"name": "R24",
 "pos": [
 239.00,
 109.81
 ],
-"id": "R24"
+"id": 24
 }
 ],
 "links": [
@@ -216,8 +241,8 @@
 "uni": 9.13,
 "deg": 7.33
 },
-"source": "R0",
-"target": "R16"
+"source": 0,
+"target": 16
 },
 {
 "dist": 58.31,
@@ -229,8 +254,8 @@
 "uni": 23.80,
 "deg": 16.75
 },
-"source": "R0",
-"target": "R22"
+"source": 0,
+"target": 22
 },
 {
 "dist": 149.24,
@@ -242,8 +267,8 @@
 "uni": 21.15,
 "deg": 20.85
 },
-"source": "R1",
-"target": "R7"
+"source": 1,
+"target": 7
 },
 {
 "dist": 118.78,
@@ -255,8 +280,8 @@
 "uni": 31.25,
 "deg": 30.96
 },
-"source": "R1",
-"target": "R11"
+"source": 1,
+"target": 11
 },
 {
 "dist": 164.39,
@@ -268,8 +293,8 @@
 "uni": 18.99,
 "deg": 22.26
 },
-"source": "R1",
-"target": "R12"
+"source": 1,
+"target": 12
 },
 {
 "dist": 162.17,
@@ -281,8 +306,8 @@
 "uni": 5.29,
 "deg": 6.93
 },
-"source": "R1",
-"target": "R23"
+"source": 1,
+"target": 23
 },
 {
 "dist": 65.13,
@@ -294,8 +319,8 @@
 "uni": 18.27,
 "deg": 11.77
 },
-"source": "R2",
-"target": "R7"
+"source": 2,
+"target": 7
 },
 {
 "dist": 39.05,
@@ -307,8 +332,8 @@
 "uni": 4.81,
 "deg": 3.19
 },
-"source": "R2",
-"target": "R8"
+"source": 2,
+"target": 8
 },
 {
 "dist": 32.40,
@@ -320,8 +345,8 @@
 "uni": 10.58,
 "deg": 6.90
 },
-"source": "R3",
-"target": "R10"
+"source": 3,
+"target": 10
 },
 {
 "dist": 57.50,
@@ -333,8 +358,8 @@
 "uni": 2.40,
 "deg": 2.16
 },
-"source": "R3",
-"target": "R16"
+"source": 3,
+"target": 16
 },
 {
 "dist": 68.74,
@@ -346,8 +371,8 @@
 "uni": 28.79,
 "deg": 25.41
 },
-"source": "R3",
-"target": "R20"
+"source": 3,
+"target": 20
 },
 {
 "dist": 96.61,
@@ -359,8 +384,8 @@
 "uni": 35.10,
 "deg": 24.78
 },
-"source": "R4",
-"target": "R9"
+"source": 4,
+"target": 9
 },
 {
 "dist": 79.70,
@@ -372,8 +397,8 @@
 "uni": 42.31,
 "deg": 28.28
 },
-"source": "R4",
-"target": "R13"
+"source": 4,
+"target": 13
 },
 {
 "dist": 119.23,
@@ -385,8 +410,8 @@
 "uni": 26.56,
 "deg": 23.48
 },
-"source": "R4",
-"target": "R24"
+"source": 4,
+"target": 24
 },
 {
 "dist": 157.68,
@@ -398,8 +423,8 @@
 "uni": 14.06,
 "deg": 13.16
 },
-"source": "R5",
-"target": "R6"
+"source": 5,
+"target": 6
 },
 {
 "dist": 47.54,
@@ -411,8 +436,8 @@
 "uni": 30.77,
 "deg": 28.83
 },
-"source": "R5",
-"target": "R18"
+"source": 5,
+"target": 18
 },
 {
 "dist": 113.24,
@@ -424,8 +449,8 @@
 "uni": 16.35,
 "deg": 14.14
 },
-"source": "R5",
-"target": "R22"
+"source": 5,
+"target": 22
 },
 {
 "dist": 159.77,
@@ -437,8 +462,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "R6",
-"target": "R9"
+"source": 6,
+"target": 9
 },
 {
 "dist": 72.92,
@@ -450,8 +475,8 @@
 "uni": 71.63,
 "deg": 70.88
 },
-"source": "R6",
-"target": "R20"
+"source": 6,
+"target": 20
 },
 {
 "dist": 155.66,
@@ -463,8 +488,8 @@
 "uni": 24.52,
 "deg": 20.23
 },
-"source": "R6",
-"target": "R22"
+"source": 6,
+"target": 22
 },
 {
 "dist": 59.41,
@@ -476,8 +501,8 @@
 "uni": 2.88,
 "deg": 2.88
 },
-"source": "R7",
-"target": "R8"
+"source": 7,
+"target": 8
 },
 {
 "dist": 105.37,
@@ -489,8 +514,8 @@
 "uni": 11.54,
 "deg": 13.06
 },
-"source": "R7",
-"target": "R23"
+"source": 7,
+"target": 23
 },
 {
 "dist": 117.87,
@@ -502,8 +527,8 @@
 "uni": 23.56,
 "deg": 21.66
 },
-"source": "R8",
-"target": "R23"
+"source": 8,
+"target": 23
 },
 {
 "dist": 40.38,
@@ -515,8 +540,8 @@
 "uni": 20.43,
 "deg": 18.84
 },
-"source": "R9",
-"target": "R18"
+"source": 9,
+"target": 18
 },
 {
 "dist": 138.40,
@@ -528,8 +553,8 @@
 "uni": 76.20,
 "deg": 87.54
 },
-"source": "R9",
-"target": "R24"
+"source": 9,
+"target": 24
 },
 {
 "dist": 50.32,
@@ -541,8 +566,8 @@
 "uni": 13.04,
 "deg": 8.38
 },
-"source": "R10",
-"target": "R16"
+"source": 10,
+"target": 16
 },
 {
 "dist": 88.74,
@@ -554,8 +579,8 @@
 "uni": 13.46,
 "deg": 10.64
 },
-"source": "R11",
-"target": "R14"
+"source": 11,
+"target": 14
 },
 {
 "dist": 99.64,
@@ -567,8 +592,8 @@
 "uni": 28.12,
 "deg": 28.73
 },
-"source": "R11",
-"target": "R24"
+"source": 11,
+"target": 24
 },
 {
 "dist": 51.21,
@@ -580,8 +605,8 @@
 "uni": 10.58,
 "deg": 10.21
 },
-"source": "R12",
-"target": "R15"
+"source": 12,
+"target": 15
 },
 {
 "dist": 51.86,
@@ -593,8 +618,8 @@
 "uni": 20.67,
 "deg": 22.38
 },
-"source": "R12",
-"target": "R19"
+"source": 12,
+"target": 19
 },
 {
 "dist": 31.44,
@@ -606,8 +631,8 @@
 "uni": 43.63,
 "deg": 50.06
 },
-"source": "R12",
-"target": "R23"
+"source": 12,
+"target": 23
 },
 {
 "dist": 110.60,
@@ -619,8 +644,8 @@
 "uni": 63.04,
 "deg": 74.78
 },
-"source": "R12",
-"target": "R24"
+"source": 12,
+"target": 24
 },
 {
 "dist": 74.64,
@@ -632,8 +657,8 @@
 "uni": 23.08,
 "deg": 7.57
 },
-"source": "R13",
-"target": "R17"
+"source": 13,
+"target": 17
 },
 {
 "dist": 73.39,
@@ -645,8 +670,8 @@
 "uni": 11.42,
 "deg": 6.66
 },
-"source": "R13",
-"target": "R21"
+"source": 13,
+"target": 21
 },
 {
 "dist": 89.66,
@@ -658,8 +683,8 @@
 "uni": 21.15,
 "deg": 14.28
 },
-"source": "R14",
-"target": "R21"
+"source": 14,
+"target": 21
 },
 {
 "dist": 75.13,
@@ -671,8 +696,8 @@
 "uni": 24.52,
 "deg": 21.97
 },
-"source": "R14",
-"target": "R24"
+"source": 14,
+"target": 24
 },
 {
 "dist": 33.32,
@@ -684,8 +709,8 @@
 "uni": 16.77,
 "deg": 15.95
 },
-"source": "R15",
-"target": "R19"
+"source": 15,
+"target": 19
 },
 {
 "dist": 43.74,
@@ -697,8 +722,8 @@
 "uni": 12.38,
 "deg": 12.53
 },
-"source": "R15",
-"target": "R23"
+"source": 15,
+"target": 23
 },
 {
 "dist": 45.52,
@@ -710,8 +735,8 @@
 "uni": 28.19,
 "deg": 30.59
 },
-"source": "R16",
-"target": "R20"
+"source": 16,
+"target": 20
 },
 {
 "dist": 35.05,
@@ -723,8 +748,8 @@
 "uni": 35.82,
 "deg": 35.30
 },
-"source": "R18",
-"target": "R19"
+"source": 18,
+"target": 19
 }
 ]
 }

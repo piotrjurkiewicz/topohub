@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.04,
 "max_sdp_num": 2,
 "avg_sdp_hops": 4.02,
-"avg_sdp_len": 133.81,
+"avg_sdp_len": 133.50,
 "avg_adp_num": 1.35,
 "max_adp_num": 3,
 "avg_adp_hops": 4.57,
@@ -30,109 +30,124 @@
 },
 "nodes": [
 {
+"name": "Drogheda",
 "pos": [
 -6.35,
 53.72
 ],
-"id": "Drogheda"
+"id": "0"
 },
 {
+"name": "Southport",
 "pos": [
 -3.01,
 53.65
 ],
-"id": "Southport"
+"id": "1"
 },
 {
+"name": "Portadown",
 "pos": [
 -6.45,
 54.41
 ],
-"id": "Portadown"
+"id": "2"
 },
 {
+"name": "Castleblayney",
 "pos": [
 -6.73,
 54.12
 ],
-"id": "Castleblayney"
+"id": "3"
 },
 {
+"name": "Monaghan",
 "pos": [
 -6.97,
 54.25
 ],
-"id": "Monaghan"
+"id": "4"
 },
 {
+"name": "Dundalk",
 "pos": [
 -6.42,
 54.00
 ],
-"id": "Dundalk"
+"id": "5"
 },
 {
+"name": "Dublin",
 "pos": [
 -6.27,
 53.34
 ],
-"id": "Dublin"
+"id": "6"
 },
 {
+"name": "Armagh",
 "pos": [
 -6.67,
 54.35
 ],
-"id": "Armagh"
+"id": "7"
 },
 {
+"name": "Ballymena",
 "pos": [
 -6.28,
 54.86
 ],
-"id": "Ballymena"
+"id": "8"
 },
 {
+"name": "Belfast",
 "pos": [
 -5.93,
 54.58
 ],
-"id": "Belfast"
+"id": "9"
 },
 {
+"name": "Omagh",
 "pos": [
 -7.30,
 54.60
 ],
-"id": "Omagh"
+"id": "13"
 },
 {
+"name": "Strabane",
 "pos": [
 -7.47,
 54.82
 ],
-"id": "Strabane"
+"id": "14"
 },
 {
+"name": "Letterkenny",
 "pos": [
 -7.73,
 54.95
 ],
-"id": "Letterkenny"
+"id": "15"
 },
 {
+"name": "Londonderry",
 "pos": [
 -7.31,
 55.00
 ],
-"id": "Londonderry"
+"id": "16"
 },
 {
+"name": "Coleraine",
 "pos": [
 -6.67,
 55.13
 ],
-"id": "Coleraine"
+"id": "17"
 }
 ],
 "links": [
@@ -146,8 +161,8 @@
 "uni": 66.67,
 "deg": 58.44
 },
-"source": "Drogheda",
-"target": "Dundalk"
+"source": "0",
+"target": "5"
 },
 {
 "dist": 42.04,
@@ -159,8 +174,8 @@
 "uni": 48.15,
 "deg": 37.66
 },
-"source": "Drogheda",
-"target": "Dublin"
+"source": "0",
+"target": "6"
 },
 {
 "dist": 218.36,
@@ -172,8 +187,8 @@
 "uni": 25.93,
 "deg": 13.42
 },
-"source": "Southport",
-"target": "Dublin"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 38.21,
@@ -185,8 +200,8 @@
 "uni": 42.59,
 "deg": 40.69
 },
-"source": "Portadown",
-"target": "Belfast"
+"source": "2",
+"target": "9"
 },
 {
 "dist": 15.86,
@@ -198,8 +213,8 @@
 "uni": 55.56,
 "deg": 53.68
 },
-"source": "Portadown",
-"target": "Armagh"
+"source": "2",
+"target": "7"
 },
 {
 "dist": 21.23,
@@ -211,8 +226,8 @@
 "uni": 92.59,
 "deg": 89.61
 },
-"source": "Castleblayney",
-"target": "Monaghan"
+"source": "3",
+"target": "4"
 },
 {
 "dist": 24.41,
@@ -224,8 +239,8 @@
 "uni": 81.48,
 "deg": 75.76
 },
-"source": "Castleblayney",
-"target": "Dundalk"
+"source": "3",
+"target": "5"
 },
 {
 "dist": 22.42,
@@ -237,8 +252,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Monaghan",
-"target": "Armagh"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 49.48,
@@ -250,8 +265,8 @@
 "uni": 68.52,
 "deg": 77.92
 },
-"source": "Armagh",
-"target": "Omagh"
+"source": "7",
+"target": "13"
 },
 {
 "dist": 38.17,
@@ -263,8 +278,8 @@
 "uni": 33.33,
 "deg": 32.90
 },
-"source": "Ballymena",
-"target": "Belfast"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 38.99,
@@ -276,8 +291,8 @@
 "uni": 24.07,
 "deg": 25.97
 },
-"source": "Ballymena",
-"target": "Coleraine"
+"source": "8",
+"target": "17"
 },
 {
 "dist": 27.15,
@@ -289,8 +304,8 @@
 "uni": 59.26,
 "deg": 71.00
 },
-"source": "Omagh",
-"target": "Strabane"
+"source": "13",
+"target": "14"
 },
 {
 "dist": 21.92,
@@ -302,8 +317,8 @@
 "uni": 31.48,
 "deg": 41.13
 },
-"source": "Strabane",
-"target": "Londonderry"
+"source": "14",
+"target": "16"
 },
 {
 "dist": 21.97,
@@ -315,8 +330,8 @@
 "uni": 18.52,
 "deg": 18.18
 },
-"source": "Strabane",
-"target": "Letterkenny"
+"source": "14",
+"target": "15"
 },
 {
 "dist": 27.59,
@@ -328,8 +343,8 @@
 "uni": 7.41,
 "deg": 7.79
 },
-"source": "Letterkenny",
-"target": "Londonderry"
+"source": "15",
+"target": "16"
 },
 {
 "dist": 43.61,
@@ -341,8 +356,8 @@
 "uni": 25.93,
 "deg": 29.44
 },
-"source": "Londonderry",
-"target": "Coleraine"
+"source": "16",
+"target": "17"
 }
 ]
 }

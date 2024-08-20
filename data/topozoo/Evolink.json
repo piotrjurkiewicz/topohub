@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.02,
 "max_sdp_num": 2,
 "avg_sdp_hops": 3.76,
-"avg_sdp_len": 318.93,
+"avg_sdp_len": 323.68,
 "avg_adp_num": 1.37,
 "max_adp_num": 4,
 "avg_adp_hops": 4.60,
@@ -30,228 +30,260 @@
 },
 "nodes": [
 {
+"name": "Shumen",
 "pos": [
 26.92,
 43.27
 ],
-"id": "Shumen"
+"id": "0"
 },
 {
+"name": "Silistra",
 "pos": [
 27.27,
 44.12
 ],
-"id": "Silistra"
+"id": "1"
 },
 {
+"name": "Razgrad",
 "pos": [
 26.52,
 43.53
 ],
-"id": "Razgrad"
+"id": "2"
 },
 {
+"name": "Turgovishte",
 "pos": [
 26.59,
 43.26
 ],
-"id": "Turgovishte"
+"id": "3"
 },
 {
+"name": "Yambol",
 "pos": [
 26.50,
 42.48
 ],
-"id": "Yambol"
+"id": "4"
 },
 {
+"name": "Sliven",
 "pos": [
 26.33,
 42.69
 ],
-"id": "Sliven"
+"id": "5"
 },
 {
+"name": "Dobrich",
 "pos": [
 27.83,
 43.57
 ],
-"id": "Dobrich"
+"id": "6"
 },
 {
+"name": "Burgas",
 "pos": [
 27.47,
 42.51
 ],
-"id": "Burgas"
+"id": "7"
 },
 {
+"name": "St Zagora",
 "pos": [
 25.64,
 42.43
 ],
-"id": "St Zagora"
+"id": "8"
 },
 {
+"name": "Gabrovo",
 "pos": [
 25.33,
 42.87
 ],
-"id": "Gabrovo"
+"id": "9"
 },
 {
+"name": "Kurjiali",
 "pos": [
 25.37,
 41.65
 ],
-"id": "Kurjiali"
+"id": "10"
 },
 {
+"name": "Varna",
 "pos": [
 27.92,
 43.22
 ],
-"id": "Varna"
+"id": "11"
 },
 {
+"name": "Plovdiv",
 "pos": [
 24.75,
 42.15
 ],
-"id": "Plovdiv"
+"id": "12"
 },
 {
+"name": "Sofia",
 "pos": [
 23.32,
 42.70
 ],
-"id": "Sofia"
+"id": "14"
 },
 {
+"name": "Kap Andreevo",
 "pos": [
 26.32,
 41.72
 ],
-"id": "Kap Andreevo"
+"id": "16"
 },
 {
+"name": "Haskovo",
 "pos": [
 25.57,
 41.94
 ],
-"id": "Haskovo"
+"id": "17"
 },
 {
+"name": "Karlovo",
 "pos": [
 24.80,
 42.63
 ],
-"id": "Karlovo"
+"id": "18"
 },
 {
+"name": "Kiustendil",
 "pos": [
 22.69,
 42.28
 ],
-"id": "Kiustendil"
+"id": "19"
 },
 {
+"name": "Pennik",
 "pos": [
 23.03,
 42.60
 ],
-"id": "Pennik"
+"id": "20"
 },
 {
+"name": "Sevlievo",
 "pos": [
 25.11,
 43.03
 ],
-"id": "Sevlievo"
+"id": "21"
 },
 {
+"name": "V Turnovo",
 "pos": [
 25.63,
 43.08
 ],
-"id": "V Turnovo"
+"id": "22"
 },
 {
+"name": "Pazardjik",
 "pos": [
 24.33,
 42.20
 ],
-"id": "Pazardjik"
+"id": "23"
 },
 {
+"name": "Smolian",
 "pos": [
 24.69,
 41.59
 ],
-"id": "Smolian"
+"id": "24"
 },
 {
+"name": "Petrich",
 "pos": [
 23.22,
 41.40
 ],
-"id": "Petrich"
+"id": "25"
 },
 {
+"name": "Blagoevgrad",
 "pos": [
 23.10,
 42.02
 ],
-"id": "Blagoevgrad"
+"id": "26"
 },
 {
+"name": "Ruse",
 "pos": [
 25.97,
 43.86
 ],
-"id": "Ruse"
+"id": "28"
 },
 {
+"name": "Vidin",
 "pos": [
 22.87,
 43.99
 ],
-"id": "Vidin"
+"id": "30"
 },
 {
+"name": "Kozloduj",
 "pos": [
 23.73,
 43.78
 ],
-"id": "Kozloduj"
+"id": "31"
 },
 {
+"name": "Montana",
 "pos": [
 23.23,
 43.41
 ],
-"id": "Montana"
+"id": "32"
 },
 {
+"name": "Vraca",
 "pos": [
 23.56,
 43.21
 ],
-"id": "Vraca"
+"id": "33"
 },
 {
+"name": "Pleven",
 "pos": [
 24.62,
 43.42
 ],
-"id": "Pleven"
+"id": "34"
 },
 {
+"name": "Lovech",
 "pos": [
 24.72,
 43.13
 ],
-"id": "Lovech"
+"id": "35"
 }
 ],
 "links": [
@@ -265,8 +297,8 @@
 "uni": 42.14,
 "deg": 41.00
 },
-"source": "Shumen",
-"target": "Turgovishte"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 80.59,
@@ -278,8 +310,8 @@
 "uni": 54.87,
 "deg": 53.90
 },
-"source": "Shumen",
-"target": "Dobrich"
+"source": "0",
+"target": "6"
 },
 {
 "dist": 76.22,
@@ -291,8 +323,8 @@
 "uni": 19.50,
 "deg": 9.32
 },
-"source": "Silistra",
-"target": "Dobrich"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 31.05,
@@ -304,8 +336,8 @@
 "uni": 30.97,
 "deg": 29.37
 },
-"source": "Razgrad",
-"target": "Turgovishte"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 56.73,
@@ -317,8 +349,8 @@
 "uni": 20.75,
 "deg": 18.52
 },
-"source": "Razgrad",
-"target": "Ruse"
+"source": "2",
+"target": "28"
 },
 {
 "dist": 26.51,
@@ -330,8 +362,8 @@
 "uni": 6.92,
 "deg": 6.77
 },
-"source": "Yambol",
-"target": "Sliven"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 79.41,
@@ -343,8 +375,8 @@
 "uni": 18.08,
 "deg": 16.86
 },
-"source": "Yambol",
-"target": "Burgas"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 62.95,
@@ -356,8 +388,8 @@
 "uni": 19.65,
 "deg": 18.90
 },
-"source": "Sliven",
-"target": "St Zagora"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 39.51,
@@ -369,8 +401,8 @@
 "uni": 78.77,
 "deg": 78.42
 },
-"source": "Dobrich",
-"target": "Varna"
+"source": "6",
+"target": "11"
 },
 {
 "dist": 87.10,
@@ -382,8 +414,8 @@
 "uni": 10.85,
 "deg": 11.37
 },
-"source": "Burgas",
-"target": "Varna"
+"source": "7",
+"target": "11"
 },
 {
 "dist": 339.88,
@@ -395,8 +427,8 @@
 "uni": 24.21,
 "deg": 29.63
 },
-"source": "Burgas",
-"target": "Sofia"
+"source": "7",
+"target": "14"
 },
 {
 "dist": 55.10,
@@ -408,8 +440,8 @@
 "uni": 18.87,
 "deg": 17.88
 },
-"source": "St Zagora",
-"target": "Haskovo"
+"source": "8",
+"target": "17"
 },
 {
 "dist": 79.84,
@@ -421,8 +453,8 @@
 "uni": 7.55,
 "deg": 10.22
 },
-"source": "St Zagora",
-"target": "Plovdiv"
+"source": "8",
+"target": "12"
 },
 {
 "dist": 192.13,
@@ -434,8 +466,8 @@
 "uni": 53.62,
 "deg": 62.32
 },
-"source": "St Zagora",
-"target": "Sofia"
+"source": "8",
+"target": "14"
 },
 {
 "dist": 55.23,
@@ -447,8 +479,8 @@
 "uni": 19.50,
 "deg": 9.32
 },
-"source": "St Zagora",
-"target": "Gabrovo"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 36.40,
@@ -460,8 +492,8 @@
 "uni": 19.50,
 "deg": 9.32
 },
-"source": "Kurjiali",
-"target": "Haskovo"
+"source": "10",
+"target": "17"
 },
 {
 "dist": 378.23,
@@ -473,8 +505,8 @@
 "uni": 79.09,
 "deg": 84.16
 },
-"source": "Varna",
-"target": "Sofia"
+"source": "11",
+"target": "14"
 },
 {
 "dist": 131.96,
@@ -486,8 +518,8 @@
 "uni": 56.29,
 "deg": 64.88
 },
-"source": "Plovdiv",
-"target": "Sofia"
+"source": "12",
+"target": "14"
 },
 {
 "dist": 138.30,
@@ -499,8 +531,8 @@
 "uni": 19.50,
 "deg": 9.32
 },
-"source": "Plovdiv",
-"target": "Kap Andreevo"
+"source": "12",
+"target": "16"
 },
 {
 "dist": 71.59,
@@ -512,8 +544,8 @@
 "uni": 18.87,
 "deg": 17.88
 },
-"source": "Plovdiv",
-"target": "Haskovo"
+"source": "12",
+"target": "17"
 },
 {
 "dist": 34.79,
@@ -525,8 +557,8 @@
 "uni": 4.09,
 "deg": 4.09
 },
-"source": "Plovdiv",
-"target": "Pazardjik"
+"source": "12",
+"target": "23"
 },
 {
 "dist": 63.00,
@@ -538,8 +570,8 @@
 "uni": 19.50,
 "deg": 9.32
 },
-"source": "Plovdiv",
-"target": "Smolian"
+"source": "12",
+"target": "24"
 },
 {
 "dist": 60.21,
@@ -551,8 +583,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Sofia",
-"target": "Vraca"
+"source": "14",
+"target": "33"
 },
 {
 "dist": 120.92,
@@ -564,8 +596,8 @@
 "uni": 19.50,
 "deg": 9.32
 },
-"source": "Sofia",
-"target": "Karlovo"
+"source": "14",
+"target": "18"
 },
 {
 "dist": 69.37,
@@ -577,8 +609,8 @@
 "uni": 19.50,
 "deg": 9.32
 },
-"source": "Sofia",
-"target": "Kiustendil"
+"source": "14",
+"target": "19"
 },
 {
 "dist": 26.15,
@@ -590,8 +622,8 @@
 "uni": 19.50,
 "deg": 9.32
 },
-"source": "Sofia",
-"target": "Pennik"
+"source": "14",
+"target": "20"
 },
 {
 "dist": 150.39,
@@ -603,8 +635,8 @@
 "uni": 19.50,
 "deg": 9.32
 },
-"source": "Sofia",
-"target": "Sevlievo"
+"source": "14",
+"target": "21"
 },
 {
 "dist": 99.61,
@@ -616,8 +648,8 @@
 "uni": 15.41,
 "deg": 14.30
 },
-"source": "Sofia",
-"target": "Pazardjik"
+"source": "14",
+"target": "23"
 },
 {
 "dist": 77.94,
@@ -629,8 +661,8 @@
 "uni": 37.74,
 "deg": 27.20
 },
-"source": "Sofia",
-"target": "Blagoevgrad"
+"source": "14",
+"target": "26"
 },
 {
 "dist": 74.31,
@@ -642,8 +674,8 @@
 "uni": 31.29,
 "deg": 28.86
 },
-"source": "V Turnovo",
-"target": "Lovech"
+"source": "22",
+"target": "35"
 },
 {
 "dist": 90.52,
@@ -655,8 +687,8 @@
 "uni": 20.13,
 "deg": 17.50
 },
-"source": "V Turnovo",
-"target": "Ruse"
+"source": "22",
+"target": "28"
 },
 {
 "dist": 69.27,
@@ -668,8 +700,8 @@
 "uni": 19.50,
 "deg": 9.32
 },
-"source": "Petrich",
-"target": "Blagoevgrad"
+"source": "25",
+"target": "26"
 },
 {
 "dist": 70.21,
@@ -681,8 +713,8 @@
 "uni": 19.50,
 "deg": 9.32
 },
-"source": "Vidin",
-"target": "Montana"
+"source": "30",
+"target": "32"
 },
 {
 "dist": 58.12,
@@ -694,8 +726,8 @@
 "uni": 19.50,
 "deg": 9.32
 },
-"source": "Kozloduj",
-"target": "Montana"
+"source": "31",
+"target": "32"
 },
 {
 "dist": 35.40,
@@ -707,8 +739,8 @@
 "uni": 89.78,
 "deg": 89.14
 },
-"source": "Montana",
-"target": "Vraca"
+"source": "32",
+"target": "33"
 },
 {
 "dist": 112.44,
@@ -720,8 +752,8 @@
 "uni": 55.97,
 "deg": 54.02
 },
-"source": "Montana",
-"target": "Pleven"
+"source": "32",
+"target": "34"
 },
 {
 "dist": 32.54,
@@ -733,8 +765,8 @@
 "uni": 43.40,
 "deg": 41.25
 },
-"source": "Pleven",
-"target": "Lovech"
+"source": "34",
+"target": "35"
 }
 ]
 }

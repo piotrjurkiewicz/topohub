@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.04,
 "max_sdp_num": 2,
 "avg_sdp_hops": 3.00,
-"avg_sdp_len": 2756.88,
+"avg_sdp_len": 2663.10,
 "avg_adp_num": 1.13,
 "max_adp_num": 2,
 "avg_adp_hops": 3.09,
@@ -30,74 +30,84 @@
 },
 "nodes": [
 {
+"name": "New York",
 "pos": [
 -79.07,
 43.08
 ],
-"id": "New York"
+"id": "0"
 },
 {
+"name": "Moncton",
 "pos": [
 -64.80,
 46.12
 ],
-"id": "Moncton"
+"id": "3"
 },
 {
+"name": "Edmundston",
 "pos": [
 -68.33,
 47.37
 ],
-"id": "Edmundston"
+"id": "5"
 },
 {
+"name": "Quebec",
 "pos": [
 -71.21,
 46.81
 ],
-"id": "Quebec"
+"id": "6"
 },
 {
+"name": "Montreal",
 "pos": [
 -73.59,
 45.51
 ],
-"id": "Montreal"
+"id": "7"
 },
 {
+"name": "Toronto",
 "pos": [
 -79.42,
 43.70
 ],
-"id": "Toronto"
+"id": "8"
 },
 {
+"name": "Buffalo",
 "pos": [
 -108.48,
 55.85
 ],
-"id": "Buffalo"
+"id": "9"
 },
 {
+"name": "Albany",
 "pos": [
 -63.65,
 46.28
 ],
-"id": "Albany"
+"id": "10"
 },
 {
+"name": "Boston",
 "pos": [
 -121.44,
 49.87
 ],
-"id": "Boston"
+"id": "11"
 },
 {
+"name": "Halifax",
 "pos": [
 -63.57,
 44.65
 ],
-"id": "Halifax"
+"id": "12"
 }
 ],
 "links": [
@@ -111,8 +121,8 @@
 "uni": 66.67,
 "deg": 56.04
 },
-"source": "New York",
-"target": "Albany"
+"source": "0",
+"target": "10"
 },
 {
 "dist": 3285.80,
@@ -124,8 +134,8 @@
 "uni": 37.50,
 "deg": 20.88
 },
-"source": "New York",
-"target": "Boston"
+"source": "0",
+"target": "11"
 },
 {
 "dist": 189.58,
@@ -137,8 +147,8 @@
 "uni": 37.50,
 "deg": 20.88
 },
-"source": "Moncton",
-"target": "Halifax"
+"source": "3",
+"target": "12"
 },
 {
 "dist": 302.75,
@@ -150,8 +160,8 @@
 "uni": 66.67,
 "deg": 56.04
 },
-"source": "Moncton",
-"target": "Edmundston"
+"source": "3",
+"target": "5"
 },
 {
 "dist": 227.52,
@@ -163,8 +173,8 @@
 "uni": 87.50,
 "deg": 82.42
 },
-"source": "Edmundston",
-"target": "Quebec"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 233.32,
@@ -176,8 +186,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Quebec",
-"target": "Montreal"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 503.34,
@@ -189,8 +199,8 @@
 "uni": 37.50,
 "deg": 39.56
 },
-"source": "Montreal",
-"target": "Toronto"
+"source": "7",
+"target": "8"
 },
 {
 "dist": 773.67,
@@ -202,8 +212,8 @@
 "uni": 79.17,
 "deg": 83.52
 },
-"source": "Montreal",
-"target": "Albany"
+"source": "7",
+"target": "10"
 },
 {
 "dist": 2458.93,
@@ -215,8 +225,8 @@
 "uni": 20.83,
 "deg": 21.98
 },
-"source": "Toronto",
-"target": "Buffalo"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 3243.54,
@@ -228,8 +238,8 @@
 "uni": 29.17,
 "deg": 30.77
 },
-"source": "Buffalo",
-"target": "Albany"
+"source": "9",
+"target": "10"
 }
 ]
 }

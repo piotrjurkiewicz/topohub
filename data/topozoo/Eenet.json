@@ -30,88 +30,100 @@
 },
 "nodes": [
 {
+"name": "Parnu",
 "pos": [
 24.50,
 58.39
 ],
-"id": "Parnu"
+"id": "0"
 },
 {
+"name": "Haapsald",
 "pos": [
 23.54,
 58.94
 ],
-"id": "Haapsald"
+"id": "1"
 },
 {
+"name": "Kuressaare",
 "pos": [
 22.50,
 58.25
 ],
-"id": "Kuressaare"
+"id": "2"
 },
 {
+"name": "Rakvere",
 "pos": [
 26.36,
 59.35
 ],
-"id": "Rakvere"
+"id": "3"
 },
 {
+"name": "Narva",
 "pos": [
 28.19,
 59.38
 ],
-"id": "Narva"
+"id": "4"
 },
 {
+"name": "Tallinn",
 "pos": [
 24.75,
 59.44
 ],
-"id": "Tallinn"
+"id": "5"
 },
 {
+"name": "Paide",
 "pos": [
 25.56,
 58.89
 ],
-"id": "Paide"
+"id": "7"
 },
 {
+"name": "Turi",
 "pos": [
 25.43,
 58.81
 ],
-"id": "Turi"
+"id": "8"
 },
 {
+"name": "Viljandi",
 "pos": [
 25.59,
 58.36
 ],
-"id": "Viljandi"
+"id": "9"
 },
 {
+"name": "Jogeva",
 "pos": [
 26.39,
 58.75
 ],
-"id": "Jogeva"
+"id": "10"
 },
 {
+"name": "Tartu",
 "pos": [
 26.73,
 58.38
 ],
-"id": "Tartu"
+"id": "11"
 },
 {
+"name": "Voru",
 "pos": [
 27.02,
 57.83
 ],
-"id": "Voru"
+"id": "12"
 }
 ],
 "links": [
@@ -125,8 +137,8 @@
 "uni": 36.67,
 "deg": 19.17
 },
-"source": "Parnu",
-"target": "Tallinn"
+"source": "0",
+"target": "5"
 },
 {
 "dist": 88.24,
@@ -138,8 +150,8 @@
 "uni": 36.67,
 "deg": 19.17
 },
-"source": "Haapsald",
-"target": "Tallinn"
+"source": "1",
+"target": "5"
 },
 {
 "dist": 185.04,
@@ -151,8 +163,8 @@
 "uni": 36.67,
 "deg": 19.17
 },
-"source": "Kuressaare",
-"target": "Tallinn"
+"source": "2",
+"target": "5"
 },
 {
 "dist": 91.30,
@@ -164,8 +176,8 @@
 "uni": 36.67,
 "deg": 19.17
 },
-"source": "Rakvere",
-"target": "Tallinn"
+"source": "3",
+"target": "5"
 },
 {
 "dist": 194.64,
@@ -177,8 +189,8 @@
 "uni": 36.67,
 "deg": 19.17
 },
-"source": "Narva",
-"target": "Tallinn"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 76.56,
@@ -190,8 +202,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Tallinn",
-"target": "Paide"
+"source": "5",
+"target": "7"
 },
 {
 "dist": 128.66,
@@ -203,8 +215,8 @@
 "uni": 20.00,
 "deg": 20.00
 },
-"source": "Tallinn",
-"target": "Viljandi"
+"source": "5",
+"target": "9"
 },
 {
 "dist": 11.17,
@@ -216,8 +228,8 @@
 "uni": 36.67,
 "deg": 19.17
 },
-"source": "Paide",
-"target": "Turi"
+"source": "7",
+"target": "8"
 },
 {
 "dist": 58.05,
@@ -229,8 +241,8 @@
 "uni": 16.67,
 "deg": 16.67
 },
-"source": "Paide",
-"target": "Viljandi"
+"source": "7",
+"target": "9"
 },
 {
 "dist": 50.60,
@@ -242,8 +254,8 @@
 "uni": 90.00,
 "deg": 79.17
 },
-"source": "Paide",
-"target": "Jogeva"
+"source": "7",
+"target": "10"
 },
 {
 "dist": 45.02,
@@ -255,8 +267,8 @@
 "uni": 66.67,
 "deg": 52.50
 },
-"source": "Jogeva",
-"target": "Tartu"
+"source": "10",
+"target": "11"
 },
 {
 "dist": 63.22,
@@ -268,8 +280,8 @@
 "uni": 36.67,
 "deg": 19.17
 },
-"source": "Tartu",
-"target": "Voru"
+"source": "11",
+"target": "12"
 }
 ]
 }

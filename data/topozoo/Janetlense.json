@@ -30,137 +30,156 @@
 },
 "nodes": [
 {
+"name": "Southampton Aggregation",
 "pos": [
 -1.40,
 50.90
 ],
-"id": "Southampton Aggregation"
+"id": "0"
 },
 {
+"name": "Southampton",
 "pos": [
 -1.40,
 50.90
 ],
-"id": "Southampton"
+"id": "1"
 },
 {
+"name": "Winchester",
 "pos": [
 -1.32,
 51.07
 ],
-"id": "Winchester"
+"id": "2"
 },
 {
+"name": "Portsmouth",
 "pos": [
 -1.07,
 50.81
 ],
-"id": "Portsmouth"
+"id": "3"
 },
 {
+"name": "Bournemouth",
 "pos": [
 -1.88,
 50.72
 ],
-"id": "Bournemouth"
+"id": "4"
 },
 {
+"name": "Bere Regis Colocation",
 "pos": [
 -2.12,
 50.68
 ],
-"id": "Bere Regis Colocation"
+"id": "5"
 },
 {
+"name": "Solent",
 "pos": [
 -1.40,
 50.90
 ],
-"id": "Solent"
+"id": "6"
 },
 {
+"name": "Bournemouth Aggregation",
 "pos": [
 -1.88,
 50.72
 ],
-"id": "Bournemouth Aggregation"
+"id": "7"
 },
 {
+"name": "Isle of Wight Colocation",
 "pos": [
 -1.33,
 50.67
 ],
-"id": "Isle of Wight Colocation"
+"id": "8"
 },
 {
+"name": "Hampton Park Colocation",
 "pos": [
 0.28,
 50.77
 ],
-"id": "Hampton Park Colocation"
+"id": "9"
 },
 {
+"name": "Wymering",
 "pos": [
 -1.07,
 50.85
 ],
-"id": "Wymering"
+"id": "10"
 },
 {
+"name": "Chichester",
 "pos": [
 -0.78,
 50.84
 ],
-"id": "Chichester"
+"id": "11"
 },
 {
+"name": "Southampton Core",
 "pos": [
 -1.40,
 50.90
 ],
-"id": "Southampton Core"
+"id": "13"
 },
 {
+"name": "Aldershot Core",
 "pos": [
 -0.77,
 51.25
 ],
-"id": "Aldershot Core"
+"id": "14"
 },
 {
+"name": "Brighton Aggregation",
 "pos": [
 -0.14,
 50.83
 ],
-"id": "Brighton Aggregation"
+"id": "15"
 },
 {
+"name": "Brighton",
 "pos": [
 -0.14,
 50.83
 ],
-"id": "Brighton"
+"id": "16"
 },
 {
+"name": "Sussex",
 "pos": [
 0.28,
 50.77
 ],
-"id": "Sussex"
+"id": "17"
 },
 {
+"name": "Surrey",
 "pos": [
 -0.56,
 51.32
 ],
-"id": "Surrey"
+"id": "18"
 },
 {
+"name": "Aldershot Aggregation",
 "pos": [
 -0.77,
 51.25
 ],
-"id": "Aldershot Aggregation"
+"id": "19"
 }
 ],
 "links": [
@@ -174,8 +193,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Southampton Aggregation",
-"target": "Southampton Core"
+"source": "0",
+"target": "13"
 },
 {
 "dist": 58.94,
@@ -187,8 +206,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Southampton Aggregation",
-"target": "Aldershot Core"
+"source": "0",
+"target": "14"
 },
 {
 "dist": 0.00,
@@ -200,8 +219,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Southampton",
-"target": "Southampton Core"
+"source": "1",
+"target": "13"
 },
 {
 "dist": 58.94,
@@ -213,8 +232,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Southampton",
-"target": "Aldershot Core"
+"source": "1",
+"target": "14"
 },
 {
 "dist": 19.23,
@@ -226,8 +245,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Winchester",
-"target": "Southampton Core"
+"source": "2",
+"target": "13"
 },
 {
 "dist": 43.65,
@@ -239,8 +258,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Winchester",
-"target": "Aldershot Core"
+"source": "2",
+"target": "14"
 },
 {
 "dist": 25.19,
@@ -252,8 +271,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Portsmouth",
-"target": "Southampton Core"
+"source": "3",
+"target": "13"
 },
 {
 "dist": 53.47,
@@ -265,8 +284,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Portsmouth",
-"target": "Aldershot Core"
+"source": "3",
+"target": "14"
 },
 {
 "dist": 39.62,
@@ -278,8 +297,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Bournemouth",
-"target": "Southampton Core"
+"source": "4",
+"target": "13"
 },
 {
 "dist": 98.14,
@@ -291,8 +310,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Bournemouth",
-"target": "Aldershot Core"
+"source": "4",
+"target": "14"
 },
 {
 "dist": 16.85,
@@ -304,8 +323,8 @@
 "uni": 100.00,
 "deg": 28.00
 },
-"source": "Bere Regis Colocation",
-"target": "Bournemouth Aggregation"
+"source": "5",
+"target": "7"
 },
 {
 "dist": 0.00,
@@ -317,8 +336,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Solent",
-"target": "Southampton Core"
+"source": "6",
+"target": "13"
 },
 {
 "dist": 58.94,
@@ -330,8 +349,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Solent",
-"target": "Aldershot Core"
+"source": "6",
+"target": "14"
 },
 {
 "dist": 98.14,
@@ -343,8 +362,8 @@
 "uni": 94.44,
 "deg": 53.33
 },
-"source": "Bournemouth Aggregation",
-"target": "Aldershot Core"
+"source": "7",
+"target": "14"
 },
 {
 "dist": 39.62,
@@ -356,8 +375,8 @@
 "uni": 94.44,
 "deg": 53.33
 },
-"source": "Bournemouth Aggregation",
-"target": "Southampton Core"
+"source": "7",
+"target": "13"
 },
 {
 "dist": 27.50,
@@ -369,8 +388,8 @@
 "uni": 100.00,
 "deg": 28.00
 },
-"source": "Isle of Wight Colocation",
-"target": "Wymering"
+"source": "8",
+"target": "10"
 },
 {
 "dist": 30.54,
@@ -382,8 +401,8 @@
 "uni": 100.00,
 "deg": 28.00
 },
-"source": "Hampton Park Colocation",
-"target": "Brighton Aggregation"
+"source": "9",
+"target": "15"
 },
 {
 "dist": 23.50,
@@ -395,8 +414,8 @@
 "uni": 94.44,
 "deg": 53.33
 },
-"source": "Wymering",
-"target": "Southampton Core"
+"source": "10",
+"target": "13"
 },
 {
 "dist": 49.25,
@@ -408,8 +427,8 @@
 "uni": 94.44,
 "deg": 53.33
 },
-"source": "Wymering",
-"target": "Aldershot Core"
+"source": "10",
+"target": "14"
 },
 {
 "dist": 44.08,
@@ -421,8 +440,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Chichester",
-"target": "Southampton Core"
+"source": "11",
+"target": "13"
 },
 {
 "dist": 45.98,
@@ -434,8 +453,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Chichester",
-"target": "Aldershot Core"
+"source": "11",
+"target": "14"
 },
 {
 "dist": 58.94,
@@ -447,8 +466,8 @@
 "uni": 5.56,
 "deg": 100.00
 },
-"source": "Southampton Core",
-"target": "Aldershot Core"
+"source": "13",
+"target": "14"
 },
 {
 "dist": 88.85,
@@ -460,8 +479,8 @@
 "uni": 94.44,
 "deg": 53.33
 },
-"source": "Southampton Core",
-"target": "Brighton Aggregation"
+"source": "13",
+"target": "15"
 },
 {
 "dist": 88.85,
@@ -473,8 +492,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Southampton Core",
-"target": "Brighton"
+"source": "13",
+"target": "16"
 },
 {
 "dist": 119.23,
@@ -486,8 +505,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Southampton Core",
-"target": "Sussex"
+"source": "13",
+"target": "17"
 },
 {
 "dist": 74.98,
@@ -499,8 +518,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Southampton Core",
-"target": "Surrey"
+"source": "13",
+"target": "18"
 },
 {
 "dist": 58.94,
@@ -512,8 +531,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Southampton Core",
-"target": "Aldershot Aggregation"
+"source": "13",
+"target": "19"
 },
 {
 "dist": 64.21,
@@ -525,8 +544,8 @@
 "uni": 94.44,
 "deg": 53.33
 },
-"source": "Aldershot Core",
-"target": "Brighton Aggregation"
+"source": "14",
+"target": "15"
 },
 {
 "dist": 64.21,
@@ -538,8 +557,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Aldershot Core",
-"target": "Brighton"
+"source": "14",
+"target": "16"
 },
 {
 "dist": 90.98,
@@ -551,8 +570,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Aldershot Core",
-"target": "Sussex"
+"source": "14",
+"target": "17"
 },
 {
 "dist": 16.36,
@@ -564,8 +583,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Aldershot Core",
-"target": "Surrey"
+"source": "14",
+"target": "18"
 },
 {
 "dist": 0.00,
@@ -577,8 +596,8 @@
 "uni": 50.00,
 "deg": 27.56
 },
-"source": "Aldershot Core",
-"target": "Aldershot Aggregation"
+"source": "14",
+"target": "19"
 }
 ]
 }

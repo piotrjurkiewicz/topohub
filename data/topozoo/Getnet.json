@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.10,
 "max_sdp_num": 2,
 "avg_sdp_hops": 1.81,
-"avg_sdp_len": 2406.16,
+"avg_sdp_len": 2407.16,
 "avg_adp_num": 1.52,
 "max_adp_num": 3,
 "avg_adp_hops": 2.10,
@@ -30,53 +30,60 @@
 },
 "nodes": [
 {
+"name": "Seattle",
 "pos": [
 -122.33,
 47.61
 ],
-"id": "Seattle"
+"id": "0"
 },
 {
+"name": "Santa Clara",
 "pos": [
 -121.96,
 37.35
 ],
-"id": "Santa Clara"
+"id": "1"
 },
 {
+"name": "Phoenix",
 "pos": [
 -112.07,
 33.45
 ],
-"id": "Phoenix"
+"id": "2"
 },
 {
+"name": "Tucson",
 "pos": [
 -110.93,
 32.22
 ],
-"id": "Tucson"
+"id": "3"
 },
 {
+"name": "Washington, DC",
 "pos": [
 -77.04,
 38.90
 ],
-"id": "Washington, DC"
+"id": "4"
 },
 {
+"name": "Baltimore",
 "pos": [
 -76.61,
 39.29
 ],
-"id": "Baltimore"
+"id": "5"
 },
 {
+"name": "Pittsburgh",
 "pos": [
 -80.00,
 40.44
 ],
-"id": "Pittsburgh"
+"id": "6"
 }
 ],
 "links": [
@@ -90,8 +97,8 @@
 "uni": 100.00,
 "deg": 53.57
 },
-"source": "Seattle",
-"target": "Santa Clara"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 994.90,
@@ -103,8 +110,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Santa Clara",
-"target": "Phoenix"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 3894.02,
@@ -116,8 +123,8 @@
 "uni": 58.33,
 "deg": 82.14
 },
-"source": "Santa Clara",
-"target": "Washington, DC"
+"source": "1",
+"target": "4"
 },
 {
 "dist": 3614.24,
@@ -129,8 +136,8 @@
 "uni": 91.67,
 "deg": 92.86
 },
-"source": "Santa Clara",
-"target": "Pittsburgh"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 173.54,
@@ -142,8 +149,8 @@
 "uni": 100.00,
 "deg": 53.57
 },
-"source": "Phoenix",
-"target": "Tucson"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 3183.54,
@@ -155,8 +162,8 @@
 "uni": 66.67,
 "deg": 71.43
 },
-"source": "Phoenix",
-"target": "Washington, DC"
+"source": "2",
+"target": "4"
 },
 {
 "dist": 57.22,
@@ -168,8 +175,8 @@
 "uni": 75.00,
 "deg": 78.57
 },
-"source": "Washington, DC",
-"target": "Baltimore"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 315.91,
@@ -181,8 +188,8 @@
 "uni": 41.67,
 "deg": 42.86
 },
-"source": "Baltimore",
-"target": "Pittsburgh"
+"source": "5",
+"target": "6"
 }
 ]
 }

@@ -30,158 +30,180 @@
 },
 "nodes": [
 {
+"name": "Glasgow",
 "pos": [
 -106.64,
 48.20
 ],
-"id": "Glasgow"
+"id": "0"
 },
 {
+"name": "Bainville",
 "pos": [
 -104.22,
 48.14
 ],
-"id": "Bainville"
+"id": "1"
 },
 {
+"name": "Glendive",
 "pos": [
 -104.71,
 47.11
 ],
-"id": "Glendive"
+"id": "2"
 },
 {
+"name": "Culbertson",
 "pos": [
 -104.52,
 48.14
 ],
-"id": "Culbertson"
+"id": "3"
 },
 {
+"name": "Lincoln",
 "pos": [
 -112.68,
 46.95
 ],
-"id": "Lincoln"
+"id": "4"
 },
 {
+"name": "Helena",
 "pos": [
 -112.04,
 46.59
 ],
-"id": "Helena"
+"id": "5"
 },
 {
+"name": "Dillion",
 "pos": [
 -112.64,
 45.22
 ],
-"id": "Dillion"
+"id": "6"
 },
 {
+"name": "Missoula",
 "pos": [
 -113.99,
 46.87
 ],
-"id": "Missoula"
+"id": "7"
 },
 {
+"name": "Bozeman",
 "pos": [
 -111.04,
 45.68
 ],
-"id": "Bozeman"
+"id": "8"
 },
 {
+"name": "Sheridan",
 "pos": [
 -104.56,
 48.77
 ],
-"id": "Sheridan"
+"id": "9"
 },
 {
+"name": "Fort Benton",
 "pos": [
 -110.67,
 47.82
 ],
-"id": "Fort Benton"
+"id": "11"
 },
 {
+"name": "Havre",
 "pos": [
 -109.68,
 48.55
 ],
-"id": "Havre"
+"id": "13"
 },
 {
+"name": "Forsyth",
 "pos": [
 -106.68,
 46.27
 ],
-"id": "Forsyth"
+"id": "14"
 },
 {
+"name": "Miles City",
 "pos": [
 -105.84,
 46.41
 ],
-"id": "Miles City"
+"id": "15"
 },
 {
+"name": "Noxon",
 "pos": [
 -115.78,
 48.00
 ],
-"id": "Noxon"
+"id": "16"
 },
 {
+"name": "Kalispell",
 "pos": [
 -114.31,
 48.20
 ],
-"id": "Kalispell"
+"id": "17"
 },
 {
+"name": "N Cutbank",
 "pos": [
 -112.33,
 48.63
 ],
-"id": "N Cutbank"
+"id": "18"
 },
 {
+"name": "Fairfield",
 "pos": [
 -111.98,
 47.61
 ],
-"id": "Fairfield"
+"id": "19"
 },
 {
+"name": "Great Falls",
 "pos": [
 -111.30,
 47.50
 ],
-"id": "Great Falls"
+"id": "20"
 },
 {
+"name": "Moore",
 "pos": [
 -109.70,
 46.98
 ],
-"id": "Moore"
+"id": "21"
 },
 {
+"name": "Big Timber",
 "pos": [
 -109.96,
 45.83
 ],
-"id": "Big Timber"
+"id": "22"
 },
 {
+"name": "Billings",
 "pos": [
 -108.50,
 45.78
 ],
-"id": "Billings"
+"id": "23"
 }
 ],
 "links": [
@@ -195,8 +217,8 @@
 "uni": 34.19,
 "deg": 27.53
 },
-"source": "Glasgow",
-"target": "Culbertson"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 228.54,
@@ -208,8 +230,8 @@
 "uni": 48.72,
 "deg": 43.53
 },
-"source": "Glasgow",
-"target": "Havre"
+"source": "0",
+"target": "13"
 },
 {
 "dist": 21.84,
@@ -221,8 +243,8 @@
 "uni": 17.95,
 "deg": 9.65
 },
-"source": "Bainville",
-"target": "Culbertson"
+"source": "1",
+"target": "3"
 },
 {
 "dist": 115.75,
@@ -234,8 +256,8 @@
 "uni": 17.95,
 "deg": 9.65
 },
-"source": "Glendive",
-"target": "Miles City"
+"source": "2",
+"target": "15"
 },
 {
 "dist": 90.47,
@@ -247,8 +269,8 @@
 "uni": 89.74,
 "deg": 88.71
 },
-"source": "Lincoln",
-"target": "Fairfield"
+"source": "4",
+"target": "19"
 },
 {
 "dist": 63.58,
@@ -260,8 +282,8 @@
 "uni": 48.72,
 "deg": 43.53
 },
-"source": "Lincoln",
-"target": "Helena"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 100.13,
@@ -273,8 +295,8 @@
 "uni": 48.72,
 "deg": 43.53
 },
-"source": "Lincoln",
-"target": "Missoula"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 127.38,
@@ -286,8 +308,8 @@
 "uni": 17.95,
 "deg": 9.65
 },
-"source": "Helena",
-"target": "Bozeman"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 160.01,
@@ -299,8 +321,8 @@
 "uni": 17.95,
 "deg": 9.65
 },
-"source": "Helena",
-"target": "Dillion"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 183.61,
@@ -312,8 +334,8 @@
 "uni": 34.19,
 "deg": 27.53
 },
-"source": "Missoula",
-"target": "Noxon"
+"source": "7",
+"target": "16"
 },
 {
 "dist": 321.04,
@@ -325,8 +347,8 @@
 "uni": 17.95,
 "deg": 9.65
 },
-"source": "Sheridan",
-"target": "Forsyth"
+"source": "9",
+"target": "14"
 },
 {
 "dist": 59.19,
@@ -338,8 +360,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Fort Benton",
-"target": "Great Falls"
+"source": "11",
+"target": "20"
 },
 {
 "dist": 109.27,
@@ -351,8 +373,8 @@
 "uni": 72.65,
 "deg": 69.88
 },
-"source": "Fort Benton",
-"target": "Havre"
+"source": "11",
+"target": "13"
 },
 {
 "dist": 118.86,
@@ -364,8 +386,8 @@
 "uni": 89.74,
 "deg": 88.71
 },
-"source": "Fort Benton",
-"target": "Moore"
+"source": "11",
+"target": "21"
 },
 {
 "dist": 194.58,
@@ -377,8 +399,8 @@
 "uni": 17.95,
 "deg": 9.65
 },
-"source": "Havre",
-"target": "N Cutbank"
+"source": "13",
+"target": "18"
 },
 {
 "dist": 66.20,
@@ -390,8 +412,8 @@
 "uni": 34.19,
 "deg": 27.53
 },
-"source": "Forsyth",
-"target": "Miles City"
+"source": "14",
+"target": "15"
 },
 {
 "dist": 150.68,
@@ -403,8 +425,8 @@
 "uni": 61.54,
 "deg": 57.65
 },
-"source": "Forsyth",
-"target": "Billings"
+"source": "14",
+"target": "23"
 },
 {
 "dist": 111.34,
@@ -416,8 +438,8 @@
 "uni": 17.95,
 "deg": 9.65
 },
-"source": "Noxon",
-"target": "Kalispell"
+"source": "16",
+"target": "17"
 },
 {
 "dist": 52.57,
@@ -429,8 +451,8 @@
 "uni": 95.73,
 "deg": 95.29
 },
-"source": "Fairfield",
-"target": "Great Falls"
+"source": "19",
+"target": "20"
 },
 {
 "dist": 128.40,
@@ -442,8 +464,8 @@
 "uni": 82.05,
 "deg": 80.24
 },
-"source": "Moore",
-"target": "Big Timber"
+"source": "21",
+"target": "22"
 },
 {
 "dist": 112.93,
@@ -455,8 +477,8 @@
 "uni": 72.65,
 "deg": 69.88
 },
-"source": "Big Timber",
-"target": "Billings"
+"source": "22",
+"target": "23"
 }
 ]
 }

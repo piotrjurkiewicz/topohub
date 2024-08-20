@@ -30,46 +30,52 @@
 },
 "nodes": [
 {
+"name": "Seattle",
 "pos": [
 -122.33,
 47.61
 ],
-"id": "Seattle"
+"id": "0"
 },
 {
+"name": "San Jose",
 "pos": [
 -121.89,
 37.34
 ],
-"id": "San Jose"
+"id": "1"
 },
 {
+"name": "Minneapolis",
 "pos": [
 -93.26,
 44.98
 ],
-"id": "Minneapolis"
+"id": "2"
 },
 {
+"name": "Chicago",
 "pos": [
 -87.65,
 41.85
 ],
-"id": "Chicago"
+"id": "3"
 },
 {
+"name": "Vienna",
 "pos": [
 -77.27,
 38.90
 ],
-"id": "Vienna"
+"id": "4"
 },
 {
+"name": "Dallas",
 "pos": [
 -96.81,
 32.78
 ],
-"id": "Dallas"
+"id": "5"
 }
 ],
 "links": [
@@ -83,8 +89,8 @@
 "uni": 30.00,
 "deg": 38.10
 },
-"source": "Seattle",
-"target": "San Jose"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 2789.45,
@@ -96,8 +102,8 @@
 "uni": 70.00,
 "deg": 76.19
 },
-"source": "Seattle",
-"target": "Chicago"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 2957.50,
@@ -109,8 +115,8 @@
 "uni": 60.00,
 "deg": 100.00
 },
-"source": "San Jose",
-"target": "Chicago"
+"source": "1",
+"target": "3"
 },
 {
 "dist": 3869.85,
@@ -122,8 +128,8 @@
 "uni": 30.00,
 "deg": 38.10
 },
-"source": "San Jose",
-"target": "Vienna"
+"source": "1",
+"target": "4"
 },
 {
 "dist": 571.53,
@@ -135,8 +141,8 @@
 "uni": 100.00,
 "deg": 61.90
 },
-"source": "Minneapolis",
-"target": "Chicago"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 938.32,
@@ -148,8 +154,8 @@
 "uni": 70.00,
 "deg": 76.19
 },
-"source": "Chicago",
-"target": "Vienna"
+"source": "3",
+"target": "4"
 },
 {
 "dist": 1291.83,
@@ -161,8 +167,8 @@
 "uni": 100.00,
 "deg": 61.90
 },
-"source": "Chicago",
-"target": "Dallas"
+"source": "3",
+"target": "5"
 }
 ]
 }

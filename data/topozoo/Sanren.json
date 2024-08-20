@@ -30,53 +30,60 @@
 },
 "nodes": [
 {
+"name": "Johannesburg",
 "pos": [
 28.04,
 -26.20
 ],
-"id": "Johannesburg"
+"id": "0"
 },
 {
+"name": "Pretoria",
 "pos": [
 28.19,
 -25.74
 ],
-"id": "Pretoria"
+"id": "1"
 },
 {
+"name": "Durban",
 "pos": [
 31.02,
 -29.85
 ],
-"id": "Durban"
+"id": "2"
 },
 {
+"name": "Bloemfontein",
 "pos": [
 26.20,
 -29.13
 ],
-"id": "Bloemfontein"
+"id": "3"
 },
 {
+"name": "East London",
 "pos": [
 27.91,
 -33.02
 ],
-"id": "East London"
+"id": "4"
 },
 {
+"name": "Port Elizabeth",
 "pos": [
 25.58,
 -33.97
 ],
-"id": "Port Elizabeth"
+"id": "5"
 },
 {
+"name": "Cape Town",
 "pos": [
 18.42,
 -33.92
 ],
-"id": "Cape Town"
+"id": "6"
 }
 ],
 "links": [
@@ -90,8 +97,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Johannesburg",
-"target": "Pretoria"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 373.17,
@@ -103,8 +110,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Johannesburg",
-"target": "Bloemfontein"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 534.69,
@@ -116,8 +123,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Pretoria",
-"target": "Durban"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 459.06,
@@ -129,8 +136,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Durban",
-"target": "East London"
+"source": "2",
+"target": "4"
 },
 {
 "dist": 909.24,
@@ -142,8 +149,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Bloemfontein",
-"target": "Cape Town"
+"source": "3",
+"target": "6"
 },
 {
 "dist": 240.49,
@@ -155,8 +162,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "East London",
-"target": "Port Elizabeth"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 661.19,
@@ -168,8 +175,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Port Elizabeth",
-"target": "Cape Town"
+"source": "5",
+"target": "6"
 }
 ]
 }

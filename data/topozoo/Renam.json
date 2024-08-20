@@ -30,25 +30,28 @@
 },
 "nodes": [
 {
+"name": "Chisinau",
 "pos": [
 28.86,
 47.01
 ],
-"id": "Chisinau"
+"id": "0"
 },
 {
+"name": "Balti",
 "pos": [
 27.93,
 47.76
 ],
-"id": "Balti"
+"id": "1"
 },
 {
+"name": "       Cahul",
 "pos": [
 28.19,
 45.91
 ],
-"id": "       Cahul"
+"id": "2"
 }
 ],
 "links": [
@@ -62,8 +65,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Chisinau",
-"target": "Balti"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 132.28,
@@ -75,8 +78,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Chisinau",
-"target": "       Cahul"
+"source": "0",
+"target": "2"
 }
 ]
 }

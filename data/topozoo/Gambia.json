@@ -30,88 +30,100 @@
 },
 "nodes": [
 {
+"name": "Kerewan",
 "pos": [
 -16.09,
 13.49
 ],
-"id": "Kerewan"
+"id": "2"
 },
 {
+"name": "Banjul",
 "pos": [
 -16.58,
 13.45
 ],
-"id": "Banjul"
+"id": "3"
 },
 {
+"name": "Basse",
 "pos": [
 -14.22,
 13.32
 ],
-"id": "Basse"
+"id": "18"
 },
 {
+"name": "Bansang",
 "pos": [
 -14.65,
 13.43
 ],
-"id": "Bansang"
+"id": "19"
 },
 {
+"name": "Abuko",
 "pos": [
 -16.66,
 13.40
 ],
-"id": "Abuko"
+"id": "20"
 },
 {
+"name": "Serekunda",
 "pos": [
 -16.68,
 13.44
 ],
-"id": "Serekunda"
+"id": "21"
 },
 {
+"name": "Kotu",
 "pos": [
 -16.71,
 13.46
 ],
-"id": "Kotu"
+"id": "22"
 },
 {
+"name": "Bakau",
 "pos": [
 -16.68,
 13.48
 ],
-"id": "Bakau"
+"id": "23"
 },
 {
+"name": "Brikama",
 "pos": [
 -16.65,
 13.27
 ],
-"id": "Brikama"
+"id": "24"
 },
 {
+"name": "Yundum",
 "pos": [
 -16.69,
 13.36
 ],
-"id": "Yundum"
+"id": "25"
 },
 {
+"name": "Soma",
 "pos": [
 -15.53,
 13.43
 ],
-"id": "Soma"
+"id": "26"
 },
 {
+"name": "Farafenni",
 "pos": [
 -15.60,
 13.57
 ],
-"id": "Farafenni"
+"id": "27"
 }
 ],
 "links": [
@@ -125,8 +137,8 @@
 "uni": 45.10,
 "deg": 45.10
 },
-"source": "Kerewan",
-"target": "Banjul"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 53.80,
@@ -138,8 +150,8 @@
 "uni": 37.25,
 "deg": 37.25
 },
-"source": "Kerewan",
-"target": "Farafenni"
+"source": "2",
+"target": "27"
 },
 {
 "dist": 10.94,
@@ -151,8 +163,8 @@
 "uni": 60.78,
 "deg": 60.78
 },
-"source": "Banjul",
-"target": "Serekunda"
+"source": "3",
+"target": "21"
 },
 {
 "dist": 143.06,
@@ -164,8 +176,8 @@
 "uni": 78.43,
 "deg": 61.76
 },
-"source": "Basse",
-"target": "Soma"
+"source": "18",
+"target": "26"
 },
 {
 "dist": 48.65,
@@ -177,8 +189,8 @@
 "uni": 43.14,
 "deg": 22.55
 },
-"source": "Basse",
-"target": "Bansang"
+"source": "18",
+"target": "19"
 },
 {
 "dist": 4.50,
@@ -190,8 +202,8 @@
 "uni": 43.14,
 "deg": 22.55
 },
-"source": "Abuko",
-"target": "Serekunda"
+"source": "20",
+"target": "21"
 },
 {
 "dist": 3.77,
@@ -203,8 +215,8 @@
 "uni": 43.14,
 "deg": 22.55
 },
-"source": "Serekunda",
-"target": "Kotu"
+"source": "21",
+"target": "22"
 },
 {
 "dist": 4.44,
@@ -216,8 +228,8 @@
 "uni": 43.14,
 "deg": 22.55
 },
-"source": "Serekunda",
-"target": "Bakau"
+"source": "21",
+"target": "23"
 },
 {
 "dist": 19.31,
@@ -229,8 +241,8 @@
 "uni": 43.14,
 "deg": 22.55
 },
-"source": "Serekunda",
-"target": "Brikama"
+"source": "21",
+"target": "24"
 },
 {
 "dist": 8.48,
@@ -242,8 +254,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Serekunda",
-"target": "Yundum"
+"source": "21",
+"target": "25"
 },
 {
 "dist": 124.98,
@@ -255,8 +267,8 @@
 "uni": 92.16,
 "deg": 92.16
 },
-"source": "Yundum",
-"target": "Soma"
+"source": "25",
+"target": "26"
 },
 {
 "dist": 16.49,
@@ -268,8 +280,8 @@
 "uni": 45.10,
 "deg": 45.10
 },
-"source": "Soma",
-"target": "Farafenni"
+"source": "26",
+"target": "27"
 }
 ]
 }

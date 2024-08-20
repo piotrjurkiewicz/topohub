@@ -30,46 +30,52 @@
 },
 "nodes": [
 {
+"name": "Grodno",
 "pos": [
 23.83,
 53.68
 ],
-"id": "Grodno"
+"id": "0"
 },
 {
+"name": "Minsk",
 "pos": [
 27.57,
 53.90
 ],
-"id": "Minsk"
+"id": "1"
 },
 {
+"name": "Vitebsk",
 "pos": [
 30.20,
 55.19
 ],
-"id": "Vitebsk"
+"id": "2"
 },
 {
+"name": "Mogilev",
 "pos": [
 30.34,
 53.91
 ],
-"id": "Mogilev"
+"id": "3"
 },
 {
+"name": "Gomel",
 "pos": [
 30.98,
 52.44
 ],
-"id": "Gomel"
+"id": "4"
 },
 {
+"name": "Brest",
 "pos": [
 23.69,
 52.10
 ],
-"id": "Brest"
+"id": "5"
 }
 ],
 "links": [
@@ -83,8 +89,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Grodno",
-"target": "Minsk"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 222.55,
@@ -96,8 +102,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Minsk",
-"target": "Vitebsk"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 181.56,
@@ -109,8 +115,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Minsk",
-"target": "Mogilev"
+"source": "1",
+"target": "3"
 },
 {
 "dist": 279.77,
@@ -122,8 +128,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Minsk",
-"target": "Gomel"
+"source": "1",
+"target": "4"
 },
 {
 "dist": 327.96,
@@ -135,8 +141,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Minsk",
-"target": "Brest"
+"source": "1",
+"target": "5"
 }
 ]
 }

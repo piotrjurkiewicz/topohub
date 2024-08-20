@@ -30,81 +30,92 @@
 },
 "nodes": [
 {
+"name": "Chugoku",
 "pos": [
 133.00,
 34.50
 ],
-"id": "Chugoku"
+"id": "0"
 },
 {
+"name": "Kinki",
 "pos": [
 135.50,
 35.00
 ],
-"id": "Kinki"
+"id": "1"
 },
 {
+"name": "Kyushu",
 "pos": [
 131.00,
 33.00
 ],
-"id": "Kyushu"
+"id": "2"
 },
 {
+"name": "Shikoku",
 "pos": [
 133.50,
 33.75
 ],
-"id": "Shikoku"
+"id": "3"
 },
 {
+"name": "Shinetsu",
 "pos": [
 145.13,
 43.66
 ],
-"id": "Shinetsu"
+"id": "4"
 },
 {
+"name": "Tokai",
 "pos": [
 136.90,
 35.03
 ],
-"id": "Tokai"
+"id": "6"
 },
 {
+"name": "Hokuriku",
 "pos": [
 137.50,
 37.00
 ],
-"id": "Hokuriku"
+"id": "7"
 },
 {
+"name": "Okinawa",
 "pos": [
 127.80,
 26.34
 ],
-"id": "Okinawa"
+"id": "9"
 },
 {
+"name": "Hokkaido",
 "pos": [
 141.35,
 43.06
 ],
-"id": "Hokkaido"
+"id": "10"
 },
 {
+"name": "Tohoku",
 "pos": [
 140.87,
 38.27
 ],
-"id": "Tohoku"
+"id": "11"
 },
 {
+"name": "Tokyo",
 "pos": [
 139.58,
 35.61
 ],
-"id": "Tokyo"
+"id": "12"
 }
 ],
 "links": [
@@ -118,8 +129,8 @@
 "uni": 80.00,
 "deg": 75.76
 },
-"source": "Chugoku",
-"target": "Kinki"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 249.08,
@@ -131,8 +142,8 @@
 "uni": 60.00,
 "deg": 51.52
 },
-"source": "Chugoku",
-"target": "Kyushu"
+"source": "0",
+"target": "2"
 },
 {
 "dist": 230.30,
@@ -144,8 +155,8 @@
 "uni": 33.33,
 "deg": 19.19
 },
-"source": "Kinki",
-"target": "Shikoku"
+"source": "1",
+"target": "3"
 },
 {
 "dist": 127.43,
@@ -157,8 +168,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Kinki",
-"target": "Tokai"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 802.97,
@@ -170,8 +181,8 @@
 "uni": 33.33,
 "deg": 19.19
 },
-"source": "Kyushu",
-"target": "Okinawa"
+"source": "2",
+"target": "9"
 },
 {
 "dist": 1012.60,
@@ -183,8 +194,8 @@
 "uni": 33.33,
 "deg": 19.19
 },
-"source": "Shinetsu",
-"target": "Tokyo"
+"source": "4",
+"target": "12"
 },
 {
 "dist": 252.10,
@@ -196,8 +207,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Tokai",
-"target": "Tokyo"
+"source": "6",
+"target": "12"
 },
 {
 "dist": 241.93,
@@ -209,8 +220,8 @@
 "uni": 33.33,
 "deg": 19.19
 },
-"source": "Hokuriku",
-"target": "Tokyo"
+"source": "7",
+"target": "12"
 },
 {
 "dist": 534.86,
@@ -222,8 +233,8 @@
 "uni": 33.33,
 "deg": 19.19
 },
-"source": "Hokkaido",
-"target": "Tohoku"
+"source": "10",
+"target": "11"
 },
 {
 "dist": 316.70,
@@ -235,8 +246,8 @@
 "uni": 60.00,
 "deg": 51.52
 },
-"source": "Tohoku",
-"target": "Tokyo"
+"source": "11",
+"target": "12"
 }
 ]
 }

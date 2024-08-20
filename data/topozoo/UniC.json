@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.03,
 "max_sdp_num": 2,
 "avg_sdp_hops": 3.46,
-"avg_sdp_len": 146.50,
+"avg_sdp_len": 145.99,
 "avg_adp_num": 1.49,
 "max_adp_num": 2,
 "avg_adp_hops": 4.17,
@@ -30,109 +30,124 @@
 },
 "nodes": [
 {
+"name": "Odense",
 "pos": [
 10.39,
 55.40
 ],
-"id": "Odense"
+"id": "0"
 },
 {
+"name": "Nyborg",
 "pos": [
 10.79,
 55.31
 ],
-"id": "Nyborg"
+"id": "1"
 },
 {
+"name": "Vejle",
 "pos": [
 9.54,
 55.71
 ],
-"id": "Vejle"
+"id": "2"
 },
 {
+"name": "Kolding",
 "pos": [
 9.47,
 55.49
 ],
-"id": "Kolding"
+"id": "3"
 },
 {
+"name": "Holbaek",
 "pos": [
 11.72,
 55.72
 ],
-"id": "Holbaek"
+"id": "4"
 },
 {
+"name": "Lyngby",
 "pos": [
 12.50,
 55.77
 ],
-"id": "Lyngby"
+"id": "5"
 },
 {
+"name": "Slagelse",
 "pos": [
 11.35,
 55.40
 ],
-"id": "Slagelse"
+"id": "6"
 },
 {
+"name": "Naestved",
 "pos": [
 11.55,
 55.31
 ],
-"id": "Naestved"
+"id": "7"
 },
 {
+"name": "Orestad",
 "pos": [
 12.60,
 55.63
 ],
-"id": "Orestad"
+"id": "8"
 },
 {
+"name": "Herning",
 "pos": [
 8.97,
 56.14
 ],
-"id": "Herning"
+"id": "16"
 },
 {
+"name": "Aalborg",
 "pos": [
 9.92,
 57.05
 ],
-"id": "Aalborg"
+"id": "18"
 },
 {
+"name": "Farso",
 "pos": [
 9.34,
 56.77
 ],
-"id": "Farso"
+"id": "19"
 },
 {
+"name": "Hobro",
 "pos": [
 9.79,
 56.64
 ],
-"id": "Hobro"
+"id": "20"
 },
 {
+"name": "Silkeborg",
 "pos": [
 9.55,
 56.17
 ],
-"id": "Silkeborg"
+"id": "21"
 },
 {
+"name": "Arthus",
 "pos": [
 10.21,
 56.16
 ],
-"id": "Arthus"
+"id": "22"
 }
 ],
 "links": [
@@ -146,8 +161,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Odense",
-"target": "Nyborg"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 63.97,
@@ -159,8 +174,8 @@
 "uni": 90.74,
 "deg": 93.77
 },
-"source": "Odense",
-"target": "Vejle"
+"source": "0",
+"target": "2"
 },
 {
 "dist": 58.75,
@@ -172,8 +187,8 @@
 "uni": 12.96,
 "deg": 11.72
 },
-"source": "Odense",
-"target": "Kolding"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 37.10,
@@ -185,8 +200,8 @@
 "uni": 50.00,
 "deg": 46.89
 },
-"source": "Nyborg",
-"target": "Slagelse"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 47.99,
@@ -198,8 +213,8 @@
 "uni": 50.00,
 "deg": 46.89
 },
-"source": "Nyborg",
-"target": "Naestved"
+"source": "1",
+"target": "7"
 },
 {
 "dist": 59.28,
@@ -211,8 +226,8 @@
 "uni": 55.56,
 "deg": 52.75
 },
-"source": "Vejle",
-"target": "Herning"
+"source": "2",
+"target": "16"
 },
 {
 "dist": 24.67,
@@ -224,8 +239,8 @@
 "uni": 12.96,
 "deg": 11.72
 },
-"source": "Vejle",
-"target": "Kolding"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 65.16,
@@ -237,8 +252,8 @@
 "uni": 55.56,
 "deg": 52.75
 },
-"source": "Vejle",
-"target": "Arthus"
+"source": "2",
+"target": "22"
 },
 {
 "dist": 49.64,
@@ -250,8 +265,8 @@
 "uni": 16.67,
 "deg": 14.65
 },
-"source": "Holbaek",
-"target": "Lyngby"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 41.69,
@@ -263,8 +278,8 @@
 "uni": 33.33,
 "deg": 30.77
 },
-"source": "Holbaek",
-"target": "Slagelse"
+"source": "4",
+"target": "6"
 },
 {
 "dist": 16.72,
@@ -276,8 +291,8 @@
 "uni": 16.67,
 "deg": 14.65
 },
-"source": "Lyngby",
-"target": "Orestad"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 75.54,
@@ -289,8 +304,8 @@
 "uni": 33.33,
 "deg": 30.77
 },
-"source": "Naestved",
-"target": "Orestad"
+"source": "7",
+"target": "8"
 },
 {
 "dist": 35.55,
@@ -302,8 +317,8 @@
 "uni": 40.74,
 "deg": 38.10
 },
-"source": "Herning",
-"target": "Silkeborg"
+"source": "16",
+"target": "21"
 },
 {
 "dist": 46.64,
@@ -315,8 +330,8 @@
 "uni": 11.11,
 "deg": 8.79
 },
-"source": "Aalborg",
-"target": "Farso"
+"source": "18",
+"target": "19"
 },
 {
 "dist": 45.71,
@@ -328,8 +343,8 @@
 "uni": 25.93,
 "deg": 23.44
 },
-"source": "Aalborg",
-"target": "Hobro"
+"source": "18",
+"target": "20"
 },
 {
 "dist": 68.26,
@@ -341,8 +356,8 @@
 "uni": 25.93,
 "deg": 23.44
 },
-"source": "Farso",
-"target": "Silkeborg"
+"source": "19",
+"target": "21"
 },
 {
 "dist": 59.96,
@@ -354,8 +369,8 @@
 "uni": 40.74,
 "deg": 38.10
 },
-"source": "Hobro",
-"target": "Arthus"
+"source": "20",
+"target": "22"
 }
 ]
 }

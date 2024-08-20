@@ -30,200 +30,228 @@
 },
 "nodes": [
 {
+"name": "Djelfa",
 "pos": [
 3.26,
 34.67
 ],
-"id": "Djelfa"
+"id": "0"
 },
 {
+"name": "Medea",
 "pos": [
 2.75,
 36.26
 ],
-"id": "Medea"
+"id": "1"
 },
 {
+"name": "Blida",
 "pos": [
 2.83,
 36.47
 ],
-"id": "Blida"
+"id": "3"
 },
 {
+"name": "ElOued",
 "pos": [
 6.86,
 33.36
 ],
-"id": "ElOued"
+"id": "4"
 },
 {
+"name": "Msila",
 "pos": [
 5.67,
 36.66
 ],
-"id": "Msila"
+"id": "5"
 },
 {
+"name": "Laghouat",
 "pos": [
 2.87,
 33.80
 ],
-"id": "Laghouat"
+"id": "6"
 },
 {
+"name": "Ouargla",
 "pos": [
 5.33,
 31.95
 ],
-"id": "Ouargla"
+"id": "7"
 },
 {
+"name": "Constantine",
 "pos": [
 6.61,
 36.37
 ],
-"id": "Constantine"
+"id": "8"
 },
 {
+"name": "Biskra",
 "pos": [
 5.73,
 34.85
 ],
-"id": "Biskra"
+"id": "9"
 },
 {
+"name": "Batna",
 "pos": [
 6.17,
 35.56
 ],
-"id": "Batna"
+"id": "10"
 },
 {
+"name": "Tizi Ouzou",
 "pos": [
 4.05,
 36.71
 ],
-"id": "Tizi Ouzou"
+"id": "11"
 },
 {
+"name": "Annaba",
 "pos": [
 7.77,
 36.90
 ],
-"id": "Annaba"
+"id": "12"
 },
 {
+"name": "Guelma",
 "pos": [
 7.43,
 36.46
 ],
-"id": "Guelma"
+"id": "13"
 },
 {
+"name": "Tebessa",
 "pos": [
 8.12,
 35.40
 ],
-"id": "Tebessa"
+"id": "14"
 },
 {
+"name": "Oum el Bouaghi",
 "pos": [
 7.11,
 35.88
 ],
-"id": "Oum el Bouaghi"
+"id": "15"
 },
 {
+"name": "Bejaia",
 "pos": [
 5.08,
 36.76
 ],
-"id": "Bejaia"
+"id": "16"
 },
 {
+"name": "Setif",
 "pos": [
 5.41,
 36.19
 ],
-"id": "Setif"
+"id": "17"
 },
 {
+"name": "Skikda",
 "pos": [
 6.91,
 36.88
 ],
-"id": "Skikda"
+"id": "18"
 },
 {
+"name": "Jijel",
 "pos": [
 5.77,
 36.82
 ],
-"id": "Jijel"
+"id": "19"
 },
 {
+"name": "Tiaret",
 "pos": [
 1.32,
 35.37
 ],
-"id": "Tiaret"
+"id": "20"
 },
 {
+"name": "Alger",
 "pos": [
 3.04,
 36.75
 ],
-"id": "Alger"
+"id": "22"
 },
 {
+"name": "Chlef",
 "pos": [
 1.26,
 36.20
 ],
-"id": "Chlef"
+"id": "23"
 },
 {
+"name": "Oran",
 "pos": [
 -0.64,
 35.69
 ],
-"id": "Oran"
+"id": "24"
 },
 {
+"name": "Mostaganem",
 "pos": [
 0.09,
 35.93
 ],
-"id": "Mostaganem"
+"id": "25"
 },
 {
+"name": "Tlemcen",
 "pos": [
 -1.31,
 34.88
 ],
-"id": "Tlemcen"
+"id": "26"
 },
 {
+"name": "Sidi Bel Abbes",
 "pos": [
 -0.63,
 35.19
 ],
-"id": "Sidi Bel Abbes"
+"id": "27"
 },
 {
+"name": "Saida",
 "pos": [
 0.15,
 34.83
 ],
-"id": "Saida"
+"id": "28"
 },
 {
+"name": "Mascara",
 "pos": [
 -0.05,
 35.31
 ],
-"id": "Mascara"
+"id": "29"
 }
 ],
 "links": [
@@ -237,8 +265,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Djelfa",
-"target": "Alger"
+"source": "0",
+"target": "22"
 },
 {
 "dist": 60.11,
@@ -250,8 +278,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Medea",
-"target": "Alger"
+"source": "1",
+"target": "22"
 },
 {
 "dist": 36.78,
@@ -263,8 +291,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Blida",
-"target": "Alger"
+"source": "3",
+"target": "22"
 },
 {
 "dist": 212.67,
@@ -276,8 +304,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "ElOued",
-"target": "Ouargla"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 90.43,
@@ -289,8 +317,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Msila",
-"target": "Constantine"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 308.48,
@@ -302,8 +330,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Laghouat",
-"target": "Ouargla"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 573.85,
@@ -315,8 +343,8 @@
 "uni": 41.67,
 "deg": 36.84
 },
-"source": "Ouargla",
-"target": "Alger"
+"source": "7",
+"target": "22"
 },
 {
 "dist": 186.57,
@@ -328,8 +356,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Constantine",
-"target": "Biskra"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 98.34,
@@ -341,8 +369,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Constantine",
-"target": "Batna"
+"source": "8",
+"target": "10"
 },
 {
 "dist": 118.80,
@@ -354,8 +382,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Constantine",
-"target": "Annaba"
+"source": "8",
+"target": "12"
 },
 {
 "dist": 73.42,
@@ -367,8 +395,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Constantine",
-"target": "Guelma"
+"source": "8",
+"target": "13"
 },
 {
 "dist": 172.98,
@@ -380,8 +408,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Constantine",
-"target": "Tebessa"
+"source": "8",
+"target": "14"
 },
 {
 "dist": 70.53,
@@ -393,8 +421,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Constantine",
-"target": "Oum el Bouaghi"
+"source": "8",
+"target": "15"
 },
 {
 "dist": 62.64,
@@ -406,8 +434,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Constantine",
-"target": "Skikda"
+"source": "8",
+"target": "18"
 },
 {
 "dist": 91.12,
@@ -419,8 +447,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Constantine",
-"target": "Jijel"
+"source": "8",
+"target": "19"
 },
 {
 "dist": 322.07,
@@ -432,8 +460,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Constantine",
-"target": "Alger"
+"source": "8",
+"target": "22"
 },
 {
 "dist": 89.61,
@@ -445,8 +473,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Tizi Ouzou",
-"target": "Alger"
+"source": "11",
+"target": "22"
 },
 {
 "dist": 182.00,
@@ -458,8 +486,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Bejaia",
-"target": "Alger"
+"source": "16",
+"target": "22"
 },
 {
 "dist": 221.13,
@@ -471,8 +499,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Setif",
-"target": "Alger"
+"source": "17",
+"target": "22"
 },
 {
 "dist": 180.83,
@@ -484,8 +512,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Tiaret",
-"target": "Oran"
+"source": "20",
+"target": "24"
 },
 {
 "dist": 171.36,
@@ -497,8 +525,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Alger",
-"target": "Chlef"
+"source": "22",
+"target": "23"
 },
 {
 "dist": 350.95,
@@ -510,8 +538,8 @@
 "uni": 81.67,
 "deg": 80.15
 },
-"source": "Alger",
-"target": "Oran"
+"source": "22",
+"target": "24"
 },
 {
 "dist": 71.12,
@@ -523,8 +551,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Oran",
-"target": "Mostaganem"
+"source": "24",
+"target": "25"
 },
 {
 "dist": 109.13,
@@ -536,8 +564,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Oran",
-"target": "Tlemcen"
+"source": "24",
+"target": "26"
 },
 {
 "dist": 55.75,
@@ -549,8 +577,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Oran",
-"target": "Sidi Bel Abbes"
+"source": "24",
+"target": "27"
 },
 {
 "dist": 119.82,
@@ -562,8 +590,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Oran",
-"target": "Saida"
+"source": "24",
+"target": "28"
 },
 {
 "dist": 67.96,
@@ -575,8 +603,8 @@
 "uni": 15.00,
 "deg": 7.97
 },
-"source": "Oran",
-"target": "Mascara"
+"source": "24",
+"target": "29"
 }
 ]
 }

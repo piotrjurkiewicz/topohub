@@ -5,556 +5,595 @@
 "name": "arpanet19723",
 "demands": {},
 "stats": {
-"nodes": 23,
+"nodes": 25,
 "links": 28,
-"demands": 506,
+"demands": 600,
 "min_degree": 1,
-"avg_degree": 2.43,
-"std_degree": 0.82,
-"max_degree": 5,
-"gini": 0.16,
+"avg_degree": 2.24,
+"std_degree": 0.51,
+"max_degree": 3,
+"gini": 0.11,
 "min_link_len": 0.00,
 "avg_link_len": 525.14,
 "max_link_len": 2391.73,
 "diameter_len": 6173.99,
 "diameter_hops": 10,
-"avg_sdp_num": 1.11,
+"avg_sdp_num": 1.03,
 "max_sdp_num": 2,
-"avg_sdp_hops": 4.46,
-"avg_sdp_len": 1858.21,
-"avg_adp_num": 1.92,
+"avg_sdp_hops": 4.58,
+"avg_sdp_len": 1757.48,
+"avg_adp_num": 1.93,
 "max_adp_num": 3,
-"avg_adp_hops": 6.38,
-"avg_adp_len": 3951.12
+"avg_adp_hops": 6.59,
+"avg_adp_len": 3887.27
 }
 },
 "nodes": [
 {
+"name": "ILLINOIS",
 "pos": [
 -89.64,
 39.80
 ],
-"id": "ILLINOIS"
+"id": "0"
 },
 {
+"name": "MITRE",
 "pos": [
 -70.93,
 41.64
 ],
-"id": "MITRE"
+"id": "1"
 },
 {
+"name": "CARNEGIE",
 "pos": [
 -79.94,
 40.44
 ],
-"id": "CARNEGIE"
+"id": "2"
 },
 {
+"name": "CASE",
 "pos": [
 -81.60,
 41.50
 ],
-"id": "CASE"
+"id": "3"
 },
 {
+"name": "ETAC",
 "pos": [
 -77.04,
 38.90
 ],
-"id": "ETAC"
+"id": "4"
 },
 {
+"name": "AFGWC",
 "pos": [
 -89.85,
 38.54
 ],
-"id": "AFGWC"
+"id": "5"
 },
 {
+"name": "BBN",
 "pos": [
 -71.11,
 42.38
 ],
-"id": "BBN"
+"id": "6"
 },
 {
+"name": "NBS",
 "pos": [
 -77.20,
 39.14
 ],
-"id": "NBS"
+"id": "7"
 },
 {
+"name": "Tinker",
 "pos": [
 -97.39,
 35.41
 ],
-"id": "Tinker"
+"id": "8"
 },
 {
+"name": "AMES",
 "pos": [
 -122.08,
 37.39
 ],
-"id": "AMES"
+"id": "9"
 },
 {
+"name": "RADC",
 "pos": [
 -75.46,
 43.21
 ],
-"id": "RADC"
+"id": "10"
 },
 {
+"name": "McClellan",
 "pos": [
 -121.37,
 38.69
 ],
-"id": "McClellan"
+"id": "11"
 },
 {
+"name": "RAND",
 "pos": [
 -118.49,
 34.02
 ],
-"id": "RAND"
+"id": "12"
 },
 {
+"name": "AMES",
+"pos": [
+-122.08,
+37.39
+],
+"id": "13"
+},
+{
+"name": "SDC",
 "pos": [
 -118.49,
 34.02
 ],
-"id": "SDC"
+"id": "14"
 },
 {
+"name": "BBN",
+"pos": [
+-71.11,
+42.38
+],
+"id": "15"
+},
+{
+"name": "HARVARD",
 "pos": [
 -71.12,
 42.38
 ],
-"id": "HARVARD"
+"id": "16"
 },
 {
+"name": "SRI",
 "pos": [
 -122.18,
 37.45
 ],
-"id": "SRI"
+"id": "17"
 },
 {
+"name": "UCSB",
 "pos": [
 -119.70,
 34.42
 ],
-"id": "UCSB"
+"id": "18"
 },
 {
+"name": "UCLA",
 "pos": [
 -118.24,
 34.05
 ],
-"id": "UCLA"
+"id": "19"
 },
 {
+"name": "Stanford",
 "pos": [
 -122.14,
 37.44
 ],
-"id": "Stanford"
+"id": "20"
 },
 {
+"name": "USC",
 "pos": [
 -118.24,
 34.05
 ],
-"id": "USC"
+"id": "21"
 },
 {
+"name": "UTAH",
 "pos": [
 -111.89,
 40.76
 ],
-"id": "UTAH"
+"id": "22"
 },
 {
+"name": "Lincoln",
 "pos": [
 -71.22,
 42.45
 ],
-"id": "Lincoln"
+"id": "23"
 },
 {
+"name": "MIT",
 "pos": [
 -71.09,
 42.36
 ],
-"id": "MIT"
+"id": "24"
 }
 ],
 "links": [
 {
 "dist": 1577.90,
 "ecmp_fwd": {
-"uni": 92.67,
-"deg": 98.15
+"uni": 100.00,
+"deg": 99.05
 },
 "ecmp_bwd": {
-"uni": 92.00,
-"deg": 100.00
+"uni": 100.00,
+"deg": 99.05
 },
-"source": "ILLINOIS",
-"target": "MIT"
+"source": "0",
+"target": "24"
 },
 {
 "dist": 1885.69,
 "ecmp_fwd": {
-"uni": 90.67,
+"uni": 100.00,
 "deg": 100.00
 },
 "ecmp_bwd": {
-"uni": 91.33,
-"deg": 98.15
+"uni": 100.00,
+"deg": 100.00
 },
-"source": "ILLINOIS",
-"target": "UTAH"
+"source": "0",
+"target": "22"
 },
 {
 "dist": 767.00,
 "ecmp_fwd": {
-"uni": 27.33,
-"deg": 22.41
+"uni": 30.84,
+"deg": 26.43
 },
 "ecmp_bwd": {
-"uni": 27.33,
-"deg": 22.04
+"uni": 30.84,
+"deg": 26.43
 },
-"source": "MITRE",
-"target": "CARNEGIE"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 600.76,
 "ecmp_fwd": {
-"uni": 36.00,
-"deg": 31.53
+"uni": 37.13,
+"deg": 32.38
 },
 "ecmp_bwd": {
-"uni": 36.00,
-"deg": 31.90
+"uni": 37.13,
+"deg": 32.38
 },
-"source": "MITRE",
-"target": "ETAC"
+"source": "1",
+"target": "4"
 },
 {
 "dist": 182.44,
 "ecmp_fwd": {
-"uni": 38.67,
-"deg": 33.50
+"uni": 39.52,
+"deg": 34.29
 },
 "ecmp_bwd": {
-"uni": 38.67,
-"deg": 33.13
+"uni": 39.52,
+"deg": 34.29
 },
-"source": "CARNEGIE",
-"target": "CASE"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 539.17,
 "ecmp_fwd": {
-"uni": 70.67,
-"deg": 67.00
+"uni": 70.66,
+"deg": 64.76
 },
 "ecmp_bwd": {
-"uni": 70.67,
-"deg": 66.63
+"uni": 70.66,
+"deg": 64.76
 },
-"source": "CASE",
-"target": "RADC"
+"source": "3",
+"target": "10"
 },
 {
 "dist": 775.88,
 "ecmp_fwd": {
-"uni": 29.33,
-"deg": 13.55
+"uni": 28.74,
+"deg": 13.10
 },
 "ecmp_bwd": {
-"uni": 29.33,
-"deg": 13.55
+"uni": 28.74,
+"deg": 13.10
 },
-"source": "CASE",
-"target": "AFGWC"
+"source": "3",
+"target": "5"
 },
 {
 "dist": 31.08,
 "ecmp_fwd": {
-"uni": 50.67,
-"deg": 47.29
+"uni": 51.50,
+"deg": 46.67
 },
 "ecmp_bwd": {
-"uni": 50.67,
-"deg": 47.66
+"uni": 51.50,
+"deg": 46.67
 },
-"source": "ETAC",
-"target": "NBS"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 2.07,
 "ecmp_fwd": {
-"uni": 62.33,
-"deg": 72.66
+"uni": 38.92,
+"deg": 37.86
 },
 "ecmp_bwd": {
-"uni": 63.00,
-"deg": 71.18
+"uni": 38.92,
+"deg": 37.86
 },
-"source": "BBN",
-"target": "MIT"
+"source": "6",
+"target": "24"
 },
 {
 "dist": 0.00,
 "ecmp_fwd": {
-"uni": 0.00,
-"deg": 0.00
+"uni": 37.72,
+"deg": 36.90
 },
 "ecmp_bwd": {
-"uni": 0.00,
-"deg": 0.00
+"uni": 37.72,
+"deg": 36.90
 },
-"source": "BBN",
-"target": "BBN"
-},
-{
-"dist": 2391.73,
-"ecmp_fwd": {
-"uni": 85.33,
-"deg": 93.10
-},
-"ecmp_bwd": {
-"uni": 84.67,
-"deg": 94.95
-},
-"source": "BBN",
-"target": "Tinker"
-},
-{
-"dist": 0.96,
-"ecmp_fwd": {
-"uni": 81.33,
-"deg": 80.17
-},
-"ecmp_bwd": {
-"uni": 81.33,
-"deg": 79.80
-},
-"source": "BBN",
-"target": "HARVARD"
+"source": "6",
+"target": "15"
 },
 {
 "dist": 626.05,
 "ecmp_fwd": {
-"uni": 65.33,
-"deg": 63.05
+"uni": 65.87,
+"deg": 60.95
 },
 "ecmp_bwd": {
-"uni": 65.33,
-"deg": 63.42
+"uni": 65.87,
+"deg": 60.95
 },
-"source": "NBS",
-"target": "HARVARD"
+"source": "7",
+"target": "16"
 },
 {
 "dist": 1908.95,
 "ecmp_fwd": {
-"uni": 84.00,
-"deg": 93.10
+"uni": 86.83,
+"deg": 87.62
 },
 "ecmp_bwd": {
-"uni": 83.33,
-"deg": 94.95
+"uni": 86.83,
+"deg": 87.62
 },
-"source": "Tinker",
-"target": "USC"
+"source": "8",
+"target": "21"
+},
+{
+"dist": 2391.73,
+"ecmp_fwd": {
+"uni": 86.83,
+"deg": 86.67
+},
+"ecmp_bwd": {
+"uni": 86.83,
+"deg": 86.67
+},
+"source": "8",
+"target": "15"
 },
 {
 "dist": 11.50,
 "ecmp_fwd": {
-"uni": 30.11,
-"deg": 43.84
+"uni": 40.12,
+"deg": 36.19
 },
 "ecmp_bwd": {
-"uni": 29.78,
-"deg": 45.57
+"uni": 40.12,
+"deg": 36.19
 },
-"source": "AMES",
-"target": "SRI"
+"source": "9",
+"target": "17"
 },
 {
 "dist": 0.00,
 "ecmp_fwd": {
-"uni": 0.00,
-"deg": 0.00
+"uni": 20.96,
+"deg": 19.05
 },
 "ecmp_bwd": {
-"uni": 0.00,
-"deg": 0.00
+"uni": 20.96,
+"deg": 19.05
 },
-"source": "AMES",
-"target": "AMES"
-},
-{
-"dist": 8.12,
-"ecmp_fwd": {
-"uni": 17.28,
-"deg": 24.38
-},
-"ecmp_bwd": {
-"uni": 17.61,
-"deg": 22.66
-},
-"source": "AMES",
-"target": "Stanford"
+"source": "9",
+"target": "13"
 },
 {
 "dist": 355.45,
 "ecmp_fwd": {
-"uni": 85.33,
-"deg": 82.76
+"uni": 85.03,
+"deg": 79.05
 },
 "ecmp_bwd": {
-"uni": 85.33,
-"deg": 82.39
+"uni": 85.03,
+"deg": 79.05
 },
-"source": "RADC",
-"target": "Lincoln"
+"source": "10",
+"target": "23"
 },
 {
 "dist": 154.29,
 "ecmp_fwd": {
-"uni": 68.67,
-"deg": 84.98
+"uni": 76.65,
+"deg": 77.14
 },
 "ecmp_bwd": {
-"uni": 69.33,
-"deg": 83.25
+"uni": 76.65,
+"deg": 77.14
 },
-"source": "McClellan",
-"target": "SRI"
+"source": "11",
+"target": "17"
 },
 {
 "dist": 842.80,
 "ecmp_fwd": {
-"uni": 83.78,
-"deg": 95.32
+"uni": 89.82,
+"deg": 89.05
 },
 "ecmp_bwd": {
-"uni": 83.11,
-"deg": 97.04
+"uni": 89.82,
+"deg": 89.05
 },
-"source": "McClellan",
-"target": "UTAH"
+"source": "11",
+"target": "22"
 },
 {
 "dist": 23.10,
 "ecmp_fwd": {
-"uni": 29.11,
-"deg": 27.09
+"uni": 29.34,
+"deg": 27.86
 },
 "ecmp_bwd": {
-"uni": 28.78,
-"deg": 27.09
+"uni": 29.34,
+"deg": 27.86
 },
-"source": "RAND",
-"target": "UCLA"
+"source": "12",
+"target": "19"
 },
 {
 "dist": 503.52,
 "ecmp_fwd": {
-"uni": 29.11,
-"deg": 32.27
+"uni": 38.92,
+"deg": 35.24
 },
 "ecmp_bwd": {
-"uni": 28.78,
-"deg": 33.99
+"uni": 38.92,
+"deg": 35.24
 },
-"source": "RAND",
-"target": "Stanford"
+"source": "12",
+"target": "20"
 },
 {
 "dist": 0.00,
 "ecmp_fwd": {
-"uni": 66.67,
-"deg": 74.38
+"uni": 74.25,
+"deg": 75.24
 },
 "ecmp_bwd": {
-"uni": 67.33,
-"deg": 72.66
+"uni": 74.25,
+"deg": 75.24
 },
-"source": "RAND",
-"target": "SDC"
+"source": "12",
+"target": "14"
+},
+{
+"dist": 8.12,
+"ecmp_fwd": {
+"uni": 19.76,
+"deg": 18.10
+},
+"ecmp_bwd": {
+"uni": 19.76,
+"deg": 18.10
+},
+"source": "13",
+"target": "20"
 },
 {
 "dist": 23.10,
 "ecmp_fwd": {
-"uni": 81.11,
-"deg": 86.45
+"uni": 87.43,
+"deg": 87.14
 },
 "ecmp_bwd": {
-"uni": 81.78,
-"deg": 84.73
+"uni": 87.43,
+"deg": 87.14
 },
-"source": "SDC",
-"target": "USC"
+"source": "14",
+"target": "21"
+},
+{
+"dist": 0.96,
+"ecmp_fwd": {
+"uni": 80.24,
+"deg": 75.24
+},
+"ecmp_bwd": {
+"uni": 80.24,
+"deg": 75.24
+},
+"source": "15",
+"target": "16"
 },
 {
 "dist": 404.74,
 "ecmp_fwd": {
-"uni": 29.78,
-"deg": 28.08
+"uni": 30.54,
+"deg": 28.81
 },
 "ecmp_bwd": {
-"uni": 30.11,
-"deg": 28.08
+"uni": 30.54,
+"deg": 28.81
 },
-"source": "SRI",
-"target": "UCSB"
+"source": "17",
+"target": "18"
 },
 {
 "dist": 139.89,
 "ecmp_fwd": {
-"uni": 17.28,
-"deg": 16.50
+"uni": 19.46,
+"deg": 19.05
 },
 "ecmp_bwd": {
-"uni": 17.61,
-"deg": 16.50
+"uni": 19.46,
+"deg": 19.05
 },
-"source": "UCSB",
-"target": "UCLA"
+"source": "18",
+"target": "19"
 },
 {
 "dist": 933.10,
 "ecmp_fwd": {
-"uni": 51.11,
-"deg": 58.62
+"uni": 77.84,
+"deg": 85.00
 },
 "ecmp_bwd": {
-"uni": 51.11,
-"deg": 58.74
+"uni": 77.84,
+"deg": 85.00
 },
-"source": "USC",
-"target": "UTAH"
+"source": "21",
+"target": "22"
 },
 {
 "dist": 14.64,
 "ecmp_fwd": {
-"uni": 100.00,
-"deg": 98.52
+"uni": 99.40,
+"deg": 93.33
 },
 "ecmp_bwd": {
-"uni": 100.00,
-"deg": 98.15
+"uni": 99.40,
+"deg": 93.33
 },
-"source": "Lincoln",
-"target": "MIT"
+"source": "23",
+"target": "24"
 }
 ]
 }

@@ -30,53 +30,60 @@
 },
 "nodes": [
 {
+"name": "Galway",
 "pos": [
 -9.05,
 53.27
 ],
-"id": "Galway"
+"id": "0"
 },
 {
+"name": "Limerick",
 "pos": [
 -8.62,
 52.66
 ],
-"id": "Limerick"
+"id": "1"
 },
 {
+"name": "Cork",
 "pos": [
 -8.50,
 51.90
 ],
-"id": "Cork"
+"id": "2"
 },
 {
+"name": "CityWest",
 "pos": [
 -6.27,
 53.34
 ],
-"id": "CityWest"
+"id": "3"
 },
 {
+"name": "DCU (Dublin City University",
 "pos": [
 -6.27,
 53.34
 ],
-"id": "DCU (Dublin City University"
+"id": "4"
 },
 {
+"name": "TDC (Trinity College Dublin)",
 "pos": [
 -6.27,
 53.34
 ],
-"id": "TDC (Trinity College Dublin)"
+"id": "5"
 },
 {
+"name": "Kilcarbery",
 "pos": [
 -6.27,
 53.34
 ],
-"id": "Kilcarbery"
+"id": "6"
 }
 ],
 "links": [
@@ -90,8 +97,8 @@
 "uni": 77.78,
 "deg": 65.71
 },
-"source": "Galway",
-"target": "CityWest"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 185.03,
@@ -103,8 +110,8 @@
 "uni": 55.56,
 "deg": 48.57
 },
-"source": "Galway",
-"target": "Kilcarbery"
+"source": "0",
+"target": "6"
 },
 {
 "dist": 85.65,
@@ -116,8 +123,8 @@
 "uni": 33.33,
 "deg": 31.43
 },
-"source": "Limerick",
-"target": "Cork"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 174.84,
@@ -129,8 +136,8 @@
 "uni": 55.56,
 "deg": 77.14
 },
-"source": "Limerick",
-"target": "CityWest"
+"source": "1",
+"target": "3"
 },
 {
 "dist": 174.84,
@@ -142,8 +149,8 @@
 "uni": 66.67,
 "deg": 82.86
 },
-"source": "Limerick",
-"target": "Kilcarbery"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 220.19,
@@ -155,8 +162,8 @@
 "uni": 100.00,
 "deg": 82.86
 },
-"source": "Cork",
-"target": "CityWest"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 0.00,
@@ -168,8 +175,8 @@
 "uni": 77.78,
 "deg": 65.71
 },
-"source": "CityWest",
-"target": "DCU (Dublin City University"
+"source": "3",
+"target": "4"
 },
 {
 "dist": 0.00,
@@ -181,8 +188,8 @@
 "uni": 77.78,
 "deg": 65.71
 },
-"source": "CityWest",
-"target": "TDC (Trinity College Dublin)"
+"source": "3",
+"target": "5"
 },
 {
 "dist": 0.00,
@@ -194,8 +201,8 @@
 "uni": 33.33,
 "deg": 100.00
 },
-"source": "CityWest",
-"target": "Kilcarbery"
+"source": "3",
+"target": "6"
 },
 {
 "dist": 0.00,
@@ -207,8 +214,8 @@
 "uni": 55.56,
 "deg": 48.57
 },
-"source": "DCU (Dublin City University",
-"target": "Kilcarbery"
+"source": "4",
+"target": "6"
 },
 {
 "dist": 0.00,
@@ -220,8 +227,8 @@
 "uni": 55.56,
 "deg": 48.57
 },
-"source": "TDC (Trinity College Dublin)",
-"target": "Kilcarbery"
+"source": "5",
+"target": "6"
 }
 ]
 }

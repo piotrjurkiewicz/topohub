@@ -30,88 +30,100 @@
 },
 "nodes": [
 {
+"name": "Lviv",
 "pos": [
 24.02,
 49.84
 ],
-"id": "Lviv"
+"id": "0"
 },
 {
+"name": "Oslo",
 "pos": [
 10.75,
 59.91
 ],
-"id": "Oslo"
+"id": "1"
 },
 {
+"name": "Kaunas",
 "pos": [
 23.90,
 54.90
 ],
-"id": "Kaunas"
+"id": "2"
 },
 {
+"name": "Warsaw",
 "pos": [
 21.01,
 52.23
 ],
-"id": "Warsaw"
+"id": "3"
 },
 {
+"name": "Tallinn",
 "pos": [
 24.75,
 59.44
 ],
-"id": "Tallinn"
+"id": "4"
 },
 {
+"name": "Riga",
 "pos": [
 24.11,
 56.95
 ],
-"id": "Riga"
+"id": "5"
 },
 {
+"name": "Stockholm",
 "pos": [
 18.06,
 59.33
 ],
-"id": "Stockholm"
+"id": "6"
 },
 {
+"name": "Helsinki",
 "pos": [
 24.94,
 60.17
 ],
-"id": "Helsinki"
+"id": "7"
 },
 {
+"name": "Copenhagen",
 "pos": [
 12.57,
 55.68
 ],
-"id": "Copenhagen"
+"id": "8"
 },
 {
+"name": "Reykjavik",
 "pos": [
 -21.90,
 64.14
 ],
-"id": "Reykjavik"
+"id": "9"
 },
 {
+"name": "Petrozavodsk",
 "pos": [
 34.35,
 61.78
 ],
-"id": "Petrozavodsk"
+"id": "12"
 },
 {
+"name": "St Petersburg",
 "pos": [
 30.26,
 59.89
 ],
-"id": "St Petersburg"
+"id": "13"
 }
 ],
 "links": [
@@ -125,8 +137,8 @@
 "uni": 34.38,
 "deg": 20.00
 },
-"source": "Lviv",
-"target": "Stockholm"
+"source": "0",
+"target": "6"
 },
 {
 "dist": 416.46,
@@ -138,8 +150,8 @@
 "uni": 34.38,
 "deg": 20.00
 },
-"source": "Oslo",
-"target": "Stockholm"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 605.52,
@@ -151,8 +163,8 @@
 "uni": 34.38,
 "deg": 20.00
 },
-"source": "Kaunas",
-"target": "Stockholm"
+"source": "2",
+"target": "6"
 },
 {
 "dist": 811.03,
@@ -164,8 +176,8 @@
 "uni": 34.38,
 "deg": 20.00
 },
-"source": "Warsaw",
-"target": "Stockholm"
+"source": "3",
+"target": "6"
 },
 {
 "dist": 82.11,
@@ -177,8 +189,8 @@
 "uni": 34.38,
 "deg": 20.00
 },
-"source": "Tallinn",
-"target": "Helsinki"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 442.74,
@@ -190,8 +202,8 @@
 "uni": 34.38,
 "deg": 20.00
 },
-"source": "Riga",
-"target": "Stockholm"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 395.86,
@@ -203,8 +215,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Stockholm",
-"target": "Helsinki"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 522.53,
@@ -216,8 +228,8 @@
 "uni": 34.38,
 "deg": 20.00
 },
-"source": "Stockholm",
-"target": "Copenhagen"
+"source": "6",
+"target": "8"
 },
 {
 "dist": 2132.55,
@@ -229,8 +241,8 @@
 "uni": 34.38,
 "deg": 20.00
 },
-"source": "Stockholm",
-"target": "Reykjavik"
+"source": "6",
+"target": "9"
 },
 {
 "dist": 538.13,
@@ -242,8 +254,8 @@
 "uni": 34.38,
 "deg": 20.00
 },
-"source": "Helsinki",
-"target": "Petrozavodsk"
+"source": "7",
+"target": "12"
 },
 {
 "dist": 297.55,
@@ -255,8 +267,8 @@
 "uni": 34.38,
 "deg": 20.00
 },
-"source": "Helsinki",
-"target": "St Petersburg"
+"source": "7",
+"target": "13"
 }
 ]
 }

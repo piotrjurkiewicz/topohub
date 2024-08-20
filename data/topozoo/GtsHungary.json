@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.03,
 "max_sdp_num": 2,
 "avg_sdp_hops": 2.92,
-"avg_sdp_len": 246.31,
+"avg_sdp_len": 235.64,
 "avg_adp_num": 1.26,
 "max_adp_num": 2,
 "avg_adp_hops": 3.48,
@@ -30,179 +30,204 @@
 },
 "nodes": [
 {
+"name": "Miskolc",
 "pos": [
 20.78,
 48.10
 ],
-"id": "Miskolc"
+"id": "1"
 },
 {
+"name": "Salgotarjan",
 "pos": [
 19.80,
 48.10
 ],
-"id": "Salgotarjan"
+"id": "2"
 },
 {
+"name": "Godollo",
 "pos": [
 19.37,
 47.60
 ],
-"id": "Godollo"
+"id": "3"
 },
 {
+"name": "Szolnok",
 "pos": [
 20.20,
 47.18
 ],
-"id": "Szolnok"
+"id": "4"
 },
 {
+"name": "Dunaujvaros",
 "pos": [
 18.93,
 46.98
 ],
-"id": "Dunaujvaros"
+"id": "5"
 },
 {
+"name": "Nyiregyhaza",
 "pos": [
 21.72,
 47.96
 ],
-"id": "Nyiregyhaza"
+"id": "6"
 },
 {
+"name": "Debrecen",
 "pos": [
 21.63,
 47.53
 ],
-"id": "Debrecen"
+"id": "7"
 },
 {
+"name": "Kecskemet",
 "pos": [
 19.69,
 46.91
 ],
-"id": "Kecskemet"
+"id": "8"
 },
 {
+"name": "Baja",
 "pos": [
 18.97,
 46.18
 ],
-"id": "Baja"
+"id": "9"
 },
 {
+"name": "Pecs",
 "pos": [
 18.23,
 46.08
 ],
-"id": "Pecs"
+"id": "10"
 },
 {
+"name": "Szeged",
 "pos": [
 20.15,
 46.25
 ],
-"id": "Szeged"
+"id": "12"
 },
 {
+"name": "Siofok",
 "pos": [
 18.05,
 46.90
 ],
-"id": "Siofok"
+"id": "13"
 },
 {
+"name": "Kaposvar",
 "pos": [
 17.80,
 46.37
 ],
-"id": "Kaposvar"
+"id": "14"
 },
 {
+"name": "Szekszard",
 "pos": [
 18.72,
 46.35
 ],
-"id": "Szekszard"
+"id": "15"
 },
 {
+"name": "Bekescsaba",
 "pos": [
 21.10,
 46.68
 ],
-"id": "Bekescsaba"
+"id": "19"
 },
 {
+"name": "Budapest",
 "pos": [
 19.04,
 47.50
 ],
-"id": "Budapest"
+"id": "20"
 },
 {
+"name": "Vac",
 "pos": [
 19.13,
 47.78
 ],
-"id": "Vac"
+"id": "21"
 },
 {
+"name": "Sopron",
 "pos": [
 16.60,
 47.68
 ],
-"id": "Sopron"
+"id": "22"
 },
 {
+"name": "Szombathely",
 "pos": [
 16.62,
 47.23
 ],
-"id": "Szombathely"
+"id": "23"
 },
 {
+"name": "Zalaegerszeg",
 "pos": [
 16.84,
 46.84
 ],
-"id": "Zalaegerszeg"
+"id": "24"
 },
 {
+"name": "Nagykanizsa",
 "pos": [
 16.99,
 46.45
 ],
-"id": "Nagykanizsa"
+"id": "25"
 },
 {
+"name": "Szekesfehervar",
 "pos": [
 18.41,
 47.19
 ],
-"id": "Szekesfehervar"
+"id": "26"
 },
 {
+"name": "Veszprem",
 "pos": [
 17.91,
 47.09
 ],
-"id": "Veszprem"
+"id": "27"
 },
 {
+"name": "Gyor",
 "pos": [
 17.64,
 47.68
 ],
-"id": "Gyor"
+"id": "28"
 },
 {
+"name": "Tatabanya",
 "pos": [
 18.42,
 47.57
 ],
-"id": "Tatabanya"
+"id": "29"
 }
 ],
 "links": [
@@ -216,8 +241,8 @@
 "uni": 35.56,
 "deg": 17.96
 },
-"source": "Miskolc",
-"target": "Budapest"
+"source": "1",
+"target": "20"
 },
 {
 "dist": 87.83,
@@ -229,8 +254,8 @@
 "uni": 35.56,
 "deg": 17.96
 },
-"source": "Salgotarjan",
-"target": "Budapest"
+"source": "2",
+"target": "20"
 },
 {
 "dist": 27.03,
@@ -242,8 +267,8 @@
 "uni": 35.56,
 "deg": 17.96
 },
-"source": "Godollo",
-"target": "Budapest"
+"source": "3",
+"target": "20"
 },
 {
 "dist": 94.18,
@@ -255,8 +280,8 @@
 "uni": 87.41,
 "deg": 87.32
 },
-"source": "Szolnok",
-"target": "Budapest"
+"source": "4",
+"target": "20"
 },
 {
 "dist": 114.80,
@@ -268,8 +293,8 @@
 "uni": 62.22,
 "deg": 61.97
 },
-"source": "Szolnok",
-"target": "Debrecen"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 58.19,
@@ -281,8 +306,8 @@
 "uni": 62.22,
 "deg": 61.97
 },
-"source": "Dunaujvaros",
-"target": "Kecskemet"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 57.81,
@@ -294,8 +319,8 @@
 "uni": 87.41,
 "deg": 87.32
 },
-"source": "Dunaujvaros",
-"target": "Budapest"
+"source": "5",
+"target": "20"
 },
 {
 "dist": 206.62,
@@ -307,8 +332,8 @@
 "uni": 35.56,
 "deg": 17.96
 },
-"source": "Nyiregyhaza",
-"target": "Budapest"
+"source": "6",
+"target": "20"
 },
 {
 "dist": 181.71,
@@ -320,8 +345,8 @@
 "uni": 37.04,
 "deg": 36.62
 },
-"source": "Debrecen",
-"target": "Szeged"
+"source": "7",
+"target": "12"
 },
 {
 "dist": 80.61,
@@ -333,8 +358,8 @@
 "uni": 37.04,
 "deg": 36.62
 },
-"source": "Kecskemet",
-"target": "Szeged"
+"source": "8",
+"target": "12"
 },
 {
 "dist": 146.33,
@@ -346,8 +371,8 @@
 "uni": 35.56,
 "deg": 17.96
 },
-"source": "Baja",
-"target": "Budapest"
+"source": "9",
+"target": "20"
 },
 {
 "dist": 168.91,
@@ -359,8 +384,8 @@
 "uni": 35.56,
 "deg": 17.96
 },
-"source": "Pecs",
-"target": "Budapest"
+"source": "10",
+"target": "20"
 },
 {
 "dist": 87.22,
@@ -372,8 +397,8 @@
 "uni": 35.56,
 "deg": 17.96
 },
-"source": "Szeged",
-"target": "Bekescsaba"
+"source": "12",
+"target": "19"
 },
 {
 "dist": 100.10,
@@ -385,8 +410,8 @@
 "uni": 35.56,
 "deg": 17.96
 },
-"source": "Siofok",
-"target": "Budapest"
+"source": "13",
+"target": "20"
 },
 {
 "dist": 157.17,
@@ -398,8 +423,8 @@
 "uni": 35.56,
 "deg": 17.96
 },
-"source": "Kaposvar",
-"target": "Budapest"
+"source": "14",
+"target": "20"
 },
 {
 "dist": 130.03,
@@ -411,8 +436,8 @@
 "uni": 35.56,
 "deg": 17.96
 },
-"source": "Szekszard",
-"target": "Budapest"
+"source": "15",
+"target": "20"
 },
 {
 "dist": 32.50,
@@ -424,8 +449,8 @@
 "uni": 35.56,
 "deg": 17.96
 },
-"source": "Budapest",
-"target": "Vac"
+"source": "20",
+"target": "21"
 },
 {
 "dist": 194.09,
@@ -437,8 +462,8 @@
 "uni": 35.56,
 "deg": 17.96
 },
-"source": "Budapest",
-"target": "Nagykanizsa"
+"source": "20",
+"target": "25"
 },
 {
 "dist": 58.53,
@@ -450,8 +475,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Budapest",
-"target": "Szekesfehervar"
+"source": "20",
+"target": "26"
 },
 {
 "dist": 47.42,
@@ -463,8 +488,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Budapest",
-"target": "Tatabanya"
+"source": "20",
+"target": "29"
 },
 {
 "dist": 77.51,
@@ -476,8 +501,8 @@
 "uni": 49.63,
 "deg": 49.30
 },
-"source": "Sopron",
-"target": "Gyor"
+"source": "22",
+"target": "28"
 },
 {
 "dist": 50.35,
@@ -489,8 +514,8 @@
 "uni": 24.44,
 "deg": 23.94
 },
-"source": "Sopron",
-"target": "Szombathely"
+"source": "22",
+"target": "23"
 },
 {
 "dist": 46.63,
@@ -502,8 +527,8 @@
 "uni": 24.44,
 "deg": 23.94
 },
-"source": "Szombathely",
-"target": "Zalaegerszeg"
+"source": "23",
+"target": "24"
 },
 {
 "dist": 85.79,
@@ -515,8 +540,8 @@
 "uni": 49.63,
 "deg": 49.30
 },
-"source": "Zalaegerszeg",
-"target": "Veszprem"
+"source": "24",
+"target": "27"
 },
 {
 "dist": 39.24,
@@ -528,8 +553,8 @@
 "uni": 74.81,
 "deg": 74.65
 },
-"source": "Szekesfehervar",
-"target": "Veszprem"
+"source": "26",
+"target": "27"
 },
 {
 "dist": 60.01,
@@ -541,8 +566,8 @@
 "uni": 74.81,
 "deg": 74.65
 },
-"source": "Gyor",
-"target": "Tatabanya"
+"source": "28",
+"target": "29"
 }
 ]
 }

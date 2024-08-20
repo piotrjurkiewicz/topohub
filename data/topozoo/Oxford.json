@@ -5,489 +5,529 @@
 "name": "oxford",
 "demands": {},
 "stats": {
-"nodes": 19,
-"links": 25,
-"demands": 342,
+"nodes": 20,
+"links": 26,
+"demands": 380,
 "min_degree": 2,
-"avg_degree": 2.63,
-"std_degree": 1.09,
-"max_degree": 6,
-"gini": 0.18,
+"avg_degree": 2.60,
+"std_degree": 0.86,
+"max_degree": 5,
+"gini": 0.16,
 "min_link_len": 0.00,
-"avg_link_len": 54.52,
+"avg_link_len": 54.03,
 "max_link_len": 138.18,
 "diameter_len": 472.76,
 "diameter_hops": 7,
-"avg_sdp_num": 1.03,
+"avg_sdp_num": 1.04,
 "max_sdp_num": 2,
-"avg_sdp_hops": 3.28,
-"avg_sdp_len": 101.50,
-"avg_adp_num": 2.06,
+"avg_sdp_hops": 3.30,
+"avg_sdp_len": 100.73,
+"avg_adp_num": 2.08,
 "max_adp_num": 3,
-"avg_adp_hops": 5.16,
-"avg_adp_len": 300.50
+"avg_adp_hops": 5.21,
+"avg_adp_len": 295.67
 }
 },
 "nodes": [
 {
+"name": "Portsmouth",
 "pos": [
 -70.76,
 43.07
 ],
-"id": "Portsmouth"
+"id": "0"
 },
 {
+"name": "Dover",
 "pos": [
 -70.87,
 43.20
 ],
-"id": "Dover"
+"id": "1"
 },
 {
+"name": "Biddeford",
 "pos": [
 -70.45,
 43.49
 ],
-"id": "Biddeford"
+"id": "2"
 },
 {
+"name": "Sanford",
 "pos": [
 -70.77,
 43.44
 ],
-"id": "Sanford"
+"id": "3"
 },
 {
+"name": "Boston",
 "pos": [
 -71.06,
 42.36
 ],
-"id": "Boston"
+"id": "4"
 },
 {
+"name": "Framingham",
 "pos": [
 -71.42,
 42.28
 ],
-"id": "Framingham"
+"id": "5"
 },
 {
+"name": "Manchester",
 "pos": [
 -71.45,
 43.00
 ],
-"id": "Manchester"
+"id": "6"
 },
 {
+"name": "Keene",
 "pos": [
 -72.28,
 42.93
 ],
-"id": "Keene"
+"id": "7"
 },
 {
+"name": "Worcester",
 "pos": [
 -71.80,
 42.26
 ],
-"id": "Worcester"
+"id": "8"
 },
 {
+"name": "Springfield",
 "pos": [
 -72.59,
 42.10
 ],
-"id": "Springfield"
+"id": "9"
 },
 {
+"name": "Bangor",
 "pos": [
 -68.78,
 44.80
 ],
-"id": "Bangor"
+"id": "10"
 },
 {
+"name": "Portland",
 "pos": [
 -70.26,
 43.66
 ],
-"id": "Portland"
+"id": "11"
 },
 {
+"name": "Turner",
 "pos": [
 -70.26,
 44.26
 ],
-"id": "Turner"
+"id": "12"
 },
 {
+"name": "Bethel",
 "pos": [
 -70.79,
 44.40
 ],
-"id": "Bethel"
+"id": "13"
 },
 {
+"name": "Norway",
 "pos": [
 -70.54,
 44.21
 ],
-"id": "Norway"
+"id": "14"
 },
 {
+"name": "Standish",
 "pos": [
 -70.55,
 43.74
 ],
-"id": "Standish"
+"id": "15"
 },
 {
+"name": "Buckfield",
 "pos": [
 -70.37,
 44.29
 ],
-"id": "Buckfield"
+"id": "16"
 },
 {
+"name": "Augusta",
 "pos": [
 -69.78,
 44.31
 ],
-"id": "Augusta"
+"id": "17"
 },
 {
+"name": "Lewiston",
 "pos": [
 -70.21,
 44.10
 ],
-"id": "Lewiston"
+"id": "18"
+},
+{
+"name": "Augusta",
+"pos": [
+-69.78,
+44.31
+],
+"id": "19"
 }
 ],
 "links": [
 {
 "dist": 77.36,
 "ecmp_fwd": {
-"uni": 100.00,
-"deg": 94.50
+"uni": 93.16,
+"deg": 84.22
 },
 "ecmp_bwd": {
-"uni": 100.00,
-"deg": 94.50
+"uni": 93.16,
+"deg": 84.22
 },
-"source": "Portsmouth",
-"target": "Portland"
+"source": "0",
+"target": "11"
 },
 {
 "dist": 40.89,
 "ecmp_fwd": {
-"uni": 26.00,
-"deg": 18.62
+"uni": 23.08,
+"deg": 16.13
 },
 "ecmp_bwd": {
-"uni": 26.00,
-"deg": 18.62
+"uni": 23.08,
+"deg": 16.13
 },
-"source": "Portsmouth",
-"target": "Sanford"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 56.91,
 "ecmp_fwd": {
-"uni": 82.00,
-"deg": 67.14
+"uni": 75.21,
+"deg": 59.31
 },
 "ecmp_bwd": {
-"uni": 82.00,
-"deg": 67.14
+"uni": 75.21,
+"deg": 59.31
 },
-"source": "Portsmouth",
-"target": "Manchester"
+"source": "0",
+"target": "6"
 },
 {
 "dist": 71.79,
 "ecmp_fwd": {
-"uni": 98.00,
-"deg": 81.81
+"uni": 90.60,
+"deg": 72.60
 },
 "ecmp_bwd": {
-"uni": 98.00,
-"deg": 81.81
+"uni": 90.60,
+"deg": 72.60
 },
-"source": "Dover",
-"target": "Portland"
+"source": "1",
+"target": "11"
 },
 {
 "dist": 117.85,
 "ecmp_fwd": {
-"uni": 78.00,
-"deg": 63.75
+"uni": 71.79,
+"deg": 56.47
 },
 "ecmp_bwd": {
-"uni": 78.00,
-"deg": 63.75
+"uni": 71.79,
+"deg": 56.47
 },
-"source": "Dover",
-"target": "Keene"
+"source": "1",
+"target": "7"
 },
 {
 "dist": 24.65,
 "ecmp_fwd": {
-"uni": 42.00,
-"deg": 33.29
+"uni": 38.46,
+"deg": 29.42
 },
 "ecmp_bwd": {
-"uni": 42.00,
-"deg": 33.29
+"uni": 38.46,
+"deg": 29.42
 },
-"source": "Biddeford",
-"target": "Portland"
+"source": "2",
+"target": "11"
 },
 {
 "dist": 26.57,
 "ecmp_fwd": {
-"uni": 18.00,
-"deg": 13.54
+"uni": 16.24,
+"deg": 11.86
 },
 "ecmp_bwd": {
-"uni": 18.00,
-"deg": 13.54
+"uni": 16.24,
+"deg": 11.86
 },
-"source": "Biddeford",
-"target": "Sanford"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 30.61,
 "ecmp_fwd": {
-"uni": 42.00,
-"deg": 31.03
+"uni": 37.61,
+"deg": 27.05
 },
 "ecmp_bwd": {
-"uni": 42.00,
-"deg": 31.03
+"uni": 37.61,
+"deg": 27.05
 },
-"source": "Boston",
-"target": "Framingham"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 77.89,
 "ecmp_fwd": {
-"uni": 62.00,
-"deg": 49.08
+"uni": 56.41,
+"deg": 43.18
 },
 "ecmp_bwd": {
-"uni": 62.00,
-"deg": 49.08
+"uni": 56.41,
+"deg": 43.18
 },
-"source": "Boston",
-"target": "Manchester"
+"source": "4",
+"target": "6"
 },
 {
 "dist": 31.83,
 "ecmp_fwd": {
-"uni": 22.00,
-"deg": 12.98
+"uni": 18.80,
+"deg": 10.91
 },
 "ecmp_bwd": {
-"uni": 22.00,
-"deg": 12.98
+"uni": 18.80,
+"deg": 10.91
 },
-"source": "Framingham",
-"target": "Worcester"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 96.03,
 "ecmp_fwd": {
-"uni": 58.00,
-"deg": 45.70
+"uni": 52.99,
+"deg": 40.33
 },
 "ecmp_bwd": {
-"uni": 58.00,
-"deg": 45.70
+"uni": 52.99,
+"deg": 40.33
 },
-"source": "Keene",
-"target": "Springfield"
+"source": "7",
+"target": "9"
 },
 {
 "dist": 67.34,
 "ecmp_fwd": {
-"uni": 38.00,
-"deg": 27.64
+"uni": 34.19,
+"deg": 24.20
 },
 "ecmp_bwd": {
-"uni": 38.00,
-"deg": 27.64
+"uni": 34.19,
+"deg": 24.20
 },
-"source": "Worcester",
-"target": "Springfield"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 138.18,
 "ecmp_fwd": {
-"uni": 25.00,
-"deg": 17.21
+"uni": 26.50,
+"deg": 18.98
 },
 "ecmp_bwd": {
-"uni": 25.00,
-"deg": 17.21
+"uni": 26.92,
+"deg": 19.34
 },
-"source": "Bangor",
-"target": "Lewiston"
+"source": "10",
+"target": "18"
 },
 {
 "dist": 96.33,
 "ecmp_fwd": {
-"uni": 11.00,
-"deg": 9.87
+"uni": 5.98,
+"deg": 4.74
 },
 "ecmp_bwd": {
-"uni": 11.00,
-"deg": 9.87
+"uni": 5.56,
+"deg": 4.39
 },
-"source": "Bangor",
-"target": "Augusta"
+"source": "10",
+"target": "19"
 },
 {
 "dist": 48.92,
 "ecmp_fwd": {
-"uni": 92.00,
+"uni": 100.00,
 "deg": 100.00
 },
 "ecmp_bwd": {
-"uni": 92.00,
-"deg": 100.00
+"uni": 99.57,
+"deg": 99.64
 },
-"source": "Portland",
-"target": "Lewiston"
+"source": "11",
+"target": "18"
 },
 {
 "dist": 25.25,
 "ecmp_fwd": {
-"uni": 92.00,
-"deg": 85.33
+"uni": 80.77,
+"deg": 74.97
 },
 "ecmp_bwd": {
-"uni": 92.00,
-"deg": 85.33
+"uni": 81.20,
+"deg": 75.33
 },
-"source": "Portland",
-"target": "Standish"
+"source": "11",
+"target": "15"
 },
 {
 "dist": 38.43,
 "ecmp_fwd": {
-"uni": 37.00,
-"deg": 29.62
+"uni": 35.04,
+"deg": 26.81
 },
 "ecmp_bwd": {
-"uni": 37.00,
-"deg": 29.62
+"uni": 35.04,
+"deg": 26.81
 },
-"source": "Turner",
-"target": "Augusta"
+"source": "12",
+"target": "17"
 },
 {
 "dist": 45.59,
 "ecmp_fwd": {
-"uni": 11.00,
-"deg": 9.87
+"uni": 11.11,
+"deg": 9.25
 },
 "ecmp_bwd": {
-"uni": 11.00,
-"deg": 9.87
+"uni": 11.11,
+"deg": 9.25
 },
-"source": "Turner",
-"target": "Bethel"
+"source": "12",
+"target": "13"
 },
 {
 "dist": 28.82,
 "ecmp_fwd": {
-"uni": 31.00,
-"deg": 22.28
+"uni": 26.50,
+"deg": 18.74
 },
 "ecmp_bwd": {
-"uni": 31.00,
-"deg": 22.28
+"uni": 26.50,
+"deg": 18.74
 },
-"source": "Bethel",
-"target": "Norway"
+"source": "13",
+"target": "14"
 },
 {
 "dist": 16.58,
 "ecmp_fwd": {
-"uni": 9.00,
-"deg": 12.27
+"uni": 8.55,
+"deg": 10.68
 },
 "ecmp_bwd": {
-"uni": 9.00,
-"deg": 12.27
+"uni": 8.97,
+"deg": 11.03
 },
-"source": "Norway",
-"target": "Buckfield"
+"source": "14",
+"target": "16"
 },
 {
 "dist": 53.17,
 "ecmp_fwd": {
-"uni": 50.00,
-"deg": 43.02
+"uni": 43.59,
+"deg": 37.25
 },
 "ecmp_bwd": {
-"uni": 50.00,
-"deg": 43.02
+"uni": 43.16,
+"deg": 36.89
 },
-"source": "Norway",
-"target": "Standish"
+"source": "14",
+"target": "15"
 },
 {
 "dist": 63.36,
 "ecmp_fwd": {
-"uni": 28.00,
-"deg": 31.31
+"uni": 23.93,
+"deg": 25.27
 },
 "ecmp_bwd": {
-"uni": 28.00,
-"deg": 31.31
+"uni": 23.93,
+"deg": 25.27
 },
-"source": "Standish",
-"target": "Buckfield"
+"source": "15",
+"target": "16"
 },
 {
 "dist": 46.69,
 "ecmp_fwd": {
-"uni": 17.00,
-"deg": 25.81
+"uni": 17.09,
+"deg": 22.42
 },
 "ecmp_bwd": {
-"uni": 17.00,
-"deg": 25.81
+"uni": 17.52,
+"deg": 22.78
 },
-"source": "Buckfield",
-"target": "Augusta"
+"source": "16",
+"target": "17"
 },
 {
 "dist": 41.85,
 "ecmp_fwd": {
-"uni": 53.00,
-"deg": 70.94
+"uni": 49.15,
+"deg": 51.84
 },
 "ecmp_bwd": {
-"uni": 53.00,
-"deg": 70.94
+"uni": 49.15,
+"deg": 51.84
 },
-"source": "Augusta",
-"target": "Lewiston"
+"source": "17",
+"target": "18"
 },
 {
 "dist": 0.00,
 "ecmp_fwd": {
-"uni": 0.00,
-"deg": 0.00
+"uni": 13.25,
+"deg": 14.00
 },
 "ecmp_bwd": {
-"uni": 0.00,
-"deg": 0.00
+"uni": 13.68,
+"deg": 14.35
 },
-"source": "Augusta",
-"target": "Augusta"
+"source": "17",
+"target": "19"
+},
+{
+"dist": 41.85,
+"ecmp_fwd": {
+"uni": 21.37,
+"deg": 22.42
+},
+"ecmp_bwd": {
+"uni": 21.37,
+"deg": 22.42
+},
+"source": "18",
+"target": "19"
 }
 ]
 }

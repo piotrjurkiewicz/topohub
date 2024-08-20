@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.20,
 "max_sdp_num": 4,
 "avg_sdp_hops": 2.83,
-"avg_sdp_len": 121.86,
+"avg_sdp_len": 115.23,
 "avg_adp_num": 2.40,
 "max_adp_num": 7,
 "avg_adp_hops": 3.82,
@@ -30,214 +30,244 @@
 },
 "nodes": [
 {
+"name": "Fribourg",
 "pos": [
 7.15,
 46.80
 ],
-"id": "Fribourg"
+"id": "0"
 },
 {
+"name": "Basel",
 "pos": [
 7.57,
 47.56
 ],
-"id": "Basel"
+"id": "1"
 },
 {
+"name": "Delemont",
 "pos": [
 7.34,
 47.36
 ],
-"id": "Delemont"
+"id": "2"
 },
 {
+"name": "Bern",
 "pos": [
 7.45,
 46.95
 ],
-"id": "Bern"
+"id": "3"
 },
 {
+"name": "Kreuzlingen",
 "pos": [
 9.18,
 47.65
 ],
-"id": "Kreuzlingen"
+"id": "4"
 },
 {
+"name": "St. Gallen",
 "pos": [
 9.37,
 47.42
 ],
-"id": "St. Gallen"
+"id": "5"
 },
 {
+"name": "Villigen PSI",
 "pos": [
 8.21,
 47.53
 ],
-"id": "Villigen PSI"
+"id": "6"
 },
 {
+"name": "Zurich (ETH)",
 "pos": [
 8.55,
 47.37
 ],
-"id": "Zurich (ETH)"
+"id": "7"
 },
 {
+"name": "Buchs SG",
 "pos": [
 8.07,
 47.39
 ],
-"id": "Buchs SG"
+"id": "8"
 },
 {
+"name": "Chur",
 "pos": [
 9.53,
 46.85
 ],
-"id": "Chur"
+"id": "9"
 },
 {
+"name": "Neuchatel",
 "pos": [
 6.93,
 46.99
 ],
-"id": "Neuchatel"
+"id": "22"
 },
 {
+"name": "IXEurope Zurich",
 "pos": [
 8.55,
 47.37
 ],
-"id": "IXEurope Zurich"
+"id": "23"
 },
 {
+"name": "Brig",
 "pos": [
 7.98,
 46.32
 ],
-"id": "Brig"
+"id": "24"
 },
 {
+"name": "Martigny",
 "pos": [
 7.07,
 46.10
 ],
-"id": "Martigny"
+"id": "25"
 },
 {
+"name": "Grenchen",
 "pos": [
 7.40,
 47.19
 ],
-"id": "Grenchen"
+"id": "26"
 },
 {
+"name": "Davos",
 "pos": [
 9.84,
 46.80
 ],
-"id": "Davos"
+"id": "27"
 },
 {
+"name": "Liechtenstein",
 "pos": [
 9.53,
 47.17
 ],
-"id": "Liechtenstein"
+"id": "28"
 },
 {
+"name": "Rapperswil",
 "pos": [
 8.82,
 47.23
 ],
-"id": "Rapperswil"
+"id": "29"
 },
 {
+"name": "Manno",
 "pos": [
 8.92,
 46.03
 ],
-"id": "Manno"
+"id": "30"
 },
 {
+"name": "Zurich (University)",
 "pos": [
 8.55,
 47.37
 ],
-"id": "Zurich (University)"
+"id": "31"
 },
 {
+"name": "Horw",
 "pos": [
 8.31,
 47.02
 ],
-"id": "Horw"
+"id": "32"
 },
 {
+"name": "Brugg",
 "pos": [
 7.28,
 47.12
 ],
-"id": "Brugg"
+"id": "33"
 },
 {
+"name": "CERN",
 "pos": [
 6.15,
 46.20
 ],
-"id": "CERN"
+"id": "34"
 },
 {
+"name": "Lausanne (University)",
 "pos": [
 6.63,
 46.52
 ],
-"id": "Lausanne (University)"
+"id": "35"
 },
 {
+"name": "Geneva",
 "pos": [
 6.15,
 46.20
 ],
-"id": "Geneva"
+"id": "36"
 },
 {
+"name": "Lausanne (EPFL)",
 "pos": [
 6.63,
 46.52
 ],
-"id": "Lausanne (EPFL)"
+"id": "37"
 },
 {
+"name": "Yverdon",
 "pos": [
 6.64,
 46.78
 ],
-"id": "Yverdon"
+"id": "38"
 },
 {
+"name": "Birmensdorf",
 "pos": [
 8.44,
 47.36
 ],
-"id": "Birmensdorf"
+"id": "39"
 },
 {
+"name": "Rueschlikon",
 "pos": [
 8.55,
 47.31
 ],
-"id": "Rueschlikon"
+"id": "40"
 },
 {
+"name": "Winterthur",
 "pos": [
 8.75,
 47.50
 ],
-"id": "Winterthur"
+"id": "41"
 }
 ],
 "links": [
@@ -251,8 +281,8 @@
 "uni": 30.99,
 "deg": 16.35
 },
-"source": "Fribourg",
-"target": "Lausanne (University)"
+"source": "0",
+"target": "35"
 },
 {
 "dist": 27.74,
@@ -264,8 +294,8 @@
 "uni": 14.71,
 "deg": 7.12
 },
-"source": "Fribourg",
-"target": "Bern"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 53.20,
@@ -277,8 +307,8 @@
 "uni": 37.95,
 "deg": 27.34
 },
-"source": "Basel",
-"target": "Brugg"
+"source": "1",
+"target": "33"
 },
 {
 "dist": 27.55,
@@ -290,8 +320,8 @@
 "uni": 41.89,
 "deg": 28.15
 },
-"source": "Basel",
-"target": "Delemont"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 68.54,
@@ -303,8 +333,8 @@
 "uni": 23.70,
 "deg": 21.23
 },
-"source": "Basel",
-"target": "Bern"
+"source": "1",
+"target": "3"
 },
 {
 "dist": 48.30,
@@ -316,8 +346,8 @@
 "uni": 13.39,
 "deg": 6.81
 },
-"source": "Basel",
-"target": "Villigen PSI"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 76.48,
@@ -329,8 +359,8 @@
 "uni": 67.04,
 "deg": 56.99
 },
-"source": "Basel",
-"target": "Zurich (ETH)"
+"source": "1",
+"target": "7"
 },
 {
 "dist": 51.96,
@@ -342,8 +372,8 @@
 "uni": 31.65,
 "deg": 24.43
 },
-"source": "Delemont",
-"target": "Neuchatel"
+"source": "2",
+"target": "22"
 },
 {
 "dist": 78.53,
@@ -355,8 +385,8 @@
 "uni": 15.50,
 "deg": 18.48
 },
-"source": "Bern",
-"target": "Lausanne (University)"
+"source": "3",
+"target": "35"
 },
 {
 "dist": 151.71,
@@ -368,8 +398,8 @@
 "uni": 33.03,
 "deg": 30.48
 },
-"source": "Bern",
-"target": "Manno"
+"source": "3",
+"target": "30"
 },
 {
 "dist": 28.97,
@@ -381,8 +411,8 @@
 "uni": 60.67,
 "deg": 48.18
 },
-"source": "Kreuzlingen",
-"target": "St. Gallen"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 57.07,
@@ -394,8 +424,8 @@
 "uni": 69.34,
 "deg": 54.22
 },
-"source": "Kreuzlingen",
-"target": "Zurich (University)"
+"source": "4",
+"target": "31"
 },
 {
 "dist": 98.02,
@@ -407,8 +437,8 @@
 "uni": 35.72,
 "deg": 28.95
 },
-"source": "St. Gallen",
-"target": "Buchs SG"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 31.01,
@@ -420,8 +450,8 @@
 "uni": 15.23,
 "deg": 12.58
 },
-"source": "St. Gallen",
-"target": "Liechtenstein"
+"source": "5",
+"target": "28"
 },
 {
 "dist": 47.74,
@@ -433,8 +463,8 @@
 "uni": 45.04,
 "deg": 35.83
 },
-"source": "St. Gallen",
-"target": "Winterthur"
+"source": "5",
+"target": "41"
 },
 {
 "dist": 30.87,
@@ -446,8 +476,8 @@
 "uni": 32.30,
 "deg": 16.67
 },
-"source": "Villigen PSI",
-"target": "Zurich (ETH)"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 42.94,
@@ -459,8 +489,8 @@
 "uni": 23.64,
 "deg": 11.50
 },
-"source": "Zurich (ETH)",
-"target": "Horw"
+"source": "7",
+"target": "32"
 },
 {
 "dist": 173.63,
@@ -472,8 +502,8 @@
 "uni": 81.09,
 "deg": 76.11
 },
-"source": "Zurich (ETH)",
-"target": "Lausanne (University)"
+"source": "7",
+"target": "35"
 },
 {
 "dist": 8.20,
@@ -485,8 +515,8 @@
 "uni": 64.61,
 "deg": 34.03
 },
-"source": "Zurich (ETH)",
-"target": "Birmensdorf"
+"source": "7",
+"target": "39"
 },
 {
 "dist": 21.13,
@@ -498,8 +528,8 @@
 "uni": 63.30,
 "deg": 43.97
 },
-"source": "Zurich (ETH)",
-"target": "Winterthur"
+"source": "7",
+"target": "41"
 },
 {
 "dist": 0.00,
@@ -511,8 +541,8 @@
 "uni": 64.61,
 "deg": 34.03
 },
-"source": "Zurich (ETH)",
-"target": "IXEurope Zurich"
+"source": "7",
+"target": "23"
 },
 {
 "dist": 25.85,
@@ -524,8 +554,8 @@
 "uni": 75.64,
 "deg": 59.11
 },
-"source": "Zurich (ETH)",
-"target": "Rapperswil"
+"source": "7",
+"target": "29"
 },
 {
 "dist": 150.79,
@@ -537,8 +567,8 @@
 "uni": 50.82,
 "deg": 48.91
 },
-"source": "Zurich (ETH)",
-"target": "Manno"
+"source": "7",
+"target": "30"
 },
 {
 "dist": 125.61,
@@ -550,8 +580,8 @@
 "uni": 16.55,
 "deg": 15.08
 },
-"source": "Buchs SG",
-"target": "Chur"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 148.47,
@@ -563,8 +593,8 @@
 "uni": 13.39,
 "deg": 6.69
 },
-"source": "Buchs SG",
-"target": "Davos"
+"source": "8",
+"target": "27"
 },
 {
 "dist": 112.86,
@@ -576,8 +606,8 @@
 "uni": 12.61,
 "deg": 11.91
 },
-"source": "Buchs SG",
-"target": "Liechtenstein"
+"source": "8",
+"target": "28"
 },
 {
 "dist": 23.71,
@@ -589,8 +619,8 @@
 "uni": 32.30,
 "deg": 16.78
 },
-"source": "Chur",
-"target": "Davos"
+"source": "9",
+"target": "27"
 },
 {
 "dist": 68.17,
@@ -602,8 +632,8 @@
 "uni": 76.30,
 "deg": 54.02
 },
-"source": "Chur",
-"target": "Rapperswil"
+"source": "9",
+"target": "29"
 },
 {
 "dist": 57.59,
@@ -615,8 +645,8 @@
 "uni": 40.58,
 "deg": 42.15
 },
-"source": "Neuchatel",
-"target": "Lausanne (EPFL)"
+"source": "22",
+"target": "37"
 },
 {
 "dist": 41.66,
@@ -628,8 +658,8 @@
 "uni": 18.12,
 "deg": 9.39
 },
-"source": "Neuchatel",
-"target": "Grenchen"
+"source": "22",
+"target": "26"
 },
 {
 "dist": 32.38,
@@ -641,8 +671,8 @@
 "uni": 11.03,
 "deg": 5.63
 },
-"source": "Neuchatel",
-"target": "Yverdon"
+"source": "22",
+"target": "38"
 },
 {
 "dist": 129.30,
@@ -654,8 +684,8 @@
 "uni": 19.44,
 "deg": 18.56
 },
-"source": "Neuchatel",
-"target": "Zurich (University)"
+"source": "22",
+"target": "31"
 },
 {
 "dist": 6.65,
@@ -667,8 +697,8 @@
 "uni": 23.64,
 "deg": 11.97
 },
-"source": "IXEurope Zurich",
-"target": "Rueschlikon"
+"source": "23",
+"target": "40"
 },
 {
 "dist": 74.04,
@@ -680,8 +710,8 @@
 "uni": 20.75,
 "deg": 10.64
 },
-"source": "Brig",
-"target": "Martigny"
+"source": "24",
+"target": "25"
 },
 {
 "dist": 78.58,
@@ -693,8 +723,8 @@
 "uni": 44.98,
 "deg": 23.09
 },
-"source": "Brig",
-"target": "Manno"
+"source": "24",
+"target": "30"
 },
 {
 "dist": 57.04,
@@ -706,8 +736,8 @@
 "uni": 43.27,
 "deg": 22.91
 },
-"source": "Martigny",
-"target": "Lausanne (EPFL)"
+"source": "25",
+"target": "37"
 },
 {
 "dist": 89.23,
@@ -719,8 +749,8 @@
 "uni": 29.81,
 "deg": 15.16
 },
-"source": "Grenchen",
-"target": "Zurich (University)"
+"source": "26",
+"target": "31"
 },
 {
 "dist": 54.14,
@@ -732,8 +762,8 @@
 "uni": 45.44,
 "deg": 39.16
 },
-"source": "Liechtenstein",
-"target": "Rapperswil"
+"source": "28",
+"target": "29"
 },
 {
 "dist": 132.66,
@@ -745,8 +775,8 @@
 "uni": 73.80,
 "deg": 64.59
 },
-"source": "Rapperswil",
-"target": "Manno"
+"source": "29",
+"target": "30"
 },
 {
 "dist": 118.78,
@@ -758,8 +788,8 @@
 "uni": 22.06,
 "deg": 11.97
 },
-"source": "Manno",
-"target": "Horw"
+"source": "30",
+"target": "32"
 },
 {
 "dist": 183.72,
@@ -771,8 +801,8 @@
 "uni": 93.57,
 "deg": 94.06
 },
-"source": "Manno",
-"target": "Lausanne (EPFL)"
+"source": "30",
+"target": "37"
 },
 {
 "dist": 99.71,
@@ -784,8 +814,8 @@
 "uni": 34.54,
 "deg": 26.95
 },
-"source": "Zurich (University)",
-"target": "Brugg"
+"source": "31",
+"target": "33"
 },
 {
 "dist": 224.27,
@@ -797,8 +827,8 @@
 "uni": 26.00,
 "deg": 23.16
 },
-"source": "Zurich (University)",
-"target": "CERN"
+"source": "31",
+"target": "34"
 },
 {
 "dist": 173.63,
@@ -810,8 +840,8 @@
 "uni": 50.82,
 "deg": 52.95
 },
-"source": "Zurich (University)",
-"target": "Lausanne (EPFL)"
+"source": "31",
+"target": "37"
 },
 {
 "dist": 51.15,
@@ -823,8 +853,8 @@
 "uni": 30.93,
 "deg": 28.20
 },
-"source": "CERN",
-"target": "Lausanne (University)"
+"source": "34",
+"target": "35"
 },
 {
 "dist": 0.00,
@@ -836,8 +866,8 @@
 "uni": 14.18,
 "deg": 7.39
 },
-"source": "CERN",
-"target": "Geneva"
+"source": "34",
+"target": "36"
 },
 {
 "dist": 51.15,
@@ -849,8 +879,8 @@
 "uni": 12.61,
 "deg": 13.73
 },
-"source": "CERN",
-"target": "Lausanne (EPFL)"
+"source": "34",
+"target": "37"
 },
 {
 "dist": 0.00,
@@ -862,8 +892,8 @@
 "uni": 44.85,
 "deg": 45.99
 },
-"source": "Lausanne (University)",
-"target": "Lausanne (EPFL)"
+"source": "35",
+"target": "37"
 },
 {
 "dist": 51.15,
@@ -875,8 +905,8 @@
 "uni": 35.59,
 "deg": 18.15
 },
-"source": "Geneva",
-"target": "Lausanne (EPFL)"
+"source": "36",
+"target": "37"
 },
 {
 "dist": 29.21,
@@ -888,8 +918,8 @@
 "uni": 34.67,
 "deg": 17.84
 },
-"source": "Lausanne (EPFL)",
-"target": "Yverdon"
+"source": "37",
+"target": "38"
 },
 {
 "dist": 9.80,
@@ -901,8 +931,8 @@
 "uni": 23.64,
 "deg": 11.97
 },
-"source": "Birmensdorf",
-"target": "Rueschlikon"
+"source": "39",
+"target": "40"
 }
 ]
 }

@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.08,
 "max_sdp_num": 2,
 "avg_sdp_hops": 3.28,
-"avg_sdp_len": 9155.16,
+"avg_sdp_len": 9440.31,
 "avg_adp_num": 1.63,
 "max_adp_num": 3,
 "avg_adp_hops": 4.06,
@@ -30,116 +30,132 @@
 },
 "nodes": [
 {
+"name": "Seattle",
 "pos": [
 -122.33,
 47.61
 ],
-"id": "Seattle"
+"id": "0"
 },
 {
+"name": "Tampa",
 "pos": [
 -82.46,
 27.95
 ],
-"id": "Tampa"
+"id": "1"
 },
 {
+"name": "Chicago",
 "pos": [
 -87.65,
 41.85
 ],
-"id": "Chicago"
+"id": "2"
 },
 {
+"name": "Vancouver",
 "pos": [
 -123.12,
 49.25
 ],
-"id": "Vancouver"
+"id": "3"
 },
 {
+"name": "Miami",
 "pos": [
 -80.19,
 25.77
 ],
-"id": "Miami"
+"id": "4"
 },
 {
+"name": "Austin",
 "pos": [
 -97.74,
 30.27
 ],
-"id": "Austin"
+"id": "5"
 },
 {
+"name": "New York",
 "pos": [
 -74.01,
 40.71
 ],
-"id": "New York"
+"id": "6"
 },
 {
+"name": "Atlanta",
 "pos": [
 -84.39,
 33.75
 ],
-"id": "Atlanta"
+"id": "7"
 },
 {
+"name": "Bucharest",
 "pos": [
 26.11,
 44.43
 ],
-"id": "Bucharest"
+"id": "8"
 },
 {
+"name": "Seoul",
 "pos": [
 126.98,
 37.57
 ],
-"id": "Seoul"
+"id": "9"
 },
 {
+"name": "Sydney",
 "pos": [
 151.21,
 -33.87
 ],
-"id": "Sydney"
+"id": "10"
 },
 {
+"name": "Hannover",
 "pos": [
 9.73,
 52.37
 ],
-"id": "Hannover"
+"id": "11"
 },
 {
+"name": "Amsterdam",
 "pos": [
 4.89,
 52.37
 ],
-"id": "Amsterdam"
+"id": "12"
 },
 {
+"name": "Antwerp",
 "pos": [
 4.42,
 51.22
 ],
-"id": "Antwerp"
+"id": "13"
 },
 {
+"name": "Frankfurt",
 "pos": [
 8.68,
 50.12
 ],
-"id": "Frankfurt"
+"id": "14"
 },
 {
+"name": "London",
 "pos": [
 -0.13,
 51.51
 ],
-"id": "London"
+"id": "15"
 }
 ],
 "links": [
@@ -153,8 +169,8 @@
 "uni": 54.17,
 "deg": 48.48
 },
-"source": "Seattle",
-"target": "Chicago"
+"source": "0",
+"target": "2"
 },
 {
 "dist": 191.80,
@@ -166,8 +182,8 @@
 "uni": 31.25,
 "deg": 13.80
 },
-"source": "Seattle",
-"target": "Vancouver"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 2848.59,
@@ -179,8 +195,8 @@
 "uni": 4.17,
 "deg": 2.69
 },
-"source": "Seattle",
-"target": "Austin"
+"source": "0",
+"target": "5"
 },
 {
 "dist": 330.03,
@@ -192,8 +208,8 @@
 "uni": 15.62,
 "deg": 13.80
 },
-"source": "Tampa",
-"target": "Miami"
+"source": "1",
+"target": "4"
 },
 {
 "dist": 671.02,
@@ -205,8 +221,8 @@
 "uni": 15.62,
 "deg": 13.13
 },
-"source": "Tampa",
-"target": "Atlanta"
+"source": "1",
+"target": "7"
 },
 {
 "dist": 1573.33,
@@ -218,8 +234,8 @@
 "uni": 27.08,
 "deg": 24.24
 },
-"source": "Chicago",
-"target": "Austin"
+"source": "2",
+"target": "5"
 },
 {
 "dist": 945.35,
@@ -231,8 +247,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Chicago",
-"target": "Atlanta"
+"source": "2",
+"target": "7"
 },
 {
 "dist": 15030.81,
@@ -244,8 +260,8 @@
 "uni": 34.03,
 "deg": 37.71
 },
-"source": "Miami",
-"target": "Sydney"
+"source": "4",
+"target": "10"
 },
 {
 "dist": 1757.33,
@@ -257,8 +273,8 @@
 "uni": 15.62,
 "deg": 21.89
 },
-"source": "Miami",
-"target": "New York"
+"source": "4",
+"target": "6"
 },
 {
 "dist": 974.80,
@@ -270,8 +286,8 @@
 "uni": 31.25,
 "deg": 39.39
 },
-"source": "Miami",
-"target": "Atlanta"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 15993.41,
@@ -283,8 +299,8 @@
 "uni": 34.72,
 "deg": 38.38
 },
-"source": "New York",
-"target": "Sydney"
+"source": "6",
+"target": "10"
 },
 {
 "dist": 1200.75,
@@ -296,8 +312,8 @@
 "uni": 78.12,
 "deg": 83.16
 },
-"source": "New York",
-"target": "Atlanta"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 5571.79,
@@ -309,8 +325,8 @@
 "uni": 85.07,
 "deg": 90.91
 },
-"source": "New York",
-"target": "London"
+"source": "6",
+"target": "15"
 },
 {
 "dist": 7934.01,
@@ -322,8 +338,8 @@
 "uni": 46.35,
 "deg": 48.23
 },
-"source": "Bucharest",
-"target": "Seoul"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 1454.28,
@@ -335,8 +351,8 @@
 "uni": 29.51,
 "deg": 30.30
 },
-"source": "Bucharest",
-"target": "Frankfurt"
+"source": "8",
+"target": "14"
 },
 {
 "dist": 8331.64,
@@ -348,8 +364,8 @@
 "uni": 58.51,
 "deg": 60.69
 },
-"source": "Seoul",
-"target": "Sydney"
+"source": "9",
+"target": "10"
 },
 {
 "dist": 328.85,
@@ -361,8 +377,8 @@
 "uni": 29.08,
 "deg": 27.74
 },
-"source": "Hannover",
-"target": "Amsterdam"
+"source": "11",
+"target": "12"
 },
 {
 "dist": 261.12,
@@ -374,8 +390,8 @@
 "uni": 16.67,
 "deg": 16.50
 },
-"source": "Hannover",
-"target": "Frankfurt"
+"source": "11",
+"target": "14"
 },
 {
 "dist": 132.78,
@@ -387,8 +403,8 @@
 "uni": 31.25,
 "deg": 30.64
 },
-"source": "Amsterdam",
-"target": "Antwerp"
+"source": "12",
+"target": "13"
 },
 {
 "dist": 357.03,
@@ -400,8 +416,8 @@
 "uni": 68.23,
 "deg": 72.98
 },
-"source": "Amsterdam",
-"target": "London"
+"source": "12",
+"target": "15"
 },
 {
 "dist": 324.66,
@@ -413,8 +429,8 @@
 "uni": 16.67,
 "deg": 16.50
 },
-"source": "Antwerp",
-"target": "Frankfurt"
+"source": "13",
+"target": "14"
 }
 ]
 }

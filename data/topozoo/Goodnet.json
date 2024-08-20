@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.32,
 "max_sdp_num": 3,
 "avg_sdp_hops": 2.12,
-"avg_sdp_len": 2490.84,
+"avg_sdp_len": 2560.79,
 "avg_adp_num": 2.01,
 "max_adp_num": 9,
 "avg_adp_hops": 2.39,
@@ -30,123 +30,140 @@
 },
 "nodes": [
 {
+"name": "Tampa",
 "pos": [
 -82.46,
 27.95
 ],
-"id": "Tampa"
+"id": "0"
 },
 {
+"name": "Oklahoma City",
 "pos": [
 -97.52,
 35.47
 ],
-"id": "Oklahoma City"
+"id": "1"
 },
 {
+"name": "New Orleans",
 "pos": [
 -90.08,
 29.95
 ],
-"id": "New Orleans"
+"id": "2"
 },
 {
+"name": "Jacksonville",
 "pos": [
 -81.66,
 30.33
 ],
-"id": "Jacksonville"
+"id": "3"
 },
 {
+"name": "Los Angeles",
 "pos": [
 -118.24,
 34.05
 ],
-"id": "Los Angeles"
+"id": "4"
 },
 {
+"name": "Phoenix",
 "pos": [
 -112.07,
 33.45
 ],
-"id": "Phoenix"
+"id": "5"
 },
 {
+"name": "Tucson",
 "pos": [
 -110.93,
 32.22
 ],
-"id": "Tucson"
+"id": "6"
 },
 {
+"name": "Atlanta",
 "pos": [
 -84.39,
 33.75
 ],
-"id": "Atlanta"
+"id": "7"
 },
 {
+"name": "Birmingham",
 "pos": [
 -86.80,
 33.52
 ],
-"id": "Birmingham"
+"id": "8"
 },
 {
+"name": "San Jose",
 "pos": [
 -121.89,
 37.34
 ],
-"id": "San Jose"
+"id": "9"
 },
 {
+"name": "Salt Lake City",
 "pos": [
 -111.89,
 40.76
 ],
-"id": "Salt Lake City"
+"id": "10"
 },
 {
+"name": "Denver",
 "pos": [
 -104.98,
 39.74
 ],
-"id": "Denver"
+"id": "11"
 },
 {
+"name": "Chicago",
 "pos": [
 -87.65,
 41.85
 ],
-"id": "Chicago"
+"id": "12"
 },
 {
+"name": "Hartford",
 "pos": [
 -72.69,
 41.76
 ],
-"id": "Hartford"
+"id": "13"
 },
 {
+"name": "New York",
 "pos": [
 -74.01,
 40.71
 ],
-"id": "New York"
+"id": "14"
 },
 {
+"name": "Washington, DC",
 "pos": [
 -77.04,
 38.90
 ],
-"id": "Washington, DC"
+"id": "15"
 },
 {
+"name": "Chattanooga",
 "pos": [
 -85.31,
 35.05
 ],
-"id": "Chattanooga"
+"id": "16"
 }
 ],
 "links": [
@@ -160,8 +177,8 @@
 "uni": 51.81,
 "deg": 37.32
 },
-"source": "Tampa",
-"target": "Jacksonville"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 671.02,
@@ -173,8 +190,8 @@
 "uni": 63.21,
 "deg": 43.87
 },
-"source": "Tampa",
-"target": "Atlanta"
+"source": "0",
+"target": "7"
 },
 {
 "dist": 2186.22,
@@ -186,8 +203,8 @@
 "uni": 44.04,
 "deg": 31.34
 },
-"source": "Oklahoma City",
-"target": "San Jose"
+"source": "1",
+"target": "9"
 },
 {
 "dist": 1850.29,
@@ -199,8 +216,8 @@
 "uni": 55.44,
 "deg": 37.04
 },
-"source": "Oklahoma City",
-"target": "Washington, DC"
+"source": "1",
+"target": "15"
 },
 {
 "dist": 1340.83,
@@ -212,8 +229,8 @@
 "uni": 48.88,
 "deg": 52.14
 },
-"source": "New Orleans",
-"target": "Chicago"
+"source": "2",
+"target": "12"
 },
 {
 "dist": 2113.55,
@@ -225,8 +242,8 @@
 "uni": 35.41,
 "deg": 35.04
 },
-"source": "New Orleans",
-"target": "Phoenix"
+"source": "2",
+"target": "5"
 },
 {
 "dist": 683.02,
@@ -238,8 +255,8 @@
 "uni": 36.96,
 "deg": 30.20
 },
-"source": "New Orleans",
-"target": "Atlanta"
+"source": "2",
+"target": "7"
 },
 {
 "dist": 3769.13,
@@ -251,8 +268,8 @@
 "uni": 67.36,
 "deg": 63.72
 },
-"source": "Jacksonville",
-"target": "San Jose"
+"source": "3",
+"target": "9"
 },
 {
 "dist": 1041.67,
@@ -264,8 +281,8 @@
 "uni": 55.96,
 "deg": 54.80
 },
-"source": "Jacksonville",
-"target": "Washington, DC"
+"source": "3",
+"target": "15"
 },
 {
 "dist": 492.31,
@@ -277,8 +294,8 @@
 "uni": 28.50,
 "deg": 30.20
 },
-"source": "Los Angeles",
-"target": "San Jose"
+"source": "4",
+"target": "9"
 },
 {
 "dist": 2802.67,
@@ -290,8 +307,8 @@
 "uni": 34.72,
 "deg": 36.18
 },
-"source": "Los Angeles",
-"target": "Chicago"
+"source": "4",
+"target": "12"
 },
 {
 "dist": 3693.20,
@@ -303,8 +320,8 @@
 "uni": 36.27,
 "deg": 34.47
 },
-"source": "Los Angeles",
-"target": "Washington, DC"
+"source": "4",
+"target": "15"
 },
 {
 "dist": 989.35,
@@ -316,8 +333,8 @@
 "uni": 58.55,
 "deg": 66.38
 },
-"source": "Phoenix",
-"target": "San Jose"
+"source": "5",
+"target": "9"
 },
 {
 "dist": 2334.55,
@@ -329,8 +346,8 @@
 "uni": 47.67,
 "deg": 54.70
 },
-"source": "Phoenix",
-"target": "Chicago"
+"source": "5",
+"target": "12"
 },
 {
 "dist": 173.54,
@@ -342,8 +359,8 @@
 "uni": 99.48,
 "deg": 34.76
 },
-"source": "Phoenix",
-"target": "Tucson"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 3183.54,
@@ -355,8 +372,8 @@
 "uni": 69.08,
 "deg": 68.38
 },
-"source": "Phoenix",
-"target": "Washington, DC"
+"source": "5",
+"target": "15"
 },
 {
 "dist": 225.03,
@@ -368,8 +385,8 @@
 "uni": 99.48,
 "deg": 34.76
 },
-"source": "Atlanta",
-"target": "Birmingham"
+"source": "7",
+"target": "8"
 },
 {
 "dist": 945.35,
@@ -381,8 +398,8 @@
 "uni": 92.23,
 "deg": 97.63
 },
-"source": "Atlanta",
-"target": "Chicago"
+"source": "7",
+"target": "12"
 },
 {
 "dist": 872.17,
@@ -394,8 +411,8 @@
 "uni": 94.99,
 "deg": 97.53
 },
-"source": "Atlanta",
-"target": "Washington, DC"
+"source": "7",
+"target": "15"
 },
 {
 "dist": 943.45,
@@ -407,8 +424,8 @@
 "uni": 46.63,
 "deg": 31.91
 },
-"source": "San Jose",
-"target": "Salt Lake City"
+"source": "9",
+"target": "10"
 },
 {
 "dist": 1492.84,
@@ -420,8 +437,8 @@
 "uni": 46.63,
 "deg": 31.91
 },
-"source": "San Jose",
-"target": "Denver"
+"source": "9",
+"target": "11"
 },
 {
 "dist": 2957.50,
@@ -433,8 +450,8 @@
 "uni": 23.83,
 "deg": 83.48
 },
-"source": "San Jose",
-"target": "Chicago"
+"source": "9",
+"target": "12"
 },
 {
 "dist": 4103.66,
@@ -446,8 +463,8 @@
 "uni": 53.89,
 "deg": 48.91
 },
-"source": "San Jose",
-"target": "New York"
+"source": "9",
+"target": "14"
 },
 {
 "dist": 3889.38,
@@ -459,8 +476,8 @@
 "uni": 31.09,
 "deg": 78.06
 },
-"source": "San Jose",
-"target": "Washington, DC"
+"source": "9",
+"target": "15"
 },
 {
 "dist": 2022.31,
@@ -472,8 +489,8 @@
 "uni": 52.85,
 "deg": 36.47
 },
-"source": "Salt Lake City",
-"target": "Chicago"
+"source": "10",
+"target": "12"
 },
 {
 "dist": 1475.80,
@@ -485,8 +502,8 @@
 "uni": 52.85,
 "deg": 36.47
 },
-"source": "Denver",
-"target": "Chicago"
+"source": "11",
+"target": "12"
 },
 {
 "dist": 1146.16,
@@ -498,8 +515,8 @@
 "uni": 66.32,
 "deg": 58.88
 },
-"source": "Chicago",
-"target": "New York"
+"source": "12",
+"target": "14"
 },
 {
 "dist": 956.75,
@@ -511,8 +528,8 @@
 "uni": 36.96,
 "deg": 82.34
 },
-"source": "Chicago",
-"target": "Washington, DC"
+"source": "12",
+"target": "15"
 },
 {
 "dist": 160.71,
@@ -524,8 +541,8 @@
 "uni": 99.48,
 "deg": 34.76
 },
-"source": "Hartford",
-"target": "New York"
+"source": "13",
+"target": "14"
 },
 {
 "dist": 328.58,
@@ -537,8 +554,8 @@
 "uni": 68.39,
 "deg": 55.56
 },
-"source": "New York",
-"target": "Washington, DC"
+"source": "14",
+"target": "15"
 },
 {
 "dist": 850.27,
@@ -550,8 +567,8 @@
 "uni": 99.48,
 "deg": 34.76
 },
-"source": "Washington, DC",
-"target": "Chattanooga"
+"source": "15",
+"target": "16"
 }
 ]
 }

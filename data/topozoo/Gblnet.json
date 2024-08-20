@@ -30,60 +30,68 @@
 },
 "nodes": [
 {
+"name": "New York",
 "pos": [
 -0.14,
 53.08
 ],
-"id": "New York"
+"id": "0"
 },
 {
+"name": "London",
 "pos": [
 -0.13,
 51.51
 ],
-"id": "London"
+"id": "1"
 },
 {
+"name": "Stockholm",
 "pos": [
 18.06,
 59.33
 ],
-"id": "Stockholm"
+"id": "2"
 },
 {
+"name": "St Petersburg",
 "pos": [
 30.26,
 59.89
 ],
-"id": "St Petersburg"
+"id": "3"
 },
 {
+"name": "Moscow",
 "pos": [
 37.62,
 55.75
 ],
-"id": "Moscow"
+"id": "4"
 },
 {
+"name": "Amsterdam",
 "pos": [
 4.89,
 52.37
 ],
-"id": "Amsterdam"
+"id": "5"
 },
 {
+"name": "Frankfurt",
 "pos": [
 8.68,
 50.12
 ],
-"id": "Frankfurt"
+"id": "6"
 },
 {
+"name": "Paris",
 "pos": [
 2.35,
 48.85
 ],
-"id": "Paris"
+"id": "7"
 }
 ],
 "links": [
@@ -97,8 +105,8 @@
 "uni": 46.67,
 "deg": 28.89
 },
-"source": "New York",
-"target": "Amsterdam"
+"source": "0",
+"target": "5"
 },
 {
 "dist": 357.03,
@@ -110,8 +118,8 @@
 "uni": 46.67,
 "deg": 28.89
 },
-"source": "London",
-"target": "Amsterdam"
+"source": "1",
+"target": "5"
 },
 {
 "dist": 688.20,
@@ -123,8 +131,8 @@
 "uni": 80.00,
 "deg": 73.33
 },
-"source": "Stockholm",
-"target": "St Petersburg"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 1125.77,
@@ -136,8 +144,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Stockholm",
-"target": "Amsterdam"
+"source": "2",
+"target": "5"
 },
 {
 "dist": 633.23,
@@ -149,8 +157,8 @@
 "uni": 46.67,
 "deg": 28.89
 },
-"source": "St Petersburg",
-"target": "Moscow"
+"source": "3",
+"target": "4"
 },
 {
 "dist": 364.34,
@@ -162,8 +170,8 @@
 "uni": 46.67,
 "deg": 28.89
 },
-"source": "Amsterdam",
-"target": "Frankfurt"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 430.63,
@@ -175,8 +183,8 @@
 "uni": 46.67,
 "deg": 28.89
 },
-"source": "Amsterdam",
-"target": "Paris"
+"source": "5",
+"target": "7"
 }
 ]
 }

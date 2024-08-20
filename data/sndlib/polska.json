@@ -4,93 +4,93 @@
 "graph": {
 "name": "polska",
 "demands": {
-"Gdansk": {
-"Bydgoszcz": 195.00,
-"Kolobrzeg": 158.00,
-"Katowice": 174.00,
-"Krakow": 101.00,
-"Bialystok": 198.00,
-"Lodz": 158.00,
-"Poznan": 182.00,
-"Rzeszow": 154.00,
-"Szczecin": 175.00,
-"Warsaw": 122.00,
-"Wroclaw": 114.00
+"0": {
+"1": 195.00,
+"2": 158.00,
+"3": 174.00,
+"4": 101.00,
+"5": 198.00,
+"6": 158.00,
+"7": 182.00,
+"8": 154.00,
+"9": 175.00,
+"10": 122.00,
+"11": 114.00
 },
-"Bydgoszcz": {
-"Kolobrzeg": 179.00,
-"Katowice": 117.00,
-"Krakow": 105.00,
-"Bialystok": 159.00,
-"Lodz": 198.00,
-"Poznan": 189.00,
-"Rzeszow": 166.00,
-"Szczecin": 142.00,
-"Warsaw": 137.00,
-"Wroclaw": 163.00
+"1": {
+"2": 179.00,
+"3": 117.00,
+"4": 105.00,
+"5": 159.00,
+"6": 198.00,
+"7": 189.00,
+"8": 166.00,
+"9": 142.00,
+"10": 137.00,
+"11": 163.00
 },
-"Kolobrzeg": {
-"Katowice": 131.00,
-"Krakow": 159.00,
-"Bialystok": 164.00,
-"Lodz": 128.00,
-"Poznan": 195.00,
-"Rzeszow": 130.00,
-"Szczecin": 105.00,
-"Warsaw": 173.00,
-"Wroclaw": 157.00
+"2": {
+"3": 131.00,
+"4": 159.00,
+"5": 164.00,
+"6": 128.00,
+"7": 195.00,
+"8": 130.00,
+"9": 105.00,
+"10": 173.00,
+"11": 157.00
 },
-"Katowice": {
-"Krakow": 194.00,
-"Bialystok": 125.00,
-"Lodz": 110.00,
-"Poznan": 132.00,
-"Rzeszow": 159.00,
-"Szczecin": 109.00,
-"Warsaw": 126.00,
-"Wroclaw": 100.00
+"3": {
+"4": 194.00,
+"5": 125.00,
+"6": 110.00,
+"7": 132.00,
+"8": 159.00,
+"9": 109.00,
+"10": 126.00,
+"11": 100.00
 },
-"Krakow": {
-"Bialystok": 124.00,
-"Lodz": 106.00,
-"Poznan": 136.00,
-"Rzeszow": 144.00,
-"Szczecin": 168.00,
-"Warsaw": 119.00,
-"Wroclaw": 127.00
+"4": {
+"5": 124.00,
+"6": 106.00,
+"7": 136.00,
+"8": 144.00,
+"9": 168.00,
+"10": 119.00,
+"11": 127.00
 },
-"Bialystok": {
-"Lodz": 105.00,
-"Poznan": 147.00,
-"Rzeszow": 140.00,
-"Szczecin": 198.00,
-"Warsaw": 104.00,
-"Wroclaw": 113.00
+"5": {
+"6": 105.00,
+"7": 147.00,
+"8": 140.00,
+"9": 198.00,
+"10": 104.00,
+"11": 113.00
 },
-"Lodz": {
-"Poznan": 169.00,
-"Rzeszow": 187.00,
-"Szczecin": 196.00,
-"Warsaw": 193.00,
-"Wroclaw": 151.00
+"6": {
+"7": 169.00,
+"8": 187.00,
+"9": 196.00,
+"10": 193.00,
+"11": 151.00
 },
-"Poznan": {
-"Rzeszow": 106.00,
-"Szczecin": 125.00,
-"Warsaw": 194.00,
-"Wroclaw": 194.00
+"7": {
+"8": 106.00,
+"9": 125.00,
+"10": 194.00,
+"11": 194.00
 },
-"Rzeszow": {
-"Szczecin": 123.00,
-"Warsaw": 181.00,
-"Wroclaw": 193.00
+"8": {
+"9": 123.00,
+"10": 181.00,
+"11": 193.00
 },
-"Szczecin": {
-"Warsaw": 181.00,
-"Wroclaw": 195.00
+"9": {
+"10": 181.00,
+"11": 195.00
 },
-"Warsaw": {
-"Wroclaw": 141.00
+"10": {
+"11": 141.00
 }
 },
 "stats": {
@@ -110,7 +110,7 @@
 "avg_sdp_num": 1.27,
 "max_sdp_num": 3,
 "avg_sdp_hops": 2.13,
-"avg_sdp_len": 211.21,
+"avg_sdp_len": 211.35,
 "avg_adp_num": 2.67,
 "max_adp_num": 3,
 "avg_adp_hops": 3.28,
@@ -119,88 +119,100 @@
 },
 "nodes": [
 {
+"name": "Gdansk",
 "pos": [
 18.60,
 54.20
 ],
-"id": "Gdansk"
+"id": 0
 },
 {
+"name": "Bydgoszcz",
 "pos": [
 17.90,
 53.10
 ],
-"id": "Bydgoszcz"
+"id": 1
 },
 {
+"name": "Kolobrzeg",
 "pos": [
 16.10,
 54.20
 ],
-"id": "Kolobrzeg"
+"id": 2
 },
 {
+"name": "Katowice",
 "pos": [
 18.80,
 50.30
 ],
-"id": "Katowice"
+"id": 3
 },
 {
+"name": "Krakow",
 "pos": [
 19.80,
 50.00
 ],
-"id": "Krakow"
+"id": 4
 },
 {
+"name": "Bialystok",
 "pos": [
 23.10,
 53.10
 ],
-"id": "Bialystok"
+"id": 5
 },
 {
+"name": "Lodz",
 "pos": [
 19.40,
 51.70
 ],
-"id": "Lodz"
+"id": 6
 },
 {
+"name": "Poznan",
 "pos": [
 16.80,
 52.40
 ],
-"id": "Poznan"
+"id": 7
 },
 {
+"name": "Rzeszow",
 "pos": [
 21.90,
 50.00
 ],
-"id": "Rzeszow"
+"id": 8
 },
 {
+"name": "Szczecin",
 "pos": [
 14.50,
 53.40
 ],
-"id": "Szczecin"
+"id": 9
 },
 {
+"name": "Warsaw",
 "pos": [
 21.00,
 52.20
 ],
-"id": "Warsaw"
+"id": 10
 },
 {
+"name": "Wroclaw",
 "pos": [
 16.90,
 51.10
 ],
-"id": "Wroclaw"
+"id": 11
 }
 ],
 "links": [
@@ -216,8 +228,8 @@
 "uni": 66.67,
 "deg": 68.65
 },
-"source": "Gdansk",
-"target": "Warsaw"
+"source": 0,
+"target": 10
 },
 {
 "dist": 162.65,
@@ -231,8 +243,8 @@
 "uni": 76.67,
 "deg": 61.27
 },
-"source": "Gdansk",
-"target": "Kolobrzeg"
+"source": 0,
+"target": 2
 },
 {
 "dist": 320.83,
@@ -246,8 +258,8 @@
 "uni": 48.00,
 "deg": 32.79
 },
-"source": "Gdansk",
-"target": "Bialystok"
+"source": 0,
+"target": 5
 },
 {
 "dist": 170.43,
@@ -261,8 +273,8 @@
 "uni": 44.67,
 "deg": 42.01
 },
-"source": "Bydgoszcz",
-"target": "Kolobrzeg"
+"source": 1,
+"target": 2
 },
 {
 "dist": 107.45,
@@ -276,8 +288,8 @@
 "uni": 66.00,
 "deg": 63.11
 },
-"source": "Bydgoszcz",
-"target": "Poznan"
+"source": 1,
+"target": 7
 },
 {
 "dist": 231.88,
@@ -291,8 +303,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Bydgoszcz",
-"target": "Warsaw"
+"source": 1,
+"target": 10
 },
 {
 "dist": 137.71,
@@ -306,8 +318,8 @@
 "uni": 57.33,
 "deg": 39.34
 },
-"source": "Kolobrzeg",
-"target": "Szczecin"
+"source": 2,
+"target": 9
 },
 {
 "dist": 78.70,
@@ -321,8 +333,8 @@
 "uni": 66.00,
 "deg": 55.94
 },
-"source": "Katowice",
-"target": "Krakow"
+"source": 3,
+"target": 4
 },
 {
 "dist": 161.28,
@@ -336,8 +348,8 @@
 "uni": 30.00,
 "deg": 28.89
 },
-"source": "Katowice",
-"target": "Lodz"
+"source": 3,
+"target": 6
 },
 {
 "dist": 160.72,
@@ -351,8 +363,8 @@
 "uni": 58.00,
 "deg": 46.72
 },
-"source": "Katowice",
-"target": "Wroclaw"
+"source": 3,
+"target": 11
 },
 {
 "dist": 150.13,
@@ -366,8 +378,8 @@
 "uni": 48.00,
 "deg": 33.61
 },
-"source": "Krakow",
-"target": "Rzeszow"
+"source": 4,
+"target": 8
 },
 {
 "dist": 258.64,
@@ -381,8 +393,8 @@
 "uni": 76.00,
 "deg": 73.57
 },
-"source": "Krakow",
-"target": "Warsaw"
+"source": 4,
+"target": 10
 },
 {
 "dist": 354.64,
@@ -396,8 +408,8 @@
 "uni": 54.00,
 "deg": 35.04
 },
-"source": "Bialystok",
-"target": "Rzeszow"
+"source": 5,
+"target": 8
 },
 {
 "dist": 173.49,
@@ -411,8 +423,8 @@
 "uni": 62.00,
 "deg": 60.04
 },
-"source": "Bialystok",
-"target": "Warsaw"
+"source": 5,
+"target": 10
 },
 {
 "dist": 122.98,
@@ -426,8 +438,8 @@
 "uni": 88.00,
 "deg": 91.60
 },
-"source": "Lodz",
-"target": "Warsaw"
+"source": 6,
+"target": 10
 },
 {
 "dist": 185.86,
@@ -441,8 +453,8 @@
 "uni": 48.00,
 "deg": 46.72
 },
-"source": "Lodz",
-"target": "Wroclaw"
+"source": 6,
+"target": 11
 },
 {
 "dist": 190.21,
@@ -456,8 +468,8 @@
 "uni": 56.67,
 "deg": 40.37
 },
-"source": "Poznan",
-"target": "Szczecin"
+"source": 7,
+"target": 9
 },
 {
 "dist": 144.76,
@@ -471,8 +483,8 @@
 "uni": 79.33,
 "deg": 63.93
 },
-"source": "Poznan",
-"target": "Wroclaw"
+"source": 7,
+"target": 11
 }
 ]
 }

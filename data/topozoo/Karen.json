@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.04,
 "max_sdp_num": 2,
 "avg_sdp_hops": 3.40,
-"avg_sdp_len": 535.26,
+"avg_sdp_len": 537.88,
 "avg_adp_num": 1.27,
 "max_adp_num": 3,
 "avg_adp_hops": 3.69,
@@ -30,165 +30,188 @@
 },
 "nodes": [
 {
+"name": "WLG",
 "pos": [
 174.78,
 -41.29
 ],
-"id": "WLG"
+"id": "0"
 },
 {
+"name": "DUD",
 "pos": [
 170.50,
 -45.87
 ],
-"id": "DUD"
+"id": "1"
 },
 {
+"name": "AVL",
 "pos": [
 174.92,
 -41.20
 ],
-"id": "AVL"
+"id": "2"
 },
 {
+"name": "PNR",
 "pos": [
 175.62,
 -40.35
 ],
-"id": "PNR"
+"id": "3"
 },
 {
+"name": "LCN",
 "pos": [
 172.48,
 -43.65
 ],
-"id": "LCN"
+"id": "4"
 },
 {
+"name": "CHC",
 "pos": [
 172.63,
 -43.53
 ],
-"id": "CHC"
+"id": "5"
 },
 {
+"name": "IVM",
 "pos": [
 170.38,
 -45.85
 ],
-"id": "IVM"
+"id": "6"
 },
 {
+"name": "INV",
 "pos": [
 168.35,
 -46.40
 ],
-"id": "INV"
+"id": "7"
 },
 {
+"name": "TPO",
 "pos": [
 170.50,
 -44.02
 ],
-"id": "TPO"
+"id": "8"
 },
 {
+"name": "NLS",
 "pos": [
 173.28,
 -41.28
 ],
-"id": "NLS"
+"id": "9"
 },
 {
+"name": "MTA",
 "pos": [
 174.72,
 -36.88
 ],
-"id": "MTA"
+"id": "11"
 },
 {
+"name": "NPL",
 "pos": [
 174.08,
 -39.07
 ],
-"id": "NPL"
+"id": "12"
 },
 {
+"name": "WAG",
 "pos": [
 175.05,
 -39.93
 ],
-"id": "WAG"
+"id": "13"
 },
 {
+"name": "MUP",
 "pos": [
 175.62,
 -40.35
 ],
-"id": "MUP"
+"id": "14"
 },
 {
+"name": "NSH",
 "pos": [
 174.75,
 -36.80
 ],
-"id": "NSH"
+"id": "15"
 },
 {
+"name": "WRK",
 "pos": [
 174.67,
 -36.40
 ],
-"id": "WRK"
+"id": "16"
 },
 {
+"name": "TAU",
 "pos": [
 176.17,
 -37.69
 ],
-"id": "TAU"
+"id": "18"
 },
 {
+"name": "GIS",
 "pos": [
 178.00,
 -38.65
 ],
-"id": "GIS"
+"id": "19"
 },
 {
+"name": "POR",
 "pos": [
 174.85,
 -41.13
 ],
-"id": "POR"
+"id": "20"
 },
 {
+"name": "NAP",
 "pos": [
 176.92,
 -39.48
 ],
-"id": "NAP"
+"id": "21"
 },
 {
+"name": "ROT",
 "pos": [
 176.25,
 -38.14
 ],
-"id": "ROT"
+"id": "22"
 },
 {
+"name": "HLT",
 "pos": [
 175.28,
 -37.78
 ],
-"id": "HLT"
+"id": "23"
 },
 {
+"name": "AKL",
 "pos": [
 174.77,
 -36.87
 ],
-"id": "AKL"
+"id": "24"
 }
 ],
 "links": [
@@ -202,8 +225,8 @@
 "uni": 64.92,
 "deg": 56.97
 },
-"source": "WLG",
-"target": "DUD"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 15.59,
@@ -215,8 +238,8 @@
 "uni": 41.88,
 "deg": 40.64
 },
-"source": "WLG",
-"target": "AVL"
+"source": "0",
+"target": "2"
 },
 {
 "dist": 125.96,
@@ -228,8 +251,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "WLG",
-"target": "PNR"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 305.58,
@@ -241,8 +264,8 @@
 "uni": 45.03,
 "deg": 47.21
 },
-"source": "WLG",
-"target": "CHC"
+"source": "0",
+"target": "5"
 },
 {
 "dist": 124.72,
@@ -254,8 +277,8 @@
 "uni": 19.90,
 "deg": 17.13
 },
-"source": "WLG",
-"target": "NLS"
+"source": "0",
+"target": "9"
 },
 {
 "dist": 292.63,
@@ -267,8 +290,8 @@
 "uni": 14.66,
 "deg": 12.75
 },
-"source": "DUD",
-"target": "LCN"
+"source": "1",
+"target": "4"
 },
 {
 "dist": 9.99,
@@ -280,8 +303,8 @@
 "uni": 23.04,
 "deg": 10.16
 },
-"source": "DUD",
-"target": "IVM"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 175.98,
@@ -293,8 +316,8 @@
 "uni": 23.04,
 "deg": 10.16
 },
-"source": "DUD",
-"target": "INV"
+"source": "1",
+"target": "7"
 },
 {
 "dist": 9.31,
@@ -306,8 +329,8 @@
 "uni": 23.04,
 "deg": 10.16
 },
-"source": "AVL",
-"target": "POR"
+"source": "2",
+"target": "20"
 },
 {
 "dist": 111.10,
@@ -319,8 +342,8 @@
 "uni": 36.13,
 "deg": 33.86
 },
-"source": "AVL",
-"target": "MUP"
+"source": "2",
+"target": "14"
 },
 {
 "dist": 394.41,
@@ -332,8 +355,8 @@
 "uni": 87.43,
 "deg": 80.28
 },
-"source": "PNR",
-"target": "AKL"
+"source": "3",
+"target": "24"
 },
 {
 "dist": 193.87,
@@ -345,8 +368,8 @@
 "uni": 23.04,
 "deg": 10.16
 },
-"source": "PNR",
-"target": "NPL"
+"source": "3",
+"target": "12"
 },
 {
 "dist": 66.85,
@@ -358,8 +381,8 @@
 "uni": 23.04,
 "deg": 10.16
 },
-"source": "PNR",
-"target": "WAG"
+"source": "3",
+"target": "13"
 },
 {
 "dist": 0.00,
@@ -371,8 +394,8 @@
 "uni": 46.07,
 "deg": 45.42
 },
-"source": "PNR",
-"target": "MUP"
+"source": "3",
+"target": "14"
 },
 {
 "dist": 17.73,
@@ -384,8 +407,8 @@
 "uni": 14.66,
 "deg": 13.15
 },
-"source": "LCN",
-"target": "CHC"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 179.56,
@@ -397,8 +420,8 @@
 "uni": 23.04,
 "deg": 10.16
 },
-"source": "CHC",
-"target": "TPO"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 255.89,
@@ -410,8 +433,8 @@
 "uni": 3.14,
 "deg": 2.79
 },
-"source": "CHC",
-"target": "NLS"
+"source": "5",
+"target": "9"
 },
 {
 "dist": 4.33,
@@ -423,8 +446,8 @@
 "uni": 23.04,
 "deg": 10.16
 },
-"source": "MTA",
-"target": "AKL"
+"source": "11",
+"target": "24"
 },
 {
 "dist": 146.94,
@@ -436,8 +459,8 @@
 "uni": 52.88,
 "deg": 48.01
 },
-"source": "MUP",
-"target": "NAP"
+"source": "14",
+"target": "21"
 },
 {
 "dist": 45.11,
@@ -449,8 +472,8 @@
 "uni": 23.04,
 "deg": 10.16
 },
-"source": "NSH",
-"target": "WRK"
+"source": "15",
+"target": "16"
 },
 {
 "dist": 7.56,
@@ -462,8 +485,8 @@
 "uni": 43.98,
 "deg": 29.28
 },
-"source": "NSH",
-"target": "AKL"
+"source": "15",
+"target": "24"
 },
 {
 "dist": 50.81,
@@ -475,8 +498,8 @@
 "uni": 23.04,
 "deg": 10.16
 },
-"source": "TAU",
-"target": "ROT"
+"source": "18",
+"target": "22"
 },
 {
 "dist": 131.69,
@@ -488,8 +511,8 @@
 "uni": 23.04,
 "deg": 10.16
 },
-"source": "GIS",
-"target": "NAP"
+"source": "19",
+"target": "21"
 },
 {
 "dist": 160.48,
@@ -501,8 +524,8 @@
 "uni": 29.84,
 "deg": 25.70
 },
-"source": "NAP",
-"target": "ROT"
+"source": "21",
+"target": "22"
 },
 {
 "dist": 93.15,
@@ -514,8 +537,8 @@
 "uni": 25.65,
 "deg": 20.92
 },
-"source": "ROT",
-"target": "HLT"
+"source": "22",
+"target": "23"
 },
 {
 "dist": 111.73,
@@ -527,8 +550,8 @@
 "uni": 37.70,
 "deg": 32.07
 },
-"source": "HLT",
-"target": "AKL"
+"source": "23",
+"target": "24"
 }
 ]
 }

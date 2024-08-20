@@ -30,32 +30,36 @@
 },
 "nodes": [
 {
+"name": "SRI",
 "pos": [
 -122.18,
 37.45
 ],
-"id": "SRI"
+"id": "0"
 },
 {
+"name": "USCB",
 "pos": [
 -119.70,
 34.42
 ],
-"id": "USCB"
+"id": "1"
 },
 {
+"name": "UCLA",
 "pos": [
 -118.24,
 34.05
 ],
-"id": "UCLA"
+"id": "2"
 },
 {
+"name": "UTAH",
 "pos": [
 -111.89,
 40.76
 ],
-"id": "UTAH"
+"id": "3"
 }
 ],
 "links": [
@@ -69,8 +73,8 @@
 "uni": 66.67,
 "deg": 100.00
 },
-"source": "SRI",
-"target": "USCB"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 519.06,
@@ -82,8 +86,8 @@
 "uni": 66.67,
 "deg": 100.00
 },
-"source": "SRI",
-"target": "UCLA"
+"source": "0",
+"target": "2"
 },
 {
 "dist": 960.57,
@@ -95,8 +99,8 @@
 "uni": 100.00,
 "deg": 87.50
 },
-"source": "SRI",
-"target": "UTAH"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 139.89,
@@ -108,8 +112,8 @@
 "uni": 33.33,
 "deg": 50.00
 },
-"source": "USCB",
-"target": "UCLA"
+"source": "1",
+"target": "2"
 }
 ]
 }

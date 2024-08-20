@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.03,
 "max_sdp_num": 2,
 "avg_sdp_hops": 2.40,
-"avg_sdp_len": 435.42,
+"avg_sdp_len": 441.81,
 "avg_adp_num": 1.23,
 "max_adp_num": 5,
 "avg_adp_hops": 2.55,
@@ -30,137 +30,156 @@
 },
 "nodes": [
 {
+"name": "Craiova",
 "pos": [
 23.80,
 44.32
 ],
-"id": "Craiova"
+"id": "0"
 },
 {
+"name": "Plaiesti",
 "pos": [
 26.02,
 44.95
 ],
-"id": "Plaiesti"
+"id": "1"
 },
 {
+"name": "Brasov",
 "pos": [
 25.61,
 45.65
 ],
-"id": "Brasov"
+"id": "2"
 },
 {
+"name": "Targoviste",
 "pos": [
 25.45,
 44.93
 ],
-"id": "Targoviste"
+"id": "3"
 },
 {
+"name": "Constanta",
 "pos": [
 28.65,
 44.18
 ],
-"id": "Constanta"
+"id": "4"
 },
 {
+"name": "Bucarest",
 "pos": [
 26.11,
 44.43
 ],
-"id": "Bucarest"
+"id": "5"
 },
 {
+"name": "Galati",
 "pos": [
 28.05,
 45.45
 ],
-"id": "Galati"
+"id": "6"
 },
 {
+"name": "Focsani",
 "pos": [
 27.18,
 45.70
 ],
-"id": "Focsani"
+"id": "7"
 },
 {
+"name": "Targu Mures",
 "pos": [
 24.56,
 46.54
 ],
-"id": "Targu Mures"
+"id": "10"
 },
 {
+"name": "Timisoara",
 "pos": [
 21.23,
 45.75
 ],
-"id": "Timisoara"
+"id": "11"
 },
 {
+"name": "Sibiu",
 "pos": [
 24.15,
 45.80
 ],
-"id": "Sibiu"
+"id": "12"
 },
 {
+"name": "Iasi",
 "pos": [
 27.60,
 47.17
 ],
-"id": "Iasi"
+"id": "13"
 },
 {
+"name": "Piatra Neamt",
 "pos": [
 26.33,
 46.92
 ],
-"id": "Piatra Neamt"
+"id": "14"
 },
 {
+"name": "Bacau",
 "pos": [
 26.90,
 46.57
 ],
-"id": "Bacau"
+"id": "15"
 },
 {
+"name": "Deva",
 "pos": [
 22.90,
 45.88
 ],
-"id": "Deva"
+"id": "16"
 },
 {
+"name": "Cluj",
 "pos": [
 23.60,
 46.77
 ],
-"id": "Cluj"
+"id": "17"
 },
 {
+"name": "Oradea",
 "pos": [
 21.93,
 47.07
 ],
-"id": "Oradea"
+"id": "18"
 },
 {
+"name": "Bors",
 "pos": [
 21.82,
 47.12
 ],
-"id": "Bors"
+"id": "19"
 },
 {
+"name": "Arad",
 "pos": [
 21.32,
 46.18
 ],
-"id": "Arad"
+"id": "20"
 }
 ],
 "links": [
@@ -174,8 +193,8 @@
 "uni": 55.42,
 "deg": 40.15
 },
-"source": "Craiova",
-"target": "Timisoara"
+"source": "0",
+"target": "11"
 },
 {
 "dist": 183.80,
@@ -187,8 +206,8 @@
 "uni": 84.34,
 "deg": 63.32
 },
-"source": "Craiova",
-"target": "Bucarest"
+"source": "0",
+"target": "5"
 },
 {
 "dist": 58.02,
@@ -200,8 +219,8 @@
 "uni": 43.37,
 "deg": 16.60
 },
-"source": "Plaiesti",
-"target": "Bucarest"
+"source": "1",
+"target": "5"
 },
 {
 "dist": 198.26,
@@ -213,8 +232,8 @@
 "uni": 18.07,
 "deg": 13.90
 },
-"source": "Brasov",
-"target": "Cluj"
+"source": "2",
+"target": "17"
 },
 {
 "dist": 140.88,
@@ -226,8 +245,8 @@
 "uni": 46.99,
 "deg": 34.75
 },
-"source": "Brasov",
-"target": "Bucarest"
+"source": "2",
+"target": "5"
 },
 {
 "dist": 76.16,
@@ -239,8 +258,8 @@
 "uni": 43.37,
 "deg": 16.60
 },
-"source": "Targoviste",
-"target": "Bucarest"
+"source": "3",
+"target": "5"
 },
 {
 "dist": 204.34,
@@ -252,8 +271,8 @@
 "uni": 43.37,
 "deg": 16.60
 },
-"source": "Constanta",
-"target": "Bucarest"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 190.34,
@@ -265,8 +284,8 @@
 "uni": 43.37,
 "deg": 16.60
 },
-"source": "Bucarest",
-"target": "Galati"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 164.44,
@@ -278,8 +297,8 @@
 "uni": 81.93,
 "deg": 47.49
 },
-"source": "Bucarest",
-"target": "Focsani"
+"source": "5",
+"target": "7"
 },
 {
 "dist": 263.94,
@@ -291,8 +310,8 @@
 "uni": 43.37,
 "deg": 16.60
 },
-"source": "Bucarest",
-"target": "Targu Mures"
+"source": "5",
+"target": "10"
 },
 {
 "dist": 325.43,
@@ -304,8 +323,8 @@
 "uni": 27.71,
 "deg": 20.08
 },
-"source": "Bucarest",
-"target": "Iasi"
+"source": "5",
+"target": "13"
 },
 {
 "dist": 245.33,
@@ -317,8 +336,8 @@
 "uni": 27.71,
 "deg": 20.08
 },
-"source": "Bucarest",
-"target": "Bacau"
+"source": "5",
+"target": "15"
 },
 {
 "dist": 436.64,
@@ -330,8 +349,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Bucarest",
-"target": "Oradea"
+"source": "5",
+"target": "18"
 },
 {
 "dist": 150.26,
@@ -343,8 +362,8 @@
 "uni": 43.37,
 "deg": 16.60
 },
-"source": "Focsani",
-"target": "Piatra Neamt"
+"source": "7",
+"target": "14"
 },
 {
 "dist": 130.52,
@@ -356,8 +375,8 @@
 "uni": 43.37,
 "deg": 16.60
 },
-"source": "Timisoara",
-"target": "Deva"
+"source": "11",
+"target": "16"
 },
 {
 "dist": 48.75,
@@ -369,8 +388,8 @@
 "uni": 31.33,
 "deg": 24.71
 },
-"source": "Timisoara",
-"target": "Arad"
+"source": "11",
+"target": "20"
 },
 {
 "dist": 220.72,
@@ -382,8 +401,8 @@
 "uni": 43.37,
 "deg": 16.60
 },
-"source": "Sibiu",
-"target": "Oradea"
+"source": "12",
+"target": "18"
 },
 {
 "dist": 428.96,
@@ -395,8 +414,8 @@
 "uni": 15.66,
 "deg": 12.36
 },
-"source": "Iasi",
-"target": "Oradea"
+"source": "13",
+"target": "18"
 },
 {
 "dist": 382.04,
@@ -408,8 +427,8 @@
 "uni": 15.66,
 "deg": 12.36
 },
-"source": "Bacau",
-"target": "Oradea"
+"source": "15",
+"target": "18"
 },
 {
 "dist": 130.94,
@@ -421,8 +440,8 @@
 "uni": 34.94,
 "deg": 27.03
 },
-"source": "Cluj",
-"target": "Oradea"
+"source": "17",
+"target": "18"
 },
 {
 "dist": 10.44,
@@ -434,8 +453,8 @@
 "uni": 43.37,
 "deg": 16.60
 },
-"source": "Oradea",
-"target": "Bors"
+"source": "18",
+"target": "19"
 },
 {
 "dist": 108.96,
@@ -447,8 +466,8 @@
 "uni": 60.24,
 "deg": 47.88
 },
-"source": "Oradea",
-"target": "Arad"
+"source": "18",
+"target": "20"
 }
 ]
 }

@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.09,
 "max_sdp_num": 2,
 "avg_sdp_hops": 3.30,
-"avg_sdp_len": 1446.43,
+"avg_sdp_len": 1446.07,
 "avg_adp_num": 1.84,
 "max_adp_num": 4,
 "avg_adp_hops": 4.20,
@@ -30,193 +30,220 @@
 },
 "nodes": [
 {
+"name": "Chicago",
 "pos": [
 -87.65,
 41.85
 ],
-"id": "Chicago"
+"id": "0"
 },
 {
+"name": "Dallas",
 "pos": [
 -96.81,
 32.78
 ],
-"id": "Dallas"
+"id": "1"
 },
 {
+"name": "St Cloud",
 "pos": [
 -94.16,
 45.56
 ],
-"id": "St Cloud"
+"id": "2"
 },
 {
+"name": "Minneapolis/St Paul",
 "pos": [
 -93.26,
 44.98
 ],
-"id": "Minneapolis/St Paul"
+"id": "3"
 },
 {
+"name": "Los Angeles",
 "pos": [
 -118.24,
 34.05
 ],
-"id": "Los Angeles"
+"id": "4"
 },
 {
+"name": "Santa Clara",
 "pos": [
 -121.96,
 37.35
 ],
-"id": "Santa Clara"
+"id": "5"
 },
 {
+"name": "Las Vegas",
 "pos": [
 -115.14,
 36.17
 ],
-"id": "Las Vegas"
+"id": "6"
 },
 {
+"name": "Phoenix",
 "pos": [
 -112.07,
 33.45
 ],
-"id": "Phoenix"
+"id": "7"
 },
 {
+"name": "Sacramento",
 "pos": [
 -121.49,
 38.58
 ],
-"id": "Sacramento"
+"id": "8"
 },
 {
+"name": "Santa Rose",
 "pos": [
 -122.71,
 38.44
 ],
-"id": "Santa Rose"
+"id": "9"
 },
 {
+"name": "Salem",
 "pos": [
 -123.04,
 44.94
 ],
-"id": "Salem"
+"id": "10"
 },
 {
+"name": "Bend",
 "pos": [
 -121.32,
 44.06
 ],
-"id": "Bend"
+"id": "11"
 },
 {
+"name": "Eugene",
 "pos": [
 -123.09,
 44.05
 ],
-"id": "Eugene"
+"id": "12"
 },
 {
+"name": "Reno",
 "pos": [
 -119.81,
 39.53
 ],
-"id": "Reno"
+"id": "13"
 },
 {
+"name": "Rancho Cordova",
 "pos": [
 -121.30,
 38.59
 ],
-"id": "Rancho Cordova"
+"id": "14"
 },
 {
+"name": "New York",
 "pos": [
 -74.01,
 40.71
 ],
-"id": "New York"
+"id": "15"
 },
 {
+"name": "Ashburn",
 "pos": [
 -77.49,
 39.04
 ],
-"id": "Ashburn"
+"id": "16"
 },
 {
+"name": "Spokane",
 "pos": [
 -117.43,
 47.66
 ],
-"id": "Spokane"
+"id": "17"
 },
 {
+"name": "Fargo?",
 "pos": [
 -96.79,
 46.88
 ],
-"id": "Fargo?"
+"id": "18"
 },
 {
+"name": "Billings",
 "pos": [
 -108.50,
 45.78
 ],
-"id": "Billings"
+"id": "19"
 },
 {
+"name": "Denver",
 "pos": [
 -104.98,
 39.74
 ],
-"id": "Denver"
+"id": "20"
 },
 {
+"name": "Ogden",
 "pos": [
 -111.97,
 41.22
 ],
-"id": "Ogden"
+"id": "21"
 },
 {
+"name": "Orem",
 "pos": [
 -111.69,
 40.30
 ],
-"id": "Orem"
+"id": "22"
 },
 {
+"name": "Salt Lake City",
 "pos": [
 -111.89,
 40.76
 ],
-"id": "Salt Lake City"
+"id": "23"
 },
 {
+"name": "Boise",
 "pos": [
 -116.20,
 43.61
 ],
-"id": "Boise"
+"id": "24"
 },
 {
+"name": "Portland",
 "pos": [
 -122.68,
 45.52
 ],
-"id": "Portland"
+"id": "25"
 },
 {
+"name": "Seattle",
 "pos": [
 -122.33,
 47.61
 ],
-"id": "Seattle"
+"id": "26"
 }
 ],
 "links": [
@@ -230,8 +257,8 @@
 "uni": 25.58,
 "deg": 20.61
 },
-"source": "Chicago",
-"target": "Ashburn"
+"source": "0",
+"target": "16"
 },
 {
 "dist": 571.53,
@@ -243,8 +270,8 @@
 "uni": 53.01,
 "deg": 59.73
 },
-"source": "Chicago",
-"target": "Minneapolis/St Paul"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 1475.80,
@@ -256,8 +283,8 @@
 "uni": 62.19,
 "deg": 68.20
 },
-"source": "Chicago",
-"target": "Denver"
+"source": "0",
+"target": "20"
 },
 {
 "dist": 1065.13,
@@ -269,8 +296,8 @@
 "uni": 42.86,
 "deg": 42.26
 },
-"source": "Dallas",
-"target": "Denver"
+"source": "1",
+"target": "20"
 },
 {
 "dist": 1422.95,
@@ -282,8 +309,8 @@
 "uni": 37.07,
 "deg": 37.58
 },
-"source": "Dallas",
-"target": "Phoenix"
+"source": "1",
+"target": "7"
 },
 {
 "dist": 249.62,
@@ -295,8 +322,8 @@
 "uni": 1.11,
 "deg": 0.63
 },
-"source": "St Cloud",
-"target": "Fargo?"
+"source": "2",
+"target": "18"
 },
 {
 "dist": 95.51,
@@ -308,8 +335,8 @@
 "uni": 27.80,
 "deg": 21.56
 },
-"source": "St Cloud",
-"target": "Minneapolis/St Paul"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 344.82,
@@ -321,8 +348,8 @@
 "uni": 27.80,
 "deg": 21.56
 },
-"source": "Minneapolis/St Paul",
-"target": "Fargo?"
+"source": "3",
+"target": "18"
 },
 {
 "dist": 2239.65,
@@ -334,8 +361,8 @@
 "uni": 86.65,
 "deg": 85.45
 },
-"source": "Minneapolis/St Paul",
-"target": "Seattle"
+"source": "3",
+"target": "26"
 },
 {
 "dist": 1636.01,
@@ -347,8 +374,8 @@
 "uni": 30.03,
 "deg": 22.52
 },
-"source": "Minneapolis/St Paul",
-"target": "New York"
+"source": "3",
+"target": "15"
 },
 {
 "dist": 497.16,
@@ -360,8 +387,8 @@
 "uni": 32.72,
 "deg": 31.53
 },
-"source": "Los Angeles",
-"target": "Santa Clara"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 368.24,
@@ -373,8 +400,8 @@
 "uni": 10.57,
 "deg": 11.81
 },
-"source": "Los Angeles",
-"target": "Las Vegas"
+"source": "4",
+"target": "6"
 },
 {
 "dist": 574.42,
@@ -386,8 +413,8 @@
 "uni": 24.56,
 "deg": 23.94
 },
-"source": "Los Angeles",
-"target": "Phoenix"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 142.38,
@@ -399,8 +426,8 @@
 "uni": 44.11,
 "deg": 38.98
 },
-"source": "Santa Clara",
-"target": "Sacramento"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 583.05,
@@ -412,8 +439,8 @@
 "uni": 35.36,
 "deg": 40.38
 },
-"source": "Las Vegas",
-"target": "Salt Lake City"
+"source": "6",
+"target": "23"
 },
 {
 "dist": 412.53,
@@ -425,8 +452,8 @@
 "uni": 16.08,
 "deg": 17.68
 },
-"source": "Las Vegas",
-"target": "Phoenix"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 107.34,
@@ -438,8 +465,8 @@
 "uni": 28.92,
 "deg": 11.26
 },
-"source": "Sacramento",
-"target": "Santa Rose"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 179.41,
@@ -451,8 +478,8 @@
 "uni": 32.81,
 "deg": 30.68
 },
-"source": "Sacramento",
-"target": "Reno"
+"source": "8",
+"target": "13"
 },
 {
 "dist": 16.69,
@@ -464,8 +491,8 @@
 "uni": 28.92,
 "deg": 11.26
 },
-"source": "Sacramento",
-"target": "Rancho Cordova"
+"source": "8",
+"target": "14"
 },
 {
 "dist": 778.24,
@@ -477,8 +504,8 @@
 "uni": 83.60,
 "deg": 72.04
 },
-"source": "Sacramento",
-"target": "Portland"
+"source": "8",
+"target": "25"
 },
 {
 "dist": 70.43,
@@ -490,8 +517,8 @@
 "uni": 55.61,
 "deg": 32.82
 },
-"source": "Salem",
-"target": "Portland"
+"source": "10",
+"target": "25"
 },
 {
 "dist": 99.17,
@@ -503,8 +530,8 @@
 "uni": 28.92,
 "deg": 11.26
 },
-"source": "Salem",
-"target": "Eugene"
+"source": "10",
+"target": "12"
 },
 {
 "dist": 195.19,
@@ -516,8 +543,8 @@
 "uni": 16.68,
 "deg": 12.68
 },
-"source": "Bend",
-"target": "Portland"
+"source": "11",
+"target": "25"
 },
 {
 "dist": 402.41,
@@ -529,8 +556,8 @@
 "uni": 12.23,
 "deg": 9.51
 },
-"source": "Bend",
-"target": "Seattle"
+"source": "11",
+"target": "26"
 },
 {
 "dist": 687.13,
@@ -542,8 +569,8 @@
 "uni": 29.47,
 "deg": 29.10
 },
-"source": "Reno",
-"target": "Salt Lake City"
+"source": "13",
+"target": "23"
 },
 {
 "dist": 350.43,
@@ -555,8 +582,8 @@
 "uni": 13.48,
 "deg": 10.19
 },
-"source": "New York",
-"target": "Ashburn"
+"source": "15",
+"target": "16"
 },
 {
 "dist": 367.71,
@@ -568,8 +595,8 @@
 "uni": 35.77,
 "deg": 29.20
 },
-"source": "Spokane",
-"target": "Seattle"
+"source": "17",
+"target": "26"
 },
 {
 "dist": 711.35,
@@ -581,8 +608,8 @@
 "uni": 26.04,
 "deg": 22.49
 },
-"source": "Spokane",
-"target": "Billings"
+"source": "17",
+"target": "19"
 },
 {
 "dist": 730.82,
@@ -594,8 +621,8 @@
 "uni": 28.54,
 "deg": 25.50
 },
-"source": "Billings",
-"target": "Denver"
+"source": "19",
+"target": "20"
 },
 {
 "dist": 613.69,
@@ -607,8 +634,8 @@
 "uni": 48.66,
 "deg": 55.01
 },
-"source": "Denver",
-"target": "Ogden"
+"source": "20",
+"target": "21"
 },
 {
 "dist": 105.66,
@@ -620,8 +647,8 @@
 "uni": 12.23,
 "deg": 9.20
 },
-"source": "Ogden",
-"target": "Orem"
+"source": "21",
+"target": "22"
 },
 {
 "dist": 51.88,
@@ -633,8 +660,8 @@
 "uni": 40.69,
 "deg": 50.25
 },
-"source": "Ogden",
-"target": "Salt Lake City"
+"source": "21",
+"target": "23"
 },
 {
 "dist": 54.20,
@@ -646,8 +673,8 @@
 "uni": 16.68,
 "deg": 13.00
 },
-"source": "Orem",
-"target": "Salt Lake City"
+"source": "22",
+"target": "23"
 },
 {
 "dist": 476.31,
@@ -659,8 +686,8 @@
 "uni": 43.37,
 "deg": 50.95
 },
-"source": "Salt Lake City",
-"target": "Boise"
+"source": "23",
+"target": "24"
 },
 {
 "dist": 554.94,
@@ -672,8 +699,8 @@
 "uni": 49.21,
 "deg": 53.96
 },
-"source": "Boise",
-"target": "Portland"
+"source": "24",
+"target": "25"
 },
 {
 "dist": 233.15,
@@ -685,8 +712,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Portland",
-"target": "Seattle"
+"source": "25",
+"target": "26"
 }
 ]
 }

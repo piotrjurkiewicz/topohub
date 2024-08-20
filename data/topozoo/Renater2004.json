@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.04,
 "max_sdp_num": 2,
 "avg_sdp_hops": 2.89,
-"avg_sdp_len": 446.42,
+"avg_sdp_len": 444.24,
 "avg_adp_num": 1.60,
 "max_adp_num": 4,
 "avg_adp_hops": 3.62,
@@ -30,172 +30,196 @@
 },
 "nodes": [
 {
+"name": "Bordeaux",
 "pos": [
 -0.57,
 44.83
 ],
-"id": "Bordeaux"
+"id": "0"
 },
 {
+"name": "Toulouse",
 "pos": [
 1.44,
 43.60
 ],
-"id": "Toulouse"
+"id": "1"
 },
 {
+"name": "Orleans",
 "pos": [
 1.90,
 47.92
 ],
-"id": "Orleans"
+"id": "2"
 },
 {
+"name": "Limoges",
 "pos": [
 1.26,
 45.83
 ],
-"id": "Limoges"
+"id": "3"
 },
 {
+"name": "Dijon",
 "pos": [
 5.02,
 47.32
 ],
-"id": "Dijon"
+"id": "4"
 },
 {
+"name": "Besancon",
 "pos": [
 6.03,
 47.25
 ],
-"id": "Besancon"
+"id": "5"
 },
 {
+"name": "Montpellier",
 "pos": [
 3.88,
 43.60
 ],
-"id": "Montpellier"
+"id": "6"
 },
 {
+"name": "Clermont-Ferrand",
 "pos": [
 3.08,
 45.78
 ],
-"id": "Clermont-Ferrand"
+"id": "7"
 },
 {
+"name": "Grenoble",
 "pos": [
 5.72,
 45.17
 ],
-"id": "Grenoble"
+"id": "8"
 },
 {
+"name": "Nice",
 "pos": [
 7.27,
 43.70
 ],
-"id": "Nice"
+"id": "9"
 },
 {
+"name": "Lyon",
 "pos": [
 4.85,
 45.75
 ],
-"id": "Lyon"
+"id": "12"
 },
 {
+"name": "Paris",
 "pos": [
 2.35,
 48.85
 ],
-"id": "Paris"
+"id": "13"
 },
 {
+"name": "Corte",
 "pos": [
 9.15,
 42.30
 ],
-"id": "Corte"
+"id": "14"
 },
 {
+"name": "Marseille",
 "pos": [
 5.40,
 43.30
 ],
-"id": "Marseille"
+"id": "15"
 },
 {
+"name": "Nantes",
 "pos": [
 -1.55,
 47.22
 ],
-"id": "Nantes"
+"id": "20"
 },
 {
+"name": "Poiters",
 "pos": [
 0.33,
 46.58
 ],
-"id": "Poiters"
+"id": "21"
 },
 {
+"name": "Strasbourg",
 "pos": [
 7.75,
 48.58
 ],
-"id": "Strasbourg"
+"id": "22"
 },
 {
+"name": "Nancy",
 "pos": [
 6.20,
 48.68
 ],
-"id": "Nancy"
+"id": "23"
 },
 {
+"name": "Reims",
 "pos": [
 4.03,
 49.25
 ],
-"id": "Reims"
+"id": "24"
 },
 {
+"name": "Compiegne",
 "pos": [
 2.83,
 49.42
 ],
-"id": "Compiegne"
+"id": "25"
 },
 {
+"name": "Lille",
 "pos": [
 3.07,
 50.63
 ],
-"id": "Lille"
+"id": "26"
 },
 {
+"name": "Rouen",
 "pos": [
 1.10,
 49.44
 ],
-"id": "Rouen"
+"id": "27"
 },
 {
+"name": "Caen",
 "pos": [
 -0.36,
 49.19
 ],
-"id": "Caen"
+"id": "28"
 },
 {
+"name": "Rennes",
 "pos": [
 -1.68,
 48.08
 ],
-"id": "Rennes"
+"id": "29"
 }
 ],
 "links": [
@@ -209,8 +233,8 @@
 "uni": 17.10,
 "deg": 14.00
 },
-"source": "Bordeaux",
-"target": "Toulouse"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 206.81,
@@ -222,8 +246,8 @@
 "uni": 27.46,
 "deg": 21.07
 },
-"source": "Bordeaux",
-"target": "Poiters"
+"source": "0",
+"target": "21"
 },
 {
 "dist": 196.49,
@@ -235,8 +259,8 @@
 "uni": 20.98,
 "deg": 17.74
 },
-"source": "Toulouse",
-"target": "Montpellier"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 109.34,
@@ -248,8 +272,8 @@
 "uni": 23.83,
 "deg": 9.28
 },
-"source": "Orleans",
-"target": "Paris"
+"source": "2",
+"target": "13"
 },
 {
 "dist": 109.80,
@@ -261,8 +285,8 @@
 "uni": 19.17,
 "deg": 14.00
 },
-"source": "Limoges",
-"target": "Poiters"
+"source": "3",
+"target": "21"
 },
 {
 "dist": 141.64,
@@ -274,8 +298,8 @@
 "uni": 12.95,
 "deg": 10.74
 },
-"source": "Limoges",
-"target": "Clermont-Ferrand"
+"source": "3",
+"target": "7"
 },
 {
 "dist": 261.72,
@@ -287,8 +311,8 @@
 "uni": 23.83,
 "deg": 9.28
 },
-"source": "Dijon",
-"target": "Paris"
+"source": "4",
+"target": "13"
 },
 {
 "dist": 189.85,
@@ -300,8 +324,8 @@
 "uni": 30.57,
 "deg": 24.41
 },
-"source": "Besancon",
-"target": "Lyon"
+"source": "5",
+"target": "12"
 },
 {
 "dist": 195.87,
@@ -313,8 +337,8 @@
 "uni": 10.88,
 "deg": 8.79
 },
-"source": "Besancon",
-"target": "Strasbourg"
+"source": "5",
+"target": "22"
 },
 {
 "dist": 251.06,
@@ -326,8 +350,8 @@
 "uni": 28.50,
 "deg": 29.05
 },
-"source": "Montpellier",
-"target": "Lyon"
+"source": "6",
+"target": "12"
 },
 {
 "dist": 126.93,
@@ -339,8 +363,8 @@
 "uni": 9.33,
 "deg": 7.97
 },
-"source": "Montpellier",
-"target": "Marseille"
+"source": "6",
+"target": "15"
 },
 {
 "dist": 137.12,
@@ -352,8 +376,8 @@
 "uni": 26.42,
 "deg": 21.16
 },
-"source": "Clermont-Ferrand",
-"target": "Lyon"
+"source": "7",
+"target": "12"
 },
 {
 "dist": 204.05,
@@ -365,8 +389,8 @@
 "uni": 20.21,
 "deg": 15.46
 },
-"source": "Grenoble",
-"target": "Nice"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 93.71,
@@ -378,8 +402,8 @@
 "uni": 38.86,
 "deg": 30.11
 },
-"source": "Grenoble",
-"target": "Lyon"
+"source": "8",
+"target": "12"
 },
 {
 "dist": 218.71,
@@ -391,8 +415,8 @@
 "uni": 23.83,
 "deg": 9.28
 },
-"source": "Nice",
-"target": "Corte"
+"source": "9",
+"target": "14"
 },
 {
 "dist": 157.08,
@@ -404,8 +428,8 @@
 "uni": 26.42,
 "deg": 20.67
 },
-"source": "Nice",
-"target": "Marseille"
+"source": "9",
+"target": "15"
 },
 {
 "dist": 393.32,
@@ -417,8 +441,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Lyon",
-"target": "Paris"
+"source": "12",
+"target": "13"
 },
 {
 "dist": 275.97,
@@ -430,8 +454,8 @@
 "uni": 35.75,
 "deg": 34.66
 },
-"source": "Lyon",
-"target": "Marseille"
+"source": "12",
+"target": "15"
 },
 {
 "dist": 294.08,
@@ -443,8 +467,8 @@
 "uni": 64.77,
 "deg": 61.92
 },
-"source": "Paris",
-"target": "Poiters"
+"source": "13",
+"target": "21"
 },
 {
 "dist": 282.93,
@@ -456,8 +480,8 @@
 "uni": 34.72,
 "deg": 26.36
 },
-"source": "Paris",
-"target": "Nancy"
+"source": "13",
+"target": "23"
 },
 {
 "dist": 130.47,
@@ -469,8 +493,8 @@
 "uni": 23.83,
 "deg": 9.28
 },
-"source": "Paris",
-"target": "Reims"
+"source": "13",
+"target": "24"
 },
 {
 "dist": 71.76,
@@ -482,8 +506,8 @@
 "uni": 23.83,
 "deg": 9.28
 },
-"source": "Paris",
-"target": "Compiegne"
+"source": "13",
+"target": "25"
 },
 {
 "dist": 204.58,
@@ -495,8 +519,8 @@
 "uni": 23.83,
 "deg": 9.28
 },
-"source": "Paris",
-"target": "Lille"
+"source": "13",
+"target": "26"
 },
 {
 "dist": 112.10,
@@ -508,8 +532,8 @@
 "uni": 47.67,
 "deg": 37.43
 },
-"source": "Paris",
-"target": "Rouen"
+"source": "13",
+"target": "27"
 },
 {
 "dist": 159.78,
@@ -521,8 +545,8 @@
 "uni": 36.27,
 "deg": 28.40
 },
-"source": "Nantes",
-"target": "Poiters"
+"source": "20",
+"target": "21"
 },
 {
 "dist": 96.82,
@@ -534,8 +558,8 @@
 "uni": 17.62,
 "deg": 13.34
 },
-"source": "Nantes",
-"target": "Rennes"
+"source": "20",
+"target": "29"
 },
 {
 "dist": 114.48,
@@ -547,8 +571,8 @@
 "uni": 15.03,
 "deg": 10.74
 },
-"source": "Strasbourg",
-"target": "Nancy"
+"source": "22",
+"target": "23"
 },
 {
 "dist": 109.55,
@@ -560,8 +584,8 @@
 "uni": 29.02,
 "deg": 22.46
 },
-"source": "Rouen",
-"target": "Caen"
+"source": "27",
+"target": "28"
 },
 {
 "dist": 156.56,
@@ -573,8 +597,8 @@
 "uni": 13.21,
 "deg": 9.93
 },
-"source": "Caen",
-"target": "Rennes"
+"source": "28",
+"target": "29"
 }
 ]
 }

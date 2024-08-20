@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.09,
 "max_sdp_num": 2,
 "avg_sdp_hops": 3.41,
-"avg_sdp_len": 169.46,
+"avg_sdp_len": 170.16,
 "avg_adp_num": 2.00,
 "max_adp_num": 2,
 "avg_adp_hops": 6.00,
@@ -30,109 +30,124 @@
 },
 "nodes": [
 {
+"name": "Milwaukee",
 "pos": [
 -87.91,
 43.04
 ],
-"id": "Milwaukee"
+"id": "0"
 },
 {
+"name": "Rockford",
 "pos": [
 -89.09,
 42.27
 ],
-"id": "Rockford"
+"id": "1"
 },
 {
+"name": "Janesville",
 "pos": [
 -89.02,
 42.68
 ],
-"id": "Janesville"
+"id": "2"
 },
 {
+"name": "Waukesha",
 "pos": [
 -88.23,
 43.01
 ],
-"id": "Waukesha"
+"id": "3"
 },
 {
+"name": "Chicago",
 "pos": [
 -87.82,
 42.59
 ],
-"id": "Chicago"
+"id": "4"
 },
 {
+"name": "Madison",
 "pos": [
 -89.40,
 43.07
 ],
-"id": "Madison"
+"id": "5"
 },
 {
+"name": "Camp Douglas",
 "pos": [
 -90.27,
 43.92
 ],
-"id": "Camp Douglas"
+"id": "6"
 },
 {
+"name": "Minneaopolis",
 "pos": [
 -93.26,
 44.98
 ],
-"id": "Minneaopolis"
+"id": "7"
 },
 {
+"name": "Eau Claire",
 "pos": [
 -91.50,
 44.81
 ],
-"id": "Eau Claire"
+"id": "8"
 },
 {
+"name": "Wausau",
 "pos": [
 -89.63,
 44.96
 ],
-"id": "Wausau"
+"id": "9"
 },
 {
+"name": "Green Bay",
 "pos": [
 -88.02,
 44.52
 ],
-"id": "Green Bay"
+"id": "10"
 },
 {
+"name": "Appleton",
 "pos": [
 -88.42,
 44.26
 ],
-"id": "Appleton"
+"id": "11"
 },
 {
+"name": "Oshkosh",
 "pos": [
 -88.54,
 44.02
 ],
-"id": "Oshkosh"
+"id": "12"
 },
 {
+"name": "Fon Du Lac",
 "pos": [
 -88.44,
 43.77
 ],
-"id": "Fon Du Lac"
+"id": "13"
 },
 {
+"name": "Beaver Dam",
 "pos": [
 -88.84,
 43.46
 ],
-"id": "Beaver Dam"
+"id": "14"
 }
 ],
 "links": [
@@ -146,8 +161,8 @@
 "uni": 51.43,
 "deg": 49.37
 },
-"source": "Milwaukee",
-"target": "Waukesha"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 50.80,
@@ -159,8 +174,8 @@
 "uni": 25.71,
 "deg": 24.05
 },
-"source": "Milwaukee",
-"target": "Chicago"
+"source": "0",
+"target": "4"
 },
 {
 "dist": 46.20,
@@ -172,8 +187,8 @@
 "uni": 51.43,
 "deg": 49.37
 },
-"source": "Rockford",
-"target": "Janesville"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 109.93,
@@ -185,8 +200,8 @@
 "uni": 25.71,
 "deg": 24.05
 },
-"source": "Rockford",
-"target": "Chicago"
+"source": "1",
+"target": "4"
 },
 {
 "dist": 53.44,
@@ -198,8 +213,8 @@
 "uni": 77.14,
 "deg": 74.68
 },
-"source": "Janesville",
-"target": "Madison"
+"source": "2",
+"target": "5"
 },
 {
 "dist": 95.33,
@@ -211,8 +226,8 @@
 "uni": 77.14,
 "deg": 74.68
 },
-"source": "Waukesha",
-"target": "Madison"
+"source": "3",
+"target": "5"
 },
 {
 "dist": 117.71,
@@ -224,8 +239,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Madison",
-"target": "Camp Douglas"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 62.59,
@@ -237,8 +252,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Madison",
-"target": "Beaver Dam"
+"source": "5",
+"target": "14"
 },
 {
 "dist": 138.89,
@@ -250,8 +265,8 @@
 "uni": 85.71,
 "deg": 84.81
 },
-"source": "Camp Douglas",
-"target": "Eau Claire"
+"source": "6",
+"target": "8"
 },
 {
 "dist": 140.35,
@@ -263,8 +278,8 @@
 "uni": 71.43,
 "deg": 69.62
 },
-"source": "Minneaopolis",
-"target": "Eau Claire"
+"source": "7",
+"target": "8"
 },
 {
 "dist": 285.93,
@@ -276,8 +291,8 @@
 "uni": 57.14,
 "deg": 54.43
 },
-"source": "Minneaopolis",
-"target": "Wausau"
+"source": "7",
+"target": "9"
 },
 {
 "dist": 136.31,
@@ -289,8 +304,8 @@
 "uni": 42.86,
 "deg": 39.24
 },
-"source": "Wausau",
-"target": "Green Bay"
+"source": "9",
+"target": "10"
 },
 {
 "dist": 42.51,
@@ -302,8 +317,8 @@
 "uni": 42.86,
 "deg": 39.24
 },
-"source": "Green Bay",
-"target": "Appleton"
+"source": "10",
+"target": "11"
 },
 {
 "dist": 28.27,
@@ -315,8 +330,8 @@
 "uni": 57.14,
 "deg": 54.43
 },
-"source": "Appleton",
-"target": "Oshkosh"
+"source": "11",
+"target": "12"
 },
 {
 "dist": 28.99,
@@ -328,8 +343,8 @@
 "uni": 71.43,
 "deg": 69.62
 },
-"source": "Oshkosh",
-"target": "Fon Du Lac"
+"source": "12",
+"target": "13"
 },
 {
 "dist": 47.69,
@@ -341,8 +356,8 @@
 "uni": 85.71,
 "deg": 84.81
 },
-"source": "Fon Du Lac",
-"target": "Beaver Dam"
+"source": "13",
+"target": "14"
 }
 ]
 }

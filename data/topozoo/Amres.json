@@ -30,151 +30,172 @@
 },
 "nodes": [
 {
+"name": "Bor",
 "pos": [
 22.10,
 44.08
 ],
-"id": "Bor"
+"id": "0"
 },
 {
+"name": "Novi Pazar",
 "pos": [
 20.51,
 43.14
 ],
-"id": "Novi Pazar"
+"id": "2"
 },
 {
+"name": "Krustevac",
 "pos": [
 21.33,
 43.58
 ],
-"id": "Krustevac"
+"id": "3"
 },
 {
+"name": "Vranje",
 "pos": [
 21.90,
 42.55
 ],
-"id": "Vranje"
+"id": "4"
 },
 {
+"name": "Nis",
 "pos": [
 21.90,
 43.32
 ],
-"id": "Nis"
+"id": "5"
 },
 {
+"name": "Pirot",
 "pos": [
 22.59,
 43.15
 ],
-"id": "Pirot"
+"id": "6"
 },
 {
+"name": "Leskovac",
 "pos": [
 21.95,
 43.00
 ],
-"id": "Leskovac"
+"id": "7"
 },
 {
+"name": "Kragujevac",
 "pos": [
 20.92,
 44.02
 ],
-"id": "Kragujevac"
+"id": "8"
 },
 {
+"name": "Novi Sad",
 "pos": [
 19.84,
 45.25
 ],
-"id": "Novi Sad"
+"id": "9"
 },
 {
+"name": "Beograd",
 "pos": [
 20.47,
 44.80
 ],
-"id": "Beograd"
+"id": "12"
 },
 {
+"name": "Pancevo",
 "pos": [
 20.64,
 44.87
 ],
-"id": "Pancevo"
+"id": "13"
 },
 {
+"name": "Kraljevo",
 "pos": [
 20.69,
 43.73
 ],
-"id": "Kraljevo"
+"id": "15"
 },
 {
+"name": "Raska",
 "pos": [
 20.62,
 43.29
 ],
-"id": "Raska"
+"id": "16"
 },
 {
+"name": "Subotica",
 "pos": [
 19.67,
 46.10
 ],
-"id": "Subotica"
+"id": "17"
 },
 {
+"name": "Sombor",
 "pos": [
 19.11,
 45.77
 ],
-"id": "Sombor"
+"id": "18"
 },
 {
+"name": "Zrenjanin",
 "pos": [
 20.38,
 45.38
 ],
-"id": "Zrenjanin"
+"id": "19"
 },
 {
+"name": "Sabac",
 "pos": [
 19.69,
 44.75
 ],
-"id": "Sabac"
+"id": "20"
 },
 {
+"name": "Valjevo",
 "pos": [
 19.90,
 44.28
 ],
-"id": "Valjevo"
+"id": "21"
 },
 {
+"name": "Uzice",
 "pos": [
 19.85,
 43.86
 ],
-"id": "Uzice"
+"id": "22"
 },
 {
+"name": "Cacak",
 "pos": [
 20.35,
 43.89
 ],
-"id": "Cacak"
+"id": "23"
 },
 {
+"name": "Velika Plana",
 "pos": [
 21.05,
 44.34
 ],
-"id": "Velika Plana"
+"id": "24"
 }
 ],
 "links": [
@@ -188,8 +209,8 @@
 "uni": 18.18,
 "deg": 9.77
 },
-"source": "Bor",
-"target": "Nis"
+"source": "0",
+"target": "5"
 },
 {
 "dist": 18.71,
@@ -201,8 +222,8 @@
 "uni": 18.18,
 "deg": 9.77
 },
-"source": "Novi Pazar",
-"target": "Raska"
+"source": "2",
+"target": "16"
 },
 {
 "dist": 54.04,
@@ -214,8 +235,8 @@
 "uni": 72.73,
 "deg": 69.92
 },
-"source": "Krustevac",
-"target": "Nis"
+"source": "3",
+"target": "5"
 },
 {
 "dist": 54.34,
@@ -227,8 +248,8 @@
 "uni": 81.82,
 "deg": 79.95
 },
-"source": "Krustevac",
-"target": "Kraljevo"
+"source": "3",
+"target": "15"
 },
 {
 "dist": 49.82,
@@ -240,8 +261,8 @@
 "uni": 18.18,
 "deg": 9.77
 },
-"source": "Vranje",
-"target": "Leskovac"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 58.53,
@@ -253,8 +274,8 @@
 "uni": 18.18,
 "deg": 9.77
 },
-"source": "Nis",
-"target": "Pirot"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 36.50,
@@ -266,8 +287,8 @@
 "uni": 34.55,
 "deg": 27.82
 },
-"source": "Nis",
-"target": "Leskovac"
+"source": "5",
+"target": "7"
 },
 {
 "dist": 37.17,
@@ -279,8 +300,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Kragujevac",
-"target": "Velika Plana"
+"source": "8",
+"target": "24"
 },
 {
 "dist": 37.13,
@@ -292,8 +313,8 @@
 "uni": 98.18,
 "deg": 97.99
 },
-"source": "Kragujevac",
-"target": "Kraljevo"
+"source": "8",
+"target": "15"
 },
 {
 "dist": 95.28,
@@ -305,8 +326,8 @@
 "uni": 18.18,
 "deg": 9.77
 },
-"source": "Novi Sad",
-"target": "Subotica"
+"source": "9",
+"target": "17"
 },
 {
 "dist": 81.04,
@@ -318,8 +339,8 @@
 "uni": 18.18,
 "deg": 9.77
 },
-"source": "Novi Sad",
-"target": "Sombor"
+"source": "9",
+"target": "18"
 },
 {
 "dist": 45.08,
@@ -331,8 +352,8 @@
 "uni": 18.18,
 "deg": 9.77
 },
-"source": "Novi Sad",
-"target": "Zrenjanin"
+"source": "9",
+"target": "19"
 },
 {
 "dist": 70.13,
@@ -344,8 +365,8 @@
 "uni": 61.82,
 "deg": 57.89
 },
-"source": "Novi Sad",
-"target": "Beograd"
+"source": "9",
+"target": "12"
 },
 {
 "dist": 15.69,
@@ -357,8 +378,8 @@
 "uni": 18.18,
 "deg": 9.77
 },
-"source": "Beograd",
-"target": "Pancevo"
+"source": "12",
+"target": "13"
 },
 {
 "dist": 61.53,
@@ -370,8 +391,8 @@
 "uni": 18.18,
 "deg": 9.77
 },
-"source": "Beograd",
-"target": "Sabac"
+"source": "12",
+"target": "20"
 },
 {
 "dist": 74.03,
@@ -383,8 +404,8 @@
 "uni": 49.09,
 "deg": 43.86
 },
-"source": "Beograd",
-"target": "Valjevo"
+"source": "12",
+"target": "21"
 },
 {
 "dist": 69.31,
@@ -396,8 +417,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Beograd",
-"target": "Velika Plana"
+"source": "12",
+"target": "24"
 },
 {
 "dist": 49.15,
@@ -409,8 +430,8 @@
 "uni": 34.55,
 "deg": 27.82
 },
-"source": "Kraljevo",
-"target": "Raska"
+"source": "15",
+"target": "16"
 },
 {
 "dist": 46.50,
@@ -422,8 +443,8 @@
 "uni": 34.55,
 "deg": 27.82
 },
-"source": "Valjevo",
-"target": "Uzice"
+"source": "21",
+"target": "22"
 },
 {
 "dist": 40.33,
@@ -435,8 +456,8 @@
 "uni": 18.18,
 "deg": 9.77
 },
-"source": "Uzice",
-"target": "Cacak"
+"source": "22",
+"target": "23"
 }
 ]
 }

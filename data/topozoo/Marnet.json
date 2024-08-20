@@ -30,123 +30,140 @@
 },
 "nodes": [
 {
+"name": "F. of Mining and Geology Stip",
 "pos": [
 22.20,
 41.75
 ],
-"id": "F. of Mining and Geology Stip"
+"id": "0"
 },
 {
+"name": "NOC and CampusSocial Sciences",
 "pos": [
 21.43,
 42.00
 ],
-"id": "NOC and CampusSocial Sciences"
+"id": "2"
 },
 {
+"name": "I. of Economy",
 "pos": [
 21.43,
 42.00
 ],
-"id": "I. of Economy"
+"id": "3"
 },
 {
+"name": "NationalBroadcastingcompany Comm. Tower",
 "pos": [
 21.43,
 42.00
 ],
-"id": "NationalBroadcastingcompany Comm. Tower"
+"id": "4"
 },
 {
+"name": "I of Political and Juridical Res",
 "pos": [
 21.43,
 42.00
 ],
-"id": "I of Political and Juridical Res"
+"id": "5"
 },
 {
+"name": "Campus Natural Sciences and Mathematics",
 "pos": [
 21.43,
 42.00
 ],
-"id": "Campus Natural Sciences and Mathematics"
+"id": "7"
 },
 {
+"name": "F. of Pedagogy",
 "pos": [
 21.43,
 42.00
 ],
-"id": "F. of Pedagogy"
+"id": "8"
 },
 {
+"name": "National and Univ Library",
 "pos": [
 21.43,
 42.00
 ],
-"id": "National and Univ Library"
+"id": "10"
 },
 {
+"name": "I. of Earthquake Engineering",
 "pos": [
 21.43,
 42.00
 ],
-"id": "I. of Earthquake Engineering"
+"id": "11"
 },
 {
+"name": "I. of National History",
 "pos": [
 21.43,
 42.00
 ],
-"id": "I. of National History"
+"id": "12"
 },
 {
+"name": "I. of Macedonian Literature",
 "pos": [
 21.43,
 42.00
 ],
-"id": "I. of Macedonian Literature"
+"id": "13"
 },
 {
+"name": "St Clement of Ohrid University in Bitola",
 "pos": [
 21.34,
 41.03
 ],
-"id": "St Clement of Ohrid University in Bitola"
+"id": "14"
 },
 {
+"name": "Several Ministries of the Government",
 "pos": [
 21.43,
 42.00
 ],
-"id": "Several Ministries of the Government"
+"id": "15"
 },
 {
+"name": "Campus Arch and Civil Eng",
 "pos": [
 21.43,
 42.00
 ],
-"id": "Campus Arch and Civil Eng"
+"id": "16"
 },
 {
+"name": "CampusTechnical",
 "pos": [
 21.43,
 42.00
 ],
-"id": "CampusTechnical"
+"id": "17"
 },
 {
+"name": "Campus Medicine",
 "pos": [
 21.43,
 42.00
 ],
-"id": "Campus Medicine"
+"id": "18"
 },
 {
+"name": "CampusBiotech. Sciences",
 "pos": [
 21.43,
 42.00
 ],
-"id": "CampusBiotech. Sciences"
+"id": "19"
 }
 ],
 "links": [
@@ -160,8 +177,8 @@
 "uni": 80.00,
 "deg": 26.70
 },
-"source": "F. of Mining and Geology Stip",
-"target": "NOC and CampusSocial Sciences"
+"source": "0",
+"target": "2"
 },
 {
 "dist": 0.00,
@@ -173,8 +190,8 @@
 "uni": 80.00,
 "deg": 26.70
 },
-"source": "NOC and CampusSocial Sciences",
-"target": "I. of Economy"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 0.00,
@@ -186,8 +203,8 @@
 "uni": 37.50,
 "deg": 100.00
 },
-"source": "NOC and CampusSocial Sciences",
-"target": "NationalBroadcastingcompany Comm. Tower"
+"source": "2",
+"target": "4"
 },
 {
 "dist": 0.00,
@@ -199,8 +216,8 @@
 "uni": 67.50,
 "deg": 42.05
 },
-"source": "NOC and CampusSocial Sciences",
-"target": "I of Political and Juridical Res"
+"source": "2",
+"target": "5"
 },
 {
 "dist": 0.00,
@@ -212,8 +229,8 @@
 "uni": 57.50,
 "deg": 34.66
 },
-"source": "NOC and CampusSocial Sciences",
-"target": "Campus Natural Sciences and Mathematics"
+"source": "2",
+"target": "7"
 },
 {
 "dist": 0.00,
@@ -225,8 +242,8 @@
 "uni": 57.50,
 "deg": 34.66
 },
-"source": "NOC and CampusSocial Sciences",
-"target": "National and Univ Library"
+"source": "2",
+"target": "10"
 },
 {
 "dist": 0.00,
@@ -238,21 +255,8 @@
 "uni": 57.50,
 "deg": 34.66
 },
-"source": "NOC and CampusSocial Sciences",
-"target": "I. of Earthquake Engineering"
-},
-{
-"dist": 0.00,
-"ecmp_fwd": {
-"uni": 80.00,
-"deg": 26.70
-},
-"ecmp_bwd": {
-"uni": 80.00,
-"deg": 26.70
-},
-"source": "NOC and CampusSocial Sciences",
-"target": "I. of National History"
+"source": "2",
+"target": "11"
 },
 {
 "dist": 0.00,
@@ -264,8 +268,21 @@
 "uni": 80.00,
 "deg": 26.70
 },
-"source": "NOC and CampusSocial Sciences",
-"target": "I. of Macedonian Literature"
+"source": "2",
+"target": "12"
+},
+{
+"dist": 0.00,
+"ecmp_fwd": {
+"uni": 80.00,
+"deg": 26.70
+},
+"ecmp_bwd": {
+"uni": 80.00,
+"deg": 26.70
+},
+"source": "2",
+"target": "13"
 },
 {
 "dist": 108.04,
@@ -277,8 +294,8 @@
 "uni": 80.00,
 "deg": 26.70
 },
-"source": "NOC and CampusSocial Sciences",
-"target": "St Clement of Ohrid University in Bitola"
+"source": "2",
+"target": "14"
 },
 {
 "dist": 0.00,
@@ -290,8 +307,8 @@
 "uni": 80.00,
 "deg": 26.70
 },
-"source": "NOC and CampusSocial Sciences",
-"target": "Several Ministries of the Government"
+"source": "2",
+"target": "15"
 },
 {
 "dist": 0.00,
@@ -303,8 +320,8 @@
 "uni": 57.50,
 "deg": 34.66
 },
-"source": "NOC and CampusSocial Sciences",
-"target": "Campus Arch and Civil Eng"
+"source": "2",
+"target": "16"
 },
 {
 "dist": 0.00,
@@ -316,8 +333,8 @@
 "uni": 100.00,
 "deg": 76.70
 },
-"source": "NOC and CampusSocial Sciences",
-"target": "CampusTechnical"
+"source": "2",
+"target": "17"
 },
 {
 "dist": 0.00,
@@ -329,8 +346,8 @@
 "uni": 57.50,
 "deg": 34.66
 },
-"source": "NOC and CampusSocial Sciences",
-"target": "Campus Medicine"
+"source": "2",
+"target": "18"
 },
 {
 "dist": 0.00,
@@ -342,8 +359,8 @@
 "uni": 57.50,
 "deg": 34.66
 },
-"source": "NOC and CampusSocial Sciences",
-"target": "CampusBiotech. Sciences"
+"source": "2",
+"target": "19"
 },
 {
 "dist": 0.00,
@@ -355,8 +372,8 @@
 "uni": 22.50,
 "deg": 17.61
 },
-"source": "NationalBroadcastingcompany Comm. Tower",
-"target": "Campus Natural Sciences and Mathematics"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 0.00,
@@ -368,8 +385,8 @@
 "uni": 22.50,
 "deg": 17.61
 },
-"source": "NationalBroadcastingcompany Comm. Tower",
-"target": "National and Univ Library"
+"source": "4",
+"target": "10"
 },
 {
 "dist": 0.00,
@@ -381,8 +398,8 @@
 "uni": 22.50,
 "deg": 17.61
 },
-"source": "NationalBroadcastingcompany Comm. Tower",
-"target": "I. of Earthquake Engineering"
+"source": "4",
+"target": "11"
 },
 {
 "dist": 0.00,
@@ -394,8 +411,8 @@
 "uni": 22.50,
 "deg": 17.61
 },
-"source": "NationalBroadcastingcompany Comm. Tower",
-"target": "Campus Arch and Civil Eng"
+"source": "4",
+"target": "16"
 },
 {
 "dist": 0.00,
@@ -407,8 +424,8 @@
 "uni": 42.50,
 "deg": 44.32
 },
-"source": "NationalBroadcastingcompany Comm. Tower",
-"target": "CampusTechnical"
+"source": "4",
+"target": "17"
 },
 {
 "dist": 0.00,
@@ -420,8 +437,8 @@
 "uni": 22.50,
 "deg": 17.61
 },
-"source": "NationalBroadcastingcompany Comm. Tower",
-"target": "Campus Medicine"
+"source": "4",
+"target": "18"
 },
 {
 "dist": 0.00,
@@ -433,8 +450,8 @@
 "uni": 22.50,
 "deg": 17.61
 },
-"source": "NationalBroadcastingcompany Comm. Tower",
-"target": "CampusBiotech. Sciences"
+"source": "4",
+"target": "19"
 },
 {
 "dist": 0.00,
@@ -446,8 +463,8 @@
 "uni": 12.50,
 "deg": 10.23
 },
-"source": "I of Political and Juridical Res",
-"target": "CampusTechnical"
+"source": "5",
+"target": "17"
 },
 {
 "dist": 0.00,
@@ -459,8 +476,8 @@
 "uni": 80.00,
 "deg": 26.70
 },
-"source": "F. of Pedagogy",
-"target": "CampusTechnical"
+"source": "8",
+"target": "17"
 }
 ]
 }

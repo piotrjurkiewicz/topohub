@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.03,
 "max_sdp_num": 2,
 "avg_sdp_hops": 4.28,
-"avg_sdp_len": 287.22,
+"avg_sdp_len": 288.14,
 "avg_adp_num": 1.86,
 "max_adp_num": 3,
 "avg_adp_hops": 6.55,
@@ -30,172 +30,196 @@
 },
 "nodes": [
 {
+"name": "Kouvola",
 "pos": [
 26.70,
 60.87
 ],
-"id": "Kouvola"
+"id": "0"
 },
 {
+"name": "Lahti",
 "pos": [
 25.66,
 60.98
 ],
-"id": "Lahti"
+"id": "1"
 },
 {
+"name": "Mikkeli",
 "pos": [
 27.27,
 61.69
 ],
-"id": "Mikkeli"
+"id": "2"
 },
 {
+"name": "Jyvaskyla",
 "pos": [
 25.73,
 62.23
 ],
-"id": "Jyvaskyla"
+"id": "3"
 },
 {
+"name": "Seinajoki",
 "pos": [
 22.83,
 62.80
 ],
-"id": "Seinajoki"
+"id": "4"
 },
 {
+"name": "Pori",
 "pos": [
 21.78,
 61.48
 ],
-"id": "Pori"
+"id": "5"
 },
 {
+"name": "Tampere",
 "pos": [
 23.79,
 61.50
 ],
-"id": "Tampere"
+"id": "6"
 },
 {
+"name": "Hameenlinna",
 "pos": [
 24.46,
 61.00
 ],
-"id": "Hameenlinna"
+"id": "7"
 },
 {
+"name": "Rauma",
 "pos": [
 21.51,
 61.13
 ],
-"id": "Rauma"
+"id": "8"
 },
 {
+"name": "Turku",
 "pos": [
 22.27,
 60.45
 ],
-"id": "Turku"
+"id": "9"
 },
 {
+"name": "Kotka",
 "pos": [
 26.92,
 60.47
 ],
-"id": "Kotka"
+"id": "10"
 },
 {
+"name": "Helsinki",
 "pos": [
 24.94,
 60.17
 ],
-"id": "Helsinki"
+"id": "11"
 },
 {
+"name": "Espoo",
 "pos": [
 24.65,
 60.21
 ],
-"id": "Espoo"
+"id": "12"
 },
 {
+"name": "Salo",
 "pos": [
 23.13,
 60.38
 ],
-"id": "Salo"
+"id": "13"
 },
 {
+"name": "Joensuu",
 "pos": [
 29.77,
 62.60
 ],
-"id": "Joensuu"
+"id": "16"
 },
 {
+"name": "Lappeenranta",
 "pos": [
 28.19,
 61.06
 ],
-"id": "Lappeenranta"
+"id": "17"
 },
 {
+"name": "Oulu",
 "pos": [
 25.47,
 65.01
 ],
-"id": "Oulu"
+"id": "18"
 },
 {
+"name": "Haukipudas",
 "pos": [
 25.35,
 65.18
 ],
-"id": "Haukipudas"
+"id": "19"
 },
 {
+"name": "Rovaniemi",
 "pos": [
 25.72,
 66.50
 ],
-"id": "Rovaniemi"
+"id": "20"
 },
 {
+"name": "Sodankyla",
 "pos": [
 26.60,
 67.42
 ],
-"id": "Sodankyla"
+"id": "21"
 },
 {
+"name": "Ristijavi",
 "pos": [
 28.22,
 64.50
 ],
-"id": "Ristijavi"
+"id": "22"
 },
 {
+"name": "Kokkola",
 "pos": [
 23.13,
 63.84
 ],
-"id": "Kokkola"
+"id": "23"
 },
 {
+"name": "Vaasa",
 "pos": [
 21.62,
 63.10
 ],
-"id": "Vaasa"
+"id": "24"
 },
 {
+"name": "Koupio",
 "pos": [
 27.68,
 62.89
 ],
-"id": "Koupio"
+"id": "25"
 }
 ],
 "links": [
@@ -209,8 +233,8 @@
 "uni": 56.84,
 "deg": 54.78
 },
-"source": "Kouvola",
-"target": "Lahti"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 46.03,
@@ -222,8 +246,8 @@
 "uni": 24.21,
 "deg": 10.56
 },
-"source": "Kouvola",
-"target": "Kotka"
+"source": "0",
+"target": "10"
 },
 {
 "dist": 96.40,
@@ -235,8 +259,8 @@
 "uni": 57.89,
 "deg": 60.16
 },
-"source": "Kouvola",
-"target": "Mikkeli"
+"source": "0",
+"target": "2"
 },
 {
 "dist": 83.16,
@@ -248,8 +272,8 @@
 "uni": 21.05,
 "deg": 17.93
 },
-"source": "Kouvola",
-"target": "Lappeenranta"
+"source": "0",
+"target": "17"
 },
 {
 "dist": 98.76,
@@ -261,8 +285,8 @@
 "uni": 50.53,
 "deg": 48.41
 },
-"source": "Lahti",
-"target": "Helsinki"
+"source": "1",
+"target": "11"
 },
 {
 "dist": 135.52,
@@ -274,8 +298,8 @@
 "uni": 86.32,
 "deg": 89.44
 },
-"source": "Mikkeli",
-"target": "Koupio"
+"source": "2",
+"target": "25"
 },
 {
 "dist": 100.72,
@@ -287,8 +311,8 @@
 "uni": 49.47,
 "deg": 47.01
 },
-"source": "Mikkeli",
-"target": "Jyvaskyla"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 130.71,
@@ -300,8 +324,8 @@
 "uni": 41.05,
 "deg": 39.04
 },
-"source": "Jyvaskyla",
-"target": "Tampere"
+"source": "3",
+"target": "6"
 },
 {
 "dist": 69.84,
@@ -313,8 +337,8 @@
 "uni": 50.53,
 "deg": 45.02
 },
-"source": "Seinajoki",
-"target": "Vaasa"
+"source": "4",
+"target": "24"
 },
 {
 "dist": 156.28,
@@ -326,8 +350,8 @@
 "uni": 45.26,
 "deg": 39.44
 },
-"source": "Seinajoki",
-"target": "Pori"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 42.19,
@@ -339,8 +363,8 @@
 "uni": 45.26,
 "deg": 38.65
 },
-"source": "Pori",
-"target": "Rauma"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 66.67,
@@ -352,8 +376,8 @@
 "uni": 34.74,
 "deg": 32.67
 },
-"source": "Tampere",
-"target": "Hameenlinna"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 88.55,
@@ -365,8 +389,8 @@
 "uni": 32.63,
 "deg": 29.88
 },
-"source": "Hameenlinna",
-"target": "Espoo"
+"source": "7",
+"target": "12"
 },
 {
 "dist": 85.67,
@@ -378,8 +402,8 @@
 "uni": 47.37,
 "deg": 40.24
 },
-"source": "Rauma",
-"target": "Turku"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 48.08,
@@ -391,8 +415,8 @@
 "uni": 50.53,
 "deg": 43.43
 },
-"source": "Turku",
-"target": "Salo"
+"source": "9",
+"target": "13"
 },
 {
 "dist": 16.16,
@@ -404,8 +428,8 @@
 "uni": 46.32,
 "deg": 43.63
 },
-"source": "Helsinki",
-"target": "Espoo"
+"source": "11",
+"target": "12"
 },
 {
 "dist": 86.03,
@@ -417,8 +441,8 @@
 "uni": 57.89,
 "deg": 50.60
 },
-"source": "Espoo",
-"target": "Salo"
+"source": "12",
+"target": "13"
 },
 {
 "dist": 190.39,
@@ -430,8 +454,8 @@
 "uni": 18.95,
 "deg": 16.33
 },
-"source": "Joensuu",
-"target": "Lappeenranta"
+"source": "16",
+"target": "17"
 },
 {
 "dist": 111.29,
@@ -443,8 +467,8 @@
 "uni": 25.26,
 "deg": 21.91
 },
-"source": "Joensuu",
-"target": "Koupio"
+"source": "16",
+"target": "25"
 },
 {
 "dist": 19.05,
@@ -456,8 +480,8 @@
 "uni": 22.63,
 "deg": 18.92
 },
-"source": "Oulu",
-"target": "Haukipudas"
+"source": "18",
+"target": "19"
 },
 {
 "dist": 142.27,
@@ -469,8 +493,8 @@
 "uni": 67.89,
 "deg": 68.13
 },
-"source": "Oulu",
-"target": "Ristijavi"
+"source": "18",
+"target": "22"
 },
 {
 "dist": 172.15,
@@ -482,8 +506,8 @@
 "uni": 67.37,
 "deg": 60.96
 },
-"source": "Oulu",
-"target": "Kokkola"
+"source": "18",
+"target": "23"
 },
 {
 "dist": 148.13,
@@ -495,8 +519,8 @@
 "uni": 16.32,
 "deg": 13.75
 },
-"source": "Haukipudas",
-"target": "Rovaniemi"
+"source": "19",
+"target": "20"
 },
 {
 "dist": 108.97,
@@ -508,8 +532,8 @@
 "uni": 24.21,
 "deg": 10.56
 },
-"source": "Rovaniemi",
-"target": "Sodankyla"
+"source": "20",
+"target": "21"
 },
 {
 "dist": 250.52,
@@ -521,8 +545,8 @@
 "uni": 43.68,
 "deg": 38.45
 },
-"source": "Rovaniemi",
-"target": "Ristijavi"
+"source": "20",
+"target": "22"
 },
 {
 "dist": 180.78,
@@ -534,8 +558,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Ristijavi",
-"target": "Koupio"
+"source": "22",
+"target": "25"
 },
 {
 "dist": 111.73,
@@ -547,8 +571,8 @@
 "uni": 57.89,
 "deg": 52.19
 },
-"source": "Kokkola",
-"target": "Vaasa"
+"source": "23",
+"target": "24"
 }
 ]
 }

@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.01,
 "max_sdp_num": 2,
 "avg_sdp_hops": 5.39,
-"avg_sdp_len": 317.37,
+"avg_sdp_len": 318.30,
 "avg_adp_num": 1.87,
 "max_adp_num": 3,
 "avg_adp_hops": 7.54,
@@ -30,200 +30,228 @@
 },
 "nodes": [
 {
+"name": "Cilacap",
 "pos": [
 109.01,
 -7.73
 ],
-"id": "Cilacap"
+"id": "0"
 },
 {
+"name": "Purwokerto",
 "pos": [
 109.23,
 -7.42
 ],
-"id": "Purwokerto"
+"id": "1"
 },
 {
+"name": "Sukabumi",
 "pos": [
 106.93,
 -6.92
 ],
-"id": "Sukabumi"
+"id": "2"
 },
 {
+"name": "Tasikmalaya",
 "pos": [
 108.20,
 -7.33
 ],
-"id": "Tasikmalaya"
+"id": "3"
 },
 {
+"name": "Pekalongan",
 "pos": [
 109.68,
 -6.89
 ],
-"id": "Pekalongan"
+"id": "4"
 },
 {
+"name": "Semarang",
 "pos": [
 110.42,
 -6.99
 ],
-"id": "Semarang"
+"id": "5"
 },
 {
+"name": "Magelang",
 "pos": [
 110.22,
 -7.47
 ],
-"id": "Magelang"
+"id": "6"
 },
 {
+"name": "Yogyakarta",
 "pos": [
 110.36,
 -7.78
 ],
-"id": "Yogyakarta"
+"id": "7"
 },
 {
+"name": "Kudus",
 "pos": [
 110.84,
 -6.80
 ],
-"id": "Kudus"
+"id": "8"
 },
 {
+"name": "Surakarta",
 "pos": [
 110.83,
 -7.56
 ],
-"id": "Surakarta"
+"id": "9"
 },
 {
+"name": "Nusa Dua",
 "pos": [
 123.77,
 -9.60
 ],
-"id": "Nusa Dua"
+"id": "10"
 },
 {
+"name": "Surabaya",
 "pos": [
 112.75,
 -7.25
 ],
-"id": "Surabaya"
+"id": "11"
 },
 {
+"name": "Kediri",
 "pos": [
 112.02,
 -7.82
 ],
-"id": "Kediri"
+"id": "12"
 },
 {
+"name": "Madium",
 "pos": [
 111.52,
 -7.63
 ],
-"id": "Madium"
+"id": "13"
 },
 {
+"name": "Tuban",
 "pos": [
 112.05,
 -6.90
 ],
-"id": "Tuban"
+"id": "14"
 },
 {
+"name": "Banyunwangi",
 "pos": [
 114.36,
 -8.22
 ],
-"id": "Banyunwangi"
+"id": "15"
 },
 {
+"name": "Jember",
 "pos": [
 113.70,
 -8.17
 ],
-"id": "Jember"
+"id": "16"
 },
 {
+"name": "Probolinggo",
 "pos": [
 113.22,
 -7.75
 ],
-"id": "Probolinggo"
+"id": "17"
 },
 {
+"name": "Malang",
 "pos": [
 112.63,
 -7.98
 ],
-"id": "Malang"
+"id": "18"
 },
 {
+"name": "Cibaliung",
 "pos": [
 105.85,
 -6.77
 ],
-"id": "Cibaliung"
+"id": "20"
 },
 {
+"name": "Tegal",
 "pos": [
 109.14,
 -6.87
 ],
-"id": "Tegal"
+"id": "21"
 },
 {
+"name": "Cirebon",
 "pos": [
 108.56,
 -6.71
 ],
-"id": "Cirebon"
+"id": "22"
 },
 {
+"name": "Bandung",
 "pos": [
 107.62,
 -6.90
 ],
-"id": "Bandung"
+"id": "23"
 },
 {
+"name": "Karawang",
 "pos": [
 107.31,
 -6.30
 ],
-"id": "Karawang"
+"id": "24"
 },
 {
+"name": "Jakarta",
 "pos": [
 106.85,
 -6.21
 ],
-"id": "Jakarta"
+"id": "25"
 },
 {
+"name": "Bogor",
 "pos": [
 106.79,
 -6.59
 ],
-"id": "Bogor"
+"id": "26"
 },
 {
+"name": "Serang",
 "pos": [
 106.15,
 -6.11
 ],
-"id": "Serang"
+"id": "27"
 },
 {
+"name": "Anyer",
 "pos": [
 105.88,
 -6.07
 ],
-"id": "Anyer"
+"id": "28"
 }
 ],
 "links": [
@@ -237,8 +265,8 @@
 "uni": 37.32,
 "deg": 32.30
 },
-"source": "Cilacap",
-"target": "Purwokerto"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 99.39,
@@ -250,8 +278,8 @@
 "uni": 35.21,
 "deg": 30.74
 },
-"source": "Cilacap",
-"target": "Tasikmalaya"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 108.59,
@@ -263,8 +291,8 @@
 "uni": 39.44,
 "deg": 33.85
 },
-"source": "Purwokerto",
-"target": "Magelang"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 39.07,
@@ -276,8 +304,8 @@
 "uni": 40.49,
 "deg": 40.47
 },
-"source": "Sukabumi",
-"target": "Bogor"
+"source": "2",
+"target": "26"
 },
 {
 "dist": 76.42,
@@ -289,8 +317,8 @@
 "uni": 52.46,
 "deg": 50.32
 },
-"source": "Sukabumi",
-"target": "Bandung"
+"source": "2",
+"target": "23"
 },
 {
 "dist": 79.99,
@@ -302,8 +330,8 @@
 "uni": 37.32,
 "deg": 33.07
 },
-"source": "Tasikmalaya",
-"target": "Bandung"
+"source": "3",
+"target": "23"
 },
 {
 "dist": 59.13,
@@ -315,8 +343,8 @@
 "uni": 97.89,
 "deg": 98.44
 },
-"source": "Pekalongan",
-"target": "Tegal"
+"source": "4",
+"target": "21"
 },
 {
 "dist": 83.08,
@@ -328,8 +356,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Pekalongan",
-"target": "Semarang"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 50.91,
@@ -341,8 +369,8 @@
 "uni": 56.34,
 "deg": 53.05
 },
-"source": "Semarang",
-"target": "Kudus"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 77.33,
@@ -354,8 +382,8 @@
 "uni": 61.27,
 "deg": 61.35
 },
-"source": "Semarang",
-"target": "Surakarta"
+"source": "5",
+"target": "9"
 },
 {
 "dist": 38.14,
@@ -367,8 +395,8 @@
 "uni": 41.55,
 "deg": 35.41
 },
-"source": "Magelang",
-"target": "Yogyakarta"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 57.70,
@@ -380,8 +408,8 @@
 "uni": 43.66,
 "deg": 36.96
 },
-"source": "Yogyakarta",
-"target": "Surakarta"
+"source": "7",
+"target": "9"
 },
 {
 "dist": 133.99,
@@ -393,8 +421,8 @@
 "uni": 48.59,
 "deg": 46.30
 },
-"source": "Kudus",
-"target": "Tuban"
+"source": "8",
+"target": "14"
 },
 {
 "dist": 76.76,
@@ -406,8 +434,8 @@
 "uni": 71.83,
 "deg": 67.83
 },
-"source": "Surakarta",
-"target": "Madium"
+"source": "9",
+"target": "13"
 },
 {
 "dist": 1044.76,
@@ -419,8 +447,8 @@
 "uni": 19.01,
 "deg": 8.17
 },
-"source": "Nusa Dua",
-"target": "Banyunwangi"
+"source": "10",
+"target": "15"
 },
 {
 "dist": 76.07,
@@ -432,8 +460,8 @@
 "uni": 35.21,
 "deg": 30.74
 },
-"source": "Surabaya",
-"target": "Probolinggo"
+"source": "11",
+"target": "17"
 },
 {
 "dist": 102.65,
@@ -445,8 +473,8 @@
 "uni": 14.79,
 "deg": 14.92
 },
-"source": "Surabaya",
-"target": "Kediri"
+"source": "11",
+"target": "12"
 },
 {
 "dist": 86.56,
@@ -458,8 +486,8 @@
 "uni": 40.85,
 "deg": 39.56
 },
-"source": "Surabaya",
-"target": "Tuban"
+"source": "11",
+"target": "14"
 },
 {
 "dist": 70.00,
@@ -471,8 +499,8 @@
 "uni": 45.77,
 "deg": 39.30
 },
-"source": "Kediri",
-"target": "Malang"
+"source": "12",
+"target": "18"
 },
 {
 "dist": 58.15,
@@ -484,8 +512,8 @@
 "uni": 64.08,
 "deg": 61.09
 },
-"source": "Kediri",
-"target": "Madium"
+"source": "12",
+"target": "13"
 },
 {
 "dist": 73.08,
@@ -497,8 +525,8 @@
 "uni": 36.62,
 "deg": 23.74
 },
-"source": "Banyunwangi",
-"target": "Jember"
+"source": "15",
+"target": "16"
 },
 {
 "dist": 70.56,
@@ -510,8 +538,8 @@
 "uni": 21.83,
 "deg": 18.81
 },
-"source": "Jember",
-"target": "Probolinggo"
+"source": "16",
+"target": "17"
 },
 {
 "dist": 119.94,
@@ -523,8 +551,8 @@
 "uni": 32.39,
 "deg": 27.37
 },
-"source": "Jember",
-"target": "Malang"
+"source": "16",
+"target": "18"
 },
 {
 "dist": 105.50,
@@ -536,8 +564,8 @@
 "uni": 26.41,
 "deg": 22.57
 },
-"source": "Cibaliung",
-"target": "Bogor"
+"source": "20",
+"target": "26"
 },
 {
 "dist": 77.95,
@@ -549,8 +577,8 @@
 "uni": 10.21,
 "deg": 8.56
 },
-"source": "Cibaliung",
-"target": "Anyer"
+"source": "20",
+"target": "28"
 },
 {
 "dist": 66.92,
@@ -562,8 +590,8 @@
 "uni": 95.77,
 "deg": 96.89
 },
-"source": "Tegal",
-"target": "Cirebon"
+"source": "21",
+"target": "22"
 },
 {
 "dist": 105.94,
@@ -575,8 +603,8 @@
 "uni": 93.66,
 "deg": 95.33
 },
-"source": "Cirebon",
-"target": "Bandung"
+"source": "22",
+"target": "23"
 },
 {
 "dist": 75.22,
@@ -588,8 +616,8 @@
 "uni": 52.46,
 "deg": 50.32
 },
-"source": "Bandung",
-"target": "Karawang"
+"source": "23",
+"target": "24"
 },
 {
 "dist": 51.85,
@@ -601,8 +629,8 @@
 "uni": 40.49,
 "deg": 40.47
 },
-"source": "Karawang",
-"target": "Jakarta"
+"source": "24",
+"target": "25"
 },
 {
 "dist": 42.70,
@@ -614,8 +642,8 @@
 "uni": 4.93,
 "deg": 5.32
 },
-"source": "Jakarta",
-"target": "Bogor"
+"source": "25",
+"target": "26"
 },
 {
 "dist": 77.64,
@@ -627,8 +655,8 @@
 "uni": 26.41,
 "deg": 22.57
 },
-"source": "Jakarta",
-"target": "Serang"
+"source": "25",
+"target": "27"
 },
 {
 "dist": 30.00,
@@ -640,8 +668,8 @@
 "uni": 10.21,
 "deg": 8.56
 },
-"source": "Serang",
-"target": "Anyer"
+"source": "27",
+"target": "28"
 }
 ]
 }

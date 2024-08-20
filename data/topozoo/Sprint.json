@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.25,
 "max_sdp_num": 3,
 "avg_sdp_hops": 1.89,
-"avg_sdp_len": 1736.72,
+"avg_sdp_len": 1899.09,
 "avg_adp_num": 2.29,
 "max_adp_num": 5,
 "avg_adp_hops": 2.43,
@@ -30,81 +30,92 @@
 },
 "nodes": [
 {
+"name": "Cheyenne",
 "pos": [
 -104.82,
 41.14
 ],
-"id": "Cheyenne"
+"id": "0"
 },
 {
+"name": "Atlanta",
 "pos": [
 -84.39,
 33.75
 ],
-"id": "Atlanta"
+"id": "1"
 },
 {
+"name": "Boulder",
 "pos": [
 -105.27,
 40.01
 ],
-"id": "Boulder"
+"id": "2"
 },
 {
+"name": "Seattle",
 "pos": [
 -122.33,
 47.61
 ],
-"id": "Seattle"
+"id": "3"
 },
 {
+"name": "Stockton",
 "pos": [
 -121.29,
 37.96
 ],
-"id": "Stockton"
+"id": "4"
 },
 {
+"name": "Anaheim",
 "pos": [
 -117.91,
 33.84
 ],
-"id": "Anaheim"
+"id": "5"
 },
 {
+"name": "Fort Worth",
 "pos": [
 -97.32,
 32.73
 ],
-"id": "Fort Worth"
+"id": "6"
 },
 {
+"name": "Kansas City",
 "pos": [
 -94.63,
 39.11
 ],
-"id": "Kansas City"
+"id": "7"
 },
 {
+"name": "Chicago",
 "pos": [
 -87.65,
 41.85
 ],
-"id": "Chicago"
+"id": "8"
 },
 {
+"name": "New York (Pennsauken)",
 "pos": [
 -74.01,
 40.71
 ],
-"id": "New York (Pennsauken)"
+"id": "9"
 },
 {
+"name": "Washington, DC",
 "pos": [
 -77.04,
 38.90
 ],
-"id": "Washington, DC"
+"id": "10"
 }
 ],
 "links": [
@@ -118,8 +129,8 @@
 "uni": 88.24,
 "deg": 32.92
 },
-"source": "Cheyenne",
-"target": "Boulder"
+"source": "0",
+"target": "2"
 },
 {
 "dist": 1453.80,
@@ -131,8 +142,8 @@
 "uni": 95.59,
 "deg": 75.24
 },
-"source": "Cheyenne",
-"target": "Stockton"
+"source": "0",
+"target": "4"
 },
 {
 "dist": 895.06,
@@ -144,8 +155,8 @@
 "uni": 69.12,
 "deg": 60.19
 },
-"source": "Cheyenne",
-"target": "Kansas City"
+"source": "0",
+"target": "7"
 },
 {
 "dist": 872.17,
@@ -157,8 +168,8 @@
 "uni": 60.29,
 "deg": 45.77
 },
-"source": "Atlanta",
-"target": "Washington, DC"
+"source": "1",
+"target": "10"
 },
 {
 "dist": 1207.73,
@@ -170,8 +181,8 @@
 "uni": 27.94,
 "deg": 18.18
 },
-"source": "Atlanta",
-"target": "Fort Worth"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 2789.45,
@@ -183,8 +194,8 @@
 "uni": 25.00,
 "deg": 20.38
 },
-"source": "Seattle",
-"target": "Chicago"
+"source": "3",
+"target": "8"
 },
 {
 "dist": 1076.50,
@@ -196,8 +207,8 @@
 "uni": 63.24,
 "deg": 43.57
 },
-"source": "Seattle",
-"target": "Stockton"
+"source": "3",
+"target": "4"
 },
 {
 "dist": 550.16,
@@ -209,8 +220,8 @@
 "uni": 64.71,
 "deg": 54.23
 },
-"source": "Stockton",
-"target": "Anaheim"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 2884.04,
@@ -222,8 +233,8 @@
 "uni": 35.29,
 "deg": 53.92
 },
-"source": "Stockton",
-"target": "Chicago"
+"source": "4",
+"target": "8"
 },
 {
 "dist": 4030.10,
@@ -235,8 +246,8 @@
 "uni": 39.71,
 "deg": 36.68
 },
-"source": "Stockton",
-"target": "New York (Pennsauken)"
+"source": "4",
+"target": "9"
 },
 {
 "dist": 3819.12,
@@ -248,8 +259,8 @@
 "uni": 67.65,
 "deg": 97.49
 },
-"source": "Stockton",
-"target": "Washington, DC"
+"source": "4",
+"target": "10"
 },
 {
 "dist": 1915.68,
@@ -261,8 +272,8 @@
 "uni": 38.24,
 "deg": 37.30
 },
-"source": "Anaheim",
-"target": "Fort Worth"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 1948.90,
@@ -274,8 +285,8 @@
 "uni": 28.68,
 "deg": 47.96
 },
-"source": "Fort Worth",
-"target": "Washington, DC"
+"source": "6",
+"target": "10"
 },
 {
 "dist": 750.76,
@@ -287,8 +298,8 @@
 "uni": 58.82,
 "deg": 63.32
 },
-"source": "Fort Worth",
-"target": "Kansas City"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 663.81,
@@ -300,8 +311,8 @@
 "uni": 52.94,
 "deg": 70.85
 },
-"source": "Kansas City",
-"target": "Chicago"
+"source": "7",
+"target": "8"
 },
 {
 "dist": 1518.27,
@@ -313,8 +324,8 @@
 "uni": 38.24,
 "deg": 54.55
 },
-"source": "Kansas City",
-"target": "Washington, DC"
+"source": "7",
+"target": "10"
 },
 {
 "dist": 1146.16,
@@ -326,8 +337,8 @@
 "uni": 22.06,
 "deg": 27.27
 },
-"source": "Chicago",
-"target": "New York (Pennsauken)"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 328.58,
@@ -339,8 +350,8 @@
 "uni": 35.29,
 "deg": 44.20
 },
-"source": "New York (Pennsauken)",
-"target": "Washington, DC"
+"source": "9",
+"target": "10"
 }
 ]
 }

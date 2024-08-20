@@ -30,130 +30,148 @@
 },
 "nodes": [
 {
+"name": "Ft. Pierce",
 "pos": [
 -80.33,
 27.45
 ],
-"id": "Ft. Pierce"
+"id": "0"
 },
 {
+"name": "Melbourne",
 "pos": [
 -80.61,
 28.08
 ],
-"id": "Melbourne"
+"id": "1"
 },
 {
+"name": "Lake Alfred",
 "pos": [
 -81.72,
 28.09
 ],
-"id": "Lake Alfred"
+"id": "2"
 },
 {
+"name": "Orlando",
 "pos": [
 -81.38,
 28.54
 ],
-"id": "Orlando"
+"id": "3"
 },
 {
+"name": "West Palm Beach",
 "pos": [
 -80.05,
 26.72
 ],
-"id": "West Palm Beach"
+"id": "4"
 },
 {
+"name": "Tampa",
 "pos": [
 -82.46,
 27.95
 ],
-"id": "Tampa"
+"id": "5"
 },
 {
+"name": "Miami",
 "pos": [
 -80.19,
 25.77
 ],
-"id": "Miami"
+"id": "6"
 },
 {
+"name": "Ft. Lauderdale",
 "pos": [
 -80.14,
 26.12
 ],
-"id": "Ft. Lauderdale"
+"id": "7"
 },
 {
+"name": "Flovilla",
 "pos": [
 -83.90,
 33.25
 ],
-"id": "Flovilla"
+"id": "8"
 },
 {
+"name": "Atlanta",
 "pos": [
 -84.39,
 33.75
 ],
-"id": "Atlanta"
+"id": "9"
 },
 {
+"name": "Tarrytown",
 "pos": [
 -82.56,
 32.32
 ],
-"id": "Tarrytown"
+"id": "10"
 },
 {
+"name": "Gordon",
 "pos": [
 -83.33,
 32.88
 ],
-"id": "Gordon"
+"id": "11"
 },
 {
+"name": "Newell",
 "pos": [
 -82.02,
 30.94
 ],
-"id": "Newell"
+"id": "12"
 },
 {
+"name": "Surrency",
 "pos": [
 -82.20,
 31.72
 ],
-"id": "Surrency"
+"id": "13"
 },
 {
+"name": "St. Augustine",
 "pos": [
 -81.31,
 29.89
 ],
-"id": "St. Augustine"
+"id": "14"
 },
 {
+"name": "Jacksonville",
 "pos": [
 -81.66,
 30.33
 ],
-"id": "Jacksonville"
+"id": "15"
 },
 {
+"name": "Titusville",
 "pos": [
 -80.81,
 28.61
 ],
-"id": "Titusville"
+"id": "16"
 },
 {
+"name": "Daytona Beach",
 "pos": [
 -81.02,
 29.21
 ],
-"id": "Daytona Beach"
+"id": "17"
 }
 ],
 "links": [
@@ -167,8 +185,8 @@
 "uni": 70.00,
 "deg": 66.32
 },
-"source": "Ft. Pierce",
-"target": "Melbourne"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 85.70,
@@ -180,8 +198,8 @@
 "uni": 56.25,
 "deg": 50.88
 },
-"source": "Ft. Pierce",
-"target": "West Palm Beach"
+"source": "0",
+"target": "4"
 },
 {
 "dist": 61.95,
@@ -193,8 +211,8 @@
 "uni": 81.25,
 "deg": 78.95
 },
-"source": "Melbourne",
-"target": "Titusville"
+"source": "1",
+"target": "16"
 },
 {
 "dist": 60.01,
@@ -206,8 +224,8 @@
 "uni": 40.00,
 "deg": 32.63
 },
-"source": "Lake Alfred",
-"target": "Orlando"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 73.94,
@@ -219,8 +237,8 @@
 "uni": 21.25,
 "deg": 11.58
 },
-"source": "Lake Alfred",
-"target": "Tampa"
+"source": "2",
+"target": "5"
 },
 {
 "dist": 82.46,
@@ -232,8 +250,8 @@
 "uni": 56.25,
 "deg": 50.88
 },
-"source": "Orlando",
-"target": "Daytona Beach"
+"source": "3",
+"target": "17"
 },
 {
 "dist": 66.57,
@@ -245,8 +263,8 @@
 "uni": 40.00,
 "deg": 32.63
 },
-"source": "West Palm Beach",
-"target": "Ft. Lauderdale"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 39.04,
@@ -258,8 +276,8 @@
 "uni": 21.25,
 "deg": 11.58
 },
-"source": "Miami",
-"target": "Ft. Lauderdale"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 71.38,
@@ -271,8 +289,8 @@
 "uni": 21.25,
 "deg": 11.58
 },
-"source": "Flovilla",
-"target": "Atlanta"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 67.03,
@@ -284,8 +302,8 @@
 "uni": 40.00,
 "deg": 32.63
 },
-"source": "Flovilla",
-"target": "Gordon"
+"source": "8",
+"target": "11"
 },
 {
 "dist": 95.78,
@@ -297,8 +315,8 @@
 "uni": 56.25,
 "deg": 50.88
 },
-"source": "Tarrytown",
-"target": "Gordon"
+"source": "10",
+"target": "11"
 },
 {
 "dist": 74.44,
@@ -310,8 +328,8 @@
 "uni": 70.00,
 "deg": 66.32
 },
-"source": "Tarrytown",
-"target": "Surrency"
+"source": "10",
+"target": "13"
 },
 {
 "dist": 88.59,
@@ -323,8 +341,8 @@
 "uni": 81.25,
 "deg": 78.95
 },
-"source": "Newell",
-"target": "Surrency"
+"source": "12",
+"target": "13"
 },
 {
 "dist": 76.32,
@@ -336,8 +354,8 @@
 "uni": 90.00,
 "deg": 88.77
 },
-"source": "Newell",
-"target": "Jacksonville"
+"source": "12",
+"target": "15"
 },
 {
 "dist": 81.13,
@@ -349,8 +367,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "St. Augustine",
-"target": "Daytona Beach"
+"source": "14",
+"target": "17"
 },
 {
 "dist": 58.69,
@@ -362,8 +380,8 @@
 "uni": 96.25,
 "deg": 95.79
 },
-"source": "St. Augustine",
-"target": "Jacksonville"
+"source": "14",
+"target": "15"
 },
 {
 "dist": 69.80,
@@ -375,8 +393,8 @@
 "uni": 90.00,
 "deg": 88.77
 },
-"source": "Titusville",
-"target": "Daytona Beach"
+"source": "16",
+"target": "17"
 }
 ]
 }

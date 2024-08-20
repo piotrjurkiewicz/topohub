@@ -30,137 +30,156 @@
 },
 "nodes": [
 {
+"name": "Montreal",
 "pos": [
 -73.59,
 45.51
 ],
-"id": "Montreal"
+"id": "0"
 },
 {
+"name": "Quebec",
 "pos": [
 -71.21,
 46.81
 ],
-"id": "Quebec"
+"id": "1"
 },
 {
+"name": "London",
 "pos": [
 -81.23,
 42.98
 ],
-"id": "London"
+"id": "2"
 },
 {
+"name": "Moncton",
 "pos": [
 -64.80,
 46.12
 ],
-"id": "Moncton"
+"id": "4"
 },
 {
+"name": "Halifax",
 "pos": [
 -63.57,
 44.65
 ],
-"id": "Halifax"
+"id": "5"
 },
 {
+"name": "Sherbrooke",
 "pos": [
 -71.90,
 45.40
 ],
-"id": "Sherbrooke"
+"id": "6"
 },
 {
+"name": "Saint John",
 "pos": [
 -66.07,
 45.27
 ],
-"id": "Saint John"
+"id": "7"
 },
 {
+"name": "Sydney",
 "pos": [
 -60.18,
 46.14
 ],
-"id": "Sydney"
+"id": "8"
 },
 {
+"name": "Yarmouth",
 "pos": [
 -66.12,
 43.83
 ],
-"id": "Yarmouth"
+"id": "9"
 },
 {
+"name": "Victoria",
 "pos": [
 -123.37,
 48.43
 ],
-"id": "Victoria"
+"id": "12"
 },
 {
+"name": "Toronto",
 "pos": [
 -79.42,
 43.70
 ],
-"id": "Toronto"
+"id": "13"
 },
 {
+"name": "Hamilton",
 "pos": [
 -79.95,
 43.23
 ],
-"id": "Hamilton"
+"id": "14"
 },
 {
+"name": "Vancouver",
 "pos": [
 -123.12,
 49.25
 ],
-"id": "Vancouver"
+"id": "15"
 },
 {
+"name": "Calgary",
 "pos": [
 -114.09,
 51.05
 ],
-"id": "Calgary"
+"id": "17"
 },
 {
+"name": "Edmonton",
 "pos": [
 -113.47,
 53.55
 ],
-"id": "Edmonton"
+"id": "18"
 },
 {
+"name": "Lethbridge",
 "pos": [
 -112.82,
 49.70
 ],
-"id": "Lethbridge"
+"id": "19"
 },
 {
+"name": "Winnipeg",
 "pos": [
 -97.15,
 49.88
 ],
-"id": "Winnipeg"
+"id": "20"
 },
 {
+"name": "Ottawa",
 "pos": [
 -75.70,
 45.41
 ],
-"id": "Ottawa"
+"id": "21"
 },
 {
+"name": "Kitchener",
 "pos": [
 -80.48,
 43.45
 ],
-"id": "Kitchener"
+"id": "22"
 }
 ],
 "links": [
@@ -174,8 +193,8 @@
 "uni": 25.71,
 "deg": 14.18
 },
-"source": "Montreal",
-"target": "Quebec"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 684.12,
@@ -187,8 +206,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Montreal",
-"target": "Moncton"
+"source": "0",
+"target": "4"
 },
 {
 "dist": 503.34,
@@ -200,8 +219,8 @@
 "uni": 45.71,
 "deg": 49.04
 },
-"source": "Montreal",
-"target": "Toronto"
+"source": "0",
+"target": "13"
 },
 {
 "dist": 132.31,
@@ -213,8 +232,8 @@
 "uni": 25.71,
 "deg": 14.18
 },
-"source": "Montreal",
-"target": "Sherbrooke"
+"source": "0",
+"target": "6"
 },
 {
 "dist": 164.99,
@@ -226,8 +245,8 @@
 "uni": 80.00,
 "deg": 85.82
 },
-"source": "Montreal",
-"target": "Ottawa"
+"source": "0",
+"target": "21"
 },
 {
 "dist": 167.18,
@@ -239,8 +258,8 @@
 "uni": 25.71,
 "deg": 14.18
 },
-"source": "London",
-"target": "Toronto"
+"source": "2",
+"target": "13"
 },
 {
 "dist": 189.58,
@@ -252,8 +271,8 @@
 "uni": 68.57,
 "deg": 63.22
 },
-"source": "Moncton",
-"target": "Halifax"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 135.89,
@@ -265,8 +284,8 @@
 "uni": 25.71,
 "deg": 14.18
 },
-"source": "Moncton",
-"target": "Saint John"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 312.30,
@@ -278,8 +297,8 @@
 "uni": 25.71,
 "deg": 14.18
 },
-"source": "Halifax",
-"target": "Sydney"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 221.81,
@@ -291,8 +310,8 @@
 "uni": 25.71,
 "deg": 14.18
 },
-"source": "Halifax",
-"target": "Yarmouth"
+"source": "5",
+"target": "9"
 },
 {
 "dist": 92.67,
@@ -304,8 +323,8 @@
 "uni": 25.71,
 "deg": 14.18
 },
-"source": "Victoria",
-"target": "Vancouver"
+"source": "12",
+"target": "15"
 },
 {
 "dist": 67.44,
@@ -317,8 +336,8 @@
 "uni": 25.71,
 "deg": 14.18
 },
-"source": "Toronto",
-"target": "Hamilton"
+"source": "13",
+"target": "14"
 },
 {
 "dist": 350.74,
@@ -330,8 +349,8 @@
 "uni": 40.00,
 "deg": 42.91
 },
-"source": "Toronto",
-"target": "Ottawa"
+"source": "13",
+"target": "21"
 },
 {
 "dist": 90.34,
@@ -343,8 +362,8 @@
 "uni": 25.71,
 "deg": 14.18
 },
-"source": "Toronto",
-"target": "Kitchener"
+"source": "13",
+"target": "22"
 },
 {
 "dist": 673.79,
@@ -356,8 +375,8 @@
 "uni": 68.57,
 "deg": 63.22
 },
-"source": "Vancouver",
-"target": "Calgary"
+"source": "15",
+"target": "17"
 },
 {
 "dist": 3541.02,
@@ -369,8 +388,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Vancouver",
-"target": "Ottawa"
+"source": "15",
+"target": "21"
 },
 {
 "dist": 281.21,
@@ -382,8 +401,8 @@
 "uni": 25.71,
 "deg": 14.18
 },
-"source": "Calgary",
-"target": "Edmonton"
+"source": "17",
+"target": "18"
 },
 {
 "dist": 174.99,
@@ -395,8 +414,8 @@
 "uni": 25.71,
 "deg": 14.18
 },
-"source": "Calgary",
-"target": "Lethbridge"
+"source": "17",
+"target": "19"
 },
 {
 "dist": 1675.73,
@@ -408,8 +427,8 @@
 "uni": 25.71,
 "deg": 14.18
 },
-"source": "Winnipeg",
-"target": "Ottawa"
+"source": "20",
+"target": "21"
 }
 ]
 }

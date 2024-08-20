@@ -20,8 +20,8 @@
 "diameter_hops": 5,
 "avg_sdp_num": 1.21,
 "max_sdp_num": 3,
-"avg_sdp_hops": 2.44,
-"avg_sdp_len": 1096.74,
+"avg_sdp_hops": 2.45,
+"avg_sdp_len": 1057.86,
 "avg_adp_num": 1.77,
 "max_adp_num": 3,
 "avg_adp_hops": 2.95,
@@ -30,102 +30,116 @@
 },
 "nodes": [
 {
+"name": "Prague",
 "pos": [
 14.42,
 50.09
 ],
-"id": "Prague"
+"id": "0"
 },
 {
+"name": "Frankfurt",
 "pos": [
 8.68,
 50.12
 ],
-"id": "Frankfurt"
+"id": "1"
 },
 {
+"name": "Hamburg",
 "pos": [
 10.00,
 53.55
 ],
-"id": "Hamburg"
+"id": "2"
 },
 {
+"name": "Copenhagen",
 "pos": [
 12.57,
 55.68
 ],
-"id": "Copenhagen"
+"id": "3"
 },
 {
+"name": "Madrid",
 "pos": [
 -3.70,
 40.42
 ],
-"id": "Madrid"
+"id": "5"
 },
 {
+"name": "Geneva",
 "pos": [
 6.15,
 46.20
 ],
-"id": "Geneva"
+"id": "6"
 },
 {
+"name": "Milan",
 "pos": [
 9.19,
 45.46
 ],
-"id": "Milan"
+"id": "7"
 },
 {
+"name": "Brussels",
 "pos": [
 4.35,
 50.85
 ],
-"id": "Brussels"
+"id": "8"
 },
 {
+"name": "Amsterdam",
 "pos": [
 4.89,
 52.37
 ],
-"id": "Amsterdam"
+"id": "9"
 },
 {
+"name": "Helsinki",
 "pos": [
 24.94,
 60.17
 ],
-"id": "Helsinki"
+"id": "10"
 },
 {
+"name": "Stockholm",
 "pos": [
 18.06,
 59.33
 ],
-"id": "Stockholm"
+"id": "11"
 },
 {
+"name": "Oslo",
 "pos": [
 10.75,
 59.91
 ],
-"id": "Oslo"
+"id": "13"
 },
 {
+"name": "London",
 "pos": [
 -0.13,
 51.51
 ],
-"id": "London"
+"id": "14"
 },
 {
+"name": "Paris",
 "pos": [
 2.35,
 48.85
 ],
-"id": "Paris"
+"id": "17"
 }
 ],
 "links": [
@@ -139,8 +153,8 @@
 "uni": 52.70,
 "deg": 20.46
 },
-"source": "Prague",
-"target": "Frankfurt"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 364.34,
@@ -152,8 +166,8 @@
 "uni": 90.20,
 "deg": 91.24
 },
-"source": "Frankfurt",
-"target": "Amsterdam"
+"source": "1",
+"target": "9"
 },
 {
 "dist": 474.28,
@@ -165,8 +179,8 @@
 "uni": 42.57,
 "deg": 42.03
 },
-"source": "Frankfurt",
-"target": "Geneva"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 478.63,
@@ -178,8 +192,8 @@
 "uni": 47.30,
 "deg": 51.06
 },
-"source": "Frankfurt",
-"target": "Paris"
+"source": "1",
+"target": "17"
 },
 {
 "dist": 366.40,
@@ -191,8 +205,8 @@
 "uni": 59.97,
 "deg": 47.65
 },
-"source": "Hamburg",
-"target": "Amsterdam"
+"source": "2",
+"target": "9"
 },
 {
 "dist": 288.44,
@@ -204,8 +218,8 @@
 "uni": 27.36,
 "deg": 20.46
 },
-"source": "Hamburg",
-"target": "Copenhagen"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 522.53,
@@ -217,8 +231,8 @@
 "uni": 37.33,
 "deg": 27.56
 },
-"source": "Copenhagen",
-"target": "Stockholm"
+"source": "3",
+"target": "11"
 },
 {
 "dist": 1052.74,
@@ -230,8 +244,8 @@
 "uni": 52.70,
 "deg": 20.46
 },
-"source": "Madrid",
-"target": "Paris"
+"source": "5",
+"target": "17"
 },
 {
 "dist": 410.11,
@@ -243,8 +257,8 @@
 "uni": 20.27,
 "deg": 23.23
 },
-"source": "Geneva",
-"target": "Paris"
+"source": "6",
+"target": "17"
 },
 {
 "dist": 249.74,
@@ -256,8 +270,8 @@
 "uni": 18.24,
 "deg": 13.82
 },
-"source": "Geneva",
-"target": "Milan"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 639.72,
@@ -269,8 +283,8 @@
 "uni": 42.06,
 "deg": 31.71
 },
-"source": "Milan",
-"target": "Paris"
+"source": "7",
+"target": "17"
 },
 {
 "dist": 173.53,
@@ -282,8 +296,8 @@
 "uni": 44.59,
 "deg": 39.82
 },
-"source": "Brussels",
-"target": "Amsterdam"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 264.38,
@@ -295,8 +309,8 @@
 "uni": 40.20,
 "deg": 38.89
 },
-"source": "Brussels",
-"target": "Paris"
+"source": "8",
+"target": "17"
 },
 {
 "dist": 1125.77,
@@ -308,8 +322,8 @@
 "uni": 84.12,
 "deg": 79.63
 },
-"source": "Amsterdam",
-"target": "Stockholm"
+"source": "9",
+"target": "11"
 },
 {
 "dist": 357.03,
@@ -321,8 +335,8 @@
 "uni": 39.19,
 "deg": 44.52
 },
-"source": "Amsterdam",
-"target": "London"
+"source": "9",
+"target": "14"
 },
 {
 "dist": 395.86,
@@ -334,8 +348,8 @@
 "uni": 52.70,
 "deg": 20.46
 },
-"source": "Helsinki",
-"target": "Stockholm"
+"source": "10",
+"target": "11"
 },
 {
 "dist": 416.46,
@@ -347,8 +361,8 @@
 "uni": 33.45,
 "deg": 26.45
 },
-"source": "Stockholm",
-"target": "Oslo"
+"source": "11",
+"target": "13"
 },
 {
 "dist": 1153.58,
@@ -360,8 +374,8 @@
 "uni": 43.58,
 "deg": 36.68
 },
-"source": "Oslo",
-"target": "London"
+"source": "13",
+"target": "14"
 },
 {
 "dist": 343.87,
@@ -373,8 +387,8 @@
 "uni": 61.49,
 "deg": 63.50
 },
-"source": "London",
-"target": "Paris"
+"source": "14",
+"target": "17"
 }
 ]
 }

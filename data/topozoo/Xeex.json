@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.12,
 "max_sdp_num": 2,
 "avg_sdp_hops": 2.95,
-"avg_sdp_len": 3160.38,
+"avg_sdp_len": 3142.46,
 "avg_adp_num": 2.00,
 "max_adp_num": 4,
 "avg_adp_hops": 3.87,
@@ -30,172 +30,196 @@
 },
 "nodes": [
 {
+"name": "Denver",
 "pos": [
 -104.98,
 39.74
 ],
-"id": "Denver"
+"id": "0"
 },
 {
+"name": "Las Vegas",
 "pos": [
 -115.14,
 36.17
 ],
-"id": "Las Vegas"
+"id": "1"
 },
 {
+"name": "Indianapolis",
 "pos": [
 -86.16,
 39.77
 ],
-"id": "Indianapolis"
+"id": "2"
 },
 {
+"name": "Nashville",
 "pos": [
 -86.78,
 36.17
 ],
-"id": "Nashville"
+"id": "3"
 },
 {
+"name": "Phoenix",
 "pos": [
 -112.07,
 33.45
 ],
-"id": "Phoenix"
+"id": "4"
 },
 {
+"name": "Hong Kong",
 "pos": [
 -151.22,
 60.29
 ],
-"id": "Hong Kong"
+"id": "5"
 },
 {
+"name": "San Francisco",
 "pos": [
 -122.42,
 37.77
 ],
-"id": "San Francisco"
+"id": "6"
 },
 {
+"name": "San Diego",
 "pos": [
 -117.16,
 32.72
 ],
-"id": "San Diego"
+"id": "7"
 },
 {
+"name": "Tokyo",
 "pos": [
 -118.24,
 34.05
 ],
-"id": "Tokyo"
+"id": "8"
 },
 {
+"name": "Chennai",
 "pos": [
 80.28,
 13.09
 ],
-"id": "Chennai"
+"id": "9"
 },
 {
+"name": "London",
 "pos": [
 -0.13,
 51.51
 ],
-"id": "London"
+"id": "10"
 },
 {
+"name": "Pittsburgh",
 "pos": [
 -80.00,
 40.44
 ],
-"id": "Pittsburgh"
+"id": "11"
 },
 {
+"name": "Columbus",
 "pos": [
 -83.00,
 39.96
 ],
-"id": "Columbus"
+"id": "12"
 },
 {
+"name": "Amsterdam",
 "pos": [
 -74.19,
 42.94
 ],
-"id": "Amsterdam"
+"id": "13"
 },
 {
+"name": "Miami",
 "pos": [
 -80.19,
 25.77
 ],
-"id": "Miami"
+"id": "14"
 },
 {
+"name": "Cincinnati",
 "pos": [
 -84.46,
 39.16
 ],
-"id": "Cincinnati"
+"id": "15"
 },
 {
+"name": "Seattle",
 "pos": [
 -122.33,
 47.61
 ],
-"id": "Seattle"
+"id": "16"
 },
 {
+"name": "San Jose",
 "pos": [
 -121.89,
 37.34
 ],
-"id": "San Jose"
+"id": "17"
 },
 {
+"name": "Los Angeles",
 "pos": [
 -118.24,
 34.05
 ],
-"id": "Los Angeles"
+"id": "18"
 },
 {
+"name": "Chicago",
 "pos": [
 -87.65,
 41.85
 ],
-"id": "Chicago"
+"id": "19"
 },
 {
+"name": "Ashburn",
 "pos": [
 -77.49,
 39.04
 ],
-"id": "Ashburn"
+"id": "20"
 },
 {
+"name": "New York",
 "pos": [
 -74.01,
 40.71
 ],
-"id": "New York"
+"id": "21"
 },
 {
+"name": "Atlanta",
 "pos": [
 -84.39,
 33.75
 ],
-"id": "Atlanta"
+"id": "22"
 },
 {
+"name": "Dallas",
 "pos": [
 -96.81,
 32.78
 ],
-"id": "Dallas"
+"id": "23"
 }
 ],
 "links": [
@@ -209,8 +233,8 @@
 "uni": 25.00,
 "deg": 16.16
 },
-"source": "Denver",
-"target": "Las Vegas"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 1475.80,
@@ -222,8 +246,8 @@
 "uni": 44.85,
 "deg": 29.04
 },
-"source": "Denver",
-"target": "Chicago"
+"source": "0",
+"target": "19"
 },
 {
 "dist": 368.24,
@@ -235,8 +259,8 @@
 "uni": 19.85,
 "deg": 14.06
 },
-"source": "Las Vegas",
-"target": "Los Angeles"
+"source": "1",
+"target": "18"
 },
 {
 "dist": 263.40,
@@ -248,8 +272,8 @@
 "uni": 59.25,
 "deg": 40.53
 },
-"source": "Indianapolis",
-"target": "Chicago"
+"source": "2",
+"target": "19"
 },
 {
 "dist": 270.55,
@@ -261,8 +285,8 @@
 "uni": 35.66,
 "deg": 23.91
 },
-"source": "Indianapolis",
-"target": "Columbus"
+"source": "2",
+"target": "12"
 },
 {
 "dist": 391.18,
@@ -274,8 +298,8 @@
 "uni": 15.81,
 "deg": 12.71
 },
-"source": "Nashville",
-"target": "Cincinnati"
+"source": "3",
+"target": "15"
 },
 {
 "dist": 346.37,
@@ -287,8 +311,8 @@
 "uni": 14.34,
 "deg": 11.78
 },
-"source": "Nashville",
-"target": "Atlanta"
+"source": "3",
+"target": "22"
 },
 {
 "dist": 992.36,
@@ -300,8 +324,8 @@
 "uni": 17.65,
 "deg": 17.76
 },
-"source": "Nashville",
-"target": "Dallas"
+"source": "3",
+"target": "23"
 },
 {
 "dist": 574.42,
@@ -313,8 +337,8 @@
 "uni": 31.99,
 "deg": 37.37
 },
-"source": "Phoenix",
-"target": "Los Angeles"
+"source": "4",
+"target": "18"
 },
 {
 "dist": 480.65,
@@ -326,8 +350,8 @@
 "uni": 16.91,
 "deg": 11.28
 },
-"source": "Phoenix",
-"target": "San Diego"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 1422.95,
@@ -339,8 +363,8 @@
 "uni": 56.62,
 "deg": 56.73
 },
-"source": "Phoenix",
-"target": "Dallas"
+"source": "4",
+"target": "23"
 },
 {
 "dist": 3761.77,
@@ -352,8 +376,8 @@
 "uni": 12.32,
 "deg": 11.99
 },
-"source": "Hong Kong",
-"target": "Tokyo"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 10673.53,
@@ -365,8 +389,8 @@
 "uni": 11.03,
 "deg": 7.58
 },
-"source": "Hong Kong",
-"target": "Chennai"
+"source": "5",
+"target": "9"
 },
 {
 "dist": 3761.23,
@@ -378,8 +402,8 @@
 "uni": 34.74,
 "deg": 32.03
 },
-"source": "Hong Kong",
-"target": "Los Angeles"
+"source": "5",
+"target": "18"
 },
 {
 "dist": 1093.52,
@@ -391,8 +415,8 @@
 "uni": 16.18,
 "deg": 10.61
 },
-"source": "San Francisco",
-"target": "Seattle"
+"source": "6",
+"target": "16"
 },
 {
 "dist": 66.97,
@@ -404,8 +428,8 @@
 "uni": 26.10,
 "deg": 17.85
 },
-"source": "San Francisco",
-"target": "San Jose"
+"source": "6",
+"target": "17"
 },
 {
 "dist": 179.70,
@@ -417,8 +441,8 @@
 "uni": 16.91,
 "deg": 10.94
 },
-"source": "San Diego",
-"target": "Los Angeles"
+"source": "7",
+"target": "18"
 },
 {
 "dist": 492.83,
@@ -430,8 +454,8 @@
 "uni": 57.90,
 "deg": 48.78
 },
-"source": "Tokyo",
-"target": "San Jose"
+"source": "8",
+"target": "17"
 },
 {
 "dist": 14423.61,
@@ -443,8 +467,8 @@
 "uni": 22.79,
 "deg": 14.65
 },
-"source": "Tokyo",
-"target": "Chennai"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 5571.79,
@@ -456,8 +480,8 @@
 "uni": 33.82,
 "deg": 11.28
 },
-"source": "London",
-"target": "New York"
+"source": "10",
+"target": "21"
 },
 {
 "dist": 260.61,
@@ -469,8 +493,8 @@
 "uni": 20.40,
 "deg": 12.92
 },
-"source": "Pittsburgh",
-"target": "Columbus"
+"source": "11",
+"target": "12"
 },
 {
 "dist": 264.87,
@@ -482,8 +506,8 @@
 "uni": 33.39,
 "deg": 22.10
 },
-"source": "Pittsburgh",
-"target": "Ashburn"
+"source": "11",
+"target": "20"
 },
 {
 "dist": 514.10,
@@ -495,8 +519,8 @@
 "uni": 33.82,
 "deg": 11.28
 },
-"source": "Amsterdam",
-"target": "Ashburn"
+"source": "13",
+"target": "20"
 },
 {
 "dist": 1497.41,
@@ -508,8 +532,8 @@
 "uni": 15.07,
 "deg": 8.92
 },
-"source": "Miami",
-"target": "Ashburn"
+"source": "14",
+"target": "20"
 },
 {
 "dist": 974.80,
@@ -521,8 +545,8 @@
 "uni": 18.75,
 "deg": 13.30
 },
-"source": "Miami",
-"target": "Atlanta"
+"source": "14",
+"target": "22"
 },
 {
 "dist": 402.82,
@@ -534,8 +558,8 @@
 "uni": 32.72,
 "deg": 23.48
 },
-"source": "Cincinnati",
-"target": "Chicago"
+"source": "15",
+"target": "19"
 },
 {
 "dist": 2789.45,
@@ -547,8 +571,8 @@
 "uni": 38.60,
 "deg": 25.25
 },
-"source": "Seattle",
-"target": "Chicago"
+"source": "16",
+"target": "19"
 },
 {
 "dist": 492.31,
@@ -560,8 +584,8 @@
 "uni": 40.07,
 "deg": 45.03
 },
-"source": "San Jose",
-"target": "Los Angeles"
+"source": "17",
+"target": "18"
 },
 {
 "dist": 2957.50,
@@ -573,8 +597,8 @@
 "uni": 100.00,
 "deg": 99.92
 },
-"source": "San Jose",
-"target": "Chicago"
+"source": "17",
+"target": "19"
 },
 {
 "dist": 1146.16,
@@ -586,8 +610,8 @@
 "uni": 89.71,
 "deg": 71.38
 },
-"source": "Chicago",
-"target": "New York"
+"source": "19",
+"target": "21"
 },
 {
 "dist": 1291.83,
@@ -599,8 +623,8 @@
 "uni": 56.99,
 "deg": 60.77
 },
-"source": "Chicago",
-"target": "Dallas"
+"source": "19",
+"target": "23"
 },
 {
 "dist": 853.00,
@@ -612,8 +636,8 @@
 "uni": 33.46,
 "deg": 32.32
 },
-"source": "Ashburn",
-"target": "Atlanta"
+"source": "20",
+"target": "22"
 },
 {
 "dist": 350.43,
@@ -625,8 +649,8 @@
 "uni": 60.48,
 "deg": 51.05
 },
-"source": "Ashburn",
-"target": "New York"
+"source": "20",
+"target": "21"
 },
 {
 "dist": 1159.21,
@@ -638,8 +662,8 @@
 "uni": 51.47,
 "deg": 55.72
 },
-"source": "Atlanta",
-"target": "Dallas"
+"source": "22",
+"target": "23"
 }
 ]
 }

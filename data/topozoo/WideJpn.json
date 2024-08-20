@@ -30,137 +30,156 @@
 },
 "nodes": [
 {
+"name": "KDDI Otemachi",
 "pos": [
 139.77,
 35.68
 ],
-"id": "KDDI Otemachi"
+"id": "0"
 },
 {
+"name": "Nezu",
 "pos": [
 139.77,
 35.72
 ],
-"id": "Nezu"
+"id": "1"
 },
 {
+"name": "Yagami",
 "pos": [
 129.95,
 32.77
 ],
-"id": "Yagami"
+"id": "2"
 },
 {
+"name": "ShinKawasaki",
 "pos": [
 139.67,
 35.55
 ],
-"id": "ShinKawasaki"
+"id": "3"
 },
 {
+"name": "Hachioji",
 "pos": [
 139.32,
 35.66
 ],
-"id": "Hachioji"
+"id": "4"
 },
 {
+"name": "Bangkok",
 "pos": [
 100.52,
 13.75
 ],
-"id": "Bangkok"
+"id": "5"
 },
 {
+"name": "NTT Otemachi",
 "pos": [
 139.77,
 35.68
 ],
-"id": "NTT Otemachi"
+"id": "6"
 },
 {
+"name": "Tsukuba",
 "pos": [
 140.10,
 36.20
 ],
-"id": "Tsukuba"
+"id": "7"
 },
 {
+"name": "Dojima",
 "pos": [
 135.48,
 34.68
 ],
-"id": "Dojima"
+"id": "10"
 },
 {
+"name": "Los Angeles",
 "pos": [
 -118.24,
 34.05
 ],
-"id": "Los Angeles"
+"id": "20"
 },
 {
+"name": "Fujisawa",
 "pos": [
 139.47,
 35.34
 ],
-"id": "Fujisawa"
+"id": "21"
 },
 {
+"name": "Nara",
 "pos": [
 135.80,
 34.69
 ],
-"id": "Nara"
+"id": "22"
 },
 {
+"name": "Fukuoka",
 "pos": [
 130.42,
 33.61
 ],
-"id": "Fukuoka"
+"id": "23"
 },
 {
+"name": "Hiroshima",
 "pos": [
 132.46,
 34.40
 ],
-"id": "Hiroshima"
+"id": "24"
 },
 {
+"name": "Kurashiki",
 "pos": [
 133.77,
 34.58
 ],
-"id": "Kurashiki"
+"id": "25"
 },
 {
+"name": "Sakyo",
 "pos": [
 129.80,
 33.78
 ],
-"id": "Sakyo"
+"id": "26"
 },
 {
+"name": "Komatsu",
 "pos": [
 136.45,
 36.40
 ],
-"id": "Komatsu"
+"id": "27"
 },
 {
+"name": "Sendai",
 "pos": [
 140.87,
 38.27
 ],
-"id": "Sendai"
+"id": "28"
 },
 {
+"name": "San Francisco",
 "pos": [
 -122.42,
 37.77
 ],
-"id": "San Francisco"
+"id": "29"
 }
 ],
 "links": [
@@ -174,8 +193,8 @@
 "uni": 69.23,
 "deg": 55.56
 },
-"source": "KDDI Otemachi",
-"target": "Nezu"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 40.13,
@@ -187,8 +206,8 @@
 "uni": 27.69,
 "deg": 11.94
 },
-"source": "KDDI Otemachi",
-"target": "Hachioji"
+"source": "0",
+"target": "4"
 },
 {
 "dist": 0.00,
@@ -200,8 +219,8 @@
 "uni": 100.00,
 "deg": 91.11
 },
-"source": "KDDI Otemachi",
-"target": "NTT Otemachi"
+"source": "0",
+"target": "6"
 },
 {
 "dist": 8812.77,
@@ -213,8 +232,8 @@
 "uni": 52.31,
 "deg": 34.17
 },
-"source": "KDDI Otemachi",
-"target": "Los Angeles"
+"source": "0",
+"target": "20"
 },
 {
 "dist": 959.80,
@@ -226,8 +245,8 @@
 "uni": 44.62,
 "deg": 33.33
 },
-"source": "Nezu",
-"target": "Yagami"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 300.33,
@@ -239,8 +258,8 @@
 "uni": 27.69,
 "deg": 11.94
 },
-"source": "Nezu",
-"target": "Sendai"
+"source": "1",
+"target": "28"
 },
 {
 "dist": 946.34,
@@ -252,8 +271,8 @@
 "uni": 27.69,
 "deg": 11.94
 },
-"source": "Yagami",
-"target": "ShinKawasaki"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 922.40,
@@ -265,8 +284,8 @@
 "uni": 35.38,
 "deg": 33.33
 },
-"source": "Yagami",
-"target": "Fujisawa"
+"source": "2",
+"target": "21"
 },
 {
 "dist": 4609.50,
@@ -278,8 +297,8 @@
 "uni": 27.69,
 "deg": 11.94
 },
-"source": "Bangkok",
-"target": "NTT Otemachi"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 64.83,
@@ -291,8 +310,8 @@
 "uni": 27.69,
 "deg": 11.94
 },
-"source": "NTT Otemachi",
-"target": "Tsukuba"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 404.92,
@@ -304,8 +323,8 @@
 "uni": 93.85,
 "deg": 100.00
 },
-"source": "NTT Otemachi",
-"target": "Dojima"
+"source": "6",
+"target": "10"
 },
 {
 "dist": 308.73,
@@ -317,8 +336,8 @@
 "uni": 27.69,
 "deg": 11.94
 },
-"source": "NTT Otemachi",
-"target": "Komatsu"
+"source": "6",
+"target": "27"
 },
 {
 "dist": 29.41,
@@ -330,8 +349,8 @@
 "uni": 43.08,
 "deg": 50.28
 },
-"source": "Dojima",
-"target": "Nara"
+"source": "10",
+"target": "22"
 },
 {
 "dist": 481.35,
@@ -343,8 +362,8 @@
 "uni": 24.62,
 "deg": 30.83
 },
-"source": "Dojima",
-"target": "Fukuoka"
+"source": "10",
+"target": "23"
 },
 {
 "dist": 278.88,
@@ -356,8 +375,8 @@
 "uni": 25.38,
 "deg": 21.11
 },
-"source": "Dojima",
-"target": "Hiroshima"
+"source": "10",
+"target": "24"
 },
 {
 "dist": 157.50,
@@ -369,8 +388,8 @@
 "uni": 25.38,
 "deg": 21.11
 },
-"source": "Dojima",
-"target": "Kurashiki"
+"source": "10",
+"target": "25"
 },
 {
 "dist": 532.04,
@@ -382,8 +401,8 @@
 "uni": 20.00,
 "deg": 17.22
 },
-"source": "Dojima",
-"target": "Sakyo"
+"source": "10",
+"target": "26"
 },
 {
 "dist": 559.28,
@@ -395,8 +414,8 @@
 "uni": 27.69,
 "deg": 11.94
 },
-"source": "Los Angeles",
-"target": "San Francisco"
+"source": "20",
+"target": "29"
 },
 {
 "dist": 341.76,
@@ -408,8 +427,8 @@
 "uni": 38.46,
 "deg": 38.89
 },
-"source": "Fujisawa",
-"target": "Nara"
+"source": "21",
+"target": "22"
 },
 {
 "dist": 561.12,
@@ -421,8 +440,8 @@
 "uni": 7.69,
 "deg": 6.11
 },
-"source": "Nara",
-"target": "Sakyo"
+"source": "22",
+"target": "26"
 },
 {
 "dist": 207.72,
@@ -434,8 +453,8 @@
 "uni": 2.31,
 "deg": 2.22
 },
-"source": "Fukuoka",
-"target": "Hiroshima"
+"source": "23",
+"target": "24"
 },
 {
 "dist": 326.99,
@@ -447,8 +466,8 @@
 "uni": 2.31,
 "deg": 2.22
 },
-"source": "Fukuoka",
-"target": "Kurashiki"
+"source": "23",
+"target": "25"
 }
 ]
 }

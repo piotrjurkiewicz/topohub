@@ -30,123 +30,140 @@
 },
 "nodes": [
 {
+"name": "Eisenstadt",
 "pos": [
 16.52,
 47.85
 ],
-"id": "Eisenstadt"
+"id": "0"
 },
 {
+"name": "St. Polten",
 "pos": [
 15.63,
 48.20
 ],
-"id": "St. Polten"
+"id": "1"
 },
 {
+"name": "Graz2",
 "pos": [
 15.45,
 47.07
 ],
-"id": "Graz2"
+"id": "2"
 },
 {
+"name": "Leoben",
 "pos": [
 15.10,
 47.38
 ],
-"id": "Leoben"
+"id": "3"
 },
 {
+"name": "Vienna2",
 "pos": [
 16.37,
 48.21
 ],
-"id": "Vienna2"
+"id": "4"
 },
 {
+"name": "Krems",
 "pos": [
 15.61,
 48.41
 ],
-"id": "Krems"
+"id": "6"
 },
 {
+"name": "Vienna1",
 "pos": [
 16.37,
 48.21
 ],
-"id": "Vienna1"
+"id": "7"
 },
 {
+"name": "Klagenfurt2",
 "pos": [
 14.31,
 46.62
 ],
-"id": "Klagenfurt2"
+"id": "13"
 },
 {
+"name": "Graz1",
 "pos": [
 15.45,
 47.07
 ],
-"id": "Graz1"
+"id": "14"
 },
 {
+"name": "Linz1",
 "pos": [
 14.29,
 48.31
 ],
-"id": "Linz1"
+"id": "15"
 },
 {
+"name": "Linz2",
 "pos": [
 14.29,
 48.31
 ],
-"id": "Linz2"
+"id": "16"
 },
 {
+"name": "Salzburg1",
 "pos": [
 13.04,
 47.80
 ],
-"id": "Salzburg1"
+"id": "17"
 },
 {
+"name": "Salzburg2",
 "pos": [
 13.04,
 47.80
 ],
-"id": "Salzburg2"
+"id": "18"
 },
 {
+"name": "Innsbruck1",
 "pos": [
 11.39,
 47.26
 ],
-"id": "Innsbruck1"
+"id": "19"
 },
 {
+"name": "Innsbruck2",
 "pos": [
 11.39,
 47.26
 ],
-"id": "Innsbruck2"
+"id": "20"
 },
 {
+"name": "Dornbirn",
 "pos": [
 9.73,
 47.42
 ],
-"id": "Dornbirn"
+"id": "21"
 },
 {
+"name": "Klagenfurt1",
 "pos": [
 14.31,
 46.62
 ],
-"id": "Klagenfurt1"
+"id": "22"
 }
 ],
 "links": [
@@ -160,8 +177,8 @@
 "uni": 42.86,
 "deg": 59.38
 },
-"source": "Eisenstadt",
-"target": "Vienna2"
+"source": "0",
+"target": "4"
 },
 {
 "dist": 41.30,
@@ -173,8 +190,8 @@
 "uni": 42.86,
 "deg": 59.38
 },
-"source": "Eisenstadt",
-"target": "Vienna1"
+"source": "0",
+"target": "7"
 },
 {
 "dist": 23.31,
@@ -186,8 +203,8 @@
 "uni": 38.10,
 "deg": 35.00
 },
-"source": "St. Polten",
-"target": "Krems"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 54.77,
@@ -199,8 +216,8 @@
 "uni": 71.43,
 "deg": 55.00
 },
-"source": "St. Polten",
-"target": "Vienna1"
+"source": "1",
+"target": "7"
 },
 {
 "dist": 44.04,
@@ -212,8 +229,8 @@
 "uni": 38.10,
 "deg": 28.75
 },
-"source": "Graz2",
-"target": "Leoben"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 0.00,
@@ -225,8 +242,8 @@
 "uni": 38.10,
 "deg": 52.50
 },
-"source": "Graz2",
-"target": "Graz1"
+"source": "2",
+"target": "14"
 },
 {
 "dist": 144.58,
@@ -238,8 +255,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Graz2",
-"target": "Vienna1"
+"source": "2",
+"target": "7"
 },
 {
 "dist": 44.04,
@@ -251,8 +268,8 @@
 "uni": 38.10,
 "deg": 28.75
 },
-"source": "Leoben",
-"target": "Graz1"
+"source": "3",
+"target": "14"
 },
 {
 "dist": 60.35,
@@ -264,8 +281,8 @@
 "uni": 71.43,
 "deg": 55.00
 },
-"source": "Vienna2",
-"target": "Krems"
+"source": "4",
+"target": "6"
 },
 {
 "dist": 234.99,
@@ -277,8 +294,8 @@
 "uni": 71.43,
 "deg": 55.00
 },
-"source": "Vienna2",
-"target": "Klagenfurt2"
+"source": "4",
+"target": "13"
 },
 {
 "dist": 144.58,
@@ -290,8 +307,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Vienna2",
-"target": "Graz1"
+"source": "4",
+"target": "14"
 },
 {
 "dist": 154.85,
@@ -303,8 +320,8 @@
 "uni": 71.43,
 "deg": 55.00
 },
-"source": "Vienna2",
-"target": "Linz1"
+"source": "4",
+"target": "15"
 },
 {
 "dist": 251.80,
@@ -316,8 +333,8 @@
 "uni": 71.43,
 "deg": 55.00
 },
-"source": "Vienna2",
-"target": "Salzburg2"
+"source": "4",
+"target": "18"
 },
 {
 "dist": 386.84,
@@ -329,8 +346,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Vienna2",
-"target": "Innsbruck1"
+"source": "4",
+"target": "19"
 },
 {
 "dist": 154.85,
@@ -342,8 +359,8 @@
 "uni": 71.43,
 "deg": 55.00
 },
-"source": "Vienna1",
-"target": "Linz2"
+"source": "7",
+"target": "16"
 },
 {
 "dist": 251.80,
@@ -355,8 +372,8 @@
 "uni": 71.43,
 "deg": 55.00
 },
-"source": "Vienna1",
-"target": "Salzburg1"
+"source": "7",
+"target": "17"
 },
 {
 "dist": 386.84,
@@ -368,8 +385,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Vienna1",
-"target": "Innsbruck2"
+"source": "7",
+"target": "20"
 },
 {
 "dist": 234.99,
@@ -381,8 +398,8 @@
 "uni": 71.43,
 "deg": 55.00
 },
-"source": "Vienna1",
-"target": "Klagenfurt1"
+"source": "7",
+"target": "22"
 },
 {
 "dist": 0.00,
@@ -394,8 +411,8 @@
 "uni": 38.10,
 "deg": 35.00
 },
-"source": "Klagenfurt2",
-"target": "Klagenfurt1"
+"source": "13",
+"target": "22"
 },
 {
 "dist": 0.00,
@@ -407,8 +424,8 @@
 "uni": 38.10,
 "deg": 35.00
 },
-"source": "Linz1",
-"target": "Linz2"
+"source": "15",
+"target": "16"
 },
 {
 "dist": 0.00,
@@ -420,8 +437,8 @@
 "uni": 38.10,
 "deg": 35.00
 },
-"source": "Salzburg1",
-"target": "Salzburg2"
+"source": "17",
+"target": "18"
 },
 {
 "dist": 0.00,
@@ -433,8 +450,8 @@
 "uni": 38.10,
 "deg": 52.50
 },
-"source": "Innsbruck1",
-"target": "Innsbruck2"
+"source": "19",
+"target": "20"
 },
 {
 "dist": 126.39,
@@ -446,8 +463,8 @@
 "uni": 38.10,
 "deg": 28.75
 },
-"source": "Innsbruck1",
-"target": "Dornbirn"
+"source": "19",
+"target": "21"
 },
 {
 "dist": 126.39,
@@ -459,8 +476,8 @@
 "uni": 38.10,
 "deg": 28.75
 },
-"source": "Innsbruck2",
-"target": "Dornbirn"
+"source": "20",
+"target": "21"
 }
 ]
 }

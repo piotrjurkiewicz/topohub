@@ -30,74 +30,84 @@
 },
 "nodes": [
 {
+"name": "Tel Aviv GigaPoP",
 "pos": [
 34.77,
 32.07
 ],
-"id": "Tel Aviv GigaPoP"
+"id": "0"
 },
 {
+"name": "Petach Tikva GigaPoP",
 "pos": [
 34.89,
 32.09
 ],
-"id": "Petach Tikva GigaPoP"
+"id": "3"
 },
 {
+"name": "Open University",
 "pos": [
 34.87,
 32.18
 ],
-"id": "Open University"
+"id": "6"
 },
 {
+"name": "Haifa University",
 "pos": [
 34.99,
 32.82
 ],
-"id": "Haifa University"
+"id": "7"
 },
 {
+"name": "Technion",
 "pos": [
 34.99,
 32.82
 ],
-"id": "Technion"
+"id": "8"
 },
 {
+"name": "Bar Ilan University",
 "pos": [
 34.81,
 32.08
 ],
-"id": "Bar Ilan University"
+"id": "9"
 },
 {
+"name": "Hebrew University",
 "pos": [
 35.23,
 31.78
 ],
-"id": "Hebrew University"
+"id": "10"
 },
 {
+"name": "Ben Gurion University",
 "pos": [
 34.95,
 29.56
 ],
-"id": "Ben Gurion University"
+"id": "11"
 },
 {
+"name": "Weizmann Institute",
 "pos": [
 34.82,
 31.90
 ],
-"id": "Weizmann Institute"
+"id": "12"
 },
 {
+"name": "Tel Aviv University",
 "pos": [
 34.77,
 32.07
 ],
-"id": "Tel Aviv University"
+"id": "13"
 }
 ],
 "links": [
@@ -111,8 +121,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Tel Aviv GigaPoP",
-"target": "Haifa University"
+"source": "0",
+"target": "7"
 },
 {
 "dist": 85.87,
@@ -124,8 +134,8 @@
 "uni": 96.43,
 "deg": 47.37
 },
-"source": "Tel Aviv GigaPoP",
-"target": "Technion"
+"source": "0",
+"target": "8"
 },
 {
 "dist": 4.74,
@@ -137,8 +147,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Tel Aviv GigaPoP",
-"target": "Bar Ilan University"
+"source": "0",
+"target": "9"
 },
 {
 "dist": 53.84,
@@ -150,8 +160,8 @@
 "uni": 96.43,
 "deg": 47.37
 },
-"source": "Tel Aviv GigaPoP",
-"target": "Hebrew University"
+"source": "0",
+"target": "10"
 },
 {
 "dist": 279.24,
@@ -163,8 +173,8 @@
 "uni": 96.43,
 "deg": 47.37
 },
-"source": "Tel Aviv GigaPoP",
-"target": "Ben Gurion University"
+"source": "0",
+"target": "11"
 },
 {
 "dist": 19.50,
@@ -176,8 +186,8 @@
 "uni": 96.43,
 "deg": 47.37
 },
-"source": "Tel Aviv GigaPoP",
-"target": "Weizmann Institute"
+"source": "0",
+"target": "12"
 },
 {
 "dist": 0.00,
@@ -189,8 +199,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Tel Aviv GigaPoP",
-"target": "Tel Aviv University"
+"source": "0",
+"target": "13"
 },
 {
 "dist": 10.33,
@@ -202,8 +212,8 @@
 "uni": 96.43,
 "deg": 47.37
 },
-"source": "Petach Tikva GigaPoP",
-"target": "Open University"
+"source": "3",
+"target": "6"
 },
 {
 "dist": 81.10,
@@ -215,8 +225,8 @@
 "uni": 67.86,
 "deg": 72.93
 },
-"source": "Petach Tikva GigaPoP",
-"target": "Haifa University"
+"source": "3",
+"target": "7"
 },
 {
 "dist": 6.79,
@@ -228,8 +238,8 @@
 "uni": 67.86,
 "deg": 72.93
 },
-"source": "Petach Tikva GigaPoP",
-"target": "Bar Ilan University"
+"source": "3",
+"target": "9"
 },
 {
 "dist": 11.50,
@@ -241,8 +251,8 @@
 "uni": 67.86,
 "deg": 72.93
 },
-"source": "Petach Tikva GigaPoP",
-"target": "Tel Aviv University"
+"source": "3",
+"target": "13"
 }
 ]
 }

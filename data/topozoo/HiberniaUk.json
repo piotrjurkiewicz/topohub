@@ -30,95 +30,108 @@
 },
 "nodes": [
 {
+"name": "London",
 "pos": [
 -0.13,
 51.51
 ],
-"id": "London"
+"id": "0"
 },
 {
+"name": "Southport",
 "pos": [
 -3.01,
 53.65
 ],
-"id": "Southport"
+"id": "1"
 },
 {
+"name": "Manchester",
 "pos": [
 -2.24,
 53.48
 ],
-"id": "Manchester"
+"id": "4"
 },
 {
+"name": "Peterborough",
 "pos": [
 -0.25,
 52.57
 ],
-"id": "Peterborough"
+"id": "5"
 },
 {
+"name": "Cambridge",
 "pos": [
 0.12,
 52.20
 ],
-"id": "Cambridge"
+"id": "6"
 },
 {
+"name": "Sheffield",
 "pos": [
 -1.47,
 53.38
 ],
-"id": "Sheffield"
+"id": "7"
 },
 {
+"name": "Leicester",
 "pos": [
 -1.13,
 52.63
 ],
-"id": "Leicester"
+"id": "8"
 },
 {
+"name": "Bracewell",
 "pos": [
 -2.21,
 53.93
 ],
-"id": "Bracewell"
+"id": "9"
 },
 {
+"name": "Leeds",
 "pos": [
 -1.55,
 53.80
 ],
-"id": "Leeds"
+"id": "10"
 },
 {
+"name": "Birmingham",
 "pos": [
 -1.92,
 52.47
 ],
-"id": "Birmingham"
+"id": "11"
 },
 {
+"name": "Liverpool",
 "pos": [
 -2.98,
 53.41
 ],
-"id": "Liverpool"
+"id": "12"
 },
 {
+"name": "Reading",
 "pos": [
 -0.97,
 51.46
 ],
-"id": "Reading"
+"id": "13"
 },
 {
+"name": "Bristol",
 "pos": [
 -2.58,
 51.45
 ],
-"id": "Bristol"
+"id": "14"
 }
 ],
 "links": [
@@ -132,8 +145,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "London",
-"target": "Reading"
+"source": "0",
+"target": "13"
 },
 {
 "dist": 78.69,
@@ -145,8 +158,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "London",
-"target": "Cambridge"
+"source": "0",
+"target": "6"
 },
 {
 "dist": 61.18,
@@ -158,8 +171,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Southport",
-"target": "Bracewell"
+"source": "1",
+"target": "9"
 },
 {
 "dist": 26.45,
@@ -171,8 +184,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Southport",
-"target": "Liverpool"
+"source": "1",
+"target": "12"
 },
 {
 "dist": 114.84,
@@ -184,8 +197,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Manchester",
-"target": "Birmingham"
+"source": "4",
+"target": "11"
 },
 {
 "dist": 49.68,
@@ -197,8 +210,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Manchester",
-"target": "Liverpool"
+"source": "4",
+"target": "12"
 },
 {
 "dist": 60.19,
@@ -210,8 +223,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Peterborough",
-"target": "Leicester"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 48.36,
@@ -223,8 +236,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Peterborough",
-"target": "Cambridge"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 86.30,
@@ -236,8 +249,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Sheffield",
-"target": "Leicester"
+"source": "7",
+"target": "8"
 },
 {
 "dist": 46.31,
@@ -249,8 +262,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Sheffield",
-"target": "Leeds"
+"source": "7",
+"target": "10"
 },
 {
 "dist": 45.95,
@@ -262,8 +275,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Bracewell",
-"target": "Leeds"
+"source": "9",
+"target": "10"
 },
 {
 "dist": 121.96,
@@ -275,8 +288,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Birmingham",
-"target": "Bristol"
+"source": "11",
+"target": "14"
 },
 {
 "dist": 111.74,
@@ -288,8 +301,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Reading",
-"target": "Bristol"
+"source": "13",
+"target": "14"
 }
 ]
 }

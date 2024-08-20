@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.02,
 "max_sdp_num": 2,
 "avg_sdp_hops": 4.42,
-"avg_sdp_len": 393.42,
+"avg_sdp_len": 386.24,
 "avg_adp_num": 1.42,
 "max_adp_num": 3,
 "avg_adp_hops": 5.32,
@@ -30,186 +30,212 @@
 },
 "nodes": [
 {
+"name": "Warsaw",
 "pos": [
 21.01,
 52.23
 ],
-"id": "Warsaw"
+"id": "0"
 },
 {
+"name": "Bialystok",
 "pos": [
 23.15,
 53.13
 ],
-"id": "Bialystok"
+"id": "1"
 },
 {
+"name": "Wlocawek",
 "pos": [
 19.07,
 52.65
 ],
-"id": "Wlocawek"
+"id": "2"
 },
 {
+"name": "Plock",
 "pos": [
 19.71,
 52.55
 ],
-"id": "Plock"
+"id": "3"
 },
 {
+"name": "Opole",
 "pos": [
 17.95,
 50.67
 ],
-"id": "Opole"
+"id": "4"
 },
 {
+"name": "Wroclaw",
 "pos": [
 17.03,
 51.10
 ],
-"id": "Wroclaw"
+"id": "5"
 },
 {
+"name": "Lublin",
 "pos": [
 22.57,
 51.25
 ],
-"id": "Lublin"
+"id": "6"
 },
 {
+"name": "Rzeszow",
 "pos": [
 22.00,
 50.04
 ],
-"id": "Rzeszow"
+"id": "7"
 },
 {
+"name": "Kalisz",
 "pos": [
 18.09,
 51.76
 ],
-"id": "Kalisz"
+"id": "8"
 },
 {
+"name": "Lodz",
 "pos": [
 19.47,
 51.75
 ],
-"id": "Lodz"
+"id": "9"
 },
 {
+"name": "Krakow",
 "pos": [
 19.92,
 50.08
 ],
-"id": "Krakow"
+"id": "11"
 },
 {
+"name": "Zielona Gora",
 "pos": [
 15.51,
 51.94
 ],
-"id": "Zielona Gora"
+"id": "12"
 },
 {
+"name": "Gdansk",
 "pos": [
 18.65,
 54.35
 ],
-"id": "Gdansk"
+"id": "13"
 },
 {
+"name": "Olszlyn",
 "pos": [
 20.48,
 53.78
 ],
-"id": "Olszlyn"
+"id": "14"
 },
 {
+"name": "Tarnow",
 "pos": [
 20.99,
 50.01
 ],
-"id": "Tarnow"
+"id": "15"
 },
 {
+"name": "Kalowice",
 "pos": [
 19.02,
 50.27
 ],
-"id": "Kalowice"
+"id": "16"
 },
 {
+"name": "Kielce",
 "pos": [
 20.63,
 50.87
 ],
-"id": "Kielce"
+"id": "17"
 },
 {
+"name": "Radom",
 "pos": [
 21.15,
 51.40
 ],
-"id": "Radom"
+"id": "18"
 },
 {
+"name": "Bydgoszcz",
 "pos": [
 18.01,
 53.12
 ],
-"id": "Bydgoszcz"
+"id": "23"
 },
 {
+"name": "Torun",
 "pos": [
 18.60,
 53.01
 ],
-"id": "Torun"
+"id": "24"
 },
 {
+"name": "Slupsk",
 "pos": [
 17.03,
 54.46
 ],
-"id": "Slupsk"
+"id": "26"
 },
 {
+"name": "Koszalin",
 "pos": [
 16.17,
 54.19
 ],
-"id": "Koszalin"
+"id": "27"
 },
 {
+"name": "Kolobrzeg",
 "pos": [
 15.58,
 54.18
 ],
-"id": "Kolobrzeg"
+"id": "28"
 },
 {
+"name": "Szczecin",
 "pos": [
 14.55,
 53.43
 ],
-"id": "Szczecin"
+"id": "29"
 },
 {
+"name": "Poznan",
 "pos": [
 16.97,
 52.42
 ],
-"id": "Poznan"
+"id": "31"
 },
 {
+"name": "Pila",
 "pos": [
 16.74,
 53.15
 ],
-"id": "Pila"
+"id": "32"
 }
 ],
 "links": [
@@ -223,8 +249,8 @@
 "uni": 38.18,
 "deg": 38.57
 },
-"source": "Warsaw",
-"target": "Bialystok"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 95.37,
@@ -236,8 +262,8 @@
 "uni": 38.18,
 "deg": 38.57
 },
-"source": "Warsaw",
-"target": "Plock"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 152.78,
@@ -249,8 +275,8 @@
 "uni": 56.36,
 "deg": 53.12
 },
-"source": "Warsaw",
-"target": "Lublin"
+"source": "0",
+"target": "6"
 },
 {
 "dist": 118.52,
@@ -262,8 +288,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Warsaw",
-"target": "Lodz"
+"source": "0",
+"target": "9"
 },
 {
 "dist": 92.48,
@@ -275,8 +301,8 @@
 "uni": 56.36,
 "deg": 53.12
 },
-"source": "Warsaw",
-"target": "Radom"
+"source": "0",
+"target": "18"
 },
 {
 "dist": 190.81,
@@ -288,8 +314,8 @@
 "uni": 30.91,
 "deg": 31.54
 },
-"source": "Bialystok",
-"target": "Olszlyn"
+"source": "1",
+"target": "14"
 },
 {
 "dist": 51.47,
@@ -301,8 +327,8 @@
 "uni": 27.27,
 "deg": 27.64
 },
-"source": "Wlocawek",
-"target": "Torun"
+"source": "2",
+"target": "24"
 },
 {
 "dist": 44.59,
@@ -314,8 +340,8 @@
 "uni": 30.91,
 "deg": 31.54
 },
-"source": "Wlocawek",
-"target": "Plock"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 87.65,
@@ -327,8 +353,8 @@
 "uni": 22.73,
 "deg": 10.74
 },
-"source": "Opole",
-"target": "Kalowice"
+"source": "4",
+"target": "16"
 },
 {
 "dist": 80.38,
@@ -340,8 +366,8 @@
 "uni": 43.64,
 "deg": 31.05
 },
-"source": "Opole",
-"target": "Wroclaw"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 103.86,
@@ -353,8 +379,8 @@
 "uni": 62.73,
 "deg": 49.80
 },
-"source": "Wroclaw",
-"target": "Kalisz"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 140.27,
@@ -366,8 +392,8 @@
 "uni": 40.00,
 "deg": 37.50
 },
-"source": "Lublin",
-"target": "Rzeszow"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 148.75,
@@ -379,8 +405,8 @@
 "uni": 23.64,
 "deg": 21.88
 },
-"source": "Rzeszow",
-"target": "Krakow"
+"source": "7",
+"target": "11"
 },
 {
 "dist": 94.72,
@@ -392,8 +418,8 @@
 "uni": 99.09,
 "deg": 98.44
 },
-"source": "Kalisz",
-"target": "Lodz"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 105.93,
@@ -405,8 +431,8 @@
 "uni": 91.82,
 "deg": 89.06
 },
-"source": "Kalisz",
-"target": "Poznan"
+"source": "8",
+"target": "31"
 },
 {
 "dist": 100.96,
@@ -418,8 +444,8 @@
 "uni": 23.64,
 "deg": 21.88
 },
-"source": "Krakow",
-"target": "Kielce"
+"source": "11",
+"target": "17"
 },
 {
 "dist": 76.83,
@@ -431,8 +457,8 @@
 "uni": 22.73,
 "deg": 10.74
 },
-"source": "Krakow",
-"target": "Tarnow"
+"source": "11",
+"target": "15"
 },
 {
 "dist": 113.07,
@@ -444,8 +470,8 @@
 "uni": 22.73,
 "deg": 10.74
 },
-"source": "Zielona Gora",
-"target": "Poznan"
+"source": "12",
+"target": "31"
 },
 {
 "dist": 135.56,
@@ -457,8 +483,8 @@
 "uni": 27.27,
 "deg": 27.64
 },
-"source": "Gdansk",
-"target": "Olszlyn"
+"source": "13",
+"target": "14"
 },
 {
 "dist": 142.96,
@@ -470,8 +496,8 @@
 "uni": 30.91,
 "deg": 29.98
 },
-"source": "Gdansk",
-"target": "Bydgoszcz"
+"source": "13",
+"target": "23"
 },
 {
 "dist": 69.42,
@@ -483,8 +509,8 @@
 "uni": 40.00,
 "deg": 37.50
 },
-"source": "Kielce",
-"target": "Radom"
+"source": "17",
+"target": "18"
 },
 {
 "dist": 41.31,
@@ -496,8 +522,8 @@
 "uni": 30.91,
 "deg": 29.98
 },
-"source": "Bydgoszcz",
-"target": "Torun"
+"source": "23",
+"target": "24"
 },
 {
 "dist": 84.78,
@@ -509,8 +535,8 @@
 "uni": 52.73,
 "deg": 50.00
 },
-"source": "Bydgoszcz",
-"target": "Pila"
+"source": "23",
+"target": "32"
 },
 {
 "dist": 63.13,
@@ -522,8 +548,8 @@
 "uni": 22.73,
 "deg": 10.74
 },
-"source": "Slupsk",
-"target": "Koszalin"
+"source": "26",
+"target": "27"
 },
 {
 "dist": 38.38,
@@ -535,8 +561,8 @@
 "uni": 43.64,
 "deg": 31.05
 },
-"source": "Koszalin",
-"target": "Kolobrzeg"
+"source": "27",
+"target": "28"
 },
 {
 "dist": 107.14,
@@ -548,8 +574,8 @@
 "uni": 62.73,
 "deg": 49.80
 },
-"source": "Kolobrzeg",
-"target": "Szczecin"
+"source": "28",
+"target": "29"
 },
 {
 "dist": 148.50,
@@ -561,8 +587,8 @@
 "uni": 80.00,
 "deg": 66.99
 },
-"source": "Szczecin",
-"target": "Pila"
+"source": "29",
+"target": "32"
 },
 {
 "dist": 83.16,
@@ -574,8 +600,8 @@
 "uni": 84.55,
 "deg": 81.25
 },
-"source": "Poznan",
-"target": "Pila"
+"source": "31",
+"target": "32"
 }
 ]
 }

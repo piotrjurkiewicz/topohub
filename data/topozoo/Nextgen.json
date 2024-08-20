@@ -30,116 +30,132 @@
 },
 "nodes": [
 {
+"name": "Dubbo",
 "pos": [
 148.62,
 -32.25
 ],
-"id": "Dubbo"
+"id": "0"
 },
 {
+"name": "Moree",
 "pos": [
 149.85,
 -29.47
 ],
-"id": "Moree"
+"id": "1"
 },
 {
+"name": "Parkes",
 "pos": [
 148.18,
 -33.13
 ],
-"id": "Parkes"
+"id": "3"
 },
 {
+"name": "Albury",
 "pos": [
 146.92,
 -36.08
 ],
-"id": "Albury"
+"id": "4"
 },
 {
+"name": "Newcastle",
 "pos": [
 151.78,
 -32.93
 ],
-"id": "Newcastle"
+"id": "5"
 },
 {
+"name": "Coff's Harbour",
 "pos": [
 153.13,
 -30.30
 ],
-"id": "Coff's Harbour"
+"id": "6"
 },
 {
+"name": "Geelong",
 "pos": [
 144.36,
 -38.15
 ],
-"id": "Geelong"
+"id": "7"
 },
 {
+"name": "Shepparton",
 "pos": [
 145.40,
 -36.38
 ],
-"id": "Shepparton"
+"id": "8"
 },
 {
+"name": "Perth",
 "pos": [
 115.83,
 -31.93
 ],
-"id": "Perth"
+"id": "9"
 },
 {
+"name": "Adelaide",
 "pos": [
 138.60,
 -34.93
 ],
-"id": "Adelaide"
+"id": "10"
 },
 {
+"name": "Melbourne",
 "pos": [
 144.96,
 -37.81
 ],
-"id": "Melbourne"
+"id": "11"
 },
 {
+"name": "Sydney",
 "pos": [
 151.21,
 -33.87
 ],
-"id": "Sydney"
+"id": "12"
 },
 {
+"name": "Canberra",
 "pos": [
 149.13,
 -35.28
 ],
-"id": "Canberra"
+"id": "13"
 },
 {
+"name": "Brisbane",
 "pos": [
 153.03,
 -27.47
 ],
-"id": "Brisbane"
+"id": "14"
 },
 {
+"name": "Kalgoorlie",
 "pos": [
 121.47,
 -30.75
 ],
-"id": "Kalgoorlie"
+"id": "15"
 },
 {
+"name": "Port Augusta",
 "pos": [
 137.77,
 -32.50
 ],
-"id": "Port Augusta"
+"id": "16"
 }
 ],
 "links": [
@@ -153,8 +169,8 @@
 "uni": 43.75,
 "deg": 34.12
 },
-"source": "Dubbo",
-"target": "Moree"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 106.29,
@@ -166,8 +182,8 @@
 "uni": 23.44,
 "deg": 12.16
 },
-"source": "Dubbo",
-"target": "Parkes"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 382.05,
@@ -179,8 +195,8 @@
 "uni": 60.94,
 "deg": 52.94
 },
-"source": "Moree",
-"target": "Brisbane"
+"source": "1",
+"target": "14"
 },
 {
 "dist": 259.22,
@@ -192,8 +208,8 @@
 "uni": 98.44,
 "deg": 100.00
 },
-"source": "Albury",
-"target": "Melbourne"
+"source": "4",
+"target": "11"
 },
 {
 "dist": 218.69,
@@ -205,8 +221,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Albury",
-"target": "Canberra"
+"source": "4",
+"target": "13"
 },
 {
 "dist": 117.22,
@@ -218,8 +234,8 @@
 "uni": 93.75,
 "deg": 90.59
 },
-"source": "Newcastle",
-"target": "Sydney"
+"source": "5",
+"target": "12"
 },
 {
 "dist": 319.21,
@@ -231,8 +247,8 @@
 "uni": 85.94,
 "deg": 81.18
 },
-"source": "Newcastle",
-"target": "Coff's Harbour"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 315.17,
@@ -244,8 +260,8 @@
 "uni": 75.00,
 "deg": 68.63
 },
-"source": "Coff's Harbour",
-"target": "Brisbane"
+"source": "6",
+"target": "14"
 },
 {
 "dist": 626.52,
@@ -257,8 +273,8 @@
 "uni": 75.00,
 "deg": 81.18
 },
-"source": "Geelong",
-"target": "Adelaide"
+"source": "7",
+"target": "10"
 },
 {
 "dist": 64.53,
@@ -270,8 +286,8 @@
 "uni": 85.94,
 "deg": 90.59
 },
-"source": "Geelong",
-"target": "Melbourne"
+"source": "7",
+"target": "11"
 },
 {
 "dist": 163.78,
@@ -283,8 +299,8 @@
 "uni": 23.44,
 "deg": 12.16
 },
-"source": "Shepparton",
-"target": "Melbourne"
+"source": "8",
+"target": "11"
 },
 {
 "dist": 2134.65,
@@ -296,8 +312,8 @@
 "uni": 31.25,
 "deg": 31.37
 },
-"source": "Perth",
-"target": "Adelaide"
+"source": "9",
+"target": "10"
 },
 {
 "dist": 551.02,
@@ -309,8 +325,8 @@
 "uni": 12.50,
 "deg": 12.55
 },
-"source": "Perth",
-"target": "Kalgoorlie"
+"source": "9",
+"target": "15"
 },
 {
 "dist": 281.41,
@@ -322,8 +338,8 @@
 "uni": 31.25,
 "deg": 31.37
 },
-"source": "Adelaide",
-"target": "Port Augusta"
+"source": "10",
+"target": "16"
 },
 {
 "dist": 247.07,
@@ -335,8 +351,8 @@
 "uni": 98.44,
 "deg": 96.86
 },
-"source": "Sydney",
-"target": "Canberra"
+"source": "12",
+"target": "13"
 },
 {
 "dist": 1554.42,
@@ -348,8 +364,8 @@
 "uni": 12.50,
 "deg": 12.55
 },
-"source": "Kalgoorlie",
-"target": "Port Augusta"
+"source": "15",
+"target": "16"
 }
 ]
 }

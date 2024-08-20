@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.18,
 "max_sdp_num": 2,
 "avg_sdp_hops": 2.27,
-"avg_sdp_len": 525.48,
+"avg_sdp_len": 526.08,
 "avg_adp_num": 2.20,
 "max_adp_num": 6,
 "avg_adp_hops": 2.99,
@@ -30,137 +30,156 @@
 },
 "nodes": [
 {
+"name": "Navarra",
 "pos": [
 -1.64,
 42.82
 ],
-"id": "Navarra"
+"id": "0"
 },
 {
+"name": "Rioja",
 "pos": [
 -2.45,
 42.47
 ],
-"id": "Rioja"
+"id": "1"
 },
 {
+"name": "Cantabria",
 "pos": [
 -3.80,
 43.46
 ],
-"id": "Cantabria"
+"id": "2"
 },
 {
+"name": "Pais Vasco",
 "pos": [
 -2.75,
 43.00
 ],
-"id": "Pais Vasco"
+"id": "3"
 },
 {
+"name": "Baleares",
 "pos": [
 2.65,
 39.57
 ],
-"id": "Baleares"
+"id": "4"
 },
 {
+"name": "Valencia",
 "pos": [
 -0.38,
 39.47
 ],
-"id": "Valencia"
+"id": "5"
 },
 {
+"name": "Aragon",
 "pos": [
 -0.88,
 41.66
 ],
-"id": "Aragon"
+"id": "6"
 },
 {
+"name": "Cataluna",
 "pos": [
 2.16,
 41.39
 ],
-"id": "Cataluna"
+"id": "7"
 },
 {
+"name": "Murcia",
 "pos": [
 -1.12,
 37.98
 ],
-"id": "Murcia"
+"id": "8"
 },
 {
+"name": "Galacia",
 "pos": [
 -8.55,
 42.88
 ],
-"id": "Galacia"
+"id": "9"
 },
 {
+"name": "Asturias",
 "pos": [
 -5.84,
 43.36
 ],
-"id": "Asturias"
+"id": "10"
 },
 {
+"name": "Extremadura",
 "pos": [
 -6.97,
 38.88
 ],
-"id": "Extremadura"
+"id": "11"
 },
 {
+"name": "Andalucia",
 "pos": [
 -5.99,
 37.38
 ],
-"id": "Andalucia"
+"id": "12"
 },
 {
+"name": "Canarias (las palmas)",
 "pos": [
 -15.42,
 28.10
 ],
-"id": "Canarias (las palmas)"
+"id": "13"
 },
 {
+"name": "Canarias (tenerife)",
 "pos": [
 -16.32,
 28.48
 ],
-"id": "Canarias (tenerife)"
+"id": "14"
 },
 {
+"name": "Castilla La Mancha",
 "pos": [
 -3.93,
 38.98
 ],
-"id": "Castilla La Mancha"
+"id": "15"
 },
 {
+"name": "Nacional",
 "pos": [
 -3.70,
 40.42
 ],
-"id": "Nacional"
+"id": "16"
 },
 {
+"name": "Madrid",
 "pos": [
 -3.70,
 40.42
 ],
-"id": "Madrid"
+"id": "17"
 },
 {
+"name": "Castilla Y Leon",
 "pos": [
 -4.72,
 41.65
 ],
-"id": "Castilla Y Leon"
+"id": "18"
 }
 ],
 "links": [
@@ -174,8 +193,8 @@
 "uni": 34.57,
 "deg": 24.03
 },
-"source": "Navarra",
-"target": "Pais Vasco"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 143.69,
@@ -187,8 +206,8 @@
 "uni": 37.13,
 "deg": 25.91
 },
-"source": "Navarra",
-"target": "Aragon"
+"source": "0",
+"target": "6"
 },
 {
 "dist": 208.05,
@@ -200,8 +219,8 @@
 "uni": 31.44,
 "deg": 20.93
 },
-"source": "Rioja",
-"target": "Castilla Y Leon"
+"source": "1",
+"target": "18"
 },
 {
 "dist": 158.09,
@@ -213,8 +232,8 @@
 "uni": 35.42,
 "deg": 24.09
 },
-"source": "Rioja",
-"target": "Aragon"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 165.26,
@@ -226,8 +245,8 @@
 "uni": 9.82,
 "deg": 5.32
 },
-"source": "Cantabria",
-"target": "Asturias"
+"source": "2",
+"target": "10"
 },
 {
 "dist": 99.87,
@@ -239,8 +258,8 @@
 "uni": 58.46,
 "deg": 38.54
 },
-"source": "Cantabria",
-"target": "Pais Vasco"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 472.01,
@@ -252,8 +271,8 @@
 "uni": 16.93,
 "deg": 15.28
 },
-"source": "Pais Vasco",
-"target": "Galacia"
+"source": "3",
+"target": "9"
 },
 {
 "dist": 298.03,
@@ -265,8 +284,8 @@
 "uni": 100.00,
 "deg": 97.01
 },
-"source": "Pais Vasco",
-"target": "Nacional"
+"source": "3",
+"target": "16"
 },
 {
 "dist": 260.00,
@@ -278,8 +297,8 @@
 "uni": 32.43,
 "deg": 21.59
 },
-"source": "Baleares",
-"target": "Valencia"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 206.59,
@@ -291,8 +310,8 @@
 "uni": 29.02,
 "deg": 18.27
 },
-"source": "Baleares",
-"target": "Cataluna"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 177.34,
@@ -304,8 +323,8 @@
 "uni": 29.02,
 "deg": 19.60
 },
-"source": "Valencia",
-"target": "Murcia"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 541.25,
@@ -317,8 +336,8 @@
 "uni": 23.04,
 "deg": 27.91
 },
-"source": "Valencia",
-"target": "Andalucia"
+"source": "5",
+"target": "12"
 },
 {
 "dist": 302.45,
@@ -330,8 +349,8 @@
 "uni": 69.13,
 "deg": 81.06
 },
-"source": "Valencia",
-"target": "Nacional"
+"source": "5",
+"target": "16"
 },
 {
 "dist": 302.75,
@@ -343,8 +362,8 @@
 "uni": 17.07,
 "deg": 21.59
 },
-"source": "Valencia",
-"target": "Cataluna"
+"source": "5",
+"target": "7"
 },
 {
 "dist": 274.19,
@@ -356,8 +375,8 @@
 "uni": 69.70,
 "deg": 74.64
 },
-"source": "Aragon",
-"target": "Nacional"
+"source": "6",
+"target": "16"
 },
 {
 "dist": 254.58,
@@ -369,8 +388,8 @@
 "uni": 28.17,
 "deg": 23.92
 },
-"source": "Aragon",
-"target": "Cataluna"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 504.38,
@@ -382,8 +401,8 @@
 "uni": 53.77,
 "deg": 60.13
 },
-"source": "Cataluna",
-"target": "Nacional"
+"source": "7",
+"target": "16"
 },
 {
 "dist": 433.94,
@@ -395,8 +414,8 @@
 "uni": 31.58,
 "deg": 19.60
 },
-"source": "Murcia",
-"target": "Andalucia"
+"source": "8",
+"target": "12"
 },
 {
 "dist": 486.84,
@@ -408,8 +427,8 @@
 "uni": 81.93,
 "deg": 85.71
 },
-"source": "Galacia",
-"target": "Nacional"
+"source": "9",
+"target": "16"
 },
 {
 "dist": 225.67,
@@ -421,8 +440,8 @@
 "uni": 59.74,
 "deg": 39.53
 },
-"source": "Galacia",
-"target": "Asturias"
+"source": "9",
+"target": "10"
 },
 {
 "dist": 343.56,
@@ -434,8 +453,8 @@
 "uni": 19.91,
 "deg": 14.62
 },
-"source": "Galacia",
-"target": "Castilla Y Leon"
+"source": "9",
+"target": "18"
 },
 {
 "dist": 327.41,
@@ -447,8 +466,8 @@
 "uni": 46.94,
 "deg": 30.56
 },
-"source": "Extremadura",
-"target": "Nacional"
+"source": "11",
+"target": "16"
 },
 {
 "dist": 188.17,
@@ -460,8 +479,8 @@
 "uni": 14.51,
 "deg": 9.30
 },
-"source": "Extremadura",
-"target": "Andalucia"
+"source": "11",
+"target": "12"
 },
 {
 "dist": 1356.00,
@@ -473,8 +492,8 @@
 "uni": 42.67,
 "deg": 28.24
 },
-"source": "Andalucia",
-"target": "Canarias (las palmas)"
+"source": "12",
+"target": "13"
 },
 {
 "dist": 253.27,
@@ -486,8 +505,8 @@
 "uni": 15.36,
 "deg": 9.63
 },
-"source": "Andalucia",
-"target": "Castilla La Mancha"
+"source": "12",
+"target": "15"
 },
 {
 "dist": 391.60,
@@ -499,8 +518,8 @@
 "uni": 71.69,
 "deg": 99.00
 },
-"source": "Andalucia",
-"target": "Nacional"
+"source": "12",
+"target": "16"
 },
 {
 "dist": 97.92,
@@ -512,8 +531,8 @@
 "uni": 24.75,
 "deg": 16.28
 },
-"source": "Canarias (las palmas)",
-"target": "Canarias (tenerife)"
+"source": "13",
+"target": "14"
 },
 {
 "dist": 1756.93,
@@ -525,8 +544,8 @@
 "uni": 73.40,
 "deg": 48.50
 },
-"source": "Canarias (tenerife)",
-"target": "Nacional"
+"source": "14",
+"target": "16"
 },
 {
 "dist": 160.62,
@@ -538,8 +557,8 @@
 "uni": 46.94,
 "deg": 30.56
 },
-"source": "Castilla La Mancha",
-"target": "Nacional"
+"source": "15",
+"target": "16"
 },
 {
 "dist": 0.00,
@@ -551,8 +570,8 @@
 "uni": 61.45,
 "deg": 20.27
 },
-"source": "Nacional",
-"target": "Madrid"
+"source": "16",
+"target": "17"
 },
 {
 "dist": 161.44,
@@ -564,8 +583,8 @@
 "uni": 60.88,
 "deg": 56.48
 },
-"source": "Nacional",
-"target": "Castilla Y Leon"
+"source": "16",
+"target": "18"
 }
 ]
 }

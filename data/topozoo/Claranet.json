@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.02,
 "max_sdp_num": 2,
 "avg_sdp_hops": 2.46,
-"avg_sdp_len": 1153.35,
+"avg_sdp_len": 1157.70,
 "avg_adp_num": 1.37,
 "max_adp_num": 3,
 "avg_adp_hops": 2.77,
@@ -30,109 +30,124 @@
 },
 "nodes": [
 {
+"name": "Faro",
 "pos": [
 -7.93,
 37.02
 ],
-"id": "Faro"
+"id": "0"
 },
 {
+"name": "Madrid",
 "pos": [
 -3.70,
 40.42
 ],
-"id": "Madrid"
+"id": "1"
 },
 {
+"name": "Porto",
 "pos": [
 -8.62,
 41.15
 ],
-"id": "Porto"
+"id": "2"
 },
 {
+"name": "Lisbon",
 "pos": [
 -9.13,
 38.72
 ],
-"id": "Lisbon"
+"id": "3"
 },
 {
+"name": "Barcelona",
 "pos": [
 2.16,
 41.39
 ],
-"id": "Barcelona"
+"id": "4"
 },
 {
+"name": "Manchester",
 "pos": [
 -2.24,
 53.48
 ],
-"id": "Manchester"
+"id": "5"
 },
 {
+"name": "New York",
 "pos": [
 -0.14,
 53.08
 ],
-"id": "New York"
+"id": "6"
 },
 {
+"name": "Amsterdam",
 "pos": [
 4.89,
 52.37
 ],
-"id": "Amsterdam"
+"id": "7"
 },
 {
+"name": "Eindhoven",
 "pos": [
 5.48,
 51.44
 ],
-"id": "Eindhoven"
+"id": "8"
 },
 {
+"name": "Berlin",
 "pos": [
 13.41,
 52.52
 ],
-"id": "Berlin"
+"id": "9"
 },
 {
+"name": "Frankfurt",
 "pos": [
 8.68,
 50.12
 ],
-"id": "Frankfurt"
+"id": "10"
 },
 {
+"name": "Munich",
 "pos": [
 11.58,
 48.14
 ],
-"id": "Munich"
+"id": "11"
 },
 {
+"name": "Paris",
 "pos": [
 2.35,
 48.85
 ],
-"id": "Paris"
+"id": "12"
 },
 {
+"name": "Rennes",
 "pos": [
 -1.68,
 48.08
 ],
-"id": "Rennes"
+"id": "13"
 },
 {
+"name": "London",
 "pos": [
 -0.13,
 51.51
 ],
-"id": "London"
+"id": "14"
 }
 ],
 "links": [
@@ -146,8 +161,8 @@
 "uni": 38.36,
 "deg": 18.52
 },
-"source": "Faro",
-"target": "Lisbon"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 502.45,
@@ -159,8 +174,8 @@
 "uni": 34.25,
 "deg": 30.16
 },
-"source": "Madrid",
-"target": "Lisbon"
+"source": "1",
+"target": "3"
 },
 {
 "dist": 504.38,
@@ -172,8 +187,8 @@
 "uni": 20.55,
 "deg": 18.52
 },
-"source": "Madrid",
-"target": "Barcelona"
+"source": "1",
+"target": "4"
 },
 {
 "dist": 274.21,
@@ -185,8 +200,8 @@
 "uni": 38.36,
 "deg": 18.52
 },
-"source": "Porto",
-"target": "Lisbon"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 1585.99,
@@ -198,8 +213,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Lisbon",
-"target": "London"
+"source": "3",
+"target": "14"
 },
 {
 "dist": 830.40,
@@ -211,8 +226,8 @@
 "uni": 36.99,
 "deg": 37.57
 },
-"source": "Barcelona",
-"target": "Paris"
+"source": "4",
+"target": "12"
 },
 {
 "dist": 261.85,
@@ -224,8 +239,8 @@
 "uni": 38.36,
 "deg": 18.52
 },
-"source": "Manchester",
-"target": "London"
+"source": "5",
+"target": "14"
 },
 {
 "dist": 174.68,
@@ -237,8 +252,8 @@
 "uni": 38.36,
 "deg": 18.52
 },
-"source": "New York",
-"target": "London"
+"source": "6",
+"target": "14"
 },
 {
 "dist": 111.36,
@@ -250,8 +265,8 @@
 "uni": 38.36,
 "deg": 18.52
 },
-"source": "Amsterdam",
-"target": "Eindhoven"
+"source": "7",
+"target": "8"
 },
 {
 "dist": 364.34,
@@ -263,8 +278,8 @@
 "uni": 24.66,
 "deg": 26.46
 },
-"source": "Amsterdam",
-"target": "Frankfurt"
+"source": "7",
+"target": "10"
 },
 {
 "dist": 357.03,
@@ -276,8 +291,8 @@
 "uni": 46.58,
 "deg": 41.27
 },
-"source": "Amsterdam",
-"target": "London"
+"source": "7",
+"target": "14"
 },
 {
 "dist": 423.75,
@@ -289,8 +304,8 @@
 "uni": 35.62,
 "deg": 33.86
 },
-"source": "Berlin",
-"target": "Frankfurt"
+"source": "9",
+"target": "10"
 },
 {
 "dist": 504.99,
@@ -302,8 +317,8 @@
 "uni": 2.74,
 "deg": 2.12
 },
-"source": "Berlin",
-"target": "Munich"
+"source": "9",
+"target": "11"
 },
 {
 "dist": 304.55,
@@ -315,8 +330,8 @@
 "uni": 35.62,
 "deg": 33.86
 },
-"source": "Frankfurt",
-"target": "Munich"
+"source": "10",
+"target": "11"
 },
 {
 "dist": 478.63,
@@ -328,8 +343,8 @@
 "uni": 36.99,
 "deg": 45.50
 },
-"source": "Frankfurt",
-"target": "Paris"
+"source": "10",
+"target": "12"
 },
 {
 "dist": 637.72,
@@ -341,8 +356,8 @@
 "uni": 53.42,
 "deg": 71.43
 },
-"source": "Frankfurt",
-"target": "London"
+"source": "10",
+"target": "14"
 },
 {
 "dist": 309.40,
@@ -354,8 +369,8 @@
 "uni": 38.36,
 "deg": 18.52
 },
-"source": "Paris",
-"target": "Rennes"
+"source": "12",
+"target": "13"
 },
 {
 "dist": 343.87,
@@ -367,8 +382,8 @@
 "uni": 49.32,
 "deg": 52.91
 },
-"source": "Paris",
-"target": "London"
+"source": "12",
+"target": "14"
 }
 ]
 }

@@ -30,116 +30,132 @@
 },
 "nodes": [
 {
+"name": "Blue Bell Hill",
 "pos": [
 0.50,
 51.33
 ],
-"id": "Blue Bell Hill"
+"id": "0"
 },
 {
+"name": "Wye",
 "pos": [
 0.94,
 51.18
 ],
-"id": "Wye"
+"id": "1"
 },
 {
+"name": "Dunkirk",
 "pos": [
 0.98,
 51.29
 ],
-"id": "Dunkirk"
+"id": "2"
 },
 {
+"name": "Beacon Hill",
 "pos": [
 0.43,
 51.40
 ],
-"id": "Beacon Hill"
+"id": "3"
 },
 {
+"name": "Kent",
 "pos": [
 1.08,
 51.28
 ],
-"id": "Kent"
+"id": "4"
 },
 {
+"name": "Horsted",
 "pos": [
 0.53,
 51.38
 ],
-"id": "Horsted"
+"id": "5"
 },
 {
+"name": "Cranbrook",
 "pos": [
 0.53,
 51.08
 ],
-"id": "Cranbrook"
+"id": "6"
 },
 {
+"name": "NTL-Wye",
 "pos": [
 0.94,
 51.18
 ],
-"id": "NTL-Wye"
+"id": "7"
 },
 {
+"name": "University of Greenwich",
 "pos": [
 0.08,
 51.45
 ],
-"id": "University of Greenwich"
+"id": "8"
 },
 {
+"name": "CCCU-C",
 "pos": [
 1.09,
 51.28
 ],
-"id": "CCCU-C"
+"id": "9"
 },
 {
+"name": "CCCU-S",
 "pos": [
 0.24,
 51.15
 ],
-"id": "CCCU-S"
+"id": "10"
 },
 {
+"name": "CCCU-T",
 "pos": [
 1.41,
 51.36
 ],
-"id": "CCCU-T"
+"id": "11"
 },
 {
+"name": "KIAD-R",
 "pos": [
 0.51,
 51.38
 ],
-"id": "KIAD-R"
+"id": "12"
 },
 {
+"name": "KIAD-C",
 "pos": [
 1.09,
 51.28
 ],
-"id": "KIAD-C"
+"id": "13"
 },
 {
+"name": "KIAD-M",
 "pos": [
 0.50,
 51.27
 ],
-"id": "KIAD-M"
+"id": "14"
 },
 {
+"name": "Tonbridge",
 "pos": [
 0.28,
 51.18
 ],
-"id": "Tonbridge"
+"id": "15"
 }
 ],
 "links": [
@@ -153,8 +169,8 @@
 "uni": 91.95,
 "deg": 96.43
 },
-"source": "Blue Bell Hill",
-"target": "Beacon Hill"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 5.39,
@@ -166,8 +182,8 @@
 "uni": 34.48,
 "deg": 16.84
 },
-"source": "Blue Bell Hill",
-"target": "Horsted"
+"source": "0",
+"target": "5"
 },
 {
 "dist": 27.80,
@@ -179,8 +195,8 @@
 "uni": 51.72,
 "deg": 51.02
 },
-"source": "Blue Bell Hill",
-"target": "Cranbrook"
+"source": "0",
+"target": "6"
 },
 {
 "dist": 32.26,
@@ -192,8 +208,8 @@
 "uni": 17.24,
 "deg": 16.33
 },
-"source": "Blue Bell Hill",
-"target": "University of Greenwich"
+"source": "0",
+"target": "8"
 },
 {
 "dist": 6.86,
@@ -205,8 +221,8 @@
 "uni": 34.48,
 "deg": 16.84
 },
-"source": "Blue Bell Hill",
-"target": "KIAD-M"
+"source": "0",
+"target": "14"
 },
 {
 "dist": 22.65,
@@ -218,8 +234,8 @@
 "uni": 64.37,
 "deg": 47.45
 },
-"source": "Blue Bell Hill",
-"target": "Tonbridge"
+"source": "0",
+"target": "15"
 },
 {
 "dist": 14.65,
@@ -231,8 +247,8 @@
 "uni": 37.93,
 "deg": 34.69
 },
-"source": "Wye",
-"target": "Kent"
+"source": "1",
+"target": "4"
 },
 {
 "dist": 0.00,
@@ -244,8 +260,8 @@
 "uni": 37.93,
 "deg": 34.69
 },
-"source": "Wye",
-"target": "NTL-Wye"
+"source": "1",
+"target": "7"
 },
 {
 "dist": 39.80,
@@ -257,8 +273,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Dunkirk",
-"target": "Beacon Hill"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 7.14,
@@ -270,8 +286,8 @@
 "uni": 93.10,
 "deg": 91.84
 },
-"source": "Dunkirk",
-"target": "Kent"
+"source": "2",
+"target": "4"
 },
 {
 "dist": 25.24,
@@ -283,8 +299,8 @@
 "uni": 17.24,
 "deg": 16.33
 },
-"source": "Beacon Hill",
-"target": "University of Greenwich"
+"source": "3",
+"target": "8"
 },
 {
 "dist": 6.05,
@@ -296,8 +312,8 @@
 "uni": 34.48,
 "deg": 16.84
 },
-"source": "Beacon Hill",
-"target": "KIAD-R"
+"source": "3",
+"target": "12"
 },
 {
 "dist": 24.36,
@@ -309,8 +325,8 @@
 "uni": 34.48,
 "deg": 16.84
 },
-"source": "Kent",
-"target": "CCCU-T"
+"source": "4",
+"target": "11"
 },
 {
 "dist": 0.86,
@@ -322,8 +338,8 @@
 "uni": 34.48,
 "deg": 16.84
 },
-"source": "Kent",
-"target": "KIAD-C"
+"source": "4",
+"target": "13"
 },
 {
 "dist": 0.66,
@@ -335,8 +351,8 @@
 "uni": 34.48,
 "deg": 16.84
 },
-"source": "Kent",
-"target": "CCCU-C"
+"source": "4",
+"target": "9"
 },
 {
 "dist": 30.24,
@@ -348,8 +364,8 @@
 "uni": 44.83,
 "deg": 42.86
 },
-"source": "Cranbrook",
-"target": "NTL-Wye"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 4.46,
@@ -361,8 +377,8 @@
 "uni": 34.48,
 "deg": 16.84
 },
-"source": "CCCU-S",
-"target": "Tonbridge"
+"source": "10",
+"target": "15"
 }
 ]
 }

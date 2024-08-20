@@ -30,67 +30,76 @@
 },
 "nodes": [
 {
+"name": "Hobart",
 "pos": [
 147.33,
 -42.88
 ],
-"id": "Hobart"
+"id": "21"
 },
 {
+"name": "Darwin",
 "pos": [
 130.84,
 -12.46
 ],
-"id": "Darwin"
+"id": "23"
 },
 {
+"name": "Adelaide",
 "pos": [
 138.60,
 -34.93
 ],
-"id": "Adelaide"
+"id": "24"
 },
 {
+"name": "Perth",
 "pos": [
 115.83,
 -31.93
 ],
-"id": "Perth"
+"id": "25"
 },
 {
+"name": "Brisbane",
 "pos": [
 153.03,
 -27.47
 ],
-"id": "Brisbane"
+"id": "26"
 },
 {
+"name": "Sydney1",
 "pos": [
 151.21,
 -33.87
 ],
-"id": "Sydney1"
+"id": "27"
 },
 {
+"name": "Sydney2",
 "pos": [
 151.21,
 -33.87
 ],
-"id": "Sydney2"
+"id": "28"
 },
 {
+"name": "Canberra",
 "pos": [
 149.13,
 -35.28
 ],
-"id": "Canberra"
+"id": "29"
 },
 {
+"name": "Melbourne",
 "pos": [
 144.96,
 -37.81
 ],
-"id": "Melbourne"
+"id": "30"
 }
 ],
 "links": [
@@ -104,8 +113,8 @@
 "uni": 100.00,
 "deg": 46.00
 },
-"source": "Hobart",
-"target": "Sydney2"
+"source": "21",
+"target": "28"
 },
 {
 "dist": 2618.96,
@@ -117,8 +126,8 @@
 "uni": 100.00,
 "deg": 46.00
 },
-"source": "Darwin",
-"target": "Adelaide"
+"source": "23",
+"target": "24"
 },
 {
 "dist": 2134.65,
@@ -130,8 +139,8 @@
 "uni": 56.25,
 "deg": 66.00
 },
-"source": "Adelaide",
-"target": "Perth"
+"source": "24",
+"target": "25"
 },
 {
 "dist": 1162.29,
@@ -143,8 +152,8 @@
 "uni": 87.50,
 "deg": 96.00
 },
-"source": "Adelaide",
-"target": "Sydney1"
+"source": "24",
+"target": "27"
 },
 {
 "dist": 958.29,
@@ -156,8 +165,8 @@
 "uni": 68.75,
 "deg": 72.00
 },
-"source": "Adelaide",
-"target": "Canberra"
+"source": "24",
+"target": "29"
 },
 {
 "dist": 3294.27,
@@ -169,8 +178,8 @@
 "uni": 33.33,
 "deg": 52.00
 },
-"source": "Perth",
-"target": "Sydney1"
+"source": "25",
+"target": "27"
 },
 {
 "dist": 3294.27,
@@ -182,8 +191,8 @@
 "uni": 77.08,
 "deg": 100.00
 },
-"source": "Perth",
-"target": "Sydney2"
+"source": "25",
+"target": "28"
 },
 {
 "dist": 732.80,
@@ -195,8 +204,8 @@
 "uni": 58.33,
 "deg": 62.00
 },
-"source": "Brisbane",
-"target": "Sydney1"
+"source": "26",
+"target": "27"
 },
 {
 "dist": 732.80,
@@ -208,8 +217,8 @@
 "uni": 58.33,
 "deg": 58.00
 },
-"source": "Brisbane",
-"target": "Sydney2"
+"source": "26",
+"target": "28"
 },
 {
 "dist": 713.57,
@@ -221,8 +230,8 @@
 "uni": 58.33,
 "deg": 62.00
 },
-"source": "Sydney1",
-"target": "Melbourne"
+"source": "27",
+"target": "30"
 },
 {
 "dist": 247.07,
@@ -234,8 +243,8 @@
 "uni": 81.25,
 "deg": 76.00
 },
-"source": "Sydney2",
-"target": "Canberra"
+"source": "28",
+"target": "29"
 },
 {
 "dist": 713.57,
@@ -247,8 +256,8 @@
 "uni": 58.33,
 "deg": 58.00
 },
-"source": "Sydney2",
-"target": "Melbourne"
+"source": "28",
+"target": "30"
 }
 ]
 }

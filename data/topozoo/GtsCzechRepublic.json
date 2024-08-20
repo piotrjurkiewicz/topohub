@@ -30,186 +30,212 @@
 },
 "nodes": [
 {
+"name": "Klatovy",
 "pos": [
 13.30,
 49.40
 ],
-"id": "Klatovy"
+"id": "0"
 },
 {
+"name": "Pisek",
 "pos": [
 14.15,
 49.31
 ],
-"id": "Pisek"
+"id": "1"
 },
 {
+"name": "Chomutov",
 "pos": [
 13.42,
 50.46
 ],
-"id": "Chomutov"
+"id": "2"
 },
 {
+"name": "Plzen",
 "pos": [
 13.38,
 49.75
 ],
-"id": "Plzen"
+"id": "3"
 },
 {
+"name": "Jindrichuv Hradec",
 "pos": [
 15.00,
 49.14
 ],
-"id": "Jindrichuv Hradec"
+"id": "4"
 },
 {
+"name": "Havlickuv Brod",
 "pos": [
 15.58,
 49.61
 ],
-"id": "Havlickuv Brod"
+"id": "5"
 },
 {
+"name": "Ceske Budejovice",
 "pos": [
 14.47,
 48.97
 ],
-"id": "Ceske Budejovice"
+"id": "6"
 },
 {
+"name": "Tabor",
 "pos": [
 14.66,
 49.41
 ],
-"id": "Tabor"
+"id": "7"
 },
 {
+"name": "Brno",
 "pos": [
 16.61,
 49.20
 ],
-"id": "Brno"
+"id": "9"
 },
 {
+"name": "Usti nad Labem",
 "pos": [
 14.03,
 50.66
 ],
-"id": "Usti nad Labem"
+"id": "12"
 },
 {
+"name": "Kolin",
 "pos": [
 15.20,
 50.03
 ],
-"id": "Kolin"
+"id": "13"
 },
 {
+"name": "Ostrava",
 "pos": [
 18.28,
 49.83
 ],
-"id": "Ostrava"
+"id": "14"
 },
 {
+"name": "Zlin",
 "pos": [
 17.67,
 49.22
 ],
-"id": "Zlin"
+"id": "15"
 },
 {
+"name": "Ostrokovice",
 "pos": [
 15.50,
 49.03
 ],
-"id": "Ostrokovice"
+"id": "16"
 },
 {
+"name": "Hodonin",
 "pos": [
 17.13,
 48.85
 ],
-"id": "Hodonin"
+"id": "17"
 },
 {
+"name": "Prostejov",
 "pos": [
 17.11,
 49.47
 ],
-"id": "Prostejov"
+"id": "21"
 },
 {
+"name": "Beroun",
 "pos": [
 14.07,
 49.96
 ],
-"id": "Beroun"
+"id": "22"
 },
 {
+"name": "Karlovy vary",
 "pos": [
 12.87,
 50.23
 ],
-"id": "Karlovy vary"
+"id": "23"
 },
 {
+"name": "Opava",
 "pos": [
 17.90,
 49.94
 ],
-"id": "Opava"
+"id": "24"
 },
 {
+"name": "Olomouc",
 "pos": [
 17.25,
 49.60
 ],
-"id": "Olomouc"
+"id": "25"
 },
 {
+"name": "Ceska Trebova",
 "pos": [
 16.44,
 49.90
 ],
-"id": "Ceska Trebova"
+"id": "26"
 },
 {
+"name": "Liberec",
 "pos": [
 15.06,
 50.77
 ],
-"id": "Liberec"
+"id": "27"
 },
 {
+"name": "Semily",
 "pos": [
 15.34,
 50.60
 ],
-"id": "Semily"
+"id": "28"
 },
 {
+"name": "Kladno",
 "pos": [
 14.10,
 50.15
 ],
-"id": "Kladno"
+"id": "29"
 },
 {
+"name": "Prague",
 "pos": [
 14.42,
 50.09
 ],
-"id": "Prague"
+"id": "30"
 },
 {
+"name": "Mlada Boleslay",
 "pos": [
 14.90,
 50.41
 ],
-"id": "Mlada Boleslay"
+"id": "31"
 }
 ],
 "links": [
@@ -223,8 +249,8 @@
 "uni": 14.88,
 "deg": 7.89
 },
-"source": "Klatovy",
-"target": "Plzen"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 44.14,
@@ -236,8 +262,8 @@
 "uni": 14.88,
 "deg": 7.89
 },
-"source": "Pisek",
-"target": "Ceske Budejovice"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 48.80,
@@ -249,8 +275,8 @@
 "uni": 41.07,
 "deg": 36.23
 },
-"source": "Chomutov",
-"target": "Usti nad Labem"
+"source": "2",
+"target": "12"
 },
 {
 "dist": 46.34,
@@ -262,8 +288,8 @@
 "uni": 52.38,
 "deg": 48.47
 },
-"source": "Chomutov",
-"target": "Karlovy vary"
+"source": "2",
+"target": "23"
 },
 {
 "dist": 55.31,
@@ -275,8 +301,8 @@
 "uni": 79.17,
 "deg": 77.46
 },
-"source": "Plzen",
-"target": "Beroun"
+"source": "3",
+"target": "22"
 },
 {
 "dist": 64.99,
@@ -288,8 +314,8 @@
 "uni": 62.50,
 "deg": 59.42
 },
-"source": "Plzen",
-"target": "Karlovy vary"
+"source": "3",
+"target": "23"
 },
 {
 "dist": 66.42,
@@ -301,8 +327,8 @@
 "uni": 95.24,
 "deg": 94.85
 },
-"source": "Jindrichuv Hradec",
-"target": "Havlickuv Brod"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 42.90,
@@ -314,8 +340,8 @@
 "uni": 98.21,
 "deg": 98.07
 },
-"source": "Jindrichuv Hradec",
-"target": "Ceske Budejovice"
+"source": "4",
+"target": "6"
 },
 {
 "dist": 87.38,
@@ -327,8 +353,8 @@
 "uni": 91.07,
 "deg": 90.34
 },
-"source": "Havlickuv Brod",
-"target": "Brno"
+"source": "5",
+"target": "9"
 },
 {
 "dist": 123.92,
@@ -340,8 +366,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Ceske Budejovice",
-"target": "Prague"
+"source": "6",
+"target": "30"
 },
 {
 "dist": 50.72,
@@ -353,8 +379,8 @@
 "uni": 14.88,
 "deg": 7.89
 },
-"source": "Ceske Budejovice",
-"target": "Tabor"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 54.29,
@@ -366,8 +392,8 @@
 "uni": 85.71,
 "deg": 84.54
 },
-"source": "Brno",
-"target": "Hodonin"
+"source": "9",
+"target": "17"
 },
 {
 "dist": 73.08,
@@ -379,8 +405,8 @@
 "uni": 28.57,
 "deg": 22.71
 },
-"source": "Usti nad Labem",
-"target": "Liberec"
+"source": "12",
+"target": "27"
 },
 {
 "dist": 56.08,
@@ -392,8 +418,8 @@
 "uni": 14.88,
 "deg": 7.89
 },
-"source": "Kolin",
-"target": "Prague"
+"source": "13",
+"target": "30"
 },
 {
 "dist": 29.55,
@@ -405,8 +431,8 @@
 "uni": 14.88,
 "deg": 7.89
 },
-"source": "Ostrava",
-"target": "Opava"
+"source": "14",
+"target": "24"
 },
 {
 "dist": 78.72,
@@ -418,8 +444,8 @@
 "uni": 41.07,
 "deg": 36.23
 },
-"source": "Ostrava",
-"target": "Olomouc"
+"source": "14",
+"target": "25"
 },
 {
 "dist": 81.84,
@@ -431,8 +457,8 @@
 "uni": 62.50,
 "deg": 59.42
 },
-"source": "Ostrava",
-"target": "Zlin"
+"source": "14",
+"target": "15"
 },
 {
 "dist": 159.01,
@@ -444,8 +470,8 @@
 "uni": 71.43,
 "deg": 69.08
 },
-"source": "Zlin",
-"target": "Ostrokovice"
+"source": "15",
+"target": "16"
 },
 {
 "dist": 121.01,
@@ -457,8 +483,8 @@
 "uni": 79.17,
 "deg": 77.46
 },
-"source": "Ostrokovice",
-"target": "Hodonin"
+"source": "16",
+"target": "17"
 },
 {
 "dist": 17.06,
@@ -470,8 +496,8 @@
 "uni": 14.88,
 "deg": 7.89
 },
-"source": "Prostejov",
-"target": "Olomouc"
+"source": "21",
+"target": "25"
 },
 {
 "dist": 28.49,
@@ -483,8 +509,8 @@
 "uni": 85.71,
 "deg": 84.54
 },
-"source": "Beroun",
-"target": "Prague"
+"source": "22",
+"target": "30"
 },
 {
 "dist": 67.44,
@@ -496,8 +522,8 @@
 "uni": 14.88,
 "deg": 7.89
 },
-"source": "Olomouc",
-"target": "Ceska Trebova"
+"source": "25",
+"target": "26"
 },
 {
 "dist": 26.93,
@@ -509,8 +535,8 @@
 "uni": 14.88,
 "deg": 7.89
 },
-"source": "Liberec",
-"target": "Semily"
+"source": "27",
+"target": "28"
 },
 {
 "dist": 23.61,
@@ -522,8 +548,8 @@
 "uni": 14.88,
 "deg": 7.89
 },
-"source": "Kladno",
-"target": "Prague"
+"source": "29",
+"target": "30"
 },
 {
 "dist": 49.70,
@@ -535,8 +561,8 @@
 "uni": 14.88,
 "deg": 7.89
 },
-"source": "Prague",
-"target": "Mlada Boleslay"
+"source": "30",
+"target": "31"
 }
 ]
 }

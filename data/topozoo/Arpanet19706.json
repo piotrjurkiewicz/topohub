@@ -30,67 +30,76 @@
 },
 "nodes": [
 {
+"name": "HARVARD",
 "pos": [
 -71.12,
 42.38
 ],
-"id": "HARVARD"
+"id": "0"
 },
 {
+"name": "SRI",
 "pos": [
 -122.18,
 37.45
 ],
-"id": "SRI"
+"id": "1"
 },
 {
+"name": "UCSB",
 "pos": [
 -119.70,
 34.42
 ],
-"id": "UCSB"
+"id": "2"
 },
 {
+"name": "UCLA",
 "pos": [
 -118.24,
 34.05
 ],
-"id": "UCLA"
+"id": "3"
 },
 {
+"name": "RAND",
 "pos": [
 -118.49,
 34.02
 ],
-"id": "RAND"
+"id": "4"
 },
 {
+"name": "SDC",
 "pos": [
 -118.49,
 34.02
 ],
-"id": "SDC"
+"id": "5"
 },
 {
+"name": "UTAH",
 "pos": [
 -111.89,
 40.76
 ],
-"id": "UTAH"
+"id": "6"
 },
 {
+"name": "MIT",
 "pos": [
 -71.09,
 42.36
 ],
-"id": "MIT"
+"id": "7"
 },
 {
+"name": "BBN",
 "pos": [
 -71.11,
 42.38
 ],
-"id": "BBN"
+"id": "8"
 }
 ],
 "links": [
@@ -104,8 +113,8 @@
 "uni": 44.44,
 "deg": 20.88
 },
-"source": "HARVARD",
-"target": "BBN"
+"source": "0",
+"target": "8"
 },
 {
 "dist": 404.74,
@@ -117,8 +126,8 @@
 "uni": 5.56,
 "deg": 4.40
 },
-"source": "SRI",
-"target": "UCSB"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 519.06,
@@ -130,8 +139,8 @@
 "uni": 38.89,
 "deg": 35.16
 },
-"source": "SRI",
-"target": "UCLA"
+"source": "1",
+"target": "3"
 },
 {
 "dist": 139.89,
@@ -143,8 +152,8 @@
 "uni": 38.89,
 "deg": 35.16
 },
-"source": "UCSB",
-"target": "UCLA"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 23.10,
@@ -156,8 +165,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "UCLA",
-"target": "RAND"
+"source": "3",
+"target": "4"
 },
 {
 "dist": 4188.82,
@@ -169,8 +178,8 @@
 "uni": 77.78,
 "deg": 74.73
 },
-"source": "RAND",
-"target": "BBN"
+"source": "4",
+"target": "8"
 },
 {
 "dist": 0.00,
@@ -182,8 +191,8 @@
 "uni": 55.56,
 "deg": 52.75
 },
-"source": "RAND",
-"target": "SDC"
+"source": "4",
+"target": "5"
 },
 {
 "dist": 949.31,
@@ -195,8 +204,8 @@
 "uni": 33.33,
 "deg": 30.77
 },
-"source": "SDC",
-"target": "UTAH"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 3367.50,
@@ -208,8 +217,8 @@
 "uni": 22.22,
 "deg": 17.58
 },
-"source": "UTAH",
-"target": "MIT"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 2.07,
@@ -221,8 +230,8 @@
 "uni": 44.44,
 "deg": 39.56
 },
-"source": "MIT",
-"target": "BBN"
+"source": "7",
+"target": "8"
 }
 ]
 }

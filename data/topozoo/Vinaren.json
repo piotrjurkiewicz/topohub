@@ -30,151 +30,172 @@
 },
 "nodes": [
 {
+"name": "Hue",
 "pos": [
 107.60,
 16.47
 ],
-"id": "Hue"
+"id": "0"
 },
 {
+"name": "VN HN",
 "pos": [
 105.84,
 21.02
 ],
-"id": "VN HN"
+"id": "1"
 },
 {
+"name": "HCM",
 "pos": [
 106.67,
 10.75
 ],
-"id": "HCM"
+"id": "2"
 },
 {
+"name": "DN",
 "pos": [
 108.22,
 16.07
 ],
-"id": "DN"
+"id": "3"
 },
 {
+"name": "KR",
 "pos": [
 127.50,
 37.00
 ],
-"id": "KR"
+"id": "4"
 },
 {
+"name": "JP",
 "pos": [
 139.75,
 35.69
 ],
-"id": "JP"
+"id": "5"
 },
 {
+"name": "HK",
 "pos": [
 114.17,
 22.25
 ],
-"id": "HK"
+"id": "6"
 },
 {
+"name": "CN",
 "pos": [
 105.00,
 35.00
 ],
-"id": "CN"
+"id": "7"
 },
 {
+"name": "PH",
 "pos": [
 122.00,
 13.00
 ],
-"id": "PH"
+"id": "8"
 },
 {
+"name": "Nha Trang",
 "pos": [
 109.18,
 12.25
 ],
-"id": "Nha Trang"
+"id": "9"
 },
 {
+"name": "Vinh",
 "pos": [
 105.97,
 10.25
 ],
-"id": "Vinh"
+"id": "10"
 },
 {
+"name": "Thai Nguyen",
 "pos": [
 105.84,
 21.59
 ],
-"id": "Thai Nguyen"
+"id": "11"
 },
 {
+"name": "An Giang",
 "pos": [
 105.42,
 10.38
 ],
-"id": "An Giang"
+"id": "12"
 },
 {
+"name": "Da Lat",
 "pos": [
 108.44,
 11.95
 ],
-"id": "Da Lat"
+"id": "13"
 },
 {
+"name": "Hai Phong",
 "pos": [
 106.68,
 20.86
 ],
-"id": "Hai Phong"
+"id": "14"
 },
 {
+"name": "AU",
 "pos": [
 135.00,
 -25.00
 ],
-"id": "AU"
+"id": "15"
 },
 {
+"name": "CT",
 "pos": [
 105.78,
 10.03
 ],
-"id": "CT"
+"id": "16"
 },
 {
+"name": "TH",
 "pos": [
 100.00,
 15.00
 ],
-"id": "TH"
+"id": "17"
 },
 {
+"name": "MY",
 "pos": [
 112.50,
 2.50
 ],
-"id": "MY"
+"id": "18"
 },
 {
+"name": "ID",
 "pos": [
 120.00,
 -5.00
 ],
-"id": "ID"
+"id": "19"
 },
 {
+"name": "SG",
 "pos": [
 103.80,
 1.37
 ],
-"id": "SG"
+"id": "24"
 }
 ],
 "links": [
@@ -188,8 +209,8 @@
 "uni": 18.18,
 "deg": 8.90
 },
-"source": "Hue",
-"target": "DN"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 1146.19,
@@ -201,8 +222,8 @@
 "uni": 50.91,
 "deg": 49.69
 },
-"source": "VN HN",
-"target": "HCM"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 605.70,
@@ -214,8 +235,8 @@
 "uni": 38.18,
 "deg": 37.27
 },
-"source": "VN HN",
-"target": "DN"
+"source": "1",
+"target": "3"
 },
 {
 "dist": 871.37,
@@ -227,8 +248,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "VN HN",
-"target": "HK"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 1198.48,
@@ -240,8 +261,8 @@
 "uni": 18.18,
 "deg": 8.90
 },
-"source": "VN HN",
-"target": "Vinh"
+"source": "1",
+"target": "10"
 },
 {
 "dist": 63.21,
@@ -253,8 +274,8 @@
 "uni": 18.18,
 "deg": 8.90
 },
-"source": "VN HN",
-"target": "Thai Nguyen"
+"source": "1",
+"target": "11"
 },
 {
 "dist": 89.35,
@@ -266,8 +287,8 @@
 "uni": 18.18,
 "deg": 8.90
 },
-"source": "VN HN",
-"target": "Hai Phong"
+"source": "1",
+"target": "14"
 },
 {
 "dist": 125.27,
@@ -279,8 +300,8 @@
 "uni": 34.55,
 "deg": 25.47
 },
-"source": "HCM",
-"target": "CT"
+"source": "2",
+"target": "16"
 },
 {
 "dist": 614.90,
@@ -292,8 +313,8 @@
 "uni": 10.91,
 "deg": 9.94
 },
-"source": "HCM",
-"target": "DN"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 234.92,
@@ -305,8 +326,8 @@
 "uni": 18.18,
 "deg": 8.90
 },
-"source": "HCM",
-"target": "Da Lat"
+"source": "2",
+"target": "13"
 },
 {
 "dist": 437.14,
@@ -318,8 +339,8 @@
 "uni": 18.18,
 "deg": 8.90
 },
-"source": "DN",
-"target": "Nha Trang"
+"source": "3",
+"target": "9"
 },
 {
 "dist": 4649.74,
@@ -331,8 +352,8 @@
 "uni": 18.18,
 "deg": 8.90
 },
-"source": "KR",
-"target": "SG"
+"source": "4",
+"target": "24"
 },
 {
 "dist": 3087.06,
@@ -344,8 +365,8 @@
 "uni": 18.18,
 "deg": 8.90
 },
-"source": "JP",
-"target": "PH"
+"source": "5",
+"target": "8"
 },
 {
 "dist": 5320.87,
@@ -357,8 +378,8 @@
 "uni": 10.91,
 "deg": 9.94
 },
-"source": "JP",
-"target": "SG"
+"source": "5",
+"target": "24"
 },
 {
 "dist": 2890.17,
@@ -370,8 +391,8 @@
 "uni": 23.64,
 "deg": 23.19
 },
-"source": "JP",
-"target": "HK"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 2579.34,
@@ -383,8 +404,8 @@
 "uni": 70.91,
 "deg": 69.57
 },
-"source": "HK",
-"target": "SG"
+"source": "6",
+"target": "24"
 },
 {
 "dist": 1674.93,
@@ -396,8 +417,8 @@
 "uni": 18.18,
 "deg": 8.90
 },
-"source": "HK",
-"target": "CN"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 55.91,
@@ -409,8 +430,8 @@
 "uni": 18.18,
 "deg": 8.90
 },
-"source": "An Giang",
-"target": "CT"
+"source": "12",
+"target": "16"
 },
 {
 "dist": 4460.16,
@@ -422,8 +443,8 @@
 "uni": 18.18,
 "deg": 8.90
 },
-"source": "AU",
-"target": "SG"
+"source": "15",
+"target": "24"
 },
 {
 "dist": 1572.76,
@@ -435,8 +456,8 @@
 "uni": 18.18,
 "deg": 8.90
 },
-"source": "TH",
-"target": "SG"
+"source": "17",
+"target": "24"
 },
 {
 "dist": 975.28,
@@ -448,8 +469,8 @@
 "uni": 18.18,
 "deg": 8.90
 },
-"source": "MY",
-"target": "SG"
+"source": "18",
+"target": "24"
 },
 {
 "dist": 1934.31,
@@ -461,8 +482,8 @@
 "uni": 18.18,
 "deg": 8.90
 },
-"source": "ID",
-"target": "SG"
+"source": "19",
+"target": "24"
 }
 ]
 }

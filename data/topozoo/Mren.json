@@ -30,46 +30,52 @@
 },
 "nodes": [
 {
+"name": "Bijelo Polje",
 "pos": [
 19.75,
 43.04
 ],
-"id": "Bijelo Polje"
+"id": "0"
 },
 {
+"name": "Niksic",
 "pos": [
 18.94,
 42.77
 ],
-"id": "Niksic"
+"id": "1"
 },
 {
+"name": "Podgorica",
 "pos": [
 19.26,
 42.44
 ],
-"id": "Podgorica"
+"id": "2"
 },
 {
+"name": "Njegusi",
 "pos": [
 18.83,
 42.43
 ],
-"id": "Njegusi"
+"id": "3"
 },
 {
+"name": "Kotor",
 "pos": [
 18.77,
 42.42
 ],
-"id": "Kotor"
+"id": "4"
 },
 {
+"name": "Herceg Novi",
 "pos": [
 18.54,
 42.45
 ],
-"id": "Herceg Novi"
+"id": "5"
 }
 ],
 "links": [
@@ -83,8 +89,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Bijelo Polje",
-"target": "Podgorica"
+"source": "0",
+"target": "2"
 },
 {
 "dist": 45.23,
@@ -96,8 +102,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Niksic",
-"target": "Podgorica"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 35.74,
@@ -109,8 +115,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Podgorica",
-"target": "Njegusi"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 40.73,
@@ -122,8 +128,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Podgorica",
-"target": "Kotor"
+"source": "2",
+"target": "4"
 },
 {
 "dist": 59.61,
@@ -135,8 +141,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Podgorica",
-"target": "Herceg Novi"
+"source": "2",
+"target": "5"
 }
 ]
 }

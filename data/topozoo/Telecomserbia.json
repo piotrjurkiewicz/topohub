@@ -30,46 +30,52 @@
 },
 "nodes": [
 {
+"name": "Novi Sad",
 "pos": [
 19.84,
 45.25
 ],
-"id": "Novi Sad"
+"id": "0"
 },
 {
+"name": "Belgrade",
 "pos": [
 20.47,
 44.80
 ],
-"id": "Belgrade"
+"id": "1"
 },
 {
+"name": "Kragujevac",
 "pos": [
 20.92,
 44.02
 ],
-"id": "Kragujevac"
+"id": "2"
 },
 {
+"name": "Nis",
 "pos": [
 21.90,
 43.32
 ],
-"id": "Nis"
+"id": "3"
 },
 {
+"name": "Krusevac",
 "pos": [
 21.33,
 43.58
 ],
-"id": "Krusevac"
+"id": "4"
 },
 {
+"name": "Podgorica",
 "pos": [
 19.26,
 42.44
 ],
-"id": "Podgorica"
+"id": "5"
 }
 ],
 "links": [
@@ -83,8 +89,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Novi Sad",
-"target": "Belgrade"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 315.97,
@@ -96,8 +102,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Novi Sad",
-"target": "Podgorica"
+"source": "0",
+"target": "5"
 },
 {
 "dist": 94.64,
@@ -109,8 +115,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Belgrade",
-"target": "Kragujevac"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 110.56,
@@ -122,8 +128,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Kragujevac",
-"target": "Nis"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 54.04,
@@ -135,8 +141,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Nis",
-"target": "Krusevac"
+"source": "3",
+"target": "4"
 },
 {
 "dist": 210.70,
@@ -148,8 +154,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Krusevac",
-"target": "Podgorica"
+"source": "4",
+"target": "5"
 }
 ]
 }

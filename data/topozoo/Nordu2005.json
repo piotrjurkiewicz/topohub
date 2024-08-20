@@ -30,46 +30,52 @@
 },
 "nodes": [
 {
+"name": "Stockholm",
 "pos": [
 18.06,
 59.33
 ],
-"id": "Stockholm"
+"id": "1"
 },
 {
+"name": "Helsinki",
 "pos": [
 24.94,
 60.17
 ],
-"id": "Helsinki"
+"id": "2"
 },
 {
+"name": "Copenhagen",
 "pos": [
 12.57,
 55.68
 ],
-"id": "Copenhagen"
+"id": "3"
 },
 {
+"name": "Reykjavik",
 "pos": [
 -21.90,
 64.14
 ],
-"id": "Reykjavik"
+"id": "4"
 },
 {
+"name": "St Petersburg",
 "pos": [
 30.26,
 59.89
 ],
-"id": "St Petersburg"
+"id": "7"
 },
 {
+"name": "Oslo",
 "pos": [
 10.75,
 59.91
 ],
-"id": "Oslo"
+"id": "8"
 }
 ],
 "links": [
@@ -83,8 +89,8 @@
 "uni": 83.33,
 "deg": 45.83
 },
-"source": "Stockholm",
-"target": "Helsinki"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 522.53,
@@ -96,8 +102,8 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Stockholm",
-"target": "Copenhagen"
+"source": "1",
+"target": "3"
 },
 {
 "dist": 688.20,
@@ -109,8 +115,8 @@
 "uni": 83.33,
 "deg": 45.83
 },
-"source": "Stockholm",
-"target": "St Petersburg"
+"source": "1",
+"target": "7"
 },
 {
 "dist": 416.46,
@@ -122,8 +128,8 @@
 "uni": 50.00,
 "deg": 50.00
 },
-"source": "Stockholm",
-"target": "Oslo"
+"source": "1",
+"target": "8"
 },
 {
 "dist": 483.38,
@@ -135,8 +141,8 @@
 "uni": 33.33,
 "deg": 33.33
 },
-"source": "Copenhagen",
-"target": "Oslo"
+"source": "3",
+"target": "8"
 },
 {
 "dist": 2104.79,
@@ -148,8 +154,8 @@
 "uni": 83.33,
 "deg": 45.83
 },
-"source": "Copenhagen",
-"target": "Reykjavik"
+"source": "3",
+"target": "4"
 }
 ]
 }

@@ -5,175 +5,198 @@
 "name": "btasiapac",
 "demands": {},
 "stats": {
-"nodes": 15,
+"nodes": 16,
 "links": 20,
-"demands": 210,
+"demands": 240,
 "min_degree": 1,
-"avg_degree": 2.67,
-"std_degree": 1.96,
+"avg_degree": 2.50,
+"std_degree": 1.94,
 "max_degree": 8,
-"gini": 0.37,
+"gini": 0.38,
 "min_link_len": 316.59,
 "avg_link_len": 2691.41,
 "max_link_len": 6300.62,
-"diameter_len": 14753.04,
-"diameter_hops": 4,
-"avg_sdp_num": 1.08,
-"max_sdp_num": 3,
-"avg_sdp_hops": 2.37,
-"avg_sdp_len": 6401.39,
-"avg_adp_num": 1.50,
+"diameter_len": 16945.30,
+"diameter_hops": 5,
+"avg_sdp_num": 1.04,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.59,
+"avg_sdp_len": 6329.60,
+"avg_adp_num": 1.32,
 "max_adp_num": 4,
-"avg_adp_hops": 2.73,
-"avg_adp_len": 8762.41
+"avg_adp_hops": 2.82,
+"avg_adp_len": 9258.09
 }
 },
 "nodes": [
 {
+"name": "Jakarta",
 "pos": [
 106.85,
 -6.21
 ],
-"id": "Jakarta"
+"id": "0"
 },
 {
+"name": "Perth",
 "pos": [
 115.83,
 -31.93
 ],
-"id": "Perth"
+"id": "1"
 },
 {
+"name": "Singapore",
 "pos": [
 103.85,
 1.29
 ],
-"id": "Singapore"
+"id": "2"
 },
 {
+"name": "Kuala Lumpur",
 "pos": [
 101.69,
 3.14
 ],
-"id": "Kuala Lumpur"
+"id": "3"
 },
 {
+"name": "Sydney",
 "pos": [
 151.21,
 -33.87
 ],
-"id": "Sydney"
+"id": "6"
 },
 {
+"name": "Auckland",
 "pos": [
 174.77,
 -36.87
 ],
-"id": "Auckland"
+"id": "7"
 },
 {
+"name": "New Delhi",
 "pos": [
 77.22,
 28.64
 ],
-"id": "New Delhi"
+"id": "10"
 },
 {
+"name": "Mumbai",
 "pos": [
 72.85,
 19.01
 ],
-"id": "Mumbai"
+"id": "11"
 },
 {
+"name": "Seoul",
 "pos": [
 126.98,
 37.57
 ],
-"id": "Seoul"
+"id": "12"
 },
 {
+"name": "Tokyo",
 "pos": [
 139.58,
 35.61
 ],
-"id": "Tokyo"
+"id": "13"
 },
 {
+"name": "Taipei",
 "pos": [
 121.53,
 25.05
 ],
-"id": "Taipei"
+"id": "14"
 },
 {
+"name": "Hong Kong",
 "pos": [
 114.16,
 22.29
 ],
-"id": "Hong Kong"
+"id": "15"
 },
 {
+"name": "Manila",
 "pos": [
 120.98,
 14.60
 ],
-"id": "Manila"
+"id": "16"
 },
 {
+"name": "Bangkok",
 "pos": [
 100.52,
 13.75
 ],
-"id": "Bangkok"
+"id": "17"
 },
 {
+"name": "Chenai",
 "pos": [
 80.28,
 13.09
 ],
-"id": "Chenai"
+"id": "18"
+},
+{
+"name": "Mumbai",
+"pos": [
+72.85,
+19.01
+],
+"id": "19"
 }
 ],
 "links": [
 {
 "dist": 3268.49,
 "ecmp_fwd": {
-"uni": 54.90,
-"deg": 20.24
+"uni": 37.04,
+"deg": 15.23
 },
 "ecmp_bwd": {
-"uni": 54.90,
-"deg": 20.24
+"uni": 37.04,
+"deg": 15.23
 },
-"source": "Jakarta",
-"target": "Hong Kong"
+"source": "0",
+"target": "15"
 },
 {
 "dist": 3905.09,
 "ecmp_fwd": {
-"uni": 41.18,
-"deg": 43.43
+"uni": 50.62,
+"deg": 50.39
 },
 "ecmp_bwd": {
-"uni": 41.18,
-"deg": 43.43
+"uni": 50.62,
+"deg": 50.39
 },
-"source": "Perth",
-"target": "Singapore"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 3294.27,
 "ecmp_fwd": {
-"uni": 54.90,
-"deg": 45.67
+"uni": 44.44,
+"deg": 39.06
 },
 "ecmp_bwd": {
-"uni": 54.90,
-"deg": 45.67
+"uni": 44.44,
+"deg": 39.06
 },
-"source": "Perth",
-"target": "Sydney"
+"source": "1",
+"target": "6"
 },
 {
 "dist": 6033.20,
@@ -185,216 +208,216 @@
 "uni": 100.00,
 "deg": 100.00
 },
-"source": "Perth",
-"target": "Hong Kong"
+"source": "1",
+"target": "15"
 },
 {
 "dist": 316.59,
 "ecmp_fwd": {
-"uni": 54.90,
-"deg": 20.24
+"uni": 37.04,
+"deg": 15.23
 },
 "ecmp_bwd": {
-"uni": 54.90,
-"deg": 20.24
+"uni": 37.04,
+"deg": 15.23
 },
-"source": "Singapore",
-"target": "Kuala Lumpur"
+"source": "2",
+"target": "3"
 },
 {
 "dist": 6300.62,
 "ecmp_fwd": {
-"uni": 47.06,
-"deg": 29.07
+"uni": 24.69,
+"deg": 17.19
 },
 "ecmp_bwd": {
-"uni": 47.06,
-"deg": 29.07
+"uni": 24.69,
+"deg": 17.19
 },
-"source": "Singapore",
-"target": "Sydney"
+"source": "2",
+"target": "6"
 },
 {
 "dist": 1433.64,
 "ecmp_fwd": {
-"uni": 49.02,
-"deg": 42.39
+"uni": 55.56,
+"deg": 50.00
 },
 "ecmp_bwd": {
-"uni": 49.02,
-"deg": 42.39
+"uni": 55.56,
+"deg": 50.00
 },
-"source": "Singapore",
-"target": "Bangkok"
+"source": "2",
+"target": "17"
 },
 {
 "dist": 2908.86,
 "ecmp_fwd": {
-"uni": 54.90,
-"deg": 20.24
+"uni": 37.04,
+"deg": 15.23
 },
 "ecmp_bwd": {
-"uni": 54.90,
-"deg": 20.24
+"uni": 37.04,
+"deg": 15.23
 },
-"source": "Singapore",
-"target": "Chenai"
+"source": "2",
+"target": "18"
 },
 {
 "dist": 3911.16,
 "ecmp_fwd": {
-"uni": 70.59,
-"deg": 56.40
+"uni": 37.04,
+"deg": 15.23
 },
 "ecmp_bwd": {
-"uni": 70.59,
-"deg": 56.40
+"uni": 37.04,
+"deg": 15.23
 },
-"source": "Singapore",
-"target": "Mumbai"
+"source": "2",
+"target": "19"
 },
 {
 "dist": 2157.08,
 "ecmp_fwd": {
-"uni": 54.90,
-"deg": 20.24
+"uni": 37.04,
+"deg": 15.23
 },
 "ecmp_bwd": {
-"uni": 54.90,
-"deg": 20.24
+"uni": 37.04,
+"deg": 15.23
 },
-"source": "Sydney",
-"target": "Auckland"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 1158.77,
 "ecmp_fwd": {
-"uni": 54.90,
-"deg": 20.24
+"uni": 37.04,
+"deg": 15.23
 },
 "ecmp_bwd": {
-"uni": 54.90,
-"deg": 20.24
+"uni": 37.04,
+"deg": 15.23
 },
-"source": "New Delhi",
-"target": "Mumbai"
+"source": "10",
+"target": "11"
 },
 {
 "dist": 4301.98,
 "ecmp_fwd": {
-"uni": 78.43,
-"deg": 70.93
+"uni": 69.14,
+"deg": 43.36
 },
 "ecmp_bwd": {
-"uni": 78.43,
-"deg": 70.93
+"uni": 69.14,
+"deg": 43.36
 },
-"source": "Mumbai",
-"target": "Hong Kong"
+"source": "11",
+"target": "15"
 },
 {
 "dist": 1145.38,
 "ecmp_fwd": {
-"uni": 7.84,
-"deg": 6.23
+"uni": 4.94,
+"deg": 4.69
 },
 "ecmp_bwd": {
-"uni": 7.84,
-"deg": 6.23
+"uni": 4.94,
+"deg": 4.69
 },
-"source": "Seoul",
-"target": "Tokyo"
+"source": "12",
+"target": "13"
 },
 {
 "dist": 2096.89,
 "ecmp_fwd": {
-"uni": 47.06,
-"deg": 33.22
+"uni": 32.10,
+"deg": 25.00
 },
 "ecmp_bwd": {
-"uni": 47.06,
-"deg": 33.22
+"uni": 32.10,
+"deg": 25.00
 },
-"source": "Seoul",
-"target": "Hong Kong"
+"source": "12",
+"target": "15"
 },
 {
 "dist": 2088.12,
 "ecmp_fwd": {
-"uni": 7.84,
-"deg": 6.23
+"uni": 4.94,
+"deg": 4.69
 },
 "ecmp_bwd": {
-"uni": 7.84,
-"deg": 6.23
+"uni": 4.94,
+"deg": 4.69
 },
-"source": "Tokyo",
-"target": "Taipei"
+"source": "13",
+"target": "14"
 },
 {
 "dist": 2871.17,
 "ecmp_fwd": {
-"uni": 43.14,
-"deg": 62.28
+"uni": 29.63,
+"deg": 46.88
 },
 "ecmp_bwd": {
-"uni": 43.14,
-"deg": 62.28
+"uni": 29.63,
+"deg": 46.88
 },
-"source": "Tokyo",
-"target": "Hong Kong"
+"source": "13",
+"target": "15"
 },
 {
 "dist": 2983.10,
 "ecmp_fwd": {
-"uni": 7.84,
-"deg": 6.23
+"uni": 4.94,
+"deg": 4.69
 },
 "ecmp_bwd": {
-"uni": 7.84,
-"deg": 6.23
+"uni": 4.94,
+"deg": 4.69
 },
-"source": "Tokyo",
-"target": "Manila"
+"source": "13",
+"target": "16"
 },
 {
 "dist": 811.43,
 "ecmp_fwd": {
-"uni": 47.06,
-"deg": 33.22
+"uni": 32.10,
+"deg": 25.00
 },
 "ecmp_bwd": {
-"uni": 47.06,
-"deg": 33.22
+"uni": 32.10,
+"deg": 25.00
 },
-"source": "Taipei",
-"target": "Hong Kong"
+"source": "14",
+"target": "15"
 },
 {
 "dist": 1116.85,
 "ecmp_fwd": {
-"uni": 47.06,
-"deg": 33.22
+"uni": 32.10,
+"deg": 25.00
 },
 "ecmp_bwd": {
-"uni": 47.06,
-"deg": 33.22
+"uni": 32.10,
+"deg": 25.00
 },
-"source": "Hong Kong",
-"target": "Manila"
+"source": "15",
+"target": "16"
 },
 {
 "dist": 1725.42,
 "ecmp_fwd": {
-"uni": 52.94,
-"deg": 49.65
+"uni": 60.49,
+"deg": 57.03
 },
 "ecmp_bwd": {
-"uni": 52.94,
-"deg": 49.65
+"uni": 60.49,
+"deg": 57.03
 },
-"source": "Hong Kong",
-"target": "Bangkok"
+"source": "15",
+"target": "17"
 }
 ]
 }

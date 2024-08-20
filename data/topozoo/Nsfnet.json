@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.06,
 "max_sdp_num": 2,
 "avg_sdp_hops": 2.42,
-"avg_sdp_len": 1972.70,
+"avg_sdp_len": 2025.26,
 "avg_adp_num": 1.65,
 "max_adp_num": 3,
 "avg_adp_hops": 3.04,
@@ -30,95 +30,108 @@
 },
 "nodes": [
 {
+"name": "SEQSUINET, Rice University, Houston",
 "pos": [
 -95.36,
 29.76
 ],
-"id": "SEQSUINET, Rice University, Houston"
+"id": "0"
 },
 {
+"name": "Jon Von Neumann Center, Princeton, NJ",
 "pos": [
 -74.66,
 40.35
 ],
-"id": "Jon Von Neumann Center, Princeton, NJ"
+"id": "1"
 },
 {
+"name": "SURANET, Georgia Tech, Atlanta",
 "pos": [
 -84.39,
 33.75
 ],
-"id": "SURANET, Georgia Tech, Atlanta"
+"id": "2"
 },
 {
+"name": "Pittsburgh Supercomputer Center",
 "pos": [
 -80.00,
 40.44
 ],
-"id": "Pittsburgh Supercomputer Center"
+"id": "3"
 },
 {
+"name": "Cornell Theory Center, Ithaca NY",
 "pos": [
 -76.50,
 42.44
 ],
-"id": "Cornell Theory Center, Ithaca NY"
+"id": "4"
 },
 {
+"name": "NorthWestNet, Seattle",
 "pos": [
 -122.33,
 47.61
 ],
-"id": "NorthWestNet, Seattle"
+"id": "5"
 },
 {
+"name": "BARRnet, Palo Alto",
 "pos": [
 -122.14,
 37.44
 ],
-"id": "BARRnet, Palo Alto"
+"id": "6"
 },
 {
+"name": "San Diego Supercomputer Center",
 "pos": [
 -117.16,
 32.72
 ],
-"id": "San Diego Supercomputer Center"
+"id": "7"
 },
 {
+"name": "Westnet, Salt Lake City",
 "pos": [
 -111.89,
 40.76
 ],
-"id": "Westnet, Salt Lake City"
+"id": "8"
 },
 {
+"name": "NCAR, Boulder",
 "pos": [
 -105.27,
 40.01
 ],
-"id": "NCAR, Boulder"
+"id": "9"
 },
 {
+"name": "MIDnet, Lincoln, NE",
 "pos": [
 -96.67,
 40.80
 ],
-"id": "MIDnet, Lincoln, NE"
+"id": "10"
 },
 {
+"name": "NCSA, University of Illinois, Champaign",
 "pos": [
 -88.24,
 40.12
 ],
-"id": "NCSA, University of Illinois, Champaign"
+"id": "11"
 },
 {
+"name": "Merit Univ of Michigan, Ann Arbor",
 "pos": [
 -83.74,
 42.28
 ],
-"id": "Merit Univ of Michigan, Ann Arbor"
+"id": "12"
 }
 ],
 "links": [
@@ -132,8 +145,8 @@
 "uni": 67.50,
 "deg": 59.09
 },
-"source": "SEQSUINET, Rice University, Houston",
-"target": "SURANET, Georgia Tech, Atlanta"
+"source": "0",
+"target": "2"
 },
 {
 "dist": 1320.78,
@@ -145,8 +158,8 @@
 "uni": 87.50,
 "deg": 87.27
 },
-"source": "SEQSUINET, Rice University, Houston",
-"target": "NCSA, University of Illinois, Champaign"
+"source": "0",
+"target": "11"
 },
 {
 "dist": 2094.61,
@@ -158,8 +171,8 @@
 "uni": 45.00,
 "deg": 43.64
 },
-"source": "SEQSUINET, Rice University, Houston",
-"target": "San Diego Supercomputer Center"
+"source": "0",
+"target": "7"
 },
 {
 "dist": 1132.20,
@@ -171,8 +184,8 @@
 "uni": 37.50,
 "deg": 31.82
 },
-"source": "Jon Von Neumann Center, Princeton, NJ",
-"target": "SURANET, Georgia Tech, Atlanta"
+"source": "1",
+"target": "2"
 },
 {
 "dist": 278.63,
@@ -184,8 +197,8 @@
 "uni": 47.50,
 "deg": 40.91
 },
-"source": "Jon Von Neumann Center, Princeton, NJ",
-"target": "Cornell Theory Center, Ithaca NY"
+"source": "1",
+"target": "4"
 },
 {
 "dist": 373.43,
@@ -197,8 +210,8 @@
 "uni": 60.00,
 "deg": 26.36
 },
-"source": "Pittsburgh Supercomputer Center",
-"target": "Merit Univ of Michigan, Ann Arbor"
+"source": "3",
+"target": "12"
 },
 {
 "dist": 595.50,
@@ -210,8 +223,8 @@
 "uni": 82.50,
 "deg": 71.82
 },
-"source": "Cornell Theory Center, Ithaca NY",
-"target": "Merit Univ of Michigan, Ann Arbor"
+"source": "4",
+"target": "12"
 },
 {
 "dist": 1603.52,
@@ -223,8 +236,8 @@
 "uni": 40.00,
 "deg": 35.45
 },
-"source": "NorthWestNet, Seattle",
-"target": "NCAR, Boulder"
+"source": "5",
+"target": "9"
 },
 {
 "dist": 1130.65,
@@ -236,8 +249,8 @@
 "uni": 50.00,
 "deg": 44.55
 },
-"source": "NorthWestNet, Seattle",
-"target": "BARRnet, Palo Alto"
+"source": "5",
+"target": "6"
 },
 {
 "dist": 3294.08,
@@ -249,8 +262,8 @@
 "uni": 65.00,
 "deg": 67.27
 },
-"source": "BARRnet, Palo Alto",
-"target": "Merit Univ of Michigan, Ann Arbor"
+"source": "6",
+"target": "12"
 },
 {
 "dist": 694.26,
@@ -262,8 +275,8 @@
 "uni": 45.00,
 "deg": 43.64
 },
-"source": "BARRnet, Palo Alto",
-"target": "San Diego Supercomputer Center"
+"source": "6",
+"target": "7"
 },
 {
 "dist": 566.84,
@@ -275,8 +288,8 @@
 "uni": 60.00,
 "deg": 26.36
 },
-"source": "Westnet, Salt Lake City",
-"target": "NCAR, Boulder"
+"source": "8",
+"target": "9"
 },
 {
 "dist": 1447.21,
@@ -288,8 +301,8 @@
 "uni": 100.00,
 "deg": 86.36
 },
-"source": "NCAR, Boulder",
-"target": "NCSA, University of Illinois, Champaign"
+"source": "9",
+"target": "11"
 },
 {
 "dist": 716.65,
@@ -301,8 +314,8 @@
 "uni": 60.00,
 "deg": 26.36
 },
-"source": "MIDnet, Lincoln, NE",
-"target": "NCSA, University of Illinois, Champaign"
+"source": "10",
+"target": "11"
 },
 {
 "dist": 446.87,
@@ -314,8 +327,8 @@
 "uni": 97.50,
 "deg": 100.00
 },
-"source": "NCSA, University of Illinois, Champaign",
-"target": "Merit Univ of Michigan, Ann Arbor"
+"source": "11",
+"target": "12"
 }
 ]
 }

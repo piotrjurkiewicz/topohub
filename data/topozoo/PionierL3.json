@@ -21,7 +21,7 @@
 "avg_sdp_num": 1.03,
 "max_sdp_num": 2,
 "avg_sdp_hops": 4.19,
-"avg_sdp_len": 294.63,
+"avg_sdp_len": 298.29,
 "avg_adp_num": 1.81,
 "max_adp_num": 4,
 "avg_adp_hops": 5.93,
@@ -30,193 +30,220 @@
 },
 "nodes": [
 {
+"name": "Warszawa",
 "pos": [
 21.01,
 52.23
 ],
-"id": "Warszawa"
+"id": "0"
 },
 {
+"name": "Radom",
 "pos": [
 21.15,
 51.40
 ],
-"id": "Radom"
+"id": "1"
 },
 {
+"name": "Bialystok",
 "pos": [
 23.15,
 53.13
 ],
-"id": "Bialystok"
+"id": "3"
 },
 {
+"name": "Lublin",
 "pos": [
 22.57,
 51.25
 ],
-"id": "Lublin"
+"id": "4"
 },
 {
+"name": "Lodz",
 "pos": [
 19.47,
 51.75
 ],
-"id": "Lodz"
+"id": "6"
 },
 {
+"name": "Pulawy",
 "pos": [
 21.97,
 51.42
 ],
-"id": "Pulawy"
+"id": "7"
 },
 {
+"name": "Rzeszow",
 "pos": [
 22.00,
 50.04
 ],
-"id": "Rzeszow"
+"id": "8"
 },
 {
+"name": "Kielce",
 "pos": [
 20.63,
 50.87
 ],
-"id": "Kielce"
+"id": "9"
 },
 {
+"name": "Elblag",
 "pos": [
 19.41,
 54.15
 ],
-"id": "Elblag"
+"id": "10"
 },
 {
+"name": "Suwalki",
 "pos": [
 22.93,
 54.11
 ],
-"id": "Suwalki"
+"id": "11"
 },
 {
+"name": "Sochaczew",
 "pos": [
 20.24,
 52.23
 ],
-"id": "Sochaczew"
+"id": "12"
 },
 {
+"name": "Gorzow Wlkp",
 "pos": [
 15.23,
 52.74
 ],
-"id": "Gorzow Wlkp"
+"id": "13"
 },
 {
+"name": "Bielsko-Biala",
 "pos": [
 19.05,
 49.82
 ],
-"id": "Bielsko-Biala"
+"id": "18"
 },
 {
+"name": "Zamosc",
 "pos": [
 23.25,
 50.72
 ],
-"id": "Zamosc"
+"id": "19"
 },
 {
+"name": "Czechtochowa",
 "pos": [
 19.12,
 50.80
 ],
-"id": "Czechtochowa"
+"id": "20"
 },
 {
+"name": "Krakow",
 "pos": [
 19.92,
 50.08
 ],
-"id": "Krakow"
+"id": "23"
 },
 {
+"name": "Wroclaw",
 "pos": [
 17.03,
 51.10
 ],
-"id": "Wroclaw"
+"id": "25"
 },
 {
+"name": "Opole",
 "pos": [
 17.95,
 50.67
 ],
-"id": "Opole"
+"id": "26"
 },
 {
+"name": "Gliwice",
 "pos": [
 18.67,
 50.28
 ],
-"id": "Gliwice"
+"id": "27"
 },
 {
+"name": "Olsztyn",
 "pos": [
 20.48,
 53.78
 ],
-"id": "Olsztyn"
+"id": "28"
 },
 {
+"name": "Gdansk",
 "pos": [
 18.65,
 54.35
 ],
-"id": "Gdansk"
+"id": "30"
 },
 {
+"name": "Koszalin",
 "pos": [
 16.17,
 54.19
 ],
-"id": "Koszalin"
+"id": "31"
 },
 {
+"name": "Szczecin",
 "pos": [
 14.55,
 53.43
 ],
-"id": "Szczecin"
+"id": "32"
 },
 {
+"name": "Zielona gora",
 "pos": [
 15.51,
 51.94
 ],
-"id": "Zielona gora"
+"id": "33"
 },
 {
+"name": "Poznan",
 "pos": [
 16.97,
 52.42
 ],
-"id": "Poznan"
+"id": "34"
 },
 {
+"name": "Bydgoszcz",
 "pos": [
 18.01,
 53.12
 ],
-"id": "Bydgoszcz"
+"id": "35"
 },
 {
+"name": "Torun",
 "pos": [
 18.60,
 53.01
 ],
-"id": "Torun"
+"id": "36"
 }
 ],
 "links": [
@@ -230,8 +257,8 @@
 "uni": 99.76,
 "deg": 99.75
 },
-"source": "Warszawa",
-"target": "Radom"
+"source": "0",
+"target": "1"
 },
 {
 "dist": 275.74,
@@ -243,8 +270,8 @@
 "uni": 67.76,
 "deg": 73.05
 },
-"source": "Warszawa",
-"target": "Poznan"
+"source": "0",
+"target": "34"
 },
 {
 "dist": 175.74,
@@ -256,8 +283,8 @@
 "uni": 65.88,
 "deg": 56.35
 },
-"source": "Warszawa",
-"target": "Bialystok"
+"source": "0",
+"target": "3"
 },
 {
 "dist": 118.52,
@@ -269,8 +296,8 @@
 "uni": 44.94,
 "deg": 45.62
 },
-"source": "Warszawa",
-"target": "Lodz"
+"source": "0",
+"target": "6"
 },
 {
 "dist": 69.42,
@@ -282,8 +309,8 @@
 "uni": 51.76,
 "deg": 51.76
 },
-"source": "Radom",
-"target": "Kielce"
+"source": "1",
+"target": "9"
 },
 {
 "dist": 57.07,
@@ -295,8 +322,8 @@
 "uni": 51.76,
 "deg": 45.21
 },
-"source": "Radom",
-"target": "Pulawy"
+"source": "1",
+"target": "7"
 },
 {
 "dist": 109.78,
@@ -308,8 +335,8 @@
 "uni": 49.88,
 "deg": 42.59
 },
-"source": "Bialystok",
-"target": "Suwalki"
+"source": "3",
+"target": "11"
 },
 {
 "dist": 75.74,
@@ -321,8 +348,8 @@
 "uni": 23.53,
 "deg": 19.66
 },
-"source": "Lublin",
-"target": "Zamosc"
+"source": "4",
+"target": "19"
 },
 {
 "dist": 45.45,
@@ -334,8 +361,8 @@
 "uni": 32.94,
 "deg": 28.83
 },
-"source": "Lublin",
-"target": "Pulawy"
+"source": "4",
+"target": "7"
 },
 {
 "dist": 75.08,
@@ -347,8 +374,8 @@
 "uni": 11.76,
 "deg": 9.50
 },
-"source": "Lodz",
-"target": "Sochaczew"
+"source": "6",
+"target": "12"
 },
 {
 "dist": 186.26,
@@ -360,8 +387,8 @@
 "uni": 49.41,
 "deg": 49.80
 },
-"source": "Lodz",
-"target": "Poznan"
+"source": "6",
+"target": "34"
 },
 {
 "dist": 108.70,
@@ -373,8 +400,8 @@
 "uni": 85.65,
 "deg": 77.15
 },
-"source": "Lodz",
-"target": "Czechtochowa"
+"source": "6",
+"target": "20"
 },
 {
 "dist": 116.82,
@@ -386,8 +413,8 @@
 "uni": 16.00,
 "deg": 11.79
 },
-"source": "Rzeszow",
-"target": "Zamosc"
+"source": "8",
+"target": "19"
 },
 {
 "dist": 148.75,
@@ -399,8 +426,8 @@
 "uni": 34.82,
 "deg": 28.17
 },
-"source": "Rzeszow",
-"target": "Krakow"
+"source": "8",
+"target": "23"
 },
 {
 "dist": 100.96,
@@ -412,8 +439,8 @@
 "uni": 43.29,
 "deg": 43.24
 },
-"source": "Kielce",
-"target": "Krakow"
+"source": "9",
+"target": "23"
 },
 {
 "dist": 81.40,
@@ -425,8 +452,8 @@
 "uni": 23.76,
 "deg": 19.16
 },
-"source": "Elblag",
-"target": "Olsztyn"
+"source": "10",
+"target": "28"
 },
 {
 "dist": 54.30,
@@ -438,8 +465,8 @@
 "uni": 20.47,
 "deg": 16.87
 },
-"source": "Elblag",
-"target": "Gdansk"
+"source": "10",
+"target": "30"
 },
 {
 "dist": 164.32,
@@ -451,8 +478,8 @@
 "uni": 35.76,
 "deg": 30.14
 },
-"source": "Suwalki",
-"target": "Olsztyn"
+"source": "11",
+"target": "28"
 },
 {
 "dist": 223.37,
@@ -464,8 +491,8 @@
 "uni": 12.24,
 "deg": 10.40
 },
-"source": "Sochaczew",
-"target": "Poznan"
+"source": "12",
+"target": "34"
 },
 {
 "dist": 89.25,
@@ -477,8 +504,8 @@
 "uni": 39.06,
 "deg": 33.42
 },
-"source": "Gorzow Wlkp",
-"target": "Szczecin"
+"source": "13",
+"target": "32"
 },
 {
 "dist": 122.74,
@@ -490,8 +517,8 @@
 "uni": 55.06,
 "deg": 47.17
 },
-"source": "Gorzow Wlkp",
-"target": "Poznan"
+"source": "13",
+"target": "34"
 },
 {
 "dist": 58.01,
@@ -503,8 +530,8 @@
 "uni": 43.06,
 "deg": 35.63
 },
-"source": "Bielsko-Biala",
-"target": "Gliwice"
+"source": "18",
+"target": "27"
 },
 {
 "dist": 68.68,
@@ -516,8 +543,8 @@
 "uni": 36.47,
 "deg": 29.81
 },
-"source": "Bielsko-Biala",
-"target": "Krakow"
+"source": "18",
+"target": "23"
 },
 {
 "dist": 65.60,
@@ -529,8 +556,8 @@
 "uni": 77.18,
 "deg": 68.63
 },
-"source": "Czechtochowa",
-"target": "Gliwice"
+"source": "20",
+"target": "27"
 },
 {
 "dist": 140.72,
@@ -542,8 +569,8 @@
 "uni": 24.47,
 "deg": 10.32
 },
-"source": "Wroclaw",
-"target": "Zielona gora"
+"source": "25",
+"target": "33"
 },
 {
 "dist": 80.38,
@@ -555,8 +582,8 @@
 "uni": 47.06,
 "deg": 29.98
 },
-"source": "Wroclaw",
-"target": "Opole"
+"source": "25",
+"target": "26"
 },
 {
 "dist": 66.27,
@@ -568,8 +595,8 @@
 "uni": 67.76,
 "deg": 48.32
 },
-"source": "Opole",
-"target": "Gliwice"
+"source": "26",
+"target": "27"
 },
 {
 "dist": 148.89,
@@ -581,8 +608,8 @@
 "uni": 30.35,
 "deg": 33.09
 },
-"source": "Gdansk",
-"target": "Torun"
+"source": "30",
+"target": "36"
 },
 {
 "dist": 161.64,
@@ -594,8 +621,8 @@
 "uni": 12.71,
 "deg": 9.83
 },
-"source": "Gdansk",
-"target": "Koszalin"
+"source": "30",
+"target": "31"
 },
 {
 "dist": 136.21,
@@ -607,8 +634,8 @@
 "uni": 24.94,
 "deg": 20.97
 },
-"source": "Koszalin",
-"target": "Szczecin"
+"source": "31",
+"target": "32"
 },
 {
 "dist": 105.30,
@@ -620,8 +647,8 @@
 "uni": 58.82,
 "deg": 58.15
 },
-"source": "Poznan",
-"target": "Bydgoszcz"
+"source": "34",
+"target": "35"
 },
 {
 "dist": 41.31,
@@ -633,8 +660,8 @@
 "uni": 43.76,
 "deg": 45.05
 },
-"source": "Bydgoszcz",
-"target": "Torun"
+"source": "35",
+"target": "36"
 }
 ]
 }
