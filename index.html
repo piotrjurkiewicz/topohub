@@ -596,7 +596,8 @@
             svgProps.originalStrokeWidth = parseFloat(svgProps.stylePath.style.strokeWidth);
             svgProps.originalCircleRadius = parseFloat(svgProps.styleCircle.style.r);
             svgProps.originalFontSize = parseFloat(svgProps.styleText.style.fontSize);
-            svgProps.stylePathUtilization.style.fontSize = `${svgProps.originalStrokeWidth}px`;
+            if (svgProps.stylePathUtilization)
+                svgProps.stylePathUtilization.style.fontSize = `${svgProps.originalStrokeWidth}px`;
 
             svgProperties = svgProps;
         }
@@ -742,7 +743,8 @@
             let mode = trafficModelDropdown.value;
 
             if (mode === 'none') {
-                svgProperties.stylePathUtilization.style.visibility = 'hidden';
+                if (svgProperties.stylePathUtilization)
+                    svgProperties.stylePathUtilization.style.visibility = 'hidden';
                 svgProperties.stylePath.style.visibility = 'visible';
                 svgProperties.styleCircle.style.fill = 'lightblue';
                 svgProperties.styleCircle.style.stroke = 'none';
