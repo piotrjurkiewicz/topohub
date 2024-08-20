@@ -728,3 +728,55 @@ def topo_stats_print(stats, name, filename=None):
         print(text)
     else:
         open(filename + '.tex', 'w').write(text)
+
+def write_gml(g, path):
+    """
+    Writes a NetworkX graph to a GML format file.
+
+    Parameters
+    ----------
+    g : networkx.Graph
+        the input NetworkX graph
+    path : str, default None
+        the file path to write the GML file to
+
+    """
+    with open(path, 'w') as f:
+        f.write('graph [\n')
+
+        # Write graph attributes
+        f.write(f'  name "{g.graph.get("name", "G")}"\n')
+        f.write(f'  directed {int(g.is_directed())}\n')
+
+        # Write stats
+        stats = g.graph.get('stats')
+        if stats:
+            f.write('  stats [\n')
+            for key, value in stats.items():
+                f.write(f'    {key} {round(value, 2) if isinstance(value, float) else value}\n')
+            f.write('  ]\n')
+
+        # Write nodes
+        for node, attr in g.nodes(data=True):
+            f.write('  node [\n')
+            f.write(f'    id {node}\n')
+            f.write(f'    label "{attr["name"] if "name" in attr else node}"\n')
+            if 'type' in attr:
+                f.write(f'    type "{attr["type"]}"\n')
+            if 'pos' in attr:
+                f.write(f'    lon {round(attr["pos"][0], 2)}\n')
+                f.write(f'    lat {round(attr["pos"][1], 2)}\n')
+            f.write('  ]\n')
+
+        # Write edges
+        for source, target, attr in g.edges(data=True):
+            f.write('  edge [\n')
+            f.write(f'    source {source}\n')
+            f.write(f'    target {target}\n')
+            if 'type' in attr:
+                f.write(f'    type "{attr["type"]}"\n')
+            if 'dist' in attr:
+                f.write(f'    dist {round(attr["dist"], 2)}\n')
+            f.write('  ]\n')
+
+        f.write(']')

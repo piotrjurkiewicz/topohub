@@ -47,7 +47,7 @@ class TopoGenerator:
         json.encoder.float = RoundingFloat
         json.dump(nx.node_link_data(g), open(f'{filename}.json', 'w'), indent=kwargs.get('indent', 0), default=lambda x: format(x, '.2f'))
         json.encoder.float = float
-
+        topohub.graph.write_gml(g, f'{filename}.gml')
 
 class SNDlibGenerator(TopoGenerator):
     """
