@@ -278,13 +278,13 @@
             white-space: nowrap;
         }
 
-        #displayControl, #dynamicControl {
+        #dynamicControl {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        #displayControl input, #dynamicControl input {
+        #dynamicControl input {
             margin: 5px 0 5px 5px;
         }
 
@@ -325,30 +325,29 @@
             }
         }
 
-        #topoDisplay svg text {
+        #topoDisplay svg text[data-id] {
             pointer-events: none;
+            user-select: none;
         }
 
-        #topoDisplay svg circle {
+        #topoDisplay svg circle[data-id] {
             cursor: pointer;
         }
 
-        #topoDisplay svg circle:hover {
+        #topoDisplay svg circle[data-id]:hover {
             fill: orange;
         }
 
-        #topoDisplay svg path {
-            fill: none;
+        #topoDisplay svg path[data-id] {
             cursor: pointer;
         }
 
-        #topoDisplay svg path:hover {
+        #topoDisplay svg path[data-id]:hover {
             stroke: orange;
         }
 
-        #topoDisplay svg path.utilization {
-            stroke: black;
-            stroke-width: 1;
+        #topoDisplay svg path.utilization:hover {
+            cursor: pointer;
         }
 
         .tooltip {
@@ -356,6 +355,7 @@
             background: white;
             border: 1px solid black;
             padding: 4px 6px;
+            z-index: 1000;
         }
 
         #trafficHistogram {
@@ -414,43 +414,6 @@
         </div>
     </main>
     <aside class="sidebar-right">
-        <div class="box">
-            <h2>Display controls</h2>
-
-            <div id="displayControl">
-            <span><label for="showNodeNames">Show node names: </label><input id="showNodeNames" type="checkbox"
-                                                                             autocomplete="off" checked></span>
-                <span><label for="showNodeNamesBelow">below nodes: </label><input id="showNodeNamesBelow"
-                                                                                  type="checkbox"
-                                                                                  autocomplete="off"></span>
-                <span><label for="showNodeCircles">circles: </label><input id="showNodeCircles" type="checkbox"
-                                                                           autocomplete="off" checked></span>
-
-            </div>
-            <h2>ECMP routing link utilization</h2>
-            <div id="trafficModelDiv">
-                <label id="trafficModelLabel" for="trafficModelDropdown">Selected demands model:</label>
-                <select id="trafficModelDropdown">
-                    <option value="none" selected>None</option>
-                    <option value="uni">Uniform</option>
-                    <option value="deg">Degree</option>
-                    <option id="trafficModelDropdownOriginal" value="org" disabled>Original</option>
-                </select>
-            </div>
-            <div id="dynamicControl">
-                <span id="dynamicControlLabel">Visualize usage as link:</span>
-                <span><label for="dynamicWidthCheckbox">width</label><input id="dynamicWidthCheckbox" type="checkbox"
-                                                                            autocomplete="off" checked></span>
-                <span><label for="dynamicColorCheckbox">color</label><input id="dynamicColorCheckbox" type="checkbox"
-                                                                            autocomplete="off" checked></span>
-                <span><label for="dynamicOpacityCheckbox">opacity</label><input id="dynamicOpacityCheckbox"
-                                                                                type="checkbox"
-                                                                                autocomplete="off"></span>
-            </div>
-            <div id="trafficHistogramDiv">
-                <svg id="trafficHistogram" width="340" height="120" xmlns="http://www.w3.org/2000/svg"></svg>
-            </div>
-        </div>
         <div id="topologyInfo" class="box">
             <h2>Topology info</h2>
             <p id="topologyInfoParagraph" class="topologyInfoParagraph"></p>
@@ -490,6 +453,31 @@
             <h2>Citations</h2>
             <p class="topologyInfoParagraph">Please cite <a href="https://www.sciencedirect.com/science/article/pii/S2352711023002364">this paper</a> if you make use of TopoHub in your research.</p>
         </div>
+        <div class="box">
+            <h2>ECMP routing link utilization</h2>
+            <div id="trafficModelDiv">
+                <label id="trafficModelLabel" for="trafficModelDropdown">Selected demands model:</label>
+                <select id="trafficModelDropdown">
+                    <option value="none" selected>None</option>
+                    <option value="uni">Uniform</option>
+                    <option value="deg">Degree</option>
+                    <option id="trafficModelDropdownOriginal" value="org" disabled>Original</option>
+                </select>
+            </div>
+            <div id="dynamicControl">
+                <span id="dynamicControlLabel">Visualize usage as link:</span>
+                <span><label for="dynamicWidthCheckbox">width</label><input id="dynamicWidthCheckbox" type="checkbox"
+                                                                            autocomplete="off" checked></span>
+                <span><label for="dynamicColorCheckbox">color</label><input id="dynamicColorCheckbox" type="checkbox"
+                                                                            autocomplete="off" checked></span>
+                <span><label for="dynamicOpacityCheckbox">opacity</label><input id="dynamicOpacityCheckbox"
+                                                                                type="checkbox"
+                                                                                autocomplete="off"></span>
+            </div>
+            <div id="trafficHistogramDiv">
+                <svg id="trafficHistogram" width="340" height="120" xmlns="http://www.w3.org/2000/svg"></svg>
+            </div>
+        </div>
         <div id="topologyProperties" class="box">
             <h2>Topology properties</h2>
             <ul id="topologyPropertiesList">
@@ -500,7 +488,7 @@
 
 <script>
     const topologyCatalog = {
-        'backbone': ['north_america_nosc'],
+        'backbone': ['africa', 'africa_nosc', 'americas', 'americas_nosc', 'atlantica', 'eastern', 'eastern_nosc', 'emea', 'emea_nosc', 'eurafrasia', 'eurafrasia_nosc', 'eurasia', 'eurasia_nosc', 'europe', 'europe_nosc', 'north_america', 'north_america_nosc', 'south_america', 'south_america_nosc', 'world'],
         'gabriel': {
             '25': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
             '50': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
@@ -535,8 +523,10 @@
         ['avg_sdp_len', 'Average length of disjoint shortest paths'], ['avg_adp_num', 'Average number of all disjoint paths'], ['max_adp_num', 'Maximum number of all disjoint paths'],
         ['avg_adp_hops', 'Average hops of all disjoint paths'], ['avg_adp_len', 'Average length of all disjoint paths']]
 
-    let topology_json = null;
-    let pos_to_name = null;
+    let topologyJSON;
+    let topologyNodes;
+    let svgProperties;
+    let currentSizeScale;
 
     document.addEventListener("DOMContentLoaded", () => {
         const firstLevelDropdown = document.getElementById("firstLevelDropdown");
@@ -545,9 +535,6 @@
         const topologyListWrapper = document.getElementById("topologyListWrapper");
         const topoDisplay = document.getElementById("topoDisplay");
         const topologyPropertiesList = document.getElementById("topologyPropertiesList");
-        const showNodeNames = document.getElementById("showNodeNames");
-        const showNodeNamesBelow = document.getElementById("showNodeNamesBelow");
-        const showNodeCircles = document.getElementById("showNodeCircles");
         const trafficModelDropdown = document.getElementById("trafficModelDropdown");
         const trafficModelDropdownOriginal = document.getElementById("trafficModelDropdownOriginal");
         const dynamicWidthCheckbox = document.getElementById("dynamicWidthCheckbox");
@@ -559,64 +546,69 @@
         const topoDownloadSVGView = document.getElementById("topoDownloadSVGView");
         const topologyInfoParagraph = document.getElementById("topologyInfoParagraph");
 
-        function parsePathCoordinates(pathData) {
-            // Assuming the path data is in the format "Mx1,y1,x2,y2"
-            const regex = /M\s*(-?\d*\.?\d+)\s*,\s*(-?\d*\.?\d+)\s*,\s*(-?\d*\.?\d+)\s*,\s*(-?\d*\.?\d+)/;
-            const match = pathData.match(regex);
-            if (match) {
-                const startX = match[1];
-                const startY = match[2];
-                const endX = match[3];
-                const endY = match[4];
-                return {
-                    start: {x: startX, y: startY},
-                    end: {x: endX, y: endY},
-                };
+        let showNodeNames;
+        let showNodeNamesBelow;
+        let showNodeCircles;
+
+        function findRule(rules, selector) {
+            for (let i = 0; i < rules.length; i++) {
+                if (rules[i].selectorText === selector) {
+                    return rules[i];
+                }
             }
-            return {start: null, end: null};
+            return null;
         }
 
         function parseSVG() {
             const svg = topoDisplay.getElementsByTagName('svg')[0];
-            const circles = svg.getElementsByTagName('circle');
-            const paths = svg.querySelectorAll('path:not([class])');
-            const textElements = svg.getElementsByTagName('text');
-            pos_to_name = {};
+            const circles = svg.querySelectorAll('circle[data-id]');
+            const paths = svg.querySelectorAll('path[data-id]');
 
             for (let i = 0; i < circles.length; i++) {
                 const circle = circles[i];
-                const name = textElements[i].textContent.trim();
-                circle.getAttribute('cx')
-                circle.getAttribute('cy')
+                const name = topologyNodes[circle.dataset.id].name || circle.dataset.id;
                 circle.setAttribute('title', name);
                 circle.addEventListener('mousemove', showTooltip);
                 circle.addEventListener('mouseout', hideTooltip);
-                if (`${circle.getAttribute('cx')}, ${circle.getAttribute('cy')}` in pos_to_name) {
-                    pos_to_name = null;
-                    return;
-                } else
-                    pos_to_name[`${circle.getAttribute('cx')}, ${circle.getAttribute('cy')}`] = name;
             }
 
             for (let i = 0; i < paths.length; i++) {
                 const path = paths[i];
-                const pathData = path.getAttribute('d');
-                const {start, end} = parsePathCoordinates(pathData);
-                const start_name = pos_to_name[`${start.x}, ${start.y}`];
-                const end_name = pos_to_name[`${end.x}, ${end.y}`];
+                const path_id = path.dataset.id.split('-');
+                const start_name = topologyNodes[path_id[0]].name || path_id[0];
+                const end_name = topologyNodes[path_id[1]].name || path_id[1];
                 path.setAttribute('title', `${start_name} ⇄ ${end_name}`);
                 path.addEventListener('mousemove', showTooltip);
                 path.addEventListener('mouseout', hideTooltip);
             }
+
+            let svgProps = {};
+            const svgRules = svg.querySelector('style').sheet.cssRules;
+            svgProps.stylePath = findRule(svgRules, '#topo path');
+            svgProps.styleCircle = findRule(svgRules, '#topo circle');
+            svgProps.styleText = findRule(svgRules, '#topo text');
+            svgProps.stylePathUtilization = findRule(svgRules, '#topo path.utilization');
+
+            svgProps.originalStrokeWidth = parseFloat(svgProps.stylePath.style.strokeWidth);
+            svgProps.originalCircleRadius = parseFloat(svgProps.styleCircle.style.r);
+            svgProps.originalFontSize = parseFloat(svgProps.styleText.style.fontSize);
+            svgProps.stylePathUtilization.style.fontSize = `${svgProps.originalStrokeWidth}px`;
+
+            svgProperties = svgProps;
         }
 
         function showTooltip(event) {
             let element = event.target;
             let tooltipElement = document.getElementById('tooltip');
-            if (!element.attributes.title) {
+            if (element.attributes.title) {
+                tooltipElement.innerHTML = element.attributes.title.value;
+            } else if (element.attributes.dataset.id) {
+                tooltipElement.innerHTML = element.attributes.dataset.id;
+            } else if (element.attributes.id) {
+                tooltipElement.innerHTML = element.attributes.id.value;
+            } else {
                 return;
             }
-            tooltipElement.innerHTML = element.attributes.title.value;
             tooltipElement.style.display = 'block';
             tooltipElement.style.left = event.pageX + 10 + 'px';
             tooltipElement.style.top = event.pageY + 10 + 'px';
@@ -630,26 +622,27 @@
         function displayBezierCurves() {
             const svg = topoDisplay.getElementsByTagName('svg')[0];
 
-            if (svg.querySelector("path.utilization")) {
-                svg.querySelectorAll("path:not(.utilization)").forEach(elm => {
-                    elm.setAttribute('visibility', 'hidden');
-                })
-                svg.querySelectorAll("path.utilization").forEach(elm => {
-                    elm.removeAttribute('visibility');
-                });
-                return;
-            }
+            svgProperties.stylePath.style.visibility = 'hidden';
+            svgProperties.stylePathUtilization.style.visibility = 'visible';
 
-            const paths = svg.querySelectorAll("path:not(.utilization)");
+            if (svg.querySelector("path.utilization"))
+                return;
+
+            const paths = svg.querySelectorAll("path[data-id]");
 
             for (let i = 0; i < paths.length; i++) {
                 const path = paths[i];
-                const pathData = path.getAttribute('d');
-                const {start, end} = parsePathCoordinates(pathData);
-                const startX = parseFloat(start.x);
-                const startY = parseFloat(start.y);
-                const endX = parseFloat(end.x);
-                const endY = parseFloat(end.y);
+                const path_id = path.dataset.id.split('-');
+                const start_id = path_id[0];
+                const end_id = path_id[1];
+                const start = svg.querySelector(`circle[data-id='${start_id}']`);
+                const end = svg.querySelector(`circle[data-id='${end_id}']`);
+                const start_name = topologyNodes[start_id].name || start_id;
+                const end_name = topologyNodes[end_id].name || end_id;
+                const startX = start.cx.baseVal.value;
+                const startY = start.cy.baseVal.value ;
+                const endX = end.cx.baseVal.value ;
+                const endY = end.cy.baseVal.value ;
 
                 // Calculate the midpoint between start and end points
                 const midX = (startX + endX) / 2;
@@ -671,25 +664,22 @@
                 const perpY = unitX;
 
                 // Calculate the control points at 5 units distance from the midpoint
-                const controlPoint1X = midX + 5 * perpX;
-                const controlPoint1Y = midY + 5 * perpY;
-                const controlPoint2X = midX - 5 * perpX;
-                const controlPoint2Y = midY - 5 * perpY;
+                const controlPoint1X = midX + perpX * svgProperties.originalStrokeWidth;
+                const controlPoint1Y = midY + perpY * svgProperties.originalStrokeWidth;
+                const controlPoint2X = midX - perpX * svgProperties.originalStrokeWidth;
+                const controlPoint2Y = midY - perpY * svgProperties.originalStrokeWidth;
 
-                const bezierPath1 = `M${start.x},${start.y} C${controlPoint1X},${controlPoint1Y},${controlPoint1X},${controlPoint1Y},${end.x},${end.y}`;
-                const bezierPath2 = `M${start.x},${start.y} C${controlPoint2X},${controlPoint2Y},${controlPoint2X},${controlPoint2Y},${end.x},${end.y}`;
+                const bezierPath1 = `M${startX},${startY} C${controlPoint1X},${controlPoint1Y},${controlPoint1X},${controlPoint1Y},${endX},${endY}`;
+                const bezierPath2 = `M${startX},${startY} C${controlPoint2X},${controlPoint2Y},${controlPoint2X},${controlPoint2Y},${endX},${endY}`;
 
                 // Create two new path elements with Bezier curves
                 const newPath1 = document.createElementNS("http://www.w3.org/2000/svg", "path");
                 const newPath2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
 
-                const start_node = pos_to_name[`${start.x}, ${start.y}`]
-                const end_node = pos_to_name[`${end.x}, ${end.y}`]
-
-                newPath1.setAttribute('id', `utilization-${start_node}-${end_node}`);
-                newPath2.setAttribute('id', `utilization-${end_node}-${start_node}`);
-                newPath1.setAttribute('title', `${start_node} → ${end_node}`);
-                newPath2.setAttribute('title', `${end_node} → ${start_node}`);
+                newPath1.setAttribute('id', `utilization-${start_id}-${end_id}`);
+                newPath2.setAttribute('id', `utilization-${end_id}-${start_id}`);
+                newPath1.setAttribute('title', `${start_name} → ${end_name}`);
+                newPath2.setAttribute('title', `${end_name} → ${start_name}`);
                 newPath1.setAttribute('d', bezierPath1);
                 newPath2.setAttribute('d', bezierPath2);
                 newPath1.setAttribute('class', 'utilization');
@@ -700,9 +690,7 @@
                 newPath2.addEventListener('mouseout', hideTooltip);
 
                 // Add the new path elements to the SVG
-                svg.prepend(newPath1);
-                svg.prepend(newPath2);
-                path.setAttribute('visibility', 'hidden');
+                path.after(newPath1, newPath2);
             }
         }
 
@@ -741,14 +729,22 @@
 
         function visualizeTraffic() {
             let links;
-            if (!topology_json) {
+            if (!topologyJSON) {
                 links = {};
             } else {
-                links = topology_json['links'];
+                links = topologyJSON['links'];
             }
 
-            const svg = topoDisplay.getElementsByTagName('svg')[0];
             let mode = trafficModelDropdown.value;
+
+            if (mode === 'none') {
+                svgProperties.stylePathUtilization.style.visibility = 'hidden';
+                svgProperties.stylePath.style.visibility = 'visible';
+                svgProperties.styleCircle.style.fill = 'lightblue';
+                svgProperties.styleCircle.style.stroke = 'none';
+                drawHistogram(null);
+                return;
+            }
 
             for (const link of links) {
                 if (!link.ecmp_fwd || !link.ecmp_bwd || !(mode in link.ecmp_fwd) || !(mode in link.ecmp_bwd)) {
@@ -759,52 +755,39 @@
                 }
             }
 
-            if (mode === 'none' || pos_to_name === null) {
-                svg.querySelectorAll("path.utilization").forEach(elm => {
-                    elm.setAttribute('visibility', 'hidden');
-                })
-                svg.querySelectorAll("path:not(.utilization)").forEach(elm => {
-                    elm.removeAttribute('visibility');
-                })
-                svg.querySelectorAll("circle").forEach(elm => {
-                    elm.style['fill'] = null;
-                    elm.style['stroke'] = null;
-                    elm.setAttribute('r', '10');
-                })
-                drawHistogram(null);
-                return;
-            }
-
-            svg.querySelectorAll("circle").forEach(elm => {
-                elm.style['fill'] = 'white';
-                elm.style['stroke'] = 'black';
-                elm.setAttribute('r', '6');
-            })
+            svgProperties.styleCircle.style.fill = 'white';
+            svgProperties.styleCircle.style.stroke = 'black';
 
             const top_links = Array(20).fill([0.0, undefined]);
 
             displayBezierCurves();
+
+            const svg = topoDisplay.getElementsByTagName('svg')[0];
             for (const link of links) {
+                const source_name = topologyNodes[link.source].name || link.source;
+                const target_name = topologyNodes[link.target].name || link.target;
                 const fwd = link.ecmp_fwd[mode] / 100;
                 const bwd = link.ecmp_bwd[mode] / 100;
                 const fwd_path = svg.getElementById(`utilization-${link.source}-${link.target}`);
-                fwd_path.style['stroke-width'] = dynamicWidthCheckbox.checked ? `${fwd * 8}` : 3;
+                const fwd_title = `${source_name} → ${target_name} ${(fwd * 100).toFixed(2)}%`;
+                fwd_path.style['stroke-width'] = `${dynamicWidthCheckbox.checked ? `${fwd * 1.5}` : 0.5}em`;
                 fwd_path.style['stroke'] = dynamicColorCheckbox.checked ? hot_rgb(fwd) : 'black';
                 fwd_path.style['opacity'] = dynamicOpacityCheckbox.checked ? fwd : 1.0;
-                fwd_path.setAttribute('title', `${link.source} → ${link.target} ${(fwd * 100).toFixed(2)}%`);
+                fwd_path.setAttribute('title', fwd_title);
                 if (fwd > top_links[0][0]) {
-                    top_links[0] = [fwd, fwd_path];
+                    top_links[0] = [fwd, fwd_title];
                     top_links.sort((a, b) => {
                         return a[0] - b[0];
                     })
                 }
                 const bwd_path = svg.getElementById(`utilization-${link.target}-${link.source}`);
-                bwd_path.style['stroke-width'] = dynamicWidthCheckbox.checked ? `${bwd * 8}` : 3;
+                const bwd_title = `${target_name} → ${source_name} ${(bwd * 100).toFixed(2)}%`;
+                bwd_path.style['stroke-width'] = `${dynamicWidthCheckbox.checked ? `${bwd * 1.5}` : 0.5}em`;
                 bwd_path.style['stroke'] = dynamicColorCheckbox.checked ? hot_rgb(bwd) : 'black';
                 bwd_path.style['opacity'] = dynamicOpacityCheckbox.checked ? bwd : 1.0;
-                bwd_path.setAttribute('title', `${link.target} → ${link.source} ${(bwd * 100).toFixed(2)}%`);
+                bwd_path.setAttribute('title', bwd_title);
                 if (bwd > top_links[0][0]) {
-                    top_links[0] = [bwd, bwd_path];
+                    top_links[0] = [bwd, bwd_title];
                     top_links.sort((a, b) => {
                         return a[0] - b[0];
                     })
@@ -832,7 +815,7 @@
                     rect.setAttribute("width", barWidth);
                     rect.setAttribute("height", barHeight);
                     rect.setAttribute("fill", hot_rgb(values[i][0]));
-                    rect.setAttribute('title', values[i][1].getAttribute('title'));
+                    rect.setAttribute('title', values[i][1]);
                     rect.addEventListener('mousemove', showTooltip);
                     rect.addEventListener('mouseout', hideTooltip);
                     svg.appendChild(rect);
@@ -846,27 +829,20 @@
         }
 
         function displayNodes() {
-            const svg = topoDisplay.getElementsByTagName('svg')[0];
-            svg.querySelectorAll("text").forEach(elm => {
-                if (showNodeNames.checked) {
-                    elm.removeAttribute('visibility');
-                    if (showNodeNamesBelow.checked && (elm.attributes.lowered === undefined || elm.attributes.lowered.value === '0')) {
-                        elm.attributes.y.value = parseFloat(elm.attributes.y.value) + 15;
-                        elm.setAttribute('lowered', '1');
-                    }
-                    if (!showNodeNamesBelow.checked && elm.attributes.lowered?.value === '1') {
-                        elm.attributes.y.value = parseFloat(elm.attributes.y.value) - 15;
-                        elm.setAttribute('lowered', '0');
-                    }
-                } else
-                    elm.setAttribute('visibility', 'hidden');
-            })
-            svg.querySelectorAll("circle").forEach(elm => {
-                if (showNodeCircles.checked) {
-                    elm.removeAttribute('visibility');
-                } else
-                    elm.setAttribute('visibility', 'hidden');
-            })
+            if (showNodeNames.checked)
+                svgProperties.styleText.style.visibility = 'visible';
+            else
+                svgProperties.styleText.style.visibility = 'hidden';
+
+            if (showNodeNamesBelow.checked)
+                svgProperties.styleText.style.transform = 'translateY(1.5em)';
+            else
+                svgProperties.styleText.style.transform = null;
+
+            if (showNodeCircles.checked)
+                svgProperties.styleCircle.style.visibility = 'visible';
+            else
+                svgProperties.styleCircle.style.visibility = 'hidden';
         }
 
         function interactiveSVG() {
@@ -875,11 +851,13 @@
 
             let isPanning = false;
             let startPoint = { x: 0, y: 0 };
+            let panningScale = 0.0;
+            let lastFrameTime = 0;
+            let accumulatedDx = 0;
+            let accumulatedDy = 0;
+            let zoomTimeout;
             let viewBox = svg.viewBox.baseVal;
             let originalViewBox = { x: viewBox.x, y: viewBox.y, width: viewBox.width, height: viewBox.height };
-
-            // Set initial viewBox
-            svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.width} ${viewBox.height}`);
 
             // Pan functionality
             svg.addEventListener('mousedown', startPan);
@@ -892,60 +870,158 @@
 
             // Create reset button
             const resetButton = document.createElement('button');
-            resetButton.textContent = 'Reset';
+            resetButton.textContent = 'Reset view';
             resetButton.style.position = 'absolute';
             resetButton.style.top = '10px';
             resetButton.style.right = '10px';
             resetButton.style.zIndex = '1000';
             svgContainer.style.position = 'relative';
             svgContainer.appendChild(resetButton);
-
             resetButton.addEventListener('click', resetView);
+
+            // Create "Display controls" button
+            const displayControlsButton = document.createElement('button');
+            displayControlsButton.textContent = 'Display controls';
+            displayControlsButton.style.position = 'absolute';
+            displayControlsButton.style.top = '40px';
+            displayControlsButton.style.right = '10px'; // Adjusted position
+            displayControlsButton.style.zIndex = '1000';
+            svgContainer.style.position = 'relative';
+            svgContainer.appendChild(displayControlsButton);
+
+            // Create the popup container
+            const popupContainer = document.createElement('div');
+            popupContainer.style.position = 'absolute';
+            popupContainer.style.top = '70px';
+            popupContainer.style.right = '10px';
+            popupContainer.style.zIndex = '1001';
+            popupContainer.style.backgroundColor = '#fff';
+            popupContainer.style.border = '1px solid #ccc';
+            popupContainer.style.padding = '5px';
+            popupContainer.style.fontSize = '14px';
+            popupContainer.style.display = 'none';
+            svgContainer.appendChild(popupContainer);
+
+            // Function to create a checkbox and label pair with flexbox alignment
+            function createCheckboxWithLabel(id, labelText) {
+                const container = document.createElement('div');
+                container.style.display = 'flex';
+                container.style.justifyContent = 'space-between';
+                container.style.alignItems = 'center';
+
+                const label = document.createElement('label');
+                label.htmlFor = id;
+                label.textContent = labelText;
+                label.style.flex = '1';
+                label.style.textAlign = 'left';
+
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.id = id;
+                checkbox.style.flex = '0';
+
+                container.appendChild(label);
+                container.appendChild(checkbox);
+
+                return container;
+            }
+
+            // Add checkboxes to the popup
+            popupContainer.appendChild(createCheckboxWithLabel('showNodeNames', 'Node names'));
+            popupContainer.appendChild(createCheckboxWithLabel('showNodeNamesBelow', 'Below nodes'));
+            popupContainer.appendChild(createCheckboxWithLabel('showNodeCircles', 'Node circles'));
+
+            // Event listener to toggle the popup visibility
+            displayControlsButton.addEventListener('click', () => {
+                popupContainer.style.display = popupContainer.style.display === 'none' ? 'block' : 'none';
+            });
+
+            // Close popup if clicked outside
+            document.addEventListener('click', (event) => {
+                if (!popupContainer.contains(event.target) && !displayControlsButton.contains(event.target)) {
+                    popupContainer.style.display = 'none';
+                }
+            });
+
+            showNodeNames = document.getElementById("showNodeNames");
+            showNodeNamesBelow = document.getElementById("showNodeNamesBelow");
+            showNodeCircles = document.getElementById("showNodeCircles");
+            showNodeNames.checked = true;
+            showNodeNamesBelow.checked = false;
+            showNodeCircles.checked = true;
+            showNodeNames.addEventListener("change", displayNodes);
+            showNodeNamesBelow.addEventListener("change", displayNodes);
+            showNodeCircles.addEventListener("change", displayNodes);
 
             function startPan(e) {
                 isPanning = true;
                 startPoint = { x: e.clientX, y: e.clientY };
+                panningScale = Math.max(viewBox.width, viewBox.height);
                 svg.style.cursor = 'grabbing';
+                lastFrameTime = performance.now();
+                requestAnimationFrame(updatePan);
             }
 
             function pan(e) {
                 if (!isPanning) return;
 
-                const dx = (startPoint.x - e.clientX) / svg.clientWidth * viewBox.width;
-                const dy = (startPoint.y - e.clientY) / svg.clientHeight * viewBox.height;
+                const dx = (startPoint.x - e.clientX) * panningScale / svg.clientWidth;
+                const dy = (startPoint.y - e.clientY) * panningScale / svg.clientHeight;
 
-                viewBox.x += dx;
-                viewBox.y += dy;
-
-                svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.width} ${viewBox.height}`);
+                accumulatedDx += dx;
+                accumulatedDy += dy;
 
                 startPoint = { x: e.clientX, y: e.clientY };
             }
 
+            function updatePan(currentTime) {
+                if (!isPanning) return;
+
+                const elapsed = currentTime - lastFrameTime;
+                if (elapsed > 50) {
+                    viewBox.x += accumulatedDx;
+                    viewBox.y += accumulatedDy;
+
+                    accumulatedDx = 0;
+                    accumulatedDy = 0;
+                    lastFrameTime = currentTime;
+                }
+
+                requestAnimationFrame(updatePan);
+            }
+
             function endPan() {
                 isPanning = false;
-                svg.style.cursor = 'grab';
+                svg.style.cursor = 'default';
             }
 
             function zoom(e) {
                 e.preventDefault();
 
-                const scale = e.deltaY < 0 ? 0.9 : 1.1;
+                clearTimeout(zoomTimeout);
+                zoomTimeout = setTimeout(() => {
+                    const scale = e.deltaY < 0 ? 0.9 : 1.1;
 
-                // Calculate zoom center
-                const mouseX = e.clientX - svgContainer.getBoundingClientRect().left;
-                const mouseY = e.clientY - svgContainer.getBoundingClientRect().top;
+                    // Calculate zoom center
+                    const rect = svgContainer.getBoundingClientRect();
+                    const mouseX = (e.clientX - rect.left) / rect.width;
+                    const mouseY = (e.clientY - rect.top) / rect.height;
 
-                const viewX = viewBox.x + (mouseX / svg.clientWidth) * viewBox.width;
-                const viewY = viewBox.y + (mouseY / svg.clientHeight) * viewBox.height;
+                    const viewX = viewBox.x + mouseX * viewBox.width;
+                    const viewY = viewBox.y + mouseY * viewBox.height;
 
-                // Apply zoom
-                viewBox.x = viewX - (viewX - viewBox.x) * scale;
-                viewBox.y = viewY - (viewY - viewBox.y) * scale;
-                viewBox.width *= scale;
-                viewBox.height *= scale;
+                    // Apply zoom
+                    const newWidth = viewBox.width * scale;
+                    const newHeight = viewBox.height * scale;
 
-                svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.width} ${viewBox.height}`);
+                    viewBox.x = viewX - mouseX * newWidth;
+                    viewBox.y = viewY - mouseY * newHeight;
+                    viewBox.width = newWidth;
+                    viewBox.height = newHeight;
+
+                    // Update viewBox
+                    requestAnimationFrame(adjustCSSStyles);
+                }, 20);
             }
 
             function resetView() {
@@ -953,16 +1029,41 @@
                 viewBox.y = originalViewBox.y;
                 viewBox.width = originalViewBox.width;
                 viewBox.height = originalViewBox.height;
-                svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.width} ${viewBox.height}`);
+
+                // Reset CSS styles
+                requestAnimationFrame(resetCSSStyles);
             }
 
-            // Set initial cursor style
-            svg.style.cursor = 'grab';
-        }
+            function adjustCSSStyles() {
+                const zoomLevel = originalViewBox.width / viewBox.width;
 
-        showNodeNames.addEventListener("change", displayNodes);
-        showNodeNamesBelow.addEventListener("change", displayNodes);
-        showNodeCircles.addEventListener("change", displayNodes);
+                // Calculate size scaling factor within defined boundaries
+                const sizeScale = 1 / Math.min(Math.max(zoomLevel, 1), 25);
+
+                if (sizeScale !== currentSizeScale) {
+                    // console.log(zoomLevel, sizeScale);
+                    if (sizeScale >= 1.0) {
+                        resetCSSStyles()
+                    } else {
+                        svgProperties.stylePath.style.strokeWidth = `${svgProperties.originalStrokeWidth * sizeScale}px`;
+                        svgProperties.styleCircle.style.r = `${svgProperties.originalCircleRadius * sizeScale}px`;
+                        svgProperties.styleText.style.fontSize = `${svgProperties.originalFontSize * sizeScale}px`;
+                        svgProperties.stylePathUtilization.style.fontSize = `${svgProperties.originalStrokeWidth * sizeScale}px`;
+                        currentSizeScale = sizeScale;
+                    }
+                }
+            }
+
+            function resetCSSStyles() {
+                svgProperties.stylePath.style.strokeWidth = `${svgProperties.originalStrokeWidth}px`;
+                svgProperties.styleCircle.style.r = `${svgProperties.originalCircleRadius}px`;
+                svgProperties.styleText.style.fontSize = `${svgProperties.originalFontSize}px`;
+                svgProperties.stylePathUtilization.style.fontSize = `${svgProperties.originalStrokeWidth}px`;
+                currentSizeScale = 1.0;
+            }
+
+            currentSizeScale = 1.0;
+        }
 
         trafficModelDropdown.addEventListener("change", () => {
             if (trafficModelDropdown.value !== 'none')
@@ -1059,7 +1160,7 @@
             const svgBlob = new Blob([svgContent], {type: "image/svg+xml"});
             const svgUrl = URL.createObjectURL(svgBlob);
             topoDownloadSVGView.href = svgUrl;
-            topoDownloadSVGView.download = `${topology_json.graph.name}.svg`;
+            topoDownloadSVGView.download = `${topologyJSON.graph.name}.svg`;
         }
 
         topoDownloadSVGView.addEventListener("click", downloadSVG);
@@ -1069,7 +1170,7 @@
             let text = "";
 
             if (selectedCategory.startsWith('gabriel')) {
-                text += `Synthetically generated <b>Gabriel graph</b> topology with <b>${topology_json['graph']['stats']['nodes']}</b> nodes.
+                text += `Synthetically generated <b>Gabriel graph</b> topology with <b>${topologyJSON['graph']['stats']['nodes']}</b> nodes.
 <a href="https://doi.org/10.2307/2412323" target="_blank">Gabriel graphs</a> closely approximate real optical transport network topologies and realistically model fiber lengths and node degrees, as shown in <a href="https://doi.org/10.1109/ICUMT.2013.6798402" target="_blank">this paper</a>.`
             }
 
@@ -1084,6 +1185,14 @@ Source data is available on <a href="http://www.topology-zoo.org/" target="_blan
             }
 
             topologyInfoParagraph.innerHTML = text;
+        }
+
+        function populateNodes(nodes) {
+            let new_topology_nodes = {}
+            for (const node of nodes) {
+                new_topology_nodes[node['id']] = node;
+            }
+            return new_topology_nodes;
         }
 
         // Function to fetch and display the selected topology
@@ -1106,11 +1215,11 @@ Source data is available on <a href="http://www.topology-zoo.org/" target="_blan
                         return response.json();
                     });
 
-                // Wait for both promises to resolve
-                const [new_svg, new_json] = await Promise.all([svgPromise, jsonPromise]);
-                topology_json = new_json;
+                const new_json = await jsonPromise;
+                topologyJSON = new_json;
+                topologyNodes = populateNodes(new_json['nodes']);
 
-                // Display the SVG content
+                const new_svg = await svgPromise;
                 topoDisplay.style.visibility = 'hidden';
                 topoDisplay.innerHTML = new_svg;
             } catch (error) {
@@ -1121,16 +1230,16 @@ Source data is available on <a href="http://www.topology-zoo.org/" target="_blan
                 topologyPropertiesList.innerHTML = "";
                 trafficModelDropdown.value = 'none';
                 trafficModelDropdown.disabled = true;
-                topology_json = null;
+                topologyJSON = null;
                 drawHistogram(null);
                 return;
             }
             // Parse SVG and perform other operations
             parseSVG();
-            populateTopologyProperties(`${selectedCategory}/${selectedTopology}`, topology_json['graph']['stats']);
+            interactiveSVG();
+            populateTopologyProperties(`${selectedCategory}/${selectedTopology}`, topologyJSON['graph']['stats']);
             visualizeTraffic();
             displayNodes();
-            interactiveSVG();
             topoDisplay.style.visibility = null;
             trafficModelDropdown.disabled = false;
             trafficModelDropdownOriginal.disabled = selectedCategory !== 'sndlib';

@@ -357,7 +357,7 @@ def generate_map(include_continents=None, include_countries=None, exclude_countr
     background = []
     for _, country in filtered_world.iterrows():
         path_data = geometry_to_path(country.geometry)
-        background.append(f'<path class="country" vector-effect="non-scaling-stroke" d="{path_data}"/>\n')
+        background.append(f'<path class="country" d="{path_data}"/>\n')
     return background
 
 

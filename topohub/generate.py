@@ -19,7 +19,6 @@ class RoundingFloat(float):
 
 
 class TopoGenerator:
-    scaling = True
 
     @classmethod
     def generate_topo(cls, *args):
@@ -35,7 +34,7 @@ class TopoGenerator:
         os.makedirs(filename.rpartition('/')[0], exist_ok=True)
         ps = None
         if kwargs.get('with_plot'):
-            topohub.graph.save_topo_graph_svg(g, filename, cls.scaling, 50, kwargs.get('background'))
+            topohub.graph.save_topo_graph_svg(g, filename, kwargs.get('scale'), kwargs.get('background'))
         if kwargs.get('with_utilization'):
             topohub.graph.calculate_utilization(g, node_filter=kwargs.get('node_filter'))
         if kwargs.get('with_path_stats'):
@@ -60,7 +59,6 @@ class SNDlibGenerator(TopoGenerator):
     SNDlib 1.0—Survivable Network Design Library. Networks, 55: 276-286.
     https://doi.org/10.1002/net.20371
     """
-    scaling = False
 
     @classmethod
     def download_topo(cls, name):
@@ -149,8 +147,6 @@ class TopoZooGenerator(TopoGenerator):
     The Internet Topology Zoo. IEEE Journal on Selected Areas in Communications, vol. 29, no. 9, pp. 1765-1775.
     https://doi.org/10.1109/JSAC.2011.111002
     """
-
-    scaling = False
 
     @classmethod
     def download_topo(cls, name):
@@ -249,7 +245,6 @@ class GabrielGenerator(TopoGenerator):
     A New Statistical Approach to Geographic Variation Analysis. Systematic Biology, Volume 18, Issue 3, September 1969, Pages 259–278.
     https://doi.org/10.2307/2412323
     """
-    scaling = False
 
     @classmethod
     def generate_topo(cls, nnodes, seed):
@@ -424,7 +419,6 @@ class BackboneGenerator(TopoGenerator):
     A New Statistical Approach to Geographic Variation Analysis. Systematic Biology, Volume 18, Issue 3, September 1969, Pages 259–278.
     https://doi.org/10.2307/2412323
     """
-    scaling = False
 
     @classmethod
     def generate_topo(cls, name):
@@ -489,7 +483,7 @@ def main(topo_names):
         for nodes_number in range(25, 525, 25):
             start_time = time.time()
             for i in range(10):
-                GabrielGenerator.save_topo(nodes_number, (i * MAX_GABRIEL_NODES) + nodes_number, filename=f'data/gabriel/{nodes_number}/{i}', with_plot=True, with_utilization=True, with_topo_stats=True, with_path_stats=True)
+                GabrielGenerator.save_topo(nodes_number, (i * MAX_GABRIEL_NODES) + nodes_number, filename=f'data/gabriel/{nodes_number}/{i}', with_plot=True, with_utilization=True, with_topo_stats=True, with_path_stats=True, scale=5)
             print(time.time() - start_time)
 
     elif topo_names[0] == 'sndlib':
@@ -530,7 +524,7 @@ def main(topo_names):
                 background = topohub.backbone.generate_map(**topo_names[topo_name])
             else:
                 background = None
-            SNDlibGenerator.save_topo(topo_name, filename=f'data/sndlib/{topo_name}', with_plot=True, with_utilization=False, with_path_stats=False, with_topo_stats=True, background=background)
+            SNDlibGenerator.save_topo(topo_name, filename=f'data/sndlib/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=True)
 
     elif topo_names[0] == 'topozoo':
 
@@ -807,7 +801,7 @@ def main(topo_names):
             else:
                 background = None
             try:
-                TopoZooGenerator.save_topo(topo_name, filename=f'data/topozoo/{topo_name}', with_plot=True, with_utilization=False, with_path_stats=False, with_topo_stats=True, background=background)
+                TopoZooGenerator.save_topo(topo_name, filename=f'data/topozoo/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=True)
             except nx.exception.NetworkXNoPath:
                 pass
             except nx.NetworkXError:
@@ -849,7 +843,7 @@ def main(topo_names):
             if region:
                 path_data = topohub.backbone.polygon_to_path(region)
                 bcg.append(f'<path class="selection" vector-effect="non-scaling-stroke" d="{path_data}"/>\n')
-            BackboneGenerator.save_topo(topo_name, filename=f'data/backbone/{topo_name}', with_plot=True, with_utilization=False, with_path_stats=False, with_topo_stats=True, background=bcg, node_filter=lambda n: n['type'] == 'City')
+            BackboneGenerator.save_topo(topo_name, filename=f'data/backbone/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=bcg, scale=0.1, node_filter=lambda n: n['type'] == 'City')
 
 
 if __name__ == '__main__':
