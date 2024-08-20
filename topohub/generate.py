@@ -433,7 +433,7 @@ class BackboneGenerator(TopoGenerator):
         """
         import topohub.backbone
 
-        j = json.load(open('graph.json'))
+        j = json.load(open('external/backbone/graph.json'))
 
         nodes = {}
         names_set = set()
