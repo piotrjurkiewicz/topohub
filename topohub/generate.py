@@ -808,47 +808,42 @@ def main(topo_names):
 
     elif topo_names[0] == 'backbone':
 
-        import geopandas as gpd
         import topohub.backbone
 
-        world = gpd.read_file(open('ne_50m_admin_0_countries_lakes.zip', 'rb'))
-        background = []
-        for _, country in world.iterrows():
-            path_data = topohub.backbone.geometry_to_path(country.geometry)
-            background.append(f'<path class="country" d="{path_data}"/>\n')
-
-        topo_names = [
-            'africa',
-            'africa_nosc',
-            'americas',
-            'americas_nosc',
-            'atlantica',
-            'eastern',
-            'eastern_nosc',
-            'emea',
-            'emea_nosc',
-            'eurafrasia',
-            'eurafrasia_nosc',
-            'eurasia',
-            'eurasia_nosc',
-            'europe',
-            'europe_nosc',
-            'north_america',
-            'north_america_nosc',
-            'south_america',
-            'south_america_nosc',
-            'world'
-        ]
+        topo_names = {
+            'africa': {'include_continents': ['Africa']},
+            'africa_nosc': {'include_continents': ['Africa']},
+            'americas': {'include_continents': ['North America', 'South America']},
+            'americas_nosc': {'include_continents': ['North America', 'South America']},
+            'atlantica': {'include_continents': ['North America', 'Europe'], 'include_countries': ['Turkey', 'Georgia', 'Cyprus'], 'exclude_countries': ['Russia']},
+            'eastern': {'include_continents': ['Europe', 'Africa', 'Asia', 'Oceania']},
+            'eastern_nosc': {'include_continents': ['Europe', 'Africa', 'Asia', 'Oceania']},
+            'emea': {'include_continents': ['Europe', 'Africa', 'Asia']},
+            'emea_nosc': {'include_continents': ['Europe', 'Africa', 'Asia']},
+            'eurafrasia': {'include_continents': ['Europe', 'Africa', 'Asia']},
+            'eurafrasia_nosc': {'include_continents': ['Europe', 'Africa', 'Asia']},
+            'eurasia': {'include_continents': ['Europe', 'Asia']},
+            'eurasia_nosc': {'include_continents': ['Europe', 'Asia']},
+            'europe': {'include_continents': ['Europe'], 'include_countries': ['Turkey', 'Georgia', 'Cyprus'], 'exclude_countries': ['Russia']},
+            'europe_nosc': {'include_continents': ['Europe'], 'include_countries': ['Turkey', 'Georgia', 'Cyprus'], 'exclude_countries': ['Russia']},
+            'north_america': {'include_continents': ['North America']},
+            'north_america_nosc': {'include_continents': ['North America']},
+            'south_america': {'include_continents': ['South America']},
+            'south_america_nosc': {'include_continents': ['South America']},
+            'world': {'include_continents': ['all']}
+        }
 
         for topo_name in topo_names:
-            bcg = background.copy()
-            region = topohub.backbone.regions.get(topo_name)
-            if topo_name.endswith('_nosc'):
-                region = topohub.backbone.regions.get(topo_name[:-5])
-            if region:
-                path_data = topohub.backbone.polygon_to_path(region)
-                bcg.append(f'<path class="selection" vector-effect="non-scaling-stroke" d="{path_data}"/>\n')
-            BackboneGenerator.save_topo(topo_name, filename=f'data/backbone/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=bcg, scale=0.1, node_filter=lambda n: n['type'] == 'City')
+            background = []
+            if topo_names[topo_name]:
+                background = topohub.backbone.generate_map(**topo_names[topo_name])
+            # region = topohub.backbone.regions.get(topo_name)
+            # if topo_name.endswith('_nosc'):
+            #     region = topohub.backbone.regions.get(topo_name[:-5])
+            # if region:
+            #     path_data = topohub.backbone.polygon_to_path(region)
+            #     background.append(f'<path class="selection" vector-effect="non-scaling-stroke" d="{path_data}"/>\n')
+            BackboneGenerator.save_topo(topo_name, filename=f'data/backbone/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=0.1, node_filter=lambda n: n['type'] == 'City')
 
 
 if __name__ == '__main__':
