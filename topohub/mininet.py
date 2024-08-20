@@ -80,7 +80,7 @@ class JSONTopo(mininet.topo.Topo):
                     self.demands[str(src), str(dst)] = demands[src][dst]
 
         for node in topo['nodes']:
-            self.addSwitch(str(node['id']), **{k: v for k, v in node.items() if k != 'id'})
+            self.addSwitch(str(node['id']), **{k: v for k, v in node.items() if k not in ['id', 'name']})
         for link in topo['links']:
             self.addLink(str(link['source']), str(link['target']), **{k: v for k, v in link.items() if k not in ['source', 'target']})
 
