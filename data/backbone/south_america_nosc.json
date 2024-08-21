@@ -1,0 +1,4639 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "south_america_nosc",
+"demands": {},
+"stats": {
+"nodes": 174,
+"links": 217,
+"demands": 20880,
+"min_degree": 1,
+"avg_degree": 2.49,
+"std_degree": 0.89,
+"max_degree": 6,
+"gini": 0.18,
+"min_link_len": 3.66,
+"avg_link_len": 278.81,
+"max_link_len": 1577.38,
+"diameter_len": 9659.31,
+"diameter_hops": 28,
+"avg_sdp_num": 1.01,
+"max_sdp_num": 2,
+"avg_sdp_hops": 10.65,
+"avg_sdp_len": 2710.00,
+"avg_adp_num": 1.75,
+"max_adp_num": 4,
+"avg_adp_hops": 13.77,
+"avg_adp_len": 4895.20
+}
+},
+"nodes": [
+{
+"pos": [
+-54.95,
+-34.90
+],
+"type": "Seacable Landing Point",
+"name": "Maldonado",
+"id": 1849
+},
+{
+"pos": [
+-56.38,
+5.89
+],
+"type": "Seacable Landing Point",
+"name": "Totness",
+"id": 1810
+},
+{
+"pos": [
+-61.65,
+10.69
+],
+"type": "Seacable Landing Point",
+"name": "Chaguaramas",
+"id": 1757
+},
+{
+"pos": [
+-81.05,
+-4.15
+],
+"type": "Seacable Landing Point",
+"name": "Mancora",
+"id": 1747
+},
+{
+"pos": [
+-66.96,
+10.60
+],
+"type": "Seacable Landing Point",
+"name": "Maiquetia",
+"id": 1654
+},
+{
+"pos": [
+-70.20,
+11.71
+],
+"type": "Seacable Landing Point",
+"name": "Punto Fijo",
+"id": 1626
+},
+{
+"pos": [
+-79.90,
+9.35
+],
+"type": "Seacable Landing Point",
+"name": "Col\u00f3n",
+"id": 1621
+},
+{
+"pos": [
+-79.54,
+8.96
+],
+"type": "Seacable Landing Point",
+"name": "Panama City",
+"id": 1620
+},
+{
+"pos": [
+-68.90,
+12.10
+],
+"type": "Seacable Landing Point",
+"name": "Willemstad",
+"id": 1602
+},
+{
+"pos": [
+-75.56,
+9.50
+],
+"type": "Seacable Landing Point",
+"name": "Tolu",
+"id": 1600
+},
+{
+"pos": [
+-79.75,
+9.44
+],
+"type": "Seacable Landing Point",
+"name": "Maria Chiquita",
+"id": 1599
+},
+{
+"pos": [
+-62.47,
+10.72
+],
+"type": "Seacable Landing Point",
+"name": "Puerto Viejo",
+"id": 1598
+},
+{
+"pos": [
+-38.50,
+-12.97
+],
+"type": "Seacable Landing Point",
+"name": "Salvador",
+"id": 1578
+},
+{
+"pos": [
+-75.51,
+10.39
+],
+"type": "Seacable Landing Point",
+"name": "Cartagena",
+"id": 1570
+},
+{
+"pos": [
+-66.88,
+10.61
+],
+"type": "Seacable Landing Point",
+"name": "Camuri",
+"id": 1569
+},
+{
+"pos": [
+-61.52,
+10.65
+],
+"type": "Seacable Landing Point",
+"name": "Port of Spain",
+"id": 1568
+},
+{
+"pos": [
+-52.32,
+4.94
+],
+"type": "Seacable Landing Point",
+"name": "Cayenne",
+"id": 1566
+},
+{
+"pos": [
+-80.91,
+-2.27
+],
+"type": "Seacable Landing Point",
+"name": "Punta Carnero",
+"id": 1551
+},
+{
+"pos": [
+-72.95,
+11.48
+],
+"type": "Seacable Landing Point",
+"name": "Riohacha",
+"id": 1538
+},
+{
+"pos": [
+-56.70,
+-36.47
+],
+"type": "Seacable Landing Point",
+"name": "Las Toninas",
+"id": 1480
+},
+{
+"pos": [
+-43.21,
+-22.90
+],
+"type": "Seacable Landing Point",
+"name": "Rio de Janeiro",
+"id": 1479
+},
+{
+"pos": [
+-76.87,
+-12.28
+],
+"type": "Seacable Landing Point",
+"name": "Lurin",
+"id": 1478
+},
+{
+"pos": [
+-38.54,
+-3.72
+],
+"type": "Seacable Landing Point",
+"name": "Fortaleza",
+"id": 1477
+},
+{
+"pos": [
+-71.62,
+-33.05
+],
+"type": "Seacable Landing Point",
+"name": "Valpara\u00edso",
+"id": 1476
+},
+{
+"pos": [
+-46.33,
+-23.96
+],
+"type": "Seacable Landing Point",
+"name": "Santos",
+"id": 1407
+},
+{
+"pos": [
+-79.57,
+8.95
+],
+"type": "Seacable Landing Point",
+"name": "Balboa",
+"id": 1360
+},
+{
+"pos": [
+-35.21,
+-5.79
+],
+"type": "Seacable Landing Point",
+"name": "Natal",
+"id": 1325
+},
+{
+"pos": [
+-68.28,
+12.15
+],
+"type": "Seacable Landing Point",
+"name": "Kralendijk",
+"id": 1270
+},
+{
+"pos": [
+-69.02,
+12.23
+],
+"type": "Seacable Landing Point",
+"name": "Tera Cora",
+"id": 1269
+},
+{
+"pos": [
+-68.01,
+10.16
+],
+"type": "City",
+"name": "Valencia",
+"id": 1229
+},
+{
+"pos": [
+-71.13,
+8.42
+],
+"type": "City",
+"name": "Mucumpiz",
+"id": 1228
+},
+{
+"pos": [
+-63.18,
+9.75
+],
+"type": "City",
+"name": "Matur\u00edn",
+"id": 1227
+},
+{
+"pos": [
+-69.74,
+9.04
+],
+"type": "City",
+"name": "Guanare",
+"id": 1226
+},
+{
+"pos": [
+-64.25,
+8.89
+],
+"type": "City",
+"name": "El Tigre",
+"id": 1225
+},
+{
+"pos": [
+-64.18,
+10.46
+],
+"type": "City",
+"name": "Cuman\u00e1",
+"id": 1224
+},
+{
+"pos": [
+-63.54,
+8.13
+],
+"type": "City",
+"name": "Ciudad Bol\u00edvar",
+"id": 1223
+},
+{
+"pos": [
+-63.26,
+10.67
+],
+"type": "City",
+"name": "Car\u00fapano",
+"id": 1222
+},
+{
+"pos": [
+-67.43,
+8.92
+],
+"type": "City",
+"name": "Calabozo",
+"id": 1221
+},
+{
+"pos": [
+-66.78,
+10.12
+],
+"type": "City",
+"name": "Ocumare del Tuy",
+"id": 1220
+},
+{
+"pos": [
+-67.46,
+10.19
+],
+"type": "City",
+"name": "Cagua",
+"id": 1219
+},
+{
+"pos": [
+-67.04,
+10.34
+],
+"type": "City",
+"name": "Los Teques",
+"id": 1218
+},
+{
+"pos": [
+-64.70,
+10.13
+],
+"type": "City",
+"name": "Barcelona",
+"id": 1217
+},
+{
+"pos": [
+-64.47,
+9.44
+],
+"type": "City",
+"name": "Anaco",
+"id": 1215
+},
+{
+"pos": [
+-69.20,
+9.55
+],
+"type": "City",
+"name": "Acarigua",
+"id": 1214
+},
+{
+"pos": [
+-56.19,
+-34.90
+],
+"type": "City",
+"name": "Montevideo",
+"id": 1212
+},
+{
+"pos": [
+-77.01,
+-12.14
+],
+"type": "City",
+"name": "Surco",
+"id": 774
+},
+{
+"pos": [
+-80.45,
+-3.57
+],
+"type": "City",
+"name": "Tumbes",
+"id": 773
+},
+{
+"pos": [
+-79.03,
+-8.12
+],
+"type": "City",
+"name": "Trujillo",
+"id": 772
+},
+{
+"pos": [
+-70.02,
+-15.84
+],
+"type": "City",
+"name": "Puno",
+"id": 771
+},
+{
+"pos": [
+-73.25,
+-3.75
+],
+"type": "City",
+"name": "Iquitos",
+"id": 770
+},
+{
+"pos": [
+-78.58,
+-9.09
+],
+"type": "City",
+"name": "Chimbote",
+"id": 769
+},
+{
+"pos": [
+-78.50,
+-7.16
+],
+"type": "City",
+"name": "Cajamarca",
+"id": 767
+},
+{
+"pos": [
+-57.45,
+-25.36
+],
+"type": "City",
+"name": "Capiat\u00e1",
+"id": 766
+},
+{
+"pos": [
+-79.50,
+9.03
+],
+"type": "City",
+"name": "San Miguelito",
+"id": 765
+},
+{
+"pos": [
+-58.16,
+6.80
+],
+"type": "City",
+"name": "Georgetown",
+"id": 450
+},
+{
+"pos": [
+-75.70,
+4.81
+],
+"type": "City",
+"name": "Pereira",
+"id": 415
+},
+{
+"pos": [
+-79.46,
+-1.03
+],
+"type": "City",
+"name": "Quevedo",
+"id": 349
+},
+{
+"pos": [
+-80.45,
+-1.05
+],
+"type": "City",
+"name": "Portoviejo",
+"id": 348
+},
+{
+"pos": [
+-80.71,
+-0.96
+],
+"type": "City",
+"name": "Manta",
+"id": 347
+},
+{
+"pos": [
+-79.96,
+-3.26
+],
+"type": "City",
+"name": "Machala",
+"id": 346
+},
+{
+"pos": [
+-79.20,
+-3.99
+],
+"type": "City",
+"name": "Loja",
+"id": 345
+},
+{
+"pos": [
+-78.12,
+0.35
+],
+"type": "City",
+"name": "Ibarra",
+"id": 344
+},
+{
+"pos": [
+-73.63,
+4.14
+],
+"type": "City",
+"name": "Villavicencio",
+"id": 326
+},
+{
+"pos": [
+-76.20,
+4.08
+],
+"type": "City",
+"name": "Tulu\u00e1",
+"id": 325
+},
+{
+"pos": [
+-74.20,
+11.24
+],
+"type": "City",
+"name": "Santa Marta",
+"id": 324
+},
+{
+"pos": [
+-76.61,
+2.44
+],
+"type": "City",
+"name": "Popay\u00e1n",
+"id": 323
+},
+{
+"pos": [
+-76.30,
+3.54
+],
+"type": "City",
+"name": "Palmira",
+"id": 322
+},
+{
+"pos": [
+-75.28,
+2.93
+],
+"type": "City",
+"name": "Neiva",
+"id": 321
+},
+{
+"pos": [
+-75.56,
+6.25
+],
+"type": "City",
+"name": "Medell\u00edn",
+"id": 320
+},
+{
+"pos": [
+-75.52,
+5.07
+],
+"type": "City",
+"name": "Manizales",
+"id": 319
+},
+{
+"pos": [
+-72.24,
+11.38
+],
+"type": "City",
+"name": "Maicao",
+"id": 318
+},
+{
+"pos": [
+-74.80,
+4.30
+],
+"type": "City",
+"name": "Girardot",
+"id": 317
+},
+{
+"pos": [
+-73.09,
+7.06
+],
+"type": "City",
+"name": "Floridablanca",
+"id": 316
+},
+{
+"pos": [
+-72.51,
+7.89
+],
+"type": "City",
+"name": "C\u00facuta",
+"id": 315
+},
+{
+"pos": [
+-74.76,
+10.92
+],
+"type": "City",
+"name": "Soledad",
+"id": 314
+},
+{
+"pos": [
+-75.91,
+4.75
+],
+"type": "City",
+"name": "Cartago",
+"id": 313
+},
+{
+"pos": [
+-73.85,
+7.07
+],
+"type": "City",
+"name": "Barrancabermeja",
+"id": 311
+},
+{
+"pos": [
+-46.93,
+-23.55
+],
+"type": "City",
+"name": "Itapevi",
+"id": 196
+},
+{
+"pos": [
+-71.55,
+-33.02
+],
+"type": "City",
+"name": "Vi\u00f1a del Mar",
+"id": 176
+},
+{
+"pos": [
+-73.25,
+-39.81
+],
+"type": "City",
+"name": "Valdivia",
+"id": 175
+},
+{
+"pos": [
+-72.60,
+-38.74
+],
+"type": "City",
+"name": "Temuco",
+"id": 174
+},
+{
+"pos": [
+-71.66,
+-35.43
+],
+"type": "City",
+"name": "Talca",
+"id": 173
+},
+{
+"pos": [
+-70.65,
+-33.46
+],
+"type": "City",
+"name": "Santiago",
+"id": 172
+},
+{
+"pos": [
+-70.91,
+-53.15
+],
+"type": "City",
+"name": "Punta Arenas",
+"id": 171
+},
+{
+"pos": [
+-72.94,
+-41.47
+],
+"type": "City",
+"name": "Puerto Montt",
+"id": 170
+},
+{
+"pos": [
+-73.13,
+-40.57
+],
+"type": "City",
+"name": "Osorno",
+"id": 169
+},
+{
+"pos": [
+-70.30,
+-18.47
+],
+"type": "City",
+"name": "Arica",
+"id": 167
+},
+{
+"pos": [
+-70.40,
+-23.65
+],
+"type": "City",
+"name": "Antofagasta",
+"id": 166
+},
+{
+"pos": [
+-40.29,
+-20.33
+],
+"type": "City",
+"name": "Vila Velha",
+"id": 140
+},
+{
+"pos": [
+-35.29,
+-8.12
+],
+"type": "City",
+"name": "Vit\u00f3ria de Santo Ant\u00e3o",
+"id": 131
+},
+{
+"pos": [
+-40.84,
+-14.87
+],
+"type": "City",
+"name": "Vit\u00f3ria da Conquista",
+"id": 130
+},
+{
+"pos": [
+-45.43,
+-21.55
+],
+"type": "City",
+"name": "Varginha",
+"id": 129
+},
+{
+"pos": [
+-48.28,
+-18.92
+],
+"type": "City",
+"name": "Uberl\u00e2ndia",
+"id": 128
+},
+{
+"pos": [
+-44.30,
+-2.53
+],
+"type": "City",
+"name": "S\u00e3o Lu\u00eds",
+"id": 127
+},
+{
+"pos": [
+-49.38,
+-20.82
+],
+"type": "City",
+"name": "S\u00e3o Jos\u00e9 do Rio Preto",
+"id": 126
+},
+{
+"pos": [
+-49.16,
+-28.21
+],
+"type": "City",
+"name": "S\u00e3o Jos\u00e9",
+"id": 125
+},
+{
+"pos": [
+-40.35,
+-3.69
+],
+"type": "City",
+"name": "Sobral",
+"id": 124
+},
+{
+"pos": [
+-44.25,
+-19.47
+],
+"type": "City",
+"name": "Sete Lagoas",
+"id": 123
+},
+{
+"pos": [
+-34.87,
+-7.94
+],
+"type": "City",
+"name": "Paulista",
+"id": 122
+},
+{
+"pos": [
+-54.71,
+-2.44
+],
+"type": "City",
+"name": "Santar\u00e9m",
+"id": 121
+},
+{
+"pos": [
+-53.81,
+-29.68
+],
+"type": "City",
+"name": "Santa Maria",
+"id": 120
+},
+{
+"pos": [
+-54.64,
+-16.47
+],
+"type": "City",
+"name": "Rondon\u00f3polis",
+"id": 119
+},
+{
+"pos": [
+-46.56,
+-21.79
+],
+"type": "City",
+"name": "Po\u00e7os de Caldas",
+"id": 118
+},
+{
+"pos": [
+-45.94,
+-22.23
+],
+"type": "City",
+"name": "Pouso Alegre",
+"id": 117
+},
+{
+"pos": [
+-63.90,
+-8.76
+],
+"type": "City",
+"name": "Porto Velho",
+"id": 116
+},
+{
+"pos": [
+-45.46,
+-22.92
+],
+"type": "City",
+"name": "Pindamonhangaba",
+"id": 115
+},
+{
+"pos": [
+-42.97,
+-22.41
+],
+"type": "City",
+"name": "Teres\u00f3polis",
+"id": 114
+},
+{
+"pos": [
+-43.18,
+-22.50
+],
+"type": "City",
+"name": "Petr\u00f3polis",
+"id": 113
+},
+{
+"pos": [
+-35.26,
+-5.92
+],
+"type": "City",
+"name": "Parnamirim",
+"id": 112
+},
+{
+"pos": [
+-48.36,
+-10.21
+],
+"type": "City",
+"name": "Palmas",
+"id": 111
+},
+{
+"pos": [
+-42.53,
+-22.28
+],
+"type": "City",
+"name": "Nova Friburgo",
+"id": 110
+},
+{
+"pos": [
+-37.34,
+-5.19
+],
+"type": "City",
+"name": "Mossor\u00f3",
+"id": 109
+},
+{
+"pos": [
+-46.94,
+-22.37
+],
+"type": "City",
+"name": "Mogi Gua\u00e7u",
+"id": 108
+},
+{
+"pos": [
+-35.74,
+-9.67
+],
+"type": "City",
+"name": "Macei\u00f3",
+"id": 107
+},
+{
+"pos": [
+-47.95,
+-16.25
+],
+"type": "City",
+"name": "Luzi\u00e2nia",
+"id": 106
+},
+{
+"pos": [
+-51.16,
+-23.31
+],
+"type": "City",
+"name": "Londrina",
+"id": 105
+},
+{
+"pos": [
+-39.32,
+-7.21
+],
+"type": "City",
+"name": "Juazeiro do Norte",
+"id": 104
+},
+{
+"pos": [
+-48.85,
+-26.30
+],
+"type": "City",
+"name": "Joinville",
+"id": 103
+},
+{
+"pos": [
+-40.08,
+-13.86
+],
+"type": "City",
+"name": "Jequi\u00e9",
+"id": 102
+},
+{
+"pos": [
+-48.56,
+-22.30
+],
+"type": "City",
+"name": "Ja\u00fa",
+"id": 101
+},
+{
+"pos": [
+-39.28,
+-14.79
+],
+"type": "City",
+"name": "Itabuna",
+"id": 100
+},
+{
+"pos": [
+-48.55,
+-27.60
+],
+"type": "City",
+"name": "Florian\u00f3polis",
+"id": 99
+},
+{
+"pos": [
+-47.49,
+-5.53
+],
+"type": "City",
+"name": "Imperatriz",
+"id": 98
+},
+{
+"pos": [
+-45.19,
+-22.82
+],
+"type": "City",
+"name": "Guaratinguet\u00e1",
+"id": 97
+},
+{
+"pos": [
+-41.95,
+-18.85
+],
+"type": "City",
+"name": "Governador Valadares",
+"id": 96
+},
+{
+"pos": [
+-43.10,
+-22.88
+],
+"type": "City",
+"name": "Niter\u00f3i",
+"id": 95
+},
+{
+"pos": [
+-49.21,
+-25.53
+],
+"type": "City",
+"name": "S\u00e3o Jos\u00e9 dos Pinhais",
+"id": 94
+},
+{
+"pos": [
+-47.27,
+-22.82
+],
+"type": "City",
+"name": "Sumar\u00e9",
+"id": 93
+},
+{
+"pos": [
+-47.30,
+-23.26
+],
+"type": "City",
+"name": "Itu",
+"id": 92
+},
+{
+"pos": [
+-46.83,
+-23.21
+],
+"type": "City",
+"name": "V\u00e1rzea Paulista",
+"id": 90
+},
+{
+"pos": [
+-46.64,
+-23.55
+],
+"type": "City",
+"name": "S\u00e3o Paulo",
+"id": 89
+},
+{
+"pos": [
+-44.09,
+-19.77
+],
+"type": "City",
+"name": "Ribeir\u00e3o das Neves",
+"id": 88
+},
+{
+"pos": [
+-49.37,
+-28.68
+],
+"type": "City",
+"name": "Crici\u00fama",
+"id": 87
+},
+{
+"pos": [
+-42.63,
+-19.52
+],
+"type": "City",
+"name": "Coronel Fabriciano",
+"id": 86
+},
+{
+"pos": [
+-38.32,
+-12.70
+],
+"type": "City",
+"name": "Cama\u00e7ari",
+"id": 85
+},
+{
+"pos": [
+-43.79,
+-20.66
+],
+"type": "City",
+"name": "Conselheiro Lafaiete",
+"id": 84
+},
+{
+"pos": [
+-40.63,
+-19.54
+],
+"type": "City",
+"name": "Colatina",
+"id": 83
+},
+{
+"pos": [
+-43.36,
+-4.86
+],
+"type": "City",
+"name": "Caxias",
+"id": 82
+},
+{
+"pos": [
+-48.97,
+-21.14
+],
+"type": "City",
+"name": "Catanduva",
+"id": 81
+},
+{
+"pos": [
+-41.33,
+-21.75
+],
+"type": "City",
+"name": "Campos",
+"id": 80
+},
+{
+"pos": [
+-54.65,
+-20.44
+],
+"type": "City",
+"name": "Campo Grande",
+"id": 79
+},
+{
+"pos": [
+-51.02,
+-30.08
+],
+"type": "City",
+"name": "Viam\u00e3o",
+"id": 78
+},
+{
+"pos": [
+-51.33,
+-30.11
+],
+"type": "City",
+"name": "Gua\u00edba",
+"id": 77
+},
+{
+"pos": [
+-50.43,
+-21.21
+],
+"type": "City",
+"name": "Ara\u00e7atuba",
+"id": 76
+},
+{
+"pos": [
+-60.67,
+2.82
+],
+"type": "City",
+"name": "Boa Vista",
+"id": 75
+},
+{
+"pos": [
+-49.07,
+-26.92
+],
+"type": "City",
+"name": "Blumenau",
+"id": 74
+},
+{
+"pos": [
+-48.50,
+-1.46
+],
+"type": "City",
+"name": "Bel\u00e9m",
+"id": 73
+},
+{
+"pos": [
+-49.06,
+-22.31
+],
+"type": "City",
+"name": "Bauru",
+"id": 72
+},
+{
+"pos": [
+-44.17,
+-22.54
+],
+"type": "City",
+"name": "Barra Mansa",
+"id": 71
+},
+{
+"pos": [
+-43.77,
+-21.23
+],
+"type": "City",
+"name": "Barbacena",
+"id": 70
+},
+{
+"pos": [
+-47.56,
+-22.41
+],
+"type": "City",
+"name": "Rio Claro",
+"id": 69
+},
+{
+"pos": [
+-49.24,
+-16.82
+],
+"type": "City",
+"name": "Aparecida de Goi\u00e2nia",
+"id": 68
+},
+{
+"pos": [
+-48.21,
+-7.19
+],
+"type": "City",
+"name": "Aragua\u00edna",
+"id": 67
+},
+{
+"pos": [
+-37.07,
+-10.91
+],
+"type": "City",
+"name": "Aracaju",
+"id": 66
+},
+{
+"pos": [
+-51.46,
+-23.55
+],
+"type": "City",
+"name": "Apucarana",
+"id": 65
+},
+{
+"pos": [
+-58.83,
+-27.48
+],
+"type": "City",
+"name": "Corrientes",
+"id": 64
+},
+{
+"pos": [
+-48.95,
+-16.33
+],
+"type": "City",
+"name": "An\u00e1polis",
+"id": 63
+},
+{
+"pos": [
+-44.32,
+-23.01
+],
+"type": "City",
+"name": "Angra dos Reis",
+"id": 62
+},
+{
+"pos": [
+-38.42,
+-12.14
+],
+"type": "City",
+"name": "Alagoinhas",
+"id": 61
+},
+{
+"pos": [
+-65.75,
+-19.58
+],
+"type": "City",
+"name": "Potos\u00ed",
+"id": 57
+},
+{
+"pos": [
+-64.26,
+-27.80
+],
+"type": "City",
+"name": "Santiago del Estero",
+"id": 21
+},
+{
+"pos": [
+-60.23,
+-33.34
+],
+"type": "City",
+"name": "San Nicol\u00e1s de los Arroyos",
+"id": 20
+},
+{
+"pos": [
+-65.22,
+-26.82
+],
+"type": "City",
+"name": "San Miguel de Tucum\u00e1n",
+"id": 19
+},
+{
+"pos": [
+-65.79,
+-28.47
+],
+"type": "City",
+"name": "San Fernando del Valle de Catamarca",
+"id": 18
+},
+{
+"pos": [
+-65.41,
+-24.79
+],
+"type": "City",
+"name": "Salta",
+"id": 17
+},
+{
+"pos": [
+-64.35,
+-33.13
+],
+"type": "City",
+"name": "R\u00edo Cuarto",
+"id": 16
+},
+{
+"pos": [
+-60.52,
+-31.73
+],
+"type": "City",
+"name": "Paran\u00e1",
+"id": 15
+},
+{
+"pos": [
+-68.06,
+-38.95
+],
+"type": "City",
+"name": "Neuqu\u00e9n",
+"id": 14
+},
+{
+"pos": [
+-68.83,
+-32.89
+],
+"type": "City",
+"name": "Mendoza",
+"id": 13
+},
+{
+"pos": [
+-57.56,
+-38.00
+],
+"type": "City",
+"name": "Mar del Plata",
+"id": 12
+},
+{
+"pos": [
+-58.25,
+-34.72
+],
+"type": "City",
+"name": "Quilmes",
+"id": 11
+},
+{
+"pos": [
+-58.02,
+-31.39
+],
+"type": "City",
+"name": "Concordia",
+"id": 10
+},
+{
+"pos": [
+-67.50,
+-45.86
+],
+"type": "City",
+"name": "Comodoro Rivadavia",
+"id": 9
+},
+{
+"pos": [
+-62.27,
+-38.72
+],
+"type": "City",
+"name": "Bah\u00eda Blanca",
+"id": 8
+}
+],
+"links": [
+{
+"dist": 631.41,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 2.50,
+"deg": 1.92
+},
+"ecmp_bwd": {
+"uni": 2.50,
+"deg": 1.92
+},
+"source": 1849,
+"target": 77
+},
+{
+"dist": 589.87,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 8.71,
+"deg": 9.20
+},
+"ecmp_bwd": {
+"uni": 8.73,
+"deg": 9.23
+},
+"source": 1849,
+"target": 120
+},
+{
+"dist": 112.90,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 11.23,
+"deg": 11.14
+},
+"ecmp_bwd": {
+"uni": 11.21,
+"deg": 11.12
+},
+"source": 1849,
+"target": 1212
+},
+{
+"dist": 460.95,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.07,
+"deg": 0.08
+},
+"ecmp_bwd": {
+"uni": 0.13,
+"deg": 0.14
+},
+"source": 1810,
+"target": 1566
+},
+{
+"dist": 221.60,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.90,
+"deg": 1.03
+},
+"ecmp_bwd": {
+"uni": 1.25,
+"deg": 1.44
+},
+"source": 1810,
+"target": 450
+},
+{
+"dist": 944.53,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 1.18,
+"deg": 1.36
+},
+"ecmp_bwd": {
+"uni": 0.77,
+"deg": 0.89
+},
+"source": 1810,
+"target": 121
+},
+{
+"dist": 90.02,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1757,
+"target": 1598
+},
+{
+"dist": 15.20,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1757,
+"target": 1568
+},
+{
+"dist": 93.41,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1747,
+"target": 773
+},
+{
+"dist": 9.00,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1654,
+"target": 1569
+},
+{
+"dist": 224.37,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1654,
+"target": 1270
+},
+{
+"dist": 29.76,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1654,
+"target": 1218
+},
+{
+"dist": 263.67,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1626,
+"target": 1214
+},
+{
+"dist": 18.56,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1621,
+"target": 1599
+},
+{
+"dist": 8.66,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1620,
+"target": 765
+},
+{
+"dist": 3.66,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1620,
+"target": 1360
+},
+{
+"dist": 20.52,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1602,
+"target": 1269
+},
+{
+"dist": 67.68,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1602,
+"target": 1270
+},
+{
+"dist": 99.18,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 6.33,
+"deg": 4.90
+},
+"ecmp_bwd": {
+"uni": 6.33,
+"deg": 4.90
+},
+"source": 1600,
+"target": 1570
+},
+{
+"dist": 360.76,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 9.30,
+"deg": 8.39
+},
+"ecmp_bwd": {
+"uni": 9.30,
+"deg": 8.39
+},
+"source": 1600,
+"target": 320
+},
+{
+"dist": 435.60,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.60,
+"deg": 4.15
+},
+"ecmp_bwd": {
+"uni": 3.60,
+"deg": 4.15
+},
+"source": 1600,
+"target": 765
+},
+{
+"dist": 328.96,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.50,
+"deg": 0.53
+},
+"ecmp_bwd": {
+"uni": 0.50,
+"deg": 0.53
+},
+"source": 1600,
+"target": 311
+},
+{
+"dist": 52.84,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1599,
+"target": 765
+},
+{
+"dist": 85.94,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1598,
+"target": 1222
+},
+{
+"dist": 132.68,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1598,
+"target": 1227
+},
+{
+"dist": 218.56,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.23,
+"deg": 0.15
+},
+"ecmp_bwd": {
+"uni": 0.23,
+"deg": 0.15
+},
+"source": 1578,
+"target": 100
+},
+{
+"dist": 36.07,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 15.83,
+"deg": 12.43
+},
+"ecmp_bwd": {
+"uni": 15.64,
+"deg": 12.26
+},
+"source": 1578,
+"target": 85
+},
+{
+"dist": 197.25,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 15.41,
+"deg": 12.11
+},
+"ecmp_bwd": {
+"uni": 15.61,
+"deg": 12.28
+},
+"source": 1578,
+"target": 102
+},
+{
+"dist": 100.27,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 6.33,
+"deg": 4.90
+},
+"ecmp_bwd": {
+"uni": 6.33,
+"deg": 4.90
+},
+"source": 1570,
+"target": 314
+},
+{
+"dist": 862.87,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1566,
+"target": 121
+},
+{
+"dist": 828.10,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.07,
+"deg": 0.08
+},
+"ecmp_bwd": {
+"uni": 0.13,
+"deg": 0.14
+},
+"source": 1566,
+"target": 73
+},
+{
+"dist": 147.47,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 1.66,
+"deg": 1.28
+},
+"ecmp_bwd": {
+"uni": 1.66,
+"deg": 1.28
+},
+"source": 1551,
+"target": 347
+},
+{
+"dist": 152.43,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 1.71,
+"deg": 1.35
+},
+"ecmp_bwd": {
+"uni": 1.70,
+"deg": 1.34
+},
+"source": 1551,
+"target": 346
+},
+{
+"dist": 152.79,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.05,
+"deg": 0.06
+},
+"ecmp_bwd": {
+"uni": 0.05,
+"deg": 0.06
+},
+"source": 1551,
+"target": 773
+},
+{
+"dist": 144.80,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.09,
+"deg": 0.11
+},
+"ecmp_bwd": {
+"uni": 0.10,
+"deg": 0.12
+},
+"source": 1551,
+"target": 348
+},
+{
+"dist": 138.51,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.85,
+"deg": 0.65
+},
+"ecmp_bwd": {
+"uni": 0.85,
+"deg": 0.65
+},
+"source": 1538,
+"target": 324
+},
+{
+"dist": 78.12,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.85,
+"deg": 0.65
+},
+"ecmp_bwd": {
+"uni": 0.85,
+"deg": 0.65
+},
+"source": 1538,
+"target": 318
+},
+{
+"dist": 240.02,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.99,
+"deg": 0.88
+},
+"ecmp_bwd": {
+"uni": 0.99,
+"deg": 0.88
+},
+"source": 1480,
+"target": 11
+},
+{
+"dist": 186.43,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 6.23,
+"deg": 5.14
+},
+"ecmp_bwd": {
+"uni": 6.22,
+"deg": 5.13
+},
+"source": 1480,
+"target": 12
+},
+{
+"dist": 180.41,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 5.23,
+"deg": 4.25
+},
+"ecmp_bwd": {
+"uni": 5.24,
+"deg": 4.27
+},
+"source": 1480,
+"target": 1212
+},
+{
+"dist": 106.43,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.13,
+"deg": 0.09
+},
+"ecmp_bwd": {
+"uni": 0.13,
+"deg": 0.09
+},
+"source": 1479,
+"target": 71
+},
+{
+"dist": 114.08,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.15,
+"deg": 0.10
+},
+"ecmp_bwd": {
+"uni": 0.15,
+"deg": 0.10
+},
+"source": 1479,
+"target": 62
+},
+{
+"dist": 11.08,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.28,
+"deg": 0.18
+},
+"ecmp_bwd": {
+"uni": 0.28,
+"deg": 0.18
+},
+"source": 1479,
+"target": 95
+},
+{
+"dist": 838.69,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 6.18,
+"deg": 4.76
+},
+"ecmp_bwd": {
+"uni": 6.14,
+"deg": 4.73
+},
+"source": 1478,
+"target": 771
+},
+{
+"dist": 21.08,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 6.14,
+"deg": 4.73
+},
+"ecmp_bwd": {
+"uni": 6.18,
+"deg": 4.76
+},
+"source": 1478,
+"target": 774
+},
+{
+"dist": 200.51,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 5.81,
+"deg": 5.75
+},
+"ecmp_bwd": {
+"uni": 5.71,
+"deg": 5.66
+},
+"source": 1477,
+"target": 124
+},
+{
+"dist": 210.55,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 5.71,
+"deg": 5.66
+},
+"ecmp_bwd": {
+"uni": 5.81,
+"deg": 5.75
+},
+"source": 1477,
+"target": 109
+},
+{
+"dist": 6.82,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1476,
+"target": 176
+},
+{
+"dist": 145.38,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 10.65,
+"deg": 6.87
+},
+"ecmp_bwd": {
+"uni": 10.65,
+"deg": 6.87
+},
+"source": 1407,
+"target": 115
+},
+{
+"dist": 55.74,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 10.65,
+"deg": 6.87
+},
+"ecmp_bwd": {
+"uni": 10.65,
+"deg": 6.87
+},
+"source": 1407,
+"target": 89
+},
+{
+"dist": 14.64,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1325,
+"target": 112
+},
+{
+"dist": 223.07,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"ecmp_bwd": {
+"uni": 0.00,
+"deg": 0.00
+},
+"source": 1270,
+"target": 1229
+},
+{
+"dist": 146.63,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 12.02,
+"deg": 13.26
+},
+"ecmp_bwd": {
+"uni": 11.59,
+"deg": 12.79
+},
+"source": 1229,
+"target": 1214
+},
+{
+"dist": 60.07,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 14.44,
+"deg": 16.10
+},
+"ecmp_bwd": {
+"uni": 14.87,
+"deg": 16.58
+},
+"source": 1229,
+"target": 1219
+},
+{
+"dist": 167.97,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.33,
+"deg": 3.40
+},
+"ecmp_bwd": {
+"uni": 3.34,
+"deg": 3.40
+},
+"source": 1228,
+"target": 1226
+},
+{
+"dist": 351.55,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 1.08,
+"deg": 1.19
+},
+"ecmp_bwd": {
+"uni": 1.50,
+"deg": 1.66
+},
+"source": 1228,
+"target": 318
+},
+{
+"dist": 162.07,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 6.09,
+"deg": 6.47
+},
+"ecmp_bwd": {
+"uni": 5.66,
+"deg": 5.99
+},
+"source": 1228,
+"target": 315
+},
+{
+"dist": 102.45,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.60,
+"deg": 2.77
+},
+"ecmp_bwd": {
+"uni": 3.60,
+"deg": 2.77
+},
+"source": 1227,
+"target": 1222
+},
+{
+"dist": 377.74,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.25,
+"deg": 3.48
+},
+"ecmp_bwd": {
+"uni": 2.83,
+"deg": 3.01
+},
+"source": 1226,
+"target": 318
+},
+{
+"dist": 82.74,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 8.77,
+"deg": 9.49
+},
+"ecmp_bwd": {
+"uni": 9.19,
+"deg": 9.97
+},
+"source": 1226,
+"target": 1214
+},
+{
+"dist": 66.19,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 39.81,
+"deg": 38.98
+},
+"ecmp_bwd": {
+"uni": 39.38,
+"deg": 38.50
+},
+"source": 1225,
+"target": 1215
+},
+{
+"dist": 114.51,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 42.08,
+"deg": 40.61
+},
+"ecmp_bwd": {
+"uni": 42.51,
+"deg": 41.09
+},
+"source": 1225,
+"target": 1223
+},
+{
+"dist": 67.94,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 10.65,
+"deg": 9.57
+},
+"ecmp_bwd": {
+"uni": 10.65,
+"deg": 9.57
+},
+"source": 1224,
+"target": 1217
+},
+{
+"dist": 102.99,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 7.15,
+"deg": 6.87
+},
+"ecmp_bwd": {
+"uni": 7.15,
+"deg": 6.87
+},
+"source": 1224,
+"target": 1222
+},
+{
+"dist": 670.25,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 44.41,
+"deg": 43.33
+},
+"ecmp_bwd": {
+"uni": 44.84,
+"deg": 43.81
+},
+"source": 1223,
+"target": 75
+},
+{
+"dist": 611.75,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.43,
+"deg": 0.48
+},
+"ecmp_bwd": {
+"uni": 0.43,
+"deg": 0.48
+},
+"source": 1223,
+"target": 450
+},
+{
+"dist": 150.69,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"ecmp_bwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"source": 1221,
+"target": 1220
+},
+{
+"dist": 38.69,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 20.58,
+"deg": 22.07
+},
+"ecmp_bwd": {
+"uni": 20.15,
+"deg": 21.59
+},
+"source": 1220,
+"target": 1218
+},
+{
+"dist": 227.26,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 25.80,
+"deg": 25.94
+},
+"ecmp_bwd": {
+"uni": 26.23,
+"deg": 26.41
+},
+"source": 1220,
+"target": 1217
+},
+{
+"dist": 48.81,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 17.30,
+"deg": 18.30
+},
+"ecmp_bwd": {
+"uni": 17.72,
+"deg": 18.78
+},
+"source": 1219,
+"target": 1218
+},
+{
+"dist": 81.13,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 36.70,
+"deg": 36.42
+},
+"ecmp_bwd": {
+"uni": 37.13,
+"deg": 36.90
+},
+"source": 1217,
+"target": 1215
+},
+{
+"dist": 189.52,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.26,
+"deg": 3.70
+},
+"ecmp_bwd": {
+"uni": 3.25,
+"deg": 3.69
+},
+"source": 1212,
+"target": 11
+},
+{
+"dist": 380.60,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 2.94,
+"deg": 2.28
+},
+"ecmp_bwd": {
+"uni": 2.98,
+"deg": 2.31
+},
+"source": 774,
+"target": 769
+},
+{
+"dist": 64.39,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.55,
+"deg": 4.09
+},
+"ecmp_bwd": {
+"uni": 3.55,
+"deg": 4.09
+},
+"source": 773,
+"target": 346
+},
+{
+"dist": 118.67,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 1.58,
+"deg": 1.25
+},
+"ecmp_bwd": {
+"uni": 1.54,
+"deg": 1.22
+},
+"source": 772,
+"target": 769
+},
+{
+"dist": 120.91,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 4.48,
+"deg": 3.46
+},
+"ecmp_bwd": {
+"uni": 4.52,
+"deg": 3.49
+},
+"source": 772,
+"target": 767
+},
+{
+"dist": 1029.88,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 8.60,
+"deg": 8.53
+},
+"ecmp_bwd": {
+"uni": 8.60,
+"deg": 8.53
+},
+"source": 771,
+"target": 116
+},
+{
+"dist": 294.20,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 5.29,
+"deg": 5.36
+},
+"ecmp_bwd": {
+"uni": 5.25,
+"deg": 5.33
+},
+"source": 771,
+"target": 167
+},
+{
+"dist": 707.54,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 13.51,
+"deg": 13.89
+},
+"ecmp_bwd": {
+"uni": 13.51,
+"deg": 13.88
+},
+"source": 770,
+"target": 344
+},
+{
+"dist": 1173.90,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 73.00,
+"deg": 71.77
+},
+"ecmp_bwd": {
+"uni": 74.51,
+"deg": 73.15
+},
+"source": 770,
+"target": 116
+},
+{
+"dist": 1577.38,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 29.49,
+"deg": 29.60
+},
+"ecmp_bwd": {
+"uni": 27.59,
+"deg": 27.77
+},
+"source": 770,
+"target": 75
+},
+{
+"dist": 660.70,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 18.56,
+"deg": 19.20
+},
+"ecmp_bwd": {
+"uni": 18.52,
+"deg": 19.16
+},
+"source": 770,
+"target": 345
+},
+{
+"dist": 775.84,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 45.75,
+"deg": 40.80
+},
+"ecmp_bwd": {
+"uni": 46.18,
+"deg": 41.29
+},
+"source": 770,
+"target": 321
+},
+{
+"dist": 361.06,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 7.93,
+"deg": 6.14
+},
+"ecmp_bwd": {
+"uni": 7.97,
+"deg": 6.17
+},
+"source": 767,
+"target": 345
+},
+{
+"dist": 638.05,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 1.63,
+"deg": 1.24
+},
+"ecmp_bwd": {
+"uni": 1.63,
+"deg": 1.24
+},
+"source": 766,
+"target": 65
+},
+{
+"dist": 616.85,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 69.46,
+"deg": 68.50
+},
+"ecmp_bwd": {
+"uni": 70.43,
+"deg": 69.38
+},
+"source": 766,
+"target": 79
+},
+{
+"dist": 600.27,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 37.85,
+"deg": 35.23
+},
+"ecmp_bwd": {
+"uni": 37.86,
+"deg": 35.24
+},
+"source": 766,
+"target": 120
+},
+{
+"dist": 273.81,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 32.21,
+"deg": 32.28
+},
+"ecmp_bwd": {
+"uni": 31.22,
+"deg": 31.39
+},
+"source": 766,
+"target": 64
+},
+{
+"dist": 523.58,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 1.93,
+"deg": 2.22
+},
+"ecmp_bwd": {
+"uni": 2.28,
+"deg": 2.63
+},
+"source": 450,
+"target": 75
+},
+{
+"dist": 34.63,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 28.20,
+"deg": 26.56
+},
+"ecmp_bwd": {
+"uni": 28.63,
+"deg": 27.04
+},
+"source": 415,
+"target": 319
+},
+{
+"dist": 25.02,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 31.48,
+"deg": 29.23
+},
+"ecmp_bwd": {
+"uni": 31.05,
+"deg": 28.75
+},
+"source": 415,
+"target": 313
+},
+{
+"dist": 110.21,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 5.40,
+"deg": 5.48
+},
+"ecmp_bwd": {
+"uni": 5.39,
+"deg": 5.47
+},
+"source": 349,
+"target": 348
+},
+{
+"dist": 214.00,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 9.11,
+"deg": 9.81
+},
+"ecmp_bwd": {
+"uni": 9.11,
+"deg": 9.80
+},
+"source": 349,
+"target": 344
+},
+{
+"dist": 254.04,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.67,
+"deg": 0.83
+},
+"ecmp_bwd": {
+"uni": 0.68,
+"deg": 0.85
+},
+"source": 349,
+"target": 346
+},
+{
+"dist": 30.50,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 1.94,
+"deg": 1.49
+},
+"ecmp_bwd": {
+"uni": 1.94,
+"deg": 1.49
+},
+"source": 348,
+"target": 347
+},
+{
+"dist": 117.11,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 8.40,
+"deg": 10.24
+},
+"ecmp_bwd": {
+"uni": 8.40,
+"deg": 10.25
+},
+"source": 346,
+"target": 345
+},
+{
+"dist": 286.30,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 4.93,
+"deg": 4.34
+},
+"ecmp_bwd": {
+"uni": 4.93,
+"deg": 4.33
+},
+"source": 344,
+"target": 323
+},
+{
+"dist": 131.79,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"ecmp_bwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"source": 326,
+"target": 317
+},
+{
+"dist": 80.02,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 33.90,
+"deg": 30.95
+},
+"ecmp_bwd": {
+"uni": 34.33,
+"deg": 31.43
+},
+"source": 325,
+"target": 313
+},
+{
+"dist": 61.80,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 37.18,
+"deg": 33.63
+},
+"ecmp_bwd": {
+"uni": 36.75,
+"deg": 33.16
+},
+"source": 325,
+"target": 322
+},
+{
+"dist": 71.37,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.55,
+"deg": 2.74
+},
+"ecmp_bwd": {
+"uni": 3.55,
+"deg": 2.74
+},
+"source": 324,
+"target": 314
+},
+{
+"dist": 127.18,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 2.26,
+"deg": 2.24
+},
+"ecmp_bwd": {
+"uni": 2.25,
+"deg": 2.22
+},
+"source": 323,
+"target": 322
+},
+{
+"dist": 132.29,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 37.93,
+"deg": 34.82
+},
+"ecmp_bwd": {
+"uni": 37.50,
+"deg": 34.32
+},
+"source": 322,
+"target": 321
+},
+{
+"dist": 161.42,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 7.15,
+"deg": 4.15
+},
+"ecmp_bwd": {
+"uni": 7.15,
+"deg": 4.15
+},
+"source": 321,
+"target": 317
+},
+{
+"dist": 131.64,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 25.82,
+"deg": 24.88
+},
+"ecmp_bwd": {
+"uni": 25.40,
+"deg": 24.41
+},
+"source": 320,
+"target": 319
+},
+{
+"dist": 209.29,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 13.44,
+"deg": 12.95
+},
+"ecmp_bwd": {
+"uni": 13.87,
+"deg": 13.43
+},
+"source": 320,
+"target": 311
+},
+{
+"dist": 84.78,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 11.57,
+"deg": 10.71
+},
+"ecmp_bwd": {
+"uni": 11.14,
+"deg": 10.23
+},
+"source": 316,
+"target": 311
+},
+{
+"dist": 112.35,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 8.36,
+"deg": 8.08
+},
+"ecmp_bwd": {
+"uni": 8.79,
+"deg": 8.56
+},
+"source": 316,
+"target": 315
+},
+{
+"dist": 30.38,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 7.15,
+"deg": 4.15
+},
+"ecmp_bwd": {
+"uni": 7.15,
+"deg": 4.15
+},
+"source": 196,
+"target": 89
+},
+{
+"dist": 39.05,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"ecmp_bwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"source": 196,
+"target": 90
+},
+{
+"dist": 96.81,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.60,
+"deg": 2.77
+},
+"ecmp_bwd": {
+"uni": 3.60,
+"deg": 2.77
+},
+"source": 176,
+"target": 172
+},
+{
+"dist": 85.02,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 1.90,
+"deg": 1.46
+},
+"ecmp_bwd": {
+"uni": 1.90,
+"deg": 1.46
+},
+"source": 175,
+"target": 169
+},
+{
+"dist": 131.84,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 5.35,
+"deg": 4.14
+},
+"ecmp_bwd": {
+"uni": 5.35,
+"deg": 4.14
+},
+"source": 175,
+"target": 174
+},
+{
+"dist": 377.79,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.30,
+"deg": 0.26
+},
+"ecmp_bwd": {
+"uni": 0.30,
+"deg": 0.26
+},
+"source": 174,
+"target": 173
+},
+{
+"dist": 393.78,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 8.53,
+"deg": 7.91
+},
+"ecmp_bwd": {
+"uni": 8.53,
+"deg": 7.91
+},
+"source": 174,
+"target": 14
+},
+{
+"dist": 237.67,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 2.18,
+"deg": 2.37
+},
+"ecmp_bwd": {
+"uni": 2.17,
+"deg": 2.36
+},
+"source": 173,
+"target": 172
+},
+{
+"dist": 505.02,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 2.33,
+"deg": 2.57
+},
+"ecmp_bwd": {
+"uni": 2.33,
+"deg": 2.58
+},
+"source": 173,
+"target": 14
+},
+{
+"dist": 180.80,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 8.28,
+"deg": 8.25
+},
+"ecmp_bwd": {
+"uni": 8.27,
+"deg": 8.24
+},
+"source": 172,
+"target": 13
+},
+{
+"dist": 847.10,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"ecmp_bwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"source": 171,
+"target": 9
+},
+{
+"dist": 100.44,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 1.83,
+"deg": 1.39
+},
+"ecmp_bwd": {
+"uni": 1.83,
+"deg": 1.39
+},
+"source": 170,
+"target": 169
+},
+{
+"dist": 656.28,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 5.30,
+"deg": 4.08
+},
+"ecmp_bwd": {
+"uni": 5.30,
+"deg": 4.08
+},
+"source": 170,
+"target": 9
+},
+{
+"dist": 575.83,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 1.81,
+"deg": 1.89
+},
+"ecmp_bwd": {
+"uni": 1.83,
+"deg": 1.90
+},
+"source": 167,
+"target": 166
+},
+{
+"dist": 493.38,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 4.03,
+"deg": 4.00
+},
+"ecmp_bwd": {
+"uni": 3.97,
+"deg": 3.95
+},
+"source": 167,
+"target": 57
+},
+{
+"dist": 520.83,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 1.49,
+"deg": 1.48
+},
+"ecmp_bwd": {
+"uni": 1.48,
+"deg": 1.46
+},
+"source": 166,
+"target": 17
+},
+{
+"dist": 659.41,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 2.26,
+"deg": 2.59
+},
+"ecmp_bwd": {
+"uni": 2.29,
+"deg": 2.62
+},
+"source": 166,
+"target": 57
+},
+{
+"dist": 191.37,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 2.08,
+"deg": 1.53
+},
+"ecmp_bwd": {
+"uni": 1.98,
+"deg": 1.46
+},
+"source": 140,
+"target": 80
+},
+{
+"dist": 94.71,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 2.38,
+"deg": 1.84
+},
+"ecmp_bwd": {
+"uni": 2.47,
+"deg": 1.91
+},
+"source": 140,
+"target": 83
+},
+{
+"dist": 50.10,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 4.96,
+"deg": 4.11
+},
+"ecmp_bwd": {
+"uni": 4.76,
+"deg": 3.94
+},
+"source": 131,
+"target": 122
+},
+{
+"dist": 178.88,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 4.25,
+"deg": 3.44
+},
+"ecmp_bwd": {
+"uni": 4.44,
+"deg": 3.61
+},
+"source": 131,
+"target": 107
+},
+{
+"dist": 458.58,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 19.92,
+"deg": 18.89
+},
+"ecmp_bwd": {
+"uni": 20.10,
+"deg": 19.03
+},
+"source": 130,
+"target": 96
+},
+{
+"dist": 138.59,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 22.11,
+"deg": 18.58
+},
+"ecmp_bwd": {
+"uni": 21.91,
+"deg": 18.41
+},
+"source": 130,
+"target": 102
+},
+{
+"dist": 777.10,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 33.41,
+"deg": 31.58
+},
+"ecmp_bwd": {
+"uni": 33.43,
+"deg": 31.61
+},
+"source": 130,
+"target": 106
+},
+{
+"dist": 91.76,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 7.57,
+"deg": 6.95
+},
+"ecmp_bwd": {
+"uni": 7.66,
+"deg": 7.02
+},
+"source": 129,
+"target": 117
+},
+{
+"dist": 170.35,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 6.22,
+"deg": 5.88
+},
+"ecmp_bwd": {
+"uni": 6.12,
+"deg": 5.81
+},
+"source": 129,
+"target": 71
+},
+{
+"dist": 240.77,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 10.82,
+"deg": 9.10
+},
+"ecmp_bwd": {
+"uni": 10.00,
+"deg": 8.32
+},
+"source": 128,
+"target": 126
+},
+{
+"dist": 427.61,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 26.12,
+"deg": 24.10
+},
+"ecmp_bwd": {
+"uni": 26.18,
+"deg": 24.12
+},
+"source": 128,
+"target": 123
+},
+{
+"dist": 254.45,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 24.47,
+"deg": 23.16
+},
+"ecmp_bwd": {
+"uni": 25.23,
+"deg": 23.91
+},
+"source": 128,
+"target": 68
+},
+{
+"dist": 279.48,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 21.06,
+"deg": 20.07
+},
+"ecmp_bwd": {
+"uni": 21.26,
+"deg": 20.24
+},
+"source": 127,
+"target": 82
+},
+{
+"dist": 481.94,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 24.38,
+"deg": 22.68
+},
+"ecmp_bwd": {
+"uni": 24.19,
+"deg": 22.51
+},
+"source": 127,
+"target": 73
+},
+{
+"dist": 117.59,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 12.18,
+"deg": 10.16
+},
+"ecmp_bwd": {
+"uni": 11.36,
+"deg": 9.39
+},
+"source": 126,
+"target": 76
+},
+{
+"dist": 55.08,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"ecmp_bwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"source": 126,
+"target": 81
+},
+{
+"dist": 91.20,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 14.11,
+"deg": 9.57
+},
+"ecmp_bwd": {
+"uni": 14.11,
+"deg": 9.57
+},
+"source": 125,
+"target": 99
+},
+{
+"dist": 55.59,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 17.51,
+"deg": 12.23
+},
+"ecmp_bwd": {
+"uni": 17.51,
+"deg": 12.23
+},
+"source": 125,
+"target": 87
+},
+{
+"dist": 408.55,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 9.07,
+"deg": 8.27
+},
+"ecmp_bwd": {
+"uni": 9.17,
+"deg": 8.36
+},
+"source": 124,
+"target": 104
+},
+{
+"dist": 357.96,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 18.13,
+"deg": 17.80
+},
+"ecmp_bwd": {
+"uni": 17.93,
+"deg": 17.63
+},
+"source": 124,
+"target": 82
+},
+{
+"dist": 37.44,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 24.01,
+"deg": 22.38
+},
+"ecmp_bwd": {
+"uni": 24.08,
+"deg": 22.40
+},
+"source": 123,
+"target": 88
+},
+{
+"dist": 229.27,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 6.82,
+"deg": 5.66
+},
+"ecmp_bwd": {
+"uni": 6.63,
+"deg": 5.49
+},
+"source": 122,
+"target": 112
+},
+{
+"dist": 698.12,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 26.91,
+"deg": 26.71
+},
+"ecmp_bwd": {
+"uni": 26.98,
+"deg": 26.74
+},
+"source": 121,
+"target": 73
+},
+{
+"dist": 892.93,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 21.75,
+"deg": 21.77
+},
+"ecmp_bwd": {
+"uni": 20.21,
+"deg": 20.35
+},
+"source": 121,
+"target": 67
+},
+{
+"dist": 1236.17,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 39.69,
+"deg": 41.66
+},
+"ecmp_bwd": {
+"uni": 39.62,
+"deg": 41.63
+},
+"source": 121,
+"target": 116
+},
+{
+"dist": 884.35,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 34.20,
+"deg": 34.74
+},
+"ecmp_bwd": {
+"uni": 35.32,
+"deg": 35.69
+},
+"source": 121,
+"target": 75
+},
+{
+"dist": 548.54,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 2.18,
+"deg": 2.19
+},
+"ecmp_bwd": {
+"uni": 2.19,
+"deg": 2.20
+},
+"source": 120,
+"target": 64
+},
+{
+"dist": 446.02,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 4.80,
+"deg": 4.30
+},
+"ecmp_bwd": {
+"uni": 4.81,
+"deg": 4.32
+},
+"source": 120,
+"target": 10
+},
+{
+"dist": 243.97,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 24.91,
+"deg": 19.41
+},
+"ecmp_bwd": {
+"uni": 24.91,
+"deg": 19.41
+},
+"source": 120,
+"target": 77
+},
+{
+"dist": 441.66,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 77.44,
+"deg": 75.13
+},
+"ecmp_bwd": {
+"uni": 77.02,
+"deg": 74.82
+},
+"source": 119,
+"target": 79
+},
+{
+"dist": 1320.74,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 98.55,
+"deg": 98.65
+},
+"source": 119,
+"target": 116
+},
+{
+"dist": 575.72,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 42.15,
+"deg": 40.41
+},
+"ecmp_bwd": {
+"uni": 42.98,
+"deg": 41.13
+},
+"source": 119,
+"target": 68
+},
+{
+"dist": 1225.07,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 22.66,
+"deg": 24.68
+},
+"ecmp_bwd": {
+"uni": 23.70,
+"deg": 25.63
+},
+"source": 119,
+"target": 57
+},
+{
+"dist": 81.05,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 22.31,
+"deg": 19.77
+},
+"ecmp_bwd": {
+"uni": 22.07,
+"deg": 19.61
+},
+"source": 118,
+"target": 117
+},
+{
+"dist": 75.92,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 24.15,
+"deg": 21.32
+},
+"ecmp_bwd": {
+"uni": 24.39,
+"deg": 21.48
+},
+"source": 118,
+"target": 108
+},
+{
+"dist": 91.26,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 15.56,
+"deg": 12.36
+},
+"ecmp_bwd": {
+"uni": 15.41,
+"deg": 12.27
+},
+"source": 117,
+"target": 115
+},
+{
+"dist": 30.06,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 4.74,
+"deg": 3.80
+},
+"ecmp_bwd": {
+"uni": 4.59,
+"deg": 3.71
+},
+"source": 115,
+"target": 97
+},
+{
+"dist": 46.97,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 19.67,
+"deg": 18.90
+},
+"ecmp_bwd": {
+"uni": 19.42,
+"deg": 18.73
+},
+"source": 114,
+"target": 110
+},
+{
+"dist": 24.20,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 16.67,
+"deg": 16.55
+},
+"ecmp_bwd": {
+"uni": 16.91,
+"deg": 16.71
+},
+"source": 114,
+"target": 113
+},
+{
+"dist": 102.06,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 10.84,
+"deg": 10.84
+},
+"ecmp_bwd": {
+"uni": 11.09,
+"deg": 11.00
+},
+"source": 113,
+"target": 71
+},
+{
+"dist": 42.77,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.33,
+"deg": 2.59
+},
+"ecmp_bwd": {
+"uni": 3.33,
+"deg": 2.59
+},
+"source": 113,
+"target": 95
+},
+{
+"dist": 244.16,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 8.98,
+"deg": 8.28
+},
+"ecmp_bwd": {
+"uni": 8.78,
+"deg": 8.11
+},
+"source": 112,
+"target": 109
+},
+{
+"dist": 673.05,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 20.17,
+"deg": 19.84
+},
+"ecmp_bwd": {
+"uni": 18.56,
+"deg": 18.35
+},
+"source": 111,
+"target": 106
+},
+{
+"dist": 336.42,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 19.09,
+"deg": 18.86
+},
+"ecmp_bwd": {
+"uni": 20.69,
+"deg": 20.36
+},
+"source": 111,
+"target": 67
+},
+{
+"dist": 137.07,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 22.42,
+"deg": 21.08
+},
+"ecmp_bwd": {
+"uni": 22.17,
+"deg": 20.92
+},
+"source": 110,
+"target": 80
+},
+{
+"dist": 313.37,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 6.04,
+"deg": 5.91
+},
+"ecmp_bwd": {
+"uni": 5.95,
+"deg": 5.82
+},
+"source": 109,
+"target": 104
+},
+{
+"dist": 60.10,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 26.61,
+"deg": 23.27
+},
+"ecmp_bwd": {
+"uni": 26.85,
+"deg": 23.43
+},
+"source": 108,
+"target": 93
+},
+{
+"dist": 201.37,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 6.25,
+"deg": 4.95
+},
+"ecmp_bwd": {
+"uni": 6.45,
+"deg": 5.12
+},
+"source": 107,
+"target": 66
+},
+{
+"dist": 107.32,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 19.27,
+"deg": 17.63
+},
+"ecmp_bwd": {
+"uni": 17.68,
+"deg": 16.17
+},
+"source": 106,
+"target": 63
+},
+{
+"dist": 40.50,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"ecmp_bwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"source": 105,
+"target": 65
+},
+{
+"dist": 92.89,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"ecmp_bwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"source": 103,
+"target": 94
+},
+{
+"dist": 71.81,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 7.15,
+"deg": 4.15
+},
+"ecmp_bwd": {
+"uni": 7.15,
+"deg": 4.15
+},
+"source": 103,
+"target": 74
+},
+{
+"dist": 134.69,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.38,
+"deg": 2.62
+},
+"ecmp_bwd": {
+"uni": 3.38,
+"deg": 2.62
+},
+"source": 102,
+"target": 100
+},
+{
+"dist": 51.76,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 37.51,
+"deg": 31.93
+},
+"ecmp_bwd": {
+"uni": 37.76,
+"deg": 32.09
+},
+"source": 101,
+"target": 72
+},
+{
+"dist": 103.26,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 35.01,
+"deg": 29.90
+},
+"ecmp_bwd": {
+"uni": 34.76,
+"deg": 29.74
+},
+"source": 101,
+"target": 69
+},
+{
+"dist": 91.00,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 10.65,
+"deg": 6.87
+},
+"ecmp_bwd": {
+"uni": 10.65,
+"deg": 6.87
+},
+"source": 99,
+"target": 74
+},
+{
+"dist": 466.37,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 2.97,
+"deg": 2.65
+},
+"ecmp_bwd": {
+"uni": 3.04,
+"deg": 2.73
+},
+"source": 98,
+"target": 73
+},
+{
+"dist": 201.29,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.53,
+"deg": 3.07
+},
+"ecmp_bwd": {
+"uni": 3.46,
+"deg": 2.99
+},
+"source": 98,
+"target": 67
+},
+{
+"dist": 92.03,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.30,
+"deg": 2.66
+},
+"ecmp_bwd": {
+"uni": 3.15,
+"deg": 2.57
+},
+"source": 97,
+"target": 62
+},
+{
+"dist": 158.24,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 5.17,
+"deg": 4.05
+},
+"ecmp_bwd": {
+"uni": 5.08,
+"deg": 3.98
+},
+"source": 96,
+"target": 83
+},
+{
+"dist": 102.96,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 13.39,
+"deg": 12.77
+},
+"ecmp_bwd": {
+"uni": 13.67,
+"deg": 12.98
+},
+"source": 96,
+"target": 86
+},
+{
+"dist": 54.75,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 32.01,
+"deg": 27.55
+},
+"ecmp_bwd": {
+"uni": 32.25,
+"deg": 27.71
+},
+"source": 93,
+"target": 69
+},
+{
+"dist": 49.28,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"ecmp_bwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"source": 93,
+"target": 92
+},
+{
+"dist": 104.17,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 7.15,
+"deg": 4.15
+},
+"ecmp_bwd": {
+"uni": 7.15,
+"deg": 4.15
+},
+"source": 88,
+"target": 84
+},
+{
+"dist": 155.14,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 18.31,
+"deg": 17.70
+},
+"ecmp_bwd": {
+"uni": 18.38,
+"deg": 17.73
+},
+"source": 88,
+"target": 86
+},
+{
+"dist": 223.67,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 20.86,
+"deg": 14.87
+},
+"ecmp_bwd": {
+"uni": 20.86,
+"deg": 14.87
+},
+"source": 87,
+"target": 78
+},
+{
+"dist": 282.74,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 25.15,
+"deg": 24.42
+},
+"ecmp_bwd": {
+"uni": 25.49,
+"deg": 24.66
+},
+"source": 86,
+"target": 80
+},
+{
+"dist": 63.33,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 12.71,
+"deg": 9.99
+},
+"ecmp_bwd": {
+"uni": 12.51,
+"deg": 9.82
+},
+"source": 85,
+"target": 61
+},
+{
+"dist": 62.90,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"ecmp_bwd": {
+"uni": 3.60,
+"deg": 1.39
+},
+"source": 84,
+"target": 70
+},
+{
+"dist": 446.11,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 47.30,
+"deg": 41.44
+},
+"ecmp_bwd": {
+"uni": 47.88,
+"deg": 42.06
+},
+"source": 79,
+"target": 76
+},
+{
+"dist": 476.72,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 5.53,
+"deg": 4.27
+},
+"ecmp_bwd": {
+"uni": 5.53,
+"deg": 4.27
+},
+"source": 79,
+"target": 65
+},
+{
+"dist": 1164.13,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 5.31,
+"deg": 5.97
+},
+"ecmp_bwd": {
+"uni": 5.29,
+"deg": 5.93
+},
+"source": 79,
+"target": 57
+},
+{
+"dist": 29.25,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 24.16,
+"deg": 17.48
+},
+"ecmp_bwd": {
+"uni": 24.16,
+"deg": 17.48
+},
+"source": 78,
+"target": 77
+},
+{
+"dist": 187.62,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 40.51,
+"deg": 34.28
+},
+"ecmp_bwd": {
+"uni": 40.26,
+"deg": 34.11
+},
+"source": 76,
+"target": 72
+},
+{
+"dist": 53.58,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 5.15,
+"deg": 5.02
+},
+"ecmp_bwd": {
+"uni": 5.30,
+"deg": 5.11
+},
+"source": 71,
+"target": 62
+},
+{
+"dist": 63.34,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 19.27,
+"deg": 17.42
+},
+"ecmp_bwd": {
+"uni": 20.85,
+"deg": 18.88
+},
+"source": 68,
+"target": 63
+},
+{
+"dist": 200.23,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 9.38,
+"deg": 7.38
+},
+"ecmp_bwd": {
+"uni": 9.58,
+"deg": 7.55
+},
+"source": 66,
+"target": 61
+},
+{
+"dist": 535.74,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 28.37,
+"deg": 27.45
+},
+"ecmp_bwd": {
+"uni": 27.41,
+"deg": 26.58
+},
+"source": 64,
+"target": 21
+},
+{
+"dist": 442.10,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 5.06,
+"deg": 4.68
+},
+"ecmp_bwd": {
+"uni": 5.05,
+"deg": 4.67
+},
+"source": 64,
+"target": 10
+},
+{
+"dist": 579.53,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 21.17,
+"deg": 21.14
+},
+"ecmp_bwd": {
+"uni": 22.15,
+"deg": 22.04
+},
+"source": 57,
+"target": 17
+},
+{
+"dist": 143.78,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 19.41,
+"deg": 19.34
+},
+"ecmp_bwd": {
+"uni": 18.43,
+"deg": 18.46
+},
+"source": 21,
+"target": 19
+},
+{
+"dist": 167.18,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 42.54,
+"deg": 41.27
+},
+"ecmp_bwd": {
+"uni": 42.55,
+"deg": 41.29
+},
+"source": 21,
+"target": 18
+},
+{
+"dist": 180.52,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.49,
+"deg": 2.75
+},
+"ecmp_bwd": {
+"uni": 3.48,
+"deg": 2.74
+},
+"source": 20,
+"target": 15
+},
+{
+"dist": 238.48,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 0.88,
+"deg": 0.70
+},
+"ecmp_bwd": {
+"uni": 0.89,
+"deg": 0.71
+},
+"source": 20,
+"target": 11
+},
+{
+"dist": 227.43,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 21.36,
+"deg": 20.86
+},
+"ecmp_bwd": {
+"uni": 20.38,
+"deg": 19.98
+},
+"source": 19,
+"target": 17
+},
+{
+"dist": 536.09,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 39.72,
+"deg": 39.09
+},
+"ecmp_bwd": {
+"uni": 39.72,
+"deg": 39.11
+},
+"source": 18,
+"target": 16
+},
+{
+"dist": 418.30,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 11.47,
+"deg": 10.71
+},
+"ecmp_bwd": {
+"uni": 11.48,
+"deg": 10.72
+},
+"source": 16,
+"target": 13
+},
+{
+"dist": 648.95,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 26.04,
+"deg": 25.65
+},
+"ecmp_bwd": {
+"uni": 26.04,
+"deg": 25.65
+},
+"source": 16,
+"target": 8
+},
+{
+"dist": 240.11,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 6.44,
+"deg": 5.03
+},
+"ecmp_bwd": {
+"uni": 6.43,
+"deg": 5.02
+},
+"source": 15,
+"target": 10
+},
+{
+"dist": 501.79,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 25.49,
+"deg": 24.24
+},
+"ecmp_bwd": {
+"uni": 25.49,
+"deg": 24.25
+},
+"source": 14,
+"target": 8
+},
+{
+"dist": 770.02,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 12.21,
+"deg": 9.44
+},
+"ecmp_bwd": {
+"uni": 12.21,
+"deg": 9.44
+},
+"source": 14,
+"target": 9
+},
+{
+"dist": 418.71,
+"type": "normal",
+"ecmp_fwd": {
+"uni": 3.68,
+"deg": 3.20
+},
+"ecmp_bwd": {
+"uni": 3.67,
+"deg": 3.19
+},
+"source": 12,
+"target": 8
+}
+]
+}
