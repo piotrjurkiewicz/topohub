@@ -11,7 +11,7 @@ setup(
     version=topohub.__version__,
     packages=['topohub'],
     package_dir={'topohub': 'topohub'},
-    package_data={'topohub': ['data/gabriel/*/*.json', 'data/sndlib/*.json', 'data/topozoo/*.json']},
+    package_data={'topohub': ['data/gabriel/*/*.json', 'data/sndlib/*.json', 'data/topozoo/*.json', 'data/backbone/*.json']},
     url=URL,
     license='MIT',
     author='Piotr Jurkiewicz',

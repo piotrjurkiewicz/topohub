@@ -18,6 +18,7 @@ def get(key):
 
         # Obtain topology dicts from JSON files stored in the repository
         topo = topohub.get('gabriel/25/0')
+        topo = topohub.get('backbone/africa')
         topo = topohub.get('topozoo/Abilene')
         topo = topohub.get('sndlib/polska')
 

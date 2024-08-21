@@ -31,6 +31,7 @@ import topohub
 
 # Obtain topology dicts from JSON files stored in the repository
 topo = topohub.get('gabriel/25/0')
+topo = topohub.get('backbone/africa')
 topo = topohub.get('topozoo/Abilene')
 topo = topohub.get('sndlib/polska')
 
@@ -55,6 +56,7 @@ import topohub.mininet
 
 # Obtain Mininet Topo classes for topologies stored in the repository
 topo_cls = topohub.mininet.TOPO_CLS['gabriel/25/0']
+topo_cls = topohub.mininet.TOPO_CLS['backbone/africa']
 topo_cls = topohub.mininet.TOPO_CLS['topozoo/Abilene']
 topo_cls = topohub.mininet.TOPO_CLS['sndlib/polska']
 

@@ -115,6 +115,7 @@ Example:
     
     # Obtain Mininet Topo classes for topologies stored in the repository
     topo_cls = topohub.mininet.TOPO_CLS['gabriel/25/0']
+    topo_cls = topohub.mininet.TOPO_CLS['backbone/africa']
     topo_cls = topohub.mininet.TOPO_CLS['topozoo/Abilene']
     topo_cls = topohub.mininet.TOPO_CLS['sndlib/polska']
 

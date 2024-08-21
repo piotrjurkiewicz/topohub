@@ -12,6 +12,7 @@ The helper function can be used to obtain topologies dicts from JSON files store
 
     # Obtain topology dicts from JSON files stored in the repository
     topo = topohub.get('gabriel/25/0')
+    topo = topohub.get('backbone/africa')
     topo = topohub.get('topozoo/Abilene')
     topo = topohub.get('sndlib/polska')
 
