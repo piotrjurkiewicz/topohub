@@ -952,7 +952,8 @@
             showNodeNames = document.getElementById("showNodeNames");
             showNodeNamesBelow = document.getElementById("showNodeNamesBelow");
             showNodeCircles = document.getElementById("showNodeCircles");
-            showNodeNames.checked = true;
+            if (trafficModelDropdown.value === 'none')
+                showNodeNames.checked = true;
             showNodeNamesBelow.checked = false;
             showNodeCircles.checked = true;
             showNodeNames.addEventListener("change", displayNodes);
