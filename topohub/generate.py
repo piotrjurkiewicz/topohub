@@ -147,7 +147,7 @@ class TopoZooGenerator(TopoGenerator):
     """
     Generator of topologies from the Internet Topology Zoo.
 
-    Source of data: http://www.topology-zoo.org/
+    Source of data: https://topology-zoo.org/
 
     S. Knight, H. X. Nguyen, N. Falkner, R. Bowden and M. Roughan,
     The Internet Topology Zoo. IEEE Journal on Selected Areas in Communications, vol. 29, no. 9, pp. 1765-1775.
@@ -157,7 +157,7 @@ class TopoZooGenerator(TopoGenerator):
     @classmethod
     def download_topo(cls, name):
 
-        con = http.HTTPConnection("www.topology-zoo.org", timeout=5)
+        con = http.HTTPSConnection("topology-zoo.org", timeout=5)
         con.request('GET', f"/files/{name}.gml")
         r = con.getresponse()
         data = r.read()
