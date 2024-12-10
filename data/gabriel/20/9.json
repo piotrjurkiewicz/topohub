@@ -1,0 +1,585 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "20",
+"demands": {},
+"stats": {
+"nodes": 20,
+"links": 30,
+"demands": 380,
+"min_degree": 2,
+"avg_degree": 3.00,
+"std_degree": 0.84,
+"max_degree": 5,
+"gini": 0.15,
+"min_link_len": 27.15,
+"avg_link_len": 94.70,
+"max_link_len": 226.92,
+"diameter_len": 558.04,
+"diameter_hops": 6,
+"avg_sdp_num": 1.16,
+"max_sdp_num": 2,
+"avg_sdp_hops": 3.03,
+"avg_sdp_len": 156.63,
+"avg_adp_num": 2.50,
+"max_adp_num": 4,
+"avg_adp_hops": 4.63,
+"avg_adp_len": 452.35
+}
+},
+"nodes": [
+{
+"name": "R0",
+"pos": [
+80.72,
+192.40
+],
+"id": 0
+},
+{
+"name": "R1",
+"pos": [
+41.45,
+85.55
+],
+"id": 1
+},
+{
+"name": "R2",
+"pos": [
+235.39,
+134.06
+],
+"id": 2
+},
+{
+"name": "R3",
+"pos": [
+228.81,
+426.16
+],
+"id": 3
+},
+{
+"name": "R4",
+"pos": [
+39.20,
+123.70
+],
+"id": 4
+},
+{
+"name": "R5",
+"pos": [
+304.68,
+116.07
+],
+"id": 5
+},
+{
+"name": "R6",
+"pos": [
+165.01,
+28.40
+],
+"id": 6
+},
+{
+"name": "R7",
+"pos": [
+327.76,
+12.74
+],
+"id": 7
+},
+{
+"name": "R8",
+"pos": [
+359.65,
+69.44
+],
+"id": 8
+},
+{
+"name": "R9",
+"pos": [
+425.02,
+121.08
+],
+"id": 9
+},
+{
+"name": "R10",
+"pos": [
+288.14,
+283.99
+],
+"id": 10
+},
+{
+"name": "R11",
+"pos": [
+414.09,
+333.70
+],
+"id": 11
+},
+{
+"name": "R12",
+"pos": [
+395.57,
+24.81
+],
+"id": 12
+},
+{
+"name": "R13",
+"pos": [
+357.66,
+19.66
+],
+"id": 13
+},
+{
+"name": "R14",
+"pos": [
+341.18,
+375.50
+],
+"id": 14
+},
+{
+"name": "R15",
+"pos": [
+25.40,
+325.58
+],
+"id": 15
+},
+{
+"name": "R16",
+"pos": [
+64.35,
+214.05
+],
+"id": 16
+},
+{
+"name": "R17",
+"pos": [
+350.39,
+96.56
+],
+"id": 17
+},
+{
+"name": "R18",
+"pos": [
+239.84,
+237.40
+],
+"id": 18
+},
+{
+"name": "R19",
+"pos": [
+104.48,
+122.22
+],
+"id": 19
+}
+],
+"links": [
+{
+"dist": 80.27,
+"ecmp_fwd": {
+"uni": 32.09,
+"deg": 25.61
+},
+"ecmp_bwd": {
+"uni": 35.82,
+"deg": 27.74
+},
+"source": 0,
+"target": 4
+},
+{
+"dist": 27.15,
+"ecmp_fwd": {
+"uni": 67.54,
+"deg": 46.60
+},
+"ecmp_bwd": {
+"uni": 67.16,
+"deg": 46.97
+},
+"source": 0,
+"target": 16
+},
+{
+"dist": 165.37,
+"ecmp_fwd": {
+"uni": 63.81,
+"deg": 62.25
+},
+"ecmp_bwd": {
+"uni": 58.71,
+"deg": 58.97
+},
+"source": 0,
+"target": 18
+},
+{
+"dist": 74.09,
+"ecmp_fwd": {
+"uni": 68.66,
+"deg": 67.93
+},
+"ecmp_bwd": {
+"uni": 70.40,
+"deg": 68.72
+},
+"source": 0,
+"target": 19
+},
+{
+"dist": 38.22,
+"ecmp_fwd": {
+"uni": 14.93,
+"deg": 8.83
+},
+"ecmp_bwd": {
+"uni": 11.19,
+"deg": 6.70
+},
+"source": 1,
+"target": 4
+},
+{
+"dist": 72.92,
+"ecmp_fwd": {
+"uni": 41.79,
+"deg": 27.74
+},
+"ecmp_bwd": {
+"uni": 45.52,
+"deg": 29.87
+},
+"source": 1,
+"target": 19
+},
+{
+"dist": 71.59,
+"ecmp_fwd": {
+"uni": 99.25,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 99.19
+},
+"source": 2,
+"target": 5
+},
+{
+"dist": 126.95,
+"ecmp_fwd": {
+"uni": 50.00,
+"deg": 43.42
+},
+"ecmp_bwd": {
+"uni": 49.25,
+"deg": 42.87
+},
+"source": 2,
+"target": 6
+},
+{
+"dist": 103.44,
+"ecmp_fwd": {
+"uni": 86.44,
+"deg": 83.16
+},
+"ecmp_bwd": {
+"uni": 91.04,
+"deg": 85.97
+},
+"source": 2,
+"target": 18
+},
+{
+"dist": 131.44,
+"ecmp_fwd": {
+"uni": 69.15,
+"deg": 75.52
+},
+"ecmp_bwd": {
+"uni": 64.55,
+"deg": 74.07
+},
+"source": 2,
+"target": 19
+},
+{
+"dist": 154.05,
+"ecmp_fwd": {
+"uni": 32.84,
+"deg": 28.37
+},
+"ecmp_bwd": {
+"uni": 32.46,
+"deg": 28.84
+},
+"source": 3,
+"target": 10
+},
+{
+"dist": 123.26,
+"ecmp_fwd": {
+"uni": 52.24,
+"deg": 41.61
+},
+"ecmp_bwd": {
+"uni": 52.24,
+"deg": 41.50
+},
+"source": 3,
+"target": 14
+},
+{
+"dist": 226.92,
+"ecmp_fwd": {
+"uni": 50.75,
+"deg": 35.83
+},
+"ecmp_bwd": {
+"uni": 51.12,
+"deg": 35.46
+},
+"source": 3,
+"target": 15
+},
+{
+"dist": 65.30,
+"ecmp_fwd": {
+"uni": 29.85,
+"deg": 31.21
+},
+"ecmp_bwd": {
+"uni": 29.85,
+"deg": 31.21
+},
+"source": 4,
+"target": 19
+},
+{
+"dist": 49.69,
+"ecmp_fwd": {
+"uni": 81.34,
+"deg": 89.28
+},
+"ecmp_bwd": {
+"uni": 82.09,
+"deg": 88.47
+},
+"source": 5,
+"target": 17
+},
+{
+"dist": 163.50,
+"ecmp_fwd": {
+"uni": 94.40,
+"deg": 84.71
+},
+"ecmp_bwd": {
+"uni": 94.53,
+"deg": 85.63
+},
+"source": 6,
+"target": 7
+},
+{
+"dist": 111.65,
+"ecmp_fwd": {
+"uni": 72.14,
+"deg": 67.98
+},
+"ecmp_bwd": {
+"uni": 71.27,
+"deg": 66.51
+},
+"source": 6,
+"target": 19
+},
+{
+"dist": 30.69,
+"ecmp_fwd": {
+"uni": 76.49,
+"deg": 74.00
+},
+"ecmp_bwd": {
+"uni": 76.62,
+"deg": 74.91
+},
+"source": 7,
+"target": 13
+},
+{
+"dist": 83.31,
+"ecmp_fwd": {
+"uni": 32.09,
+"deg": 33.31
+},
+"ecmp_bwd": {
+"uni": 32.09,
+"deg": 33.49
+},
+"source": 8,
+"target": 9
+},
+{
+"dist": 57.29,
+"ecmp_fwd": {
+"uni": 7.09,
+"deg": 7.45
+},
+"ecmp_bwd": {
+"uni": 7.96,
+"deg": 8.35
+},
+"source": 8,
+"target": 12
+},
+{
+"dist": 49.83,
+"ecmp_fwd": {
+"uni": 37.56,
+"deg": 37.17
+},
+"ecmp_bwd": {
+"uni": 36.69,
+"deg": 35.62
+},
+"source": 8,
+"target": 13
+},
+{
+"dist": 28.66,
+"ecmp_fwd": {
+"uni": 32.84,
+"deg": 35.99
+},
+"ecmp_bwd": {
+"uni": 32.84,
+"deg": 36.45
+},
+"source": 8,
+"target": 17
+},
+{
+"dist": 212.90,
+"ecmp_fwd": {
+"uni": 93.91,
+"deg": 83.90
+},
+"ecmp_bwd": {
+"uni": 94.78,
+"deg": 84.00
+},
+"source": 9,
+"target": 11
+},
+{
+"dist": 100.67,
+"ecmp_fwd": {
+"uni": 37.69,
+"deg": 32.90
+},
+"ecmp_bwd": {
+"uni": 37.56,
+"deg": 32.62
+},
+"source": 9,
+"target": 12
+},
+{
+"dist": 78.55,
+"ecmp_fwd": {
+"uni": 49.25,
+"deg": 50.59
+},
+"ecmp_bwd": {
+"uni": 48.51,
+"deg": 50.95
+},
+"source": 9,
+"target": 17
+},
+{
+"dist": 105.78,
+"ecmp_fwd": {
+"uni": 61.57,
+"deg": 58.63
+},
+"ecmp_bwd": {
+"uni": 60.70,
+"deg": 58.63
+},
+"source": 10,
+"target": 14
+},
+{
+"dist": 67.10,
+"ecmp_fwd": {
+"uni": 99.00,
+"deg": 93.14
+},
+"ecmp_bwd": {
+"uni": 99.50,
+"deg": 93.62
+},
+"source": 10,
+"target": 18
+},
+{
+"dist": 84.03,
+"ecmp_fwd": {
+"uni": 98.01,
+"deg": 85.95
+},
+"ecmp_bwd": {
+"uni": 98.88,
+"deg": 86.05
+},
+"source": 11,
+"target": 14
+},
+{
+"dist": 38.26,
+"ecmp_fwd": {
+"uni": 37.06,
+"deg": 34.75
+},
+"ecmp_bwd": {
+"uni": 37.81,
+"deg": 35.38
+},
+"source": 12,
+"target": 13
+},
+{
+"dist": 118.13,
+"ecmp_fwd": {
+"uni": 48.76,
+"deg": 33.94
+},
+"ecmp_bwd": {
+"uni": 49.13,
+"deg": 33.57
+},
+"source": 15,
+"target": 16
+}
+]
+}
