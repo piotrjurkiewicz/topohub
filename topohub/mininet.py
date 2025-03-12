@@ -1,11 +1,8 @@
-import importlib.resources
-import json
-
 import mininet
 import mininet.node
 import mininet.topo
 
-import topohub.data
+import topohub
 
 class Demands(dict):
     """Demands dictionary"""
@@ -93,13 +90,17 @@ def make_topo_class_from_json(name, topo):
 
 class TopoClsDict(dict):
     def __missing__(self, key):
-        try:
-            topo = json.load((importlib.resources.files(topohub) / f'data/{key}.json').open())
-            cls = make_topo_class_from_json(key, topo)
-            self[key] = cls
-            return cls
-        except IOError:
-            raise KeyError
+        topo = topohub.get(key)
+        cls = make_topo_class_from_json(key, topo)
+        self[key] = cls
+        return cls
+
+class TopoNamedClsDict(dict):
+    def __missing__(self, key):
+        topo = topohub.get(key, use_names=True)
+        cls = make_topo_class_from_json(key, topo)
+        self[key] = cls
+        return cls
 
 
 TOPO_CLS = TopoClsDict()
@@ -118,6 +119,33 @@ Example:
     topo_cls = topohub.mininet.TOPO_CLS['backbone/africa']
     topo_cls = topohub.mininet.TOPO_CLS['topozoo/Abilene']
     topo_cls = topohub.mininet.TOPO_CLS['sndlib/polska']
+
+    # Initialize Mininet Topo object
+    topo = topo_cls()
+    # Create Mininet Network using the selected topology
+    net = mininet.net.Mininet(topo=topo)
+    # Start the network and Mininet shell
+    net.interact()
+"""
+
+TOPO_NAMED_CLS = TopoNamedClsDict()
+"""
+Use this dictionary to obtain topologies from the repository as Mininet Topo classes,
+using node names instead integer IDs as node identifiers.
+
+(this will not work for 'backbone' category topologies which have unnamed or duplicated name nodes)
+
+Example:
+
+.. code-block:: python
+
+    import mininet.net
+    import topohub.mininet
+
+    # Obtain Mininet Topo classes for topologies stored in the repository
+    topo_cls = topohub.mininet.TOPO_NAMED_CLS['gabriel/25/0']
+    topo_cls = topohub.mininet.TOPO_NAMED_CLS['topozoo/Abilene']
+    topo_cls = topohub.mininet.TOPO_NAMED_CLS['sndlib/polska']
 
     # Initialize Mininet Topo object
     topo = topo_cls()

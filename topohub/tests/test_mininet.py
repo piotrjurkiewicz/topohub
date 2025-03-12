@@ -1,10 +1,9 @@
-from topohub.mininet import TOPO_CLS
+from topohub.mininet import TOPO_CLS, TOPO_NAMED_CLS
 
 def test_mininet():
-    for name in ['gabriel/25/0', 'sndlib/germany50']:
-        topo_cls = TOPO_CLS[name]
+    for topo_cls in [TOPO_CLS['gabriel/25/0'], TOPO_CLS['sndlib/germany50'], TOPO_NAMED_CLS['sndlib/polska']]:
         topo = topo_cls()
-        print(topo)
+        print(topo, topo.nodes(), topo.links())
 
 
 if __name__ == '__main__':

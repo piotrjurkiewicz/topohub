@@ -42,6 +42,10 @@ The code block below provides a minimal example of Python code initializing Mini
     # Obtain Mininet Topo class for a selected topology from the repository
     topo_cls = topohub.mininet.TOPO_CLS['gabriel/25/0']
 
+    # Alternatively you can also load a topology using node names instead integer IDs as node identifiers
+    # (this will not work for 'backbone' category topologies which have unnamed or duplicated name nodes)
+    topo_cls = topohub.mininet.TOPO_NAMED_CLS['sndlib/polska']
+
     # Initialize Mininet Topo object
     topo = topo_cls()
     # Create Mininet Network using the selected topology
