@@ -67,6 +67,8 @@ def get(key, use_names=False):
                 l['source'] = id_to_name[l['source']]
                 l['target'] = id_to_name[l['target']]
             topo['graph']['demands'] = {id_to_name[int(n)]: {id_to_name[int(k)]: v for k, v in dems.items()} for n, dems in topo['graph']['demands'].items()}
+        else:
+            topo['graph']['demands'] = {int(n): {int(k): v for k, v in dems.items()} for n, dems in topo['graph']['demands'].items()}
         return topo
     except IOError:
         raise KeyError
