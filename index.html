@@ -771,6 +771,7 @@
                     trafficModelDropdown.value = 'none';
                     mode = 'none';
                     showNodeNames.checked = true;
+                    deleteURLParameter('demands');
                     break;
                 }
             }
@@ -878,6 +879,16 @@
             let zoomTimeout;
             let viewBox = svg.viewBox.baseVal;
             let originalViewBox = { x: viewBox.x, y: viewBox.y, width: viewBox.width, height: viewBox.height };
+
+            const urlViewBox = getQueryParam('viewbox');
+            if (urlViewBox) {
+                const [url_x, url_y, url_width, url_height] = urlViewBox.split(',');
+                viewBox.x = url_x;
+                viewBox.y = url_y;
+                viewBox.width = url_width;
+                viewBox.height = url_height;
+                requestAnimationFrame(adjustCSSStyles);
+            }
 
             // Pan functionality
             svg.addEventListener('mousedown', startPan);
@@ -1002,6 +1013,7 @@
                 if (elapsed > 50) {
                     viewBox.x += accumulatedDx;
                     viewBox.y += accumulatedDy;
+                    updateURLParameter('viewbox', `${viewBox.x},${viewBox.y},${viewBox.width},${viewBox.height}`);
 
                     accumulatedDx = 0;
                     accumulatedDy = 0;
@@ -1039,6 +1051,7 @@
                     viewBox.y = viewY - mouseY * newHeight;
                     viewBox.width = newWidth;
                     viewBox.height = newHeight;
+                    updateURLParameter('viewbox', `${viewBox.x},${viewBox.y},${viewBox.width},${viewBox.height}`);
 
                     // Update viewBox
                     requestAnimationFrame(adjustCSSStyles);
@@ -1050,6 +1063,7 @@
                 viewBox.y = originalViewBox.y;
                 viewBox.width = originalViewBox.width;
                 viewBox.height = originalViewBox.height;
+                deleteURLParameter('viewbox');
 
                 // Reset CSS styles
                 requestAnimationFrame(resetCSSStyles);
@@ -1087,12 +1101,17 @@
         }
 
         trafficModelDropdown.addEventListener("change", () => {
-            if (trafficModelDropdown.value !== 'none')
+            if (trafficModelDropdown.value !== 'none') {
                 showNodeNames.checked = false;
+                updateURLParameter('demands', `${trafficModelDropdown.value}`);
+            }
             visualizeTraffic();
-            if (trafficModelDropdown.value === 'none')
+            if (trafficModelDropdown.value === 'none') {
                 showNodeNames.checked = true;
+                deleteURLParameter('demands');
+            }
             displayNodes();
+
         });
         dynamicWidthCheckbox.addEventListener("change", visualizeTraffic);
         dynamicColorCheckbox.addEventListener("change", visualizeTraffic);
@@ -1127,6 +1146,7 @@
                     if (selectedTopology) {
                         path = `${selectedCategory}/${selectedTopology}`
                     }
+                    deleteURLParameter('viewbox');
                     fetchAndDisplayTopology(path, topology);
                 });
             });
@@ -1217,6 +1237,30 @@
             return new_topology_nodes;
         }
 
+        // Function to get query parameter by name from the URL
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Function to update the URL without reloading the page
+        function updateURLParameter(param, value, push=false) {
+            const url = new URL(window.location);
+            url.searchParams.set(param, value);
+            url.search = decodeURIComponent(url.search)
+            if (push)
+                window.history.pushState({path: url.href}, '', url.href);
+            else
+                window.history.replaceState({path: url.href}, '', url.href);
+        }
+
+        function deleteURLParameter(param) {
+            const url = new URL(window.location);
+            url.searchParams.delete(param);
+            url.search = decodeURIComponent(url.search)
+            window.history.replaceState({path: url.href}, '', url.href);
+        }
+
         // Function to fetch and display the selected topology
         const fetchAndDisplayTopology = async (selectedCategory, selectedTopology) => {
             try {
@@ -1257,6 +1301,7 @@
                 return;
             }
             // Parse SVG and perform other operations
+            updateURLParameter('topology', `${selectedCategory}/${selectedTopology}`, true);
             parseSVG();
             interactiveSVG();
             populateTopologyProperties(`${selectedCategory}/${selectedTopology}`, topologyJSON['graph']['stats']);
@@ -1271,11 +1316,27 @@
             topoDownloadSVG.href = `data/${selectedCategory}/${selectedTopology}.svg`;
             topoDownloadSVGView.href = "#";
         };
-        firstLevelDropdown.value = 'gabriel';
-        firstLevelDropdown.dispatchEvent(new Event('change'));
-        secondLevelDropdown.value = '25';
-        secondLevelDropdown.dispatchEvent(new Event('change'));
-        fetchAndDisplayTopology('gabriel/25', '0')
+        const defaultTopology = 'gabriel/25/0';
+        const topologyParam = getQueryParam('topology') || defaultTopology;
+        const topologyArray = topologyParam.split('/');
+        let category, topology;
+        if (topologyArray.length === 2) {
+            category = topologyArray[0];
+            topology = topologyArray[1];
+            firstLevelDropdown.value = topologyArray[0];
+            firstLevelDropdown.dispatchEvent(new Event('change'));
+            secondLevelDropdown.value = "";
+            secondLevelDropdown.disabled = true;
+        } else if (topologyArray.length === 3) {
+            category = `${topologyArray[0]}/${topologyArray[1]}`;
+            topology = topologyArray[2];
+            firstLevelDropdown.value = topologyArray[0];
+            firstLevelDropdown.dispatchEvent(new Event('change'));
+            secondLevelDropdown.value = topologyArray[1];
+            secondLevelDropdown.dispatchEvent(new Event('change'));
+        }
+        trafficModelDropdown.value = getQueryParam('demands') || 'none';
+        fetchAndDisplayTopology(category, topology);
     });
 </script>
 </body>
