@@ -1,7 +1,7 @@
 Welcome to topohub's documentation!
 ***********************************
 
-This project aims to create a repository of reference network topologies based on Gabriel graphs. It offers 200 Gabriel graph topologies with linearly increasing sizes ranging from 25 to 500 vertices. These topologies were generated in a reproducible manner to model the properties of long-haul optical transport networks. The topologies are available in the code repository and can be previewed and downloaded through a web interface, which allows visualization of individual topologies and exploration of their network properties. An important additional feature is the visualization of pre-computed link loads in the network using the Equal-Cost Multipath (ECMP) shortest path routing algorithm under different traffic demand models.
+This project aims to create a repository of reference network topologies based on Gabriel graphs. It offers 3600 Gabriel graph topologies with linearly increasing sizes ranging from 5 to 500 vertices. These topologies were generated in a reproducible manner to model the properties of long-haul optical transport networks. The topologies are available in the code repository and can be previewed and downloaded through a web interface, which allows visualization of individual topologies and exploration of their network properties. An important additional feature is the visualization of pre-computed link loads in the network using the Equal-Cost Multipath (ECMP) shortest path routing algorithm under different traffic demand models.
 
 The web interface is available at: https://www.topohub.org
 

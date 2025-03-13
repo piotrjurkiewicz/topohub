@@ -1,7 +1,7 @@
 Topology repository
 *******************
 
-The topology repository contains 200 Gabriel graph topologies, with linearly increasing node counts ranging from 25 to 500 nodes, in steps of 25 nodes. For each network size (the number of nodes), ten different topologies were generated, each with a different, but controlled seed. This ensures their reproducibility.
+The topology repository contains 3600 Gabriel graph topologies, with linearly increasing node counts ranging from 5 to 500 nodes, in steps of 5 nodes. For each network size (the number of nodes), ten different topologies were generated, each with a different, but controlled seed. This ensures their reproducibility.
 
 Two constraints were applied to the generated Gabriel graphs. The positions of nodes (and thus distances between them) were scaled in such a way as to ensure that the average link length will be equal to 100 km. Additionally, we imposed a limitation on the minimal distance between nodes, which was set to 25 km. The number of graph edges was not considered as an input parameter because, in Gabriel graphs, it depends on the location of vertices and cannot be directly controlled.
 

@@ -44,7 +44,7 @@ The code block below provides a minimal example of Python code initializing Mini
 
     # Alternatively you can also load a topology using node names instead integer IDs as node identifiers
     # (this will not work for 'backbone' category topologies which have unnamed or duplicated name nodes)
-    topo_cls = topohub.mininet.TOPO_NAMED_CLS['sndlib/polska']
+    topo_cls = topohub.mininet.TOPO_NAMED_CLS['gabriel/25/0']
 
     # Initialize Mininet Topo object
     topo = topo_cls()
@@ -53,7 +53,7 @@ The code block below provides a minimal example of Python code initializing Mini
     # Start the network and Mininet shell
     net.interact()
 
-Then in order to build and initialize the network the script should be executed:
+Then in order to build and initialize the network the above script should be executed with `sudo`:
 
 .. code-block:: shell-session
 
