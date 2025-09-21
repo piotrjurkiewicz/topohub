@@ -4,6 +4,13 @@ topohub package
 .. automodule:: topohub
    :members:
 
+topohub.geo module
+-----------------------
+
+.. automodule:: topohub.geo
+   :members:
+   :show-inheritance:
+
 topohub.generate module
 -----------------------
 

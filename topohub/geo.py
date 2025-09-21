@@ -349,7 +349,7 @@ def filter_countries(world, include_countries=None, include_continents=None, exc
 
 def generate_map(include_continents=None, include_countries=None, exclude_countries=None):
     import geopandas as gpd
-    world = gpd.read_file(open('ne_50m_admin_0_countries_lakes.zip', 'rb'))
+    world = gpd.read_file(open('external/geopandas/ne_50m_admin_0_countries_lakes.zip', 'rb'))
     if include_continents or include_countries or exclude_countries:
         filtered_world = filter_countries(world, include_countries, include_continents, exclude_countries)
     else:
