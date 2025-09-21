@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-import http.client as http
 import json
 import os
-import random
 import sys
 import time
 
@@ -11,12 +9,9 @@ import networkx as nx
 import topohub.graph
 
 json.encoder.c_make_encoder = None
-MAX_GABRIEL_NODES = 4096
-
 
 class RoundingFloat(float):
     __repr__ = staticmethod(lambda x: format(x, '.2f'))
-
 
 class TopoGenerator:
 
@@ -49,440 +44,27 @@ class TopoGenerator:
         json.encoder.float = float
         topohub.graph.write_gml(g, f'{filename}.gml')
 
-class SNDlibGenerator(TopoGenerator):
-    """
-    Generator of topologies from the SNDlib.
-
-    Source of data: https://sndlib.put.poznan.pl
-
-    Orlowski, S., Wessäly, R., Pióro, M. and Tomaszewski, A. (2010),
-    SNDlib 1.0—Survivable Network Design Library. Networks, 55: 276-286.
-    https://doi.org/10.1002/net.20371
-    """
-
-    @classmethod
-    def download_topo(cls, name):
-
-        con = http.HTTPSConnection("sndlib.put.poznan.pl", timeout=5)
-        con.request('GET', "/download/sndlib-networks-native/%s.txt" % name)
-        r = con.getresponse()
-        data = r.read()
-        return data
-
-    @classmethod
-    def generate_topo(cls, name):
-        """
-        Download topology specified by name from SNDlib and generate its JSON.
-
-        Parameters
-        ----------
-        name : str
-            topology name
-
-        Returns
-        -------
-        dict
-            topology graph in NetworkX node-link format
-        """
-
-        mode = None
-        nodes = []
-        links = []
-        name_to_id = {}
-        pos = {}
-        demands = {}
-        next_id = 0
-
-        for line in cls.download_topo(name).splitlines():
-
-            line = line.decode()
-
-            if not mode:
-                if line.startswith("NODES ("):
-                    mode = 'nodes'
-                elif line.startswith("LINKS ("):
-                    mode = 'links'
-                elif line.startswith("DEMANDS ("):
-                    mode = 'demands'
-                continue
-
-            if mode == 'nodes':
-                if line.startswith(")"):
-                    mode = None
-                    continue
-                node = line.split()[0]
-                lon, lat = line.split()[2:4]
-                node_id = next_id
-                next_id += 1
-                name_to_id[node] = node_id
-                pos[node] = (float(lon), float(lat))
-                nodes.append({'id': node_id, 'name': node, 'pos': (float(lon), float(lat))})
-
-            if mode == 'links':
-                if line.startswith(")"):
-                    mode = None
-                    continue
-                node0, node1 = line.split()[2:4]
-                dist = topohub.graph.haversine(pos[node0], pos[node1])
-                links.append({'source': name_to_id[node0], 'target': name_to_id[node1], 'dist': dist})
-
-            if mode == 'demands':
-                if line.startswith(")"):
-                    mode = None
-                    continue
-                node0, node1 = line.split()[2:4]
-                node0_id, node1_id = name_to_id[node0], name_to_id[node1]
-                value = float(line.split()[6])
-                if node0_id not in demands:
-                    demands[node0_id] = {}
-                demands[node0_id][node1_id] = value
-
-        name = ''.join([c if c.isalnum() else '_' for c in name.title()])
-        name = name.lower()
-
-        return {'directed': False, 'multigraph': False, 'graph': {'name': name, 'demands': demands}, 'nodes': nodes, 'links': links}
-
-
-class TopoZooGenerator(TopoGenerator):
-    """
-    Generator of topologies from the Internet Topology Zoo.
-
-    Source of data: https://topology-zoo.org/
-
-    S. Knight, H. X. Nguyen, N. Falkner, R. Bowden and M. Roughan,
-    The Internet Topology Zoo. IEEE Journal on Selected Areas in Communications, vol. 29, no. 9, pp. 1765-1775.
-    https://doi.org/10.1109/JSAC.2011.111002
-    """
-
-    @classmethod
-    def download_topo(cls, name):
-
-        con = http.HTTPSConnection("topology-zoo.org", timeout=5)
-        con.request('GET', f"/files/{name}.gml")
-        r = con.getresponse()
-        data = r.read()
-        return data
-
-    @classmethod
-    def generate_topo(cls, name):
-        """
-        Download topology specified by name from Topology Zoo and generate its JSON.
-
-        Parameters
-        ----------
-        name : str
-            topology name
-
-        Returns
-        -------
-        dict
-            topology graph in NetworkX node-link format
-        """
-
-        mode = None
-        node_id, node, lon, lat, node0_id, node1_id = None, None, None, None, None, None
-        nodes = []
-        links = []
-        pos = {}
-        node_id_to_name = {}
-        demands = {}
-
-        for line in cls.download_topo(name).splitlines():
-
-            line = line.decode()
-
-            if not mode:
-                if line.startswith("  node ["):
-                    mode = 'node'
-                    node_id, node, lon, lat = None, None, None, None
-                elif line.startswith("  edge ["):
-                    mode = 'edge'
-                    node0_id, node1_id = None, None
-                continue
-
-            if mode == 'node':
-                if line.startswith("  ]"):
-                    if lon is not None and lat is not None:
-                        node_id_to_name[node_id] = node
-                        pos[node_id] = (float(lon), float(lat))
-                        nodes.append({'id': node_id, 'name': node, 'pos': (float(lon), float(lat))})
-                    mode = None
-                elif line.startswith("    id "):
-                    node_id = line.split()[-1]
-                elif line.startswith("    label "):
-                    node = line.split(maxsplit=1)[-1].strip('"')
-                elif line.startswith("    Longitude "):
-                    lon = line.split()[-1]
-                elif line.startswith("    Latitude "):
-                    lat = line.split()[-1]
-
-            if mode == 'edge':
-                if line.startswith("  ]"):
-                    try:
-                        dist = topohub.graph.haversine(pos[node0_id], pos[node1_id])
-                        links.append({'source': node0_id, 'target': node1_id, 'dist': dist})
-                    except KeyError:
-                        pass
-                    mode = None
-                elif line.startswith("    source "):
-                    node0_id = line.split()[-1]
-                elif line.startswith("    target "):
-                    node1_id = line.split()[-1]
-
-        name = ''.join([c if c.isalnum() else '_' for c in name.title()])
-        name = name.lower()
-
-        if not nodes or not links:
-            raise ValueError("Empty graph")
-
-        return {'directed': False, 'multigraph': False, 'graph': {'name': name, 'demands': demands}, 'nodes': nodes, 'links': links}
-
-
-class GabrielGenerator(TopoGenerator):
-    """
-    Generator of Gabriel graph synthetic topologies.
-
-    E. K. Çetinkaya, M. J. F. Alenazi, Y. Cheng, A. M. Peck and J. P. G. Sterbenz,
-    On the fitness of geographic graph generators for modelling physical level topologies.
-    2013 5th International Congress on Ultra Modern Telecommunications and Control Systems and Workshops (ICUMT), Almaty, Kazakhstan, 2013, pp. 38-45.
-    https://doi.org/10.1109/ICUMT.2013.6798402.
-
-    K. Ruben Gabriel , Robert R. Sokal,
-    A New Statistical Approach to Geographic Variation Analysis. Systematic Biology, Volume 18, Issue 3, September 1969, Pages 259–278.
-    https://doi.org/10.2307/2412323
-    """
-
-    @classmethod
-    def generate_topo(cls, nnodes, seed):
-        """
-        Generate Gabriel graph topology with given number of nodes.
-
-        Parameters
-        ----------
-        nnodes : int
-            number of nodes
-        seed : int
-            random seed
-
-        Returns
-        -------
-        dict
-            topology graph in NetworkX node-link format
-        """
-
-        assert nnodes <= MAX_GABRIEL_NODES
-
-        nodes = []
-        links = []
-        pos = {}
-        demands = {}
-
-        random.seed(seed)
-
-        scale = (nnodes * 10000) ** 0.5
-        exclusion = 25.0  # prevent points from being too close
-        print(nnodes, seed, scale, exclusion)
-
-        def dist2(p, q):
-            return (p[0] - q[0]) ** 2 + (p[1] - q[1]) ** 2
-
-        while len(pos) < nnodes:
-            p = (random.random() * scale, random.random() * scale)
-            if pos:
-                nn = min(dist2(p, q) ** 0.5 for q in pos.values())
-                if nn < exclusion:
-                    continue
-            node_id = len(nodes)
-            node = 'R' + str(node_id)
-            pos[node_id] = p
-            nodes.append({'id': node_id, 'name': node, 'pos': p})
-
-        def neighbors(p, q):
-            c = ((p[0] + q[0]) / 2, (p[1] + q[1]) / 2)
-            dd = dist2(p, c)
-            for r in pos.values():
-                if r != p and r != q and dist2(r, c) < dd:
-                    return False
-            return True
-
-        for p, (p_id, p_pos) in enumerate(pos.items()):
-            for q, (q_id, q_pos) in enumerate(pos.items()):
-                if p < q and neighbors(p_pos, q_pos):
-                    dist = dist2(p_pos, q_pos) ** 0.5
-                    links.append({'source': p_id, 'target': q_id, 'dist': dist})
-
-        return {'directed': False, 'multigraph': False, 'graph': {'name': str(nnodes), 'demands': demands}, 'nodes': nodes, 'links': links}
-
-
-class NumpyGabrielGenerator(TopoGenerator):
-    """
-    Generator of Gabriel graph synthetic topologies basen on NumPy.
-
-    E. K. Çetinkaya, M. J. F. Alenazi, Y. Cheng, A. M. Peck and J. P. G. Sterbenz,
-    On the fitness of geographic graph generators for modelling physical level topologies.
-    2013 5th International Congress on Ultra Modern Telecommunications and Control Systems and Workshops (ICUMT), Almaty, Kazakhstan, 2013, pp. 38-45.
-    https://doi.org/10.1109/ICUMT.2013.6798402.
-
-    K. Ruben Gabriel , Robert R. Sokal,
-    A New Statistical Approach to Geographic Variation Analysis. Systematic Biology, Volume 18, Issue 3, September 1969, Pages 259–278.
-    https://doi.org/10.2307/2412323
-    """
-
-    @classmethod
-    def generate_topo(cls, nnodes, seed):
-        """
-        Generate Gabriel graph topology with given number of nodes.
-
-        Parameters
-        ----------
-        nnodes : int
-            number of nodes
-        seed : int
-            random seed
-
-        Returns
-        -------
-        dict
-            topology graph in NetworkX node-link format
-        """
-
-        import numpy as np
-
-        assert nnodes <= MAX_GABRIEL_NODES
-
-        nodes = []
-        links = []
-        pos = {}
-        demands = {}
-
-        random.seed(seed)
-
-        scale = (nnodes * 10000) ** 0.5
-        exclusion = 25.0  # prevent points from being too close
-        print(nnodes, seed, scale, exclusion)
-
-        pos = np.empty((nnodes, 2))
-        pos.fill(np.nan)
-
-        def dist2(p, q):
-            x = (p - q) ** 2
-            return x[:, 0] + x[:, 1]
-
-        n = 0
-        exclusion_2 = exclusion ** 2
-        while n < nnodes:
-            p = (random.random() * scale, random.random() * scale)
-            if nodes:
-                if np.nanmin(dist2(p, pos)) < exclusion_2:
-                    continue
-            node_id = n
-            node = f'R{node_id}'
-            pos[node_id] = p
-            nodes.append({'id': node_id, 'name': node, 'pos': p})
-            n += 1
-
-        def neighbors(p, q):
-            c = (pos[p] + pos[q]) / 2
-            dd = (pos[p] - c) ** 2
-            dd = dd[0] + dd[1]
-            # print(np.nanmin(dist2(c, pos)), dd)
-            if dist2(pos, c).min() < dd:
-                return False
-            return True
-
-        for p in range(nnodes):
-            for q in range(nnodes):
-                if p < q and neighbors(p, q):
-                    dist = (pos[p] - pos[q]) ** 2
-                    dist = (dist[0] + dist[1]) ** 0.5
-                    links.append({'source': p, 'target': q, 'dist': dist})
-
-        return {'directed': False, 'multigraph': False, 'graph': {'name': str(nnodes), 'demands': demands}, 'nodes': nodes, 'links': links}
-
-
-class BackboneGenerator(TopoGenerator):
-    """
-    Generator of Gabriel graph synthetic topologies.
-
-    E. K. Çetinkaya, M. J. F. Alenazi, Y. Cheng, A. M. Peck and J. P. G. Sterbenz,
-    On the fitness of geographic graph generators for modelling physical level topologies.
-    2013 5th International Congress on Ultra Modern Telecommunications and Control Systems and Workshops (ICUMT), Almaty, Kazakhstan, 2013, pp. 38-45.
-    https://doi.org/10.1109/ICUMT.2013.6798402.
-
-    K. Ruben Gabriel , Robert R. Sokal,
-    A New Statistical Approach to Geographic Variation Analysis. Systematic Biology, Volume 18, Issue 3, September 1969, Pages 259–278.
-    https://doi.org/10.2307/2412323
-    """
-
-    @classmethod
-    def generate_topo(cls, name):
-        """
-        Generate Gabriel graph topology with given number of nodes.
-
-        Parameters
-        ----------
-        nnodes : int
-            number of nodes
-        seed : int
-            random seed
-
-        Returns
-        -------
-        dict
-            topology graph in NetworkX node-link format
-        """
-        import topohub.backbone
-
-        j = json.load(open('external/backbone/graph.json'))
-
-        nodes = {}
-        names_set = set()
-        links = []
-
-        node_types = ['City', 'Seacable Landing Point']
-        region = topohub.backbone.regions.get(name)
-        if name.endswith('_nosc'):
-            region = topohub.backbone.regions.get(name[:-5])
-        else:
-            node_types.append('Seacable Waypoint')
-
-        for n in j['nodes']:
-            if n['type'] in node_types:
-                if not region or topohub.backbone.point_in_polygon(n['longitude'], n['latitude'], region):
-                    if -180 < n['longitude'] < 180:
-                        if n['type'] in ['City', 'Seacable Landing Point']:
-                            names_set.add(n['name'])
-                        else:
-                            n['name'] = None
-                        nodes[n['id']] = {'id': n['id'], 'pos': (n['longitude'], n['latitude']), 'type': n['type']}
-                        if n['name']:
-                            nodes[n['id']]['name'] = n['name']
-
-        for e in j['edges']:
-            if e['u'] in nodes and e['v'] in nodes:
-                if not name.endswith('_nosc') or e['type'] != 'seacable':
-                    if abs(nodes[e['u']]['pos'][0] - nodes[e['v']]['pos'][0]) < 180:
-                        links.append({'source': e['u'], 'target': e['v'], 'dist': e['distance'], 'type': e['type']})
-
-        g = nx.node_link_graph({'directed': False, 'multigraph': False, 'graph': {'name': str(name), 'demands': {}}, 'nodes': list(nodes.values()), 'links': links})
-        g = topohub.backbone.remove_dead_ends(g)
-        g = g.subgraph(max(nx.connected_components(g), key=len))
-
-        return nx.node_link_data(g)
-
-
 def main(topo_names):
+
     if topo_names[0] == 'gabriel':
+
+        import topohub.providers.gabriel
+
+        gen = topohub.providers.gabriel.GabrielGenerator
+        max_gabriel_nodes = topohub.providers.gabriel.MAX_GABRIEL_NODES
 
         for nodes_number in range(25, 525, 25):
             start_time = time.time()
             for i in range(10):
-                GabrielGenerator.save_topo(nodes_number, (i * MAX_GABRIEL_NODES) + nodes_number, filename=f'data/gabriel/{nodes_number}/{i}', with_plot=True, with_utilization=True, with_topo_stats=True, with_path_stats=True, scale=5)
+                gen.save_topo(nodes_number, (i * max_gabriel_nodes) + nodes_number, filename=f'data/gabriel/{nodes_number}/{i}', with_plot=True, with_utilization=True, with_topo_stats=True, with_path_stats=True, scale=5)
             print(time.time() - start_time)
 
     elif topo_names[0] == 'sndlib':
 
-        import topohub.backbone
+        import topohub.providers.sndlib
+        import topohub.geo
+
+        gen = topohub.providers.sndlib.SNDlibGenerator
 
         topo_names = {
             'abilene': {'include_countries': ['US']},
@@ -515,14 +97,17 @@ def main(topo_names):
 
         for topo_name in topo_names:
             if topo_names[topo_name]:
-                background = topohub.backbone.generate_map(**topo_names[topo_name])
+                background = topohub.geo.generate_map(**topo_names[topo_name])
             else:
                 background = None
-            SNDlibGenerator.save_topo(topo_name, filename=f'data/sndlib/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=True)
+            gen.save_topo(topo_name, filename=f'data/sndlib/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=True)
 
     elif topo_names[0] == 'topozoo':
 
-        import topohub.backbone
+        import topohub.providers.topozoo
+        import topohub.geo
+
+        gen = topohub.providers.topozoo.TopoZooGenerator
 
         topo_names = {
             'Aarnet': {'include_countries': ['Australia']},
@@ -791,11 +376,11 @@ def main(topo_names):
         for topo_name in topo_names:
             print(topo_name)
             if topo_names[topo_name]:
-                background = topohub.backbone.generate_map(**topo_names[topo_name])
+                background = topohub.geo.generate_map(**topo_names[topo_name])
             else:
                 background = None
             try:
-                TopoZooGenerator.save_topo(topo_name, filename=f'data/topozoo/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=True)
+                gen.save_topo(topo_name, filename=f'data/topozoo/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=True)
             except nx.exception.NetworkXNoPath:
                 pass
             except nx.NetworkXError:
@@ -808,7 +393,10 @@ def main(topo_names):
 
     elif topo_names[0] == 'backbone':
 
-        import topohub.backbone
+        import topohub.providers.backbone
+        import topohub.geo
+
+        gen = topohub.providers.backbone.BackboneGenerator
 
         topo_names = {
             'africa': {'include_continents': ['Africa']},
@@ -836,14 +424,14 @@ def main(topo_names):
         for topo_name in topo_names:
             background = []
             if topo_names[topo_name]:
-                background = topohub.backbone.generate_map(**topo_names[topo_name])
+                background = topohub.geo.generate_map(**topo_names[topo_name])
             # region = topohub.backbone.regions.get(topo_name)
             # if topo_name.endswith('_nosc'):
             #     region = topohub.backbone.regions.get(topo_name[:-5])
             # if region:
             #     path_data = topohub.backbone.polygon_to_path(region)
             #     background.append(f'<path class="selection" vector-effect="non-scaling-stroke" d="{path_data}"/>\n')
-            BackboneGenerator.save_topo(topo_name, filename=f'data/backbone/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=0.1, node_filter=lambda n: n['type'] == 'City')
+            gen.save_topo(topo_name, filename=f'data/backbone/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=0.1, node_filter=lambda n: n['type'] == 'City')
 
 
 if __name__ == '__main__':

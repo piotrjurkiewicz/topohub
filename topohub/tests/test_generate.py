@@ -3,10 +3,10 @@ import json
 
 import pytest as pytest
 
-import topohub.generate
+import topohub.providers.gabriel
 
 def test_generate_gabriel():
-    graph = topohub.generate.GabrielGenerator.generate_topo(25, 25)
+    graph = topohub.providers.gabriel.GabrielGenerator.generate_topo(25, 25)
     assert graph['directed'] is False
     assert graph['multigraph'] is False
     assert graph['graph']['name'] == '25'
@@ -92,7 +92,7 @@ def test_generate_gabriel():
 def test_save_gabriel(tmp_path):
     for s in [25, 50, 75, 100]:
         for i in [0, 1]:
-            topohub.generate.GabrielGenerator.save_topo(s, (i * topohub.generate.MAX_GABRIEL_NODES) + s, filename=f'{tmp_path}/gabriel/{s}/{i}',
+            topohub.providers.gabriel.GabrielGenerator.save_topo(s, (i * topohub.generate.MAX_GABRIEL_NODES) + s, filename=f'{tmp_path}/gabriel/{s}/{i}',
                                                         with_plot=True, with_utilization=True, with_topo_stats=True, with_path_stats=True, scale=5)
             with (importlib.resources.files(topohub) / f'data/gabriel/{s}/{i}.json').open() as file, open(f'{tmp_path}/gabriel/{s}/{i}.json') as new_file:
                 org = json.load(file)
