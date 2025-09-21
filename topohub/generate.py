@@ -433,6 +433,29 @@ def main(topo_names):
             #     background.append(f'<path class="selection" vector-effect="non-scaling-stroke" d="{path_data}"/>\n')
             gen.save_topo(topo_name, filename=f'data/backbone/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=0.1, node_filter=lambda n: n['type'] == 'City')
 
+    elif topo_names[0] == 'caida':
+
+        import topohub.providers.caida
+        import topohub.geo
+
+        gen = topohub.providers.caida.CaidaGenerator
+
+        topo_names = {
+            '3356': {'include_continents': ['all']},
+        }
+
+        for topo_name in topo_names:
+            background = []
+            if topo_names[topo_name]:
+                background = topohub.geo.generate_map(**topo_names[topo_name])
+            # region = topohub.backbone.regions.get(topo_name)
+            # if topo_name.endswith('_nosc'):
+            #     region = topohub.backbone.regions.get(topo_name[:-5])
+            # if region:
+            #     path_data = topohub.backbone.polygon_to_path(region)
+            #     background.append(f'<path class="selection" vector-effect="non-scaling-stroke" d="{path_data}"/>\n')
+            gen.save_topo(topo_name, filename=f'data/caida/{topo_name}', with_plot=True, with_utilization=False, with_path_stats=False, with_topo_stats=False, background=background, scale=0.1)
+
 
 if __name__ == '__main__':
     main(sys.argv[1:])
