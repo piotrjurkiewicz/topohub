@@ -67,26 +67,18 @@
         .sidebar-left,
         .sidebar-right {
             padding: 24px;
+            font-size: 14px;
         }
 
         .sidebar-left {
+            width: 300px;
             background-color: #ffffff;
             border-right: 1px solid #d0d7de;
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            flex-shrink: 0;
-        }
-
-        .sidebar-left h2 {
-            margin-bottom: 16px;
         }
 
         .sidebar-right {
             width: 400px;
             padding-left: 0;
-            font-size: 14px;
-            flex-shrink: 0;
         }
 
         .main-content {
@@ -254,8 +246,8 @@
         }
 
         .topologyInfoParagraph {
-            margin-bottom: 0;
-            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-top: 0;
         }
 
         .topologyInfoParagraph a {
@@ -393,6 +385,9 @@
 <div class="container">
     <div id="tooltip" class="tooltip" style="display: none;"></div>
     <aside class="sidebar-left">
+        <p class="topologyInfoParagraph">Repository of reference Gabriel graph, Internet Topology Zoo, SNDlib, CAIDA and synthetic backbone topologies for networking research.</p>
+        <p class="topologyInfoParagraph">Python/NetworkX/Mininet examples: <a href="https://topohub.readthedocs.io">topohub.readthedocs.io</a></p>
+        <p class="topologyInfoParagraph">Please cite <a href="https://www.sciencedirect.com/science/article/pii/S2352711023002364">this paper</a> if you use TopoHub in your research.</p>
         <h2>Select a topology</h2>
         <div id="dropdowns">
             <select id="firstLevelDropdown">
@@ -421,8 +416,6 @@
         <div id="topologyInfo" class="box">
             <h2>Topology info</h2>
             <p id="topologyInfoParagraph" class="topologyInfoParagraph"></p>
-            <p class="topologyInfoParagraph">Python usage examples: <a href="https://topohub.readthedocs.io">topohub.readthedocs.io</a></p>
-            <p class="topologyInfoParagraph">Please cite <a href="https://www.sciencedirect.com/science/article/pii/S2352711023002364">this paper</a> if you use TopoHub in your research.</p>
             <h2>Download</h2>
             <div id="topoDownload">
                 <a id="topoDownloadJSON" class="button" href="#" target="_blank">
