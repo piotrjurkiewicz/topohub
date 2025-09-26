@@ -1,9 +1,6 @@
 Mininet usage
 *************
 
-.. toctree::
-   :maxdepth: 2
-
 Here we present a tutorial, which provides a step by step guide for using the automatic Mininet topology import feature.
 
 We will conduct our experiments in a virtual environment. Alternatively, the ``topohub`` package can be installed systemwide with the ``pip`` command.

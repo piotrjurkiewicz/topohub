@@ -105,13 +105,9 @@ Contents
 ========
 
 .. toctree::
-   :hidden:
-
-   self
-
-.. toctree::
    :maxdepth: 2
 
+   self
    repository
    package
    web

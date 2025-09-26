@@ -15,6 +15,3 @@ The definition of each topology is stored in a JSON file constructed according t
 
 
 Additionally, in addition to the synthetic Gabriel graph topologies, we also generated JSON definitions and SVG visualizations for topologies from the `Internet Topology Zoo <https://topology-zoo.org/>`_ and `SNDlib <https://sndlib.put.poznan.pl/>`_ and also provide them in the repository. This gives the possibility to explore their properties using the web interface and allows using them interchangeably with the synthetic Gabriel graph topologies, for example in Mininet with the help of the automatic import feature.
-
-.. toctree::
-   :maxdepth: 2

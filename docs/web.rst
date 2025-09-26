@@ -12,7 +12,3 @@ A distinctive feature of the web interface is the visualization of link utilizat
 Users have the capability to select their desired traffic model for visualization from a dropdown menu. The link utilization is represented on the topology graph by varying the width, color, or opacity of the links, with these visual attributes adjustable by the user. By hovering the mouse over a link, users can obtain the exact percentage utilization values. Furthermore, a histogram illustrating the 20 most utilized links is provided, and users can explore the details by hovering the mouse over the bars.
 
 Alternative link to the web interface: https://piotrjurkiewicz.github.io/topohub
-
-.. toctree::
-   :maxdepth: 2
-

@@ -57,6 +57,3 @@ The ``topohub.graph`` module contains functions for performing operations and ca
 The package also includes a ``topohub.mininet`` module that can be imported into the popular network emulator `Mininet <http://mininet.org/>`_, enabling the automatic creation of Mininet Topo classes for topologies in the repository.
 
 The package, along with JSON topology definitions, is available in the Python Package Index (PyPI) (https://pypi.org/project/topohub/) and can be installed using the ``pip install topohub`` command.
-
-.. toctree::
-   :maxdepth: 2
