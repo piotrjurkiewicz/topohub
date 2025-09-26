@@ -32,7 +32,7 @@ class BackboneGenerator(topohub.generate.TopoGenerator):
 
         nodes = {}
         names_set = set()
-        links = []
+        edges = []
 
         node_types = ['City', 'Seacable Landing Point']
         region = topohub.geo.regions.get(name)
@@ -57,10 +57,10 @@ class BackboneGenerator(topohub.generate.TopoGenerator):
             if e['u'] in nodes and e['v'] in nodes:
                 if not name.endswith('_nosc') or e['type'] != 'seacable':
                     if abs(nodes[e['u']]['pos'][0] - nodes[e['v']]['pos'][0]) < 180:
-                        links.append({'source': e['u'], 'target': e['v'], 'dist': e['distance'], 'type': e['type']})
+                        edges.append({'source': e['u'], 'target': e['v'], 'dist': e['distance'], 'type': e['type']})
 
-        g = nx.node_link_graph({'directed': False, 'multigraph': False, 'graph': {'name': str(name), 'demands': {}}, 'nodes': list(nodes.values()), 'links': links})
+        g = nx.node_link_graph({'directed': False, 'multigraph': False, 'graph': {'name': str(name), 'demands': {}}, 'nodes': list(nodes.values()), 'edges': edges}, edges='edges')
         g = topohub.geo.remove_dead_ends(g)
         g = g.subgraph(max(nx.connected_components(g), key=len))
 
-        return nx.node_link_data(g)
+        return nx.node_link_data(g, edges='edges')

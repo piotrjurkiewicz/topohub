@@ -21,7 +21,7 @@ class TopoGenerator:
 
     @classmethod
     def save_topo(cls, *args, **kwargs):
-        g = nx.node_link_graph(cls.generate_topo(*args))
+        g = nx.node_link_graph(cls.generate_topo(*args), edges='edges')
         if 'filename' in kwargs:
             filename = kwargs['filename']
         else:
@@ -40,7 +40,7 @@ class TopoGenerator:
             # graph.topo_stats_print(ts, g.graph['name'], filename)
             g.graph['stats'] = ts
         json.encoder.float = RoundingFloat
-        json.dump(nx.node_link_data(g), open(f'{filename}.json', 'w'), indent=kwargs.get('indent', 0), default=lambda x: format(x, '.2f'))
+        json.dump(nx.node_link_data(g, edges='edges'), open(f'{filename}.json', 'w'), indent=kwargs.get('indent', 0), default=lambda x: format(x, '.2f'))
         json.encoder.float = float
         topohub.graph.write_gml(g, f'{filename}.gml')
 

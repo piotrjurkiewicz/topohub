@@ -50,7 +50,7 @@ basing on them:
     topo = topohub.get('sndlib/polska')
 
     # Create NetworkX graph from node-link dict
-    g = nx.node_link_graph(topo)
+    g = nx.node_link_graph(topo, edges='edges')
 
     # Access graph parameters
     print(g.graph['name'])
@@ -70,7 +70,7 @@ basing on them:
     # You can also load a topology using node names instead of integer IDs as node identifiers
     # (this will not work for 'backbone' and 'caida' topologies which have unnamed or duplicated name nodes)
     topo = topohub.get('sndlib/polska', use_names=True)
-    g = nx.node_link_graph(topo)
+    g = nx.node_link_graph(topo, edges='edges')
 
     print(g.graph['demands'])
     print(g.edges['Gdansk', 'Warsaw']['dist'])

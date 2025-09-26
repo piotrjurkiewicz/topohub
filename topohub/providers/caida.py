@@ -144,20 +144,17 @@ def graph(asn):
     else:
         adjacency = ADJACENCY
 
-    edges = []
+    edge_pairs = []
     for src in selected_with_geo:
         if src in adjacency:
             for dst in adjacency[src]:
                 if dst in selected_with_geo and src < dst:
-                    edges.append((src, dst))
+                    edge_pairs.append((src, dst))
 
-    print("Edges touching selected nodes:", len(edges))
-
-    # --- build NetworkX graph (undirected), no file output ---
-    G = nx.Graph()
+    print("Edges touching selected nodes:", len(edge_pairs))
 
     nodes = {}
-    links = []
+    edges = []
     for n in selected_with_geo:
         *_, name, lat, lon = node_to_geo[n]
         nodes[n] = {'id': n, 'pos': (float(lon), float(lat))}
@@ -165,10 +162,10 @@ def graph(asn):
             nodes[n]['name'] = name
 
     # add neighbors and edges
-    for u, v in edges:
-        links.append({'source': u, 'target': v, 'dist': 10})
+    for u, v in edge_pairs:
+        edges.append({'source': u, 'target': v, 'dist': 10})
 
-    return nodes, links
+    return nodes, edges
 
 
 class CaidaGenerator(topohub.generate.TopoGenerator):
@@ -194,10 +191,10 @@ class CaidaGenerator(topohub.generate.TopoGenerator):
             topology graph in NetworkX node-link format
         """
 
-        nodes, links = graph(name)
+        nodes, edges = graph(name)
 
-        g = nx.node_link_graph({'directed': False, 'multigraph': False, 'graph': {'name': str(name), 'demands': {}}, 'nodes': list(nodes.values()), 'links': links})
+        g = nx.node_link_graph({'directed': False, 'multigraph': False, 'graph': {'name': str(name), 'demands': {}}, 'nodes': list(nodes.values()), 'edges': edges}, edges='edges')
         # g = topohub.backbone.remove_dead_ends(g)
         # g = g.subgraph(max(nx.connected_components(g), key=len))
 
-        return nx.node_link_data(g)
+        return nx.node_link_data(g, edges='edges')

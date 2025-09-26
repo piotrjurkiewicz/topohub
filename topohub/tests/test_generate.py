@@ -1,7 +1,7 @@
 import importlib.resources
 import json
 
-import pytest as pytest
+import pytest
 
 import topohub.providers.gabriel
 
@@ -38,7 +38,7 @@ def test_generate_gabriel():
                      {'id': 22, 'name': 'R22', 'pos': (204.14203714612768, 407.22209355537865)},
                      {'id': 23, 'name': 'R23', 'pos': (314.4130966318092, 228.61712432824683)},
                      {'id': 24, 'name': 'R24', 'pos': (238.9999066946048, 109.81289084704876)}],
-           'links': [{'source': 0, 'target': 16, 'dist': 127.57996663815867},
+           'edges': [{'source': 0, 'target': 16, 'dist': 127.57996663815867},
                      {'source': 0, 'target': 22, 'dist': 58.3144488305541},
                      {'source': 1, 'target': 7, 'dist': 149.2418583498508},
                      {'source': 1, 'target': 11, 'dist': 118.78148888035041},
@@ -84,15 +84,15 @@ def test_generate_gabriel():
         assert node['name'] == org['nodes'][n]['name']
         assert node['pos'] == pytest.approx(org['nodes'][n]['pos'])
 
-    for n, link in enumerate(graph['links']):
-        assert link['source'] == org['links'][n]['source']
-        assert link['target'] == org['links'][n]['target']
-        assert link['dist'] == pytest.approx(org['links'][n]['dist'])
+    for n, edge in enumerate(graph['edges']):
+        assert edge['source'] == org['edges'][n]['source']
+        assert edge['target'] == org['edges'][n]['target']
+        assert edge['dist'] == pytest.approx(org['edges'][n]['dist'])
 
 def test_save_gabriel(tmp_path):
     for s in [25, 50, 75, 100]:
         for i in [0, 1]:
-            topohub.providers.gabriel.GabrielGenerator.save_topo(s, (i * topohub.generate.MAX_GABRIEL_NODES) + s, filename=f'{tmp_path}/gabriel/{s}/{i}',
+            topohub.providers.gabriel.GabrielGenerator.save_topo(s, (i * topohub.providers.gabriel.MAX_GABRIEL_NODES) + s, filename=f'{tmp_path}/gabriel/{s}/{i}',
                                                         with_plot=True, with_utilization=True, with_topo_stats=True, with_path_stats=True, scale=5)
             with (importlib.resources.files(topohub) / f'data/gabriel/{s}/{i}.json').open() as file, open(f'{tmp_path}/gabriel/{s}/{i}.json') as new_file:
                 org = json.load(file)
@@ -106,12 +106,12 @@ def test_save_gabriel(tmp_path):
                     assert node['name'] == org['nodes'][n]['name']
                     assert node['pos'] == pytest.approx(org['nodes'][n]['pos'])
 
-                for n, link in enumerate(new['links']):
-                    assert link['source'] == org['links'][n]['source']
-                    assert link['target'] == org['links'][n]['target']
-                    assert link['dist'] == pytest.approx(org['links'][n]['dist'])
-                    assert link['ecmp_fwd'] == pytest.approx(org['links'][n]['ecmp_fwd'])
-                    assert link['ecmp_bwd'] == pytest.approx(org['links'][n]['ecmp_bwd'])
+                for n, edge in enumerate(new['edges']):
+                    assert edge['source'] == org['edges'][n]['source']
+                    assert edge['target'] == org['edges'][n]['target']
+                    assert edge['dist'] == pytest.approx(org['edges'][n]['dist'])
+                    assert edge['ecmp_fwd'] == pytest.approx(org['edges'][n]['ecmp_fwd'])
+                    assert edge['ecmp_bwd'] == pytest.approx(org['edges'][n]['ecmp_bwd'])
 
 
 if __name__ == '__main__':

@@ -13,7 +13,7 @@ class GabrielGenerator(topohub.generate.TopoGenerator):
     2013 5th International Congress on Ultra Modern Telecommunications and Control Systems and Workshops (ICUMT), Almaty, Kazakhstan, 2013, pp. 38-45.
     https://doi.org/10.1109/ICUMT.2013.6798402.
 
-    K. Ruben Gabriel , Robert R. Sokal,
+    K. Ruben Gabriel, Robert R. Sokal,
     A New Statistical Approach to Geographic Variation Analysis. Systematic Biology, Volume 18, Issue 3, September 1969, Pages 259–278.
     https://doi.org/10.2307/2412323
     """
@@ -21,7 +21,7 @@ class GabrielGenerator(topohub.generate.TopoGenerator):
     @classmethod
     def generate_topo(cls, nnodes, seed):
         """
-        Generate Gabriel graph topology with given number of nodes.
+        Generate Gabriel graph topology with a given number of nodes.
 
         Parameters
         ----------
@@ -39,7 +39,7 @@ class GabrielGenerator(topohub.generate.TopoGenerator):
         assert nnodes <= MAX_GABRIEL_NODES
 
         nodes = []
-        links = []
+        edges = []
         pos = {}
         demands = {}
 
@@ -75,12 +75,12 @@ class GabrielGenerator(topohub.generate.TopoGenerator):
             for q, (q_id, q_pos) in enumerate(pos.items()):
                 if p < q and neighbors(p_pos, q_pos):
                     dist = dist2(p_pos, q_pos) ** 0.5
-                    links.append({'source': p_id, 'target': q_id, 'dist': dist})
+                    edges.append({'source': p_id, 'target': q_id, 'dist': dist})
 
-        return {'directed': False, 'multigraph': False, 'graph': {'name': str(nnodes), 'demands': demands}, 'nodes': nodes, 'links': links}
+        return {'directed': False, 'multigraph': False, 'graph': {'name': str(nnodes), 'demands': demands}, 'nodes': nodes, 'edges': edges}
 
 
-class NumpyGabrielGenerator(TopoGenerator):
+class NumpyGabrielGenerator(topohub.generate.TopoGenerator):
     """
     Generator of Gabriel graph synthetic topologies basen on NumPy.
 
@@ -89,7 +89,7 @@ class NumpyGabrielGenerator(TopoGenerator):
     2013 5th International Congress on Ultra Modern Telecommunications and Control Systems and Workshops (ICUMT), Almaty, Kazakhstan, 2013, pp. 38-45.
     https://doi.org/10.1109/ICUMT.2013.6798402.
 
-    K. Ruben Gabriel , Robert R. Sokal,
+    K. Ruben Gabriel, Robert R. Sokal,
     A New Statistical Approach to Geographic Variation Analysis. Systematic Biology, Volume 18, Issue 3, September 1969, Pages 259–278.
     https://doi.org/10.2307/2412323
     """
@@ -97,7 +97,7 @@ class NumpyGabrielGenerator(TopoGenerator):
     @classmethod
     def generate_topo(cls, nnodes, seed):
         """
-        Generate Gabriel graph topology with given number of nodes.
+        Generate Gabriel graph topology with a given number of nodes.
 
         Parameters
         ----------
@@ -117,7 +117,7 @@ class NumpyGabrielGenerator(TopoGenerator):
         assert nnodes <= MAX_GABRIEL_NODES
 
         nodes = []
-        links = []
+        edges = []
         pos = {}
         demands = {}
 
@@ -161,6 +161,6 @@ class NumpyGabrielGenerator(TopoGenerator):
                 if p < q and neighbors(p, q):
                     dist = (pos[p] - pos[q]) ** 2
                     dist = (dist[0] + dist[1]) ** 0.5
-                    links.append({'source': p, 'target': q, 'dist': dist})
+                    edges.append({'source': p, 'target': q, 'dist': dist})
 
-        return {'directed': False, 'multigraph': False, 'graph': {'name': str(nnodes), 'demands': demands}, 'nodes': nodes, 'links': links}
+        return {'directed': False, 'multigraph': False, 'graph': {'name': str(nnodes), 'demands': demands}, 'nodes': nodes, 'edges': edges}

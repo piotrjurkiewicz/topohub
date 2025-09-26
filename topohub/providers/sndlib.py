@@ -1,6 +1,7 @@
 import http.client as http
 
 import topohub.generate
+import topohub.graph
 
 class SNDlibGenerator(topohub.generate.TopoGenerator):
     """
@@ -40,7 +41,7 @@ class SNDlibGenerator(topohub.generate.TopoGenerator):
 
         mode = None
         nodes = []
-        links = []
+        edges = []
         name_to_id = {}
         pos = {}
         demands = {}
@@ -77,7 +78,7 @@ class SNDlibGenerator(topohub.generate.TopoGenerator):
                     continue
                 node0, node1 = line.split()[2:4]
                 dist = topohub.graph.haversine(pos[node0], pos[node1])
-                links.append({'source': name_to_id[node0], 'target': name_to_id[node1], 'dist': dist})
+                edges.append({'source': name_to_id[node0], 'target': name_to_id[node1], 'dist': dist})
 
             if mode == 'demands':
                 if line.startswith(")"):
@@ -93,4 +94,4 @@ class SNDlibGenerator(topohub.generate.TopoGenerator):
         name = ''.join([c if c.isalnum() else '_' for c in name.title()])
         name = name.lower()
 
-        return {'directed': False, 'multigraph': False, 'graph': {'name': name, 'demands': demands}, 'nodes': nodes, 'links': links}
+        return {'directed': False, 'multigraph': False, 'graph': {'name': name, 'demands': demands}, 'nodes': nodes, 'edges': edges}

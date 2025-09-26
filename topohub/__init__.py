@@ -18,7 +18,7 @@ def get(key, use_names=False):
         topo = topohub.get('sndlib/polska')
 
         # Create NetworkX graph from node-link dict
-        g = nx.node_link_graph(topo)
+        g = nx.node_link_graph(topo, edges='edges')
 
         # Access graph parameters
         print(g.graph['name'])
@@ -32,13 +32,13 @@ def get(key, use_names=False):
 
         # Obtain link length in kilometers between node 0 and 10
         print(g.edges[0, 10]['dist'])
-        # Obtain percentage utilization of the link between node 0 and 10 under ECMP routing in forward direction
+        # Obtain percentage utilization of the link between node 0 and 10 under ECMP routing in the forward direction
         print(g.edges[0, 10]['ecmp_fwd']['uni'])
 
-        # You can also load a topology using node names instead integer IDs as node identifiers
-        # (this will not work for 'backbone' category topologies which have unnamed or duplicated name nodes)
+        # You can also load a topology using node names instead of integer IDs as node identifiers
+        # (this will not work for 'backbone' and 'caida' topologies which have unnamed or duplicated name nodes)
         topo = topohub.get('sndlib/polska', use_names=True)
-        g = nx.node_link_graph(topo)
+        g = nx.node_link_graph(topo, edges='edges')
 
         print(g.graph['demands'])
         print(g.edges['Gdansk', 'Warsaw']['dist'])
@@ -55,17 +55,17 @@ def get(key, use_names=False):
         if use_names:
             id_to_name = {}
             name_to_id = {}
-            for n in topo['nodes']:
-                id_to_name[n['id']] = n['name']
-                if n['name'] in name_to_id:
-                    raise RuntimeError(f"Duplicate node name '{n['name']}'")
+            for node in topo['nodes']:
+                id_to_name[node['id']] = node['name']
+                if node['name'] in name_to_id:
+                    raise RuntimeError(f"Duplicate node name '{node['name']}'")
                 else:
-                    name_to_id[n['name']] = n['id']
-            for n in topo['nodes']:
-                n['id'] = id_to_name[n['id']]
-            for l in topo['links']:
-                l['source'] = id_to_name[l['source']]
-                l['target'] = id_to_name[l['target']]
+                    name_to_id[node['name']] = node['id']
+            for node in topo['nodes']:
+                node['id'] = id_to_name[node['id']]
+            for edge in topo['edges']:
+                edge['source'] = id_to_name[edge['source']]
+                edge['target'] = id_to_name[edge['target']]
             topo['graph']['demands'] = {id_to_name[int(n)]: {id_to_name[int(k)]: v for k, v in dems.items()} for n, dems in topo['graph']['demands'].items()}
         else:
             topo['graph']['demands'] = {int(n): {int(k): v for k, v in dems.items()} for n, dems in topo['graph']['demands'].items()}

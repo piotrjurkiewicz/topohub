@@ -1,6 +1,7 @@
 import http.client as http
 
 import topohub.generate
+import topohub.graph
 
 class TopoZooGenerator(topohub.generate.TopoGenerator):
     """
@@ -41,7 +42,7 @@ class TopoZooGenerator(topohub.generate.TopoGenerator):
         mode = None
         node_id, node, lon, lat, node0_id, node1_id = None, None, None, None, None, None
         nodes = []
-        links = []
+        edges = []
         pos = {}
         node_id_to_name = {}
         demands = {}
@@ -79,7 +80,7 @@ class TopoZooGenerator(topohub.generate.TopoGenerator):
                 if line.startswith("  ]"):
                     try:
                         dist = topohub.graph.haversine(pos[node0_id], pos[node1_id])
-                        links.append({'source': node0_id, 'target': node1_id, 'dist': dist})
+                        edges.append({'source': node0_id, 'target': node1_id, 'dist': dist})
                     except KeyError:
                         pass
                     mode = None
@@ -91,7 +92,7 @@ class TopoZooGenerator(topohub.generate.TopoGenerator):
         name = ''.join([c if c.isalnum() else '_' for c in name.title()])
         name = name.lower()
 
-        if not nodes or not links:
+        if not nodes or not edges:
             raise ValueError("Empty graph")
 
-        return {'directed': False, 'multigraph': False, 'graph': {'name': name, 'demands': demands}, 'nodes': nodes, 'links': links}
+        return {'directed': False, 'multigraph': False, 'graph': {'name': name, 'demands': demands}, 'nodes': nodes, 'edges': edges}
