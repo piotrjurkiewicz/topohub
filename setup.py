@@ -16,7 +16,7 @@ setup(
     license='MIT',
     author='Piotr Jurkiewicz',
     author_email='piotr.jerzy.jurkiewicz@gmail.com',
-    description='A repository of reference Gabriel graph and real-world topologies for networking research',
+    description='Repository of reference Gabriel graph, Internet Topology Zoo, SNDlib, CAIDA and synthetic backbone topologies for networking research',
     long_description=README,
     long_description_content_type='text/markdown',
     classifiers=[

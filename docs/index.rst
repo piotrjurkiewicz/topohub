@@ -1,13 +1,13 @@
 Introduction to TopoHub
 ***********************
 
-Repository of reference network topologies, including Internet Topology Zoo, SNDlib, CAIDA and synthetic Gabriel graph
-and backbone topologies. Synthetic Gabriel graphs very well represent properties of WAN / long-haul optical transport
-networks. The repository offers 3600 Gabriel graph topologies with linearly increasing sizes ranging from 5 to 500
-nodes, generated in a reproducible manner. Topologies are available in the code repository and can be previewed and
-downloaded through a web interface, which allows visualization of individual topologies and exploration of their network
-properties. An important additional feature is the visualization of pre-computed link loads in the network using the
-Equal-Cost Multipath (ECMP) shortest path routing algorithm under different traffic demand models.
+TopoHub is a repository of reference topologies for networking research. It includes Internet Topology Zoo, SNDlib, CAIDA
+and synthetic Gabriel graph and backbone topologies. Synthetic Gabriel graphs very well represent properties of
+WAN / long-haul optical transport networks. The repository offers 3600 Gabriel graph topologies with linearly increasing
+sizes ranging from 5 to 500 nodes, generated in a reproducible manner. Topologies are available in the code repository
+and can be previewed and downloaded through a web interface, which allows visualization of individual topologies and
+exploration of their network properties. An important additional feature is the visualization of pre-computed link loads
+in the network using the Equal-Cost Multipath (ECMP) shortest path routing algorithm under different traffic demand models.
 
 Web interface is available at: https://www.topohub.org
 
