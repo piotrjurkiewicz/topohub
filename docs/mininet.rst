@@ -6,7 +6,6 @@ Mininet usage
 
 Here we present a tutorial, which provides a step by step guide for using the automatic Mininet topology import feature.
 
-
 We will conduct our experiments in a virtual environment. Alternatively, the ``topohub`` package can be installed systemwide with the ``pip`` command.
 
 First, it must be ensured that the required Python's standard library modules are installed. This applies to ``venv`` module, which in some distributions is not installed by default with the Python's binaries. Additionally, the ``mininet`` and ``openvswitch-switch`` and ``openvswitch-testcontroller`` packages are needed. On Debian-like system, they can be installed using the following command:
@@ -14,7 +13,6 @@ First, it must be ensured that the required Python's standard library modules ar
 .. code-block:: shell-session
 
     $ sudo apt-get install python3-venv mininet openvswitch-switch openvswitch-testcontroller
-
 
 The listing below shows the process of virtual environment preparation. The user should first initialize a virtual environment. Then, the ``pip`` command is used to install the ``topohub`` package from `Python Package Index <https://pypi.org/project/topohub/>`_ along with its dependencies:
 
@@ -53,7 +51,7 @@ The code block below provides a minimal example of Python code initializing Mini
     # Start the network and Mininet shell
     net.interact()
 
-Then in order to build and initialize the network the above script should be executed with `sudo`:
+Then in order to build and initialize the network the above script should be executed with ``sudo``:
 
 .. code-block:: shell-session
 
@@ -86,4 +84,3 @@ Then in order to build and initialize the network the above script should be exe
     R24 lo:  R24-eth1:R4-eth3 R24-eth2:R9-eth4 R24-eth3:R11-eth3 R24-eth4:R12-eth5 R24-eth5:R14-eth3
     c0
     mininet>
-

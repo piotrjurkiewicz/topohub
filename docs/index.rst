@@ -1,13 +1,20 @@
-Welcome to topohub's documentation!
-***********************************
+Introduction to TopoHub
+***********************
 
-This project aims to create a repository of reference network topologies based on Gabriel graphs. It offers 3600 Gabriel graph topologies with linearly increasing sizes ranging from 5 to 500 vertices. These topologies were generated in a reproducible manner to model the properties of long-haul optical transport networks. The topologies are available in the code repository and can be previewed and downloaded through a web interface, which allows visualization of individual topologies and exploration of their network properties. An important additional feature is the visualization of pre-computed link loads in the network using the Equal-Cost Multipath (ECMP) shortest path routing algorithm under different traffic demand models.
+Repository of reference network topologies, including Internet Topology Zoo, SNDlib, CAIDA and synthetic Gabriel graph
+and backbone topologies. Synthetic Gabriel graphs very well represent properties of WAN / long-haul optical transport
+networks. The repository offers 3600 Gabriel graph topologies with linearly increasing sizes ranging from 5 to 500
+nodes, generated in a reproducible manner. Topologies are available in the code repository and can be previewed and
+downloaded through a web interface, which allows visualization of individual topologies and exploration of their network
+properties. An important additional feature is the visualization of pre-computed link loads in the network using the
+Equal-Cost Multipath (ECMP) shortest path routing algorithm under different traffic demand models.
 
-The web interface is available at: https://www.topohub.org
+Web interface is available at: https://www.topohub.org
 
-The package also includes a module that can be imported into the popular network emulator Mininet, enabling automatic usage of the topologies from the repository. It is also important, that apart from synthetic Gabriel topologies, we included all existing topologies from The Internet Topology Zoo and SNDlib into our repository as well. This enables the possibility to study their pre-computed ECMP link loads and import them automatically into the Mininet.
+The package also includes a module that can be imported into the popular network emulator Mininet, enabling automatic
+usage of the topologies from the repository.
 
-You can cite the following paper if you make use of TopoHub in your research:
+Please cite the following paper if you use of TopoHub in your research:
 
 .. code-block:: bibtex
 
@@ -28,7 +35,8 @@ The Python package can be installed from `Python Package Index <https://pypi.org
 
     $ pip install topohub
 
-Then you can obtain topologies stored in the repository using the `topohub.get()` method and create NetworkX graph objects basing on them:
+Then you can obtain topologies stored in the repository using the `topohub.get()` method and create NetworkX graph objects
+basing on them:
 
 .. code-block:: python
 
@@ -56,11 +64,11 @@ Then you can obtain topologies stored in the repository using the `topohub.get()
 
     # Obtain link length in kilometers between node 0 and 10
     print(g.edges[0, 10]['dist'])
-    # Obtain percentage utilization of the link between node 0 and 10 under ECMP routing in forward direction
+    # Obtain percentage utilization of the link between node 0 and 10 under ECMP routing in the forward direction
     print(g.edges[0, 10]['ecmp_fwd']['uni'])
 
-    # You can also load a topology using node names instead integer IDs as node identifiers
-    # (this will not work for 'backbone' category topologies which have unnamed or duplicated name nodes)
+    # You can also load a topology using node names instead of integer IDs as node identifiers
+    # (this will not work for 'backbone' and 'caida' topologies which have unnamed or duplicated name nodes)
     topo = topohub.get('sndlib/polska', use_names=True)
     g = nx.node_link_graph(topo)
 
@@ -79,7 +87,7 @@ For usage in Mininet, you can use a helper which automatically creates Mininet T
     topo_cls = topohub.mininet.TOPO_CLS['gabriel/25/0']
     topo_cls = topohub.mininet.TOPO_CLS['backbone/africa']
 
-    # Alternatively you can also load a topology using node names instead integer IDs as node identifiers
+    # Alternatively, you can also load a topology using node names instead integer IDs as node identifiers
     # (this will not work for 'backbone' category topologies which have unnamed or duplicated name nodes)
     topo_cls = topohub.mininet.TOPO_NAMED_CLS['topozoo/Abilene']
     topo_cls = topohub.mininet.TOPO_NAMED_CLS['sndlib/polska']
@@ -91,7 +99,7 @@ For usage in Mininet, you can use a helper which automatically creates Mininet T
     # Start the network and Mininet shell
     net.interact()
 
-A detailed documentation, including API reference and Mininet usage example, is available at: https://topohub.readthedocs.io
+Detailed documentation, including API reference and Mininet usage example, is available at: https://topohub.readthedocs.io
 
 Contents
 ========

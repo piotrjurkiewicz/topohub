@@ -1,7 +1,12 @@
 Python package
 **************
 
-The Python package consists of a top-level helper function `topohub.get()` and three Python modules: ``topohub.generate``, ``topohub.graph``, and ``topohub.mininet``.
+The Python package consists of a top-level helper function `topohub.get()` and the following Python modules:
+
+- ``topohub.geo``
+- ``topohub.generate``
+- ``topohub.graph``
+- ``topohub.mininet``
 
 The helper function can be used to obtain topologies dicts from JSON files stored in the repository and create NetworkX graph objects basing on them:
 
@@ -31,17 +36,19 @@ The helper function can be used to obtain topologies dicts from JSON files store
 
     # Obtain link length in kilometers between node 0 and 10
     print(g.edges[0, 10]['dist'])
-    # Obtain percentage utilization of the link between node 0 and 10 under ECMP routing in forward direction
+    # Obtain percentage utilization of the link between node 0 and 10 under ECMP routing in the forward direction
     print(g.edges[0, 10]['ecmp_fwd']['uni'])
 
-    # You can also load a topology using node names instead integer IDs as node identifiers
-    # (this will not work for 'backbone' category topologies which have unnamed or duplicated name nodes)
+    # You can also load a topology using node names instead of integer IDs as node identifiers
+    # (this will not work for 'backbone' and 'caida' topologies which have unnamed or duplicated name nodes)
     topo = topohub.get('sndlib/polska', use_names=True)
     g = nx.node_link_graph(topo)
 
     print(g.graph['demands'])
     print(g.edges['Gdansk', 'Warsaw']['dist'])
     print(g.edges['Gdansk', 'Warsaw']['ecmp_fwd']['uni'])
+
+The ``topohub.geo`` module contains functions for performing operations and calculations on geographical data and maps.
 
 The ``topohub.generate`` executable module was used to generate all the topology data stored in the repository. Its purpose is to generate topology JSON definition and SVG visualization files. It can generate synthetic Gabriel graphs of a given size, or download topology files from SNDlib or the Topology Zoo and generate graphs basing on the downloaded data.
 
