@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 import topohub
 
 URL = 'https://github.com/piotrjurkiewicz/topohub'
@@ -9,8 +9,7 @@ with open('README.md') as f:
 setup(
     name='topohub',
     version=topohub.__version__,
-    packages=['topohub'],
-    package_dir={'topohub': 'topohub'},
+    packages=find_packages(include=['topohub', 'topohub.*'], exclude=['topohub.tests', 'topohub.tests.*']),
     package_data={'topohub': ['data/gabriel/*/*.json', 'data/sndlib/*.json', 'data/topozoo/*.json', 'data/backbone/*.json']},
     url=URL,
     license='MIT',
