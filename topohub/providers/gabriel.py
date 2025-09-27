@@ -1,3 +1,11 @@
+"""
+Gabriel graph synthetic topology providers.
+
+Provides two generators (pure Python and NumPy-based) that create planar
+Gabriel graphs for benchmarking and research. Node positions are 2D planar
+coordinates (not geographic lon/lat).
+"""
+
 import random
 
 import topohub.generate
@@ -26,14 +34,15 @@ class GabrielGenerator(topohub.generate.TopoGenerator):
         Parameters
         ----------
         nnodes : int
-            number of nodes
+            Number of nodes.
         seed : int
-            random seed
+            Random seed.
 
         Returns
         -------
         dict
-            topology graph in NetworkX node-link format
+            Topology graph in NetworkX node-link format. Node positions are
+            2D planar coordinates (not geographic lon/lat).
         """
 
         assert nnodes <= MAX_GABRIEL_NODES
@@ -82,7 +91,7 @@ class GabrielGenerator(topohub.generate.TopoGenerator):
 
 class NumpyGabrielGenerator(topohub.generate.TopoGenerator):
     """
-    Generator of Gabriel graph synthetic topologies basen on NumPy.
+    Generator of Gabriel graph synthetic topologies based on NumPy.
 
     E. K. Çetinkaya, M. J. F. Alenazi, Y. Cheng, A. M. Peck and J. P. G. Sterbenz,
     On the fitness of geographic graph generators for modelling physical level topologies.
@@ -97,7 +106,7 @@ class NumpyGabrielGenerator(topohub.generate.TopoGenerator):
     @classmethod
     def generate_topo(cls, nnodes, seed, **kwargs):
         """
-        Generate Gabriel graph topology with a given number of nodes.
+        Generate a Gabriel graph topology with a given number of nodes.
 
         Parameters
         ----------

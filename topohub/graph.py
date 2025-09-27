@@ -1,3 +1,12 @@
+"""
+Graph utilities for TopoHub.
+
+This module provides geographic distance functions, path computations,
+plotting (SVG/PDF), topology statistics, and GML export helpers.
+Coordinates for geographic functions follow the (longitude, latitude)
+convention.
+"""
+
 import collections
 import itertools
 import math
@@ -18,7 +27,7 @@ def haversine(src, dst):
     Returns
     -------
     float
-        distance in kilometers
+        Distance in kilometers.
     """
 
     (lon0, lat0) = src
@@ -38,12 +47,12 @@ def gini(list_of_values):
     Parameters
     ----------
     list_of_values : list[float]
-        given list of values
+        List of values.
 
     Returns
     -------
     float
-        calculated Gini coefficient
+        Calculated Gini coefficient.
     """
 
     sorted_list = sorted(list_of_values)
@@ -61,18 +70,18 @@ def all_shortest_paths_all_targets(g, source, weight=None, limit=None):
     Parameters
     ----------
     g : networkx.Graph
-        network graph
+        Network graph.
     source : object
-        source node
-    weight : str | function, default None
-        name of edge attribute or a function returning edge weight
+        Source node.
+    weight : str | callable, default None
+        Name of edge attribute or a callable returning edge weight.
     limit : int, default None
-        limit the number of shortest paths to find
+        Limit the number of shortest paths to find.
 
     Returns
     -------
     dict[object, list], dict[object, int]
-        paths and distances from the source node to all other nodes
+        Paths and distances from the source node to all other nodes.
     """
 
     import networkx as nx
@@ -125,18 +134,18 @@ def all_shortest_nhops_all_targets(g, source, weight=None, limit=None):
     Parameters
     ----------
     g : networkx.Graph
-        network graph
+        Network graph.
     source : object
-        source node
-    weight : str | function, default None
-        name of edge attribute or a function returning edge weight
+        Source node.
+    weight : str | callable, default None
+        Name of edge attribute or a callable returning edge weight.
     limit : int, default None
-        limit the number of shortest paths to find
+        Limit the number of shortest paths to find.
 
     Returns
     -------
     dict[object, set], dict[object, int]
-        next hops and distances from the source node to all other nodes
+        Next hops and distances from the source node to all other nodes.
     """
 
     import networkx as nx
@@ -189,14 +198,14 @@ def all_disjoint_paths(g, ff, node_filter=None):
     Parameters
     ----------
     g : networkx.Graph
-        network graph
-    ff : function
-        function for computing the maximum flow among a pair of nodes
+        Network graph.
+    ff : callable
+        Callable for computing the maximum flow among a pair of nodes.
 
     Returns
     -------
     dict[(object, object), list]
-        dictionary of lists of disjoint paths between (src, dst) node pairs
+        Dictionary of lists of disjoint paths between (src, dst) node pairs.
     """
 
     import networkx as nx
@@ -210,19 +219,19 @@ def all_disjoint_paths(g, ff, node_filter=None):
 
 def all_disjoint_paths_scipy(g, ff):
     """
-    Find all disjoint paths between all node pairs in a graph using scipy.
+    Find all disjoint paths between all node pairs in a graph using SciPy.
 
     Parameters
     ----------
     g : networkx.Graph
-        network graph
-    ff : function
-        function for computing the maximum flow among a pair of nodes
+        Network graph.
+    ff : callable
+        Callable for computing the maximum flow among a pair of nodes.
 
     Returns
     -------
     dict[(object, object), list]
-        dictionary of lists of disjoint paths between (src, dst) node pairs
+        Dictionary of lists of disjoint paths between (src, dst) node pairs.
     """
 
     import networkx as nx
@@ -279,12 +288,12 @@ def shortest_disjoint_paths_slow(g):
     Parameters
     ----------
     g : networkx.Graph
-        network graph
+        Network graph.
 
     Returns
     -------
     dict[(object, object), list]
-        dictionary of lists of disjoint paths between (src, dst) node pairs
+        Dictionary of lists of disjoint paths between (src, dst) node pairs.
     """
 
     import networkx as nx
@@ -317,14 +326,14 @@ def shortest_disjoint_paths(g, ff, node_filter=None):
     Parameters
     ----------
     g : networkx.Graph
-        network graph
-    ff : function
-        function for computing the maximum flow among a pair of nodes
+        Network graph.
+    ff : callable
+        Callable for computing the maximum flow among a pair of nodes.
 
     Returns
     -------
     dict[(object, object), list]
-        dictionary of lists of disjoint paths between (src, dst) node pairs
+        Dictionary of lists of disjoint paths between (src, dst) node pairs.
     """
 
     import networkx as nx
@@ -354,16 +363,16 @@ def shortest_disjoint_paths(g, ff, node_filter=None):
 
 def save_topo_graph_pdf(g, filename=None, plot_aspect=1.0):
     """
-    Generate and save topology graph as PDF file using matplotlib.
+    Generate and save a topology graph as a PDF file using matplotlib.
 
     Parameters
     ----------
     g : networkx.Graph
-        network graph
-    filename : str, default None
-        filename
+        Network graph.
+    filename : str | None, default None
+        Output file path without extension. If None, defaults to 'mininet/topo_lib/<graph name>'.
     plot_aspect : float, default 1.0
-        plot aspect ratio
+        Plot aspect ratio.
     """
 
     import networkx as nx
@@ -404,12 +413,12 @@ def minmax(pos):
     Parameters
     ----------
     pos : dict
-        node positions dictionary
+        Node positions dictionary.
 
     Returns
     -------
     (float, float, float, float)
-        max_x, max_y, min_x, min_y
+        Found max_x, max_y, min_x, min_y positions.
     """
 
     min0 = min(v[0] for v in pos.values())
@@ -420,16 +429,21 @@ def minmax(pos):
 
 def save_topo_graph_svg(g, filename=None, scale=None, background=None):
     """
-    Generate and save topology graph as SVG file.
+    Generate and save a topology graph as an SVG file.
 
     Parameters
     ----------
     g : networkx.Graph
-        network graph
-    filename : str, default None
-        filename
-    scaling : bool, default True
-        scale width and height of SVG to topology diameter
+        Network graph.
+    filename : str | None, default None
+        Output file path without extension. If None, defaults to 'mininet/topo_lib/<graph name>'.
+    scale : bool | float | None, default None
+        If None or falsy, uses a scale factor of 1. If True, scales relative to
+        the topology diameter (max span) divided by 250. If a number, uses that
+        value as the scale factor directly.
+    background : list[str] | None, default None
+        Optional list of SVG elements (e.g., path strings) to embed before the
+        graph elements (useful for map backgrounds).
     """
 
     pos = {}
@@ -477,12 +491,13 @@ def path_stats(g, node_filter=None):
     Parameters
     ----------
     g : networkx.Graph
-        network graph
+        Network graph.
 
     Returns
     -------
     dict[(object, object), (int, int, float, int, float, float, float, object, object)]
-        dictionary of paths statistics between (src, dst) node pairs in a format (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst)
+        Dictionary mapping (src, dst) to tuples:
+        (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst).
     """
 
     import networkx as nx
@@ -540,9 +555,9 @@ def path_stats_print(stats, filename=None):
     Parameters
     ----------
     stats : dict
-        dictionary of paths statistics between (src, dst) node pairs
-    filename : str, default None
-        filename
+        Dictionary of path statistics between (src, dst) node pairs.
+    filename : str | None, default None
+        Output file path without extension. If None, prints to stdout.
     """
 
     table = sorted(stats.values(), reverse=True, key=lambda r: (r[0:2], sorted(r[-2:]), r[-1]))
@@ -560,7 +575,9 @@ def calculate_utilization(g, node_filter=None):
     Parameters
     ----------
     g : networkx.Graph
-        network graph
+        Network graph.
+    node_filter : callable | None, default None
+        Predicate on a node attribute dict; only nodes where predicate returns True are considered in uniform/degree demand modes.
     """
 
     nhops = {}
@@ -599,14 +616,14 @@ def topo_stats(g, ps=None):
     Parameters
     ----------
     g : networkx.Graph
-        network graph
-    ps : dict, default None
-        dictionary of paths statistics between (src, dst) node pairs
+        Network graph.
+    ps : dict | None, default None
+        Dictionary of path statistics between (src, dst) node pairs.
 
     Returns
     -------
     dict[str, int | float]
-        dictionary topology properties
+        Dictionary of topology properties.
     """
 
     import networkx as nx
@@ -693,11 +710,11 @@ def topo_stats_print(stats, name, filename=None):
     Parameters
     ----------
     stats : dict
-        dictionary topology properties
+        Dictionary of topology properties.
     name : str
-        topology name
-    filename : str, default None
-        filename
+        Topology name.
+    filename : str | None, default None
+        Output file path without extension. If None, prints to stdout.
     """
 
     just = 38
@@ -731,14 +748,14 @@ def topo_stats_print(stats, name, filename=None):
 
 def write_gml(g, path):
     """
-    Writes a NetworkX graph to a GML format file.
+    Write a NetworkX graph to a GML format file.
 
     Parameters
     ----------
     g : networkx.Graph
-        the input NetworkX graph
-    path : str, default None
-        the file path to write the GML file to
+        Input NetworkX graph.
+    path : str
+        Output file path.
 
     """
     with open(path, 'w') as f:

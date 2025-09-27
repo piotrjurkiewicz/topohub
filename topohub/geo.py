@@ -1,3 +1,12 @@
+"""
+Geographic helpers and region filtering for TopoHub.
+
+This module contains utilities for working with geographic shapes and maps,
+including SVG path parsing, polygon tests, map background generation, and
+GeoPandas-based filtering of nodes by countries/continents. Unless otherwise
+noted, positions use the (longitude, latitude) convention.
+"""
+
 import re
 
 regions = {
@@ -184,6 +193,20 @@ regions = {
 }
 
 def svg_path_to_coordinates(svg_path):
+    """
+    Parse an SVG path string and return a list of coordinates as (lon, lat) tuples.
+
+    Parameters
+    ----------
+    svg_path : str
+        SVG path data string.
+
+    Returns
+    -------
+    list[tuple[float, float]]
+        Sequence of (lon, lat) coordinates. The Y axis is inverted to map SVG
+        screen coordinates to geographic latitude.
+    """
     # Regular expression to match commands and coordinate pairs
     pattern = r'([MmLl])\s*(-?\d+(?:\.\d+)?(?:e-?\d+)?)\s*,?\s*(-?\d+(?:\.\d+)?(?:e-?\d+)?)|(-?\d+(?:\.\d+)?(?:e-?\d+)?)\s*,?\s*(-?\d+(?:\.\d+)?(?:e-?\d+)?)'
 
@@ -214,6 +237,19 @@ def svg_path_to_coordinates(svg_path):
     return coords
 
 def remove_dead_ends(g):
+    """
+    Iterate and remove leaf nodes that are marked as seacable waypoints or have no edges.
+
+    Parameters
+    ----------
+    g : networkx.Graph
+        Input graph.
+
+    Returns
+    -------
+    networkx.Graph
+        Graph with selected dead-end nodes and incident edges removed.
+    """
     while True:
         # Find leaf nodes among the dead ends
         leaf_nodes = [node for node in g.nodes() if g.degree(node) == 0 or g.degree(node) == 1 and g.nodes[node].get('type') == 'Seacable Waypoint']
@@ -227,6 +263,23 @@ def remove_dead_ends(g):
     return g
 
 def point_in_polygon(x, y, polygon):
+    """
+    Ray casting algorithm for testing if a point is inside a polygon.
+
+    Parameters
+    ----------
+    x : float
+        X coordinate (longitude).
+    y : float
+        Y coordinate (latitude).
+    polygon : list[tuple[float, float]]
+        Polygon vertices as (lon, lat) tuples.
+
+    Returns
+    -------
+    bool
+        True if the point lies inside the polygon, False otherwise.
+    """
     n = len(polygon)
     inside = False
     p1x, p1y = polygon[0]
@@ -243,18 +296,57 @@ def point_in_polygon(x, y, polygon):
     return inside
 
 def geometry_to_path(geometry):
+    """
+    Convert a shapely geometry (Polygon or MultiPolygon) to an SVG path string.
+
+    Parameters
+    ----------
+    geometry : shapely.geometry.base.BaseGeometry
+        Geometry to convert.
+
+    Returns
+    -------
+    str
+        SVG path string.
+    """
     if geometry.geom_type == 'Polygon':
         return polygon_to_path(geometry.exterior.coords)
     elif geometry.geom_type == 'MultiPolygon':
         return ' '.join(polygon_to_path(poly.exterior.coords) for poly in geometry.geoms)
 
 def polygon_to_path(coords):
+    """
+    Convert an iterable of polygon coordinates into an SVG path string.
+
+    Parameters
+    ----------
+    coords : iterable[tuple[float, float]]
+        Polygon coordinates as (lon, lat) tuples.
+
+    Returns
+    -------
+    str
+        SVG path string.
+    """
     path_data = f'M {coords[0][0]:.2f},{-coords[0][1]:.2f}'
     path_data += ''.join(f' L {x:.2f},{-y:.2f}' for x, y in coords[1:])
     path_data += ' Z'
     return path_data
 
 def filter_contiguous_us(world):
+    """
+    Extract GeoDataFrame rows representing the contiguous United States.
+
+    Parameters
+    ----------
+    world : geopandas.GeoDataFrame
+        World dataset with polygon geometries.
+
+    Returns
+    -------
+    geopandas.GeoDataFrame
+        GeoDataFrame containing polygons for the contiguous US only.
+    """
     import geopandas as gpd
     # Filter the GeoDataFrame to include only the United States
     us = world[world['NAME'] == 'United States of America']
@@ -285,6 +377,19 @@ def filter_contiguous_us(world):
     return contiguous_us
 
 def filter_mainland_europe(world):
+    """
+    Extract mainland Europe polygons from the world dataset using a bounding box.
+
+    Parameters
+    ----------
+    world : geopandas.GeoDataFrame
+        World dataset with polygon geometries.
+
+    Returns
+    -------
+    geopandas.GeoDataFrame
+        GeoDataFrame containing mainland Europe polygons.
+    """
     import geopandas as gpd
     europe = world[world['CONTINENT'] == 'Europe']
 
@@ -313,6 +418,27 @@ def filter_mainland_europe(world):
     return mainland_europe
 
 def filter_countries(world, include_countries=None, include_continents=None, exclude_countries=None, mainland_only=False):
+    """
+    Build a filtered GeoDataFrame for selected continents/countries.
+
+    Parameters
+    ----------
+    world : geopandas.GeoDataFrame
+        World dataset with polygon geometries.
+    include_countries : list[str] | None
+        Country names to include (match 'NAME' column). Special case: 'US' adds contiguous US polygons.
+    include_continents : list[str] | None
+        Continent names to include (match 'CONTINENT' column). Special case: 'EU' adds mainland Europe.
+    exclude_countries : list[str] | None
+        Country names to exclude.
+    mainland_only : bool, default False
+        Reduce each country's geometry to its mainland (the largest polygon).
+
+    Returns
+    -------
+    geopandas.GeoDataFrame
+        Filtered set of polygons.
+    """
     import pandas as pd
 
     # Apply continent filters
@@ -359,6 +485,25 @@ def filter_countries(world, include_countries=None, include_continents=None, exc
     return filtered
 
 def generate_map(include_continents=None, include_countries=None, exclude_countries=None, mainland_only=False, **kwargs):
+    """
+    Generate SVG path elements for map backgrounds of the selected regions.
+
+    Parameters
+    ----------
+    include_countries : list[str] | None
+        Country names to include.
+    include_continents : list[str] | None
+        Continent names to include.
+    exclude_countries : list[str] | None
+        Country names to exclude.
+    mainland_only : bool, default False
+        If True, reduce countries to their mainland polygons.
+
+    Returns
+    -------
+    list[str]
+        SVG <path> element strings.
+    """
     import geopandas as gpd
     world = gpd.read_file(open('external/geopandas/ne_50m_admin_0_countries_lakes.zip', 'rb'))
     if include_continents or include_countries or exclude_countries:
@@ -374,8 +519,7 @@ def generate_map(include_continents=None, include_countries=None, exclude_countr
 
 def filter_nodes_by_geo(nodes, include_countries=None, include_continents=None, exclude_countries=None, mainland_only=False):
     """
-    Filter node ids to those whose coordinates fall within the selected
-    countries/continents according to GeoPandas names.
+    Filter node ids by country/continent membership using GeoPandas names.
 
     Parameters
     ----------

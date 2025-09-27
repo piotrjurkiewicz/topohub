@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+"""
+Topo generation CLI and helpers for TopoHub.
+
+This module orchestrates generation and saving of topologies using provider
+generators. Unless otherwise noted, node positions are stored as
+(longitude, latitude) tuples.
+"""
 import json
 import os
 import sys
@@ -11,16 +18,58 @@ import topohub.graph
 json.encoder.c_make_encoder = None
 
 class RoundingFloat(float):
+    """Float that pretty-prints with two decimal places for JSON dumps."""
+
     __repr__ = staticmethod(lambda x: format(x, '.2f'))
 
 class TopoGenerator:
+    """
+    Base class for topology generators.
+
+    Subclasses should implement ``generate_topo`` to return a NetworkX node-link
+    format dictionary. Node positions are expected in ``pos`` as (lon, lat) tuples.
+    """
 
     @classmethod
     def generate_topo(cls, *args, **kwargs):
+        """Generate a topology.
+
+        This base implementation returns an empty node-link structure and should be
+        overridden by subclasses.
+
+        Returns
+        -------
+        dict
+            A dictionary compatible with ``networkx.node_link_graph``.
+        """
         return {}
 
     @classmethod
     def save_topo(cls, *args, **kwargs):
+        """Generate, post-process, and save a topology to files.
+
+        Parameters
+        ----------
+        filename : str, optional (keyword-only)
+            Basename of output files (without extension). Defaults to
+            ``mininet/topo_lib/<graph name>``.
+        with_plot : bool, optional
+            If True, save an SVG rendering of the graph.
+        with_utilization : bool, optional
+            If True, compute ECMP utilizations.
+        with_path_stats : bool, optional
+            If True, compute disjoint path statistics.
+        with_topo_stats : bool, optional
+            If True, compute and embed topology statistics in graph attributes.
+        scale : bool | float | None, optional
+            Forwarded to ``topohub.graph.save_topo_graph_svg``.
+        background : list[str] | None, optional
+            SVG elements for background (e.g., map paths).
+
+        Notes
+        -----
+        Nodes are expected to contain ``pos`` as (lon, lat) tuples.
+        """
         g = nx.node_link_graph(cls.generate_topo(*args, **kwargs), edges='edges')
         if 'filename' in kwargs:
             filename = kwargs['filename']
@@ -45,6 +94,16 @@ class TopoGenerator:
         topohub.graph.write_gml(g, f'{filename}.gml')
 
 def main(topo_names):
+    """
+    CLI entry point to generate and save multiple topology sets.
+
+    Parameters
+    ----------
+    topo_names : list[str]
+        A list whose first element selects the provider/group, e.g., 'gabriel',
+        'sndlib', 'topozoo', 'backbone', 'caida'. Remaining behavior is
+        specialized per provider in this function body.
+    """
 
     if topo_names[0] == 'gabriel':
 

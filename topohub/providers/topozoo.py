@@ -1,3 +1,11 @@
+"""
+Internet Topology Zoo provider.
+
+Downloads GML topologies from the Internet Topology Zoo and converts them to
+NetworkX node-link format. Node positions are stored as (longitude, latitude)
+tuples when available in the GML.
+"""
+
 import http.client as http
 
 import topohub.generate
@@ -16,6 +24,19 @@ class TopoZooGenerator(topohub.generate.TopoGenerator):
 
     @classmethod
     def download_topo(cls, name):
+        """
+        Download a GML topology file by name from the Internet Topology Zoo.
+
+        Parameters
+        ----------
+        name : str
+            Topology name (as used by Topology Zoo filenames).
+
+        Returns
+        -------
+        bytes
+            Raw GML file contents.
+        """
 
         con = http.HTTPSConnection("topology-zoo.org", timeout=5)
         con.request('GET', f"/files/{name}.gml")

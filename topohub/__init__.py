@@ -1,11 +1,39 @@
+"""
+TopoHub Python package.
+
+This package provides access to a repository of real-world and synthetic
+network topologies in NetworkX node-link format. Unless otherwise noted,
+node positions are stored as (longitude, latitude) tuples.
+"""
+
 __version__ = '1.4.1'
 
 def get(key, use_names=False):
     """
-    Use this method to obtain topologies from the repository as dicts in node-link format.
+    Load a topology from the embedded repository as a node-link dictionary.
 
-    Example:
+    Parameters
+    ----------
+    key : str
+        Repository key in the form "group/name" (e.g., "gabriel/25/0",
+        "backbone/africa", "topozoo/Abilene", "sndlib/polska").
+    use_names : bool, default False
+        If True, replace integer node IDs with their ``name`` attributes in
+        the returned structure. Not supported for topologies that contain
+        unnamed or duplicate node names (e.g., some "backbone" or "caida").
 
+    Returns
+    -------
+    dict
+        NetworkX node-link dictionary with keys: ``graph``, ``nodes``, ``edges``.
+
+    Raises
+    ------
+    KeyError
+        If the specified topology key cannot be found/read.
+
+    Examples
+    --------
     .. code-block:: python
 
         import networkx as nx

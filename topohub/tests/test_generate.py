@@ -1,3 +1,5 @@
+"""Tests for topology generation and persistence."""
+
 import importlib.resources
 import json
 
@@ -6,6 +8,7 @@ import pytest
 import topohub.providers.gabriel
 
 def test_generate_gabriel():
+    """Generate a small Gabriel topology and validate key fields."""
     graph = topohub.providers.gabriel.GabrielGenerator.generate_topo(25, 25)
     assert graph['directed'] is False
     assert graph['multigraph'] is False
@@ -90,6 +93,7 @@ def test_generate_gabriel():
         assert edge['dist'] == pytest.approx(org['edges'][n]['dist'])
 
 def test_save_gabriel(tmp_path):
+    """Save generated topologies to JSON and compare with canonical data."""
     for s in [25, 50, 75, 100]:
         for i in [0, 1]:
             topohub.providers.gabriel.GabrielGenerator.save_topo(s, (i * topohub.providers.gabriel.MAX_GABRIEL_NODES) + s, filename=f'{tmp_path}/gabriel/{s}/{i}',

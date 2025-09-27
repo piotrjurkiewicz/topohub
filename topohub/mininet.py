@@ -1,3 +1,16 @@
+"""
+Mininet helpers for TopoHub.
+
+This module exposes utilities to obtain Mininet ``Topo`` classes directly
+from TopoHub's embedded repository. It also provides convenience topologies
+that automatically attach hosts/bridges to each switch.
+
+Notes
+-----
+- Topologies are loaded from node-link dictionaries returned by ``topohub.get``.
+- Coordinates in the repository follow the (longitude, latitude) convention.
+"""
+
 import mininet
 import mininet.node
 import mininet.topo
@@ -5,19 +18,21 @@ import mininet.topo
 import topohub
 
 class Demands(dict):
-    """Demands dictionary"""
+    """Dictionary of traffic demands between node pairs with convenience helpers."""
+
     def __missing__(self, key):
+        """Return the default demand value (0.0) when a key is missing."""
         return 0.0
 
     @property
     def maximum(self):
         """
-        The maximum demand value in the dictionary.
+        Maximum demand value in the dictionary.
 
         Returns
         -------
         float
-            maximum demand value
+            Maximum demand value, or 0.0 if the dictionary is empty.
         """
         try:
             return self.__maximum
@@ -34,19 +49,19 @@ class Demands(dict):
 
         Parameters
         ----------
-        k : (str, str)
-            (src, dst) node pair
+        k : tuple[str, str]
+            Pair ``(src, dst)`` of node identifiers.
         default : float, default 0.0
-            default demand to return if not specified in the dictionary
-        sym: bool, default False
-            return demand for (dst, src) instead default if demand for (src, dst) not specified in dictionary
-        norm: bool, default False
-            normalize returned demands to [0.0 - 1.0]
+            Default demand if the pair is not present.
+        sym : bool, default False
+            If True, return demand for ``(dst, src)`` when ``(src, dst)`` is missing.
+        norm : bool, default False
+            If True, normalize the returned demand by the maximum demand value to [0.0, 1.0].
 
         Returns
         -------
         float
-            demand between pair of nodes
+            Demand value between the pair of nodes.
         """
         if k in self:
             val = self[k]
@@ -64,10 +79,18 @@ class Demands(dict):
         return val
 
 class JSONTopo(mininet.topo.Topo):
+    """
+    Mininet Topo built from a NetworkX node-link dictionary.
+
+    Expects ``topo_json`` class attribute to be set to a node-link dictionary
+    with keys: ``graph``, ``nodes``, and ``edges``.
+    """
+
     demands = Demands()
     topo_json = {}
 
     def build(self, *args, **params):
+        """Build the topology using the ``topo_json`` node-link dictionary."""
         topo = self.topo_json
 
         if 'demands' in topo['graph']:
@@ -84,19 +107,40 @@ class JSONTopo(mininet.topo.Topo):
         super(JSONTopo, self).build(**params)
 
 def make_topo_class_from_json(name, topo):
+    """
+    Dynamically construct a Mininet ``Topo`` subclass from a node-link dictionary.
+
+    Parameters
+    ----------
+    name : str
+        Topology key or descriptive name.
+    topo : dict
+        NetworkX node-link dictionary.
+
+    Returns
+    -------
+    type
+        A ``Topo`` subclass with ``name`` and ``topo_json`` attributes set.
+    """
     cls_name = name.title().replace('/', '_')
     cls = type(str(cls_name), (JSONTopo,), {'name': name, 'topo_json': topo})
     return cls
 
 class TopoClsDict(dict):
+    """Lazy map from repository keys to generated Mininet Topo classes."""
+
     def __missing__(self, key):
+        """Load a topology and construct a ``Topo`` subclass for the given key."""
         topo = topohub.get(key)
         cls = make_topo_class_from_json(key, topo)
         self[key] = cls
         return cls
 
 class TopoNamedClsDict(dict):
+    """Lazy map from repository keys to Mininet Topo classes using node names."""
+
     def __missing__(self, key):
+        """Load a topology (using node names) and return a ``Topo`` subclass."""
         topo = topohub.get(key, use_names=True)
         cls = make_topo_class_from_json(key, topo)
         self[key] = cls
@@ -113,7 +157,7 @@ Example:
 
     import mininet.net
     import topohub.mininet
-    
+
     # Obtain Mininet Topo classes for topologies stored in the repository
     topo_cls = topohub.mininet.TOPO_CLS['gabriel/25/0']
     topo_cls = topohub.mininet.TOPO_CLS['backbone/africa']
@@ -156,9 +200,17 @@ Example:
 """
 
 class AutoHostTopo(mininet.topo.Topo):
-    """Adds k hosts per switch"""
+    """
+    Topology that adds ``k`` hosts per switch.
+
+    Parameters
+    ----------
+    k : int, default 1
+        Number of hosts to attach to each switch.
+    """
 
     def build(self, k=1, **params):
+        """Attach ``k`` hosts to every switch in the topology."""
         super(AutoHostTopo, self).build(**params)
 
         for sw in self.switches():
@@ -167,9 +219,19 @@ class AutoHostTopo(mininet.topo.Topo):
                 self.addLink(h, sw)
 
 class AutoHostBridgeTopo(mininet.topo.Topo):
-    """Adds b bridges, each with k hosts, per switch"""
+    """
+    Topology that adds ``b`` bridges per switch, each with ``k`` hosts.
+
+    Parameters
+    ----------
+    b : int, default 1
+        Number of bridges to attach to each switch.
+    k : int, default 1
+        Number of hosts to attach to each bridge.
+    """
 
     def build(self, b=1, k=1, **params):
+        """Attach ``b`` bridges per switch and ``k`` hosts per bridge."""
         super(AutoHostBridgeTopo, self).build(**params)
 
         for sw in self.switches():

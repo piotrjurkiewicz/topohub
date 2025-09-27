@@ -1,3 +1,10 @@
+"""
+Backbone synthetic topology provider.
+
+Generates synthetic backbone-style topologies from TopoGen JSON definitions.
+Node positions are stored as (longitude, latitude) tuples.
+"""
+
 import json
 import networkx as nx
 
@@ -14,17 +21,18 @@ class BackboneGenerator(topohub.generate.TopoGenerator):
     @classmethod
     def generate_topo(cls, name, **kwargs):
         """
-        Generate given backbone topology.
+        Generate the specified backbone topology.
 
         Parameters
         ----------
         name : str
-            name
+            Topology key identifying the region, e.g., 'africa' or 'africa_nosc'.
 
         Returns
         -------
         dict
-            topology graph in NetworkX node-link format
+            Topology graph in NetworkX node-link format. Node positions are
+            stored as (lon, lat) tuples.
         """
         import topohub.geo
 

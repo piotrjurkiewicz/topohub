@@ -1,3 +1,10 @@
+"""
+SNDlib topology provider.
+
+Downloads native SNDlib topologies and converts them to NetworkX node-link
+format. Node positions are stored as (longitude, latitude) tuples.
+"""
+
 import http.client as http
 
 import topohub.generate
@@ -16,6 +23,19 @@ class SNDlibGenerator(topohub.generate.TopoGenerator):
 
     @classmethod
     def download_topo(cls, name):
+        """
+        Download a native SNDlib topology text file by name.
+
+        Parameters
+        ----------
+        name : str
+            Topology identifier as used in SNDlib native filenames.
+
+        Returns
+        -------
+        bytes
+            Raw file contents.
+        """
 
         con = http.HTTPSConnection("sndlib.put.poznan.pl", timeout=5)
         con.request('GET', "/download/sndlib-networks-native/%s.txt" % name)
@@ -48,7 +68,6 @@ class SNDlibGenerator(topohub.generate.TopoGenerator):
         next_id = 0
 
         for line in cls.download_topo(name).splitlines():
-
             line = line.decode()
 
             if not mode:

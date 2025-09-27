@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+"""
+CAIDA topology provider.
+
+Parses CAIDA Ark datasets to build ASN-specific undirected graphs. Node
+positions are stored as (longitude, latitude) tuples. Includes optional
+geo-filtering and node merging by identical or close positions.
+"""
 import subprocess
 
 import networkx as nx
@@ -16,6 +23,23 @@ NODE_TO_GEO = None
 ADJACENCY = None
 
 def parse_nodes_as(path, asn=None, grep=True):
+    """
+    Parse CAIDA node-to-ASN mappings.
+
+    Parameters
+    ----------
+    path : str
+        Path to the midar-iff.nodes.as file.
+    asn : int | None, default None
+        If provided, filter to a specific ASN.
+    grep : bool, default True
+        Use external grep to speed up filtering for large files.
+
+    Returns
+    -------
+    dict[int, set[int]]
+        Mapping ASN -> set of node IDs.
+    """
     if asn and grep:
         output = subprocess.run(["grep", f"\t{asn}\t", path], stdout=subprocess.PIPE)
         f = output.stdout.decode("utf-8").splitlines()
@@ -45,6 +69,24 @@ def parse_nodes_as(path, asn=None, grep=True):
     return asn_to_nodes
 
 def parse_nodes_geo(path, nodes=None, grep=True):
+    """
+    Parse CAIDA node geolocation data.
+
+    Parameters
+    ----------
+    path : str
+        Path to the midar-iff.nodes.geo file.
+    nodes : Iterable[int] | None, default None
+        If provided, limit parsing to these node IDs.
+    grep : bool, default True
+        Use external grep to speed up filtering for large files.
+
+    Returns
+    -------
+    dict[int, tuple[str, ...]]
+        Mapping node ID -> tuple of fields (as provided by CAIDA). Consumers
+        should extract city, latitude, longitude and convert to floats as needed.
+    """
     if nodes is not None and grep:
         regexp = "\n".join(f"N{node}:" for node in nodes).encode("utf-8")
         output = subprocess.run(["grep", "-Ff", "-", path], input=regexp, stdout=subprocess.PIPE)
@@ -70,6 +112,23 @@ def parse_nodes_geo(path, nodes=None, grep=True):
     return node_to_geo
 
 def parse_links(path, nodes=None, grep=True):
+    """
+    Parse undirected adjacency from the CAIDA links file.
+
+    Parameters
+    ----------
+    path : str
+        Path to midar-iff.links file.
+    nodes : Iterable[int] | None, default None
+        If provided, include links only among this node subset.
+    grep : bool, default True
+        Use external grep to speed up filtering for large files.
+
+    Returns
+    -------
+    dict[int, set[int]]
+        Undirected adjacency list (both directions present).
+    """
     if nodes is not None and grep:
         regexp = "\n".join(f"N{node}" for node in nodes).encode("utf-8")
         output = subprocess.run(["grep", "-Ff", "-", path], input=regexp, stdout=subprocess.PIPE)
@@ -117,13 +176,15 @@ def parse_links(path, nodes=None, grep=True):
 
 def merge_nodes_by_pos(selected_with_pos, adjacency, distance_km=None):
     """
-    Merge nodes that share the same location (lon, lat). Representative selection rules:
-    1) Among nodes which have a city name, select a node whose city name is most common in the group;
+    Merge nodes that share the same coordinates or are within a threshold distance.
+
+    Representative selection rules within each group:
+    1) Among nodes which have a city name, select a node whose city name is most common;
     2) If all city names occur equally often, select the lowest node id among named nodes;
     3) If there are no nodes with names, select the lowest node id.
 
-    If distance_km is provided, also merge nodes within the given distance threshold (in kilometers)
-    after the exact-position grouping using the same representative selection rules on the combined group.
+    If ``distance_km`` is provided, a second pass merges groups whose representatives are within
+    the given distance (in kilometers), using the same selection rules on the combined group.
 
     Parameters
     ----------
@@ -131,15 +192,14 @@ def merge_nodes_by_pos(selected_with_pos, adjacency, distance_km=None):
         Mapping from node id to (lon, lat, city) for nodes selected for the graph.
     adjacency : dict[int, set[int]]
         Undirected adjacency list of nodes.
-    distance_km : float | None
-        If None, merge nodes with the exact same lat /lon. If provided, merge nodes whose
-        haversine distance is <= distance_km.
+    distance_km : float | None, default None
+        If None, merge nodes only with the exact same (lon, lat). If provided, also merge nodes whose
+        haversine distance is <= ``distance_km``.
 
     Returns
     -------
-    merged_selected : dict[int, (float, float, str)]
-        Mapping from representative node id to (lon, lat, city).
-    merged_adjacency : dict[int, set[int]]
+    tuple[dict[int, (float, float, str)], dict[int, set[int]]]
+        positions remain as (lon, lat) tuples.
     """
 
     if not selected_with_pos:
@@ -248,6 +308,35 @@ def merge_nodes_by_pos(selected_with_pos, adjacency, distance_km=None):
 
 def graph(asn, distance_km=None, include_countries=None, include_continents=None, exclude_countries=None,
           mainland_only=False):
+    """
+    Build an ASN-specific undirected graph from CAIDA data.
+
+    Nodes are assigned positions as (lon, lat) tuples and optional city names.
+    Optionally, nodes at the same or nearby coordinates can be merged to reduce
+    clutter, and nodes can be filtered by geographic regions.
+
+    Parameters
+    ----------
+    asn : int | str
+        Target ASN to extract.
+    distance_km : float | None, default None
+        Merge nodes within this geographic distance after exact-position grouping.
+    include_countries : list[str] | None
+        Country names to include.
+    include_continents : list[str] | None
+        Continent names to include (supports 'EU' expansion in geo module).
+    exclude_countries : list[str] | None
+        Country names to exclude.
+    mainland_only : bool, default False
+        If True, reduce countries to their mainland polygons during filtering.
+
+    Returns
+    -------
+    tuple[dict[int, dict], list[dict]]
+        (nodes, edges) for building a NetworkX node-link graph. Each node has
+        'pos': (lon, lat) and optional 'name' attributes. Each edge has 'source', 'target',
+        and 'dist' (km).
+    """
     asn = int(asn)
     print("ASN requested:", asn)
 
@@ -344,12 +433,22 @@ class CaidaGenerator(topohub.generate.TopoGenerator):
     def generate_topo(cls, name, distance_km=None, include_countries=None, include_continents=None,
                       exclude_countries=None, mainland_only=False, **kwargs):
         """
-        Generate CAIDA topology.
+        Generate a CAIDA ASN topology in NetworkX node-link format.
 
         Parameters
         ----------
         name : str
-            name
+            ASN identifier (as string or number).
+        distance_km : float | None, default None
+            Merge nodes within this distance (kilometers) after grouping by identical coordinates.
+        include_countries : list[str] | None
+            Country names to include.
+        include_continents : list[str] | None
+            Continent names to include (supports 'EU' expansion).
+        exclude_countries : list[str] | None
+            Country names to exclude.
+        mainland_only : bool, default False
+            If True, reduce countries to their mainland polygons during filtering.
 
         Returns
         -------
