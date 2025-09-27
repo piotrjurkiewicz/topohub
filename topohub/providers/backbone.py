@@ -12,7 +12,7 @@ class BackboneGenerator(topohub.generate.TopoGenerator):
     """
 
     @classmethod
-    def generate_topo(cls, name):
+    def generate_topo(cls, name, **kwargs):
         """
         Generate given backbone topology.
 

@@ -24,7 +24,7 @@ class SNDlibGenerator(topohub.generate.TopoGenerator):
         return data
 
     @classmethod
-    def generate_topo(cls, name):
+    def generate_topo(cls, name, **kwargs):
         """
         Download topology specified by name from SNDlib and generate its JSON.
 

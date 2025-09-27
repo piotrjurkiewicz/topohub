@@ -16,12 +16,12 @@ class RoundingFloat(float):
 class TopoGenerator:
 
     @classmethod
-    def generate_topo(cls, *args):
+    def generate_topo(cls, *args, **kwargs):
         return {}
 
     @classmethod
     def save_topo(cls, *args, **kwargs):
-        g = nx.node_link_graph(cls.generate_topo(*args), edges='edges')
+        g = nx.node_link_graph(cls.generate_topo(*args, **kwargs), edges='edges')
         if 'filename' in kwargs:
             filename = kwargs['filename']
         else:

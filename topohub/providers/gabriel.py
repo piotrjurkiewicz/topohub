@@ -95,7 +95,7 @@ class NumpyGabrielGenerator(topohub.generate.TopoGenerator):
     """
 
     @classmethod
-    def generate_topo(cls, nnodes, seed):
+    def generate_topo(cls, nnodes, seed, **kwargs):
         """
         Generate Gabriel graph topology with a given number of nodes.
 

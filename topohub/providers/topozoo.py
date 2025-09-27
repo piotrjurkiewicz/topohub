@@ -24,7 +24,7 @@ class TopoZooGenerator(topohub.generate.TopoGenerator):
         return data
 
     @classmethod
-    def generate_topo(cls, name):
+    def generate_topo(cls, name, **kwargs):
         """
         Download topology specified by name from Topology Zoo and generate its JSON.
 
