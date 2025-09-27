@@ -312,7 +312,7 @@ def filter_mainland_europe(world):
 
     return mainland_europe
 
-def filter_countries(world, include_countries=None, include_continents=None, exclude_countries=None):
+def filter_countries(world, include_countries=None, include_continents=None, exclude_countries=None, mainland_only=False):
     import pandas as pd
 
     # Apply continent filters
@@ -345,13 +345,24 @@ def filter_countries(world, include_countries=None, include_continents=None, exc
     if exclude_countries:
         filtered = filtered[~filtered['NAME'].isin(exclude_countries)]
 
+    if mainland_only and not filtered.empty:
+        # Reduce each country's geometry to its mainland (largest polygon)
+        import geopandas as gpd
+        geoms = []
+        for _, row in filtered.iterrows():
+            geom = row.geometry
+            if geom.geom_type == 'MultiPolygon':
+                geom = max(geom.geoms, key=lambda g: g.area)
+            geoms.append(geom)
+        filtered = gpd.GeoDataFrame(geometry=geoms, crs=world.crs)
+
     return filtered
 
-def generate_map(include_continents=None, include_countries=None, exclude_countries=None):
+def generate_map(include_continents=None, include_countries=None, exclude_countries=None, mainland_only=False, **kwargs):
     import geopandas as gpd
     world = gpd.read_file(open('external/geopandas/ne_50m_admin_0_countries_lakes.zip', 'rb'))
     if include_continents or include_countries or exclude_countries:
-        filtered_world = filter_countries(world, include_countries, include_continents, exclude_countries)
+        filtered_world = filter_countries(world, include_countries, include_continents, exclude_countries, mainland_only)
     else:
         filtered_world = world
     background = []
@@ -359,6 +370,58 @@ def generate_map(include_continents=None, include_countries=None, exclude_countr
         path_data = geometry_to_path(country.geometry)
         background.append(f'<path class="country" d="{path_data}"/>\n')
     return background
+
+
+def filter_nodes_by_geo(nodes, include_countries=None, include_continents=None, exclude_countries=None, mainland_only=False):
+    """
+    Filter node ids to those whose coordinates fall within the selected
+    countries/continents according to GeoPandas names.
+
+    Parameters
+    ----------
+    nodes : dict[int, (float, float, str)]
+        Mapping of node id to (lat, lon, city) floats for nodes to consider.
+    include_countries : list[str] | None
+        List of country names to include (values must match the 'NAME' column in the world dataset).
+    include_continents : list[str] | None
+        List of continent names to include (values must match the 'CONTINENT' column or special aliases like 'EU').
+    exclude_countries : list[str] | None
+        List of country names to exclude.
+    mainland_only : bool, default False
+        If True, restrict each country's geometry to its mainland (largest polygon). Special-case for the US uses contiguous US polygons.
+
+    Returns
+    -------
+    dict[int, (float, float, str)]
+        A shallow copy of the mapping limited to nodes located within the selected geographic regions.
+    """
+
+    import geopandas as gpd
+    from shapely.geometry import Point
+
+    if not include_countries and not include_continents and not exclude_countries:
+        return dict(nodes)
+
+    # Load world polygons
+    world = gpd.read_file(open('external/geopandas/ne_50m_admin_0_countries_lakes.zip', 'rb'))
+    filtered_world = filter_countries(world, include_countries, include_continents, exclude_countries, mainland_only)
+
+    if filtered_world.empty:
+        return {}
+
+    # Build a unified geometry of all selected regions
+    # MultiPolygon/GeometryCollection
+    region_union = filtered_world.unary_union
+
+    # Iterate nodes and keep those within the union geometry
+    kept = {}
+    for n, pos in nodes.items():
+        p = Point(pos[0], pos[1])
+        # Use 'covers' so points on boundaries are included
+        if region_union.covers(p):
+            kept[n] = pos
+
+    return kept
 
 
 if __name__ == '__main__':

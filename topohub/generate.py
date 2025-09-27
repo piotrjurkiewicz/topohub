@@ -441,20 +441,18 @@ def main(topo_names):
         gen = topohub.providers.caida.CaidaGenerator
 
         topo_names = {
-            '3356': {'include_continents': ['all']},
+            # '3215': {'distance_km': 25, 'include_countries': ['France'], 'mainland_only': True},
+            '3356': {'distance_km': 25, 'include_countries': ['US'], 'mainland_only': True},
+            '5617': {'distance_km': 25, 'include_countries': ['Poland'], 'mainland_only': True},
+            # '12741': {'distance_km': 25, 'include_countries': ['Poland'], 'mainland_only': True},
+            # '20965': {'distance_km': 25, 'include_continents': ['EU']},
         }
 
         for topo_name in topo_names:
             background = []
             if topo_names[topo_name]:
                 background = topohub.geo.generate_map(**topo_names[topo_name])
-            # region = topohub.backbone.regions.get(topo_name)
-            # if topo_name.endswith('_nosc'):
-            #     region = topohub.backbone.regions.get(topo_name[:-5])
-            # if region:
-            #     path_data = topohub.backbone.polygon_to_path(region)
-            #     background.append(f'<path class="selection" vector-effect="non-scaling-stroke" d="{path_data}"/>\n')
-            gen.save_topo(topo_name, filename=f'data/caida/{topo_name}', with_plot=True, with_utilization=False, with_path_stats=False, with_topo_stats=False, background=background, scale=0.1)
+            gen.save_topo(topo_name, filename=f'data/caida/{topo_name}', with_plot=True, with_utilization=False, with_path_stats=False, with_topo_stats=False, background=background, scale=True, **topo_names[topo_name])
 
 
 if __name__ == '__main__':
