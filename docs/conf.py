@@ -48,10 +48,10 @@ manpages_url = 'https://manpages.debian.org/{path}'
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3', None),
     'numpy': ('https://numpy.org/doc/stable/', None),
-    'scipy': ('https://docs.scipy.org/doc/scipy/reference', None),
-    'matplotlib': ('https://matplotlib.org', None),
+    'scipy': ('https://docs.scipy.org/doc/scipy/', None),
+    'matplotlib': ('https://matplotlib.org/stable/', None),
     'pandas': ('https://pandas.pydata.org/docs/', None),
-    'networkx': ('https://networkx.org/documentation/stable/release/', None)
+    'networkx': ('https://networkx.org/documentation/stable/', None),
 }
 
 rst_epilog = open('epilog.rst').read()
@@ -73,3 +73,14 @@ html_theme_options = {
 html_static_path = ['_static']
 
 add_module_names = False
+
+# Mock heavy optional imports so autodoc can import modules without these being installed
+autodoc_mock_imports = [
+    'mininet',
+    'networkx',
+    'geopandas',
+    'shapely',
+    'pandas',
+    'scipy',
+    'matplotlib',
+]
