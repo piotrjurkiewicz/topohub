@@ -9,7 +9,7 @@ The definition of each topology is stored in a JSON file constructed according t
 
 - The ``graph`` field, consisting of: the topology ``name``, the ``demands`` object holding demands between pairs of nodes if given by the original source topology, and the ``stats`` object, containing pre-calculated topology statistical properties.
 
-- The ``nodes`` field, containing a list of nodes in the topology, along with their positions, stored as latitude and longitude pairs in the ``pos`` arrays.
+- The ``nodes`` field, containing a list of nodes in the topology, along with their positions, stored as longitude and latitude pairs (``lon``, ``lat``) in the ``pos`` arrays.
 
 - The ``edges`` field, containing a list of links in the topology, defined by ``source`` and ``target`` node names. The edge objects also contain the ``dist`` field providing the link length in kilometers, and ``ecmp_fwd`` and ``ecmp_bwd`` fields. They contain pre-calculated links percentage utilization in forward and backward directions for the case of ECMP shortest path routing being used in the network.
 

@@ -267,14 +267,14 @@ def graph(asn, distance_km=None, include_countries=None, include_continents=None
     else:
         node_to_geo = NODE_TO_GEO
 
-    # Filter to nodes with geo data and materialize float lat/lon for later use
+    # Filter to nodes with geo data and materialize float lon/lat for later use
     selected_with_pos = {}
     for n in selected:
         if n in node_to_geo:
             *_, city, lat, lon = node_to_geo[n]
             selected_with_pos[n] = (float(lon), float(lat), city)
-    print("Nodes selected (with lat/lon):", len(selected_with_pos))
-    print("Nodes dropped (no lat/lon):", len(selected) - len(selected_with_pos))
+    print("Nodes selected (with lon/lat):", len(selected_with_pos))
+    print("Nodes dropped (no lon/lat):", len(selected) - len(selected_with_pos))
 
     # Optional geographic filter by countries/continents
     if include_countries or include_continents:

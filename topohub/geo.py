@@ -380,7 +380,7 @@ def filter_nodes_by_geo(nodes, include_countries=None, include_continents=None, 
     Parameters
     ----------
     nodes : dict[int, (float, float, str)]
-        Mapping of node id to (lat, lon, city) floats for nodes to consider.
+        Mapping of node id to (lon, lat, city) floats for nodes to consider.
     include_countries : list[str] | None
         List of country names to include (values must match the 'NAME' column in the world dataset).
     include_continents : list[str] | None
