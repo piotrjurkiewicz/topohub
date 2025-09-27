@@ -1,32 +1,32 @@
-topohub package
-===============
+topohub
+=======
 
 .. automodule:: topohub
    :members:
 
-topohub.geo module
------------------------
+topohub.geo
+-----------
 
 .. automodule:: topohub.geo
    :members:
    :show-inheritance:
 
-topohub.generate module
------------------------
+topohub.generate
+----------------
 
 .. automodule:: topohub.generate
    :members:
    :show-inheritance:
 
-topohub.graph module
----------------------------
+topohub.graph
+-------------
 
 .. automodule:: topohub.graph
    :members:
    :show-inheritance:
 
-topohub.mininet module
------------------------
+topohub.mininet
+---------------
 
 .. automodule:: topohub.mininet
    :members:

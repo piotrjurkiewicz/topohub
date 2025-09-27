@@ -8,6 +8,14 @@ The Python package consists of a top-level helper function `topohub.get()` and t
 - ``topohub.graph``
 - ``topohub.mininet``
 
+Additionally, the ``topohub.providers`` package contains topology generator classes for multiple data sources and models:
+
+- ``topohub.providers.gabriel`` — synthetic Gabriel graph generator
+- ``topohub.providers.sndlib`` — SNDlib topologies downloader/converter
+- ``topohub.providers.topozoo`` — Internet Topology Zoo downloader/converter
+- ``topohub.providers.backbone`` — synthetic backbone generator
+- ``topohub.providers.caida`` — CAIDA Ark ASN graphs processor
+
 The helper function can be used to obtain topologies dicts from JSON files stored in the repository and create NetworkX graph objects basing on them:
 
 .. code-block:: python
