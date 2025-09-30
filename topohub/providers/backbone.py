@@ -19,7 +19,7 @@ class BackboneGenerator(topohub.generate.TopoGenerator):
     """
 
     @classmethod
-    def generate_topo(cls, name, **kwargs):
+    def generate_topo(cls, name, **kwargs) -> dict:
         """
         Generate the specified backbone topology.
 
@@ -27,6 +27,8 @@ class BackboneGenerator(topohub.generate.TopoGenerator):
         ----------
         name : str
             Topology key identifying the region, e.g., 'africa' or 'africa_nosc'.
+        **kwargs : dict
+            Additional options reserved for future use (currently unused).
 
         Returns
         -------
@@ -35,6 +37,7 @@ class BackboneGenerator(topohub.generate.TopoGenerator):
             stored as (lon, lat) tuples.
         """
         import topohub.geo
+        _ = kwargs
 
         j = json.load(open('external/backbone/graph.json'))
 

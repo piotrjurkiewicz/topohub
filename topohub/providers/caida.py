@@ -431,7 +431,7 @@ class CaidaGenerator(topohub.generate.TopoGenerator):
 
     @classmethod
     def generate_topo(cls, name, distance_km=None, include_countries=None, include_continents=None,
-                      exclude_countries=None, mainland_only=False, **kwargs):
+                      exclude_countries=None, mainland_only=False, **kwargs) -> dict:
         """
         Generate a CAIDA ASN topology in NetworkX node-link format.
 
@@ -449,12 +449,16 @@ class CaidaGenerator(topohub.generate.TopoGenerator):
             Country names to exclude.
         mainland_only : bool, default False
             If True, reduce countries to their mainland polygons during filtering.
+        **kwargs : dict
+            Additional options reserved for future use (currently unused).
 
         Returns
         -------
         dict
             topology graph in NetworkX node-link format
         """
+
+        _ = kwargs
 
         nodes, edges = graph(name, distance_km, include_countries, include_continents, exclude_countries, mainland_only)
 

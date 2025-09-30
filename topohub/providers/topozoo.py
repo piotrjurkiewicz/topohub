@@ -23,7 +23,7 @@ class TopoZooGenerator(topohub.generate.TopoGenerator):
     """
 
     @classmethod
-    def download_topo(cls, name):
+    def download_topo(cls, name) -> bytes:
         """
         Download a GML topology file by name from the Internet Topology Zoo.
 
@@ -45,7 +45,7 @@ class TopoZooGenerator(topohub.generate.TopoGenerator):
         return data
 
     @classmethod
-    def generate_topo(cls, name, **kwargs):
+    def generate_topo(cls, name, **kwargs) -> dict:
         """
         Download topology specified by name from Topology Zoo and generate its JSON.
 
@@ -53,12 +53,16 @@ class TopoZooGenerator(topohub.generate.TopoGenerator):
         ----------
         name : str
             topology name
+        **kwargs : dict
+            Additional options reserved for future use (currently unused).
 
         Returns
         -------
         dict
             topology graph in NetworkX node-link format
         """
+
+        _ = kwargs
 
         mode = None
         node_id, node, lon, lat, node0_id, node1_id = None, None, None, None, None, None

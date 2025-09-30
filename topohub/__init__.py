@@ -80,6 +80,9 @@ def get(key, use_names=False):
 
     try:
         topo = json.load((importlib.resources.files(topohub) / f'data/{key}.json').open())
+    except OSError as err:
+        raise KeyError from err
+    else:
         if use_names:
             id_to_name = {}
             name_to_id = {}
@@ -98,5 +101,3 @@ def get(key, use_names=False):
         else:
             topo['graph']['demands'] = {int(n): {int(k): v for k, v in dems.items()} for n, dems in topo['graph']['demands'].items()}
         return topo
-    except OSError:
-        raise KeyError

@@ -30,6 +30,6 @@ setup(
         "Topic :: System :: Networking",
         "Intended Audience :: Science/Research",
         "Intended Audience :: System Administrators",
-        "Intended Audience :: Telecommunications Industry"
-    ]
+        "Intended Audience :: Telecommunications Industry",
+    ],
 )

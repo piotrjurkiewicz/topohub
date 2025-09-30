@@ -22,7 +22,7 @@ class SNDlibGenerator(topohub.generate.TopoGenerator):
     """
 
     @classmethod
-    def download_topo(cls, name):
+    def download_topo(cls, name) -> bytes:
         """
         Download a native SNDlib topology text file by name.
 
@@ -44,7 +44,7 @@ class SNDlibGenerator(topohub.generate.TopoGenerator):
         return data
 
     @classmethod
-    def generate_topo(cls, name, **kwargs):
+    def generate_topo(cls, name, **kwargs) -> dict:
         """
         Download topology specified by name from SNDlib and generate its JSON.
 
@@ -52,12 +52,16 @@ class SNDlibGenerator(topohub.generate.TopoGenerator):
         ----------
         name : str
             topology name
+        **kwargs : dict
+            Additional options reserved for future use (currently unused).
 
         Returns
         -------
         dict
             topology graph in NetworkX node-link format
         """
+
+        _ = kwargs
 
         mode = None
         nodes = []

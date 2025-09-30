@@ -27,7 +27,7 @@ class GabrielGenerator(topohub.generate.TopoGenerator):
     """
 
     @classmethod
-    def generate_topo(cls, nnodes, seed, **kwargs):
+    def generate_topo(cls, nnodes, seed, **kwargs) -> dict:
         """
         Generate Gabriel graph topology with a given number of nodes.
 
@@ -37,6 +37,8 @@ class GabrielGenerator(topohub.generate.TopoGenerator):
             Number of nodes.
         seed : int
             Random seed.
+        **kwargs : dict
+            Additional options reserved for future use (currently unused).
 
         Returns
         -------
@@ -44,6 +46,8 @@ class GabrielGenerator(topohub.generate.TopoGenerator):
             Topology graph in NetworkX node-link format. Node positions are
             2D planar coordinates (not geographic lon/lat).
         """
+
+        _ = kwargs
 
         assert nnodes <= MAX_GABRIEL_NODES
 
@@ -101,7 +105,7 @@ class NumpyGabrielGenerator(topohub.generate.TopoGenerator):
     """
 
     @classmethod
-    def generate_topo(cls, nnodes, seed, **kwargs):
+    def generate_topo(cls, nnodes, seed, **kwargs) -> dict:
         """
         Generate a Gabriel graph topology with a given number of nodes.
 
@@ -111,6 +115,8 @@ class NumpyGabrielGenerator(topohub.generate.TopoGenerator):
             number of nodes
         seed : int
             random seed
+        **kwargs : dict
+            Additional options reserved for future use (currently unused).
 
         Returns
         -------
@@ -119,6 +125,7 @@ class NumpyGabrielGenerator(topohub.generate.TopoGenerator):
         """
 
         import numpy as np
+        _ = kwargs
 
         assert nnodes <= MAX_GABRIEL_NODES
 

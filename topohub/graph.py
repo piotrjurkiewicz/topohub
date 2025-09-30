@@ -32,13 +32,13 @@ def haversine(src, dst):
 
     (lon0, lat0) = src
     (lon1, lat1) = dst
-    R = 6372.8
+    radius = 6372.8
     d_lat = math.radians(lat1 - lat0)
     d_lon = math.radians(lon1 - lon0)
     lat0 = math.radians(lat0)
     lat1 = math.radians(lat1)
     a = math.sin(d_lat / 2) ** 2 + math.cos(lat0) * math.cos(lat1) * math.sin(d_lon / 2) ** 2
-    return R * 2 * math.asin(math.sqrt(a))
+    return radius * 2 * math.asin(math.sqrt(a))
 
 def gini(list_of_values):
     """
@@ -201,6 +201,9 @@ def all_disjoint_paths(g, ff, node_filter=None):
         Network graph.
     ff : callable
         Callable for computing the maximum flow among a pair of nodes.
+    node_filter : callable | None, default None
+        Predicate on a node attribute dict; only nodes where predicate returns
+        True are considered.
 
     Returns
     -------
@@ -236,6 +239,8 @@ def all_disjoint_paths_scipy(g, ff):
 
     import networkx as nx
     import scipy.sparse
+    # Silence Ruff about unused argument
+    _ = ff
     mat = nx.convert_matrix.to_scipy_sparse_matrix(g)
     result = {}
     i_to_node = {}
@@ -245,11 +250,11 @@ def all_disjoint_paths_scipy(g, ff):
         node_to_i[node] = n
     for s, t in itertools.permutations(g, 2):
         r = scipy.sparse.csgraph.maximum_flow(mat, node_to_i[s], node_to_i[t])
-        R = nx.convert_matrix.from_scipy_sparse_matrix(r.residual, edge_attribute='flow', create_using=nx.DiGraph)
-        # print(json.dumps(nx.node_link_data(R), indent=4, default=str))
+        residual_graph = nx.convert_matrix.from_scipy_sparse_matrix(r.residual, edge_attribute='flow', create_using=nx.DiGraph)
+        # print(json.dumps(nx.node_link_data(residual_graph), indent=4, default=str))
         # Saturated edges in the residual network form the edge disjoint paths
         # between source and target
-        cutset = [(i_to_node[int(u)], i_to_node[int(v)]) for u, v, d in R.edges(data=True)
+        cutset = [(i_to_node[int(u)], i_to_node[int(v)]) for u, v, d in residual_graph.edges(data=True)
                   if d['flow'] == 1]
         # This is equivalent of what flow.utils.build_flow_dict returns, but
         # only for the nodes with saturated edges and without reporting 0 flows.
@@ -328,6 +333,9 @@ def shortest_disjoint_paths(g, ff, node_filter=None):
         Network graph.
     ff : callable
         Callable for computing the maximum flow among a pair of nodes.
+    node_filter : callable | None, default None
+        Predicate on a node attribute dict; only nodes where predicate returns
+        True are considered.
 
     Returns
     -------
@@ -489,6 +497,9 @@ def path_stats(g, node_filter=None):
     ----------
     g : networkx.Graph
         Network graph.
+    node_filter : callable | None, default None
+        Predicate on a node attribute dict; only nodes where predicate returns
+        True are considered in demand generation and filtering.
 
     Returns
     -------

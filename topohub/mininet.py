@@ -91,6 +91,7 @@ class JSONTopo(mininet.topo.Topo):
 
     def build(self, *args, **params):
         """Build the topology using the ``topo_json`` node-link dictionary."""
+        _ = args
         topo = self.topo_json
 
         if 'demands' in topo['graph']:

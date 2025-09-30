@@ -497,6 +497,8 @@ def generate_map(include_continents=None, include_countries=None, exclude_countr
         Country names to exclude.
     mainland_only : bool, default False
         If True, reduce countries to their mainland polygons.
+    **kwargs : dict
+        Additional options reserved for future use (currently unused).
 
     Returns
     -------
@@ -504,6 +506,7 @@ def generate_map(include_continents=None, include_countries=None, exclude_countr
         SVG <path> element strings.
     """
     import geopandas as gpd
+    _ = kwargs
     world = gpd.read_file(open('external/geopandas/ne_50m_admin_0_countries_lakes.zip', 'rb'))
     if include_continents or include_countries or exclude_countries:
         filtered_world = filter_countries(world, include_countries, include_continents, exclude_countries, mainland_only)

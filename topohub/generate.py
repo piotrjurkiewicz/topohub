@@ -8,7 +8,7 @@ generators. Unless otherwise noted, node positions are stored as
 """
 import concurrent.futures
 import json
-import os
+import pathlib
 import sys
 import time
 
@@ -32,7 +32,7 @@ class TopoGenerator:
     """
 
     @classmethod
-    def generate_topo(cls, *args, **kwargs):
+    def generate_topo(cls, *args, **kwargs) -> dict:
         """
         Generate a topology.
 
@@ -44,15 +44,20 @@ class TopoGenerator:
         dict
             A dictionary compatible with ``networkx.node_link_graph``.
         """
+        _ = args, kwargs
         return {}
 
     @classmethod
-    def save_topo(cls, *args, **kwargs):
+    def save_topo(cls, *args, **kwargs) -> None:
         """
         Generate, post-process, and save a topology to files.
 
         Parameters
         ----------
+        *args : tuple
+            Positional arguments forwarded to ``generate_topo``.
+        **kwargs : dict
+            Keyword arguments forwarded to ``generate_topo`` and processing flags.
         filename : str, optional (keyword-only)
             Basename of output files (without extension). Defaults to
             ``mininet/topo_lib/<graph name>``.
@@ -81,7 +86,7 @@ class TopoGenerator:
             print(f'Warning: generated topology {g.name} has no edges')
             return
         filename = kwargs.get('filename', f'mininet/topo_lib/{g.name}')
-        os.makedirs(filename.rpartition('/')[0], exist_ok=True)
+        pathlib.Path(filename).parent.mkdir(parents=True, exist_ok=True)
         ps = None
         if kwargs.get('with_plot'):
             topohub.graph.save_topo_graph_svg(g, filename, kwargs.get('scale'), kwargs.get('background'))
