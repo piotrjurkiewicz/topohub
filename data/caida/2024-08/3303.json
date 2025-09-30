@@ -1,0 +1,161 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "3303",
+"demands": {},
+"stats": {
+"nodes": 6,
+"links": 6,
+"demands": 30,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 1.41,
+"max_degree": 5,
+"gini": 0.33,
+"min_link_len": 100.97,
+"avg_link_len": 141.88,
+"max_link_len": 229.91,
+"diameter_len": 391.79,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.60,
+"avg_sdp_len": 211.91,
+"avg_adp_num": 1.20,
+"max_adp_num": 2,
+"avg_adp_hops": 1.70,
+"avg_adp_len": 242.58
+}
+},
+"nodes": [
+{
+"pos": [
+7.44,
+46.96
+],
+"name": "Bern",
+"id": 7428619
+},
+{
+"pos": [
+8.97,
+46.04
+],
+"name": "Canobbio",
+"id": 17559950
+},
+{
+"pos": [
+8.55,
+47.46
+],
+"name": "Zurich",
+"id": 77296
+},
+{
+"pos": [
+9.54,
+46.85
+],
+"name": "Chur",
+"id": 38954032
+},
+{
+"pos": [
+6.15,
+46.21
+],
+"name": "Geneva",
+"id": 70864
+},
+{
+"pos": [
+9.89,
+46.77
+],
+"name": "Davos Dorf",
+"id": 18807871
+}
+],
+"edges": [
+{
+"dist": 100.97,
+"ecmp_fwd": {
+"uni": 80.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 80.00,
+"deg": 100.00
+},
+"source": 7428619,
+"target": 77296
+},
+{
+"dist": 129.19,
+"ecmp_fwd": {
+"uni": 20.00,
+"deg": 25.00
+},
+"ecmp_bwd": {
+"uni": 20.00,
+"deg": 25.00
+},
+"source": 7428619,
+"target": 70864
+},
+{
+"dist": 161.88,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"source": 17559950,
+"target": 77296
+},
+{
+"dist": 101.30,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"source": 77296,
+"target": 38954032
+},
+{
+"dist": 128.02,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"source": 77296,
+"target": 18807871
+},
+{
+"dist": 229.91,
+"ecmp_fwd": {
+"uni": 80.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 80.00,
+"deg": 100.00
+},
+"source": 77296,
+"target": 70864
+}
+]
+}

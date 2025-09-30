@@ -1,0 +1,310 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "3209",
+"demands": {},
+"stats": {
+"nodes": 12,
+"links": 14,
+"demands": 132,
+"min_degree": 1,
+"avg_degree": 2.33,
+"std_degree": 2.75,
+"max_degree": 11,
+"gini": 0.45,
+"min_link_len": 127.00,
+"avg_link_len": 545.68,
+"max_link_len": 1305.47,
+"diameter_len": 1773.90,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.79,
+"avg_sdp_len": 716.10,
+"avg_adp_num": 1.18,
+"max_adp_num": 3,
+"avg_adp_hops": 1.85,
+"avg_adp_len": 824.64
+}
+},
+"nodes": [
+{
+"pos": [
+11.15,
+52.85
+],
+"name": "Salzwedel",
+"id": 83520833
+},
+{
+"pos": [
+12.11,
+43.15
+],
+"id": 3627394
+},
+{
+"pos": [
+4.75,
+52.28
+],
+"name": "Schiphol",
+"id": 52452
+},
+{
+"pos": [
+13.41,
+52.52
+],
+"name": "Berlin",
+"id": 3526917
+},
+{
+"pos": [
+8.00,
+47.00
+],
+"id": 39213388
+},
+{
+"pos": [
+13.09,
+54.30
+],
+"name": "Stralsund",
+"id": 81748750
+},
+{
+"pos": [
+12.71,
+54.37
+],
+"name": "Barth",
+"id": 96374863
+},
+{
+"pos": [
+13.68,
+53.86
+],
+"name": "Anklam",
+"id": 83518159
+},
+{
+"pos": [
+16.37,
+48.21
+],
+"name": "Vienna",
+"id": 6120846
+},
+{
+"pos": [
+-0.12,
+51.50
+],
+"id": 3413622
+},
+{
+"pos": [
+13.39,
+54.09
+],
+"name": "Greifswald",
+"id": 60985975
+},
+{
+"pos": [
+12.76,
+53.60
+],
+"name": "Waren",
+"id": 82624859
+}
+],
+"edges": [
+{
+"dist": 156.85,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"source": 83520833,
+"target": 3526917
+},
+{
+"dist": 1154.29,
+"ecmp_fwd": {
+"uni": 9.09,
+"deg": 15.79
+},
+"ecmp_bwd": {
+"uni": 9.09,
+"deg": 15.79
+},
+"source": 3627394,
+"target": 52452
+},
+{
+"dist": 1047.38,
+"ecmp_fwd": {
+"uni": 81.82,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 81.82,
+"deg": 100.00
+},
+"source": 3627394,
+"target": 3526917
+},
+{
+"dist": 1305.47,
+"ecmp_fwd": {
+"uni": 9.09,
+"deg": 15.79
+},
+"ecmp_bwd": {
+"uni": 9.09,
+"deg": 15.79
+},
+"source": 3627394,
+"target": 3413622
+},
+{
+"dist": 587.81,
+"ecmp_fwd": {
+"uni": 81.82,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 81.82,
+"deg": 100.00
+},
+"source": 52452,
+"target": 3526917
+},
+{
+"dist": 345.80,
+"ecmp_fwd": {
+"uni": 9.09,
+"deg": 15.79
+},
+"ecmp_bwd": {
+"uni": 9.09,
+"deg": 15.79
+},
+"source": 52452,
+"target": 3413622
+},
+{
+"dist": 726.52,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"source": 3526917,
+"target": 39213388
+},
+{
+"dist": 199.11,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"source": 3526917,
+"target": 81748750
+},
+{
+"dist": 149.50,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"source": 3526917,
+"target": 83518159
+},
+{
+"dist": 523.90,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"source": 3526917,
+"target": 6120846
+},
+{
+"dist": 209.95,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"source": 3526917,
+"target": 96374863
+},
+{
+"dist": 173.82,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"source": 3526917,
+"target": 60985975
+},
+{
+"dist": 127.00,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"source": 3526917,
+"target": 82624859
+},
+{
+"dist": 932.12,
+"ecmp_fwd": {
+"uni": 81.82,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 81.82,
+"deg": 100.00
+},
+"source": 3526917,
+"target": 3413622
+}
+]
+}

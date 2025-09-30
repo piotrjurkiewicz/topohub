@@ -1,0 +1,186 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "27750",
+"demands": {},
+"stats": {
+"nodes": 6,
+"links": 8,
+"demands": 30,
+"min_degree": 2,
+"avg_degree": 2.67,
+"std_degree": 0.75,
+"max_degree": 4,
+"gini": 0.15,
+"min_link_len": 566.86,
+"avg_link_len": 1794.37,
+"max_link_len": 3723.25,
+"diameter_len": 4962.07,
+"diameter_hops": 2,
+"avg_sdp_num": 1.33,
+"max_sdp_num": 3,
+"avg_sdp_hops": 1.47,
+"avg_sdp_len": 1761.58,
+"avg_adp_num": 2.20,
+"max_adp_num": 3,
+"avg_adp_hops": 2.08,
+"avg_adp_len": 3473.15
+}
+},
+"nodes": [
+{
+"pos": [
+-51.17,
+-29.99
+],
+"name": "Porto Alegre",
+"id": 39010408
+},
+{
+"pos": [
+-46.47,
+-23.44
+],
+"name": "Sao Paulo",
+"id": 31310
+},
+{
+"pos": [
+-70.79,
+-33.39
+],
+"name": "Santiago",
+"id": 31311
+},
+{
+"pos": [
+-58.54,
+-34.82
+],
+"name": "Buenos Aires",
+"id": 7587536
+},
+{
+"pos": [
+-56.00,
+-33.00
+],
+"id": 76592855
+},
+{
+"pos": [
+-38.53,
+-3.78
+],
+"name": "Fortaleza",
+"id": 9694
+}
+],
+"edges": [
+{
+"dist": 566.86,
+"ecmp_fwd": {
+"uni": 70.00,
+"deg": 60.00
+},
+"ecmp_bwd": {
+"uni": 70.00,
+"deg": 60.00
+},
+"source": 39010408,
+"target": 76592855
+},
+{
+"dist": 865.82,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 84.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 84.00
+},
+"source": 39010408,
+"target": 31310
+},
+{
+"dist": 1722.69,
+"ecmp_fwd": {
+"uni": 90.00,
+"deg": 64.00
+},
+"ecmp_bwd": {
+"uni": 90.00,
+"deg": 64.00
+},
+"source": 31310,
+"target": 7587536
+},
+{
+"dist": 2614.82,
+"ecmp_fwd": {
+"uni": 70.00,
+"deg": 88.00
+},
+"ecmp_bwd": {
+"uni": 70.00,
+"deg": 88.00
+},
+"source": 31310,
+"target": 31311
+},
+{
+"dist": 2347.26,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 84.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 84.00
+},
+"source": 31310,
+"target": 9694
+},
+{
+"dist": 1138.55,
+"ecmp_fwd": {
+"uni": 60.00,
+"deg": 48.00
+},
+"ecmp_bwd": {
+"uni": 60.00,
+"deg": 48.00
+},
+"source": 31311,
+"target": 7587536
+},
+{
+"dist": 1375.71,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 31311,
+"target": 76592855
+},
+{
+"dist": 3723.25,
+"ecmp_fwd": {
+"uni": 70.00,
+"deg": 60.00
+},
+"ecmp_bwd": {
+"uni": 70.00,
+"deg": 60.00
+},
+"source": 76592855,
+"target": 9694
+}
+]
+}

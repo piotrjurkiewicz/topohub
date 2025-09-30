@@ -1,0 +1,118 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "38022",
+"demands": {},
+"stats": {
+"nodes": 4,
+"links": 4,
+"demands": 12,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 0.71,
+"max_degree": 3,
+"gini": 0.19,
+"min_link_len": 100.44,
+"avg_link_len": 373.00,
+"max_link_len": 576.65,
+"diameter_len": 814.89,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.33,
+"avg_sdp_len": 357.22,
+"avg_adp_num": 1.50,
+"max_adp_num": 2,
+"avg_adp_hops": 1.58,
+"avg_adp_len": 552.33
+}
+},
+"nodes": [
+{
+"pos": [
+174.00,
+-42.00
+],
+"id": 17960
+},
+{
+"pos": [
+174.74,
+-41.29
+],
+"name": "Wellington",
+"id": 72938
+},
+{
+"pos": [
+172.49,
+-43.65
+],
+"name": "Lincoln",
+"id": 94229797
+},
+{
+"pos": [
+174.77,
+-36.85
+],
+"name": "Auckland",
+"id": 67383
+}
+],
+"edges": [
+{
+"dist": 100.44,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 100.00
+},
+"source": 17960,
+"target": 72938
+},
+{
+"dist": 576.65,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 50.00
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 50.00
+},
+"source": 17960,
+"target": 67383
+},
+{
+"dist": 321.32,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 87.50
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 87.50
+},
+"source": 72938,
+"target": 94229797
+},
+{
+"dist": 493.57,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 100.00
+},
+"source": 72938,
+"target": 67383
+}
+]
+}

@@ -1,0 +1,237 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "1103",
+"demands": {},
+"stats": {
+"nodes": 9,
+"links": 10,
+"demands": 72,
+"min_degree": 1,
+"avg_degree": 2.22,
+"std_degree": 2.15,
+"max_degree": 8,
+"gini": 0.41,
+"min_link_len": 59.61,
+"avg_link_len": 111.62,
+"max_link_len": 161.83,
+"diameter_len": 310.85,
+"diameter_hops": 2,
+"avg_sdp_num": 1.03,
+"max_sdp_num": 2,
+"avg_sdp_hops": 1.72,
+"avg_sdp_len": 183.20,
+"avg_adp_num": 1.19,
+"max_adp_num": 3,
+"avg_adp_hops": 1.80,
+"avg_adp_len": 199.13
+}
+},
+"nodes": [
+{
+"pos": [
+5.46,
+51.45
+],
+"name": "Eindhoven",
+"id": 79936
+},
+{
+"pos": [
+6.08,
+51.29
+],
+"name": "Reuver",
+"id": 93422725
+},
+{
+"pos": [
+5.99,
+52.22
+],
+"name": "Apeldoorn",
+"id": 11399754
+},
+{
+"pos": [
+6.62,
+53.23
+],
+"name": "Groningen",
+"id": 9856140
+},
+{
+"pos": [
+5.97,
+50.95
+],
+"name": "Brunssum",
+"id": 6115086
+},
+{
+"pos": [
+6.05,
+52.53
+],
+"name": "Zwolle",
+"id": 93420793
+},
+{
+"pos": [
+6.00,
+53.32
+],
+"name": "Dokkum",
+"id": 93422523
+},
+{
+"pos": [
+6.83,
+52.29
+],
+"name": "Hengelo",
+"id": 93422398
+},
+{
+"pos": [
+5.14,
+52.09
+],
+"name": "Utrecht",
+"id": 17695
+}
+],
+"edges": [
+{
+"dist": 74.71,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 48.72
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 48.72
+},
+"source": 79936,
+"target": 17695
+},
+{
+"dist": 138.95,
+"ecmp_fwd": {
+"uni": 18.75,
+"deg": 20.51
+},
+"ecmp_bwd": {
+"uni": 18.75,
+"deg": 20.51
+},
+"source": 93422725,
+"target": 93420793
+},
+{
+"dist": 110.13,
+"ecmp_fwd": {
+"uni": 81.25,
+"deg": 71.79
+},
+"ecmp_bwd": {
+"uni": 81.25,
+"deg": 71.79
+},
+"source": 93422725,
+"target": 17695
+},
+{
+"dist": 59.61,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 48.72
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 48.72
+},
+"source": 11399754,
+"target": 17695
+},
+{
+"dist": 86.50,
+"ecmp_fwd": {
+"uni": 18.75,
+"deg": 20.51
+},
+"ecmp_bwd": {
+"uni": 18.75,
+"deg": 20.51
+},
+"source": 9856140,
+"target": 93420793
+},
+{
+"dist": 161.83,
+"ecmp_fwd": {
+"uni": 81.25,
+"deg": 71.79
+},
+"ecmp_bwd": {
+"uni": 81.25,
+"deg": 71.79
+},
+"source": 9856140,
+"target": 17695
+},
+{
+"dist": 138.67,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 48.72
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 48.72
+},
+"source": 6115086,
+"target": 17695
+},
+{
+"dist": 79.42,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 100.00
+},
+"source": 93420793,
+"target": 17695
+},
+{
+"dist": 149.02,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 48.72
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 48.72
+},
+"source": 93422523,
+"target": 17695
+},
+{
+"dist": 117.31,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 48.72
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 48.72
+},
+"source": 93422398,
+"target": 17695
+}
+]
+}

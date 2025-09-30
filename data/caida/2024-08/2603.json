@@ -1,0 +1,195 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "2603",
+"demands": {},
+"stats": {
+"nodes": 7,
+"links": 8,
+"demands": 42,
+"min_degree": 1,
+"avg_degree": 2.29,
+"std_degree": 1.58,
+"max_degree": 6,
+"gini": 0.30,
+"min_link_len": 80.51,
+"avg_link_len": 828.94,
+"max_link_len": 2091.12,
+"diameter_len": 2914.80,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.62,
+"avg_sdp_len": 1127.68,
+"avg_adp_num": 1.48,
+"max_adp_num": 2,
+"avg_adp_hops": 1.95,
+"avg_adp_len": 1701.54
+}
+},
+"nodes": [
+{
+"pos": [
+11.97,
+55.04
+],
+"name": "Orslev",
+"id": 2748928
+},
+{
+"pos": [
+-21.90,
+64.14
+],
+"name": "Reykjavik",
+"id": 27266
+},
+{
+"pos": [
+5.84,
+62.34
+],
+"name": "Ulsteinvik weather pws station",
+"id": 27267
+},
+{
+"pos": [
+10.75,
+59.91
+],
+"name": "Oslo",
+"id": 3236625
+},
+{
+"pos": [
+-20.28,
+65.66
+],
+"name": "Bloenduos",
+"id": 16628
+},
+{
+"pos": [
+12.36,
+55.73
+],
+"name": "Ballerup",
+"id": 2818552
+},
+{
+"pos": [
+17.90,
+59.20
+],
+"name": "Tullinge",
+"id": 509657
+}
+],
+"edges": [
+{
+"dist": 80.51,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 62.50
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 62.50
+},
+"source": 2748928,
+"target": 2818552
+},
+{
+"dist": 2091.12,
+"ecmp_fwd": {
+"uni": 83.33,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 83.33,
+"deg": 100.00
+},
+"source": 27266,
+"target": 2818552
+},
+{
+"dist": 185.81,
+"ecmp_fwd": {
+"uni": 16.67,
+"deg": 16.67
+},
+"ecmp_bwd": {
+"uni": 16.67,
+"deg": 16.67
+},
+"source": 27266,
+"target": 16628
+},
+{
+"dist": 823.67,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 62.50
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 62.50
+},
+"source": 27267,
+"target": 2818552
+},
+{
+"dist": 474.77,
+"ecmp_fwd": {
+"uni": 83.33,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 83.33,
+"deg": 100.00
+},
+"source": 3236625,
+"target": 2818552
+},
+{
+"dist": 410.68,
+"ecmp_fwd": {
+"uni": 16.67,
+"deg": 16.67
+},
+"ecmp_bwd": {
+"uni": 16.67,
+"deg": 16.67
+},
+"source": 3236625,
+"target": 509657
+},
+{
+"dist": 2056.82,
+"ecmp_fwd": {
+"uni": 83.33,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 83.33,
+"deg": 100.00
+},
+"source": 16628,
+"target": 2818552
+},
+{
+"dist": 508.10,
+"ecmp_fwd": {
+"uni": 83.33,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 83.33,
+"deg": 100.00
+},
+"source": 2818552,
+"target": 509657
+}
+]
+}

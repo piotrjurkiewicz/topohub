@@ -1,0 +1,143 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "2847",
+"demands": {},
+"stats": {
+"nodes": 4,
+"links": 6,
+"demands": 12,
+"min_degree": 3,
+"avg_degree": 3.00,
+"std_degree": 0.00,
+"max_degree": 3,
+"gini": 0.00,
+"min_link_len": 57.46,
+"avg_link_len": 435.82,
+"max_link_len": 845.80,
+"diameter_len": 845.80,
+"diameter_hops": 1,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.00,
+"avg_sdp_len": 145.27,
+"avg_adp_num": 3.00,
+"max_adp_num": 3,
+"avg_adp_hops": 1.67,
+"avg_adp_len": 726.37
+}
+},
+"nodes": [
+{
+"pos": [
+25.28,
+54.69
+],
+"name": "Vilnius",
+"id": 3462920
+},
+{
+"pos": [
+23.91,
+54.90
+],
+"name": "Kaunas",
+"id": 3462906
+},
+{
+"pos": [
+12.06,
+55.71
+],
+"id": 3462908
+},
+{
+"pos": [
+24.00,
+55.42
+],
+"id": 80511
+}
+],
+"edges": [
+{
+"dist": 91.06,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 3462920,
+"target": 3462906
+},
+{
+"dist": 845.80,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 3462920,
+"target": 3462908
+},
+{
+"dist": 114.79,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 3462920,
+"target": 80511
+},
+{
+"dist": 754.83,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 3462906,
+"target": 3462908
+},
+{
+"dist": 57.46,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 3462906,
+"target": 80511
+},
+{
+"dist": 750.99,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 3462908,
+"target": 80511
+}
+]
+}

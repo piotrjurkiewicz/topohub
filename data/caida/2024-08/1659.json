@@ -1,0 +1,346 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "1659",
+"demands": {},
+"stats": {
+"nodes": 8,
+"links": 19,
+"demands": 56,
+"min_degree": 1,
+"avg_degree": 4.75,
+"std_degree": 1.79,
+"max_degree": 7,
+"gini": 0.20,
+"min_link_len": 34.54,
+"avg_link_len": 118.93,
+"max_link_len": 289.87,
+"diameter_len": 289.87,
+"diameter_hops": 2,
+"avg_sdp_num": 1.21,
+"max_sdp_num": 3,
+"avg_sdp_hops": 1.32,
+"avg_sdp_len": 77.69,
+"avg_adp_num": 3.68,
+"max_adp_num": 6,
+"avg_adp_hops": 1.82,
+"avg_adp_len": 201.67
+}
+},
+"nodes": [
+{
+"pos": [
+121.59,
+24.95
+],
+"name": "New Taipei City",
+"id": 4550
+},
+{
+"pos": [
+120.45,
+23.48
+],
+"name": "Chiayi City",
+"id": 17639
+},
+{
+"pos": [
+120.68,
+24.14
+],
+"name": "Taichung",
+"id": 19176
+},
+{
+"pos": [
+120.96,
+23.97
+],
+"name": "Puli",
+"id": 38675696
+},
+{
+"pos": [
+120.21,
+22.99
+],
+"name": "Tainan City",
+"id": 69716
+},
+{
+"pos": [
+120.31,
+22.61
+],
+"name": "Kaohsiung",
+"id": 11224
+},
+{
+"pos": [
+120.83,
+24.56
+],
+"name": "Miaoli",
+"id": 6469914
+},
+{
+"pos": [
+121.52,
+23.83
+],
+"name": "Shoufeng",
+"id": 99401375
+}
+],
+"edges": [
+{
+"dist": 199.59,
+"ecmp_fwd": {
+"uni": 19.05,
+"deg": 72.92
+},
+"ecmp_bwd": {
+"uni": 19.05,
+"deg": 72.92
+},
+"source": 4550,
+"target": 17639
+},
+{
+"dist": 127.63,
+"ecmp_fwd": {
+"uni": 14.29,
+"deg": 75.00
+},
+"ecmp_bwd": {
+"uni": 14.29,
+"deg": 75.00
+},
+"source": 4550,
+"target": 19176
+},
+{
+"dist": 125.75,
+"ecmp_fwd": {
+"uni": 28.57,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 28.57,
+"deg": 100.00
+},
+"source": 4550,
+"target": 38675696
+},
+{
+"dist": 258.26,
+"ecmp_fwd": {
+"uni": 19.05,
+"deg": 72.92
+},
+"ecmp_bwd": {
+"uni": 19.05,
+"deg": 72.92
+},
+"source": 4550,
+"target": 69716
+},
+{
+"dist": 289.87,
+"ecmp_fwd": {
+"uni": 19.05,
+"deg": 72.92
+},
+"ecmp_bwd": {
+"uni": 19.05,
+"deg": 72.92
+},
+"source": 4550,
+"target": 11224
+},
+{
+"dist": 87.63,
+"ecmp_fwd": {
+"uni": 28.57,
+"deg": 68.75
+},
+"ecmp_bwd": {
+"uni": 28.57,
+"deg": 68.75
+},
+"source": 4550,
+"target": 6469914
+},
+{
+"dist": 77.46,
+"ecmp_fwd": {
+"uni": 19.05,
+"deg": 72.92
+},
+"ecmp_bwd": {
+"uni": 19.05,
+"deg": 72.92
+},
+"source": 17639,
+"target": 19176
+},
+{
+"dist": 75.31,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 93.75
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 93.75
+},
+"source": 17639,
+"target": 38675696
+},
+{
+"dist": 59.54,
+"ecmp_fwd": {
+"uni": 14.29,
+"deg": 52.08
+},
+"ecmp_bwd": {
+"uni": 14.29,
+"deg": 52.08
+},
+"source": 17639,
+"target": 69716
+},
+{
+"dist": 97.40,
+"ecmp_fwd": {
+"uni": 14.29,
+"deg": 52.08
+},
+"ecmp_bwd": {
+"uni": 14.29,
+"deg": 52.08
+},
+"source": 17639,
+"target": 11224
+},
+{
+"dist": 34.54,
+"ecmp_fwd": {
+"uni": 28.57,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 28.57,
+"deg": 100.00
+},
+"source": 19176,
+"target": 38675696
+},
+{
+"dist": 136.82,
+"ecmp_fwd": {
+"uni": 19.05,
+"deg": 72.92
+},
+"ecmp_bwd": {
+"uni": 19.05,
+"deg": 72.92
+},
+"source": 19176,
+"target": 69716
+},
+{
+"dist": 48.92,
+"ecmp_fwd": {
+"uni": 28.57,
+"deg": 68.75
+},
+"ecmp_bwd": {
+"uni": 28.57,
+"deg": 68.75
+},
+"source": 19176,
+"target": 6469914
+},
+{
+"dist": 174.24,
+"ecmp_fwd": {
+"uni": 19.05,
+"deg": 72.92
+},
+"ecmp_bwd": {
+"uni": 19.05,
+"deg": 72.92
+},
+"source": 19176,
+"target": 11224
+},
+{
+"dist": 58.52,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 77.08
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 77.08
+},
+"source": 38675696,
+"target": 99401375
+},
+{
+"dist": 132.80,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 93.75
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 93.75
+},
+"source": 38675696,
+"target": 69716
+},
+{
+"dist": 164.51,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 93.75
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 93.75
+},
+"source": 38675696,
+"target": 11224
+},
+{
+"dist": 67.76,
+"ecmp_fwd": {
+"uni": 42.86,
+"deg": 81.25
+},
+"ecmp_bwd": {
+"uni": 42.86,
+"deg": 81.25
+},
+"source": 38675696,
+"target": 6469914
+},
+{
+"dist": 43.14,
+"ecmp_fwd": {
+"uni": 14.29,
+"deg": 52.08
+},
+"ecmp_bwd": {
+"uni": 14.29,
+"deg": 52.08
+},
+"source": 69716,
+"target": 11224
+}
+]
+}

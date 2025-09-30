@@ -1,0 +1,523 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "577",
+"demands": {},
+"stats": {
+"nodes": 22,
+"links": 24,
+"demands": 462,
+"min_degree": 1,
+"avg_degree": 2.18,
+"std_degree": 2.39,
+"max_degree": 11,
+"gini": 0.43,
+"min_link_len": 27.07,
+"avg_link_len": 846.25,
+"max_link_len": 3638.77,
+"diameter_len": 10587.70,
+"diameter_hops": 5,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.64,
+"avg_sdp_len": 2601.72,
+"avg_adp_num": 1.07,
+"max_adp_num": 3,
+"avg_adp_hops": 2.68,
+"avg_adp_len": 2678.45
+}
+},
+"nodes": [
+{
+"pos": [
+-79.07,
+43.07
+],
+"name": "Niagara Falls",
+"id": 37730307
+},
+{
+"pos": [
+-114.05,
+50.99
+],
+"name": "Calgary",
+"id": 93275282
+},
+{
+"pos": [
+-80.24,
+43.57
+],
+"name": "Guelph",
+"id": 37730328
+},
+{
+"pos": [
+-94.34,
+49.76
+],
+"name": "Kenora",
+"id": 37952027
+},
+{
+"pos": [
+-78.05,
+44.19
+],
+"name": "Roseneath",
+"id": 8122396
+},
+{
+"pos": [
+-76.72,
+45.30
+],
+"name": "Calabogie",
+"id": 98862116
+},
+{
+"pos": [
+-113.43,
+53.51
+],
+"name": "Edmonton",
+"id": 6091180
+},
+{
+"pos": [
+-79.81,
+43.67
+],
+"name": "Brampton",
+"id": 3086509
+},
+{
+"pos": [
+-80.12,
+43.07
+],
+"name": "Ohsweken",
+"id": 39009978
+},
+{
+"pos": [
+-75.70,
+45.41
+],
+"name": "Ottawa",
+"id": 7586241
+},
+{
+"pos": [
+-63.58,
+44.68
+],
+"name": "Dartmouth",
+"id": 39239755
+},
+{
+"pos": [
+-74.30,
+45.41
+],
+"name": "Sainte-Marthe",
+"id": 78261452
+},
+{
+"pos": [
+-74.76,
+45.22
+],
+"name": "Apple Hill",
+"id": 100767057
+},
+{
+"pos": [
+-113.81,
+53.42
+],
+"name": "Spruce Grove",
+"id": 92995283
+},
+{
+"pos": [
+-123.11,
+49.28
+],
+"name": "Vancouver",
+"id": 37730390
+},
+{
+"pos": [
+-79.69,
+44.35
+],
+"name": "Barrie",
+"id": 3086822
+},
+{
+"pos": [
+-70.50,
+47.44
+],
+"name": "Baie-Saint-Paul",
+"id": 78261612
+},
+{
+"pos": [
+-78.70,
+46.32
+],
+"name": "Mattawa",
+"id": 78261613
+},
+{
+"pos": [
+-73.57,
+45.50
+],
+"name": "Montreal",
+"id": 48238
+},
+{
+"pos": [
+-76.03,
+45.42
+],
+"name": "Dunrobin",
+"id": 39094644
+},
+{
+"pos": [
+-113.70,
+53.69
+],
+"name": "Sturgeon",
+"id": 93275252
+},
+{
+"pos": [
+-79.75,
+42.98
+],
+"name": "Canfield",
+"id": 8201721
+}
+],
+"edges": [
+{
+"dist": 88.96,
+"ecmp_fwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"ecmp_bwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"source": 37730307,
+"target": 3086509
+},
+{
+"dist": 282.74,
+"ecmp_fwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"ecmp_bwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"source": 93275282,
+"target": 6091180
+},
+{
+"dist": 570.63,
+"ecmp_fwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"ecmp_bwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"source": 37730328,
+"target": 48238
+},
+{
+"dist": 1296.04,
+"ecmp_fwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"ecmp_bwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"source": 37952027,
+"target": 3086509
+},
+{
+"dist": 382.48,
+"ecmp_fwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"ecmp_bwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"source": 8122396,
+"target": 48238
+},
+{
+"dist": 246.61,
+"ecmp_fwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"ecmp_bwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"source": 98862116,
+"target": 48238
+},
+{
+"dist": 27.21,
+"ecmp_fwd": {
+"uni": 4.62,
+"deg": 3.76
+},
+"ecmp_bwd": {
+"uni": 4.62,
+"deg": 3.76
+},
+"source": 6091180,
+"target": 92995283
+},
+{
+"dist": 27.07,
+"ecmp_fwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"ecmp_bwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"source": 6091180,
+"target": 93275252
+},
+{
+"dist": 2672.98,
+"ecmp_fwd": {
+"uni": 83.08,
+"deg": 75.24
+},
+"ecmp_bwd": {
+"uni": 83.08,
+"deg": 75.24
+},
+"source": 6091180,
+"target": 3086509
+},
+{
+"dist": 378.98,
+"ecmp_fwd": {
+"uni": 87.69,
+"deg": 67.40
+},
+"ecmp_bwd": {
+"uni": 87.69,
+"deg": 67.40
+},
+"source": 3086509,
+"target": 7586241
+},
+{
+"dist": 77.15,
+"ecmp_fwd": {
+"uni": 22.31,
+"deg": 20.06
+},
+"ecmp_bwd": {
+"uni": 22.31,
+"deg": 20.06
+},
+"source": 3086509,
+"target": 3086822
+},
+{
+"dist": 477.39,
+"ecmp_fwd": {
+"uni": 62.31,
+"deg": 56.43
+},
+"ecmp_bwd": {
+"uni": 62.31,
+"deg": 56.43
+},
+"source": 3086509,
+"target": 78261452
+},
+{
+"dist": 836.98,
+"ecmp_fwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"ecmp_bwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"source": 3086509,
+"target": 78261612
+},
+{
+"dist": 307.73,
+"ecmp_fwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"ecmp_bwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"source": 3086509,
+"target": 78261613
+},
+{
+"dist": 2696.29,
+"ecmp_fwd": {
+"uni": 27.69,
+"deg": 25.08
+},
+"ecmp_bwd": {
+"uni": 27.69,
+"deg": 25.08
+},
+"source": 3086509,
+"target": 92995283
+},
+{
+"dist": 76.69,
+"ecmp_fwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"ecmp_bwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"source": 3086509,
+"target": 8201721
+},
+{
+"dist": 534.27,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 3086509,
+"target": 48238
+},
+{
+"dist": 587.33,
+"ecmp_fwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"ecmp_bwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"source": 39009978,
+"target": 48238
+},
+{
+"dist": 76.45,
+"ecmp_fwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"ecmp_bwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"source": 7586241,
+"target": 100767057
+},
+{
+"dist": 955.22,
+"ecmp_fwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"ecmp_bwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"source": 7586241,
+"target": 39239755
+},
+{
+"dist": 3638.77,
+"ecmp_fwd": {
+"uni": 61.54,
+"deg": 42.32
+},
+"ecmp_bwd": {
+"uni": 61.54,
+"deg": 42.32
+},
+"source": 78261452,
+"target": 37730390
+},
+{
+"dist": 58.01,
+"ecmp_fwd": {
+"uni": 25.38,
+"deg": 22.57
+},
+"ecmp_bwd": {
+"uni": 25.38,
+"deg": 22.57
+},
+"source": 78261452,
+"target": 48238
+},
+{
+"dist": 3515.82,
+"ecmp_fwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"ecmp_bwd": {
+"uni": 32.31,
+"deg": 14.73
+},
+"source": 37730390,
+"target": 39094644
+},
+{
+"dist": 498.23,
+"ecmp_fwd": {
+"uni": 10.00,
+"deg": 8.78
+},
+"ecmp_bwd": {
+"uni": 10.00,
+"deg": 8.78
+},
+"source": 3086822,
+"target": 48238
+}
+]
+}

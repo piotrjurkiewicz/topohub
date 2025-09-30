@@ -394,12 +394,13 @@
                 <option value="" selected>Select a category</option>
                 <!-- Add options for each category in the JSON data -->
                 <option value="backbone">Backbone</option>
+                <option value="caida">CAIDA</option>
                 <option value="gabriel">Gabriel</option>
                 <option value="sndlib">SNDlib</option>
                 <option value="topozoo">Topology Zoo</option>
             </select>
             <select id="secondLevelDropdown" disabled>
-                <option value="" selected>Select size</option>
+                <option value="" selected>Select</option>
             </select>
         </div>
         <div id="topologyListWrapper" style="display: none;">
@@ -484,6 +485,9 @@
 <script>
     const topologyCatalog = {
         'backbone': ['africa', 'africa_nosc', 'americas', 'americas_nosc', 'atlantica', 'eastern', 'eastern_nosc', 'emea', 'emea_nosc', 'eurafrasia', 'eurafrasia_nosc', 'eurasia', 'eurasia_nosc', 'europe', 'europe_nosc', 'north_america', 'north_america_nosc', 'south_america', 'south_america_nosc', 'world'],
+        'caida': {
+            '2024-08': ['137','224','293','559','577','680','701','766','786','812','852','1103','1136','1213','1221','1257','1653','1659','1741','1835','1853','1916','1930','1955','2018','2107','2119','2152','2200','2603','2607','2611','2614','2847','2852','2856','2907','3209','3215','3221','3269','3292','3301','3303','3320','3329','3352','3356','3741','4134','4538','4739','4766','4771','4837','5089','5384','5408','5410','5432','5466','5607','5610','5617','5650','5769','6327','6799','6805','6830','7018','7497','7575','7922','8151','8447','8473','8708','8881','8953','9498','9808','9829','11340','12322','12479','12741','12874','12912','13092','15525','16086','17557','20115','20965','27750','38022','55836']
+        },
         'gabriel': {
             '5': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
             '10': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
@@ -1112,7 +1116,12 @@
 
         // Function to populate the second-level dropdown or topology list
         const populateSecondLevel = (oob) => {
-            secondLevelDropdown.innerHTML = '<option value="" selected>Select size</option>';
+            if (firstLevelDropdown.value === 'caida') {
+                secondLevelLabel = 'Select date';
+            } else {
+                secondLevelLabel = 'Select size';
+            }
+            secondLevelDropdown.innerHTML = `<option value="" selected>${secondLevelLabel}</option>`;
             topologyList.innerHTML = '';
             for (const key in oob) {
                 const option = document.createElement('option');
@@ -1206,6 +1215,11 @@
             if (selectedCategory.startsWith('gabriel')) {
                 text += `Synthetically generated <b>Gabriel graph</b> with <b>${topologyJSON['graph']['stats']['nodes']}</b> nodes. <a href="https://doi.org/10.2307/2412323" target="_blank">Gabriel graphs</a> closely approximate real optical transport network topologies and realistically model fiber lengths and node degrees, as shown in <a href="https://doi.org/10.1109/ICUMT.2013.6798402" target="_blank">this paper</a>.`
             }
+
+            if (selectedCategory.startsWith('caida')) {
+                text += `Layer 3 topology of AS number <b>${selectedTopology}</b>, built using the data from <a href="https://www.caida.org/catalog/datasets/internet-topology-data-kit/" target="_blank">CAIDA Internet Topology Data Kit (ITDK)</a>.`
+            }
+
 
             if (selectedCategory === 'sndlib') {
                 text += `Topology <b>${selectedTopology}</b> from the <a href="https://sndlib.put.poznan.pl" target="_blank">SNDlib</a> repository, originally presented in this <a href="https://doi.org/10.1002/net.20371" target="_blank">paper</a>.`

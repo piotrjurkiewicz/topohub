@@ -1,0 +1,139 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "7497",
+"demands": {},
+"stats": {
+"nodes": 5,
+"links": 5,
+"demands": 20,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 1.10,
+"max_degree": 4,
+"gini": 0.28,
+"min_link_len": 618.33,
+"avg_link_len": 1102.19,
+"max_link_len": 1902.92,
+"diameter_len": 2957.52,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.50,
+"avg_sdp_len": 1368.45,
+"avg_adp_num": 1.30,
+"max_adp_num": 2,
+"avg_adp_hops": 1.65,
+"avg_adp_len": 1751.36
+}
+},
+"nodes": [
+{
+"pos": [
+116.39,
+39.91
+],
+"name": "Beijing",
+"id": 17927
+},
+{
+"pos": [
+113.72,
+34.77
+],
+"id": 85768
+},
+{
+"pos": [
+113.14,
+23.03
+],
+"name": "Foshan",
+"id": 37593868
+},
+{
+"pos": [
+114.27,
+30.59
+],
+"name": "Wuhan",
+"id": 38422360
+},
+{
+"pos": [
+123.43,
+41.78
+],
+"name": "Shenyang",
+"id": 37602425
+}
+],
+"edges": [
+{
+"dist": 1054.60,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 75.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 75.00
+},
+"source": 17927,
+"target": 38422360
+},
+{
+"dist": 627.27,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 75.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 75.00
+},
+"source": 17927,
+"target": 37602425
+},
+{
+"dist": 1902.92,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 100.00
+},
+"source": 17927,
+"target": 37593868
+},
+{
+"dist": 618.33,
+"ecmp_fwd": {
+"uni": 75.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 75.00,
+"deg": 100.00
+},
+"source": 17927,
+"target": 85768
+},
+{
+"dist": 1307.82,
+"ecmp_fwd": {
+"uni": 25.00,
+"deg": 33.33
+},
+"ecmp_bwd": {
+"uni": 25.00,
+"deg": 33.33
+},
+"source": 85768,
+"target": 37593868
+}
+]
+}

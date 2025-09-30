@@ -1,0 +1,313 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "5408",
+"demands": {},
+"stats": {
+"nodes": 12,
+"links": 14,
+"demands": 132,
+"min_degree": 1,
+"avg_degree": 2.33,
+"std_degree": 2.72,
+"max_degree": 11,
+"gini": 0.45,
+"min_link_len": 62.07,
+"avg_link_len": 242.94,
+"max_link_len": 364.84,
+"diameter_len": 701.22,
+"diameter_hops": 2,
+"avg_sdp_num": 1.03,
+"max_sdp_num": 2,
+"avg_sdp_hops": 1.79,
+"avg_sdp_len": 460.80,
+"avg_adp_num": 1.20,
+"max_adp_num": 3,
+"avg_adp_hops": 1.87,
+"avg_adp_len": 497.15
+}
+},
+"nodes": [
+{
+"pos": [
+22.94,
+39.36
+],
+"name": "Volos",
+"id": 77197024
+},
+{
+"pos": [
+23.94,
+37.94
+],
+"name": "Athens",
+"id": 2844513
+},
+{
+"pos": [
+24.89,
+41.13
+],
+"name": "Xanthi",
+"id": 2844715
+},
+{
+"pos": [
+22.42,
+39.64
+],
+"name": "Larisa",
+"id": 2844526
+},
+{
+"pos": [
+21.73,
+38.25
+],
+"name": "P\u00e1trai",
+"id": 77196719
+},
+{
+"pos": [
+21.77,
+39.55
+],
+"name": "Trikala",
+"id": 37658895
+},
+{
+"pos": [
+24.41,
+40.94
+],
+"name": "Kavala",
+"id": 37658866
+},
+{
+"pos": [
+24.15,
+41.15
+],
+"name": "Drama",
+"id": 37658867
+},
+{
+"pos": [
+26.14,
+38.37
+],
+"name": "Chios",
+"id": 2844727
+},
+{
+"pos": [
+22.93,
+40.64
+],
+"name": "Thessaloniki",
+"id": 45340
+},
+{
+"pos": [
+20.99,
+39.16
+],
+"name": "Arta",
+"id": 37658846
+},
+{
+"pos": [
+22.05,
+40.80
+],
+"name": "Edessa",
+"id": 45342
+}
+],
+"edges": [
+{
+"dist": 180.89,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"source": 77197024,
+"target": 2844513
+},
+{
+"dist": 364.84,
+"ecmp_fwd": {
+"uni": 77.27,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 77.27,
+"deg": 100.00
+},
+"source": 2844513,
+"target": 2844715
+},
+{
+"dist": 230.85,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"source": 2844513,
+"target": 2844526
+},
+{
+"dist": 260.84,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"source": 2844513,
+"target": 37658895
+},
+{
+"dist": 196.82,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"source": 2844513,
+"target": 77196719
+},
+{
+"dist": 336.39,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"source": 2844513,
+"target": 37658866
+},
+{
+"dist": 358.17,
+"ecmp_fwd": {
+"uni": 86.36,
+"deg": 75.44
+},
+"ecmp_bwd": {
+"uni": 86.36,
+"deg": 75.44
+},
+"source": 2844513,
+"target": 37658867
+},
+{
+"dist": 197.71,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"source": 2844513,
+"target": 2844727
+},
+{
+"dist": 291.14,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 47.37
+},
+"source": 2844513,
+"target": 37658846
+},
+{
+"dist": 313.49,
+"ecmp_fwd": {
+"uni": 77.27,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 77.27,
+"deg": 100.00
+},
+"source": 2844513,
+"target": 45340
+},
+{
+"dist": 358.08,
+"ecmp_fwd": {
+"uni": 86.36,
+"deg": 75.44
+},
+"ecmp_bwd": {
+"uni": 86.36,
+"deg": 75.44
+},
+"source": 2844513,
+"target": 45342
+},
+{
+"dist": 62.07,
+"ecmp_fwd": {
+"uni": 13.64,
+"deg": 15.79
+},
+"ecmp_bwd": {
+"uni": 13.64,
+"deg": 15.79
+},
+"source": 2844715,
+"target": 37658867
+},
+{
+"dist": 173.39,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 26.32
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 26.32
+},
+"source": 2844715,
+"target": 45340
+},
+{
+"dist": 76.53,
+"ecmp_fwd": {
+"uni": 13.64,
+"deg": 15.79
+},
+"ecmp_bwd": {
+"uni": 13.64,
+"deg": 15.79
+},
+"source": 45340,
+"target": 45342
+}
+]
+}

@@ -1,0 +1,643 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "766",
+"demands": {},
+"stats": {
+"nodes": 24,
+"links": 32,
+"demands": 552,
+"min_degree": 1,
+"avg_degree": 2.67,
+"std_degree": 3.04,
+"max_degree": 16,
+"gini": 0.42,
+"min_link_len": 61.95,
+"avg_link_len": 673.25,
+"max_link_len": 2081.22,
+"diameter_len": 6260.44,
+"diameter_hops": 5,
+"avg_sdp_num": 1.03,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.49,
+"avg_sdp_len": 2036.66,
+"avg_adp_num": 1.27,
+"max_adp_num": 4,
+"avg_adp_hops": 2.65,
+"avg_adp_len": 2250.02
+}
+},
+"nodes": [
+{
+"pos": [
+-1.12,
+37.99
+],
+"name": "Murcia",
+"id": 93838994
+},
+{
+"pos": [
+-1.67,
+42.83
+],
+"name": "Pamplona",
+"id": 68632
+},
+{
+"pos": [
+-0.90,
+41.64
+],
+"name": "Zaragoza",
+"id": 6377625
+},
+{
+"pos": [
+-8.40,
+43.37
+],
+"name": "A Coru\u00f1a",
+"id": 68635
+},
+{
+"pos": [
+-0.70,
+38.27
+],
+"name": "Elche",
+"id": 38933154
+},
+{
+"pos": [
+1.05,
+41.08
+],
+"name": "Cambrils",
+"id": 38933156
+},
+{
+"pos": [
+0.63,
+41.61
+],
+"name": "Lleida",
+"id": 31022
+},
+{
+"pos": [
+-6.98,
+38.88
+],
+"name": "Badajoz",
+"id": 38658224
+},
+{
+"pos": [
+-8.58,
+42.83
+],
+"name": "Teo",
+"id": 97121591
+},
+{
+"pos": [
+-3.61,
+37.16
+],
+"name": "Granada",
+"id": 6439226
+},
+{
+"pos": [
+-5.99,
+37.42
+],
+"name": "Seville",
+"id": 6439227
+},
+{
+"pos": [
+-4.77,
+37.90
+],
+"name": "C\u00f3rdoba",
+"id": 38667475
+},
+{
+"pos": [
+-0.47,
+39.43
+],
+"name": "Torrent",
+"id": 56301395
+},
+{
+"pos": [
+-1.70,
+37.67
+],
+"name": "Lorca",
+"id": 6376025
+},
+{
+"pos": [
+-3.70,
+40.42
+],
+"name": "Madrid",
+"id": 5914713
+},
+{
+"pos": [
+2.16,
+41.39
+],
+"name": "Barcelona",
+"id": 5914715
+},
+{
+"pos": [
+-15.44,
+28.11
+],
+"name": "Las Palmas de Gran Canaria",
+"id": 92511708
+},
+{
+"pos": [
+-0.06,
+39.99
+],
+"name": "Castell\u00f3 de la Plana",
+"id": 92512096
+},
+{
+"pos": [
+-2.93,
+43.26
+],
+"name": "Bilbao",
+"id": 5914727
+},
+{
+"pos": [
+-3.83,
+43.44
+],
+"name": "Santander",
+"id": 92511719
+},
+{
+"pos": [
+2.23,
+41.62
+],
+"name": "Lli\u00e7\u00e0 d'Amunt",
+"id": 92511976
+},
+{
+"pos": [
+-8.72,
+42.25
+],
+"name": "Vigo",
+"id": 92511980
+},
+{
+"pos": [
+-16.37,
+28.35
+],
+"name": "Candelaria",
+"id": 29555
+},
+{
+"pos": [
+-1.00,
+37.62
+],
+"name": "Cartagena",
+"id": 97121658
+}
+],
+"edges": [
+{
+"dist": 62.71,
+"ecmp_fwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"ecmp_bwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"source": 93838994,
+"target": 6376025
+},
+{
+"dist": 316.93,
+"ecmp_fwd": {
+"uni": 16.67,
+"deg": 18.75
+},
+"ecmp_bwd": {
+"uni": 16.67,
+"deg": 18.75
+},
+"source": 68632,
+"target": 5914713
+},
+{
+"dist": 343.19,
+"ecmp_fwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"ecmp_bwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"source": 68632,
+"target": 92512096
+},
+{
+"dist": 146.41,
+"ecmp_fwd": {
+"uni": 26.54,
+"deg": 19.86
+},
+"ecmp_bwd": {
+"uni": 26.54,
+"deg": 19.86
+},
+"source": 68632,
+"target": 6377625
+},
+{
+"dist": 514.13,
+"ecmp_fwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"ecmp_bwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"source": 68632,
+"target": 38933154
+},
+{
+"dist": 112.64,
+"ecmp_fwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"ecmp_bwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"source": 68632,
+"target": 5914727
+},
+{
+"dist": 549.19,
+"ecmp_fwd": {
+"uni": 41.98,
+"deg": 39.38
+},
+"ecmp_bwd": {
+"uni": 41.98,
+"deg": 39.38
+},
+"source": 68632,
+"target": 68635
+},
+{
+"dist": 187.58,
+"ecmp_fwd": {
+"uni": 26.54,
+"deg": 19.86
+},
+"ecmp_bwd": {
+"uni": 26.54,
+"deg": 19.86
+},
+"source": 68632,
+"target": 92511719
+},
+{
+"dist": 348.70,
+"ecmp_fwd": {
+"uni": 23.46,
+"deg": 17.47
+},
+"ecmp_bwd": {
+"uni": 23.46,
+"deg": 17.47
+},
+"source": 68632,
+"target": 92511976
+},
+{
+"dist": 580.73,
+"ecmp_fwd": {
+"uni": 19.75,
+"deg": 14.73
+},
+"ecmp_bwd": {
+"uni": 19.75,
+"deg": 14.73
+},
+"source": 68632,
+"target": 92511980
+},
+{
+"dist": 626.31,
+"ecmp_fwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"ecmp_bwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"source": 68632,
+"target": 38658224
+},
+{
+"dist": 391.33,
+"ecmp_fwd": {
+"uni": 18.52,
+"deg": 20.80
+},
+"ecmp_bwd": {
+"uni": 18.52,
+"deg": 20.80
+},
+"source": 68632,
+"target": 56301395
+},
+{
+"dist": 574.07,
+"ecmp_fwd": {
+"uni": 54.32,
+"deg": 31.34
+},
+"ecmp_bwd": {
+"uni": 54.32,
+"deg": 31.34
+},
+"source": 68632,
+"target": 6376025
+},
+{
+"dist": 354.42,
+"ecmp_fwd": {
+"uni": 25.31,
+"deg": 19.01
+},
+"ecmp_bwd": {
+"uni": 25.31,
+"deg": 19.01
+},
+"source": 68632,
+"target": 5914715
+},
+{
+"dist": 2052.41,
+"ecmp_fwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"ecmp_bwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"source": 68632,
+"target": 92511708
+},
+{
+"dist": 232.73,
+"ecmp_fwd": {
+"uni": 25.93,
+"deg": 29.28
+},
+"ecmp_bwd": {
+"uni": 25.93,
+"deg": 29.28
+},
+"source": 68632,
+"target": 31022
+},
+{
+"dist": 2081.22,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 68632,
+"target": 29555
+},
+{
+"dist": 127.04,
+"ecmp_fwd": {
+"uni": 1.85,
+"deg": 1.37
+},
+"ecmp_bwd": {
+"uni": 1.85,
+"deg": 1.37
+},
+"source": 6377625,
+"target": 31022
+},
+{
+"dist": 508.58,
+"ecmp_fwd": {
+"uni": 10.49,
+"deg": 9.93
+},
+"ecmp_bwd": {
+"uni": 10.49,
+"deg": 9.93
+},
+"source": 68635,
+"target": 5914713
+},
+{
+"dist": 894.12,
+"ecmp_fwd": {
+"uni": 3.09,
+"deg": 2.23
+},
+"ecmp_bwd": {
+"uni": 3.09,
+"deg": 2.23
+},
+"source": 68635,
+"target": 5914715
+},
+{
+"dist": 61.95,
+"ecmp_fwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"ecmp_bwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"source": 68635,
+"target": 97121591
+},
+{
+"dist": 729.93,
+"ecmp_fwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"ecmp_bwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"source": 38933156,
+"target": 6439227
+},
+{
+"dist": 417.80,
+"ecmp_fwd": {
+"uni": 1.85,
+"deg": 1.37
+},
+"ecmp_bwd": {
+"uni": 1.85,
+"deg": 1.37
+},
+"source": 31022,
+"target": 92511719
+},
+{
+"dist": 212.16,
+"ecmp_fwd": {
+"uni": 27.16,
+"deg": 20.55
+},
+"ecmp_bwd": {
+"uni": 27.16,
+"deg": 20.55
+},
+"source": 6439226,
+"target": 6439227
+},
+{
+"dist": 131.21,
+"ecmp_fwd": {
+"uni": 1.23,
+"deg": 0.68
+},
+"ecmp_bwd": {
+"uni": 1.23,
+"deg": 0.68
+},
+"source": 6439226,
+"target": 38667475
+},
+{
+"dist": 119.57,
+"ecmp_fwd": {
+"uni": 27.16,
+"deg": 20.55
+},
+"ecmp_bwd": {
+"uni": 27.16,
+"deg": 20.55
+},
+"source": 6439227,
+"target": 38667475
+},
+{
+"dist": 1396.89,
+"ecmp_fwd": {
+"uni": 98.77,
+"deg": 84.76
+},
+"ecmp_bwd": {
+"uni": 98.77,
+"deg": 84.76
+},
+"source": 6439227,
+"target": 29555
+},
+{
+"dist": 333.44,
+"ecmp_fwd": {
+"uni": 4.94,
+"deg": 3.77
+},
+"ecmp_bwd": {
+"uni": 4.94,
+"deg": 3.77
+},
+"source": 56301395,
+"target": 92511976
+},
+{
+"dist": 1911.22,
+"ecmp_fwd": {
+"uni": 12.35,
+"deg": 12.24
+},
+"ecmp_bwd": {
+"uni": 12.35,
+"deg": 12.24
+},
+"source": 56301395,
+"target": 29555
+},
+{
+"dist": 1771.42,
+"ecmp_fwd": {
+"uni": 16.05,
+"deg": 16.35
+},
+"ecmp_bwd": {
+"uni": 16.05,
+"deg": 16.35
+},
+"source": 5914713,
+"target": 29555
+},
+{
+"dist": 1692.57,
+"ecmp_fwd": {
+"uni": 8.64,
+"deg": 6.51
+},
+"ecmp_bwd": {
+"uni": 8.64,
+"deg": 6.51
+},
+"source": 92511980,
+"target": 29555
+},
+{
+"dist": 1761.47,
+"ecmp_fwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"ecmp_bwd": {
+"uni": 28.40,
+"deg": 10.79
+},
+"source": 29555,
+"target": 97121658
+}
+]
+}

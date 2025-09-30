@@ -1,0 +1,610 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "5607",
+"demands": {},
+"stats": {
+"nodes": 28,
+"links": 27,
+"demands": 756,
+"min_degree": 1,
+"avg_degree": 1.93,
+"std_degree": 4.82,
+"max_degree": 27,
+"gini": 0.46,
+"min_link_len": 107.75,
+"avg_link_len": 268.27,
+"max_link_len": 487.06,
+"diameter_len": 958.73,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.93,
+"avg_sdp_len": 517.39,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 1.93,
+"avg_adp_len": 517.39
+}
+},
+"nodes": [
+{
+"pos": [
+-6.25,
+53.33
+],
+"name": "Dublin",
+"id": 3663875
+},
+{
+"pos": [
+0.04,
+53.70
+],
+"name": "Withernsea",
+"id": 72131735
+},
+{
+"pos": [
+-2.32,
+53.45
+],
+"name": "Manchester",
+"id": 38753957
+},
+{
+"pos": [
+-2.24,
+57.11
+],
+"name": "Aberdeen",
+"id": 65772455
+},
+{
+"pos": [
+-4.96,
+51.80
+],
+"name": "Haverfordwest",
+"id": 72060967
+},
+{
+"pos": [
+-3.15,
+51.49
+],
+"name": "Cardiff",
+"id": 55848114
+},
+{
+"pos": [
+-1.92,
+57.48
+],
+"name": "Peterhead",
+"id": 71964981
+},
+{
+"pos": [
+-7.03,
+54.46
+],
+"name": "Dungannon",
+"id": 56928438
+},
+{
+"pos": [
+-0.16,
+54.14
+],
+"name": "Bridlington",
+"id": 72006588
+},
+{
+"pos": [
+-0.45,
+53.94
+],
+"name": "Driffield",
+"id": 61850684
+},
+{
+"pos": [
+-4.16,
+57.71
+],
+"name": "Invergordon",
+"id": 71965505
+},
+{
+"pos": [
+-4.02,
+51.07
+],
+"name": "Barnstaple",
+"id": 64100294
+},
+{
+"pos": [
+-4.11,
+55.87
+],
+"name": "Glasgow",
+"id": 55886791
+},
+{
+"pos": [
+-2.44,
+50.61
+],
+"name": "Weymouth",
+"id": 56281930
+},
+{
+"pos": [
+-3.59,
+54.56
+],
+"name": "Whitehaven",
+"id": 56274640
+},
+{
+"pos": [
+-1.72,
+54.90
+],
+"name": "Newcastle upon Tyne",
+"id": 55858513
+},
+{
+"pos": [
+-1.72,
+51.92
+],
+"name": "Cheltenham",
+"id": 61597520
+},
+{
+"pos": [
+-3.43,
+52.00
+],
+"name": "Brecon",
+"id": 72006868
+},
+{
+"pos": [
+-0.67,
+53.68
+],
+"name": "Scunthorpe",
+"id": 63663574
+},
+{
+"pos": [
+-6.52,
+55.09
+],
+"name": "Ballymoney",
+"id": 56139865
+},
+{
+"pos": [
+-7.27,
+55.03
+],
+"name": "Londonderry",
+"id": 58649052
+},
+{
+"pos": [
+-2.91,
+54.89
+],
+"name": "Carlisle",
+"id": 55934685
+},
+{
+"pos": [
+-5.97,
+54.54
+],
+"name": "Belfast",
+"id": 55933661
+},
+{
+"pos": [
+-3.32,
+57.65
+],
+"name": "Elgin",
+"id": 65359461
+},
+{
+"pos": [
+1.39,
+51.21
+],
+"name": "Deal",
+"id": 56024688
+},
+{
+"pos": [
+-1.71,
+54.35
+],
+"name": "Catterick",
+"id": 72217206
+},
+{
+"pos": [
+-2.62,
+57.51
+],
+"name": "Huntly",
+"id": 71965046
+},
+{
+"pos": [
+-3.27,
+55.02
+],
+"name": "Annan",
+"id": 72250236
+}
+],
+"edges": [
+{
+"dist": 260.99,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 3663875,
+"target": 38753957
+},
+{
+"dist": 158.22,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 72131735,
+"target": 38753957
+},
+{
+"dist": 406.79,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 65772455
+},
+{
+"dist": 256.19,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 72060967
+},
+{
+"dist": 225.69,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 55848114
+},
+{
+"dist": 448.81,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 71964981
+},
+{
+"dist": 328.24,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 56928438
+},
+{
+"dist": 134.68,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 61850684
+},
+{
+"dist": 161.71,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 72006588
+},
+{
+"dist": 487.06,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 71965505
+},
+{
+"dist": 289.15,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 64100294
+},
+{
+"dist": 292.57,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 55886791
+},
+{
+"dist": 315.58,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 56281930
+},
+{
+"dist": 175.31,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 61597520
+},
+{
+"dist": 166.09,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 55858513
+},
+{
+"dist": 148.50,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 56274640
+},
+{
+"dist": 177.37,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 72006868
+},
+{
+"dist": 111.79,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 63663574
+},
+{
+"dist": 327.99,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 56139865
+},
+{
+"dist": 366.88,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 58649052
+},
+{
+"dist": 267.96,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 55933661
+},
+{
+"dist": 164.28,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 55934685
+},
+{
+"dist": 471.67,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 65359461
+},
+{
+"dist": 354.04,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 56024688
+},
+{
+"dist": 452.32,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 71965046
+},
+{
+"dist": 107.75,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 72217206
+},
+{
+"dist": 185.77,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38753957,
+"target": 72250236
+}
+]
+}

@@ -1,0 +1,216 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "2611",
+"demands": {},
+"stats": {
+"nodes": 8,
+"links": 9,
+"demands": 56,
+"min_degree": 1,
+"avg_degree": 2.25,
+"std_degree": 1.92,
+"max_degree": 7,
+"gini": 0.39,
+"min_link_len": 43.39,
+"avg_link_len": 95.55,
+"max_link_len": 173.71,
+"diameter_len": 221.16,
+"diameter_hops": 2,
+"avg_sdp_num": 1.04,
+"max_sdp_num": 2,
+"avg_sdp_hops": 1.68,
+"avg_sdp_len": 125.56,
+"avg_adp_num": 1.25,
+"max_adp_num": 3,
+"avg_adp_hops": 1.77,
+"avg_adp_len": 145.83
+}
+},
+"nodes": [
+{
+"pos": [
+5.57,
+50.63
+],
+"name": "Li\u00e8ge",
+"id": 38584802
+},
+{
+"pos": [
+5.22,
+50.16
+],
+"name": "Rochefort",
+"id": 38935302
+},
+{
+"pos": [
+4.08,
+50.87
+],
+"name": "Liedekerke",
+"id": 5931914
+},
+{
+"pos": [
+4.86,
+50.47
+],
+"name": "Namur",
+"id": 80491
+},
+{
+"pos": [
+4.43,
+51.19
+],
+"name": "Berchem",
+"id": 38935309
+},
+{
+"pos": [
+3.95,
+50.46
+],
+"name": "Mons",
+"id": 38935312
+},
+{
+"pos": [
+5.34,
+50.94
+],
+"name": "Hasselt",
+"id": 38935317
+},
+{
+"pos": [
+3.26,
+51.20
+],
+"name": "Bruges",
+"id": 7378460
+}
+],
+"edges": [
+{
+"dist": 108.44,
+"ecmp_fwd": {
+"uni": 78.57,
+"deg": 72.73
+},
+"ecmp_bwd": {
+"uni": 78.57,
+"deg": 72.73
+},
+"source": 38584802,
+"target": 5931914
+},
+{
+"dist": 173.71,
+"ecmp_fwd": {
+"uni": 21.43,
+"deg": 24.24
+},
+"ecmp_bwd": {
+"uni": 21.43,
+"deg": 24.24
+},
+"source": 38584802,
+"target": 7378460
+},
+{
+"dist": 112.73,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 51.52
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 51.52
+},
+"source": 38935302,
+"target": 5931914
+},
+{
+"dist": 43.39,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 51.52
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 51.52
+},
+"source": 5931914,
+"target": 38935309
+},
+{
+"dist": 46.56,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 51.52
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 51.52
+},
+"source": 5931914,
+"target": 38935312
+},
+{
+"dist": 88.62,
+"ecmp_fwd": {
+"uni": 78.57,
+"deg": 72.73
+},
+"ecmp_bwd": {
+"uni": 78.57,
+"deg": 72.73
+},
+"source": 5931914,
+"target": 38935317
+},
+{
+"dist": 67.70,
+"ecmp_fwd": {
+"uni": 71.43,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 71.43,
+"deg": 100.00
+},
+"source": 5931914,
+"target": 7378460
+},
+{
+"dist": 70.95,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 51.52
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 51.52
+},
+"source": 5931914,
+"target": 80491
+},
+{
+"dist": 147.86,
+"ecmp_fwd": {
+"uni": 21.43,
+"deg": 24.24
+},
+"ecmp_bwd": {
+"uni": 21.43,
+"deg": 24.24
+},
+"source": 38935317,
+"target": 7378460
+}
+]
+}

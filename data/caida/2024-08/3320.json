@@ -1,0 +1,350 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "3320",
+"demands": {},
+"stats": {
+"nodes": 15,
+"links": 15,
+"demands": 210,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 3.22,
+"max_degree": 14,
+"gini": 0.45,
+"min_link_len": 133.02,
+"avg_link_len": 249.01,
+"max_link_len": 670.54,
+"diameter_len": 973.52,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.86,
+"avg_sdp_len": 465.30,
+"avg_adp_num": 1.03,
+"max_adp_num": 2,
+"avg_adp_hops": 1.87,
+"avg_adp_len": 471.94
+}
+},
+"nodes": [
+{
+"pos": [
+11.19,
+54.44
+],
+"name": "Fehmarn",
+"id": 60295874
+},
+{
+"pos": [
+13.41,
+52.52
+],
+"name": "Berlin",
+"id": 2826659
+},
+{
+"pos": [
+13.33,
+52.98
+],
+"name": "Zehdenick",
+"id": 82520132
+},
+{
+"pos": [
+9.80,
+53.56
+],
+"name": "Hamburg",
+"id": 8709735
+},
+{
+"pos": [
+13.28,
+53.58
+],
+"name": "Neubrandenburg",
+"id": 59448176
+},
+{
+"pos": [
+13.85,
+53.31
+],
+"name": "Prenzlau",
+"id": 84050800
+},
+{
+"pos": [
+12.61,
+53.38
+],
+"name": "R\u00f6bel",
+"id": 84029713
+},
+{
+"pos": [
+12.45,
+54.25
+],
+"name": "Ribnitz-Damgarten",
+"id": 69469139
+},
+{
+"pos": [
+8.21,
+47.62
+],
+"name": "Waldshut-Tiengen",
+"id": 62003572
+},
+{
+"pos": [
+8.39,
+54.86
+],
+"name": "Sylt",
+"id": 59442132
+},
+{
+"pos": [
+13.09,
+54.30
+],
+"name": "Stralsund",
+"id": 66187286
+},
+{
+"pos": [
+13.03,
+53.90
+],
+"name": "Demmin",
+"id": 59013527
+},
+{
+"pos": [
+12.34,
+52.61
+],
+"name": "Rathenow",
+"id": 38026392
+},
+{
+"pos": [
+14.28,
+53.06
+],
+"name": "Schwedt",
+"id": 67004990
+},
+{
+"pos": [
+12.55,
+52.41
+],
+"name": "Brandenburg",
+"id": 62717791
+}
+],
+"edges": [
+{
+"dist": 133.02,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"source": 60295874,
+"target": 8709735
+},
+{
+"dist": 199.11,
+"ecmp_fwd": {
+"uni": 7.14,
+"deg": 7.69
+},
+"ecmp_bwd": {
+"uni": 7.14,
+"deg": 7.69
+},
+"source": 2826659,
+"target": 66187286
+},
+{
+"dist": 267.64,
+"ecmp_fwd": {
+"uni": 92.86,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 92.86,
+"deg": 100.00
+},
+"source": 2826659,
+"target": 8709735
+},
+{
+"dist": 243.70,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"source": 82520132,
+"target": 8709735
+},
+{
+"dist": 229.92,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"source": 8709735,
+"target": 59448176
+},
+{
+"dist": 270.07,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"source": 8709735,
+"target": 84050800
+},
+{
+"dist": 186.84,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"source": 8709735,
+"target": 84029713
+},
+{
+"dist": 189.72,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"source": 8709735,
+"target": 69469139
+},
+{
+"dist": 170.73,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"source": 8709735,
+"target": 59442132
+},
+{
+"dist": 670.54,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"source": 8709735,
+"target": 62003572
+},
+{
+"dist": 230.30,
+"ecmp_fwd": {
+"uni": 92.86,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 92.86,
+"deg": 100.00
+},
+"source": 8709735,
+"target": 66187286
+},
+{
+"dist": 215.86,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"source": 8709735,
+"target": 59013527
+},
+{
+"dist": 200.06,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"source": 8709735,
+"target": 38026392
+},
+{
+"dist": 302.98,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"source": 8709735,
+"target": 67004990
+},
+{
+"dist": 224.61,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 55.77
+},
+"source": 8709735,
+"target": 62717791
+}
+]
+}

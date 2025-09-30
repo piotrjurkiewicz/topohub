@@ -1,0 +1,289 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "5432",
+"demands": {},
+"stats": {
+"nodes": 9,
+"links": 14,
+"demands": 72,
+"min_degree": 1,
+"avg_degree": 3.11,
+"std_degree": 2.38,
+"max_degree": 8,
+"gini": 0.34,
+"min_link_len": 39.88,
+"avg_link_len": 113.94,
+"max_link_len": 221.62,
+"diameter_len": 277.35,
+"diameter_hops": 2,
+"avg_sdp_num": 1.42,
+"max_sdp_num": 2,
+"avg_sdp_hops": 1.61,
+"avg_sdp_len": 161.64,
+"avg_adp_num": 1.92,
+"max_adp_num": 7,
+"avg_adp_hops": 1.80,
+"avg_adp_len": 200.41
+}
+},
+"nodes": [
+{
+"pos": [
+3.27,
+50.83
+],
+"name": "Kortrijk",
+"id": 38201122
+},
+{
+"pos": [
+4.35,
+50.85
+],
+"name": "Brussels",
+"id": 7080
+},
+{
+"pos": [
+3.63,
+51.28
+],
+"name": "Watervliet",
+"id": 39255786
+},
+{
+"pos": [
+5.79,
+51.10
+],
+"name": "Maaseik",
+"id": 39255788
+},
+{
+"pos": [
+5.22,
+50.16
+],
+"name": "Rochefort",
+"id": 38401777
+},
+{
+"pos": [
+5.19,
+50.82
+],
+"name": "Sint-Truiden",
+"id": 38056505
+},
+{
+"pos": [
+3.72,
+51.05
+],
+"name": "Ghent",
+"id": 38056604
+},
+{
+"pos": [
+5.82,
+49.69
+],
+"name": "Arlon",
+"id": 83243998
+},
+{
+"pos": [
+5.57,
+50.63
+],
+"name": "Li\u00e8ge",
+"id": 3425337
+}
+],
+"edges": [
+{
+"dist": 55.73,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 42.86
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 42.86
+},
+"source": 38201122,
+"target": 39255786
+},
+{
+"dist": 179.12,
+"ecmp_fwd": {
+"uni": 56.25,
+"deg": 44.44
+},
+"ecmp_bwd": {
+"uni": 56.25,
+"deg": 44.44
+},
+"source": 38201122,
+"target": 39255788
+},
+{
+"dist": 156.75,
+"ecmp_fwd": {
+"uni": 56.25,
+"deg": 44.44
+},
+"ecmp_bwd": {
+"uni": 56.25,
+"deg": 44.44
+},
+"source": 38201122,
+"target": 38401777
+},
+{
+"dist": 221.62,
+"ecmp_fwd": {
+"uni": 56.25,
+"deg": 44.44
+},
+"ecmp_bwd": {
+"uni": 56.25,
+"deg": 44.44
+},
+"source": 38201122,
+"target": 83243998
+},
+{
+"dist": 75.76,
+"ecmp_fwd": {
+"uni": 25.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 25.00,
+"deg": 100.00
+},
+"source": 38201122,
+"target": 7080
+},
+{
+"dist": 134.71,
+"ecmp_fwd": {
+"uni": 56.25,
+"deg": 44.44
+},
+"ecmp_bwd": {
+"uni": 56.25,
+"deg": 44.44
+},
+"source": 38201122,
+"target": 38056505
+},
+{
+"dist": 39.88,
+"ecmp_fwd": {
+"uni": 56.25,
+"deg": 44.44
+},
+"ecmp_bwd": {
+"uni": 56.25,
+"deg": 44.44
+},
+"source": 38201122,
+"target": 38056604
+},
+{
+"dist": 163.68,
+"ecmp_fwd": {
+"uni": 56.25,
+"deg": 44.44
+},
+"ecmp_bwd": {
+"uni": 56.25,
+"deg": 44.44
+},
+"source": 38201122,
+"target": 3425337
+},
+{
+"dist": 104.72,
+"ecmp_fwd": {
+"uni": 43.75,
+"deg": 38.10
+},
+"ecmp_bwd": {
+"uni": 43.75,
+"deg": 38.10
+},
+"source": 7080,
+"target": 39255788
+},
+{
+"dist": 59.08,
+"ecmp_fwd": {
+"uni": 43.75,
+"deg": 38.10
+},
+"ecmp_bwd": {
+"uni": 43.75,
+"deg": 38.10
+},
+"source": 7080,
+"target": 38056505
+},
+{
+"dist": 98.63,
+"ecmp_fwd": {
+"uni": 43.75,
+"deg": 38.10
+},
+"ecmp_bwd": {
+"uni": 43.75,
+"deg": 38.10
+},
+"source": 7080,
+"target": 38401777
+},
+{
+"dist": 89.73,
+"ecmp_fwd": {
+"uni": 43.75,
+"deg": 38.10
+},
+"ecmp_bwd": {
+"uni": 43.75,
+"deg": 38.10
+},
+"source": 7080,
+"target": 3425337
+},
+{
+"dist": 48.89,
+"ecmp_fwd": {
+"uni": 43.75,
+"deg": 38.10
+},
+"ecmp_bwd": {
+"uni": 43.75,
+"deg": 38.10
+},
+"source": 7080,
+"target": 38056604
+},
+{
+"dist": 166.87,
+"ecmp_fwd": {
+"uni": 43.75,
+"deg": 38.10
+},
+"ecmp_bwd": {
+"uni": 43.75,
+"deg": 38.10
+},
+"source": 7080,
+"target": 83243998
+}
+]
+}

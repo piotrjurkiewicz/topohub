@@ -1,0 +1,161 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "2107",
+"demands": {},
+"stats": {
+"nodes": 6,
+"links": 6,
+"demands": 30,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 1.41,
+"max_degree": 5,
+"gini": 0.33,
+"min_link_len": 56.10,
+"avg_link_len": 85.53,
+"max_link_len": 136.81,
+"diameter_len": 178.02,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.60,
+"avg_sdp_len": 116.34,
+"avg_adp_num": 1.20,
+"max_adp_num": 2,
+"avg_adp_hops": 1.70,
+"avg_adp_len": 134.58
+}
+},
+"nodes": [
+{
+"pos": [
+14.50,
+46.05
+],
+"name": "Ljubljana",
+"id": 55618
+},
+{
+"pos": [
+13.74,
+45.56
+],
+"name": "Koper",
+"id": 38165925
+},
+{
+"pos": [
+13.64,
+45.96
+],
+"name": "Nova Gorica",
+"id": 66583302
+},
+{
+"pos": [
+15.67,
+46.40
+],
+"name": "Pragersko",
+"id": 38956207
+},
+{
+"pos": [
+15.05,
+46.38
+],
+"name": "\u0160o\u0161tanj",
+"id": 38956209
+},
+{
+"pos": [
+13.58,
+46.25
+],
+"name": "Kobarid",
+"id": 7355575
+}
+],
+"edges": [
+{
+"dist": 80.71,
+"ecmp_fwd": {
+"uni": 80.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 80.00,
+"deg": 100.00
+},
+"source": 55618,
+"target": 38165925
+},
+{
+"dist": 67.49,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"source": 55618,
+"target": 66583302
+},
+{
+"dist": 97.31,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"source": 55618,
+"target": 38956207
+},
+{
+"dist": 56.10,
+"ecmp_fwd": {
+"uni": 80.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 80.00,
+"deg": 100.00
+},
+"source": 55618,
+"target": 38956209
+},
+{
+"dist": 74.78,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"source": 55618,
+"target": 7355575
+},
+{
+"dist": 136.81,
+"ecmp_fwd": {
+"uni": 20.00,
+"deg": 25.00
+},
+"ecmp_bwd": {
+"uni": 20.00,
+"deg": 25.00
+},
+"source": 38165925,
+"target": 38956209
+}
+]
+}

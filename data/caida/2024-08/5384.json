@@ -1,0 +1,298 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "5384",
+"demands": {},
+"stats": {
+"nodes": 7,
+"links": 16,
+"demands": 42,
+"min_degree": 2,
+"avg_degree": 4.57,
+"std_degree": 1.29,
+"max_degree": 6,
+"gini": 0.15,
+"min_link_len": 32.34,
+"avg_link_len": 141.22,
+"max_link_len": 270.05,
+"diameter_len": 270.05,
+"diameter_hops": 2,
+"avg_sdp_num": 1.33,
+"max_sdp_num": 4,
+"avg_sdp_hops": 1.24,
+"avg_sdp_len": 100.71,
+"avg_adp_num": 3.76,
+"max_adp_num": 6,
+"avg_adp_hops": 1.80,
+"avg_adp_len": 256.83
+}
+},
+"nodes": [
+{
+"pos": [
+55.30,
+25.07
+],
+"name": "Dubai",
+"id": 97
+},
+{
+"pos": [
+54.50,
+23.75
+],
+"id": 25923
+},
+{
+"pos": [
+56.33,
+25.12
+],
+"name": "Al Fujairah City",
+"id": 38124867
+},
+{
+"pos": [
+54.41,
+24.45
+],
+"name": "Abu Dhabi",
+"id": 1480
+},
+{
+"pos": [
+55.42,
+25.34
+],
+"name": "Sharjah",
+"id": 53366
+},
+{
+"pos": [
+55.94,
+25.79
+],
+"name": "Ras al-Khaimah",
+"id": 3800151
+},
+{
+"pos": [
+55.76,
+24.19
+],
+"name": "Al Ain City",
+"id": 37022111
+}
+],
+"edges": [
+{
+"dist": 104.53,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 83.33
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 83.33
+},
+"source": 97,
+"target": 38124867
+},
+{
+"dist": 167.90,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 100.00
+},
+"source": 97,
+"target": 25923
+},
+{
+"dist": 113.38,
+"ecmp_fwd": {
+"uni": 50.00,
+"deg": 97.22
+},
+"ecmp_bwd": {
+"uni": 50.00,
+"deg": 97.22
+},
+"source": 97,
+"target": 1480
+},
+{
+"dist": 32.34,
+"ecmp_fwd": {
+"uni": 50.00,
+"deg": 97.22
+},
+"ecmp_bwd": {
+"uni": 50.00,
+"deg": 97.22
+},
+"source": 97,
+"target": 53366
+},
+{
+"dist": 103.11,
+"ecmp_fwd": {
+"uni": 58.33,
+"deg": 88.89
+},
+"ecmp_bwd": {
+"uni": 58.33,
+"deg": 88.89
+},
+"source": 97,
+"target": 3800151
+},
+{
+"dist": 108.86,
+"ecmp_fwd": {
+"uni": 58.33,
+"deg": 88.89
+},
+"ecmp_bwd": {
+"uni": 58.33,
+"deg": 88.89
+},
+"source": 97,
+"target": 37022111
+},
+{
+"dist": 240.10,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 83.33
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 83.33
+},
+"source": 25923,
+"target": 38124867
+},
+{
+"dist": 200.08,
+"ecmp_fwd": {
+"uni": 50.00,
+"deg": 97.22
+},
+"ecmp_bwd": {
+"uni": 50.00,
+"deg": 97.22
+},
+"source": 25923,
+"target": 53366
+},
+{
+"dist": 270.05,
+"ecmp_fwd": {
+"uni": 58.33,
+"deg": 88.89
+},
+"ecmp_bwd": {
+"uni": 58.33,
+"deg": 88.89
+},
+"source": 25923,
+"target": 3800151
+},
+{
+"dist": 137.31,
+"ecmp_fwd": {
+"uni": 58.33,
+"deg": 88.89
+},
+"ecmp_bwd": {
+"uni": 58.33,
+"deg": 88.89
+},
+"source": 25923,
+"target": 37022111
+},
+{
+"dist": 78.90,
+"ecmp_fwd": {
+"uni": 50.00,
+"deg": 97.22
+},
+"ecmp_bwd": {
+"uni": 50.00,
+"deg": 97.22
+},
+"source": 25923,
+"target": 1480
+},
+{
+"dist": 142.30,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 69.44
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 69.44
+},
+"source": 1480,
+"target": 53366
+},
+{
+"dist": 214.89,
+"ecmp_fwd": {
+"uni": 41.67,
+"deg": 66.67
+},
+"ecmp_bwd": {
+"uni": 41.67,
+"deg": 66.67
+},
+"source": 1480,
+"target": 3800151
+},
+{
+"dist": 140.57,
+"ecmp_fwd": {
+"uni": 41.67,
+"deg": 66.67
+},
+"ecmp_bwd": {
+"uni": 41.67,
+"deg": 66.67
+},
+"source": 1480,
+"target": 37022111
+},
+{
+"dist": 72.59,
+"ecmp_fwd": {
+"uni": 41.67,
+"deg": 66.67
+},
+"ecmp_bwd": {
+"uni": 41.67,
+"deg": 66.67
+},
+"source": 53366,
+"target": 3800151
+},
+{
+"dist": 132.57,
+"ecmp_fwd": {
+"uni": 41.67,
+"deg": 66.67
+},
+"ecmp_bwd": {
+"uni": 41.67,
+"deg": 66.67
+},
+"source": 53366,
+"target": 37022111
+}
+]
+}

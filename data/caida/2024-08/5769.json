@@ -1,0 +1,591 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "5769",
+"demands": {},
+"stats": {
+"nodes": 24,
+"links": 28,
+"demands": 552,
+"min_degree": 1,
+"avg_degree": 2.33,
+"std_degree": 4.37,
+"max_degree": 23,
+"gini": 0.50,
+"min_link_len": 70.36,
+"avg_link_len": 289.23,
+"max_link_len": 478.07,
+"diameter_len": 944.85,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.90,
+"avg_sdp_len": 558.87,
+"avg_adp_num": 1.12,
+"max_adp_num": 3,
+"avg_adp_hops": 1.98,
+"avg_adp_len": 598.67
+}
+},
+"nodes": [
+{
+"pos": [
+-70.93,
+47.03
+],
+"name": "Sainte-Anne-de-Beaupr\u00e9",
+"id": 37926656
+},
+{
+"pos": [
+-78.12,
+48.57
+],
+"name": "Amos",
+"id": 3134225
+},
+{
+"pos": [
+-75.70,
+45.48
+],
+"name": "Gatineau",
+"id": 3134227
+},
+{
+"pos": [
+-76.98,
+49.05
+],
+"name": "Lebel-sur-Qu\u00e9villon",
+"id": 37389717
+},
+{
+"pos": [
+-72.44,
+48.65
+],
+"name": "Saint-F\u00e9licien",
+"id": 37719069
+},
+{
+"pos": [
+-75.97,
+46.39
+],
+"name": "Maniwaki",
+"id": 38821281
+},
+{
+"pos": [
+-72.56,
+46.34
+],
+"name": "Trois-Rivi\u00e8res",
+"id": 37926563
+},
+{
+"pos": [
+-71.94,
+46.05
+],
+"name": "Victoriaville",
+"id": 37355428
+},
+{
+"pos": [
+-71.88,
+45.42
+],
+"name": "Sherbrooke",
+"id": 831146
+},
+{
+"pos": [
+-77.26,
+48.40
+],
+"name": "Senneterre",
+"id": 38273966
+},
+{
+"pos": [
+-77.63,
+48.44
+],
+"name": "Barraute",
+"id": 38273968
+},
+{
+"pos": [
+-70.04,
+47.36
+],
+"name": "Ste. Anne de la Pocati\u00e8re",
+"id": 38720189
+},
+{
+"pos": [
+-70.55,
+46.98
+],
+"name": "Saint Thomas de Montmagny",
+"id": 39116734
+},
+{
+"pos": [
+-71.65,
+45.90
+],
+"name": "Ham-Nord",
+"id": 8145855
+},
+{
+"pos": [
+-72.21,
+48.88
+],
+"name": "Dolbeau-Mistassini",
+"id": 37387329
+},
+{
+"pos": [
+-73.74,
+45.47
+],
+"name": "Montreal",
+"id": 2501
+},
+{
+"pos": [
+-71.41,
+48.32
+],
+"name": "Jonqui\u00e8re",
+"id": 37387463
+},
+{
+"pos": [
+-71.18,
+46.80
+],
+"name": "L\u00e9vis",
+"id": 37369291
+},
+{
+"pos": [
+-69.53,
+47.83
+],
+"name": "Rivi\u00e8re-du-Loup",
+"id": 37387606
+},
+{
+"pos": [
+-71.03,
+48.42
+],
+"name": "Chicoutimi",
+"id": 37355480
+},
+{
+"pos": [
+-68.88,
+47.68
+],
+"name": "Cabano",
+"id": 74818279
+},
+{
+"pos": [
+-75.29,
+45.55
+],
+"name": "Rockland",
+"id": 38273905
+},
+{
+"pos": [
+-75.50,
+46.55
+],
+"name": "Mont-Laurier",
+"id": 37387253
+},
+{
+"pos": [
+-70.15,
+47.66
+],
+"name": "La Malbaie",
+"id": 37797109
+}
+],
+"edges": [
+{
+"dist": 277.49,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 37926656,
+"target": 2501
+},
+{
+"dist": 478.07,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 3134225,
+"target": 2501
+},
+{
+"dist": 298.59,
+"ecmp_fwd": {
+"uni": 4.35,
+"deg": 6.38
+},
+"ecmp_bwd": {
+"uni": 4.35,
+"deg": 6.38
+},
+"source": 3134227,
+"target": 37355428
+},
+{
+"dist": 298.10,
+"ecmp_fwd": {
+"uni": 4.35,
+"deg": 6.38
+},
+"ecmp_bwd": {
+"uni": 4.35,
+"deg": 6.38
+},
+"source": 3134227,
+"target": 831146
+},
+{
+"dist": 153.13,
+"ecmp_fwd": {
+"uni": 91.30,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 91.30,
+"deg": 100.00
+},
+"source": 3134227,
+"target": 2501
+},
+{
+"dist": 466.77,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 37389717,
+"target": 2501
+},
+{
+"dist": 367.29,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 37719069,
+"target": 2501
+},
+{
+"dist": 200.18,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 38821281,
+"target": 2501
+},
+{
+"dist": 133.11,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 37926563,
+"target": 2501
+},
+{
+"dist": 70.36,
+"ecmp_fwd": {
+"uni": 4.35,
+"deg": 6.38
+},
+"ecmp_bwd": {
+"uni": 4.35,
+"deg": 6.38
+},
+"source": 37355428,
+"target": 831146
+},
+{
+"dist": 153.64,
+"ecmp_fwd": {
+"uni": 91.30,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 91.30,
+"deg": 100.00
+},
+"source": 37355428,
+"target": 2501
+},
+{
+"dist": 144.98,
+"ecmp_fwd": {
+"uni": 91.30,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 91.30,
+"deg": 100.00
+},
+"source": 831146,
+"target": 2501
+},
+{
+"dist": 421.14,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 38273966,
+"target": 2501
+},
+{
+"dist": 442.66,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 38273968,
+"target": 2501
+},
+{
+"dist": 353.12,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 38720189,
+"target": 2501
+},
+{
+"dist": 297.26,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 39116734,
+"target": 2501
+},
+{
+"dist": 269.93,
+"ecmp_fwd": {
+"uni": 4.35,
+"deg": 2.84
+},
+"ecmp_bwd": {
+"uni": 4.35,
+"deg": 2.84
+},
+"source": 8145855,
+"target": 37387463
+},
+{
+"dist": 169.19,
+"ecmp_fwd": {
+"uni": 95.65,
+"deg": 73.76
+},
+"ecmp_bwd": {
+"uni": 95.65,
+"deg": 73.76
+},
+"source": 8145855,
+"target": 2501
+},
+{
+"dist": 396.20,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 37387329,
+"target": 2501
+},
+{
+"dist": 363.24,
+"ecmp_fwd": {
+"uni": 95.65,
+"deg": 73.76
+},
+"ecmp_bwd": {
+"uni": 95.65,
+"deg": 73.76
+},
+"source": 2501,
+"target": 37387463
+},
+{
+"dist": 247.19,
+"ecmp_fwd": {
+"uni": 95.65,
+"deg": 73.76
+},
+"ecmp_bwd": {
+"uni": 95.65,
+"deg": 73.76
+},
+"source": 2501,
+"target": 37369291
+},
+{
+"dist": 414.93,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 2501,
+"target": 37387606
+},
+{
+"dist": 387.10,
+"ecmp_fwd": {
+"uni": 95.65,
+"deg": 73.76
+},
+"ecmp_bwd": {
+"uni": 95.65,
+"deg": 73.76
+},
+"source": 2501,
+"target": 37355480
+},
+{
+"dist": 445.14,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 2501,
+"target": 74818279
+},
+{
+"dist": 121.34,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 2501,
+"target": 38273905
+},
+{
+"dist": 181.56,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 2501,
+"target": 37387253
+},
+{
+"dist": 366.80,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.01
+},
+"source": 2501,
+"target": 37797109
+},
+{
+"dist": 179.95,
+"ecmp_fwd": {
+"uni": 4.35,
+"deg": 2.84
+},
+"ecmp_bwd": {
+"uni": 4.35,
+"deg": 2.84
+},
+"source": 37369291,
+"target": 37355480
+}
+]
+}

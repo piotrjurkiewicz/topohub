@@ -1,0 +1,161 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "3292",
+"demands": {},
+"stats": {
+"nodes": 6,
+"links": 6,
+"demands": 30,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 1.41,
+"max_degree": 5,
+"gini": 0.33,
+"min_link_len": 50.47,
+"avg_link_len": 151.21,
+"max_link_len": 245.64,
+"diameter_len": 445.89,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.60,
+"avg_sdp_len": 261.32,
+"avg_adp_num": 1.20,
+"max_adp_num": 2,
+"avg_adp_hops": 1.70,
+"avg_adp_len": 281.99
+}
+},
+"nodes": [
+{
+"pos": [
+14.73,
+55.11
+],
+"name": "R\u00f8nne",
+"id": 45031
+},
+{
+"pos": [
+12.54,
+55.67
+],
+"name": "Copenhagen",
+"id": 8649
+},
+{
+"pos": [
+8.87,
+54.95
+],
+"name": "T\u00f8nder",
+"id": 66947481
+},
+{
+"pos": [
+11.00,
+57.25
+],
+"name": "Byrum",
+"id": 81723923
+},
+{
+"pos": [
+10.58,
+55.86
+],
+"name": "Sams\u00f8",
+"id": 3447961
+},
+{
+"pos": [
+10.45,
+55.41
+],
+"name": "Odense",
+"id": 54588
+}
+],
+"edges": [
+{
+"dist": 151.38,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"source": 45031,
+"target": 8649
+},
+{
+"dist": 124.57,
+"ecmp_fwd": {
+"uni": 80.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 80.00,
+"deg": 100.00
+},
+"source": 8649,
+"target": 3447961
+},
+{
+"dist": 200.25,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"source": 8649,
+"target": 81723923
+},
+{
+"dist": 245.64,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 68.75
+},
+"source": 8649,
+"target": 66947481
+},
+{
+"dist": 134.93,
+"ecmp_fwd": {
+"uni": 80.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 80.00,
+"deg": 100.00
+},
+"source": 8649,
+"target": 54588
+},
+{
+"dist": 50.47,
+"ecmp_fwd": {
+"uni": 20.00,
+"deg": 25.00
+},
+"ecmp_bwd": {
+"uni": 20.00,
+"deg": 25.00
+},
+"source": 3447961,
+"target": 54588
+}
+]
+}

@@ -1,0 +1,433 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "3221",
+"demands": {},
+"stats": {
+"nodes": 14,
+"links": 22,
+"demands": 182,
+"min_degree": 1,
+"avg_degree": 3.14,
+"std_degree": 3.29,
+"max_degree": 12,
+"gini": 0.44,
+"min_link_len": 55.27,
+"avg_link_len": 126.65,
+"max_link_len": 222.34,
+"diameter_len": 408.58,
+"diameter_hops": 3,
+"avg_sdp_num": 1.30,
+"max_sdp_num": 2,
+"avg_sdp_hops": 1.79,
+"avg_sdp_len": 211.37,
+"avg_adp_num": 1.63,
+"max_adp_num": 9,
+"avg_adp_hops": 1.90,
+"avg_adp_len": 239.80
+}
+},
+"nodes": [
+{
+"pos": [
+26.73,
+58.38
+],
+"name": "Tartu",
+"id": 7359266
+},
+{
+"pos": [
+26.26,
+59.43
+],
+"name": "Haljala",
+"id": 80322
+},
+{
+"pos": [
+27.31,
+59.10
+],
+"name": "Iisaku",
+"id": 80325
+},
+{
+"pos": [
+27.02,
+57.83
+],
+"name": "V\u00f5ru",
+"id": 38928007
+},
+{
+"pos": [
+25.59,
+58.36
+],
+"name": "Viljandi",
+"id": 38928008
+},
+{
+"pos": [
+23.54,
+58.94
+],
+"name": "Haapsalu",
+"id": 30985
+},
+{
+"pos": [
+24.74,
+59.44
+],
+"name": "Tallinn",
+"id": 6123
+},
+{
+"pos": [
+27.76,
+59.40
+],
+"name": "Sillamae",
+"id": 30988
+},
+{
+"pos": [
+26.12,
+59.16
+],
+"name": "Tamsalu",
+"id": 30989
+},
+{
+"pos": [
+22.50,
+58.25
+],
+"name": "Kuressaare",
+"id": 38928043
+},
+{
+"pos": [
+24.50,
+58.39
+],
+"name": "P\u00e4rnu",
+"id": 16626
+},
+{
+"pos": [
+25.56,
+58.89
+],
+"name": "Paide",
+"id": 8345
+},
+{
+"pos": [
+26.84,
+58.70
+],
+"name": "Saare",
+"id": 80316
+},
+{
+"pos": [
+23.66,
+58.63
+],
+"name": "Komsi",
+"id": 18653
+}
+],
+"edges": [
+{
+"dist": 63.54,
+"ecmp_fwd": {
+"uni": 7.69,
+"deg": 5.45
+},
+"ecmp_bwd": {
+"uni": 7.69,
+"deg": 5.45
+},
+"source": 7359266,
+"target": 38928007
+},
+{
+"dist": 163.92,
+"ecmp_fwd": {
+"uni": 38.46,
+"deg": 30.91
+},
+"ecmp_bwd": {
+"uni": 38.46,
+"deg": 30.91
+},
+"source": 7359266,
+"target": 6123
+},
+{
+"dist": 129.83,
+"ecmp_fwd": {
+"uni": 53.85,
+"deg": 38.18
+},
+"ecmp_bwd": {
+"uni": 53.85,
+"deg": 38.18
+},
+"source": 7359266,
+"target": 16626
+},
+{
+"dist": 86.22,
+"ecmp_fwd": {
+"uni": 42.31,
+"deg": 23.03
+},
+"ecmp_bwd": {
+"uni": 42.31,
+"deg": 23.03
+},
+"source": 80322,
+"target": 6123
+},
+{
+"dist": 154.10,
+"ecmp_fwd": {
+"uni": 57.69,
+"deg": 27.88
+},
+"ecmp_bwd": {
+"uni": 57.69,
+"deg": 27.88
+},
+"source": 80322,
+"target": 16626
+},
+{
+"dist": 150.85,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 26.06
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 26.06
+},
+"source": 80325,
+"target": 6123
+},
+{
+"dist": 222.34,
+"ecmp_fwd": {
+"uni": 38.46,
+"deg": 30.91
+},
+"ecmp_bwd": {
+"uni": 38.46,
+"deg": 30.91
+},
+"source": 38928007,
+"target": 6123
+},
+{
+"dist": 160.77,
+"ecmp_fwd": {
+"uni": 53.85,
+"deg": 38.18
+},
+"ecmp_bwd": {
+"uni": 53.85,
+"deg": 38.18
+},
+"source": 38928007,
+"target": 16626
+},
+{
+"dist": 129.34,
+"ecmp_fwd": {
+"uni": 42.31,
+"deg": 23.03
+},
+"ecmp_bwd": {
+"uni": 42.31,
+"deg": 23.03
+},
+"source": 38928008,
+"target": 6123
+},
+{
+"dist": 63.72,
+"ecmp_fwd": {
+"uni": 57.69,
+"deg": 27.88
+},
+"ecmp_bwd": {
+"uni": 57.69,
+"deg": 27.88
+},
+"source": 38928008,
+"target": 16626
+},
+{
+"dist": 87.58,
+"ecmp_fwd": {
+"uni": 42.31,
+"deg": 23.03
+},
+"ecmp_bwd": {
+"uni": 42.31,
+"deg": 23.03
+},
+"source": 30985,
+"target": 6123
+},
+{
+"dist": 82.82,
+"ecmp_fwd": {
+"uni": 57.69,
+"deg": 27.88
+},
+"ecmp_bwd": {
+"uni": 57.69,
+"deg": 27.88
+},
+"source": 30985,
+"target": 16626
+},
+{
+"dist": 184.46,
+"ecmp_fwd": {
+"uni": 42.31,
+"deg": 23.03
+},
+"ecmp_bwd": {
+"uni": 42.31,
+"deg": 23.03
+},
+"source": 6123,
+"target": 38928043
+},
+{
+"dist": 171.31,
+"ecmp_fwd": {
+"uni": 42.31,
+"deg": 23.03
+},
+"ecmp_bwd": {
+"uni": 42.31,
+"deg": 23.03
+},
+"source": 6123,
+"target": 30988
+},
+{
+"dist": 117.48,
+"ecmp_fwd": {
+"uni": 61.54,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 61.54,
+"deg": 100.00
+},
+"source": 6123,
+"target": 16626
+},
+{
+"dist": 77.23,
+"ecmp_fwd": {
+"uni": 42.31,
+"deg": 23.03
+},
+"ecmp_bwd": {
+"uni": 42.31,
+"deg": 23.03
+},
+"source": 6123,
+"target": 8345
+},
+{
+"dist": 218.52,
+"ecmp_fwd": {
+"uni": 57.69,
+"deg": 27.88
+},
+"ecmp_bwd": {
+"uni": 57.69,
+"deg": 27.88
+},
+"source": 30988,
+"target": 16626
+},
+{
+"dist": 126.56,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 26.06
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 26.06
+},
+"source": 30989,
+"target": 16626
+},
+{
+"dist": 117.55,
+"ecmp_fwd": {
+"uni": 57.69,
+"deg": 27.88
+},
+"ecmp_bwd": {
+"uni": 57.69,
+"deg": 27.88
+},
+"source": 38928043,
+"target": 16626
+},
+{
+"dist": 140.26,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 26.06
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 26.06
+},
+"source": 16626,
+"target": 80316
+},
+{
+"dist": 55.27,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 26.06
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 26.06
+},
+"source": 16626,
+"target": 18653
+},
+{
+"dist": 82.50,
+"ecmp_fwd": {
+"uni": 57.69,
+"deg": 27.88
+},
+"ecmp_bwd": {
+"uni": 57.69,
+"deg": 27.88
+},
+"source": 16626,
+"target": 8345
+}
+]
+}

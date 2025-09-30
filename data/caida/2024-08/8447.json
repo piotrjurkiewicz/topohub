@@ -1,0 +1,705 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "8447",
+"demands": {},
+"stats": {
+"nodes": 22,
+"links": 38,
+"demands": 462,
+"min_degree": 1,
+"avg_degree": 3.45,
+"std_degree": 4.56,
+"max_degree": 21,
+"gini": 0.50,
+"min_link_len": 35.79,
+"avg_link_len": 205.62,
+"max_link_len": 512.12,
+"diameter_len": 569.62,
+"diameter_hops": 2,
+"avg_sdp_num": 1.27,
+"max_sdp_num": 3,
+"avg_sdp_hops": 1.84,
+"avg_sdp_len": 305.92,
+"avg_adp_num": 1.65,
+"max_adp_num": 13,
+"avg_adp_hops": 1.98,
+"avg_adp_len": 371.02
+}
+},
+"nodes": [
+{
+"pos": [
+9.75,
+47.41
+],
+"name": "Dornbirn",
+"id": 2713090
+},
+{
+"pos": [
+16.50,
+48.22
+],
+"name": "Vienna",
+"id": 11906
+},
+{
+"pos": [
+10.18,
+47.35
+],
+"name": "Hirschegg",
+"id": 38875785
+},
+{
+"pos": [
+15.41,
+47.05
+],
+"name": "Graz",
+"id": 30732
+},
+{
+"pos": [
+15.09,
+48.83
+],
+"name": "Amaliendorf",
+"id": 62827148
+},
+{
+"pos": [
+13.65,
+47.42
+],
+"name": "Ramsau am Dachstein",
+"id": 2713102
+},
+{
+"pos": [
+14.84,
+46.84
+],
+"name": "Wolfsberg",
+"id": 58575502
+},
+{
+"pos": [
+12.42,
+46.75
+],
+"name": "Sillian",
+"id": 38875533
+},
+{
+"pos": [
+13.91,
+48.67
+],
+"name": "Ulrichsberg",
+"id": 97286037
+},
+{
+"pos": [
+14.30,
+46.62
+],
+"name": "Klagenfurt",
+"id": 3321908
+},
+{
+"pos": [
+12.77,
+46.83
+],
+"name": "Lienz",
+"id": 62022202
+},
+{
+"pos": [
+13.49,
+46.80
+],
+"name": "Spittal an der Drau",
+"id": 59442492
+},
+{
+"pos": [
+13.14,
+47.11
+],
+"name": "Bad Gastein",
+"id": 38162623
+},
+{
+"pos": [
+11.40,
+47.26
+],
+"name": "Innsbruck",
+"id": 38020159
+},
+{
+"pos": [
+13.04,
+48.25
+],
+"name": "Braunau am Inn",
+"id": 97286214
+},
+{
+"pos": [
+13.04,
+47.80
+],
+"name": "Salzburg",
+"id": 3321549
+},
+{
+"pos": [
+16.58,
+48.57
+],
+"name": "Mistelbach",
+"id": 97300302
+},
+{
+"pos": [
+14.82,
+47.21
+],
+"name": "Knittelfeld",
+"id": 38237652
+},
+{
+"pos": [
+14.29,
+48.31
+],
+"name": "Linz",
+"id": 3780706
+},
+{
+"pos": [
+12.84,
+47.43
+],
+"name": "Saalfelden am Steinernen Meer",
+"id": 97282025
+},
+{
+"pos": [
+13.44,
+48.44
+],
+"name": "Sankt Florian am Inn",
+"id": 6131
+},
+{
+"pos": [
+12.05,
+47.44
+],
+"name": "Wildsch\u00f6nau",
+"id": 3321846
+}
+],
+"edges": [
+{
+"dist": 352.96,
+"ecmp_fwd": {
+"uni": 6.35,
+"deg": 3.98
+},
+"ecmp_bwd": {
+"uni": 6.35,
+"deg": 3.98
+},
+"source": 2713090,
+"target": 3780706
+},
+{
+"dist": 512.12,
+"ecmp_fwd": {
+"uni": 27.78,
+"deg": 20.69
+},
+"ecmp_bwd": {
+"uni": 27.78,
+"deg": 20.69
+},
+"source": 2713090,
+"target": 11906
+},
+{
+"dist": 297.86,
+"ecmp_fwd": {
+"uni": 65.87,
+"deg": 33.42
+},
+"ecmp_bwd": {
+"uni": 65.87,
+"deg": 33.42
+},
+"source": 2713090,
+"target": 6131
+},
+{
+"dist": 279.92,
+"ecmp_fwd": {
+"uni": 28.57,
+"deg": 21.49
+},
+"ecmp_bwd": {
+"uni": 28.57,
+"deg": 21.49
+},
+"source": 11906,
+"target": 38162623
+},
+{
+"dist": 164.29,
+"ecmp_fwd": {
+"uni": 26.19,
+"deg": 26.53
+},
+"ecmp_bwd": {
+"uni": 26.19,
+"deg": 26.53
+},
+"source": 11906,
+"target": 3780706
+},
+{
+"dist": 482.18,
+"ecmp_fwd": {
+"uni": 30.95,
+"deg": 15.38
+},
+"ecmp_bwd": {
+"uni": 30.95,
+"deg": 15.38
+},
+"source": 11906,
+"target": 38875785
+},
+{
+"dist": 153.55,
+"ecmp_fwd": {
+"uni": 27.78,
+"deg": 20.69
+},
+"ecmp_bwd": {
+"uni": 27.78,
+"deg": 20.69
+},
+"source": 11906,
+"target": 30732
+},
+{
+"dist": 347.48,
+"ecmp_fwd": {
+"uni": 27.78,
+"deg": 20.69
+},
+"ecmp_bwd": {
+"uni": 27.78,
+"deg": 20.69
+},
+"source": 11906,
+"target": 38875533
+},
+{
+"dist": 261.23,
+"ecmp_fwd": {
+"uni": 28.57,
+"deg": 21.49
+},
+"ecmp_bwd": {
+"uni": 28.57,
+"deg": 21.49
+},
+"source": 11906,
+"target": 3321549
+},
+{
+"dist": 230.50,
+"ecmp_fwd": {
+"uni": 30.95,
+"deg": 15.38
+},
+"ecmp_bwd": {
+"uni": 30.95,
+"deg": 15.38
+},
+"source": 11906,
+"target": 2713102
+},
+{
+"dist": 242.52,
+"ecmp_fwd": {
+"uni": 30.95,
+"deg": 15.38
+},
+"ecmp_bwd": {
+"uni": 30.95,
+"deg": 15.38
+},
+"source": 11906,
+"target": 3321908
+},
+{
+"dist": 168.34,
+"ecmp_fwd": {
+"uni": 30.95,
+"deg": 15.38
+},
+"ecmp_bwd": {
+"uni": 30.95,
+"deg": 15.38
+},
+"source": 11906,
+"target": 38237652
+},
+{
+"dist": 343.25,
+"ecmp_fwd": {
+"uni": 27.78,
+"deg": 20.69
+},
+"ecmp_bwd": {
+"uni": 27.78,
+"deg": 20.69
+},
+"source": 11906,
+"target": 3321846
+},
+{
+"dist": 395.71,
+"ecmp_fwd": {
+"uni": 26.19,
+"deg": 26.53
+},
+"ecmp_bwd": {
+"uni": 26.19,
+"deg": 26.53
+},
+"source": 11906,
+"target": 38020159
+},
+{
+"dist": 227.78,
+"ecmp_fwd": {
+"uni": 42.86,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 42.86,
+"deg": 100.00
+},
+"source": 11906,
+"target": 6131
+},
+{
+"dist": 271.76,
+"ecmp_fwd": {
+"uni": 69.05,
+"deg": 23.87
+},
+"ecmp_bwd": {
+"uni": 69.05,
+"deg": 23.87
+},
+"source": 38875785,
+"target": 6131
+},
+{
+"dist": 163.42,
+"ecmp_fwd": {
+"uni": 6.35,
+"deg": 3.98
+},
+"ecmp_bwd": {
+"uni": 6.35,
+"deg": 3.98
+},
+"source": 30732,
+"target": 3780706
+},
+{
+"dist": 213.81,
+"ecmp_fwd": {
+"uni": 65.87,
+"deg": 33.42
+},
+"ecmp_bwd": {
+"uni": 65.87,
+"deg": 33.42
+},
+"source": 30732,
+"target": 6131
+},
+{
+"dist": 128.82,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"source": 62827148,
+"target": 6131
+},
+{
+"dist": 114.77,
+"ecmp_fwd": {
+"uni": 69.05,
+"deg": 23.87
+},
+"ecmp_bwd": {
+"uni": 69.05,
+"deg": 23.87
+},
+"source": 2713102,
+"target": 6131
+},
+{
+"dist": 207.01,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"source": 58575502,
+"target": 6131
+},
+{
+"dist": 95.63,
+"ecmp_fwd": {
+"uni": 6.35,
+"deg": 3.98
+},
+"ecmp_bwd": {
+"uni": 6.35,
+"deg": 3.98
+},
+"source": 38875533,
+"target": 38020159
+},
+{
+"dist": 202.78,
+"ecmp_fwd": {
+"uni": 65.87,
+"deg": 33.42
+},
+"ecmp_bwd": {
+"uni": 65.87,
+"deg": 33.42
+},
+"source": 38875533,
+"target": 6131
+},
+{
+"dist": 43.20,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"source": 97286037,
+"target": 6131
+},
+{
+"dist": 212.20,
+"ecmp_fwd": {
+"uni": 69.05,
+"deg": 23.87
+},
+"ecmp_bwd": {
+"uni": 69.05,
+"deg": 23.87
+},
+"source": 3321908,
+"target": 6131
+},
+{
+"dist": 185.86,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"source": 62022202,
+"target": 6131
+},
+{
+"dist": 182.70,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"source": 59442492,
+"target": 6131
+},
+{
+"dist": 76.72,
+"ecmp_fwd": {
+"uni": 4.76,
+"deg": 2.39
+},
+"ecmp_bwd": {
+"uni": 4.76,
+"deg": 2.39
+},
+"source": 38162623,
+"target": 3321549
+},
+{
+"dist": 149.16,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 34.22
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 34.22
+},
+"source": 38162623,
+"target": 6131
+},
+{
+"dist": 200.53,
+"ecmp_fwd": {
+"uni": 64.29,
+"deg": 43.50
+},
+"ecmp_bwd": {
+"uni": 64.29,
+"deg": 43.50
+},
+"source": 38020159,
+"target": 6131
+},
+{
+"dist": 52.67,
+"ecmp_fwd": {
+"uni": 6.35,
+"deg": 3.98
+},
+"ecmp_bwd": {
+"uni": 6.35,
+"deg": 3.98
+},
+"source": 38020159,
+"target": 3321846
+},
+{
+"dist": 35.79,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"source": 97286214,
+"target": 6131
+},
+{
+"dist": 76.88,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 34.22
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 34.22
+},
+"source": 3321549,
+"target": 6131
+},
+{
+"dist": 231.90,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"source": 97300302,
+"target": 6131
+},
+{
+"dist": 171.17,
+"ecmp_fwd": {
+"uni": 69.05,
+"deg": 23.87
+},
+"ecmp_bwd": {
+"uni": 69.05,
+"deg": 23.87
+},
+"source": 38237652,
+"target": 6131
+},
+{
+"dist": 64.32,
+"ecmp_fwd": {
+"uni": 64.29,
+"deg": 43.50
+},
+"ecmp_bwd": {
+"uni": 64.29,
+"deg": 43.50
+},
+"source": 3780706,
+"target": 6131
+},
+{
+"dist": 121.09,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 19.89
+},
+"source": 97282025,
+"target": 6131
+},
+{
+"dist": 151.87,
+"ecmp_fwd": {
+"uni": 65.87,
+"deg": 33.42
+},
+"ecmp_bwd": {
+"uni": 65.87,
+"deg": 33.42
+},
+"source": 6131,
+"target": 3321846
+}
+]
+}

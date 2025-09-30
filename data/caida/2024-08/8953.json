@@ -1,0 +1,403 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "8953",
+"demands": {},
+"stats": {
+"nodes": 12,
+"links": 21,
+"demands": 132,
+"min_degree": 1,
+"avg_degree": 3.50,
+"std_degree": 2.69,
+"max_degree": 11,
+"gini": 0.38,
+"min_link_len": 93.93,
+"avg_link_len": 302.79,
+"max_link_len": 607.91,
+"diameter_len": 1098.48,
+"diameter_hops": 2,
+"avg_sdp_num": 1.27,
+"max_sdp_num": 3,
+"avg_sdp_hops": 1.68,
+"avg_sdp_len": 465.69,
+"avg_adp_num": 2.06,
+"max_adp_num": 6,
+"avg_adp_hops": 2.00,
+"avg_adp_len": 650.29
+}
+},
+"nodes": [
+{
+"pos": [
+28.63,
+44.18
+],
+"name": "Constan\u021ba",
+"id": 26368
+},
+{
+"pos": [
+23.59,
+46.77
+],
+"name": "Cluj-Napoca",
+"id": 26369
+},
+{
+"pos": [
+27.98,
+45.27
+],
+"name": "Braila",
+"id": 10114659
+},
+{
+"pos": [
+25.61,
+45.65
+],
+"name": "Brasov",
+"id": 85669288
+},
+{
+"pos": [
+26.17,
+44.42
+],
+"name": "Bucharest",
+"id": 843
+},
+{
+"pos": [
+21.40,
+46.17
+],
+"name": "Vladimirescu",
+"id": 10257
+},
+{
+"pos": [
+24.77,
+46.77
+],
+"name": "Solov\u0103stru",
+"id": 38186003
+},
+{
+"pos": [
+26.46,
+46.85
+],
+"name": "S\u0103vine\u015fti",
+"id": 38186007
+},
+{
+"pos": [
+25.00,
+46.00
+],
+"id": 37455831
+},
+{
+"pos": [
+27.07,
+44.28
+],
+"name": "Nicolae B\u0103lcescu",
+"id": 38406618
+},
+{
+"pos": [
+24.15,
+45.80
+],
+"name": "Sibiu",
+"id": 12817275
+},
+{
+"pos": [
+27.61,
+47.17
+],
+"name": "Iasi",
+"id": 56125
+}
+],
+"edges": [
+{
+"dist": 197.84,
+"ecmp_fwd": {
+"uni": 27.27,
+"deg": 24.04
+},
+"ecmp_bwd": {
+"uni": 27.27,
+"deg": 24.04
+},
+"source": 26368,
+"target": 843
+},
+{
+"dist": 607.91,
+"ecmp_fwd": {
+"uni": 72.73,
+"deg": 52.88
+},
+"ecmp_bwd": {
+"uni": 72.73,
+"deg": 52.88
+},
+"source": 26368,
+"target": 10257
+},
+{
+"dist": 115.29,
+"ecmp_fwd": {
+"uni": 19.70,
+"deg": 26.92
+},
+"ecmp_bwd": {
+"uni": 19.70,
+"deg": 26.92
+},
+"source": 26369,
+"target": 12817275
+},
+{
+"dist": 329.23,
+"ecmp_fwd": {
+"uni": 28.79,
+"deg": 39.90
+},
+"ecmp_bwd": {
+"uni": 28.79,
+"deg": 39.90
+},
+"source": 26369,
+"target": 843
+},
+{
+"dist": 180.47,
+"ecmp_fwd": {
+"uni": 57.58,
+"deg": 61.06
+},
+"ecmp_bwd": {
+"uni": 57.58,
+"deg": 61.06
+},
+"source": 26369,
+"target": 10257
+},
+{
+"dist": 520.25,
+"ecmp_fwd": {
+"uni": 77.27,
+"deg": 54.81
+},
+"ecmp_bwd": {
+"uni": 77.27,
+"deg": 54.81
+},
+"source": 10114659,
+"target": 10257
+},
+{
+"dist": 213.37,
+"ecmp_fwd": {
+"uni": 22.73,
+"deg": 22.12
+},
+"ecmp_bwd": {
+"uni": 22.73,
+"deg": 22.12
+},
+"source": 10114659,
+"target": 56125
+},
+{
+"dist": 330.48,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.42
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.42
+},
+"source": 85669288,
+"target": 10257
+},
+{
+"dist": 420.36,
+"ecmp_fwd": {
+"uni": 43.94,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 43.94,
+"deg": 100.00
+},
+"source": 843,
+"target": 10257
+},
+{
+"dist": 198.33,
+"ecmp_fwd": {
+"uni": 27.27,
+"deg": 24.04
+},
+"ecmp_bwd": {
+"uni": 27.27,
+"deg": 24.04
+},
+"source": 843,
+"target": 37455831
+},
+{
+"dist": 271.58,
+"ecmp_fwd": {
+"uni": 22.73,
+"deg": 27.40
+},
+"ecmp_bwd": {
+"uni": 22.73,
+"deg": 27.40
+},
+"source": 843,
+"target": 38186007
+},
+{
+"dist": 325.88,
+"ecmp_fwd": {
+"uni": 28.79,
+"deg": 56.73
+},
+"ecmp_bwd": {
+"uni": 28.79,
+"deg": 56.73
+},
+"source": 843,
+"target": 56125
+},
+{
+"dist": 266.04,
+"ecmp_fwd": {
+"uni": 81.82,
+"deg": 61.54
+},
+"ecmp_bwd": {
+"uni": 81.82,
+"deg": 61.54
+},
+"source": 10257,
+"target": 38186003
+},
+{
+"dist": 394.39,
+"ecmp_fwd": {
+"uni": 59.09,
+"deg": 62.02
+},
+"ecmp_bwd": {
+"uni": 59.09,
+"deg": 62.02
+},
+"source": 10257,
+"target": 38186007
+},
+{
+"dist": 277.78,
+"ecmp_fwd": {
+"uni": 72.73,
+"deg": 52.88
+},
+"ecmp_bwd": {
+"uni": 72.73,
+"deg": 52.88
+},
+"source": 10257,
+"target": 37455831
+},
+{
+"dist": 490.57,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 39.42
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 39.42
+},
+"source": 10257,
+"target": 38406618
+},
+{
+"dist": 215.69,
+"ecmp_fwd": {
+"uni": 57.58,
+"deg": 82.69
+},
+"ecmp_bwd": {
+"uni": 57.58,
+"deg": 82.69
+},
+"source": 10257,
+"target": 12817275
+},
+{
+"dist": 486.26,
+"ecmp_fwd": {
+"uni": 43.94,
+"deg": 81.73
+},
+"ecmp_bwd": {
+"uni": 43.94,
+"deg": 81.73
+},
+"source": 10257,
+"target": 56125
+},
+{
+"dist": 117.47,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 15.38
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 15.38
+},
+"source": 38186003,
+"target": 12817275
+},
+{
+"dist": 93.93,
+"ecmp_fwd": {
+"uni": 18.18,
+"deg": 23.08
+},
+"ecmp_bwd": {
+"uni": 18.18,
+"deg": 23.08
+},
+"source": 38186007,
+"target": 56125
+},
+{
+"dist": 305.57,
+"ecmp_fwd": {
+"uni": 28.79,
+"deg": 46.15
+},
+"ecmp_bwd": {
+"uni": 28.79,
+"deg": 46.15
+},
+"source": 12817275,
+"target": 56125
+}
+]
+}

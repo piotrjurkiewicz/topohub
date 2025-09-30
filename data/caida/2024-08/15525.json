@@ -1,0 +1,389 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "15525",
+"demands": {},
+"stats": {
+"nodes": 15,
+"links": 18,
+"demands": 210,
+"min_degree": 1,
+"avg_degree": 2.40,
+"std_degree": 2.03,
+"max_degree": 7,
+"gini": 0.41,
+"min_link_len": 62.71,
+"avg_link_len": 175.25,
+"max_link_len": 445.81,
+"diameter_len": 913.96,
+"diameter_hops": 4,
+"avg_sdp_num": 1.05,
+"max_sdp_num": 2,
+"avg_sdp_hops": 2.30,
+"avg_sdp_len": 422.08,
+"avg_adp_num": 1.26,
+"max_adp_num": 3,
+"avg_adp_hops": 2.45,
+"avg_adp_len": 466.81
+}
+},
+"nodes": [
+{
+"pos": [
+-8.09,
+39.81
+],
+"name": "Sert\u00e3",
+"id": 76589633
+},
+{
+"pos": [
+-8.46,
+39.47
+],
+"name": "Entroncamento",
+"id": 23265
+},
+{
+"pos": [
+-8.68,
+41.17
+],
+"name": "Porto",
+"id": 1603
+},
+{
+"pos": [
+-7.91,
+40.66
+],
+"name": "Viseu",
+"id": 2706596
+},
+{
+"pos": [
+-9.23,
+38.75
+],
+"name": "Amadora",
+"id": 38089859
+},
+{
+"pos": [
+-8.16,
+39.53
+],
+"name": "Sardoal",
+"id": 76589638
+},
+{
+"pos": [
+-7.39,
+41.80
+],
+"name": "Chaves",
+"id": 23267
+},
+{
+"pos": [
+-7.81,
+41.10
+],
+"name": "Lamego",
+"id": 2713261
+},
+{
+"pos": [
+-8.42,
+40.21
+],
+"name": "Coimbra",
+"id": 13032976
+},
+{
+"pos": [
+-8.82,
+39.41
+],
+"name": "Alcanede",
+"id": 76603571
+},
+{
+"pos": [
+-8.73,
+37.16
+],
+"name": "Bensafrim",
+"id": 37636565
+},
+{
+"pos": [
+-8.93,
+39.75
+],
+"name": "Marinha Grande",
+"id": 3467061
+},
+{
+"pos": [
+-7.89,
+38.57
+],
+"name": "Evora",
+"id": 37636727
+},
+{
+"pos": [
+-8.42,
+41.55
+],
+"name": "Braga",
+"id": 76603582
+},
+{
+"pos": [
+-8.65,
+40.65
+],
+"name": "Aveiro",
+"id": 76590015
+}
+],
+"edges": [
+{
+"dist": 159.21,
+"ecmp_fwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"ecmp_bwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"source": 76589633,
+"target": 1603
+},
+{
+"dist": 103.32,
+"ecmp_fwd": {
+"uni": 34.55,
+"deg": 30.52
+},
+"ecmp_bwd": {
+"uni": 34.55,
+"deg": 30.52
+},
+"source": 23265,
+"target": 38089859
+},
+{
+"dist": 141.30,
+"ecmp_fwd": {
+"uni": 16.36,
+"deg": 13.64
+},
+"ecmp_bwd": {
+"uni": 16.36,
+"deg": 13.64
+},
+"source": 23265,
+"target": 2706596
+},
+{
+"dist": 272.88,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 1603,
+"target": 38089859
+},
+{
+"dist": 85.82,
+"ecmp_fwd": {
+"uni": 50.91,
+"deg": 49.35
+},
+"ecmp_bwd": {
+"uni": 52.73,
+"deg": 50.97
+},
+"source": 1603,
+"target": 2706596
+},
+{
+"dist": 187.34,
+"ecmp_fwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"ecmp_bwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"source": 1603,
+"target": 76589638
+},
+{
+"dist": 109.34,
+"ecmp_fwd": {
+"uni": 43.64,
+"deg": 43.83
+},
+"ecmp_bwd": {
+"uni": 41.82,
+"deg": 42.21
+},
+"source": 1603,
+"target": 13032976
+},
+{
+"dist": 445.81,
+"ecmp_fwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"ecmp_bwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"source": 1603,
+"target": 37636565
+},
+{
+"dist": 297.19,
+"ecmp_fwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"ecmp_bwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"source": 1603,
+"target": 37636727
+},
+{
+"dist": 240.84,
+"ecmp_fwd": {
+"uni": 43.64,
+"deg": 50.32
+},
+"ecmp_bwd": {
+"uni": 45.45,
+"deg": 51.95
+},
+"source": 2706596,
+"target": 38089859
+},
+{
+"dist": 62.71,
+"ecmp_fwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"ecmp_bwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"source": 2706596,
+"target": 76590015
+},
+{
+"dist": 81.82,
+"ecmp_fwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"ecmp_bwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"source": 38089859,
+"target": 76603571
+},
+{
+"dist": 318.85,
+"ecmp_fwd": {
+"uni": 92.73,
+"deg": 82.79
+},
+"ecmp_bwd": {
+"uni": 94.55,
+"deg": 84.42
+},
+"source": 38089859,
+"target": 76603582
+},
+{
+"dist": 175.89,
+"ecmp_fwd": {
+"uni": 30.91,
+"deg": 38.96
+},
+"ecmp_bwd": {
+"uni": 30.91,
+"deg": 38.96
+},
+"source": 38089859,
+"target": 13032976
+},
+{
+"dist": 113.41,
+"ecmp_fwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"ecmp_bwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"source": 38089859,
+"target": 3467061
+},
+{
+"dist": 197.45,
+"ecmp_fwd": {
+"uni": 36.36,
+"deg": 32.47
+},
+"ecmp_bwd": {
+"uni": 38.18,
+"deg": 34.09
+},
+"source": 23267,
+"target": 13032976
+},
+{
+"dist": 89.90,
+"ecmp_fwd": {
+"uni": 21.82,
+"deg": 19.48
+},
+"ecmp_bwd": {
+"uni": 20.00,
+"deg": 17.86
+},
+"source": 23267,
+"target": 76603582
+},
+{
+"dist": 71.45,
+"ecmp_fwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"ecmp_bwd": {
+"uni": 50.91,
+"deg": 22.73
+},
+"source": 2713261,
+"target": 76603582
+}
+]
+}

@@ -1,0 +1,851 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "4538",
+"demands": {},
+"stats": {
+"nodes": 37,
+"links": 40,
+"demands": 1332,
+"min_degree": 1,
+"avg_degree": 2.16,
+"std_degree": 5.67,
+"max_degree": 36,
+"gini": 0.51,
+"min_link_len": 48.17,
+"avg_link_len": 734.66,
+"max_link_len": 1891.05,
+"diameter_len": 3067.18,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 2,
+"avg_sdp_hops": 1.94,
+"avg_sdp_len": 1409.78,
+"avg_adp_num": 1.03,
+"max_adp_num": 4,
+"avg_adp_hops": 1.96,
+"avg_adp_len": 1430.66
+}
+},
+"nodes": [
+{
+"pos": [
+117.06,
+39.37
+],
+"name": "Yangcun",
+"id": 37602947
+},
+{
+"pos": [
+109.03,
+34.33
+],
+"name": "Xi'an",
+"id": 5592324
+},
+{
+"pos": [
+123.43,
+41.78
+],
+"name": "Shenyang",
+"id": 8271629
+},
+{
+"pos": [
+121.62,
+38.94
+],
+"name": "Dalian",
+"id": 8271630
+},
+{
+"pos": [
+112.83,
+35.50
+],
+"name": "Jincheng",
+"id": 38418837
+},
+{
+"pos": [
+120.75,
+30.75
+],
+"name": "Jiaxing",
+"id": 38323231
+},
+{
+"pos": [
+112.96,
+28.20
+],
+"name": "Changsha",
+"id": 5344160
+},
+{
+"pos": [
+119.95,
+31.77
+],
+"name": "Changzhou",
+"id": 38514722
+},
+{
+"pos": [
+114.47,
+38.04
+],
+"name": "Shijiazhuang",
+"id": 38496420
+},
+{
+"pos": [
+114.06,
+22.56
+],
+"name": "Shenzhen",
+"id": 38496678
+},
+{
+"pos": [
+120.29,
+31.56
+],
+"name": "Wuxi",
+"id": 39273000
+},
+{
+"pos": [
+126.60,
+45.78
+],
+"name": "Harbin",
+"id": 8272425
+},
+{
+"pos": [
+119.59,
+39.94
+],
+"name": "Qinhuangdao",
+"id": 38497576
+},
+{
+"pos": [
+106.72,
+26.58
+],
+"name": "Guiyang",
+"id": 8272047
+},
+{
+"pos": [
+121.56,
+29.88
+],
+"name": "Ningbo",
+"id": 37468465
+},
+{
+"pos": [
+120.60,
+31.31
+],
+"name": "Suzhou",
+"id": 34040501
+},
+{
+"pos": [
+118.77,
+32.06
+],
+"name": "Nanjing",
+"id": 83256
+},
+{
+"pos": [
+117.97,
+36.80
+],
+"name": "Zibo",
+"id": 8332352
+},
+{
+"pos": [
+116.52,
+31.73
+],
+"name": "Lu'an",
+"id": 37431363
+},
+{
+"pos": [
+109.51,
+34.50
+],
+"name": "Weinan",
+"id": 5677508
+},
+{
+"pos": [
+125.32,
+43.88
+],
+"name": "Changchun",
+"id": 37431115
+},
+{
+"pos": [
+120.38,
+36.06
+],
+"name": "Qingdao",
+"id": 8332364
+},
+{
+"pos": [
+117.05,
+30.52
+],
+"name": "Anqing",
+"id": 37430733
+},
+{
+"pos": [
+120.16,
+30.30
+],
+"name": "Hangzhou",
+"id": 38529871
+},
+{
+"pos": [
+113.65,
+34.76
+],
+"name": "Zhengzhou",
+"id": 1960784
+},
+{
+"pos": [
+118.02,
+37.36
+],
+"name": "Binzhou",
+"id": 8332371
+},
+{
+"pos": [
+114.27,
+30.59
+],
+"name": "Wuhan",
+"id": 8331222
+},
+{
+"pos": [
+121.46,
+31.22
+],
+"name": "Shanghai",
+"id": 8053340
+},
+{
+"pos": [
+106.56,
+29.57
+],
+"name": "Chongqing",
+"id": 38440415
+},
+{
+"pos": [
+104.06,
+30.65
+],
+"name": "Chengdu",
+"id": 8053217
+},
+{
+"pos": [
+116.66,
+39.50
+],
+"name": "Langfang",
+"id": 42594
+},
+{
+"pos": [
+117.02,
+36.68
+],
+"name": "Jinan",
+"id": 5687911
+},
+{
+"pos": [
+118.34,
+35.06
+],
+"name": "Linyi",
+"id": 8332401
+},
+{
+"pos": [
+117.18,
+39.15
+],
+"name": "Tianjin",
+"id": 39270897
+},
+{
+"pos": [
+116.39,
+39.91
+],
+"name": "Beijing",
+"id": 8438
+},
+{
+"pos": [
+108.06,
+34.30
+],
+"name": "Yangling",
+"id": 12332412
+},
+{
+"pos": [
+113.25,
+23.12
+],
+"name": "Guangzhou",
+"id": 37618815
+}
+],
+"edges": [
+{
+"dist": 595.22,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 37602947,
+"target": 1960784
+},
+{
+"dist": 48.17,
+"ecmp_fwd": {
+"uni": 2.78,
+"deg": 1.43
+},
+"ecmp_bwd": {
+"uni": 2.78,
+"deg": 1.43
+},
+"source": 5592324,
+"target": 5677508
+},
+{
+"dist": 425.22,
+"ecmp_fwd": {
+"uni": 97.22,
+"deg": 54.29
+},
+"ecmp_bwd": {
+"uni": 97.22,
+"deg": 54.29
+},
+"source": 5592324,
+"target": 1960784
+},
+{
+"dist": 1156.14,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 8271629,
+"target": 1960784
+},
+{
+"dist": 848.02,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 8271630,
+"target": 1960784
+},
+{
+"dist": 110.47,
+"ecmp_fwd": {
+"uni": 94.44,
+"deg": 51.43
+},
+"ecmp_bwd": {
+"uni": 94.44,
+"deg": 51.43
+},
+"source": 38418837,
+"target": 1960784
+},
+{
+"dist": 582.52,
+"ecmp_fwd": {
+"uni": 5.56,
+"deg": 4.29
+},
+"ecmp_bwd": {
+"uni": 5.56,
+"deg": 4.29
+},
+"source": 38418837,
+"target": 8438
+},
+{
+"dist": 799.93,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 38323231,
+"target": 1960784
+},
+{
+"dist": 732.36,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 5344160,
+"target": 1960784
+},
+{
+"dist": 674.13,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 38514722,
+"target": 1960784
+},
+{
+"dist": 371.70,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 38496420,
+"target": 1960784
+},
+{
+"dist": 1358.00,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 38496678,
+"target": 1960784
+},
+{
+"dist": 713.08,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 39273000,
+"target": 1960784
+},
+{
+"dist": 1642.04,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 8272425,
+"target": 1960784
+},
+{
+"dist": 779.04,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 38497576,
+"target": 1960784
+},
+{
+"dist": 1124.65,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 8272047,
+"target": 1960784
+},
+{
+"dist": 920.37,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 37468465,
+"target": 1960784
+},
+{
+"dist": 753.38,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 34040501,
+"target": 1960784
+},
+{
+"dist": 562.84,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 83256,
+"target": 1960784
+},
+{
+"dist": 451.26,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 8332352,
+"target": 1960784
+},
+{
+"dist": 430.06,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 37431363,
+"target": 1960784
+},
+{
+"dist": 379.16,
+"ecmp_fwd": {
+"uni": 97.22,
+"deg": 54.29
+},
+"ecmp_bwd": {
+"uni": 97.22,
+"deg": 54.29
+},
+"source": 5677508,
+"target": 1960784
+},
+{
+"dist": 1425.14,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 37431115,
+"target": 1960784
+},
+{
+"dist": 627.35,
+"ecmp_fwd": {
+"uni": 94.44,
+"deg": 51.43
+},
+"ecmp_bwd": {
+"uni": 94.44,
+"deg": 51.43
+},
+"source": 8332364,
+"target": 1960784
+},
+{
+"dist": 552.59,
+"ecmp_fwd": {
+"uni": 5.56,
+"deg": 4.29
+},
+"ecmp_bwd": {
+"uni": 5.56,
+"deg": 4.29
+},
+"source": 8332364,
+"target": 8438
+},
+{
+"dist": 569.50,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 37430733,
+"target": 1960784
+},
+{
+"dist": 786.70,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 38529871,
+"target": 1960784
+},
+{
+"dist": 488.29,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 1960784,
+"target": 8332371
+},
+{
+"dist": 467.55,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 1960784,
+"target": 8331222
+},
+{
+"dist": 827.87,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 1960784,
+"target": 8053340
+},
+{
+"dist": 882.02,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 1960784,
+"target": 38440415
+},
+{
+"dist": 1006.65,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 1960784,
+"target": 8053217
+},
+{
+"dist": 371.85,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 1960784,
+"target": 5687911
+},
+{
+"dist": 429.10,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 1960784,
+"target": 8332401
+},
+{
+"dist": 580.19,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 1960784,
+"target": 39270897
+},
+{
+"dist": 514.05,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 1960784,
+"target": 12332412
+},
+{
+"dist": 1295.43,
+"ecmp_fwd": {
+"uni": 94.44,
+"deg": 51.43
+},
+"ecmp_bwd": {
+"uni": 94.44,
+"deg": 51.43
+},
+"source": 1960784,
+"target": 37618815
+},
+{
+"dist": 591.13,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 28.21
+},
+"source": 1960784,
+"target": 42594
+},
+{
+"dist": 622.30,
+"ecmp_fwd": {
+"uni": 91.67,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 91.67,
+"deg": 100.00
+},
+"source": 1960784,
+"target": 8438
+},
+{
+"dist": 1891.05,
+"ecmp_fwd": {
+"uni": 5.56,
+"deg": 4.29
+},
+"ecmp_bwd": {
+"uni": 5.56,
+"deg": 4.29
+},
+"source": 8438,
+"target": 37618815
+}
+]
+}

@@ -1,0 +1,169 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "11340",
+"demands": {},
+"stats": {
+"nodes": 7,
+"links": 6,
+"demands": 42,
+"min_degree": 1,
+"avg_degree": 1.71,
+"std_degree": 1.75,
+"max_degree": 6,
+"gini": 0.36,
+"min_link_len": 86.56,
+"avg_link_len": 534.97,
+"max_link_len": 1084.74,
+"diameter_len": 1831.72,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.71,
+"avg_sdp_len": 917.08,
+"avg_adp_num": 1.00,
+"max_adp_num": 1,
+"avg_adp_hops": 1.71,
+"avg_adp_len": 917.08
+}
+},
+"nodes": [
+{
+"pos": [
+-70.74,
+-34.17
+],
+"name": "Rancagua",
+"id": 6124065
+},
+{
+"pos": [
+-73.05,
+-36.83
+],
+"name": "Concepci\u00f3n",
+"id": 6253929
+},
+{
+"pos": [
+-71.66,
+-35.44
+],
+"name": "Talca",
+"id": 93475050
+},
+{
+"pos": [
+-72.60,
+-38.73
+],
+"name": "Temuco",
+"id": 97789520
+},
+{
+"pos": [
+-70.40,
+-23.65
+],
+"name": "Antofagasta",
+"id": 38607608
+},
+{
+"pos": [
+-73.25,
+-39.81
+],
+"name": "Valdivia",
+"id": 39010907
+},
+{
+"pos": [
+-70.79,
+-33.39
+],
+"name": "Santiago",
+"id": 6124063
+}
+],
+"edges": [
+{
+"dist": 86.56,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 6124065,
+"target": 6124063
+},
+{
+"dist": 434.51,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 6253929,
+"target": 6124063
+},
+{
+"dist": 241.29,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 93475050,
+"target": 6124063
+},
+{
+"dist": 615.72,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 97789520,
+"target": 6124063
+},
+{
+"dist": 1084.74,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 38607608,
+"target": 6124063
+},
+{
+"dist": 746.98,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 100.00
+},
+"source": 39010907,
+"target": 6124063
+}
+]
+}

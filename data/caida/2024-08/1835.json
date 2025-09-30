@@ -1,0 +1,119 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "1835",
+"demands": {},
+"stats": {
+"nodes": 4,
+"links": 4,
+"demands": 12,
+"min_degree": 1,
+"avg_degree": 2.00,
+"std_degree": 0.71,
+"max_degree": 3,
+"gini": 0.19,
+"min_link_len": 96.40,
+"avg_link_len": 152.80,
+"max_link_len": 222.72,
+"diameter_len": 357.65,
+"diameter_hops": 2,
+"avg_sdp_num": 1.00,
+"max_sdp_num": 1,
+"avg_sdp_hops": 1.33,
+"avg_sdp_len": 170.46,
+"avg_adp_num": 1.50,
+"max_adp_num": 2,
+"avg_adp_hops": 1.58,
+"avg_adp_len": 249.84
+}
+},
+"nodes": [
+{
+"pos": [
+10.45,
+55.41
+],
+"name": "Odense",
+"id": 96987624
+},
+{
+"pos": [
+9.91,
+57.04
+],
+"name": "Aalborg",
+"id": 68658
+},
+{
+"pos": [
+10.20,
+56.19
+],
+"name": "Aarhus",
+"id": 5915246
+},
+{
+"pos": [
+12.54,
+55.67
+],
+"name": "Copenhagen",
+"id": 28623
+}
+],
+"edges": [
+{
+"dist": 134.93,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 87.50
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 87.50
+},
+"source": 96987624,
+"target": 28623
+},
+{
+"dist": 96.40,
+"ecmp_fwd": {
+"uni": 33.33,
+"deg": 50.00
+},
+"ecmp_bwd": {
+"uni": 33.33,
+"deg": 50.00
+},
+"source": 68658,
+"target": 5915246
+},
+{
+"dist": 222.72,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 100.00
+},
+"source": 68658,
+"target": 28623
+},
+{
+"dist": 157.14,
+"ecmp_fwd": {
+"uni": 66.67,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 66.67,
+"deg": 100.00
+},
+"source": 5915246,
+"target": 28623
+}
+]
+}

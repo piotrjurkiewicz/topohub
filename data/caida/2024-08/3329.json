@@ -1,0 +1,200 @@
+{
+"directed": false,
+"multigraph": false,
+"graph": {
+"name": "3329",
+"demands": {},
+"stats": {
+"nodes": 6,
+"links": 9,
+"demands": 30,
+"min_degree": 1,
+"avg_degree": 3.00,
+"std_degree": 1.29,
+"max_degree": 5,
+"gini": 0.24,
+"min_link_len": 103.71,
+"avg_link_len": 337.46,
+"max_link_len": 621.99,
+"diameter_len": 621.99,
+"diameter_hops": 2,
+"avg_sdp_num": 1.13,
+"max_sdp_num": 2,
+"avg_sdp_hops": 1.40,
+"avg_sdp_len": 305.25,
+"avg_adp_num": 2.13,
+"max_adp_num": 4,
+"avg_adp_hops": 1.74,
+"avg_adp_len": 538.51
+}
+},
+"nodes": [
+{
+"pos": [
+22.42,
+39.64
+],
+"name": "Larissa",
+"id": 38764209
+},
+{
+"pos": [
+23.74,
+37.98
+],
+"name": "Athens",
+"id": 23348
+},
+{
+"pos": [
+22.94,
+40.64
+],
+"name": "Thessaloniki",
+"id": 3235860
+},
+{
+"pos": [
+24.02,
+35.52
+],
+"name": "Chania",
+"id": 3235862
+},
+{
+"pos": [
+21.73,
+38.25
+],
+"name": "P\u00e1trai",
+"id": 37400856
+},
+{
+"pos": [
+25.14,
+35.33
+],
+"name": "Heraklion",
+"id": 1335679
+}
+],
+"edges": [
+{
+"dist": 216.89,
+"ecmp_fwd": {
+"uni": 50.00,
+"deg": 87.50
+},
+"ecmp_bwd": {
+"uni": 50.00,
+"deg": 87.50
+},
+"source": 38764209,
+"target": 23348
+},
+{
+"dist": 480.02,
+"ecmp_fwd": {
+"uni": 20.00,
+"deg": 37.50
+},
+"ecmp_bwd": {
+"uni": 20.00,
+"deg": 37.50
+},
+"source": 38764209,
+"target": 3235862
+},
+{
+"dist": 536.56,
+"ecmp_fwd": {
+"uni": 30.00,
+"deg": 62.50
+},
+"ecmp_bwd": {
+"uni": 30.00,
+"deg": 62.50
+},
+"source": 38764209,
+"target": 1335679
+},
+{
+"dist": 303.72,
+"ecmp_fwd": {
+"uni": 60.00,
+"deg": 75.00
+},
+"ecmp_bwd": {
+"uni": 60.00,
+"deg": 75.00
+},
+"source": 23348,
+"target": 3235860
+},
+{
+"dist": 275.52,
+"ecmp_fwd": {
+"uni": 50.00,
+"deg": 87.50
+},
+"ecmp_bwd": {
+"uni": 50.00,
+"deg": 87.50
+},
+"source": 23348,
+"target": 3235862
+},
+{
+"dist": 177.81,
+"ecmp_fwd": {
+"uni": 100.00,
+"deg": 70.83
+},
+"ecmp_bwd": {
+"uni": 100.00,
+"deg": 70.83
+},
+"source": 23348,
+"target": 37400856
+},
+{
+"dist": 320.90,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 100.00
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 100.00
+},
+"source": 23348,
+"target": 1335679
+},
+{
+"dist": 621.99,
+"ecmp_fwd": {
+"uni": 40.00,
+"deg": 58.33
+},
+"ecmp_bwd": {
+"uni": 40.00,
+"deg": 58.33
+},
+"source": 3235860,
+"target": 1335679
+},
+{
+"dist": 103.71,
+"ecmp_fwd": {
+"uni": 30.00,
+"deg": 62.50
+},
+"ecmp_bwd": {
+"uni": 30.00,
+"deg": 62.50
+},
+"source": 3235862,
+"target": 1335679
+}
+]
+}
