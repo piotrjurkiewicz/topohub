@@ -6,6 +6,7 @@ This module orchestrates generation and saving of topologies using provider
 generators. Unless otherwise noted, node positions are stored as
 (longitude, latitude) tuples.
 """
+import concurrent.futures
 import json
 import os
 import sys
@@ -513,11 +514,12 @@ def main(topo_names):
             # '20965': {'distance_km': 25, 'include_continents': ['EU']},
         }
 
-        for topo_name in topo_names:
-            background = []
-            if topo_names[topo_name]:
-                background = topohub.geo.generate_map(**topo_names[topo_name])
-            gen.save_topo(topo_name, filename=f'data/caida/{topo_name}', with_plot=True, with_utilization=False, with_path_stats=False, with_topo_stats=False, background=background, scale=True, **topo_names[topo_name])
+        with concurrent.futures.ProcessPoolExecutor(max_workers=8) as executor:
+            for topo_name in topo_names:
+                background = []
+                if topo_names[topo_name]:
+                    background = topohub.geo.generate_map(**topo_names[topo_name])
+                executor.submit(gen.save_topo, topo_name, filename=f'data/caida/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=True, **topo_names[topo_name])
 
 
 if __name__ == '__main__':
