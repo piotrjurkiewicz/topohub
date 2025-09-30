@@ -80,10 +80,7 @@ class TopoGenerator:
         if len(g.edges) == 0:
             print(f'Warning: generated topology {g.name} has no edges')
             return
-        if 'filename' in kwargs:
-            filename = kwargs['filename']
-        else:
-            filename = f'mininet/topo_lib/{g.name}'
+        filename = kwargs.get('filename', f'mininet/topo_lib/{g.name}')
         os.makedirs(filename.rpartition('/')[0], exist_ok=True)
         ps = None
         if kwargs.get('with_plot'):

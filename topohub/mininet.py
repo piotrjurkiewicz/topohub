@@ -104,7 +104,7 @@ class JSONTopo(mininet.topo.Topo):
         for edge in topo['edges']:
             self.addLink(str(edge['source']), str(edge['target']), **{k: v for k, v in edge.items() if k not in ['source', 'target']})
 
-        super(JSONTopo, self).build(**params)
+        super().build(**params)
 
 def make_topo_class_from_json(name, topo):
     """
@@ -211,7 +211,7 @@ class AutoHostTopo(mininet.topo.Topo):
 
     def build(self, k=1, **params):
         """Attach ``k`` hosts to every switch in the topology."""
-        super(AutoHostTopo, self).build(**params)
+        super().build(**params)
 
         for sw in self.switches():
             for i in range(k):
@@ -232,7 +232,7 @@ class AutoHostBridgeTopo(mininet.topo.Topo):
 
     def build(self, b=1, k=1, **params):
         """Attach ``b`` bridges per switch and ``k`` hosts per bridge."""
-        super(AutoHostBridgeTopo, self).build(**params)
+        super().build(**params)
 
         for sw in self.switches():
             for j in range(b):

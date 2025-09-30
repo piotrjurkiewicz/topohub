@@ -101,7 +101,7 @@ def all_shortest_paths_all_targets(g, source, weight=None, limit=None):
     for target in g:
 
         if target not in pred:
-            raise nx.NetworkXNoPath()
+            raise nx.NetworkXNoPath
 
         paths_to_target = []
 
@@ -165,7 +165,7 @@ def all_shortest_nhops_all_targets(g, source, weight=None, limit=None):
     for target in g:
 
         if target not in pred:
-            raise nx.NetworkXNoPath()
+            raise nx.NetworkXNoPath
 
         nhops_to_target = set()
 
@@ -305,7 +305,7 @@ def shortest_disjoint_paths_slow(g):
             used_edges = set()
             for path in pp:
                 this_used_edges = set()
-                for f, t in zip(path, path[1:], strict=False):
+                for f, t in itertools.pairwise(path):
                     edge = (f, t)
                     if edge in used_edges:
                         break
@@ -352,12 +352,11 @@ def shortest_disjoint_paths(g, ff, node_filter=None):
     result = {}
     for src in g:
         for dst in g:
-            if src != dst:
-                if node_filter is None or (node_filter(g.nodes[src]) and node_filter(g.nodes[dst])):
-                    subgraph = nx.Graph()
-                    added_edges = set()
-                    dfs(src, dst, subgraph, added_edges)
-                    result[src, dst] = list(nx.edge_disjoint_paths(subgraph, src, dst, flow_func=ff))
+            if src != dst and (node_filter is None or (node_filter(g.nodes[src]) and node_filter(g.nodes[dst]))):
+                subgraph = nx.Graph()
+                added_edges = set()
+                dfs(src, dst, subgraph, added_edges)
+                result[src, dst] = list(nx.edge_disjoint_paths(subgraph, src, dst, flow_func=ff))
     return result
 
 def save_topo_graph_pdf(g, filename=None, plot_aspect=1.0):
@@ -518,12 +517,12 @@ def path_stats(g, node_filter=None):
         avg_sp_hops = sum(len(path) - 1 for path in sp[src, dst]) // len(sp[src, dst])
         avg_ap_length = 0
         for path in ap[src, dst]:
-            for u, v in zip(path, path[1:], strict=False):
+            for u, v in itertools.pairwise(path):
                 avg_ap_length += g.edges[u, v]['dist']
         avg_ap_length /= float(len(ap[src, dst]))
         avg_sp_length = 0
         for path in sp[src, dst]:
-            for u, v in zip(path, path[1:], strict=False):
+            for u, v in itertools.pairwise(path):
                 avg_sp_length += g.edges[u, v]['dist']
         avg_sp_length /= float(len(ap[src, dst]))
         if 'demands' in g.graph:
@@ -669,12 +668,12 @@ def topo_stats(g, ps=None):
         max_adp_num = 0
         max_sdp_num = 0
 
-        for pair, (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst) in ps.items():
+        for (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst) in ps.values():
             max_adp_num = max(max_adp_num, adp_number)
             max_sdp_num = max(max_sdp_num, sdp_number)
             dem_sum += demand
 
-        for pair, (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst) in ps.items():
+        for (adp_number, sdp_number, avg_adp_hops, avg_sdp_hops, avg_adp_length, avg_sdp_length, demand, src, dst) in ps.values():
             if demand > 0 or dem_sum == 0:
                 if dem_sum == 0:
                     demand = 1
@@ -717,27 +716,27 @@ def topo_stats_print(stats, name, filename=None):
 
     just = 38
     text = \
-        'Topology name'.ljust(just) + ' & %s' % name.replace('_', '\\_') + '\n\n' + \
-        'Number of nodes'.ljust(just) + ' & %s' % stats['nodes'] + '\n' + \
-        'Number of links'.ljust(just) + ' & %s' % stats['links'] + '\n' + \
-        'Number of demands'.ljust(just) + ' & %s' % stats['demands'] + '\n' + \
-        'Min. vertex degree'.ljust(just) + ' & %.2f' % stats['min_degree'] + '\n' + \
-        'Avg. vertex degree'.ljust(just) + ' & %.2f' % stats['avg_degree'] + '\n' + \
-        'Max. vertex degree'.ljust(just) + ' & %.2f' % stats['max_degree'] + '\n' + \
-        'Min. link length'.ljust(just) + ' & %.2f' % stats['min_link_len'] + '\n' + \
-        'Avg. link length'.ljust(just) + ' & %.2f' % stats['avg_link_len'] + '\n' + \
-        'Max. link length'.ljust(just) + ' & %.2f' % stats['max_link_len'] + '\n'
+        'Topology name'.ljust(just) + ' & {}'.format(name.replace('_', '\\_')) + '\n\n' + \
+        'Number of nodes'.ljust(just) + ' & {}'.format(stats['nodes']) + '\n' + \
+        'Number of links'.ljust(just) + ' & {}'.format(stats['links']) + '\n' + \
+        'Number of demands'.ljust(just) + ' & {}'.format(stats['demands']) + '\n' + \
+        'Min. vertex degree'.ljust(just) + ' & {:.2f}'.format(stats['min_degree']) + '\n' + \
+        'Avg. vertex degree'.ljust(just) + ' & {:.2f}'.format(stats['avg_degree']) + '\n' + \
+        'Max. vertex degree'.ljust(just) + ' & {:.2f}'.format(stats['max_degree']) + '\n' + \
+        'Min. link length'.ljust(just) + ' & {:.2f}'.format(stats['min_link_len']) + '\n' + \
+        'Avg. link length'.ljust(just) + ' & {:.2f}'.format(stats['avg_link_len']) + '\n' + \
+        'Max. link length'.ljust(just) + ' & {:.2f}'.format(stats['max_link_len']) + '\n'
 
     if 'avg_sdp_num' in stats:
         text += \
-            'Avg. number of disjoint shortest paths'.ljust(just) + ' & %.2f' % stats['avg_sdp_num'] + '\n' + \
-            'Max. number of disjoint shortest paths'.ljust(just) + ' & %.2f' % stats['max_sdp_num'] + '\n' + \
-            'Avg. hops of disjoint shortest paths'.ljust(just) + ' & %.2f' % stats['avg_sdp_hops'] + '\n' + \
-            'Avg. length of disjoint shortest paths'.ljust(just) + ' & %.2f' % stats['avg_sdp_len'] + '\n' + \
-            'Avg. number of all disjoint paths'.ljust(just) + ' & %.2f' % stats['avg_adp_num'] + '\n' + \
-            'Max. number of all disjoint paths'.ljust(just) + ' & %.2f' % stats['max_adp_num'] + '\n' + \
-            'Avg. hops of all disjoint paths'.ljust(just) + ' & %.2f' % stats['avg_adp_hops'] + '\n' + \
-            'Avg. length of all disjoint paths'.ljust(just) + ' & %.2f' % stats['avg_adp_len'] + '\n'
+            'Avg. number of disjoint shortest paths'.ljust(just) + ' & {:.2f}'.format(stats['avg_sdp_num']) + '\n' + \
+            'Max. number of disjoint shortest paths'.ljust(just) + ' & {:.2f}'.format(stats['max_sdp_num']) + '\n' + \
+            'Avg. hops of disjoint shortest paths'.ljust(just) + ' & {:.2f}'.format(stats['avg_sdp_hops']) + '\n' + \
+            'Avg. length of disjoint shortest paths'.ljust(just) + ' & {:.2f}'.format(stats['avg_sdp_len']) + '\n' + \
+            'Avg. number of all disjoint paths'.ljust(just) + ' & {:.2f}'.format(stats['avg_adp_num']) + '\n' + \
+            'Max. number of all disjoint paths'.ljust(just) + ' & {:.2f}'.format(stats['max_adp_num']) + '\n' + \
+            'Avg. hops of all disjoint paths'.ljust(just) + ' & {:.2f}'.format(stats['avg_adp_hops']) + '\n' + \
+            'Avg. length of all disjoint paths'.ljust(just) + ' & {:.2f}'.format(stats['avg_adp_len']) + '\n'
 
     if not filename:
         print(text)
@@ -774,7 +773,7 @@ def write_gml(g, path):
         for node, attr in g.nodes(data=True):
             f.write('  node [\n')
             f.write(f'    id {node}\n')
-            f.write(f'    label "{attr["name"] if "name" in attr else node}"\n')
+            f.write(f'    label "{attr.get("name", node)}"\n')
             if 'type' in attr:
                 f.write(f'    type "{attr["type"]}"\n')
             if 'pos' in attr:

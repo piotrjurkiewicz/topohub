@@ -22,12 +22,12 @@ class GabrielGenerator(topohub.generate.TopoGenerator):
     https://doi.org/10.1109/ICUMT.2013.6798402.
 
     K. Ruben Gabriel, Robert R. Sokal,
-    A New Statistical Approach to Geographic Variation Analysis. Systematic Biology, Volume 18, Issue 3, September 1969, Pages 259–278.
+    A New Statistical Approach to Geographic Variation Analysis. Systematic Biology, Volume 18, Issue 3, September 1969, Pages 259-278.
     https://doi.org/10.2307/2412323
     """
 
     @classmethod
-    def generate_topo(cls, nnodes, seed):
+    def generate_topo(cls, nnodes, seed, **kwargs):
         """
         Generate Gabriel graph topology with a given number of nodes.
 
@@ -75,10 +75,7 @@ class GabrielGenerator(topohub.generate.TopoGenerator):
         def neighbors(p, q):
             c = ((p[0] + q[0]) / 2, (p[1] + q[1]) / 2)
             dd = dist2(p, c)
-            for r in pos.values():
-                if r != p and r != q and dist2(r, c) < dd:
-                    return False
-            return True
+            return all(not (r not in (p, q) and dist2(r, c) < dd) for r in pos.values())
 
         for p, (p_id, p_pos) in enumerate(pos.items()):
             for q, (q_id, q_pos) in enumerate(pos.items()):
@@ -99,7 +96,7 @@ class NumpyGabrielGenerator(topohub.generate.TopoGenerator):
     https://doi.org/10.1109/ICUMT.2013.6798402.
 
     K. Ruben Gabriel, Robert R. Sokal,
-    A New Statistical Approach to Geographic Variation Analysis. Systematic Biology, Volume 18, Issue 3, September 1969, Pages 259–278.
+    A New Statistical Approach to Geographic Variation Analysis. Systematic Biology, Volume 18, Issue 3, September 1969, Pages 259-278.
     https://doi.org/10.2307/2412323
     """
 
@@ -147,9 +144,8 @@ class NumpyGabrielGenerator(topohub.generate.TopoGenerator):
         exclusion_2 = exclusion ** 2
         while n < nnodes:
             p = (random.random() * scale, random.random() * scale)
-            if nodes:
-                if np.nanmin(dist2(p, pos)) < exclusion_2:
-                    continue
+            if nodes and np.nanmin(dist2(p, pos)) < exclusion_2:
+                continue
             node_id = n
             node = f'R{node_id}'
             pos[node_id] = p
@@ -161,9 +157,7 @@ class NumpyGabrielGenerator(topohub.generate.TopoGenerator):
             dd = (pos[p] - c) ** 2
             dd = dd[0] + dd[1]
             # print(np.nanmin(dist2(c, pos)), dd)
-            if dist2(pos, c).min() < dd:
-                return False
-            return True
+            return not dist2(pos, c).min() < dd
 
         for p in range(nnodes):
             for q in range(nnodes):

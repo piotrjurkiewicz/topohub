@@ -38,7 +38,7 @@ class SNDlibGenerator(topohub.generate.TopoGenerator):
         """
 
         con = http.HTTPSConnection("sndlib.put.poznan.pl", timeout=5)
-        con.request('GET', "/download/sndlib-networks-native/%s.txt" % name)
+        con.request('GET', f"/download/sndlib-networks-native/{name}.txt")
         r = con.getresponse()
         data = r.read()
         return data

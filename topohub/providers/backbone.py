@@ -50,22 +50,18 @@ class BackboneGenerator(topohub.generate.TopoGenerator):
             node_types.append('Seacable Waypoint')
 
         for n in j['nodes']:
-            if n['type'] in node_types:
-                if not region or topohub.geo.point_in_polygon(n['longitude'], n['latitude'], region):
-                    if -180 < n['longitude'] < 180:
-                        if n['type'] in ['City', 'Seacable Landing Point']:
-                            names_set.add(n['name'])
-                        else:
-                            n['name'] = None
-                        nodes[n['id']] = {'id': n['id'], 'pos': (n['longitude'], n['latitude']), 'type': n['type']}
-                        if n['name']:
-                            nodes[n['id']]['name'] = n['name']
+            if n['type'] in node_types and (not region or topohub.geo.point_in_polygon(n['longitude'], n['latitude'], region)) and -180 < n['longitude'] < 180:
+                if n['type'] in ['City', 'Seacable Landing Point']:
+                    names_set.add(n['name'])
+                else:
+                    n['name'] = None
+                nodes[n['id']] = {'id': n['id'], 'pos': (n['longitude'], n['latitude']), 'type': n['type']}
+                if n['name']:
+                    nodes[n['id']]['name'] = n['name']
 
         for e in j['edges']:
-            if e['u'] in nodes and e['v'] in nodes:
-                if not name.endswith('_nosc') or e['type'] != 'seacable':
-                    if abs(nodes[e['u']]['pos'][0] - nodes[e['v']]['pos'][0]) < 180:
-                        edges.append({'source': e['u'], 'target': e['v'], 'dist': e['distance'], 'type': e['type']})
+            if e['u'] in nodes and e['v'] in nodes and (not name.endswith('_nosc') or e['type'] != 'seacable') and abs(nodes[e['u']]['pos'][0] - nodes[e['v']]['pos'][0]) < 180:
+                edges.append({'source': e['u'], 'target': e['v'], 'dist': e['distance'], 'type': e['type']})
 
         g = nx.node_link_graph({'directed': False, 'multigraph': False, 'graph': {'name': str(name), 'demands': {}}, 'nodes': list(nodes.values()), 'edges': edges}, edges='edges')
         g = topohub.geo.remove_dead_ends(g)
