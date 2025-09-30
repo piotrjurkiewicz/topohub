@@ -6,7 +6,7 @@ network topologies in NetworkX node-link format. Unless otherwise noted,
 node positions are stored as (longitude, latitude) tuples.
 """
 
-__version__ = '1.4.1'
+__version__ = '1.5'
 
 def get(key, use_names=False):
     """
