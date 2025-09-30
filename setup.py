@@ -10,7 +10,7 @@ setup(
     name='topohub',
     version=topohub.__version__,
     packages=find_packages(include=['topohub', 'topohub.*'], exclude=['topohub.tests', 'topohub.tests.*']),
-    package_data={'topohub': ['data/gabriel/*/*.json', 'data/sndlib/*.json', 'data/topozoo/*.json', 'data/backbone/*.json']},
+    package_data={'topohub': ['data/backbone/*.json', 'data/caida/*/*.json', 'data/gabriel/*/*.json', 'data/sndlib/*.json', 'data/topozoo/*.json']},
     url=URL,
     license='MIT',
     author='Piotr Jurkiewicz',
