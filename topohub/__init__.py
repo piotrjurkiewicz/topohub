@@ -98,5 +98,5 @@ def get(key, use_names=False):
         else:
             topo['graph']['demands'] = {int(n): {int(k): v for k, v in dems.items()} for n, dems in topo['graph']['demands'].items()}
         return topo
-    except IOError:
+    except OSError:
         raise KeyError

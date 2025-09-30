@@ -41,10 +41,10 @@ def parse_nodes_as(path, asn=None, grep=True):
         Mapping ASN -> set of node IDs.
     """
     if asn and grep:
-        output = subprocess.run(["grep", f"\t{asn}\t", path], stdout=subprocess.PIPE)
+        output = subprocess.run(["grep", f"\t{asn}\t", path], check=False, stdout=subprocess.PIPE)
         f = output.stdout.decode("utf-8").splitlines()
     else:
-        f = open(path, "r", encoding="utf-8", errors="replace")
+        f = open(path, encoding="utf-8", errors="replace")
     asn_to_nodes = {}
     for line in f:
         line = line.strip()
@@ -89,10 +89,10 @@ def parse_nodes_geo(path, nodes=None, grep=True):
     """
     if nodes is not None and grep:
         regexp = "\n".join(f"N{node}:" for node in nodes).encode("utf-8")
-        output = subprocess.run(["grep", "-Ff", "-", path], input=regexp, stdout=subprocess.PIPE)
+        output = subprocess.run(["grep", "-Ff", "-", path], check=False, input=regexp, stdout=subprocess.PIPE)
         f = output.stdout.decode("utf-8").splitlines()
     else:
-        f = open(path, "r", encoding="utf-8", errors="replace")
+        f = open(path, encoding="utf-8", errors="replace")
     node_to_geo = {}
     for line in f:
         line = line.strip()
@@ -131,10 +131,10 @@ def parse_links(path, nodes=None, grep=True):
     """
     if nodes is not None and grep:
         regexp = "\n".join(f"N{node}" for node in nodes).encode("utf-8")
-        output = subprocess.run(["grep", "-Ff", "-", path], input=regexp, stdout=subprocess.PIPE)
+        output = subprocess.run(["grep", "-Ff", "-", path], check=False, input=regexp, stdout=subprocess.PIPE)
         f = output.stdout.decode("utf-8").splitlines()
     else:
-        f = open(path, "r", encoding="utf-8", errors="replace")
+        f = open(path, encoding="utf-8", errors="replace")
     adj = {}
     for line in f:
         line = line.strip()
@@ -239,7 +239,7 @@ def merge_nodes_by_pos(selected_with_pos, adjacency, distance_km=None):
 
         # Union-Find over representatives
         parent = {r: r for r in reps}
-        rank = {r: 0 for r in reps}
+        rank = dict.fromkeys(reps, 0)
 
         def find(x):
             while parent[x] != x:
@@ -283,7 +283,7 @@ def merge_nodes_by_pos(selected_with_pos, adjacency, distance_km=None):
                 rep_map_second[r] = final_rep
 
         # Update mapping from original nodes to final representatives
-        for n in rep_map.keys():
+        for n in rep_map:
             rep_map[n] = rep_map_second[rep_map[n]]
 
     # Build merged_selected using the chosen representative's attributes

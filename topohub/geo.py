@@ -189,7 +189,7 @@ regions = {
         (7.517254, -38.32473),
         (-0.097909, -15.600156),
         (-14.550492, -7.262224),
-    ]
+    ],
 }
 
 def svg_path_to_coordinates(svg_path):
@@ -252,7 +252,7 @@ def remove_dead_ends(g):
     """
     while True:
         # Find leaf nodes among the dead ends
-        leaf_nodes = [node for node in g.nodes() if g.degree(node) == 0 or g.degree(node) == 1 and g.nodes[node].get('type') == 'Seacable Waypoint']
+        leaf_nodes = [node for node in g.nodes() if g.degree(node) == 0 or (g.degree(node) == 1 and g.nodes[node].get('type') == 'Seacable Waypoint')]
         if not leaf_nodes:
             break
         # Collect edges to remove

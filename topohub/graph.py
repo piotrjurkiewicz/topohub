@@ -96,7 +96,7 @@ def all_shortest_paths_all_targets(g, source, weight=None, limit=None):
         dist = None
 
     if source not in g:
-        raise nx.NodeNotFound('Source {} is not in G'.format(source))
+        raise nx.NodeNotFound(f'Source {source} is not in G')
 
     for target in g:
 
@@ -160,7 +160,7 @@ def all_shortest_nhops_all_targets(g, source, weight=None, limit=None):
         dist = None
 
     if source not in g:
-        raise nx.NodeNotFound('Source {} is not in G'.format(source))
+        raise nx.NodeNotFound(f'Source {source} is not in G')
 
     for target in g:
 
@@ -213,7 +213,7 @@ def all_disjoint_paths(g, ff, node_filter=None):
     r = nx.algorithms.flow.build_residual_network(h, 'capacity')
     result = {}
     for src, dst in itertools.permutations(g, 2):
-        if node_filter is None or node_filter(g.nodes[src]) and node_filter(g.nodes[dst]):
+        if node_filter is None or (node_filter(g.nodes[src]) and node_filter(g.nodes[dst])):
             result[src, dst] = list(nx.edge_disjoint_paths(g, src, dst, auxiliary=h, residual=r, flow_func=ff))
     return result
 
@@ -305,12 +305,11 @@ def shortest_disjoint_paths_slow(g):
             used_edges = set()
             for path in pp:
                 this_used_edges = set()
-                for f, t in zip(path, path[1:]):
+                for f, t in zip(path, path[1:], strict=False):
                     edge = (f, t)
                     if edge in used_edges:
                         break
-                    else:
-                        this_used_edges.add(edge)
+                    this_used_edges.add(edge)
                 else:
                     paths.append(path)
                     used_edges |= this_used_edges
@@ -354,7 +353,7 @@ def shortest_disjoint_paths(g, ff, node_filter=None):
     for src in g:
         for dst in g:
             if src != dst:
-                if node_filter is None or node_filter(g.nodes[src]) and node_filter(g.nodes[dst]):
+                if node_filter is None or (node_filter(g.nodes[src]) and node_filter(g.nodes[dst])):
                     subgraph = nx.Graph()
                     added_edges = set()
                     dfs(src, dst, subgraph, added_edges)
@@ -470,8 +469,7 @@ def save_topo_graph_svg(g, filename=None, scale=None, background=None):
         f.write(f'<style>#topo path {{fill: none; stroke: grey; stroke-width: {stroke_width:.4f}px;}} #topo circle {{fill: lightblue; stroke: none; stroke-width: 0.3px; vector-effect: non-scaling-stroke; r: {circle_radius:.4f}px;}} #topo text {{fill: black; stroke: none; font-size: {font_size:.4f}px; font-family: sans-serif; text-anchor:middle; transform: translateY(0.3em);}} #topo path.country {{fill: lightgrey; stroke: black; stroke-width: 1px; vector-effect: non-scaling-stroke; visibility: visible;}} #topo path.selection {{fill: none; stroke: red; stroke-width: 1px; vector-effect: non-scaling-stroke; visibility: visible;}} #topo path.utilization {{visibility: hidden;}}</style>\n')
 
         if background:
-            for item in background:
-                f.write(item)
+            f.writelines(background)
 
         for e in g.edges:
             x0, y0 = pos[e[0]]
@@ -520,12 +518,12 @@ def path_stats(g, node_filter=None):
         avg_sp_hops = sum(len(path) - 1 for path in sp[src, dst]) // len(sp[src, dst])
         avg_ap_length = 0
         for path in ap[src, dst]:
-            for u, v in zip(path, path[1:]):
+            for u, v in zip(path, path[1:], strict=False):
                 avg_ap_length += g.edges[u, v]['dist']
         avg_ap_length /= float(len(ap[src, dst]))
         avg_sp_length = 0
         for path in sp[src, dst]:
-            for u, v in zip(path, path[1:]):
+            for u, v in zip(path, path[1:], strict=False):
                 avg_sp_length += g.edges[u, v]['dist']
         avg_sp_length /= float(len(ap[src, dst]))
         if 'demands' in g.graph:
@@ -586,8 +584,8 @@ def calculate_utilization(g, node_filter=None):
 
     modes = {
         'org': (((src, dst, g.graph['demands'][src][dst]) for src in g.graph['demands'] for dst in g.graph['demands'][src]) if 'demands' in g.graph else None),
-        'uni': ((src, dst, 1) for src, dst in itertools.combinations(g, 2) if node_filter is None or node_filter(g.nodes[src]) and node_filter(g.nodes[dst])),
-        'deg': ((src, dst, g.degree[src] * g.degree[dst]) for src, dst in itertools.combinations(g, 2) if node_filter is None or node_filter(g.nodes[src]) and node_filter(g.nodes[dst]))
+        'uni': ((src, dst, 1) for src, dst in itertools.combinations(g, 2) if node_filter is None or (node_filter(g.nodes[src]) and node_filter(g.nodes[dst]))),
+        'deg': ((src, dst, g.degree[src] * g.degree[dst]) for src, dst in itertools.combinations(g, 2) if node_filter is None or (node_filter(g.nodes[src]) and node_filter(g.nodes[dst]))),
     }
 
     def dfs(src, dst, dem, ut):
@@ -653,7 +651,7 @@ def topo_stats(g, ps=None):
         'avg_link_len': avg_link_length,
         'max_link_len': max_link_length,
         'diameter_len': nx.diameter(g, weight='dist'),
-        'diameter_hops': nx.diameter(g)
+        'diameter_hops': nx.diameter(g),
     }
 
     if ps is None:
@@ -769,8 +767,7 @@ def write_gml(g, path):
         stats = g.graph.get('stats')
         if stats:
             f.write('  stats [\n')
-            for key, value in stats.items():
-                f.write(f'    {key} {round(value, 2) if isinstance(value, float) else value}\n')
+            f.writelines(f'    {key} {round(value, 2) if isinstance(value, float) else value}\n' for key, value in stats.items())
             f.write('  ]\n')
 
         # Write nodes

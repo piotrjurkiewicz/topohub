@@ -33,7 +33,8 @@ class TopoGenerator:
 
     @classmethod
     def generate_topo(cls, *args, **kwargs):
-        """Generate a topology.
+        """
+        Generate a topology.
 
         This base implementation returns an empty node-link structure and should be
         overridden by subclasses.
@@ -47,7 +48,8 @@ class TopoGenerator:
 
     @classmethod
     def save_topo(cls, *args, **kwargs):
-        """Generate, post-process, and save a topology to files.
+        """
+        Generate, post-process, and save a topology to files.
 
         Parameters
         ----------
@@ -158,7 +160,7 @@ def main(topo_names):
             'sun': None,
             'ta1': None,
             'ta2': None,
-            'zib54': None
+            'zib54': None,
         }
 
         for topo_name in topo_names:
@@ -484,7 +486,7 @@ def main(topo_names):
             'north_america_nosc': {'include_continents': ['North America']},
             'south_america': {'include_continents': ['South America']},
             'south_america_nosc': {'include_continents': ['South America']},
-            'world': {'include_continents': ['all']}
+            'world': {'include_continents': ['all']},
         }
 
         for topo_name in topo_names:
