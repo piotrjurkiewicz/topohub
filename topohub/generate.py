@@ -507,11 +507,178 @@ def main(topo_names):
         gen = topohub.providers.caida.CaidaGenerator
 
         topo_names = {
-            # '3215': {'distance_km': 25, 'include_countries': ['France'], 'mainland_only': True},
-            '3356': {'distance_km': 25, 'include_countries': ['US'], 'mainland_only': True},
-            '5617': {'distance_km': 25, 'include_countries': ['Poland'], 'mainland_only': True},
-            # '12741': {'distance_km': 25, 'include_countries': ['Poland'], 'mainland_only': True},
-            # '20965': {'distance_km': 25, 'include_continents': ['EU']},
+            # NRENs (research and education networks)
+            # '11537': {'distance_km': 25, 'include_countries': ['United States'], 'mainland_only': False},              # Internet2 (US)
+            # '1237':  {'distance_km': 25, 'include_continents': ['Asia'], 'mainland_only': False},                      # KREONET
+            # '12687': {'distance_km': 25, 'include_continents': ['EU'], 'mainland_only': False},                        # URAN
+            # '13010': {'distance_km': 25, 'include_countries': ['Serbia'], 'mainland_only': False},                     # AMRES (RS)
+            # '15474': {'distance_km': 25, 'include_continents': ['EU'], 'mainland_only': False},                        # RHnet
+            # '17579': {'distance_km': 25, 'include_countries': ['South Korea'], 'mainland_only': False},                # KREONET (KR)
+            # '1850':  {'distance_km': 25, 'include_countries': ['Iceland'], 'mainland_only': False},                    # RHnet (IS)
+            # '201814':{'distance_km': 25, 'include_countries': ['Lithuania'], 'mainland_only': False},                  # LITNET (LT)
+            # '20545': {'distance_km': 25, 'include_continents': ['Europe'], 'mainland_only': False},                    # GRENA
+            # '2108':  {'distance_km': 25, 'include_continents': ['EU'], 'mainland_only': False},                        # CARNET
+            # '24514': {'distance_km': 25, 'include_countries': ['Malaysia'], 'mainland_only': False},                   # MYREN (MY)
+            # '2602':  {'distance_km': 25, 'include_countries': ['Luxembourg'], 'mainland_only': False},                 # RESTENA
+            # '30983': {'distance_km': 25, 'include_countries': ['Morocco'], 'mainland_only': False},                    # MARWAN (MA)
+            # '327687':{'distance_km': 25, 'include_countries': ['Uganda'], 'mainland_only': False},                     # RENU (UG)
+            # '327700':{'distance_km': 25, 'include_countries': ['Mozambique'], 'mainland_only': False},                 # MoRENet (MZ)
+            # '3661':  {'distance_km': 25, 'include_countries': ['Hong Kong'], 'mainland_only': False},                  # HARNET (HK)
+            # '3662':  {'distance_km': 25, 'include_countries': ['Hong Kong'], 'mainland_only': False},                  # HARNET (HK)
+            # '36914': {'distance_km': 25, 'include_countries': ['Kenya'], 'mainland_only': False},                      # KENET (KE)
+            # '36944': {'distance_km': 25, 'include_countries': ['Tanzania'], 'mainland_only': False},                   # TERNET (TZ)
+            # '37180': {'distance_km': 25, 'include_countries': ['South Africa'], 'mainland_only': False},               # SANReN/TENET edge (ZA)
+            # '37182': {'distance_km': 25, 'include_countries': ['Tanzania'], 'mainland_only': False},                   # TERNET (TZ)
+            # '37233': {'distance_km': 25, 'include_countries': ['Uganda'], 'mainland_only': False},                     # RENU (UG)
+            # '378':   {'distance_km': 25, 'include_countries': ['Israel'], 'mainland_only': False},                     # IUCC (ILAN)
+            # '38229': {'distance_km': 25, 'include_countries': ['Sri Lanka'], 'mainland_only': False},                  # LEARN (LK)
+            # '44224': {'distance_km': 25, 'include_countries': ['North Macedonia'], 'mainland_only': False},            # MARNET
+            # '4651':  {'distance_km': 25, 'include_countries': ['Thailand'], 'mainland_only': False},                   # UniNet (TH)
+            # '5504':  {'distance_km': 25, 'include_countries': ['Cyprus'], 'mainland_only': False},                     # CYNET (CY)
+            # '5539':  {'distance_km': 25, 'include_countries': ['Latvia'], 'mainland_only': False},                     # SigmaNet (LV)
+            # '55824': {'distance_km': 25, 'include_countries': ['India'], 'mainland_only': False},                      # NKN (IN)
+            # '55847': {'distance_km': 25, 'include_countries': ['India'], 'mainland_only': False},                      # NKN Edge (IN)
+            # '61468': {'distance_km': 25, 'include_countries': ['Ecuador'], 'mainland_only': False},                    # CEDIA (EC)
+            # '6509':  {'distance_km': 25, 'include_countries': ['Canada'], 'mainland_only': False},                     # CANARIE
+            # '8501':  {'distance_km': 25, 'include_continents': ['EU'], 'mainland_only': False},                        # PIONIER
+            # '8517':  {'distance_km': 25, 'include_continents': ['EU'], 'mainland_only': False},                        # ULAKNET
+            # '9112':  {'distance_km': 25, 'include_countries': ['Poland'], 'mainland_only': False},                     # PIONIER/PSNC (PL)
+            # '9199':  {'distance_km': 25, 'include_countries': ['Moldova'], 'mainland_only': False},                    # RENAM
+            # '9394':  {'distance_km': 25, 'include_countries': ['Singapore'], 'mainland_only': False},                  # SingAREN (SG)
+            '1103':  {'distance_km': 25, 'include_countries': ['Netherlands'], 'mainland_only': False},                  # SURF
+            '11340': {'distance_km': 25, 'include_countries': ['Chile'], 'mainland_only': False},                        # REUNA (CL)
+            '1213':  {'distance_km': 25, 'include_countries': ['Ireland'], 'mainland_only': False},                      # HEAnet
+            '13092': {'distance_km': 25, 'include_countries': ['Serbia'], 'mainland_only': False},                       # AMRES
+            '136968':{'distance_km': 25, 'include_countries': ['Singapore'], 'mainland_only': False},                    # SingAREN (SG)
+            '137':   {'distance_km': 25, 'include_countries': ['Italy'], 'mainland_only': False},                        # GARR
+            '1653':  {'distance_km': 25, 'include_countries': ['Sweden'], 'mainland_only': False},                       # SUNET
+            '1659':  {'distance_km': 25, 'include_countries': ['Taiwan'], 'mainland_only': False},                       # TANet/TWAREN (TW)
+            '1741':  {'distance_km': 25, 'include_countries': ['Finland'], 'mainland_only': False},                      # FUNET
+            '17557': {'distance_km': 25, 'include_countries': ['Pakistan'], 'mainland_only': False},                     # PERN (PK)
+            '1835':  {'distance_km': 25, 'include_countries': ['Denmark'], 'mainland_only': False},                      # DeiC/Forskningsnet (DK)
+            '1853':  {'distance_km': 25, 'include_countries': ['Austria'], 'mainland_only': False},                      # ACOnet
+            '1916':  {'distance_km': 25, 'include_countries': ['Brazil'], 'mainland_only': False},                       # RNP (Brazil)
+            '1930':  {'distance_km': 25, 'include_countries': ['Portugal'], 'mainland_only': False},                     # RCTS/FCCN
+            '1955':  {'distance_km': 25, 'include_countries': ['Hungary'], 'mainland_only': False},                      # KIFÜ/HUNGARNET
+            '2018':  {'distance_km': 25, 'include_countries': ['South Africa'], 'mainland_only': False},                 # TENET/SANReN
+            '20965': {'distance_km': 25, 'include_continents': ['EU'], 'mainland_only': False},                          # GÉANT
+            '2107':  {'distance_km': 25, 'include_countries': ['Slovenia'], 'mainland_only': False},                     # ARNES
+            '211779':{'distance_km': 25, 'include_countries': ['Cyprus'], 'mainland_only': False},                       # CYNET
+            '2152':  {'distance_km': 25, 'include_countries': ['US'], 'mainland_only': False},                           # CENIC (CalREN)
+            '2200':  {'distance_km': 25, 'include_countries': ['France'], 'mainland_only': False},                       # RENATER
+            '224':   {'distance_km': 25, 'include_countries': ['Norway'], 'mainland_only': False},                       # UNINETT/SIKT
+            '2603':  {'distance_km': 25, 'include_countries': ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']},    # NORDUnet
+            '2607':  {'distance_km': 25, 'include_countries': ['Slovakia'], 'mainland_only': False},                     # SANET
+            '2611':  {'distance_km': 25, 'include_countries': ['Belgium'], 'mainland_only': False},                      # BELNET
+            '2614':  {'distance_km': 25, 'include_countries': ['Romania'], 'mainland_only': False},                      # RoEduNet
+            '27750': {'distance_km': 25, 'include_countries': ['Uruguay', 'Chile', 'Argentina', 'Brazil', 'Colombia'], 'mainland_only': False},  # RedCLARA (regional)
+            '2847':  {'distance_km': 25, 'include_continents': ['EU'], 'mainland_only': False},                          # LITNET
+            '2852':  {'distance_km': 25, 'include_countries': ['Czechia'], 'mainland_only': False},                      # CESNET
+            '2907':  {'distance_km': 25, 'include_countries': ['Japan'], 'mainland_only': False},                        # SINET
+            '293':   {'distance_km': 25, 'include_countries': ['US'], 'mainland_only': False},                           # ESnet
+            '3221':  {'distance_km': 25, 'include_countries': ['Estonia'], 'mainland_only': False},                      # EENet
+            '38022': {'distance_km': 25, 'include_countries': ['New Zealand'], 'mainland_only': False},                  # REANNZ
+            '4538':  {'distance_km': 25, 'include_countries': ['China'], 'mainland_only': False},                        # CERNET
+            '4771':  {'distance_km': 25, 'include_countries': ['New Zealand'], 'mainland_only': False},                  # Spark
+            '50006': {'distance_km': 25, 'include_countries': ['Belarus'], 'mainland_only': False},                      # BASNET (BY)
+            '5384':  {'distance_km': 25, 'include_countries': ['United Arab Emirates'], 'mainland_only': False},         # Ankabut (AE)
+            '5408':  {'distance_km': 25, 'include_countries': ['Greece'], 'mainland_only': False},                       # GRNET
+            '559':   {'distance_km': 25, 'include_countries': ['Switzerland'], 'mainland_only': False},                  # SWITCH
+            '680':   {'distance_km': 25, 'include_countries': ['Germany'], 'mainland_only': False},                      # DFN
+            '7497':  {'distance_km': 25, 'include_countries': ['China'], 'mainland_only': False},                        # CSTNET (CN)
+            '7575':  {'distance_km': 25, 'include_countries': ['Australia'], 'mainland_only': False},                    # AARNet
+            '766':   {'distance_km': 25, 'include_countries': ['Spain'], 'mainland_only': False},                        # RedIRIS
+            '786':   {'distance_km': 25, 'include_countries': ['United Kingdom'], 'mainland_only': False},               # JANET
+
+            # Operators (national/regional providers)
+            # '12338': {'distance_km': 25, 'include_countries': ['Norway'], 'mainland_only': False},                     # Telenor Norge
+            # '1241':  {'distance_km': 25, 'include_countries': ['Denmark'], 'mainland_only': False},                    # TDC (DK)
+            # '12578': {'distance_km': 25, 'include_countries': ['Poland'], 'mainland_only': False},                     # Polkomtel (Plus)
+            # '13127': {'distance_km': 25, 'include_countries': ['Austria'], 'mainland_only': False},                    # A1 Telekom Austria
+            # '15895': {'distance_km': 25, 'include_countries': ['Türkiye'], 'mainland_only': False},                    # Turkcell Superonline
+            # '2116':  {'distance_km': 25, 'include_countries': ['Denmark'], 'mainland_only': False},                    # GlobalConnect (Nordic)
+            # '3243':  {'distance_km': 25, 'include_countries': ['Hungary'], 'mainland_only': False},                    # DIGI Hungary
+            # '3267':  {'distance_km': 25, 'include_countries': ['Russia'], 'mainland_only': False},                     # MF/RTC (regional)
+            # '33764': {'distance_km': 25, 'include_countries': ['Ghana'], 'mainland_only': False},                      # Vodafone Ghana
+            # '35320': {'distance_km': 25, 'include_countries': ['Hungary'], 'mainland_only': False},                    # DIGI Távközlési
+            # '37100': {'distance_km': 25, 'include_countries': ['Kenya'], 'mainland_only': False},                      # Safaricom (KE)
+            # '4713':  {'distance_km': 25, 'include_countries': ['France'], 'mainland_only': False},                     # NTT
+            # '4809':  {'distance_km': 25, 'include_countries': ['China'], 'mainland_only': False},                      # China Mobile CMNET (CN)
+            # '5378':  {'distance_km': 25, 'include_continents': ['EU'], 'mainland_only': False},                        # Vodafone UK
+            # '5603':  {'distance_km': 25, 'include_countries': ['Slovenia'], 'mainland_only': False},                   # Telekom Slovenije
+            # '56038': {'distance_km': 25, 'include_countries': ['India'], 'mainland_only': False},                      # Jio (IN, national)
+            # '56054': {'distance_km': 25, 'include_countries': ['Nigeria'], 'mainland_only': False},                    # MTN Nigeria
+            # '6667':  {'distance_km': 25, 'include_countries': ['Finland'], 'mainland_only': False},                    # Elisa FI
+            # '6848':  {'distance_km': 25, 'include_continents': ['EU'], 'mainland_only': False},                        # Telenet BE
+            # '8422':  {'distance_km': 25, 'include_countries': ['Germany'], 'mainland_only': False},                    # NetCologne
+            # '8426':  {'distance_km': 25, 'include_countries': ['Portugal'], 'mainland_only': False},                   # NOS
+            # '8551':  {'distance_km': 25, 'include_countries': ['Israel'], 'mainland_only': False},                     # Partner
+            # '9044':  {'distance_km': 25, 'include_countries': ['Ukraine'], 'mainland_only': False},                    # Kyivstar
+            # '9121':  {'distance_km': 25, 'include_countries': ['Türkiye'], 'mainland_only': False},                    # Türk Telekom
+            # '9198':  {'distance_km': 25, 'include_countries': ['Israel'], 'mainland_only': False},                     # Bezeq
+            '1136':  {'distance_km': 25, 'include_countries': ['Netherlands'], 'mainland_only': False},                  # KPN NL
+            '1221':  {'distance_km': 50, 'include_countries': ['Australia'], 'mainland_only': False},                    # Telstra (AU)
+            '12322': {'distance_km': 25, 'include_countries': ['France'], 'mainland_only': False},                       # Free SAS (Iliad)
+            '12479': {'distance_km': 25, 'include_countries': ['Spain'], 'mainland_only': False},                        # Orange Spain (ES)
+            '1257':  {'distance_km': 25, 'include_countries': ['Sweden'], 'mainland_only': False},                       # Tele2 SE
+            '12741': {'distance_km': 25, 'include_countries': ['Poland'], 'mainland_only': False},                       # Netia
+            '12874': {'distance_km': 25, 'include_countries': ['Italy'], 'mainland_only': False},                        # Fastweb (IT)
+            '12912': {'distance_km': 25, 'include_countries': ['Poland'], 'mainland_only': False},                       # T-Mobile Polska
+            '15525': {'distance_km': 25, 'include_countries': ['Portugal'], 'mainland_only': True},                      # MEO (PT)
+            '15895': {'distance_km': 25, 'include_countries': ['Turkey'], 'mainland_only': False},                       # Turkcell Superonline (TR)
+            '16086': {'distance_km': 25, 'include_countries': ['Finland'], 'mainland_only': False},                      # DNA (FI)
+            '20115': {'distance_km': 25, 'include_countries': ['US'], 'mainland_only': False},                           # Charter (Spectrum)
+            '2119':  {'distance_km': 25, 'include_countries': ['Norway'], 'mainland_only': False},                       # Telenor NO
+            '21928': {'distance_km': 25, 'include_countries': ['Czechia'], 'mainland_only': False},                      # O2 Czechia (retail)
+            '2856':  {'distance_km': 25, 'include_countries': ['United Kingdom'], 'mainland_only': False},               # BT UK
+            '2905':  {'distance_km': 25, 'include_countries': ['United Kingdom'], 'mainland_only': False},               # The Phone Co-op/Plusnet UK
+            '29562': {'distance_km': 25, 'include_countries': ['Germany'], 'mainland_only': False},                      # Vodafone Kabel Deutschland
+            '3209':  {'distance_km': 25, 'include_continents': ['EU'], 'mainland_only': False},                          # Vodafone DE
+            '3215':  {'distance_km': 25, 'include_countries': ['France'], 'mainland_only': True},                        # Orange France
+            '3269':  {'distance_km': 25, 'include_countries': ['Italy'], 'mainland_only': False},                        # TIM Italia
+            '3292':  {'distance_km': 25, 'include_countries': ['Denmark'], 'mainland_only': False},                      # TDC DK
+            '3301':  {'distance_km': 25, 'include_countries': ['Sweden'], 'mainland_only': False},                       # Telia Sweden (domestic)
+            '3303':  {'distance_km': 25, 'include_countries': ['Switzerland'], 'mainland_only': False},                  # Swisscom
+            '3320':  {'distance_km': 25, 'include_countries': ['Germany'], 'mainland_only': False},                      # Deutsche Telekom
+            '3329':  {'distance_km': 25, 'include_countries': ['Greece'], 'mainland_only': False},                       # Cosmote (GR)
+            '3352':  {'distance_km': 25, 'include_countries': ['Spain'], 'mainland_only': False},                        # Telefónica Spain
+            '3356':  {'distance_km': 25, 'include_countries': ['US'], 'mainland_only': False},                           # Lumen / Level(3)
+            '3741':  {'distance_km': 25, 'include_countries': ['South Africa'], 'mainland_only': False},                 # Telkom SA
+            '39651': {'distance_km': 25, 'include_countries': ['Sweden'], 'mainland_only': False},                       # Com Hem (SE)
+            '4134':  {'distance_km': 25, 'include_countries': ['China'], 'mainland_only': False},                        # China Telecom (CN)
+            '4739':  {'distance_km': 50, 'include_countries': ['Australia'], 'mainland_only': False},                    # Optus (AU)
+            '4766':  {'distance_km': 25, 'include_countries': ['South Korea'], 'mainland_only': False},                  # Korea Telecom (KR)
+            '4837':  {'distance_km': 25, 'include_countries': ['China'], 'mainland_only': False},                        # China Unicom (CN)
+            '5089':  {'distance_km': 25, 'include_countries': ['United Kingdom'], 'mainland_only': False},               # Virgin Media UK
+            '5410':  {'distance_km': 25, 'include_countries': ['France'], 'mainland_only': False},                       # Bouygues Telecom FR
+            '5432':  {'distance_km': 25, 'include_countries': ['Belgium'], 'mainland_only': False},                      # Proximus BE
+            '5466':  {'distance_km': 25, 'include_countries': ['Ireland'], 'mainland_only': False},                      # eir (IE)
+            '55836': {'distance_km': 25, 'include_countries': ['India'], 'mainland_only': False},                        # Reliance Jio (IN)
+            '5607':  {'distance_km': 25, 'include_continents': ['EU'], 'mainland_only': False},                          # Telekom Romania
+            '5610':  {'distance_km': 25, 'include_countries': ['Czechia'], 'mainland_only': False},                      # O2 Czech Republic
+            '5617':  {'distance_km': 25, 'include_countries': ['Poland'], 'mainland_only': False},                       # Orange Polska
+            '5650':  {'distance_km': 25, 'include_countries': ['US'], 'mainland_only': False},                           # Frontier
+            '5769':  {'distance_km': 25, 'include_countries': ['Canada'], 'mainland_only': False},                       # Videotron (CA)
+            '577':   {'distance_km': 25, 'include_countries': ['Canada'], 'mainland_only': False},                       # Bell Canada
+            '6327':  {'distance_km': 25, 'include_countries': ['Canada'], 'mainland_only': False},                       # Shaw Communications (CA)
+            '6799':  {'distance_km': 25, 'include_continents': ['EU'], 'mainland_only': True},                           # Vodafone Greece
+            '6805':  {'distance_km': 25, 'include_countries': ['Germany'], 'mainland_only': False},                      # Telefónica Germany (DE)
+            '6830':  {'distance_km': 25, 'include_continents': ['EU'], 'mainland_only': False},                          # Liberty Global (EU footprint)
+            '701':   {'distance_km': 25, 'include_countries': ['US'], 'mainland_only': False},                           # Verizon (UUNET)
+            '7018':  {'distance_km': 25, 'include_countries': ['US'], 'mainland_only': False},                           # AT&T
+            '7922':  {'distance_km': 25, 'include_countries': ['US'], 'mainland_only': False},                           # Comcast
+            '812':   {'distance_km': 25, 'include_countries': ['Canada'], 'mainland_only': False},                       # Rogers
+            '8151':  {'distance_km': 25, 'include_countries': ['Mexico'], 'mainland_only': False},                       # Telmex / Uninet (MX)
+            '8447':  {'distance_km': 25, 'include_countries': ['Austria'], 'mainland_only': False},                      # A1 Telekom Austria
+            '8473':  {'distance_km': 25, 'include_countries': ['Sweden'], 'mainland_only': False},                       # Bahnhof
+            '852':   {'distance_km': 25, 'include_countries': ['Canada'], 'mainland_only': False},                       # TELUS
+            '8708':  {'distance_km': 25, 'include_countries': ['Romania'], 'mainland_only': False},                      # RCS & RDS / Digi (RO)
+            '8881':  {'distance_km': 25, 'include_countries': ['Germany'], 'mainland_only': False},                      # Versatel (DE)
+            '8953':  {'distance_km': 25, 'include_countries': ['Romania'], 'mainland_only': False},                      # Telekom Romania
+            '9143':  {'distance_km': 25, 'include_countries': ['Netherlands'], 'mainland_only': False},                  # Ziggo NL
+            '9498':  {'distance_km': 25, 'include_countries': ['India'], 'mainland_only': False},                        # Airtel (IN)
+            '9808':  {'distance_km': 25, 'include_countries': ['China'], 'mainland_only': False},                        # China Mobile Guangdong (CN)
+            '9829':  {'distance_km': 25, 'include_countries': ['India'], 'mainland_only': False},                        # BSNL (IN)
         }
 
         with concurrent.futures.ProcessPoolExecutor(max_workers=8) as executor:
