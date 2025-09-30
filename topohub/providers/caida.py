@@ -461,6 +461,6 @@ class CaidaGenerator(topohub.generate.TopoGenerator):
         g = nx.node_link_graph({'directed': False, 'multigraph': False, 'graph': {'name': str(name), 'demands': {}},
                                 'nodes': list(nodes.values()), 'edges': edges}, edges='edges')
         # g = topohub.backbone.remove_dead_ends(g)
-        # g = g.subgraph(max(nx.connected_components(g), key=len))
+        g = g.subgraph(max(nx.connected_components(g), key=len))
 
         return nx.node_link_data(g, edges='edges')
