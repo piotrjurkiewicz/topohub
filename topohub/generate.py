@@ -71,6 +71,12 @@ class TopoGenerator:
         Nodes are expected to contain ``pos`` as (lon, lat) tuples.
         """
         g = nx.node_link_graph(cls.generate_topo(*args, **kwargs), edges='edges')
+        if len(g.nodes) == 0:
+            print(f'Warning: generated topology {g.name} has no nodes')
+            return
+        if len(g.edges) == 0:
+            print(f'Warning: generated topology {g.name} has no edges')
+            return
         if 'filename' in kwargs:
             filename = kwargs['filename']
         else:
