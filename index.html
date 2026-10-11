@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
     <title>TopoHub</title>
     <style>
+        :root {
+            --background-muted: #f6f8fa;
+            --border: #d0d7de;
+            --border-muted: #d8dee4;
+            --focus: #0969da;
+            --selected: #ddf4ff;
+            --surface: #ffffff;
+            --radius: 6px;
+            --space: 8px;
+            --content-height: calc(100vh - 64px);
+        }
+
         * {
             box-sizing: border-box;
         }
@@ -14,18 +27,16 @@
             font-family: sans-serif;
             line-height: 1;
             margin: 0;
-            padding: 0;
-            background-color: #f6f8fa;
+            background-color: var(--background-muted);
         }
 
         header {
-            background-color: #f6f8fa;
             height: 64px;
             color: #24292e;
             display: flex;
             align-items: center;
             padding: 0 16px;
-            border-bottom: 1px solid #d0d7de;
+            border-bottom: 1px solid var(--border);
             justify-content: space-between;
         }
 
@@ -40,64 +51,27 @@
         }
 
         header a.button {
-            margin: 8px;
+            margin: var(--space);
         }
 
         h2 {
             font-size: 16px;
-            margin-top: 16px;
-            margin-bottom: 8px;
-        }
-
-        h3 {
-            font-size: 14px;
-            margin-bottom: 8px;
+            margin: 16px 0 8px;
         }
 
         h2:first-child {
             margin-top: 0;
         }
 
-        .container {
-            display: flex;
-            min-height: calc(100vh - 64px); /* Adjust min-height for the header */
-            flex-direction: row;
-        }
-
-        .sidebar-left,
-        .sidebar-right {
-            padding: 24px;
-            font-size: 14px;
-        }
-
-        .sidebar-left {
-            width: 300px;
-            background-color: #ffffff;
-            border-right: 1px solid #d0d7de;
-        }
-
-        .sidebar-right {
-            width: 400px;
-            padding-left: 0;
-        }
-
-        .main-content {
-            display: flex;
-            padding: 24px;
-            flex-direction: column;
-            flex-grow: 1;
-            max-height: calc(100vh - 64px);
-        }
-
         a.button {
-            padding: 4px 6px 4px 6px;
-            background-color: #f6f8fa;
-            border: 1px solid #d8dee4;
-            border-radius: 6px;
+            padding: 4px 6px;
+            background-color: var(--background-muted);
+            border: 1px solid var(--border-muted);
+            border-radius: var(--radius);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 8px;
+            gap: var(--space);
             cursor: pointer;
             color: inherit;
             text-decoration: inherit;
@@ -107,50 +81,165 @@
             background-color: #eaeef2;
         }
 
-        .button_text {
+        .button-text {
             font-size: 14px;
             line-height: 24px;
         }
 
-        #topoDownload {
+        .action-bar {
             display: flex;
             align-items: center;
+            flex-wrap: nowrap;
+        }
+
+        .action-bar .unavailable {
+            pointer-events: none;
+            cursor: default;
+        }
+
+        .action-bar a.button {
+            flex: 1 1 auto;
+            min-width: 0;
+            height: 32px;
+            padding-block: 2px;
+        }
+
+        .box {
+            padding: 16px;
+            background-color: var(--surface);
+            border: 1px solid var(--border-muted);
+            border-radius: 3px;
+        }
+
+        .main-display {
+            flex: 1;
+            min-height: 0;
+        }
+
+        .data-list {
+            padding: 0;
+            margin: 0;
+        }
+
+        .data-list>* {
+            border-bottom: 1px solid var(--border-muted);
+            font-size: 12px;
+        }
+
+        .data-list> :last-child {
+            border-bottom: none;
+        }
+
+        .data-list> :hover {
+            background-color: var(--background-muted);
+        }
+
+        .data-list>li {
+            list-style-type: none;
+        }
+
+        .property-list>div {
+            display: flex;
+            justify-content: space-between;
+            white-space: nowrap;
+            gap: 24px;
+            padding: 4px;
+        }
+
+        .property-list dt,
+        .property-list dd {
+            margin: 0;
+        }
+
+        .boxed-list {
+            border: 1px solid var(--border-muted);
+            border-radius: 3px;
+            margin-top: var(--space);
+        }
+
+        .list-wrapper {
+            border: 1px solid var(--border-muted);
+            border-radius: 3px;
+        }
+
+        .wrapping-list>div {
+            align-items: flex-start;
+            gap: var(--space);
+            white-space: normal;
+        }
+
+        .wrapping-list dt {
+            flex-shrink: 0;
+        }
+
+        .wrapping-list dd {
+            min-width: 0;
+            overflow-wrap: anywhere;
+            text-align: right;
+        }
+
+        .infoParagraph {
+            margin-bottom: var(--space);
+            margin-top: 0;
+        }
+
+        .infoParagraph a {
+            text-decoration: inherit;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas: "left main right";
+            grid-template-columns: 300px minmax(0, 1fr) 400px;
+            min-height: var(--content-height);
+        }
+
+        .sidebar-left,
+        .sidebar-right {
+            padding: 24px;
+            font-size: 14px;
+        }
+
+        .sidebar-left {
+            grid-area: left;
+            background-color: var(--surface);
+            border-right: 1px solid var(--border);
+        }
+
+        .sidebar-right {
+            grid-area: right;
+            padding-left: 0;
+        }
+
+        .main-content {
+            grid-area: main;
+            display: flex;
+            padding: 24px;
+            flex-direction: column;
+            max-height: var(--content-height);
+            min-width: 0;
+        }
+
+        #downloadBar {
             gap: 16px;
             justify-content: space-between;
         }
 
-        #topoDownload a.button {
-            padding-top: 2px;
-            padding-bottom: 2px;
-            width: 80px;
-            height: 32px;
-        }
-
-        #topoDownload a.button svg {
+        #downloadBar a.button svg {
             flex-shrink: 0;
         }
 
-        #topoDownloadSVGView .button_text {
+        #topoDownloadSVGView .button-text {
             font-size: 10px;
             line-height: initial;
         }
 
-        .box {
+        .sidebar-right .box {
             margin-bottom: 16px;
-            padding: 16px;
-            background-color: #ffffff;
-            border: 1px solid #d8dee4;
-            border-radius: 3px;
         }
 
-        .box:last-child {
+        .sidebar-right .box:last-child {
             margin-bottom: 0;
-        }
-
-        #topoDisplay {
-            flex: 1;
-            margin-bottom: 0;
-            min-height: 0;
         }
 
         #topoDisplay svg {
@@ -167,10 +256,6 @@
             display: flex;
         }
 
-        #dropdowns select {
-            min-width: fit-content;
-        }
-
         #firstLevelDropdown {
             width: 60%;
         }
@@ -180,8 +265,6 @@
         }
 
         #topologyListWrapper {
-            border: 1px solid #d8dee4;
-            border-radius: 3px;
             display: flex;
             flex-direction: column;
             margin-top: 16px;
@@ -189,69 +272,52 @@
             max-height: 651px;
         }
 
-        #topologyList {
-            padding: 0;
-            overflow-y: scroll;
-            margin: 0;
+        .topology-list {
+            overflow-y: auto;
         }
 
-        #topologyList li {
+        .topology-list>* {
+            font-size: 14px;
+        }
+
+        .topology-list li {
+            padding: 4px;
+        }
+
+        .topology-list button {
+            width: 100%;
             display: flex;
             justify-content: space-between;
-            white-space: nowrap;
+            align-items: center;
             gap: 24px;
+            padding: 0;
+            background: transparent;
+            border: 0;
             cursor: pointer;
+            font: inherit;
+            text-align: left;
         }
 
-        #topologyList li span.featured {
+        .topology-list button:focus-visible {
+            outline: 2px solid var(--focus);
+            outline-offset: 2px;
+        }
+
+        .topology-list li.selected {
+            background-color: var(--selected);
+        }
+
+        .topology-list .featured {
             border: 1px solid gold;
             border-radius: 3px;
-            padding: 2px 4px 2px 4px;
+            padding: 2px 4px;
             font-size: 10px;
             color: goldenrod;
-            background-color: white;
-        }
-
-        #topologyPropertiesList {
-            padding: 0;
-            margin: 16px 0 0 0;
-            border: 1px solid #d8dee4;
-            border-radius: 3px;
-            font-size: 12px;
-        }
-
-        #topologyPropertiesList li {
-            display: flex;
-            justify-content: space-between;
-            white-space: nowrap;
-            gap: 24px;
-        }
-
-        li {
-            padding: 4px;
-            border-bottom: 1px solid #d8dee4;
-            list-style-type: none;
-        }
-
-        li:last-child {
-            border-bottom: none;
-        }
-
-        li:hover {
-            background-color: #f6f8fa;
+            background-color: var(--surface);
         }
 
         #topologyInfo div {
             line-height: 20px;
-        }
-
-        .topologyInfoParagraph {
-            margin-bottom: 8px;
-            margin-top: 0;
-        }
-
-        .topologyInfoParagraph a {
-            text-decoration: inherit;
         }
 
         #trafficModelDiv {
@@ -262,13 +328,14 @@
         }
 
         #trafficHistogramDiv {
+            position: relative;
+            aspect-ratio: 340 / 120;
             margin-top: 4px;
             border: 1px solid transparent;
             border-radius: 3px;
         }
 
         #trafficModelLabel {
-            min-width: fit-content;
             white-space: nowrap;
         }
 
@@ -283,34 +350,32 @@
         }
 
         #dynamicControlLabel {
-            min-width: fit-content;
             white-space: nowrap;
         }
 
         #trafficModelDropdown {
             width: 100%;
-            min-width: fit-content;
         }
 
         /* Adjust the styles for smaller screens */
-        @media (max-width: 768px) {
+        @media (max-width: 1000px) {
             .container {
-                flex-direction: column;
+                grid-template-areas: "left" "main" "right";
+                grid-template-columns: minmax(0, 1fr);
             }
 
             .sidebar-left {
-                border-bottom: 1px solid #d0d7de;
+                border-bottom: 1px solid var(--border);
                 border-right: none;
             }
 
             .sidebar-left,
             .sidebar-right {
-                width: auto;
                 padding: 24px;
             }
 
             .main-content {
-                width: auto;
+                max-height: none;
                 padding-bottom: 0;
             }
 
@@ -354,6 +419,25 @@
 
         #trafficHistogram {
             display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        #trafficHistogram[hidden] {
+            display: none;
+        }
+
+        #trafficHistogramMessage {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #trafficHistogramMessage[hidden] {
+            display: none;
         }
 
         #trafficHistogram rect {
@@ -364,173 +448,172 @@
         #trafficHistogram rect:hover {
             fill-opacity: 0.3;
         }
-
     </style>
 </head>
+
 <body>
-<header>
-    <div>
-        <img src="favicon.svg"/>
-        <h1>TopoHub</h1>
-    </div>
-    <a class="button" href="https://topohub.readthedocs.io/" target="_blank">
-        <span>📄</span>
-        <span class="button_text">Docs</span>
-    </a>
-    <a class="button" href="https://github.com/piotrjurkiewicz/topohub" target="_blank">
-        <img height="16" src="github-mark.svg"/>
-        <span class="button_text">GitHub</span>
-    </a>
-</header>
-<div class="container">
-    <div id="tooltip" class="tooltip" style="display: none;"></div>
-    <aside class="sidebar-left">
-        <p class="topologyInfoParagraph">Repository of reference Gabriel graph, Internet Topology Zoo, SNDlib, CAIDA and synthetic backbone topologies for networking research.</p>
-        <p class="topologyInfoParagraph">Python/NetworkX/Mininet examples: <a href="https://topohub.readthedocs.io">topohub.readthedocs.io</a></p>
-        <p class="topologyInfoParagraph">Please cite <a href="https://www.sciencedirect.com/science/article/pii/S2352711023002364">this paper</a> if you use TopoHub in your research.</p>
-        <h2>Select a topology</h2>
-        <div id="dropdowns">
-            <select id="firstLevelDropdown">
-                <option value="" selected>Select a category</option>
-                <!-- Add options for each category in the JSON data -->
-                <option value="backbone">Backbone</option>
-                <option value="caida">CAIDA</option>
-                <option value="gabriel">Gabriel</option>
-                <option value="sndlib">SNDlib</option>
-                <option value="topozoo">Topology Zoo</option>
-            </select>
-            <select id="secondLevelDropdown" disabled>
-                <option value="" selected>Select</option>
-            </select>
+    <header>
+        <div>
+            <img src="favicon.svg" alt="" />
+            <h1>TopoHub</h1>
         </div>
-        <div id="topologyListWrapper" style="display: none;">
-            <ul id="topologyList">
-                <!-- Topology list will be dynamically loaded here -->
-            </ul>
-        </div>
-    </aside>
-    <main class="main-content">
-        <div id="topoDisplay" class="box">
-        </div>
-    </main>
-    <aside class="sidebar-right">
-        <div id="topologyInfo" class="box">
-            <h2>Topology info</h2>
-            <p id="topologyInfoParagraph" class="topologyInfoParagraph"></p>
-            <h2>Download</h2>
-            <div id="topoDownload">
-                <a id="topoDownloadJSON" class="button" href="#" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                        <path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z"/>
-                        <path d="M10 15l5-6h-4V1H9v8H5l5 6z"/>
-                    </svg>
-                    <span class="button_text">JSON</span>
-                </a>
-                <a id="topoDownloadGML" class="button" href="#" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                        <path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z"/>
-                        <path d="M10 15l5-6h-4V1H9v8H5l5 6z"/>
-                    </svg>
-                    <span class="button_text">GML</span>
-                </a>
-                <a id="topoDownloadSVG" class="button" href="#" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                        <path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z"/>
-                        <path d="M10 15l5-6h-4V1H9v8H5l5 6z"/>
-                    </svg>
-                    <span class="button_text">SVG</span>
-                </a>
-                <a id="topoDownloadSVGView" class="button" href="#" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                        <path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z"/>
-                        <path d="M10 15l5-6h-4V1H9v8H5l5 6z"/>
-                    </svg>
-                    <span class="button_text">SVG</br>view</span>
-                </a>
-            </div>
-        </div>
-        <div class="box">
-            <h2>ECMP routing link utilization</h2>
-            <div id="trafficModelDiv">
-                <label id="trafficModelLabel" for="trafficModelDropdown">Selected demands model:</label>
-                <select id="trafficModelDropdown">
-                    <option value="none" selected>None</option>
-                    <option value="uni">Uniform</option>
-                    <option value="deg">Degree</option>
-                    <option id="trafficModelDropdownOriginal" value="org" disabled>Original</option>
+        <a class="button" href="https://topohub.readthedocs.io/" target="_blank" rel="noopener noreferrer">
+            <span>📄</span>
+            <span class="button-text">Docs</span>
+        </a>
+        <a class="button" href="https://github.com/piotrjurkiewicz/topohub" target="_blank" rel="noopener noreferrer">
+            <img height="16" src="github-mark.svg" alt="" />
+            <span class="button-text">GitHub</span>
+        </a>
+    </header>
+    <div class="container">
+        <div id="tooltip" class="tooltip" style="display: none;"></div>
+        <aside class="sidebar-left">
+            <p class="infoParagraph">Repository of reference Gabriel graph, Internet Topology Zoo, SNDlib, CAIDA
+                and synthetic backbone topologies for networking research.</p>
+            <p class="infoParagraph">Python/NetworkX/Mininet examples: <a href="https://topohub.readthedocs.io">topohub.readthedocs.io</a></p>
+            <p class="infoParagraph">Please cite <a href="https://www.sciencedirect.com/science/article/pii/S2352711023002364">this paper</a> if you use
+                TopoHub in your research.</p>
+            <h2>Select a topology</h2>
+            <div id="dropdowns">
+                <select id="firstLevelDropdown" aria-label="Topology category">
+                    <option value="" selected>Select a category</option>
+                    <!-- Add options for each category in the JSON data -->
+                    <option value="backbone">Backbone</option>
+                    <option value="caida">CAIDA</option>
+                    <option value="gabriel">Gabriel</option>
+                    <option value="sndlib">SNDlib</option>
+                    <option value="topozoo">Topology Zoo</option>
+                </select>
+                <select id="secondLevelDropdown" aria-label="Topology subgroup" disabled>
+                    <option value="" selected>Select</option>
                 </select>
             </div>
-            <div id="dynamicControl">
-                <span id="dynamicControlLabel">Visualize usage as link:</span>
-                <span><label for="dynamicWidthCheckbox">width</label><input id="dynamicWidthCheckbox" type="checkbox"
-                                                                            autocomplete="off" checked></span>
-                <span><label for="dynamicColorCheckbox">color</label><input id="dynamicColorCheckbox" type="checkbox"
-                                                                            autocomplete="off" checked></span>
-                <span><label for="dynamicOpacityCheckbox">opacity</label><input id="dynamicOpacityCheckbox"
-                                                                                type="checkbox"
-                                                                                autocomplete="off"></span>
+            <div id="topologyListWrapper" class="list-wrapper" style="display: none;">
+                <ul id="topologyList" class="data-list topology-list">
+                    <!-- Topology list will be dynamically loaded here -->
+                </ul>
             </div>
-            <div id="trafficHistogramDiv">
-                <svg id="trafficHistogram" width="340" height="120" xmlns="http://www.w3.org/2000/svg"></svg>
+        </aside>
+        <main class="main-content">
+            <div id="topoDisplay" class="box main-display">
             </div>
-        </div>
-        <div id="topologyProperties" class="box">
-            <h2>Topology properties</h2>
-            <ul id="topologyPropertiesList">
-            </ul>
-        </div>
-    </aside>
-</div>
+        </main>
+        <aside class="sidebar-right">
+            <div id="topologyInfo" class="box">
+                <h2>Topology info</h2>
+                <p id="topologyInfoParagraph" class="infoParagraph"></p>
+                <h2>Download</h2>
+                <div id="downloadBar" class="action-bar">
+                    <a id="topoDownloadJSON" class="button unavailable" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                            <path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z" />
+                            <path d="M10 15l5-6h-4V1H9v8H5l5 6z" />
+                        </svg>
+                        <span class="button-text">JSON</span>
+                    </a>
+                    <a id="topoDownloadGML" class="button unavailable" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                            <path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z" />
+                            <path d="M10 15l5-6h-4V1H9v8H5l5 6z" />
+                        </svg>
+                        <span class="button-text">GML</span>
+                    </a>
+                    <a id="topoDownloadSVG" class="button unavailable" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                            <path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z" />
+                            <path d="M10 15l5-6h-4V1H9v8H5l5 6z" />
+                        </svg>
+                        <span class="button-text">SVG</span>
+                    </a>
+                    <a id="topoDownloadSVGView" class="button unavailable" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                            <path d="M17 12v5H3v-5H1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5z" />
+                            <path d="M10 15l5-6h-4V1H9v8H5l5 6z" />
+                        </svg>
+                        <span class="button-text">SVG<br>view</span>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h2>ECMP routing link utilization</h2>
+                <div id="trafficModelDiv">
+                    <label id="trafficModelLabel" for="trafficModelDropdown">Selected demands model:</label>
+                    <select id="trafficModelDropdown">
+                        <option value="none" selected>None</option>
+                        <option value="uni">Uniform</option>
+                        <option value="deg">Degree</option>
+                        <option id="trafficModelDropdownOriginal" value="org" disabled>Original</option>
+                    </select>
+                </div>
+                <div id="dynamicControl">
+                    <span id="dynamicControlLabel">Visualize usage as link:</span>
+                    <span><label for="dynamicWidthCheckbox">width</label><input id="dynamicWidthCheckbox" type="checkbox" autocomplete="off" checked></span>
+                    <span><label for="dynamicColorCheckbox">color</label><input id="dynamicColorCheckbox" type="checkbox" autocomplete="off" checked></span>
+                    <span><label for="dynamicOpacityCheckbox">opacity</label><input id="dynamicOpacityCheckbox" type="checkbox" autocomplete="off"></span>
+                </div>
+                <div id="trafficHistogramDiv">
+                    <svg id="trafficHistogram" width="340" height="120" viewBox="0 0 340 120" xmlns="http://www.w3.org/2000/svg" hidden></svg>
+                    <div id="trafficHistogramMessage">Please select demands model to see histogram</div>
+                </div>
+            </div>
+            <div id="topologyProperties" class="box">
+                <h2>Topology properties</h2>
+                <dl id="topologyPropertiesList" class="data-list property-list boxed-list wrapping-list">
+                </dl>
+            </div>
+        </aside>
+    </div>
 
-<script>
-    const topologyCatalog = {
-        'backbone': ['africa', 'africa_nosc', 'americas', 'americas_nosc', 'atlantica', 'eastern', 'eastern_nosc', 'emea', 'emea_nosc', 'eurafrasia', 'eurafrasia_nosc', 'eurasia', 'eurasia_nosc', 'europe', 'europe_nosc', 'north_america', 'north_america_nosc', 'south_america', 'south_america_nosc', 'world'],
-        'caida': {
-            '2024-08': ['137','224','293','559','577','680','701','766','786','812','852','1103','1136','1213','1221','1257','1653','1659','1741','1835','1853','1916','1930','1955','2018','2107','2119','2152','2200','2603','2607','2611','2614','2847','2852','2856','2907','3209','3215','3221','3269','3292','3301','3303','3320','3329','3352','3356','3741','4134','4538','4739','4766','4771','4837','5089','5384','5408','5410','5432','5466','5607','5610','5617','5650','5769','6327','6799','6805','6830','7018','7497','7575','7922','8151','8447','8473','8708','8881','8953','9498','9808','9829','11340','12322','12479','12741','12874','12912','13092','15525','16086','17557','20115','20965','27750','38022','55836']
-        },
-        'gabriel': {
-            '5': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '10': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '15': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '20': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '25': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '30': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '35': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '40': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '45': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '50': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '55': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '60': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '65': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '70': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '75': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '80': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '85': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '90': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '95': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '100': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '125': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '150': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '175': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '200': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '225': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '250': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '275': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '300': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '325': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '350': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '375': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '400': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '425': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '450': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '475': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-            '500': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-        },
-        'sndlib': ['abilene', 'atlanta', 'brain', 'cost266', 'dfn-bwin', 'dfn-gwin', 'di-yuan', 'france', 'geant', 'germany50', 'giul39', 'india35', 'janos-us-ca', 'janos-us', 'newyork', 'nobel-eu', 'nobel-germany', 'nobel-us', 'norway', 'pdh', 'pioro40', 'polska', 'sun', 'ta1', 'ta2', 'zib54'],
-        'topozoo': ['Aarnet', 'Abilene', 'Abvt', 'Aconet', 'Agis', 'Airtel', 'Amres', 'Ans', 'Arn', 'Arnes', 'Arpanet196912', 'Arpanet19706', 'Arpanet19719', 'Arpanet19723', 'Arpanet19728', 'Atmnet', 'AttMpls', 'Basnet', 'Bbnplanet', 'Bellcanada', 'Bellsouth', 'Belnet2003', 'Belnet2004', 'Belnet2005', 'Belnet2006', 'Belnet2007', 'Belnet2008', 'Belnet2009', 'Belnet2010', 'BeyondTheNetwork', 'Bics', 'Biznet', 'BsonetEurope', 'BtAsiaPac', 'BtEurope', 'BtNorthAmerica', 'Canerie', 'Carnet', 'Cernet', 'Cesnet1993', 'Cesnet1999', 'Cesnet2001', 'Cesnet200304', 'Cesnet200511', 'Cesnet200603', 'Cesnet200706', 'Cesnet201006', 'Chinanet', 'Claranet', 'Compuserve', 'CrlNetworkServices', 'Cwix', 'Cynet', 'Darkstrand', 'Dataxchange', 'Dfn', 'Digex', 'Eenet', 'EliBackbone', 'Epoch', 'Ernet', 'Evolink', 'Fccn', 'Forthnet', 'Funet', 'Gambia', 'Garr199901', 'Garr199904', 'Garr199905', 'Garr200109', 'Garr200112', 'Garr200212', 'Garr200404', 'Garr200902', 'Garr200908', 'Garr200909', 'Garr200912', 'Garr201001', 'Garr201003', 'Garr201004', 'Garr201005', 'Garr201007', 'Garr201008', 'Garr201010', 'Garr201012', 'Garr201101', 'Garr201102', 'Garr201103', 'Garr201104', 'Garr201105', 'Garr201107', 'Garr201108', 'Garr201109', 'Garr201110', 'Garr201111', 'Garr201112', 'Garr201201', 'Gblnet', 'Geant2001', 'Geant2009', 'Geant2010', 'Geant2012', 'Getnet', 'Globalcenter', 'Goodnet', 'Grena', 'Gridnet', 'Grnet', 'GtsCzechRepublic', 'GtsHungary', 'GtsPoland', 'GtsRomania', 'GtsSlovakia', 'Heanet', 'HiberniaCanada', 'HiberniaGlobal', 'HiberniaIreland', 'HiberniaNireland', 'HiberniaUk', 'HiberniaUs', 'Highwinds', 'HostwayInternational', 'HurricaneElectric', 'Ibm', 'Iij', 'Iinet', 'Ilan', 'Integra', 'Internetmci', 'Internode', 'Iris', 'Istar', 'Itnet', 'Janetbackbone', 'Janetlense', 'Jgn2Plus', 'Karen', 'KentmanFeb2008', 'KentmanJul2005', 'Kreonet', 'Latnet', 'Layer42', 'Litnet', 'Marnet', 'Marwan', 'Mren', 'Myren', 'Napnet', 'Navigata', 'Netrail', 'NetworkUsa', 'Nextgen', 'Niif', 'Noel', 'Nordu1989', 'Nordu1997', 'Nordu2005', 'Nsfnet', 'Oxford', 'Pacificwave', 'Packetexchange', 'Palmetto', 'Peer1', 'PionierL3', 'Psinet', 'Quest', 'Rediris', 'Renam', 'Renater1999', 'Renater2001', 'Renater2004', 'Renater2006', 'Renater2008', 'Renater2010', 'Restena', 'Rhnet', 'Rnp', 'Roedunet', 'Sago', 'Sanren', 'Savvis', 'Sinet', 'Spiralight', 'Sprint', 'Sunet', 'Surfnet', 'SwitchL3', 'TataNld', 'Telecomserbia', 'Ulaknet', 'UniC', 'Uninett2010', 'Uninett2011', 'Uran', 'Uunet', 'Vinaren', 'VisionNet', 'VtlWavenet2008', 'VtlWavenet2011', 'WideJpn', 'Xeex', 'Xspedius', 'York']
-    };
+    <script>
+        const topologyCatalog = {
+            'backbone': ['africa', 'africa_nosc', 'americas', 'americas_nosc', 'atlantica', 'eastern', 'eastern_nosc', 'emea', 'emea_nosc', 'eurafrasia', 'eurafrasia_nosc', 'eurasia', 'eurasia_nosc', 'europe', 'europe_nosc', 'north_america', 'north_america_nosc', 'south_america', 'south_america_nosc', 'world'],
+            'caida': {
+                '2024-08': ['137', '224', '293', '559', '577', '680', '701', '766', '786', '812', '852', '1103', '1136', '1213', '1221', '1257', '1653', '1659', '1741', '1835', '1853', '1916', '1930', '1955', '2018', '2107', '2119', '2152', '2200', '2603', '2607', '2611', '2614', '2847', '2852', '2856', '2907', '3209', '3215', '3221', '3269', '3292', '3301', '3303', '3320', '3329', '3352', '3356', '3741', '4134', '4538', '4739', '4766', '4771', '4837', '5089', '5384', '5408', '5410', '5432', '5466', '5607', '5610', '5617', '5650', '5769', '6327', '6799', '6805', '6830', '7018', '7497', '7575', '7922', '8151', '8447', '8473', '8708', '8881', '8953', '9498', '9808', '9829', '11340', '12322', '12479', '12741', '12874', '12912', '13092', '15525', '16086', '17557', '20115', '20965', '27750', '38022', '55836']
+            },
+            'gabriel': {
+                '5': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '10': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '15': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '20': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '25': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '30': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '35': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '40': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '45': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '50': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '55': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '60': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '65': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '70': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '75': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '80': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '85': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '90': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '95': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '100': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '125': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '150': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '175': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '200': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '225': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '250': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '275': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '300': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '325': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '350': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '375': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '400': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '425': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '450': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '475': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                '500': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+            },
+            'sndlib': ['abilene', 'atlanta', 'brain', 'cost266', 'dfn-bwin', 'dfn-gwin', 'di-yuan', 'france', 'geant', 'germany50', 'giul39', 'india35', 'janos-us-ca', 'janos-us', 'newyork', 'nobel-eu', 'nobel-germany', 'nobel-us', 'norway', 'pdh', 'pioro40', 'polska', 'sun', 'ta1', 'ta2', 'zib54'],
+            'topozoo': ['Aarnet', 'Abilene', 'Abvt', 'Aconet', 'Agis', 'Airtel', 'Amres', 'Ans', 'Arn', 'Arnes', 'Arpanet196912', 'Arpanet19706', 'Arpanet19719', 'Arpanet19723', 'Arpanet19728', 'Atmnet', 'AttMpls', 'Basnet', 'Bbnplanet', 'Bellcanada', 'Bellsouth', 'Belnet2003', 'Belnet2004', 'Belnet2005', 'Belnet2006', 'Belnet2007', 'Belnet2008', 'Belnet2009', 'Belnet2010', 'BeyondTheNetwork', 'Bics', 'Biznet', 'BsonetEurope', 'BtAsiaPac', 'BtEurope', 'BtNorthAmerica', 'Canerie', 'Carnet', 'Cernet', 'Cesnet1993', 'Cesnet1999', 'Cesnet2001', 'Cesnet200304', 'Cesnet200511', 'Cesnet200603', 'Cesnet200706', 'Cesnet201006', 'Chinanet', 'Claranet', 'Compuserve', 'CrlNetworkServices', 'Cwix', 'Cynet', 'Darkstrand', 'Dataxchange', 'Dfn', 'Digex', 'Eenet', 'EliBackbone', 'Epoch', 'Ernet', 'Evolink', 'Fccn', 'Forthnet', 'Funet', 'Gambia', 'Garr199901', 'Garr199904', 'Garr199905', 'Garr200109', 'Garr200112', 'Garr200212', 'Garr200404', 'Garr200902', 'Garr200908', 'Garr200909', 'Garr200912', 'Garr201001', 'Garr201003', 'Garr201004', 'Garr201005', 'Garr201007', 'Garr201008', 'Garr201010', 'Garr201012', 'Garr201101', 'Garr201102', 'Garr201103', 'Garr201104', 'Garr201105', 'Garr201107', 'Garr201108', 'Garr201109', 'Garr201110', 'Garr201111', 'Garr201112', 'Garr201201', 'Gblnet', 'Geant2001', 'Geant2009', 'Geant2010', 'Geant2012', 'Getnet', 'Globalcenter', 'Goodnet', 'Grena', 'Gridnet', 'Grnet', 'GtsCzechRepublic', 'GtsHungary', 'GtsPoland', 'GtsRomania', 'GtsSlovakia', 'Heanet', 'HiberniaCanada', 'HiberniaGlobal', 'HiberniaIreland', 'HiberniaNireland', 'HiberniaUk', 'HiberniaUs', 'Highwinds', 'HostwayInternational', 'HurricaneElectric', 'Ibm', 'Iij', 'Iinet', 'Ilan', 'Integra', 'Internetmci', 'Internode', 'Iris', 'Istar', 'Itnet', 'Janetbackbone', 'Janetlense', 'Jgn2Plus', 'Karen', 'KentmanFeb2008', 'KentmanJul2005', 'Kreonet', 'Latnet', 'Layer42', 'Litnet', 'Marnet', 'Marwan', 'Mren', 'Myren', 'Napnet', 'Navigata', 'Netrail', 'NetworkUsa', 'Nextgen', 'Niif', 'Noel', 'Nordu1989', 'Nordu1997', 'Nordu2005', 'Nsfnet', 'Oxford', 'Pacificwave', 'Packetexchange', 'Palmetto', 'Peer1', 'PionierL3', 'Psinet', 'Quest', 'Rediris', 'Renam', 'Renater1999', 'Renater2001', 'Renater2004', 'Renater2006', 'Renater2008', 'Renater2010', 'Restena', 'Rhnet', 'Rnp', 'Roedunet', 'Sago', 'Sanren', 'Savvis', 'Sinet', 'Spiralight', 'Sprint', 'Sunet', 'Surfnet', 'SwitchL3', 'TataNld', 'Telecomserbia', 'Ulaknet', 'UniC', 'Uninett2010', 'Uninett2011', 'Uran', 'Uunet', 'Vinaren', 'VisionNet', 'VtlWavenet2008', 'VtlWavenet2011', 'WideJpn', 'Xeex', 'Xspedius', 'York']
+        };
 
-    const propertiesNames = [['nodes', 'Number of nodes'], ['links', 'Number of links'], ['demands', 'Number of demands'],
+        const propertiesNames = [['nodes', 'Number of nodes'], ['links', 'Number of links'], ['demands', 'Number of demands'],
         ['min_degree', 'Minimum vertex degree'], ['avg_degree', 'Average vertex degree'], ['std_degree', 'Standard deviation of vertex degree'], ['max_degree', 'Maximum vertex degree'], ['gini', 'Gini coeffcent'],
         ['min_link_len', 'Minimum link length'], ['avg_link_len', 'Average link length'], ['max_link_len', 'Maximum link length'],
         ['diameter_len', 'Graph diameter (by link lenghts)'], ['diameter_hops', 'Graph diameter (by hops)'],
@@ -538,813 +621,878 @@
         ['avg_sdp_len', 'Average length of disjoint shortest paths'], ['avg_adp_num', 'Average number of all disjoint paths'], ['max_adp_num', 'Maximum number of all disjoint paths'],
         ['avg_adp_hops', 'Average hops of all disjoint paths'], ['avg_adp_len', 'Average length of all disjoint paths']]
 
-    let topologyJSON;
-    let topologyNodes;
-    let svgProperties;
-    let currentSizeScale;
+        let topologyJSON;
+        let topologyNodes;
+        let svgProperties;
+        let currentSizeScale;
 
-    document.addEventListener("DOMContentLoaded", () => {
-        const firstLevelDropdown = document.getElementById("firstLevelDropdown");
-        const secondLevelDropdown = document.getElementById("secondLevelDropdown");
-        const topologyList = document.getElementById("topologyList");
-        const topologyListWrapper = document.getElementById("topologyListWrapper");
-        const topoDisplay = document.getElementById("topoDisplay");
-        const topologyPropertiesList = document.getElementById("topologyPropertiesList");
-        const trafficModelDropdown = document.getElementById("trafficModelDropdown");
-        const trafficModelDropdownOriginal = document.getElementById("trafficModelDropdownOriginal");
-        const dynamicWidthCheckbox = document.getElementById("dynamicWidthCheckbox");
-        const dynamicColorCheckbox = document.getElementById("dynamicColorCheckbox");
-        const dynamicOpacityCheckbox = document.getElementById("dynamicOpacityCheckbox");
-        const topoDownloadJSON = document.getElementById("topoDownloadJSON");
-        const topoDownloadGML = document.getElementById("topoDownloadGML");
-        const topoDownloadSVG = document.getElementById("topoDownloadSVG");
-        const topoDownloadSVGView = document.getElementById("topoDownloadSVGView");
-        const topologyInfoParagraph = document.getElementById("topologyInfoParagraph");
+        document.addEventListener("DOMContentLoaded", () => {
+            const firstLevelDropdown = document.getElementById("firstLevelDropdown");
+            const secondLevelDropdown = document.getElementById("secondLevelDropdown");
+            const topologyList = document.getElementById("topologyList");
+            const topologyListWrapper = document.getElementById("topologyListWrapper");
+            const topoDisplay = document.getElementById("topoDisplay");
+            const topologyPropertiesList = document.getElementById("topologyPropertiesList");
+            const trafficModelDropdown = document.getElementById("trafficModelDropdown");
+            const trafficModelDropdownOriginal = document.getElementById("trafficModelDropdownOriginal");
+            const dynamicWidthCheckbox = document.getElementById("dynamicWidthCheckbox");
+            const dynamicColorCheckbox = document.getElementById("dynamicColorCheckbox");
+            const dynamicOpacityCheckbox = document.getElementById("dynamicOpacityCheckbox");
+            const topoDownloadJSON = document.getElementById("topoDownloadJSON");
+            const topoDownloadGML = document.getElementById("topoDownloadGML");
+            const topoDownloadSVG = document.getElementById("topoDownloadSVG");
+            const topoDownloadSVGView = document.getElementById("topoDownloadSVGView");
+            const topologyInfoParagraph = document.getElementById("topologyInfoParagraph");
 
-        let showNodeNames;
-        let showNodeNamesBelow;
-        let showNodeCircles;
+            let showNodeNames;
+            let showNodeNamesBelow;
+            let showNodeCircles;
+            let topologyRequest = 0;
+            let svgObjectUrl = null;
 
-        function findRule(rules, selector) {
-            for (let i = 0; i < rules.length; i++) {
-                if (rules[i].selectorText === selector) {
-                    return rules[i];
-                }
-            }
-            return null;
-        }
+            const downloadActions = [topoDownloadJSON, topoDownloadGML, topoDownloadSVG, topoDownloadSVGView];
 
-        function parseSVG() {
-            const svg = topoDisplay.getElementsByTagName('svg')[0];
-            const circles = svg.querySelectorAll('circle[data-id]');
-            const paths = svg.querySelectorAll('path[data-id]');
-
-            for (let i = 0; i < circles.length; i++) {
-                const circle = circles[i];
-                const name = topologyNodes[circle.dataset.id].name || circle.dataset.id;
-                circle.setAttribute('title', name);
-                circle.addEventListener('mousemove', showTooltip);
-                circle.addEventListener('mouseout', hideTooltip);
-            }
-
-            for (let i = 0; i < paths.length; i++) {
-                const path = paths[i];
-                const path_id = path.dataset.id.split('-');
-                const start_name = topologyNodes[path_id[0]].name || path_id[0];
-                const end_name = topologyNodes[path_id[1]].name || path_id[1];
-                path.setAttribute('title', `${start_name} ⇄ ${end_name}`);
-                path.addEventListener('mousemove', showTooltip);
-                path.addEventListener('mouseout', hideTooltip);
-            }
-
-            let svgProps = {};
-            const svgRules = svg.querySelector('style').sheet.cssRules;
-            svgProps.stylePath = findRule(svgRules, '#topo path');
-            svgProps.styleCircle = findRule(svgRules, '#topo circle');
-            svgProps.styleText = findRule(svgRules, '#topo text');
-            svgProps.stylePathUtilization = findRule(svgRules, '#topo path.utilization');
-
-            svgProps.originalStrokeWidth = parseFloat(svgProps.stylePath.style.strokeWidth);
-            svgProps.originalCircleRadius = parseFloat(svgProps.styleCircle.style.r);
-            svgProps.originalFontSize = parseFloat(svgProps.styleText.style.fontSize);
-            if (svgProps.stylePathUtilization)
-                svgProps.stylePathUtilization.style.fontSize = `${svgProps.originalStrokeWidth}px`;
-
-            svgProperties = svgProps;
-        }
-
-        function showTooltip(event) {
-            let element = event.target;
-            let tooltipElement = document.getElementById('tooltip');
-            if (element.attributes.title) {
-                tooltipElement.innerHTML = element.attributes.title.value;
-            } else if (element.attributes.dataset.id) {
-                tooltipElement.innerHTML = element.attributes.dataset.id;
-            } else if (element.attributes.id) {
-                tooltipElement.innerHTML = element.attributes.id.value;
-            } else {
-                return;
-            }
-            tooltipElement.style.display = 'block';
-            tooltipElement.style.left = event.pageX + 10 + 'px';
-            tooltipElement.style.top = event.pageY + 10 + 'px';
-        }
-
-        function hideTooltip() {
-            var tooltip = document.getElementById('tooltip');
-            tooltip.style.display = 'none';
-        }
-
-        function displayBezierCurves() {
-            const svg = topoDisplay.getElementsByTagName('svg')[0];
-
-            svgProperties.stylePath.style.visibility = 'hidden';
-            svgProperties.stylePathUtilization.style.visibility = 'visible';
-
-            if (svg.querySelector("path.utilization"))
-                return;
-
-            const paths = svg.querySelectorAll("path[data-id]");
-
-            for (let i = 0; i < paths.length; i++) {
-                const path = paths[i];
-                const path_id = path.dataset.id.split('-');
-                const start_id = path_id[0];
-                const end_id = path_id[1];
-                const start = svg.querySelector(`circle[data-id='${start_id}']`);
-                const end = svg.querySelector(`circle[data-id='${end_id}']`);
-                const start_name = topologyNodes[start_id].name || start_id;
-                const end_name = topologyNodes[end_id].name || end_id;
-                const startX = start.cx.baseVal.value;
-                const startY = start.cy.baseVal.value ;
-                const endX = end.cx.baseVal.value ;
-                const endY = end.cy.baseVal.value ;
-
-                // Calculate the midpoint between start and end points
-                const midX = (startX + endX) / 2;
-                const midY = (startY + endY) / 2;
-
-                // Calculate the vector from start to end
-                const dx = endX - startX;
-                const dy = endY - startY;
-
-                // Calculate the length of the vector
-                const length = Math.sqrt(dx * dx + dy * dy);
-
-                // Calculate the unit vector
-                const unitX = dx / length;
-                const unitY = dy / length;
-
-                // Calculate the perpendicular vector
-                const perpX = -unitY;
-                const perpY = unitX;
-
-                // Calculate the control points at 5 units distance from the midpoint
-                const controlPoint1X = midX + perpX * svgProperties.originalStrokeWidth;
-                const controlPoint1Y = midY + perpY * svgProperties.originalStrokeWidth;
-                const controlPoint2X = midX - perpX * svgProperties.originalStrokeWidth;
-                const controlPoint2Y = midY - perpY * svgProperties.originalStrokeWidth;
-
-                const bezierPath1 = `M${startX},${startY} C${controlPoint1X},${controlPoint1Y},${controlPoint1X},${controlPoint1Y},${endX},${endY}`;
-                const bezierPath2 = `M${startX},${startY} C${controlPoint2X},${controlPoint2Y},${controlPoint2X},${controlPoint2Y},${endX},${endY}`;
-
-                // Create two new path elements with Bezier curves
-                const newPath1 = document.createElementNS("http://www.w3.org/2000/svg", "path");
-                const newPath2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
-
-                newPath1.setAttribute('id', `utilization-${start_id}-${end_id}`);
-                newPath2.setAttribute('id', `utilization-${end_id}-${start_id}`);
-                newPath1.setAttribute('title', `${start_name} → ${end_name}`);
-                newPath2.setAttribute('title', `${end_name} → ${start_name}`);
-                newPath1.setAttribute('d', bezierPath1);
-                newPath2.setAttribute('d', bezierPath2);
-                newPath1.setAttribute('class', 'utilization');
-                newPath2.setAttribute('class', 'utilization');
-                newPath1.addEventListener('mousemove', showTooltip);
-                newPath1.addEventListener('mouseout', hideTooltip);
-                newPath2.addEventListener('mousemove', showTooltip);
-                newPath2.addEventListener('mouseout', hideTooltip);
-
-                // Add the new path elements to the SVG
-                path.after(newPath1, newPath2);
-            }
-        }
-
-        function hot_rgb(v) {
-            const vmin = 0.0;
-            const vmax = 1.0;
-
-            let c_r = 1.0;
-            let c_g = 1.0;
-            let c_b = 1.0;
-
-            if (v < vmin)
-                v = vmin;
-
-            if (v > vmax)
-                v = vmax;
-
-            let dv = vmax - vmin;
-
-            if (v < (vmin + 0.25 * dv)) {
-                c_r = 0;
-                c_g = 4 * (v - vmin) / dv;
-            } else if (v < (vmin + 0.5 * dv)) {
-                c_r = 0;
-                c_b = 1 + 4 * (vmin + 0.25 * dv - v) / dv;
-            } else if (v < (vmin + 0.75 * dv)) {
-                c_r = 4 * (v - vmin - 0.5 * dv) / dv;
-                c_b = 0;
-            } else {
-                c_g = 1 + 4 * (vmin + 0.75 * dv - v) / dv;
-                c_b = 0;
-            }
-
-            return `rgb(${Math.floor(c_r * 255)}, ${Math.floor(c_g * 255)}, ${Math.floor(c_b * 255)})`;
-        }
-
-        function visualizeTraffic() {
-            let links;
-            if (!topologyJSON) {
-                links = {};
-            } else {
-                links = topologyJSON['edges'];
-            }
-
-            let mode = trafficModelDropdown.value;
-
-            if (mode === 'none') {
-                if (svgProperties.stylePathUtilization)
-                    svgProperties.stylePathUtilization.style.visibility = 'hidden';
-                svgProperties.stylePath.style.visibility = 'visible';
-                svgProperties.styleCircle.style.fill = 'lightblue';
-                svgProperties.styleCircle.style.stroke = 'none';
-                drawHistogram(null);
-                return;
-            }
-
-            for (const link of links) {
-                if (!link.ecmp_fwd || !link.ecmp_bwd || !(mode in link.ecmp_fwd) || !(mode in link.ecmp_bwd)) {
-                    trafficModelDropdown.value = 'none';
-                    mode = 'none';
-                    showNodeNames.checked = true;
-                    deleteURLParameter('demands');
-                    break;
+            function hideDownloadActions() {
+                for (const action of downloadActions) {
+                    action.classList.add('unavailable');
+                    action.setAttribute('aria-disabled', 'true');
+                    action.removeAttribute('href');
                 }
             }
 
-            svgProperties.styleCircle.style.fill = 'white';
-            svgProperties.styleCircle.style.stroke = 'black';
-
-            const top_links = Array(20).fill([0.0, undefined]);
-
-            displayBezierCurves();
-
-            const svg = topoDisplay.getElementsByTagName('svg')[0];
-            for (const link of links) {
-                const source_name = topologyNodes[link.source].name || link.source;
-                const target_name = topologyNodes[link.target].name || link.target;
-                const fwd = link.ecmp_fwd[mode] / 100;
-                const bwd = link.ecmp_bwd[mode] / 100;
-                const fwd_path = svg.getElementById(`utilization-${link.source}-${link.target}`);
-                const fwd_title = `${source_name} → ${target_name} ${(fwd * 100).toFixed(2)}%`;
-                fwd_path.style['stroke-width'] = `${dynamicWidthCheckbox.checked ? `${fwd * 1.5}` : 0.5}em`;
-                fwd_path.style['stroke'] = dynamicColorCheckbox.checked ? hot_rgb(fwd) : 'black';
-                fwd_path.style['opacity'] = dynamicOpacityCheckbox.checked ? fwd : 1.0;
-                fwd_path.setAttribute('title', fwd_title);
-                if (fwd > top_links[0][0]) {
-                    top_links[0] = [fwd, fwd_title];
-                    top_links.sort((a, b) => {
-                        return a[0] - b[0];
-                    })
-                }
-                const bwd_path = svg.getElementById(`utilization-${link.target}-${link.source}`);
-                const bwd_title = `${target_name} → ${source_name} ${(bwd * 100).toFixed(2)}%`;
-                bwd_path.style['stroke-width'] = `${dynamicWidthCheckbox.checked ? `${bwd * 1.5}` : 0.5}em`;
-                bwd_path.style['stroke'] = dynamicColorCheckbox.checked ? hot_rgb(bwd) : 'black';
-                bwd_path.style['opacity'] = dynamicOpacityCheckbox.checked ? bwd : 1.0;
-                bwd_path.setAttribute('title', bwd_title);
-                if (bwd > top_links[0][0]) {
-                    top_links[0] = [bwd, bwd_title];
-                    top_links.sort((a, b) => {
-                        return a[0] - b[0];
-                    })
+            function showDownloadActions() {
+                for (const action of downloadActions) {
+                    action.classList.remove('unavailable');
+                    action.removeAttribute('aria-disabled');
                 }
             }
-            drawHistogram(top_links);
-        }
 
-        // Function to draw the histogram plot
-        function drawHistogram(values) {
-            if (values) {
-                values.reverse();
-                const svg = document.getElementById("trafficHistogram");
-                const barWidth = svg.getAttribute("width") / values.length;
-                const maxBarHeight = svg.getAttribute("height");
-                svg.innerHTML = "";
-
-                for (let i = 0; i < values.length; i++) {
-                    const x = i * barWidth;
-                    const barHeight = values[i][0] * maxBarHeight;
-
-                    const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-                    rect.setAttribute("x", x);
-                    rect.setAttribute("y", maxBarHeight - barHeight);
-                    rect.setAttribute("width", barWidth);
-                    rect.setAttribute("height", barHeight);
-                    rect.setAttribute("fill", hot_rgb(values[i][0]));
-                    rect.setAttribute('title', values[i][1]);
-                    rect.addEventListener('mousemove', showTooltip);
-                    rect.addEventListener('mouseout', hideTooltip);
-                    svg.appendChild(rect);
-                }
-            } else {
-                const hist = document.getElementById("trafficHistogram");
-                const histWidth = hist.getAttribute("width");
-                const histHeight = hist.getAttribute("height");
-                hist.innerHTML = `<text x="${histWidth / 2}" y="${histHeight / 2}" text-anchor="middle">Please select demands model to see histogram</text>`;
-            }
-        }
-
-        function displayNodes() {
-            if (showNodeNames.checked)
-                svgProperties.styleText.style.visibility = 'visible';
-            else
-                svgProperties.styleText.style.visibility = 'hidden';
-
-            if (showNodeNamesBelow.checked)
-                svgProperties.styleText.style.transform = 'translateY(1.8em)';
-            else
-                svgProperties.styleText.style.transform = 'translateY(0.3em)';
-
-            if (showNodeCircles.checked)
-                svgProperties.styleCircle.style.visibility = 'visible';
-            else
-                svgProperties.styleCircle.style.visibility = 'hidden';
-        }
-
-        function interactiveSVG() {
-            const svg = topoDisplay.getElementsByTagName('svg')[0];
-            const svgContainer = svg.parentElement;
-
-            let isPanning = false;
-            let startPoint = { x: 0, y: 0 };
-            let panningScale = 0.0;
-            let lastFrameTime = 0;
-            let accumulatedDx = 0;
-            let accumulatedDy = 0;
-            let zoomTimeout;
-            let viewBox = svg.viewBox.baseVal;
-            let originalViewBox = { x: viewBox.x, y: viewBox.y, width: viewBox.width, height: viewBox.height };
-
-            const urlViewBox = getQueryParam('viewbox');
-            if (urlViewBox) {
-                const [url_x, url_y, url_width, url_height] = urlViewBox.split(',');
-                viewBox.x = url_x;
-                viewBox.y = url_y;
-                viewBox.width = url_width;
-                viewBox.height = url_height;
-                requestAnimationFrame(adjustCSSStyles);
-            }
-
-            // Pan functionality
-            svg.addEventListener('mousedown', startPan);
-            svg.addEventListener('mousemove', pan);
-            svg.addEventListener('mouseup', endPan);
-            svg.addEventListener('mouseleave', endPan);
-
-            // Zoom functionality
-            svg.addEventListener('wheel', zoom);
-
-            // Create reset button
-            const resetButton = document.createElement('button');
-            resetButton.textContent = 'Reset view';
-            resetButton.style.position = 'absolute';
-            resetButton.style.top = '10px';
-            resetButton.style.right = '10px';
-            resetButton.style.zIndex = '1000';
-            svgContainer.style.position = 'relative';
-            svgContainer.appendChild(resetButton);
-            resetButton.addEventListener('click', resetView);
-
-            // Create "Display controls" button
-            const displayControlsButton = document.createElement('button');
-            displayControlsButton.textContent = 'Display controls';
-            displayControlsButton.style.position = 'absolute';
-            displayControlsButton.style.top = '40px';
-            displayControlsButton.style.right = '10px'; // Adjusted position
-            displayControlsButton.style.zIndex = '1000';
-            svgContainer.style.position = 'relative';
-            svgContainer.appendChild(displayControlsButton);
-
-            // Create the popup container
-            const popupContainer = document.createElement('div');
-            popupContainer.style.position = 'absolute';
-            popupContainer.style.top = '70px';
-            popupContainer.style.right = '10px';
-            popupContainer.style.zIndex = '1001';
-            popupContainer.style.backgroundColor = '#fff';
-            popupContainer.style.border = '1px solid #ccc';
-            popupContainer.style.padding = '5px';
-            popupContainer.style.fontSize = '14px';
-            popupContainer.style.display = 'none';
-            svgContainer.appendChild(popupContainer);
-
-            // Function to create a checkbox and label pair with flexbox alignment
-            function createCheckboxWithLabel(id, labelText) {
-                const container = document.createElement('div');
-                container.style.display = 'flex';
-                container.style.justifyContent = 'space-between';
-                container.style.alignItems = 'center';
-
-                const label = document.createElement('label');
-                label.htmlFor = id;
-                label.textContent = labelText;
-                label.style.flex = '1';
-                label.style.textAlign = 'left';
-
-                const checkbox = document.createElement('input');
-                checkbox.type = 'checkbox';
-                checkbox.id = id;
-                checkbox.style.flex = '0';
-
-                container.appendChild(label);
-                container.appendChild(checkbox);
-
-                return container;
-            }
-
-            // Add checkboxes to the popup
-            popupContainer.appendChild(createCheckboxWithLabel('showNodeNames', 'Node names'));
-            popupContainer.appendChild(createCheckboxWithLabel('showNodeNamesBelow', 'Below nodes'));
-            popupContainer.appendChild(createCheckboxWithLabel('showNodeCircles', 'Node circles'));
-
-            // Event listener to toggle the popup visibility
-            displayControlsButton.addEventListener('click', () => {
-                popupContainer.style.display = popupContainer.style.display === 'none' ? 'block' : 'none';
-            });
-
-            // Close popup if clicked outside
-            document.addEventListener('click', (event) => {
-                if (!popupContainer.contains(event.target) && !displayControlsButton.contains(event.target)) {
-                    popupContainer.style.display = 'none';
-                }
-            });
-
-            showNodeNames = document.getElementById("showNodeNames");
-            showNodeNamesBelow = document.getElementById("showNodeNamesBelow");
-            showNodeCircles = document.getElementById("showNodeCircles");
-            if (trafficModelDropdown.value === 'none')
-                showNodeNames.checked = true;
-            showNodeNamesBelow.checked = false;
-            showNodeCircles.checked = true;
-            showNodeNames.addEventListener("change", displayNodes);
-            showNodeNamesBelow.addEventListener("change", displayNodes);
-            showNodeCircles.addEventListener("change", displayNodes);
-
-            function startPan(e) {
-                isPanning = true;
-                startPoint = { x: e.clientX, y: e.clientY };
-                panningScale = Math.max(viewBox.width, viewBox.height);
-                svg.style.cursor = 'grabbing';
-                lastFrameTime = performance.now();
-                requestAnimationFrame(updatePan);
-            }
-
-            function pan(e) {
-                if (!isPanning) return;
-
-                const dx = (startPoint.x - e.clientX) * panningScale / svg.clientWidth;
-                const dy = (startPoint.y - e.clientY) * panningScale / svg.clientHeight;
-
-                accumulatedDx += dx;
-                accumulatedDy += dy;
-
-                startPoint = { x: e.clientX, y: e.clientY };
-            }
-
-            function updatePan(currentTime) {
-                if (!isPanning) return;
-
-                const elapsed = currentTime - lastFrameTime;
-                if (elapsed > 50) {
-                    viewBox.x += accumulatedDx;
-                    viewBox.y += accumulatedDy;
-                    updateURLParameter('viewbox', `${viewBox.x},${viewBox.y},${viewBox.width},${viewBox.height}`);
-
-                    accumulatedDx = 0;
-                    accumulatedDy = 0;
-                    lastFrameTime = currentTime;
-                }
-
-                requestAnimationFrame(updatePan);
-            }
-
-            function endPan() {
-                isPanning = false;
-                svg.style.cursor = 'default';
-            }
-
-            function zoom(e) {
-                e.preventDefault();
-
-                clearTimeout(zoomTimeout);
-                zoomTimeout = setTimeout(() => {
-                    const scale = e.deltaY < 0 ? 0.9 : 1.1;
-
-                    // Calculate zoom center
-                    const rect = svgContainer.getBoundingClientRect();
-                    const mouseX = (e.clientX - rect.left) / rect.width;
-                    const mouseY = (e.clientY - rect.top) / rect.height;
-
-                    const viewX = viewBox.x + mouseX * viewBox.width;
-                    const viewY = viewBox.y + mouseY * viewBox.height;
-
-                    // Apply zoom
-                    const newWidth = viewBox.width * scale;
-                    const newHeight = viewBox.height * scale;
-
-                    viewBox.x = viewX - mouseX * newWidth;
-                    viewBox.y = viewY - mouseY * newHeight;
-                    viewBox.width = newWidth;
-                    viewBox.height = newHeight;
-                    updateURLParameter('viewbox', `${viewBox.x},${viewBox.y},${viewBox.width},${viewBox.height}`);
-
-                    // Update viewBox
-                    requestAnimationFrame(adjustCSSStyles);
-                }, 20);
-            }
-
-            function resetView() {
-                viewBox.x = originalViewBox.x;
-                viewBox.y = originalViewBox.y;
-                viewBox.width = originalViewBox.width;
-                viewBox.height = originalViewBox.height;
-                deleteURLParameter('viewbox');
-
-                // Reset CSS styles
-                requestAnimationFrame(resetCSSStyles);
-            }
-
-            function adjustCSSStyles() {
-                const zoomLevel = originalViewBox.width / viewBox.width;
-
-                // Calculate size scaling factor within defined boundaries
-                const sizeScale = 1 / Math.min(Math.max(zoomLevel, 1), 25);
-
-                if (sizeScale !== currentSizeScale) {
-                    // console.log(zoomLevel, sizeScale);
-                    if (sizeScale >= 1.0) {
-                        resetCSSStyles()
-                    } else {
-                        svgProperties.stylePath.style.strokeWidth = `${svgProperties.originalStrokeWidth * sizeScale}px`;
-                        svgProperties.styleCircle.style.r = `${svgProperties.originalCircleRadius * sizeScale}px`;
-                        svgProperties.styleText.style.fontSize = `${svgProperties.originalFontSize * sizeScale}px`;
-                        svgProperties.stylePathUtilization.style.fontSize = `${svgProperties.originalStrokeWidth * sizeScale}px`;
-                        currentSizeScale = sizeScale;
+            function findRule(rules, selector) {
+                for (let i = 0; i < rules.length; i++) {
+                    if (rules[i].selectorText === selector) {
+                        return rules[i];
                     }
                 }
+                return null;
             }
 
-            function resetCSSStyles() {
-                svgProperties.stylePath.style.strokeWidth = `${svgProperties.originalStrokeWidth}px`;
-                svgProperties.styleCircle.style.r = `${svgProperties.originalCircleRadius}px`;
-                svgProperties.styleText.style.fontSize = `${svgProperties.originalFontSize}px`;
-                svgProperties.stylePathUtilization.style.fontSize = `${svgProperties.originalStrokeWidth}px`;
+            function parseSVG() {
+                const svg = topoDisplay.getElementsByTagName('svg')[0];
+                const circles = svg.querySelectorAll('circle[data-id]');
+                const paths = svg.querySelectorAll('path[data-id]');
+
+                for (let i = 0; i < circles.length; i++) {
+                    const circle = circles[i];
+                    const name = topologyNodes[circle.dataset.id].name || circle.dataset.id;
+                    circle.setAttribute('title', name);
+                    circle.addEventListener('mousemove', showTooltip);
+                    circle.addEventListener('mouseout', hideTooltip);
+                }
+
+                for (let i = 0; i < paths.length; i++) {
+                    const path = paths[i];
+                    const path_id = path.dataset.id.split('-');
+                    const start_name = topologyNodes[path_id[0]].name || path_id[0];
+                    const end_name = topologyNodes[path_id[1]].name || path_id[1];
+                    path.setAttribute('title', `${start_name} ⇄ ${end_name}`);
+                    path.addEventListener('mousemove', showTooltip);
+                    path.addEventListener('mouseout', hideTooltip);
+                }
+
+                let svgProps = {};
+                const svgRules = svg.querySelector('style').sheet.cssRules;
+                svgProps.stylePath = findRule(svgRules, '#topo path');
+                svgProps.styleCircle = findRule(svgRules, '#topo circle');
+                svgProps.styleText = findRule(svgRules, '#topo text');
+                svgProps.stylePathUtilization = findRule(svgRules, '#topo path.utilization');
+
+                svgProps.originalStrokeWidth = parseFloat(svgProps.stylePath.style.strokeWidth);
+                svgProps.originalCircleRadius = parseFloat(svgProps.styleCircle.style.r);
+                svgProps.originalFontSize = parseFloat(svgProps.styleText.style.fontSize);
+                if (svgProps.stylePathUtilization)
+                    svgProps.stylePathUtilization.style.fontSize = `${svgProps.originalStrokeWidth}px`;
+
+                svgProperties = svgProps;
+            }
+
+            function showTooltip(event) {
+                const element = event.target;
+                const tooltipElement = document.getElementById('tooltip');
+                const text = element.getAttribute('title') || element.dataset.id || element.id;
+                if (!text)
+                    return;
+                tooltipElement.textContent = text;
+                tooltipElement.style.display = 'block';
+                tooltipElement.style.left = event.clientX + 10 + 'px';
+                tooltipElement.style.top = event.clientY + 10 + 'px';
+            }
+
+            function hideTooltip() {
+                const tooltip = document.getElementById('tooltip');
+                tooltip.style.display = 'none';
+            }
+
+            function displayBezierCurves() {
+                const svg = topoDisplay.getElementsByTagName('svg')[0];
+
+                svgProperties.stylePath.style.visibility = 'hidden';
+                svgProperties.stylePathUtilization.style.visibility = 'visible';
+
+                if (svg.querySelector("path.utilization"))
+                    return;
+
+                const paths = svg.querySelectorAll("path[data-id]");
+
+                for (let i = 0; i < paths.length; i++) {
+                    const path = paths[i];
+                    const path_id = path.dataset.id.split('-');
+                    const start_id = path_id[0];
+                    const end_id = path_id[1];
+                    const start = svg.querySelector(`circle[data-id='${start_id}']`);
+                    const end = svg.querySelector(`circle[data-id='${end_id}']`);
+                    const start_name = topologyNodes[start_id].name || start_id;
+                    const end_name = topologyNodes[end_id].name || end_id;
+                    const startX = start.cx.baseVal.value;
+                    const startY = start.cy.baseVal.value;
+                    const endX = end.cx.baseVal.value;
+                    const endY = end.cy.baseVal.value;
+
+                    // Calculate the midpoint between start and end points
+                    const midX = (startX + endX) / 2;
+                    const midY = (startY + endY) / 2;
+
+                    // Calculate the vector from start to end
+                    const dx = endX - startX;
+                    const dy = endY - startY;
+
+                    // Calculate the length of the vector
+                    const length = Math.sqrt(dx * dx + dy * dy);
+
+                    // Calculate the unit vector
+                    const unitX = dx / length;
+                    const unitY = dy / length;
+
+                    // Calculate the perpendicular vector
+                    const perpX = -unitY;
+                    const perpY = unitX;
+
+                    // Calculate the control points at 5 units distance from the midpoint
+                    const controlPoint1X = midX + perpX * svgProperties.originalStrokeWidth;
+                    const controlPoint1Y = midY + perpY * svgProperties.originalStrokeWidth;
+                    const controlPoint2X = midX - perpX * svgProperties.originalStrokeWidth;
+                    const controlPoint2Y = midY - perpY * svgProperties.originalStrokeWidth;
+
+                    const bezierPath1 = `M${startX},${startY} C${controlPoint1X},${controlPoint1Y},${controlPoint1X},${controlPoint1Y},${endX},${endY}`;
+                    const bezierPath2 = `M${startX},${startY} C${controlPoint2X},${controlPoint2Y},${controlPoint2X},${controlPoint2Y},${endX},${endY}`;
+
+                    // Create two new path elements with Bezier curves
+                    const newPath1 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                    const newPath2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+
+                    newPath1.setAttribute('id', `utilization-${start_id}-${end_id}`);
+                    newPath2.setAttribute('id', `utilization-${end_id}-${start_id}`);
+                    newPath1.setAttribute('title', `${start_name} → ${end_name}`);
+                    newPath2.setAttribute('title', `${end_name} → ${start_name}`);
+                    newPath1.setAttribute('d', bezierPath1);
+                    newPath2.setAttribute('d', bezierPath2);
+                    newPath1.setAttribute('class', 'utilization');
+                    newPath2.setAttribute('class', 'utilization');
+                    newPath1.addEventListener('mousemove', showTooltip);
+                    newPath1.addEventListener('mouseout', hideTooltip);
+                    newPath2.addEventListener('mousemove', showTooltip);
+                    newPath2.addEventListener('mouseout', hideTooltip);
+
+                    // Add the new path elements to the SVG
+                    path.after(newPath1, newPath2);
+                }
+            }
+
+            function hot_rgb(v) {
+                const vmin = 0.0;
+                const vmax = 1.0;
+
+                let c_r = 1.0;
+                let c_g = 1.0;
+                let c_b = 1.0;
+
+                if (v < vmin)
+                    v = vmin;
+
+                if (v > vmax)
+                    v = vmax;
+
+                let dv = vmax - vmin;
+
+                if (v < (vmin + 0.25 * dv)) {
+                    c_r = 0;
+                    c_g = 4 * (v - vmin) / dv;
+                } else if (v < (vmin + 0.5 * dv)) {
+                    c_r = 0;
+                    c_b = 1 + 4 * (vmin + 0.25 * dv - v) / dv;
+                } else if (v < (vmin + 0.75 * dv)) {
+                    c_r = 4 * (v - vmin - 0.5 * dv) / dv;
+                    c_b = 0;
+                } else {
+                    c_g = 1 + 4 * (vmin + 0.75 * dv - v) / dv;
+                    c_b = 0;
+                }
+
+                return `rgb(${Math.floor(c_r * 255)}, ${Math.floor(c_g * 255)}, ${Math.floor(c_b * 255)})`;
+            }
+
+            function visualizeTraffic() {
+                let links;
+                if (!topologyJSON) {
+                    links = {};
+                } else {
+                    links = topologyJSON['edges'];
+                }
+
+                let mode = trafficModelDropdown.value;
+
+                if (mode === 'none') {
+                    if (svgProperties.stylePathUtilization)
+                        svgProperties.stylePathUtilization.style.visibility = 'hidden';
+                    svgProperties.stylePath.style.visibility = 'visible';
+                    svgProperties.styleCircle.style.fill = 'lightblue';
+                    svgProperties.styleCircle.style.stroke = 'none';
+                    drawHistogram(null);
+                    return;
+                }
+
+                for (const link of links) {
+                    if (!link.ecmp_fwd || !link.ecmp_bwd || !(mode in link.ecmp_fwd) || !(mode in link.ecmp_bwd)) {
+                        trafficModelDropdown.value = 'none';
+                        mode = 'none';
+                        showNodeNames.checked = true;
+                        deleteURLParameter('demands');
+                        break;
+                    }
+                }
+
+                svgProperties.styleCircle.style.fill = 'white';
+                svgProperties.styleCircle.style.stroke = 'black';
+
+                const top_links = Array(20).fill([0.0, undefined]);
+
+                displayBezierCurves();
+
+                const svg = topoDisplay.getElementsByTagName('svg')[0];
+                for (const link of links) {
+                    const source_name = topologyNodes[link.source].name || link.source;
+                    const target_name = topologyNodes[link.target].name || link.target;
+                    const fwd = link.ecmp_fwd[mode] / 100;
+                    const bwd = link.ecmp_bwd[mode] / 100;
+                    const fwd_path = svg.getElementById(`utilization-${link.source}-${link.target}`);
+                    const fwd_title = `${source_name} → ${target_name} ${(fwd * 100).toFixed(2)}%`;
+                    fwd_path.style['stroke-width'] = `${dynamicWidthCheckbox.checked ? `${fwd * 1.5}` : 0.5}em`;
+                    fwd_path.style['stroke'] = dynamicColorCheckbox.checked ? hot_rgb(fwd) : 'black';
+                    fwd_path.style['opacity'] = dynamicOpacityCheckbox.checked ? fwd : 1.0;
+                    fwd_path.setAttribute('title', fwd_title);
+                    if (fwd > top_links[0][0]) {
+                        top_links[0] = [fwd, fwd_title];
+                        top_links.sort((a, b) => {
+                            return a[0] - b[0];
+                        })
+                    }
+                    const bwd_path = svg.getElementById(`utilization-${link.target}-${link.source}`);
+                    const bwd_title = `${target_name} → ${source_name} ${(bwd * 100).toFixed(2)}%`;
+                    bwd_path.style['stroke-width'] = `${dynamicWidthCheckbox.checked ? `${bwd * 1.5}` : 0.5}em`;
+                    bwd_path.style['stroke'] = dynamicColorCheckbox.checked ? hot_rgb(bwd) : 'black';
+                    bwd_path.style['opacity'] = dynamicOpacityCheckbox.checked ? bwd : 1.0;
+                    bwd_path.setAttribute('title', bwd_title);
+                    if (bwd > top_links[0][0]) {
+                        top_links[0] = [bwd, bwd_title];
+                        top_links.sort((a, b) => {
+                            return a[0] - b[0];
+                        })
+                    }
+                }
+                drawHistogram(top_links);
+            }
+
+            // Function to draw the histogram plot
+            function drawHistogram(values) {
+                const svg = document.getElementById('trafficHistogram');
+                const message = document.getElementById('trafficHistogramMessage');
+                if (values) {
+                    svg.removeAttribute('hidden');
+                    message.hidden = true;
+                    values.reverse();
+                    const barWidth = svg.getAttribute("width") / values.length;
+                    const maxBarHeight = svg.getAttribute("height");
+                    svg.replaceChildren();
+
+                    for (let i = 0; i < values.length; i++) {
+                        const x = i * barWidth;
+                        const barHeight = values[i][0] * maxBarHeight;
+
+                        const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                        rect.setAttribute("x", x);
+                        rect.setAttribute("y", maxBarHeight - barHeight);
+                        rect.setAttribute("width", barWidth);
+                        rect.setAttribute("height", barHeight);
+                        rect.setAttribute("fill", hot_rgb(values[i][0]));
+                        rect.setAttribute('title', values[i][1]);
+                        rect.addEventListener('mousemove', showTooltip);
+                        rect.addEventListener('mouseout', hideTooltip);
+                        svg.appendChild(rect);
+                    }
+                } else {
+                    svg.setAttribute('hidden', '');
+                    message.hidden = false;
+                    svg.replaceChildren();
+                }
+            }
+
+            function displayNodes() {
+                if (showNodeNames.checked)
+                    svgProperties.styleText.style.visibility = 'visible';
+                else
+                    svgProperties.styleText.style.visibility = 'hidden';
+
+                if (showNodeNamesBelow.checked)
+                    svgProperties.styleText.style.transform = 'translateY(1.8em)';
+                else
+                    svgProperties.styleText.style.transform = 'translateY(0.3em)';
+
+                if (showNodeCircles.checked)
+                    svgProperties.styleCircle.style.visibility = 'visible';
+                else
+                    svgProperties.styleCircle.style.visibility = 'hidden';
+            }
+
+            function interactiveSVG() {
+                const svg = topoDisplay.getElementsByTagName('svg')[0];
+                const svgContainer = svg.parentElement;
+
+                let isPanning = false;
+                let startPoint = { x: 0, y: 0 };
+                let panningScale = 0.0;
+                let lastFrameTime = 0;
+                let accumulatedDx = 0;
+                let accumulatedDy = 0;
+                let zoomTimeout;
+                let viewBox = svg.viewBox.baseVal;
+                let originalViewBox = { x: viewBox.x, y: viewBox.y, width: viewBox.width, height: viewBox.height };
+
+                const urlViewBox = getQueryParam('viewbox');
+                if (urlViewBox) {
+                    const [url_x, url_y, url_width, url_height] = urlViewBox.split(',');
+                    viewBox.x = url_x;
+                    viewBox.y = url_y;
+                    viewBox.width = url_width;
+                    viewBox.height = url_height;
+                    requestAnimationFrame(adjustCSSStyles);
+                }
+
+                // Pan functionality
+                svg.addEventListener('mousedown', startPan);
+                svg.addEventListener('mousemove', pan);
+                svg.addEventListener('mouseup', endPan);
+                svg.addEventListener('mouseleave', endPan);
+
+                // Zoom functionality
+                svg.addEventListener('wheel', zoom);
+
+                // Create reset button
+                const resetButton = document.createElement('button');
+                resetButton.textContent = 'Reset view';
+                resetButton.style.position = 'absolute';
+                resetButton.style.top = '10px';
+                resetButton.style.right = '10px';
+                resetButton.style.zIndex = '1000';
+                svgContainer.style.position = 'relative';
+                svgContainer.appendChild(resetButton);
+                resetButton.addEventListener('click', resetView);
+
+                // Create "Display controls" button
+                const displayControlsButton = document.createElement('button');
+                displayControlsButton.textContent = 'Display controls';
+                displayControlsButton.style.position = 'absolute';
+                displayControlsButton.style.top = '40px';
+                displayControlsButton.style.right = '10px'; // Adjusted position
+                displayControlsButton.style.zIndex = '1000';
+                svgContainer.style.position = 'relative';
+                svgContainer.appendChild(displayControlsButton);
+
+                // Create the popup container
+                const popupContainer = document.createElement('div');
+                popupContainer.style.position = 'absolute';
+                popupContainer.style.top = '70px';
+                popupContainer.style.right = '10px';
+                popupContainer.style.zIndex = '1001';
+                popupContainer.style.backgroundColor = '#fff';
+                popupContainer.style.border = '1px solid #ccc';
+                popupContainer.style.padding = '5px';
+                popupContainer.style.fontSize = '14px';
+                popupContainer.style.display = 'none';
+                svgContainer.appendChild(popupContainer);
+
+                // Function to create a checkbox and label pair with flexbox alignment
+                function createCheckboxWithLabel(id, labelText) {
+                    const container = document.createElement('div');
+                    container.style.display = 'flex';
+                    container.style.justifyContent = 'space-between';
+                    container.style.alignItems = 'center';
+
+                    const label = document.createElement('label');
+                    label.htmlFor = id;
+                    label.textContent = labelText;
+                    label.style.flex = '1';
+                    label.style.textAlign = 'left';
+
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.id = id;
+                    checkbox.style.flex = '0';
+
+                    container.appendChild(label);
+                    container.appendChild(checkbox);
+
+                    return container;
+                }
+
+                // Add checkboxes to the popup
+                popupContainer.appendChild(createCheckboxWithLabel('showNodeNames', 'Node names'));
+                popupContainer.appendChild(createCheckboxWithLabel('showNodeNamesBelow', 'Below nodes'));
+                popupContainer.appendChild(createCheckboxWithLabel('showNodeCircles', 'Node circles'));
+
+                // Event listener to toggle the popup visibility
+                displayControlsButton.addEventListener('click', () => {
+                    popupContainer.style.display = popupContainer.style.display === 'none' ? 'block' : 'none';
+                });
+
+                // Close popup if clicked outside
+                document.addEventListener('click', (event) => {
+                    if (!popupContainer.contains(event.target) && !displayControlsButton.contains(event.target)) {
+                        popupContainer.style.display = 'none';
+                    }
+                });
+
+                showNodeNames = document.getElementById("showNodeNames");
+                showNodeNamesBelow = document.getElementById("showNodeNamesBelow");
+                showNodeCircles = document.getElementById("showNodeCircles");
+                if (trafficModelDropdown.value === 'none')
+                    showNodeNames.checked = true;
+                showNodeNamesBelow.checked = false;
+                showNodeCircles.checked = true;
+                showNodeNames.addEventListener("change", displayNodes);
+                showNodeNamesBelow.addEventListener("change", displayNodes);
+                showNodeCircles.addEventListener("change", displayNodes);
+
+                function startPan(e) {
+                    isPanning = true;
+                    startPoint = { x: e.clientX, y: e.clientY };
+                    panningScale = Math.max(viewBox.width, viewBox.height);
+                    svg.style.cursor = 'grabbing';
+                    lastFrameTime = performance.now();
+                    requestAnimationFrame(updatePan);
+                }
+
+                function pan(e) {
+                    if (!isPanning) return;
+
+                    const dx = (startPoint.x - e.clientX) * panningScale / svg.clientWidth;
+                    const dy = (startPoint.y - e.clientY) * panningScale / svg.clientHeight;
+
+                    accumulatedDx += dx;
+                    accumulatedDy += dy;
+
+                    startPoint = { x: e.clientX, y: e.clientY };
+                }
+
+                function updatePan(currentTime) {
+                    if (!isPanning) return;
+
+                    const elapsed = currentTime - lastFrameTime;
+                    if (elapsed > 50) {
+                        viewBox.x += accumulatedDx;
+                        viewBox.y += accumulatedDy;
+                        updateURLParameter('viewbox', `${viewBox.x},${viewBox.y},${viewBox.width},${viewBox.height}`);
+
+                        accumulatedDx = 0;
+                        accumulatedDy = 0;
+                        lastFrameTime = currentTime;
+                    }
+
+                    requestAnimationFrame(updatePan);
+                }
+
+                function endPan() {
+                    isPanning = false;
+                    svg.style.cursor = 'default';
+                }
+
+                function zoom(e) {
+                    e.preventDefault();
+
+                    clearTimeout(zoomTimeout);
+                    zoomTimeout = setTimeout(() => {
+                        const scale = e.deltaY < 0 ? 0.9 : 1.1;
+
+                        // Calculate zoom center
+                        const rect = svgContainer.getBoundingClientRect();
+                        const mouseX = (e.clientX - rect.left) / rect.width;
+                        const mouseY = (e.clientY - rect.top) / rect.height;
+
+                        const viewX = viewBox.x + mouseX * viewBox.width;
+                        const viewY = viewBox.y + mouseY * viewBox.height;
+
+                        // Apply zoom
+                        const newWidth = viewBox.width * scale;
+                        const newHeight = viewBox.height * scale;
+
+                        viewBox.x = viewX - mouseX * newWidth;
+                        viewBox.y = viewY - mouseY * newHeight;
+                        viewBox.width = newWidth;
+                        viewBox.height = newHeight;
+                        updateURLParameter('viewbox', `${viewBox.x},${viewBox.y},${viewBox.width},${viewBox.height}`);
+
+                        // Update viewBox
+                        requestAnimationFrame(adjustCSSStyles);
+                    }, 20);
+                }
+
+                function resetView() {
+                    viewBox.x = originalViewBox.x;
+                    viewBox.y = originalViewBox.y;
+                    viewBox.width = originalViewBox.width;
+                    viewBox.height = originalViewBox.height;
+                    deleteURLParameter('viewbox');
+
+                    // Reset CSS styles
+                    requestAnimationFrame(resetCSSStyles);
+                }
+
+                function adjustCSSStyles() {
+                    const zoomLevel = originalViewBox.width / viewBox.width;
+
+                    // Calculate size scaling factor within defined boundaries
+                    const sizeScale = 1 / Math.min(Math.max(zoomLevel, 1), 25);
+
+                    if (sizeScale !== currentSizeScale) {
+                        // console.log(zoomLevel, sizeScale);
+                        if (sizeScale >= 1.0) {
+                            resetCSSStyles()
+                        } else {
+                            svgProperties.stylePath.style.strokeWidth = `${svgProperties.originalStrokeWidth * sizeScale}px`;
+                            svgProperties.styleCircle.style.r = `${svgProperties.originalCircleRadius * sizeScale}px`;
+                            svgProperties.styleText.style.fontSize = `${svgProperties.originalFontSize * sizeScale}px`;
+                            svgProperties.stylePathUtilization.style.fontSize = `${svgProperties.originalStrokeWidth * sizeScale}px`;
+                            currentSizeScale = sizeScale;
+                        }
+                    }
+                }
+
+                function resetCSSStyles() {
+                    svgProperties.stylePath.style.strokeWidth = `${svgProperties.originalStrokeWidth}px`;
+                    svgProperties.styleCircle.style.r = `${svgProperties.originalCircleRadius}px`;
+                    svgProperties.styleText.style.fontSize = `${svgProperties.originalFontSize}px`;
+                    svgProperties.stylePathUtilization.style.fontSize = `${svgProperties.originalStrokeWidth}px`;
+                    currentSizeScale = 1.0;
+                }
+
                 currentSizeScale = 1.0;
             }
 
-            currentSizeScale = 1.0;
-        }
-
-        trafficModelDropdown.addEventListener("change", () => {
-            if (trafficModelDropdown.value !== 'none') {
-                showNodeNames.checked = false;
-                updateURLParameter('demands', `${trafficModelDropdown.value}`);
-            }
-            visualizeTraffic();
-            if (trafficModelDropdown.value === 'none') {
-                showNodeNames.checked = true;
-                deleteURLParameter('demands');
-            }
-            displayNodes();
-
-        });
-        dynamicWidthCheckbox.addEventListener("change", visualizeTraffic);
-        dynamicColorCheckbox.addEventListener("change", visualizeTraffic);
-        dynamicOpacityCheckbox.addEventListener("change", visualizeTraffic);
-
-        // Function to populate the second-level dropdown or topology list
-        const populateSecondLevel = (oob) => {
-            if (firstLevelDropdown.value === 'caida') {
-                secondLevelLabel = 'Select date';
-            } else {
-                secondLevelLabel = 'Select size';
-            }
-            secondLevelDropdown.innerHTML = `<option value="" selected>${secondLevelLabel}</option>`;
-            topologyList.innerHTML = '';
-            for (const key in oob) {
-                const option = document.createElement('option');
-                option.value = key;
-                option.textContent = key;
-                secondLevelDropdown.appendChild(option);
-            }
-            topologyListWrapper.style.display = 'none';
-            secondLevelDropdown.disabled = false;
-        };
-
-        const populateTopologyList = (ll) => {
-            topologyList.innerHTML = '';
-            ll.forEach((topology) => {
-                const li = document.createElement('li');
-                li.innerHTML = `<span>${topology}</span>`;
-                if (topology === 'germany50' || topology === 'nobel-eu'|| topology === 'polska' || topology === 'Abilene')
-                    li.innerHTML += "<span class='featured'>widely used</span>";
-                topologyList.appendChild(li);
-                li.addEventListener("click", () => {
-                    const selectedCategory = firstLevelDropdown.value;
-                    const selectedTopology = secondLevelDropdown.value;
-                    let path = selectedCategory;
-                    if (selectedTopology) {
-                        path = `${selectedCategory}/${selectedTopology}`
-                    }
-                    deleteURLParameter('viewbox');
-                    fetchAndDisplayTopology(path, topology);
-                });
-            });
-            topologyListWrapper.style.display = 'flex';
-        };
-
-        const populateTopologyProperties = (name, stats) => {
-            topologyPropertiesList.innerHTML = '';
-            const li = document.createElement('li');
-            li.innerHTML = `<span>Name:</span><span>${name}</span>`;
-            topologyPropertiesList.appendChild(li);
-            for (const prop of propertiesNames) {
-                if (prop[0] in stats) {
-                    const li = document.createElement('li');
-                    li.innerHTML = `<span>${prop[1]}</span><span>${stats[prop[0]]}</span>`;
-                    topologyPropertiesList.appendChild(li);
+            trafficModelDropdown.addEventListener("change", () => {
+                if (trafficModelDropdown.value !== 'none') {
+                    showNodeNames.checked = false;
+                    updateURLParameter('demands', `${trafficModelDropdown.value}`);
                 }
-            }
-        };
+                visualizeTraffic();
+                if (trafficModelDropdown.value === 'none') {
+                    showNodeNames.checked = true;
+                    deleteURLParameter('demands');
+                }
+                displayNodes();
 
-        firstLevelDropdown.addEventListener("change", () => {
-            const selectedCategory = firstLevelDropdown.value;
-            if (!selectedCategory) {
-                secondLevelDropdown.value = "";
-                secondLevelDropdown.disabled = true;
-                topologyList.innerHTML = '';
+            });
+            dynamicWidthCheckbox.addEventListener("change", visualizeTraffic);
+            dynamicColorCheckbox.addEventListener("change", visualizeTraffic);
+            dynamicOpacityCheckbox.addEventListener("change", visualizeTraffic);
+
+            // Function to populate the second-level dropdown or topology list
+            const populateSecondLevel = (oob) => {
+                if (firstLevelDropdown.value === 'caida') {
+                    secondLevelLabel = 'Select date';
+                } else {
+                    secondLevelLabel = 'Select size';
+                }
+                const placeholder = document.createElement('option');
+                placeholder.value = '';
+                placeholder.textContent = secondLevelLabel;
+                placeholder.selected = true;
+                secondLevelDropdown.replaceChildren(placeholder);
+                topologyList.replaceChildren();
+                for (const key in oob) {
+                    const option = document.createElement('option');
+                    option.value = key;
+                    option.textContent = key;
+                    secondLevelDropdown.appendChild(option);
+                }
                 topologyListWrapper.style.display = 'none';
-                return;
-            }
-            if (Array.isArray(topologyCatalog[selectedCategory])) {
-                secondLevelDropdown.value = "";
-                secondLevelDropdown.disabled = true;
-                populateTopologyList(topologyCatalog[selectedCategory]);
-            } else if (typeof topologyCatalog[selectedCategory] === 'object') {
-                populateSecondLevel(topologyCatalog[selectedCategory]);
-            }
-        });
+                secondLevelDropdown.disabled = false;
+            };
 
-        secondLevelDropdown.addEventListener("change", () => {
-            const selectedCategory = firstLevelDropdown.value;
-            const selectedTopology = secondLevelDropdown.value;
-            if (!selectedCategory || !selectedTopology) {
-                topologyList.innerHTML = '';
-                topologyListWrapper.style.display = 'none';
-                return;
-            }
-            populateTopologyList(topologyCatalog[selectedCategory][selectedTopology]);
-        });
-
-        function downloadSVG() {
-            const svgContent = topoDisplay.innerHTML;
-            const svgBlob = new Blob([svgContent], {type: "image/svg+xml"});
-            const svgUrl = URL.createObjectURL(svgBlob);
-            topoDownloadSVGView.href = svgUrl;
-            topoDownloadSVGView.download = `${topologyJSON.graph.name}.svg`;
-        }
-
-        topoDownloadSVGView.addEventListener("click", downloadSVG);
-        topoDownloadSVGView.addEventListener("contextmenu", downloadSVG);
-
-        function makeTopologyInfo(selectedCategory, selectedTopology) {
-            let text = "";
-
-            if (selectedCategory.startsWith('gabriel')) {
-                text += `Synthetically generated <b>Gabriel graph</b> with <b>${topologyJSON['graph']['stats']['nodes']}</b> nodes. <a href="https://doi.org/10.2307/2412323" target="_blank">Gabriel graphs</a> closely approximate real optical transport network topologies and realistically model fiber lengths and node degrees, as shown in <a href="https://doi.org/10.1109/ICUMT.2013.6798402" target="_blank">this paper</a>.`
-            }
-
-            if (selectedCategory.startsWith('caida')) {
-                text += `Layer 3 topology of AS number <b>${selectedTopology}</b>, built using the data from <a href="https://www.caida.org/catalog/datasets/internet-topology-data-kit/" target="_blank">CAIDA Internet Topology Data Kit (ITDK)</a>.`
-            }
-
-
-            if (selectedCategory === 'sndlib') {
-                text += `Topology <b>${selectedTopology}</b> from the <a href="https://sndlib.put.poznan.pl" target="_blank">SNDlib</a> repository, originally presented in this <a href="https://doi.org/10.1002/net.20371" target="_blank">paper</a>.`
-            }
-
-            if (selectedCategory === 'topozoo') {
-                text += `Topology <b>${selectedTopology}</b> from the <a href="https://topology-zoo.org/" target="_blank">Internet Topology Zoo</a>, originally presented in this <a href="https://doi.org/10.1109/JSAC.2011.111002" target="_blank">paper</a>.`
-            }
-
-            if (selectedCategory === 'backbone') {
-                text += `Synthetic global-scale backbone <b>${selectedTopology}</b> topology generated using methodology presented in this <a href="https://doi.org/10.1109/ICC.2015.7249292" target="_blank">paper</a>.`
-            }
-
-            topologyInfoParagraph.innerHTML = text;
-        }
-
-        function populateNodes(nodes) {
-            let new_topology_nodes = {}
-            for (const node of nodes) {
-                new_topology_nodes[node['id']] = node;
-            }
-            return new_topology_nodes;
-        }
-
-        // Function to get query parameter by name from the URL
-        function getQueryParam(param) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(param);
-        }
-
-        // Function to update the URL without reloading the page
-        function updateURLParameter(param, value, push=false) {
-            const url = new URL(window.location);
-            url.searchParams.set(param, value);
-            url.search = decodeURIComponent(url.search)
-            if (push)
-                window.history.pushState({path: url.href}, '', url.href);
-            else
-                window.history.replaceState({path: url.href}, '', url.href);
-        }
-
-        function deleteURLParameter(param) {
-            const url = new URL(window.location);
-            url.searchParams.delete(param);
-            url.search = decodeURIComponent(url.search)
-            window.history.replaceState({path: url.href}, '', url.href);
-        }
-
-        // Function to fetch and display the selected topology
-        const fetchAndDisplayTopology = async (selectedCategory, selectedTopology) => {
-            try {
-                // Fetch both SVG and JSON files in parallel
-                const svgPromise = fetch(`data/${selectedCategory}/${selectedTopology}.svg`)
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error("Failed to fetch SVG file");
-                        }
-                        return response.text();
+            const populateTopologyList = (topologies) => {
+                topologyList.replaceChildren();
+                for (const topology of topologies) {
+                    const li = document.createElement('li');
+                    const button = document.createElement('button');
+                    const name = document.createElement('span');
+                    button.type = 'button';
+                    button.dataset.topology = topology;
+                    name.textContent = topology;
+                    button.appendChild(name);
+                    if (['germany50', 'nobel-eu', 'polska', 'Abilene'].includes(topology)) {
+                        const featured = document.createElement('span');
+                        featured.className = 'featured';
+                        featured.textContent = 'widely used';
+                        button.appendChild(featured);
+                    }
+                    button.addEventListener('click', () => {
+                        topologyList.querySelectorAll('li').forEach(element => element.classList.remove('selected'));
+                        li.classList.add('selected');
+                        const selectedCategory = firstLevelDropdown.value;
+                        const selectedTopology = secondLevelDropdown.value;
+                        const path = selectedTopology ? `${selectedCategory}/${selectedTopology}` : selectedCategory;
+                        deleteURLParameter('viewbox');
+                        fetchAndDisplayTopology(path, topology);
                     });
+                    li.appendChild(button);
+                    topologyList.appendChild(li);
+                }
+                topologyListWrapper.style.display = 'flex';
+            };
 
-                const jsonPromise = fetch(`data/${selectedCategory}/${selectedTopology}.json`)
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error("Failed to fetch JSON file");
-                        }
-                        return response.json();
-                    });
+            const populateTopologyProperties = (name, stats) => {
+                const properties = [['Name', name], ...propertiesNames
+                    .filter(([key]) => key in stats)
+                    .map(([key, label]) => [label, stats[key]])];
+                topologyPropertiesList.replaceChildren();
+                for (const [label, value] of properties) {
+                    const row = document.createElement('div');
+                    const term = document.createElement('dt');
+                    const description = document.createElement('dd');
+                    term.textContent = label;
+                    description.textContent = value;
+                    row.append(term, description);
+                    topologyPropertiesList.appendChild(row);
+                }
+            };
 
-                const new_json = await jsonPromise;
-                topologyJSON = new_json;
-                topologyNodes = populateNodes(new_json['nodes']);
+            firstLevelDropdown.addEventListener("change", () => {
+                const selectedCategory = firstLevelDropdown.value;
+                if (!selectedCategory) {
+                    secondLevelDropdown.value = "";
+                    secondLevelDropdown.disabled = true;
+                    topologyList.replaceChildren();
+                    topologyListWrapper.style.display = 'none';
+                    return;
+                }
+                if (Array.isArray(topologyCatalog[selectedCategory])) {
+                    secondLevelDropdown.value = "";
+                    secondLevelDropdown.disabled = true;
+                    populateTopologyList(topologyCatalog[selectedCategory]);
+                } else if (typeof topologyCatalog[selectedCategory] === 'object') {
+                    populateSecondLevel(topologyCatalog[selectedCategory]);
+                }
+            });
 
-                const new_svg = await svgPromise;
-                topoDisplay.style.visibility = 'hidden';
-                topoDisplay.innerHTML = new_svg;
-            } catch (error) {
-                // Handle errors during fetching and display an error message
+            secondLevelDropdown.addEventListener("change", () => {
+                const selectedCategory = firstLevelDropdown.value;
+                const selectedTopology = secondLevelDropdown.value;
+                if (!selectedCategory || !selectedTopology) {
+                    topologyList.replaceChildren();
+                    topologyListWrapper.style.display = 'none';
+                    return;
+                }
+                populateTopologyList(topologyCatalog[selectedCategory][selectedTopology]);
+            });
+
+            function downloadSVG() {
+                const svgContent = topoDisplay.innerHTML;
+                const svgBlob = new Blob([svgContent], { type: 'image/svg+xml' });
+                if (svgObjectUrl)
+                    URL.revokeObjectURL(svgObjectUrl);
+                svgObjectUrl = URL.createObjectURL(svgBlob);
+                topoDownloadSVGView.href = svgObjectUrl;
+                topoDownloadSVGView.download = `${topologyJSON.graph.name}.svg`;
+            }
+
+            topoDownloadSVGView.addEventListener("click", downloadSVG);
+            topoDownloadSVGView.addEventListener("contextmenu", downloadSVG);
+
+            function makeTopologyInfo(selectedCategory, selectedTopology) {
+                const escapeHTML = value => {
+                    const element = document.createElement('span');
+                    element.textContent = value;
+                    return element.innerHTML;
+                };
+                const escapedTopology = escapeHTML(selectedTopology);
+                let text = "";
+
+                if (selectedCategory.startsWith('gabriel')) {
+                    text += `Synthetically generated <b>Gabriel graph</b> with <b>${escapeHTML(topologyJSON.graph.stats.nodes)}</b> nodes. <a href="https://doi.org/10.2307/2412323" target="_blank" rel="noopener noreferrer">Gabriel graphs</a> closely approximate real optical transport network topologies and realistically model fiber lengths and node degrees, as shown in <a href="https://doi.org/10.1109/ICUMT.2013.6798402" target="_blank" rel="noopener noreferrer">this paper</a>.`
+                }
+
+                if (selectedCategory.startsWith('caida')) {
+                    text += `Layer 3 topology of AS number <b>${escapedTopology}</b>, built using the data from <a href="https://www.caida.org/catalog/datasets/internet-topology-data-kit/" target="_blank" rel="noopener noreferrer">CAIDA Internet Topology Data Kit (ITDK)</a>.`
+                }
+
+
+                if (selectedCategory === 'sndlib') {
+                    text += `Topology <b>${escapedTopology}</b> from the <a href="https://sndlib.put.poznan.pl" target="_blank" rel="noopener noreferrer">SNDlib</a> repository, originally presented in this <a href="https://doi.org/10.1002/net.20371" target="_blank" rel="noopener noreferrer">paper</a>.`
+                }
+
+                if (selectedCategory === 'topozoo') {
+                    text += `Topology <b>${escapedTopology}</b> from the <a href="https://topology-zoo.org/" target="_blank" rel="noopener noreferrer">Internet Topology Zoo</a>, originally presented in this <a href="https://doi.org/10.1109/JSAC.2011.111002" target="_blank" rel="noopener noreferrer">paper</a>.`
+                }
+
+                if (selectedCategory === 'backbone') {
+                    text += `Synthetic global-scale backbone <b>${escapedTopology}</b> topology generated using methodology presented in this <a href="https://doi.org/10.1109/ICC.2015.7249292" target="_blank" rel="noopener noreferrer">paper</a>.`
+                }
+
+                const documentFragment = new DOMParser().parseFromString(text, 'text/html');
+                topologyInfoParagraph.replaceChildren(...documentFragment.body.childNodes);
+            }
+
+            function populateNodes(nodes) {
+                let new_topology_nodes = {}
+                for (const node of nodes) {
+                    new_topology_nodes[node['id']] = node;
+                }
+                return new_topology_nodes;
+            }
+
+            // Function to get query parameter by name from the URL
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+
+            // Function to update the URL without reloading the page
+            function readableURL(url) {
+                return decodeURIComponent(url.href);
+            }
+
+            function updateURLParameter(param, value, push = false) {
+                const url = new URL(window.location);
+                url.searchParams.set(param, value);
+                const href = readableURL(url);
+                if (push)
+                    window.history.pushState({ path: href }, '', href);
+                else
+                    window.history.replaceState({ path: href }, '', href);
+            }
+
+            function deleteURLParameter(param) {
+                const url = new URL(window.location);
+                url.searchParams.delete(param);
+                const href = readableURL(url);
+                window.history.replaceState({ path: href }, '', href);
+            }
+
+            function showTopologyError(error, request, path) {
+                console.warn(`Unable to load topology: ${path}`, error);
+                if (request !== topologyRequest)
+                    return;
+                const message = document.createElement('p');
+                message.textContent = 'Error loading topology data.';
                 topoDisplay.style.visibility = null;
-                topoDisplay.innerHTML = "<p>Error loading topology data.</p>";
-                topologyInfoParagraph.innerHTML = "Please select a topology from the left sidebar.";
-                topologyPropertiesList.innerHTML = "";
+                topoDisplay.replaceChildren(message);
+                topologyInfoParagraph.textContent = 'Please select a topology from the left sidebar.';
+                topologyPropertiesList.replaceChildren();
                 trafficModelDropdown.value = 'none';
                 trafficModelDropdown.disabled = true;
                 topologyJSON = null;
                 drawHistogram(null);
-                return;
             }
-            // Parse SVG and perform other operations
-            updateURLParameter('topology', `${selectedCategory}/${selectedTopology}`, true);
-            parseSVG();
-            interactiveSVG();
-            populateTopologyProperties(`${selectedCategory}/${selectedTopology}`, topologyJSON['graph']['stats']);
-            visualizeTraffic();
-            displayNodes();
-            topoDisplay.style.visibility = null;
-            trafficModelDropdown.disabled = false;
-            trafficModelDropdownOriginal.disabled = selectedCategory !== 'sndlib';
-            makeTopologyInfo(selectedCategory, selectedTopology);
-            topoDownloadJSON.href = `data/${selectedCategory}/${selectedTopology}.json`;
-            topoDownloadGML.href = `data/${selectedCategory}/${selectedTopology}.gml`;
-            topoDownloadSVG.href = `data/${selectedCategory}/${selectedTopology}.svg`;
-            topoDownloadSVGView.href = "#";
-        };
-        const defaultTopology = 'gabriel/25/0';
-        const topologyParam = getQueryParam('topology') || defaultTopology;
-        const topologyArray = topologyParam.split('/');
-        let category, topology;
-        if (topologyArray.length === 2) {
-            category = topologyArray[0];
-            topology = topologyArray[1];
-            firstLevelDropdown.value = topologyArray[0];
-            firstLevelDropdown.dispatchEvent(new Event('change'));
-            secondLevelDropdown.value = "";
-            secondLevelDropdown.disabled = true;
-        } else if (topologyArray.length === 3) {
-            category = `${topologyArray[0]}/${topologyArray[1]}`;
-            topology = topologyArray[2];
-            firstLevelDropdown.value = topologyArray[0];
-            firstLevelDropdown.dispatchEvent(new Event('change'));
-            secondLevelDropdown.value = topologyArray[1];
-            secondLevelDropdown.dispatchEvent(new Event('change'));
-        }
-        trafficModelDropdown.value = getQueryParam('demands') || 'none';
-        fetchAndDisplayTopology(category, topology);
-    });
-</script>
+
+            // Function to fetch and display the selected topology
+            const fetchAndDisplayTopology = async (selectedCategory, selectedTopology, updateHistory = true) => {
+                const request = ++topologyRequest;
+                hideDownloadActions();
+                try {
+                    // Fetch both SVG and JSON files in parallel
+                    const [svgResponse, jsonResponse] = await Promise.all([
+                        fetch(`data/${selectedCategory}/${selectedTopology}.svg`),
+                        fetch(`data/${selectedCategory}/${selectedTopology}.json`)
+                    ]);
+                    if (!svgResponse.ok || !jsonResponse.ok)
+                        throw new Error(`Unable to load topology (SVG ${svgResponse.status}, JSON ${jsonResponse.status})`);
+                    const [newSvg, newJson] = await Promise.all([svgResponse.text(), jsonResponse.json()]);
+                    if (request !== topologyRequest)
+                        return;
+                    topologyJSON = newJson;
+                    topologyNodes = populateNodes(newJson.nodes);
+                    topoDisplay.style.visibility = 'hidden';
+                    topoDisplay.innerHTML = newSvg;
+                } catch (error) {
+                    // Handle errors during fetching and display an error message
+                    showTopologyError(error, request, `${selectedCategory}/${selectedTopology}`);
+                    return;
+                }
+                try {
+                    // Parse SVG and perform other operations
+                    parseSVG();
+                    interactiveSVG();
+                    populateTopologyProperties(`${selectedCategory}/${selectedTopology}`, topologyJSON.graph.stats);
+                    visualizeTraffic();
+                    displayNodes();
+                    topoDisplay.style.visibility = null;
+                    trafficModelDropdown.disabled = false;
+                    trafficModelDropdownOriginal.disabled = selectedCategory !== 'sndlib';
+                    makeTopologyInfo(selectedCategory, selectedTopology);
+                    topologyList.querySelectorAll('button').forEach(button =>
+                        button.parentElement.classList.toggle('selected', button.dataset.topology === selectedTopology));
+                    topoDownloadJSON.href = `data/${selectedCategory}/${selectedTopology}.json`;
+                    topoDownloadGML.href = `data/${selectedCategory}/${selectedTopology}.gml`;
+                    topoDownloadSVG.href = `data/${selectedCategory}/${selectedTopology}.svg`;
+                    topoDownloadSVGView.href = '#';
+                    showDownloadActions();
+                    if (updateHistory)
+                        updateURLParameter('topology', `${selectedCategory}/${selectedTopology}`, true);
+                } catch (error) {
+                    showTopologyError(error, request, `${selectedCategory}/${selectedTopology}`);
+                }
+            };
+            const defaultTopology = 'gabriel/25/0';
+
+            function restoreURLState(updateHistory) {
+                const topologyParam = getQueryParam('topology') || defaultTopology;
+                const topologyArray = topologyParam.split('/');
+                let category;
+                let topology;
+                if (topologyArray.length === 2) {
+                    category = topologyArray[0];
+                    topology = topologyArray[1];
+                    firstLevelDropdown.value = category;
+                    firstLevelDropdown.dispatchEvent(new Event('change'));
+                } else if (topologyArray.length === 3) {
+                    category = `${topologyArray[0]}/${topologyArray[1]}`;
+                    topology = topologyArray[2];
+                    firstLevelDropdown.value = topologyArray[0];
+                    firstLevelDropdown.dispatchEvent(new Event('change'));
+                    secondLevelDropdown.value = topologyArray[1];
+                    secondLevelDropdown.dispatchEvent(new Event('change'));
+                } else {
+                    console.warn(`Invalid topology URL parameter: ${topologyParam}`);
+                    updateURLParameter('topology', defaultTopology);
+                    return restoreURLState(false);
+                }
+                const demands = getQueryParam('demands') || 'none';
+                trafficModelDropdown.value = Array.from(trafficModelDropdown.options)
+                    .some(option => option.value === demands) ? demands : 'none';
+                fetchAndDisplayTopology(category, topology, updateHistory);
+            }
+
+            window.addEventListener('popstate', () => restoreURLState(false));
+            restoreURLState(!getQueryParam('topology'));
+        });
+    </script>
 </body>
+
 </html>
